@@ -18,12 +18,38 @@ self.onmessage = (e) => {
     res.goal = !!msg.goal;
     self.postMessage({ type: 'result', ...res });
     if (res.best && !msg.goal) {
+      if (msg.axes && msg.axes.length) self.postMessage({ type: 'compare', reqId: msg.reqId, rows: solveCompare(msg, res.best) });
       const t1 = Date.now();
       const next = solveNext(msg, res.best.score);
       self.postMessage({ type: 'next', reqId: msg.reqId, next, ms: Date.now() - t1 });
     }
   }
 };
+
+// 「〇〇軸」で組んだ場合の火力比較：その軸スキルを最優先で積んだセットを探し、本来の火力で採点し直す
+function solveCompare(msg, best) {
+  const W = makeWeightTable(msg.weights);
+  const avail = new Set(msg.availableSeries);
+  const acc = new Int32Array(DB.skillNames.length), sc = new Int32Array(DB.sets.length + 1), touched = new Int32Array(260);
+  const rows = [];
+  for (const ax of msg.axes) {
+    const si = DB.skillIndex.get(ax.skill);
+    if (si == null || !W[si]) continue;
+    const Wb = W.slice();
+    Wb[si] = W[si].map(v => v * 4 + 2);
+    const prep = preparePieces(Wb, avail, msg.rarityCap, msg.owned, msg.orbTier);
+    const top = search(pickCandidates(prep, Wb, msg.K || 12), Wb, 1);
+    if (!top.length) continue;
+    // 本来の重みで再評価（強化レアは軸スキル優先のまま）
+    const r = evaluate(top[0].combo, W, acc, sc, touched);
+    const d = describe({ score: r.score, combo: top[0].combo, setHits: r.setHits }, W);
+    const lv = (d.totals.find(t => t.skill === ax.skill) || { lv: 0 }).lv;
+    if (!lv) continue;
+    rows.push({ label: ax.label, skill: ax.skill, lv, score: r.score, delta: r.score - best.score, set: d });
+  }
+  rows.sort((a, b) => b.score - a.score);
+  return rows;
+}
 
 function buildDb(armor, skills) {
   const skillIndex = new Map();
@@ -231,7 +257,6 @@ function solveNext(msg, base) {
     const d = describe(top2[0], W);
     extras.push({ label, delta: top2[0].score - base, score: top2[0].score, changed: d.pieces.map(p => p.name) });
   };
-  if (msg.orbTier && msg.orbTier < 6) tryWith(`orb:${msg.orbTier + 1}`, msg.rarityCap, msg.orbTier + 1);
-  if (msg.rarityCap < 12) tryWith(`cap:${msg.rarityCap + 1}`, msg.rarityCap + 1, msg.orbTier);
+  for (const w of (msg.whatIf || [])) tryWith(w.label, w.rarityCap, w.orbTier);
   return { monsters: next, extras };
 }

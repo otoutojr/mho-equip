@@ -259,3 +259,32 @@ main { max-width: 720px; margin: 0 auto; padding: 0 10px; }
 .tune input[type=range] { width: 100%; accent-color: var(--gold); height: 22px; }
 .tune .tuneVal { text-align: right; font-family: var(--display); font-weight: 700; font-size: 13px; color: var(--gold); }
 .tune.isDefault .tuneVal { color: var(--muted); }
+
+/* damage numbers */
+.prioHead { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.gain { font-family: var(--display); font-weight: 700; color: var(--gold); font-size: 14px; white-space: nowrap; }
+.sk .gain { font-size: 13px; }
+.sk .lv { font-size: 12px; margin-left: 2px; }
+.cmpList { margin: 0; padding: 0; list-style: none; display: grid; gap: 6px; }
+.cmp { background: var(--panel-2); border-radius: 8px; padding: 8px 10px; border: 1px solid transparent; }
+.cmp.best { border-color: var(--gold-deep); background: #3a3224; }
+.cmpHead { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.cmpName { font-weight: 600; font-size: 13px; }
+.cmpScore { font-family: var(--display); font-weight: 700; font-size: 18px; color: var(--gold); }
+.cmpSub { font-size: 11px; color: var(--muted); }
+.cmp.best .cmpSub { color: var(--gold); }
+.cmpSkills { font-size: 11px; color: var(--text); margin-top: 2px; }
+.cmpDet summary { font-size: 11px; color: var(--muted); cursor: pointer; margin-top: 4px; }
+.cmpDet ul { margin: 4px 0 0; padding-left: 18px; font-size: 11px; }
+
+/* rank slider */
+.rankBox { margin: 2px 0 6px; }
+.rankHead { display: flex; justify-content: space-between; align-items: baseline; font-size: 12px; color: var(--muted); }
+.rankVal { font-family: var(--display); font-weight: 700; font-size: 26px; color: var(--text); line-height: 1.1; }
+.rankSlide { display: grid; grid-template-columns: 36px 1fr 36px; align-items: center; gap: 8px; margin-top: 2px; }
+.rankSlide input[type=range] { width: 100%; accent-color: var(--gold); height: 30px; }
+.nudge { width: 36px; height: 32px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel-2); font-size: 18px; }
+.nudge:active { background: var(--line); }
+
+.resultHead h2 { font-size: 15px; flex: 1; min-width: 0; }
+.score { flex: none; }

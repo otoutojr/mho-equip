@@ -35,7 +35,8 @@
   <a href="#resultPanel" class="menuItem">最強セット</a>
   <a href="#nextPanel" class="menuItem">次に狩ると強くなる相手</a>
   <a href="#goalPanel" class="menuItem">最終目標（全部解放したとき）</a>
-  <a href="#prioPanel" class="menuItem">狙うスキルと根拠・発動率の調整</a>
+  <a href="#comparePanel" class="menuItem">火力比較（どの構成が一番ダメージが出るか）</a>
+  <a href="#prioPanel" class="menuItem">スキル別の火力と根拠</a>
   <p class="menuTitle">操作</p>
   <button type="button" class="menuItem" id="menuAuto">ランクから討伐済みを自動設定</button>
   <button type="button" class="menuItem" id="menuAllDone">全モンスターを討伐済みにする</button>
@@ -57,23 +58,13 @@
 
   <section class="panel" id="progressPanel">
     <h2>進行度</h2>
-    <div class="row">
-      <label class="field">
-        <span>冒険ランク</span>
-        <div class="stepper">
-          <button type="button" data-step="-1" aria-label="ランクを下げる">−</button>
-          <input id="rank" type="number" inputmode="numeric" min="1" max="200" value="1">
-          <button type="button" data-step="1" aria-label="ランクを上げる">＋</button>
-        </div>
-      </label>
-      <label class="field">
-        <span>狩魂玉の最高ランク</span>
-        <div class="stepper">
-          <button type="button" data-step="-1" aria-label="狩魂玉ランクを下げる">−</button>
-          <input id="orbTier" type="number" inputmode="numeric" min="1" max="6" value="3">
-          <button type="button" data-step="1" aria-label="狩魂玉ランクを上げる">＋</button>
-        </div>
-      </label>
+    <div class="rankBox">
+      <div class="rankHead"><span>冒険ランク</span><span class="rankVal" id="rankVal">1</span></div>
+      <div class="rankSlide">
+        <button type="button" class="nudge" data-nudge="-1" aria-label="ランクを1下げる">−</button>
+        <input id="rank" type="range" min="1" max="60" step="1" value="1" aria-label="冒険ランク">
+        <button type="button" class="nudge" data-nudge="1" aria-label="ランクを1上げる">＋</button>
+      </div>
     </div>
     <p class="capNote" id="capNote"></p>
     <details class="fold" id="monsterFold">
@@ -93,7 +84,7 @@
   <section class="panel result" id="resultPanel">
     <div class="resultHead">
       <h2 id="resultTitle">最強セット</h2>
-      <div class="score"><span id="scoreValue">―</span><span class="scoreLabel" id="scoreLabel">想定ダメージ倍率</span></div>
+      <div class="score"><span id="scoreValue">―</span><span class="scoreLabel" id="scoreLabel">火力（スキルなし比）</span></div>
     </div>
     <div class="tabs targetTabs" id="targetTabs" role="tablist" aria-label="想定する相手">
       <button type="button" class="tab" role="tab" data-target="normal">通常モンスター向け</button>
@@ -106,6 +97,12 @@
       <summary>ほかの候補セット</summary>
       <div id="altList"></div>
     </details>
+  </section>
+
+  <section class="panel" id="comparePanel">
+    <h2>火力比較</h2>
+    <p class="hint">いま作れる防具で「どのスキルを軸にすると一番火力が出るか」。それぞれのスキルを最優先で積んだセットを組んで、火力を比べています。</p>
+    <ol id="compareList" class="cmpList"></ol>
   </section>
 
   <section class="panel" id="nextPanel">
@@ -121,9 +118,8 @@
   </section>
 
   <section class="panel" id="prioPanel">
-    <h2>狙うスキルと根拠</h2>
+    <h2>スキル別の火力</h2>
     <p class="hint" id="prioHint"></p>
-    <div id="tuneBar" class="tuneBar"></div>
     <ul id="prioList" class="prioList"></ul>
     <div class="sourceList" id="sourceList"></div>
   </section>
@@ -134,12 +130,12 @@
   <h2>使い方</h2>
   <ol>
     <li>キャラを選ぶ（主人公は武器種ごと、属性も選べる）</li>
-    <li>冒険ランクと、持っている狩魂玉の最高ランクを入れる → 強化できる上限レアが決まる</li>
+    <li>冒険ランクをスライダーで合わせる → 強化できる上限レアが自動で決まる</li>
     <li>倒したモンスターにチェック（「ランクから自動設定」でまとめて可）</li>
     <li>最強セットに、各部位を何レアまで強化すればいいかが出る</li>
     <li>「次に狩ると強くなる相手」で、次の目標が分かる</li>
   </ol>
-  <p>想定ダメージ倍率は、各スキルの効果値に「そのキャラでどれだけ乗るか」（発動率・弾種・属性の割合）を掛けて掛け合わせた目安です。根拠は「狙うスキルと根拠」に書いてあります。</p>
+  <p>火力の数字は、各スキルの効果値に「そのキャラの攻撃にどれだけ乗るか」（効果が続く時間・弾種・属性の割合）を掛けて掛け合わせた目安です。根拠は「スキル別の火力」に書いてあります。</p>
   <details>
     <summary>計算の前提（攻略サイトで確認できたこと／仮定）</summary>
     <ul>

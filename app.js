@@ -1,6 +1,6 @@
 /* 装備おすすめ ― UI */
 'use strict';
-const APP_VERSION = '2026.11.06-3';
+const APP_VERSION = '2026.11.06-5';
 const STORE_KEY = 'mho-equip:v1';
 const PART_JP = { head: '頭', body: '胴', arm: '腕', waist: '腰', leg: '脚' };
 const ROMAN = { 1: 'Ⅰ', 2: 'Ⅱ', 3: 'Ⅲ', 4: 'Ⅳ', 5: 'Ⅴ', 6: 'Ⅵ' };
@@ -23,7 +23,7 @@ let reqId = 0;
 let currentMap = null;
 
 function loadState() {
-  const def = { charId: null, rank: 1, guildLv: 0, orbTier: 3, heroElement: '火', target: 'normal', tune: {}, defeated: {}, map: null };
+  const def = { charId: null, rank: 1, heroElement: '火', target: 'normal', tune: {}, defeated: {}, map: null };
   try { return Object.assign(def, JSON.parse(localStorage.getItem(STORE_KEY) || '{}')); } catch { return def; }
 }
 function saveState() { try { localStorage.setItem(STORE_KEY, JSON.stringify(state)); } catch {} }
@@ -81,7 +81,7 @@ function renderMenu() {
     if (!confirm('ランク・討伐チェックなどの入力を全部消します。いい？')) return;
     const keep = { charId: state.charId };
     for (const k of Object.keys(state)) delete state[k];
-    Object.assign(state, { charId: keep.charId, rank: 1, orbTier: 3, heroElement: '火', target: 'normal', defeated: {}, map: null });
+    Object.assign(state, { charId: keep.charId, rank: 1, heroElement: '火', target: 'normal', defeated: {}, map: null });
     saveState(); renderFields(true); renderTargetTabs(); renderMapTabs(); renderBoard(); renderChars(); solve();
   });
   $('#menuHelp').addEventListener('click', () => { setMenu(false); setHelp(true); });
@@ -129,7 +129,7 @@ function renderElementRow(c) {
 // 主人公は属性を選べるので、重みの「{属性}」を選択中の属性に置き換える
 /* ---------- ダメージモデル（ブラウザ側で再計算。発動率の調整を反映） ---------- */
 const UPTIME_KINDS = new Set(['dmg', 'crit', 'proc']);
-function tuneOf(c) { if (!state.tune) state.tune = {}; return state.tune[c.id] || {}; }
+function tuneOf() { return {}; }
 function skillDef(name) { return DATA.skills.skills.find(s => s.name === name.replace('{属性}', '火')); }
 function uptimeOf(c, name) { const t = tuneOf(c); const sp = c.modelSkills[name]; return t[name] != null ? t[name] : (sp.uptime ?? 1); }
 function elementShareOf(c) { const t = tuneOf(c); return t.__elementShare != null ? t.__elementShare : (c.model.elementShare ?? 0.35); }
@@ -187,27 +187,23 @@ function renderPriorities() {
   const c = currentChar();
   const list = $('#prioList'); list.innerHTML = '';
   $('#prioHint').textContent = c.scoreMode === 'log'
-    ? `スキルごとに「効果値 × 発動している割合 × 乗るダメージの割合」で評価し、掛け合わせて倍率にしています。${c.model && c.model.elementShare ? `属性ダメージの割合は約${Math.round(c.model.elementShare * 100)}%で想定。` : ''}`
+    ? `そのスキルを最大まで積んだときに、${state.target === 'yuko' ? '融光種相手の' : ''}火力が何%上がるか。上ほど火力が出るスキルです。`
     : '攻略サイトの推奨をもとにした優先度です。';
-  const tunable = c.modelSkills && c.model;
-  const tb = $('#tuneBar'); tb.innerHTML = '';
-  if (tunable) {
-    const t = tuneOf(c);
-    tb.append(el('p', { class: 'hint', text: 'スライダーで「実際どれくらい発動しているか」を自分の立ち回りに合わせて変えられます。変えるとすぐ再計算します（この端末に保存）。' }));
-    tb.append(slider('属性ダメージの割合', elementShareOf(c), (v) => setTune(c, '__elementShare', v), t.__elementShare == null));
-    if (Object.keys(t).length) tb.append(el('button', { type: 'button', class: 'ghost small', text: '発動率を初期値に戻す', onclick: () => { delete state.tune[c.id]; saveState(); renderPriorities(); solve(); } }));
-  }
-  for (const p of (c.priorities || [])) {
+  const W = effectiveWeights(c);
+  const elemName = c.elementSelectable ? heroElement() : (c.element || '');
+  const items = (c.priorities || []).map((p) => {
+    const key = p.skill.replace('{属性}', elemName);
+    const arr = W[key] || [];
+    const lv = p.targetLv || arr.length;
+    return { p, key, lv, w: arr.length ? arr[Math.min(lv, arr.length) - 1] : 0 };
+  }).sort((a, b) => b.w - a.w);
+  for (const { p, key, lv, w } of items) {
     const li = el('li', { class: 'prio' },
-      el('span', { class: 'tier', text: p.tier }),
-      el('span', { class: 'pname', text: (p.targetLv ? `${p.skill} Lv${p.targetLv}` : p.skill).replace('{属性}', c.elementSelectable ? heroElement() : (c.element || '')) }),
+      el('div', { class: 'prioHead' },
+        el('span', { class: 'pname', text: `${key} Lv${lv}` }),
+        el('span', { class: 'gain', text: c.scoreMode === 'log' ? `火力 ${fmtGain(w)}` : '' })),
       el('span', { class: 'reason', text: p.reason || '' }));
-    if (p.assumption) li.append(el('span', { class: 'assume', text: '想定：' + p.assumption }));
     if (p.sources && p.sources.length) li.append(el('span', { class: 'src', text: '出典：' + p.sources.join('・') }));
-    const sp = tunable && c.modelSkills[p.skill];
-    if (sp && UPTIME_KINDS.has(sp.kind)) {
-      li.append(slider('発動率', uptimeOf(c, p.skill), (v) => setTune(c, p.skill, v), tuneOf(c)[p.skill] == null));
-    }
     list.append(li);
   }
   if (!c.priorities || !c.priorities.length) list.append(el('li', { class: 'empty', text: 'このキャラの優先スキルはまだ未登録です。' }));
@@ -220,19 +216,19 @@ function renderPriorities() {
 
 /* ---------- progression fields ---------- */
 function renderFields(valuesOnly) {
-  $('#rank').value = state.rank; $('#orbTier').value = state.orbTier;
+  $('#rank').value = state.rank; $('#rankVal').textContent = state.rank;
   if (valuesOnly) return;
-  document.querySelectorAll('.stepper button').forEach((b) => {
-    b.addEventListener('click', () => {
-      const input = b.parentElement.querySelector('input');
-      const v = Math.min(+input.max, Math.max(+input.min, (+input.value || 0) + (+b.dataset.step)));
-      input.value = v; input.dispatchEvent(new Event('change'));
-    });
-  });
-  $('#rank').addEventListener('change', (e) => { state.rank = clamp(e.target, 1, 200); saveState(); renderBoard(); solve(); });
-  $('#orbTier').addEventListener('change', (e) => { state.orbTier = clamp(e.target, 1, 6); saveState(); solve(); });
+  let rankTimer = null;
+  const applyRank = (v, live) => {
+    state.rank = Math.min(60, Math.max(1, v)); $('#rank').value = state.rank; $('#rankVal').textContent = state.rank;
+    renderCapNote();
+    clearTimeout(rankTimer);
+    rankTimer = setTimeout(() => { saveState(); renderBoard(); solve(); }, live ? 350 : 0);
+  };
+  $('#rank').addEventListener('input', (e) => applyRank(+e.target.value, true));
+  document.querySelectorAll('.nudge').forEach(b => b.addEventListener('click', () => applyRank(state.rank + (+b.dataset.nudge), false)));
   document.querySelectorAll('#targetTabs .tab').forEach((b) => {
-    b.addEventListener('click', () => { state.target = b.dataset.target; saveState(); renderTargetTabs(); solve(); });
+    b.addEventListener('click', () => { state.target = b.dataset.target; saveState(); renderTargetTabs(); renderPriorities(); solve(); });
   });
   renderTargetTabs();
   $('#markAllMap').addEventListener('click', () => { setMapDefeated(true); });
@@ -282,19 +278,26 @@ function renderBoard() {
 }
 
 /* ---------- 強化上限（冒険ランクと狩魂玉のランクから） ---------- */
-function rankCap() {
+function rankCap(rank = state.rank) {
   let cap = 2;
-  for (const [r, c] of (DATA.monsters.rankCap || [])) if (state.rank >= r) cap = c;
+  for (const [r, c] of (DATA.monsters.rankCap || [])) if (rank >= r) cap = c;
   return cap;
 }
-function orbCap() { const t = DATA.monsters.orbCap || {}; return t[state.orbTier] || 12; }
-function rarityCap() { return Math.min(rankCap(), orbCap()); }
+// そのレアまで強化するのに要る狩魂玉のランク（ランクで解放されていれば手に入る前提）
+function orbTierFor(cap) {
+  const t = DATA.monsters.orbCap || {};
+  for (let i = 1; i <= 6; i++) if ((t[i] || t[String(i)] || 0) >= cap) return i;
+  return 6;
+}
+function rarityCap() { return rankCap(); }
+function whatIfRank() { const n = nextRankStep(); return n ? [{ label: `rank:${n.rank}:${n.cap}`, rarityCap: n.cap, orbTier: orbTierFor(n.cap) }] : []; }
+function nextRankStep() {
+  for (const [r, c] of (DATA.monsters.rankCap || [])) if (r > state.rank) return { rank: r, cap: c };
+  return null;
+}
 function renderCapNote() {
-  const rc = rankCap(), oc = orbCap(), cap = rarityCap();
-  let txt = `いま強化できる上限：レア${cap}`;
-  if (oc < rc) txt += `（ランク${state.rank}ならレア${rc}まで解放済みですが、狩魂玉${ROMAN[state.orbTier]}ではレア${oc}まで）`;
-  else txt += `（冒険ランク${state.rank}で解放されている上限）`;
-  $('#capNote').textContent = txt;
+  const n = nextRankStep();
+  $('#capNote').textContent = `レア${rankCap()}まで強化できます` + (n ? `（ランク${n.rank}でレア${n.cap}）` : '');
 }
 
 /* ---------- availability ---------- */
@@ -327,7 +330,9 @@ function solve() {
   reqId++;
   renderCapNote();
   $('#resultHint').textContent = '計算中…';
-  worker.postMessage({ type: 'solve', reqId, weights: effectiveWeights(c), availableSeries: avail, rarityCap: rarityCap(), orbTier: state.orbTier, next, K: 12, topN: 6 });
+  $('#compareList').innerHTML = ''; $('#compareList').append(el('li', { class: 'empty', text: '計算中…' }));
+  $('#comparePanel').hidden = c.scoreMode !== 'log';
+  worker.postMessage({ type: 'solve', reqId, weights: effectiveWeights(c), availableSeries: avail, rarityCap: rarityCap(), orbTier: orbTierFor(rarityCap()), next, axes: compareAxes(c), whatIf: whatIfRank(), K: 12, topN: 6 });
   worker.postMessage({ type: 'solve', reqId, goal: true, weights: effectiveWeights(c), availableSeries: DATA.armor.series.map(s => s.name), rarityCap: 12, orbTier: 6, next: [], K: 12, topN: 3 });
 }
 
@@ -338,8 +343,40 @@ function onWorkerMessage(e) {
   if (msg.goal) { if (msg.type === 'result') renderGoal(msg); return; }
   if (msg.type === 'result') { renderResult(msg); $('#nextList').innerHTML = ''; $('#nextList').append(el('li', { class: 'empty', text: '伸びしろを計算中…' })); }
   if (msg.type === 'next') renderNext(msg.next);
+  if (msg.type === 'compare') renderCompare(msg.rows);
 }
 
+function compareAxes(c) {
+  if (c.scoreMode !== 'log' || !c.modelSkills) return [];
+  const elemName = c.elementSelectable ? heroElement() : (c.element || '');
+  const W = effectiveWeights(c);
+  return (c.priorities || [])
+    .filter(p => { const sp = c.modelSkills[p.skill]; return sp && (sp.kind === 'dmg' || sp.kind === 'element'); })
+    .map(p => { const key = p.skill.replace('{属性}', elemName); const arr = W[key] || [0]; return { label: `${key}を軸`, skill: key, max: arr[arr.length - 1] }; })
+    .sort((a, b) => b.max - a.max).slice(0, 5);
+}
+function renderCompare(rows) {
+  const box = $('#compareList'); box.innerHTML = '';
+  if (!rows || !rows.length) { box.append(el('li', { class: 'empty', text: '比べられる構成がまだありません。' })); return; }
+  const top = rows[0].score;
+  rows.forEach((r, i) => {
+    const skills = r.set.totals.filter(t => t.value > 0.3).map(t => `${t.skill}${t.lv}`).join('・');
+    const diff = (Math.exp((r.score - top) / 100) - 1) * 100;
+    const li = el('li', { class: 'cmp' + (i === 0 ? ' best' : '') },
+      el('div', { class: 'cmpHead' },
+        el('span', { class: 'cmpName', text: `${r.skill} Lv${r.lv}の構成` }),
+        el('span', { class: 'cmpScore', text: fmtScore(r.score) })),
+      el('div', { class: 'cmpSub', text: i === 0 ? 'いちばん火力が出る' : `1位より火力 ${diff.toFixed(1)}%` }),
+      el('div', { class: 'cmpSkills', text: skills }));
+    const det = el('details', { class: 'cmpDet' }, el('summary', { text: '防具を見る' }),
+      el('ul', {}, ...r.set.pieces.map(p => el('li', { text: `${PART_JP[p.part]} ${p.name}${p.rarity > p.baseRarity ? `（レア${p.rarity}まで強化）` : ''}` }))));
+    li.append(det);
+    box.append(li);
+  });
+}
+
+function gainPct(w) { return (Math.exp((w || 0) / 100) - 1) * 100; }
+function fmtGain(w) { const v = gainPct(w); return (v >= 0 ? '+' : '') + (v < 10 ? v.toFixed(1) : Math.round(v)) + '%'; }
 function rarityClass(r) { return r >= 8 ? 'top' : r >= 6 ? 'high' : r >= 4 ? 'mid' : 'low'; }
 function isLog() { const c = currentChar(); return c && c.scoreMode === 'log'; }
 // スコア表示：倍率モデルのキャラは ×1.42、それ以外は +42%
@@ -359,7 +396,7 @@ function renderResult(res) {
   const b = res.best;
   lastBase = b.score;
   $('#scoreValue').textContent = fmtScore(b.score);
-  $('#scoreLabel').textContent = isLog() ? '想定ダメージ倍率（スキル無し比）' : '火力スキル合計（目安）';
+  $('#scoreLabel').textContent = isLog() ? '火力（スキルなし比）' : '火力スキル合計（目安）';
   const needs = b.pieces.filter(p => p.rarity > p.baseRarity);
   $('#resultHint').textContent = needs.length
     ? `強化が必要：${needs.map(p => `${p.name}→レア${p.rarity}`).join('、')}`
@@ -392,7 +429,9 @@ function renderResult(res) {
     const eff = info && info.levels && info.levels[t.lv - 1] ? info.levels[t.lv - 1].effect : '';
     const bar = el('div', { class: 'bar' });
     for (let i = 1; i <= t.max; i++) bar.append(el('span', { class: 'seg' + (i <= t.lv ? (i > t.lv - t.fromSet ? ' set' : ' on') : '') }));
-    tot.append(el('div', { class: 'sk' }, el('span', { text: t.skill }), el('span', { class: 'lv', text: `Lv${t.lv}${t.raw > t.max ? `（上限、${t.raw - t.max}余り）` : ''}` }), bar, eff ? el('span', { class: 'eff', text: eff }) : null));
+    tot.append(el('div', { class: 'sk' },
+      el('span', {}, t.skill, el('span', { class: 'lv', text: ` Lv${t.lv}${t.raw > t.max ? `（上限、${t.raw - t.max}余り）` : ''}` })),
+      el('span', { class: 'gain', text: isLog() ? `火力 ${fmtGain(t.value)}` : '' }), bar, eff ? el('span', { class: 'eff', text: eff }) : null));
   }
   if (b.setHits.length) tot.append(el('div', { class: 'hint', text: 'セットスキル：' + b.setHits.map(h => `${h.set}（${h.pieces}部位）→${h.skill}+${h.lv}`).join('、') }));
   if (!shown.length) tot.append(el('div', { class: 'empty', text: 'このキャラの優先スキルが付く防具がまだありません。' }));
@@ -412,8 +451,8 @@ function renderNext(res) {
   const nexts = (res.monsters || []).slice(0, 8);
   for (const x of (res.extras || [])) {
     if (x.delta < 0.05) continue;
-    const [kind, v] = x.label.split(':');
-    const label = kind === 'orb' ? `狩魂玉${ROMAN[+v] || v}が手に入ったら` : `強化上限をレア${v}にしたら`;
+    const [, r, cap] = x.label.split(':');
+    const label = `ランク${r}になったら（レア${cap}まで強化）`;
     nl.append(el('li', { class: 'next' },
       el('span', { class: 'nname', text: label }),
       el('span', { class: 'delta', text: fmtDelta(x.delta) }),
