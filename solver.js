@@ -33,23 +33,26 @@ function buildDb(armor, skills) {
     return skillIndex.get(name);
   };
   for (const s of skills.skills) { const i = idx(s.name); skillMax[i] = s.maxLv || 7; }
-  const seriesIndex = new Map();
-  const series = [];
+  // セットスキル（部位ごとに所属セットが違う防具があるので、シリーズではなくセット名で数える）
+  const setIndex = new Map();
+  const sets = [];
+  for (const st of (armor.sets || [])) {
+    setIndex.set(st.name, sets.length);
+    sets.push({ name: st.name, bonuses: (st.bonuses || []).filter(b => b.skill).map(b => ({ pieces: b.pieces || 2, skill: idx(b.skill), lv: b.lv || 1, name: b.skill })) });
+  }
   const pieces = [];
   armor.series.forEach((s) => {
-    const si = series.length;
-    seriesIndex.set(s.name, si);
-    const bonuses = (s.setSkill && s.setSkill.bonuses || []).filter(b => b.skill).map(b => ({ pieces: b.pieces, skill: idx(b.skill), lv: b.lv || 1, name: b.skill }));
-    series.push({ name: s.name, setName: s.setSkill && s.setSkill.name || null, bonuses });
     for (const p of s.pieces) {
+      const setName = p.set || s.set || null;
+      if (setName && !setIndex.has(setName)) { setIndex.set(setName, sets.length); sets.push({ name: setName, bonuses: [] }); }
       pieces.push({
-        id: p.id, name: p.name, part: p.part, series: s.name, si,
-        baseRarity: p.baseRarity || 1, maxRarity: p.maxRarity || 9,
+        id: p.id, name: p.name, part: p.part, series: s.name, seti: setName ? setIndex.get(setName) : -1,
+        baseRarity: p.baseRarity || 1, maxRarity: p.maxRarity || 9, orbTier: p.orbTier || null,
         skills: p.skills.map(k => ({ s: idx(k.name), name: k.name, lv: k.lv, rarity: k.rarity == null ? (p.baseRarity || 1) : k.rarity })),
       });
     }
   });
-  return { pieces, skillIndex, skillMax, skillNames, series, seriesIndex };
+  return { pieces, skillIndex, skillMax, skillNames, sets, setIndex };
 }
 
 // スキルは「レアrでLv総量」なので、r以下で最大のレアのエントリを採用
@@ -75,13 +78,14 @@ function makeWeightTable(weights) {
 }
 const wval = (W, s, lv) => { const a = W[s]; if (!a || lv <= 0) return 0; return a[Math.min(lv, a.length) - 1] || 0; };
 
-function preparePieces(W, availableSeries, rarityCap, ownedMap) {
+function preparePieces(W, availableSeries, rarityCap, ownedMap, orbTier) {
   const out = [];
   for (const p of DB.pieces) {
     if (!availableSeries.has(p.series)) continue;
-    const cap = Math.min(p.maxRarity, rarityCap);
+    if (p.orbTier && orbTier && p.orbTier > orbTier) continue; // 生産に要る狩魂玉のランクが足りない
     const lo = p.baseRarity;
-    if (cap < lo) continue;
+    // 強化上限は「生産後にどこまで上げられるか」。生産レアが上限より高い防具はそのまま生産できる扱い
+    const cap = Math.max(lo, Math.min(p.maxRarity, rarityCap));
     let bestVal = -1, bestR = lo, bestSk = null;
     for (let r = lo; r <= cap; r++) {
       const sk = skillsAtRarity(p, r);
@@ -98,40 +102,41 @@ function pickCandidates(prepared, W, K) {
   const byPart = {};
   for (const part of PARTS) byPart[part] = [];
   for (const c of prepared) byPart[c.ref.part].push(c);
-  // セットスキルで価値のあるシリーズは少し優遇して残す
+  // セットスキルで価値のあるセットの防具は少し優遇して残す
   const setWorth = new Set();
-  for (const s of DB.series) for (const b of s.bonuses) if (wval(W, b.skill, b.lv) > 0) setWorth.add(s.name);
+  DB.sets.forEach((st, i) => { for (const b of st.bonuses) if (wval(W, b.skill, b.lv) > 0) setWorth.add(i); });
   for (const part of PARTS) {
     const list = byPart[part];
     list.sort((a, b) => b.value - a.value || a.cost - b.cost || b.ref.baseRarity - a.ref.baseRarity);
     const keep = list.slice(0, K);
     for (const c of list.slice(K)) {
-      if (setWorth.has(c.ref.series) && keep.length < K + 6) keep.push(c);
+      if (setWorth.has(c.ref.seti) && keep.length < K + 6) keep.push(c);
     }
     byPart[part] = keep.length ? keep : list.slice(0, 1);
   }
   return byPart;
 }
 
-function evaluate(combo, W, acc, seriesCount, touched) {
-  // combo: 5 candidates. acc: Int32Array(skills) scratch. seriesCount: Int32Array(series) scratch. touched: scratch array
+function evaluate(combo, W, acc, setCount, touched) {
+  // combo: 5 candidates. acc: Int32Array(skills) scratch. setCount: Int32Array(sets) scratch. touched: scratch array
   let nt = 0, ns = 0;
   for (let i = 0; i < 5; i++) {
     const c = combo[i]; if (!c) continue;
     for (const k of c.sk) { if (!acc[k.s]) touched[nt++] = k.s; acc[k.s] += k.lv; }
-    const si = c.ref.si;
-    if (!seriesCount[si]) touched[200 + ns++] = si;
-    seriesCount[si]++;
+    const si = c.ref.seti;
+    if (si < 0) continue;
+    if (!setCount[si]) touched[200 + ns++] = si;
+    setCount[si]++;
   }
   let setHits = null;
   for (let j = 0; j < ns; j++) {
-    const si = touched[200 + j]; const n = seriesCount[si]; const ser = DB.series[si];
-    for (const b of ser.bonuses) if (n >= b.pieces) {
+    const si = touched[200 + j]; const n = setCount[si]; const st = DB.sets[si];
+    for (const b of st.bonuses) if (n >= b.pieces) {
       if (!acc[b.skill]) touched[nt++] = b.skill;
       acc[b.skill] += b.lv;
-      (setHits || (setHits = [])).push({ series: ser.name, set: ser.setName, pieces: b.pieces, skill: b.name, lv: b.lv });
+      (setHits || (setHits = [])).push({ set: st.name, pieces: b.pieces, skill: b.name, lv: b.lv });
     }
-    seriesCount[si] = 0;
+    setCount[si] = 0;
   }
   let score = 0;
   for (let j = 0; j < nt; j++) {
@@ -143,7 +148,7 @@ function evaluate(combo, W, acc, seriesCount, touched) {
 
 function search(byPart, W, topN) {
   const acc = new Int32Array(DB.skillNames.length);
-  const sc = new Int32Array(DB.series.length);
+  const sc = new Int32Array(DB.sets.length + 1);
   const touched = new Int32Array(260);
   const [H, B, A, Wt, L] = PARTS.map(p => byPart[p]);
   const top = []; // sorted desc by score
@@ -180,7 +185,7 @@ function describe(entry, W) {
     score: entry.score,
     pieces: entry.combo.map(c => ({
       id: c.ref.id, name: c.ref.name, part: c.ref.part, series: c.ref.series,
-      baseRarity: c.ref.baseRarity, maxRarity: c.ref.maxRarity, rarity: c.rarity,
+      baseRarity: c.ref.baseRarity, maxRarity: c.ref.maxRarity, rarity: c.rarity, orbTier: c.ref.orbTier,
       skills: c.sk.map(k => ({ name: k.name, lv: k.lv, value: wval(W, k.s, k.lv) })),
       value: c.value,
     })),
@@ -193,7 +198,7 @@ function solve(msg) {
   const W = makeWeightTable(msg.weights);
   const K = msg.K || 12;
   const avail = new Set(msg.availableSeries);
-  const prepared = preparePieces(W, avail, msg.rarityCap, msg.owned);
+  const prepared = preparePieces(W, avail, msg.rarityCap, msg.owned, msg.orbTier);
   const byPart = pickCandidates(prepared, W, K);
   const top = search(byPart, W, msg.topN || 6);
   return { best: top.length ? describe(top[0], W) : null, alts: top.slice(1).map(t => describe(t, W)), counts: PARTS.map(p => byPart[p].length) };
@@ -206,7 +211,7 @@ function solveNext(msg, base) {
   const next = [];
   for (const n of msg.next) {
     const avail2 = new Set([...avail, ...n.series]);
-    const prep2 = preparePieces(W, avail2, msg.rarityCap, msg.owned);
+    const prep2 = preparePieces(W, avail2, msg.rarityCap, msg.owned, msg.orbTier);
     const by2 = pickCandidates(prep2, W, K);
     const top2 = search(by2, W, 1);
     if (!top2.length) continue;
@@ -215,5 +220,17 @@ function solveNext(msg, base) {
     next.push({ monster: n.monster, delta: top2[0].score - base, score: top2[0].score, changed });
   }
   next.sort((a, b) => b.delta - a.delta);
-  return next;
+  // 狩魂玉のランクが1つ上がった場合 / 強化上限が1つ上がった場合
+  const extras = [];
+  const tryWith = (label, rarityCap, orbTier) => {
+    const prep2 = preparePieces(W, avail, rarityCap, msg.owned, orbTier);
+    const by2 = pickCandidates(prep2, W, K);
+    const top2 = search(by2, W, 1);
+    if (!top2.length) return;
+    const d = describe(top2[0], W);
+    extras.push({ label, delta: top2[0].score - base, score: top2[0].score, changed: d.pieces.map(p => p.name) });
+  };
+  if (msg.orbTier && msg.orbTier < 6) tryWith(`orb:${msg.orbTier + 1}`, msg.rarityCap, msg.orbTier + 1);
+  if (msg.rarityCap < 12) tryWith(`cap:${msg.rarityCap + 1}`, msg.rarityCap + 1, msg.orbTier);
+  return { monsters: next, extras };
 }

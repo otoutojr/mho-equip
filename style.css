@@ -99,6 +99,8 @@ main { max-width: 720px; margin: 0 auto; padding: 0 12px; }
   border-radius: 8px; padding: 10px 12px; font-size: 13px; flex: 1 1 200px;
 }
 .ghost:active { background: #3a3224; }
+.ghost.small { padding: 7px 10px; font-size: 12px; flex: 1 1 140px; }
+.boardTools { margin: 0 0 10px; }
 
 /* map tabs + monster board */
 .tabs { display: flex; gap: 6px; flex-wrap: wrap; margin: 6px 0 10px; }
@@ -108,7 +110,7 @@ main { max-width: 720px; margin: 0 auto; padding: 0 12px; }
 }
 .tab[aria-selected="true"] { color: var(--text); border-color: var(--gold); background: #3a3224; }
 .tab .count { color: var(--gold); margin-left: 4px; }
-.board { display: grid; grid-template-columns: repeat(auto-fill, minmax(104px, 1fr)); gap: 8px; }
+.board { display: grid; grid-template-columns: repeat(auto-fill, minmax(112px, 1fr)); gap: 8px; }
 .mon {
   position: relative; text-align: left; border: 1px solid var(--line); background: var(--panel-2);
   border-radius: 8px; padding: 10px 10px 9px; min-height: 64px; overflow: hidden;
@@ -194,5 +196,9 @@ main { max-width: 720px; margin: 0 auto; padding: 0 12px; }
 .foot p { margin: 4px 0; }
 
 @media (min-width: 560px) {
-  .board { grid-template-columns: repeat(auto-fill, minmax(124px, 1fr)); }
+  .board { grid-template-columns: repeat(auto-fill, minmax(136px, 1fr)); }
 }
+
+.elements { margin: 8px 0 4px; }
+.elements .hint { display: block; margin-bottom: 4px; }
+.elements .tab .el { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 5px; }

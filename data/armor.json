@@ -1,28 +1,6295 @@
 {
- "updated": "fixture",
+ "updated": "2026-11-05",
+ "sets": [
+  {
+   "name": "冒険団の逆襲",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "逆境",
+     "lv": 1,
+     "effect": "逆境+1",
+     "description": "力尽きるたびに、冒険者の与えるダメージと防御力が1.1倍上がり、防御力+10。狩猟終了まで持続する(最大2回まで)。"
+    }
+   ]
+  },
+  {
+   "name": "ドスジャグラスの抵抗",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "気絶耐性",
+     "lv": 1,
+     "effect": "気絶耐性+1",
+     "description": "気絶状態の継続時間-60%。"
+    }
+   ]
+  },
+  {
+   "name": "クルルヤックの閃撃",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "本気",
+     "lv": 1,
+     "effect": "本気+1",
+     "description": "攻撃が弾かれなくなる。"
+    }
+   ]
+  },
+  {
+   "name": "プケプケの尻尾振り",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "毒耐性",
+     "lv": 1,
+     "effect": "毒耐性+1",
+     "description": "毒状態の継続時間-30%。"
+    }
+   ]
+  },
+  {
+   "name": "合金の風障",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "風圧耐性",
+     "lv": 1,
+     "effect": "風圧耐性+1",
+     "description": "風圧【小】を軽減する。"
+    }
+   ]
+  },
+  {
+   "name": "痺賊竜の不意打ち",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "雷属性ダメージUP",
+     "lv": 1,
+     "effect": "雷属性ダメージUP+1",
+     "description": "雷属性ダメージ+3%。融光種モンスターの場合は+8%になる。"
+    }
+   ]
+  },
+  {
+   "name": "泥魚竜の水御",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "水属性ダメージUP",
+     "lv": 1,
+     "effect": "水属性ダメージUP+1",
+     "description": "水属性ダメージ+3%。融光種モンスターの場合は+8%になる。"
+    }
+   ]
+  },
+  {
+   "name": "土砂竜の泥障",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "泥耐性",
+     "lv": 1,
+     "effect": "泥耐性+1",
+     "description": "移動速度や回避行動への制限を軽減する。"
+    }
+   ]
+  },
+  {
+   "name": "寒鉄錬成",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "氷属性ダメージUP",
+     "lv": 1,
+     "effect": "氷属性ダメージUP+1",
+     "description": "氷属性ダメージ+3%。融光種モンスターの場合は+8%になる。"
+    }
+   ]
+  },
+  {
+   "name": "竜塚の神秘",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "龍属性ダメージUP",
+     "lv": 1,
+     "effect": "龍属性ダメージUP+1",
+     "description": "龍属性ダメージ+3%。融光種モンスターの場合は+8%になる。"
+    }
+   ]
+  },
+  {
+   "name": "巨峰の絶縁",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "麻痺耐性",
+     "lv": 1,
+     "effect": "麻痺耐性+1",
+     "description": "麻痺状態の継続時間-30%。"
+    }
+   ]
+  },
+  {
+   "name": "蛮顎竜の灼炎",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "火属性ダメージUP",
+     "lv": 1,
+     "effect": "火属性ダメージUP+1",
+     "description": "火属性ダメージ+3%。融光種モンスターの場合は+8%になる。"
+    }
+   ]
+  },
+  {
+   "name": "雌火竜の感応",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "融光感知",
+     "lv": 1,
+     "effect": "融光感知+1",
+     "description": "融光種モンスターが狂暴状態のとき、冒険者の与ダメージ+4%。"
+    }
+   ]
+  },
+  {
+   "name": "賊竜の回避",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "洞察",
+     "lv": 1,
+     "effect": "洞察+1",
+     "description": "会心率+2%。"
+    }
+   ]
+  },
+  {
+   "name": "毒妖鳥の縄張り",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "無垢",
+     "lv": 1,
+     "effect": "無垢+1",
+     "description": "体力が最大時、与ダメージ+3%。"
+    }
+   ]
+  },
+  {
+   "name": "花蝶の親和",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "睡眠耐性",
+     "lv": 1,
+     "effect": "睡眠耐性+1",
+     "description": "睡眠状態の継続時間-30%。"
+    }
+   ]
+  },
+  {
+   "name": "複合ファイバー",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "火耐性強化",
+     "lv": 1,
+     "effect": "火耐性強化+1",
+     "description": "火耐性+6。"
+    }
+   ]
+  },
+  {
+   "name": "飛雷竜の雷鎧",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "雷耐性強化",
+     "lv": 1,
+     "effect": "雷耐性強化+1",
+     "description": "雷耐性+6。"
+    }
+   ]
+  },
+  {
+   "name": "蛮顎竜の怒り",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "破壊王",
+     "lv": 1,
+     "effect": "破壊王+1",
+     "description": "大型モンスターの部位を破壊しやすくなり、部位に対する蓄積ダメージが1.1倍になる。"
+    }
+   ]
+  },
+  {
+   "name": "巨甲の力",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "龍耐性強化",
+     "lv": 1,
+     "effect": "龍耐性強化+1",
+     "description": "龍耐性+6。"
+    }
+   ]
+  },
+  {
+   "name": "掻鳥の巧技",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "洞察",
+     "lv": 1,
+     "effect": "洞察+1",
+     "description": "会心率+2%。"
+    }
+   ]
+  },
+  {
+   "name": "土砂竜の堅守",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "ガードテクニック",
+     "lv": 1,
+     "effect": "ガードテクニック+1",
+     "description": "ガード時にひるみにくくなり、攻撃の威力をわずかに軽減する。"
+    }
+   ]
+  },
+  {
+   "name": "泥魚竜の癒流",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "水耐性強化",
+     "lv": 1,
+     "effect": "水耐性強化+1",
+     "description": "水耐性+6。"
+    }
+   ]
+  },
+  {
+   "name": "雌火竜の強躯",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "体力強化",
+     "lv": 1,
+     "effect": "体力強化+1",
+     "description": "体力+10。"
+    }
+   ]
+  },
+  {
+   "name": "火竜の弱点撃破",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "弱点攻撃",
+     "lv": 1,
+     "effect": "弱点攻撃+1",
+     "description": "モンスターの肉質が柔らかい部位を攻撃すると、会心率+4%。"
+    }
+   ]
+  },
+  {
+   "name": "鉱脈の静寂",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "咆哮耐性",
+     "lv": 1,
+     "effect": "咆哮耐性+1",
+     "description": "咆哮【小】の影響を軽減する。"
+    }
+   ]
+  },
+  {
+   "name": "一角の神秘",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "地質専門家",
+     "lv": 1,
+     "effect": "地質専門家+1",
+     "description": "骨採集ポイントの採集回数1回増加。"
+    }
+   ]
+  },
+  {
+   "name": "インゴットの耐爆",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "爆破耐性",
+     "lv": 1,
+     "effect": "爆破耐性+1",
+     "description": "爆破までの猶予時間を延長し、爆破ダメージを軽減する。"
+    }
+   ]
+  },
+  {
+   "name": "荒野マスタリー",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "標本の達人",
+     "lv": 1,
+     "effect": "標本の達人+1",
+     "description": "攻撃で昆虫型の小型モンスターを討伐する時、残骸が残る確率が少し上がる。"
+    }
+   ]
+  },
+  {
+   "name": "飛雷竜の激昂",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "ポテンシャル解放",
+     "lv": 1,
+     "effect": "ポテンシャル解放+1",
+     "description": "狩猟開始から90秒後、または累計で100のダメージを受けると、会心率+3%、180秒持続。"
+    }
+   ]
+  },
+  {
+   "name": "ドスギルオスの統率",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "オトモ強化",
+     "lv": 1,
+     "effect": "オトモ強化+1",
+     "description": "オトモの与ダメージが1.1倍になる。"
+    }
+   ]
+  },
+  {
+   "name": "角竜の踏み締め",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "振動耐性",
+     "lv": 1,
+     "effect": "振動耐性+1",
+     "description": "振動【小】を無効化する。"
+    }
+   ]
+  },
+  {
+   "name": "眩鳥の追撃",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "徹底追撃",
+     "lv": 1,
+     "effect": "徹底追尾+1",
+     "description": "モンスターがのけぞるまたは、制圧状態になった後、一定時間、冒険者の与ダメージが+4%。15秒持続。"
+    }
+   ]
+  },
+  {
+   "name": "浮空竜の気迫",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "体力回復",
+     "lv": 1,
+     "effect": "体力回復+1",
+     "description": "ダメージを受けたとき、体力ゲージのグレー部分の回復速度が2倍上がる。"
+    }
+   ]
+  },
+  {
+   "name": "浮空竜の気流",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "高圧ガード",
+     "lv": 1,
+     "effect": "高圧ガード+1",
+     "description": "融光種モンスターが狂暴状態の時、冒険者の防御+20"
+    }
+   ]
+  },
+  {
+   "name": "骨鎚竜の鉄壁",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "防御力DOWN耐性",
+     "lv": 1,
+     "effect": "防御力DOWN耐性+1",
+     "description": "防御力DOWN状態の継続時間-50%。"
+    }
+   ]
+  },
+  {
+   "name": "風漂竜の舞",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "氷耐性強化",
+     "lv": 1,
+     "effect": "氷耐性強化+1",
+     "description": "氷耐性+6"
+    }
+   ]
+  },
+  {
+   "name": "惨爪竜の靭性",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "裂傷耐性",
+     "lv": 1,
+     "effect": "裂傷耐性+1",
+     "description": "裂傷状態によるダメージを軽減する。"
+    }
+   ]
+  },
+  {
+   "name": "桜火竜の鋭敏",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "狩人の第六感",
+     "lv": 1,
+     "effect": "狩人の第六感+1",
+     "description": "フィールドの罠を使用してモンスターにデバフまたはダメージを与えた時、自分のダメージ+4%。120秒持続。"
+    }
+   ]
+  },
+  {
+   "name": "光稜龍の威嚇",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "弱点追撃",
+     "lv": 1,
+     "effect": "弱点追撃+1",
+     "description": "モンスターの破壊された部位を攻撃すると、75%の確率で追加で4%分のダメージを与える。"
+    }
+   ]
+  }
+ ],
  "series": [
+  {
+   "name": "冒険団",
+   "gate": {
+    "type": "guild",
+    "lv": 1
+   },
+   "set": "冒険団の逆襲",
+   "pieces": [
+    {
+     "id": "u5192_u967a_u56e3_head",
+     "name": "冒険団ヘルム",
+     "part": "head",
+     "baseRarity": 5,
+     "maxRarity": 9,
+     "set": "冒険団の逆襲",
+     "orbTier": null,
+     "skills": [
+      {
+       "name": "冒険団の力・ヘルム",
+       "lv": 5,
+       "rarity": 5
+      },
+      {
+       "name": "復活",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "早食い術",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "冒険団の力・ヘルム",
+       "lv": 6,
+       "rarity": 6
+      }
+     ],
+     "materials": null,
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584300"
+    },
+    {
+     "id": "u5192_u967a_u56e3_body",
+     "name": "冒険団メイル",
+     "part": "body",
+     "baseRarity": 5,
+     "maxRarity": 9,
+     "set": "冒険団の逆襲",
+     "orbTier": null,
+     "skills": [
+      {
+       "name": "冒険団の力・メイル",
+       "lv": 5,
+       "rarity": 5
+      },
+      {
+       "name": "加護",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "早食い術",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "冒険団の力・メイル",
+       "lv": 6,
+       "rarity": 6
+      }
+     ],
+     "materials": null,
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584300"
+    },
+    {
+     "id": "u5192_u967a_u56e3_arm",
+     "name": "冒険団アーム",
+     "part": "arm",
+     "baseRarity": 5,
+     "maxRarity": 9,
+     "set": "冒険団の逆襲",
+     "orbTier": null,
+     "skills": [
+      {
+       "name": "冒険団の力・アーム",
+       "lv": 5,
+       "rarity": 5
+      },
+      {
+       "name": "加護",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "復活",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "冒険団の力・アーム",
+       "lv": 6,
+       "rarity": 6
+      }
+     ],
+     "materials": null,
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584300"
+    },
+    {
+     "id": "u5192_u967a_u56e3_waist",
+     "name": "冒険団コイル",
+     "part": "waist",
+     "baseRarity": 5,
+     "maxRarity": 9,
+     "set": "冒険団の逆襲",
+     "orbTier": null,
+     "skills": [
+      {
+       "name": "冒険団の力・コイル",
+       "lv": 5,
+       "rarity": 5
+      },
+      {
+       "name": "加護",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "のけぞり軽減",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "冒険団の力・コイル",
+       "lv": 6,
+       "rarity": 6
+      }
+     ],
+     "materials": null,
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584300"
+    },
+    {
+     "id": "u5192_u967a_u56e3_leg",
+     "name": "冒険団グリーブ",
+     "part": "leg",
+     "baseRarity": 5,
+     "maxRarity": 9,
+     "set": "冒険団の逆襲",
+     "orbTier": null,
+     "skills": [
+      {
+       "name": "冒険団の力・グリーブ",
+       "lv": 5,
+       "rarity": 5
+      },
+      {
+       "name": "早食い術",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "復活",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "冒険団の力・グリーブ",
+       "lv": 6,
+       "rarity": 6
+      }
+     ],
+     "materials": null,
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584300"
+    }
+   ]
+  },
+  {
+   "name": "ジャグラス",
+   "gate": {
+    "type": "monster",
+    "monsters": [
+     "ドスジャグラス"
+    ]
+   },
+   "set": "ドスジャグラスの抵抗",
+   "pieces": [
+    {
+     "id": "u30b8_u30e3_u30b0_u30e9_u30b9_head",
+     "name": "ジャグラスヘルム",
+     "part": "head",
+     "baseRarity": 1,
+     "maxRarity": 9,
+     "set": "ドスジャグラスの抵抗",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "気絶耐性",
+       "lv": 1,
+       "rarity": 1
+      },
+      {
+       "name": "弁当好き",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "怖いもの無し",
+       "lv": 1,
+       "rarity": 7
+      },
+      {
+       "name": "弁当好き",
+       "lv": 2,
+       "rarity": 9
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "賊竜の鱗Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "賊竜のたてがみⅠ",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584299"
+    },
+    {
+     "id": "u30b8_u30e3_u30b0_u30e9_u30b9_body",
+     "name": "ジャグラスメイル",
+     "part": "body",
+     "baseRarity": 1,
+     "maxRarity": 9,
+     "set": "ドスジャグラスの抵抗",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "怖いもの無し",
+       "lv": 1,
+       "rarity": 1
+      },
+      {
+       "name": "気絶耐性",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "威嚇",
+       "lv": 1,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "賊竜の鱗Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "賊竜の皮Ⅰ",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584299"
+    },
+    {
+     "id": "u30b8_u30e3_u30b0_u30e9_u30b9_arm",
+     "name": "ジャグラスアーム",
+     "part": "arm",
+     "baseRarity": 1,
+     "maxRarity": 9,
+     "set": "ドスジャグラスの抵抗",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "練気をまといし刃",
+       "lv": 1,
+       "rarity": 1
+      },
+      {
+       "name": "威嚇",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "練気をまといし刃",
+       "lv": 2,
+       "rarity": 7
+      },
+      {
+       "name": "徹底追撃",
+       "lv": 1,
+       "rarity": 9
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "賊竜の鱗Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "賊竜の爪Ⅰ",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584299"
+    },
+    {
+     "id": "u30b8_u30e3_u30b0_u30e9_u30b9_waist",
+     "name": "ジャグラスコイル",
+     "part": "waist",
+     "baseRarity": 1,
+     "maxRarity": 9,
+     "set": "ドスジャグラスの抵抗",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "抜刀一閃",
+       "lv": 1,
+       "rarity": 1
+      },
+      {
+       "name": "節約術",
+       "lv": 1,
+       "rarity": 5
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "賊竜の皮Ⅰ",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584299"
+    },
+    {
+     "id": "u30b8_u30e3_u30b0_u30e9_u30b9_leg",
+     "name": "ジャグラスグリーヴ",
+     "part": "leg",
+     "baseRarity": 1,
+     "maxRarity": 9,
+     "set": "ドスジャグラスの抵抗",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "弁当好き",
+       "lv": 1,
+       "rarity": 1
+      },
+      {
+       "name": "威嚇",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "逆境",
+       "lv": 1,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "賊竜の皮Ⅰ",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584299"
+    }
+   ]
+  },
+  {
+   "name": "クルル",
+   "gate": {
+    "type": "monster",
+    "monsters": [
+     "クルルヤック"
+    ]
+   },
+   "set": "クルルヤックの閃撃",
+   "pieces": [
+    {
+     "id": "u30af_u30eb_u30eb_head",
+     "name": "クルルヘルム",
+     "part": "head",
+     "baseRarity": 1,
+     "maxRarity": 9,
+     "set": "クルルヤックの閃撃",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "洞察",
+       "lv": 1,
+       "rarity": 1
+      },
+      {
+       "name": "剥ぎ取り名人",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "洞察",
+       "lv": 2,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "掻鳥の鱗Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "掻鳥のクチバシⅠ",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584298"
+    },
+    {
+     "id": "u30af_u30eb_u30eb_body",
+     "name": "クルルメイル",
+     "part": "body",
+     "baseRarity": 1,
+     "maxRarity": 9,
+     "set": "クルルヤックの閃撃",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "弱点攻撃",
+       "lv": 1,
+       "rarity": 1
+      },
+      {
+       "name": "火耐性強化",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "節約術",
+       "lv": 1,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "掻鳥の鱗Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "掻鳥の皮Ⅰ",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584298"
+    },
+    {
+     "id": "u30af_u30eb_u30eb_arm",
+     "name": "クルルアーム",
+     "part": "arm",
+     "baseRarity": 1,
+     "maxRarity": 9,
+     "set": "クルルヤックの閃撃",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "アイテム専門家",
+       "lv": 1,
+       "rarity": 1
+      },
+      {
+       "name": "洞察",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "復活",
+       "lv": 1,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "掻鳥の鱗Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "掻鳥の飾り羽Ⅰ",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584298"
+    },
+    {
+     "id": "u30af_u30eb_u30eb_waist",
+     "name": "クルルコイル",
+     "part": "waist",
+     "baseRarity": 1,
+     "maxRarity": 9,
+     "set": "クルルヤックの閃撃",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "火耐性強化",
+       "lv": 1,
+       "rarity": 1
+      },
+      {
+       "name": "連撃強化",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "連撃強化",
+       "lv": 2,
+       "rarity": 9
+      },
+      {
+       "name": "弱点攻撃",
+       "lv": 1,
+       "rarity": 9
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "掻鳥の皮Ⅰ",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584298"
+    },
+    {
+     "id": "u30af_u30eb_u30eb_leg",
+     "name": "クルルグリーヴ",
+     "part": "leg",
+     "baseRarity": 1,
+     "maxRarity": 9,
+     "set": "クルルヤックの閃撃",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "鬼人の修羅",
+       "lv": 1,
+       "rarity": 1
+      },
+      {
+       "name": "アイテム専門家",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "弱点攻撃",
+       "lv": 1,
+       "rarity": 7
+      },
+      {
+       "name": "鬼人の修羅",
+       "lv": 2,
+       "rarity": 9
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "掻鳥の皮Ⅰ",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584298"
+    }
+   ]
+  },
+  {
+   "name": "プケプケ",
+   "gate": {
+    "type": "monster",
+    "monsters": [
+     "プケプケ"
+    ]
+   },
+   "set": "プケプケの尻尾振り",
+   "pieces": [
+    {
+     "id": "u30d7_u30b1_u30d7_u30b1_head",
+     "name": "プケプケヘルム",
+     "part": "head",
+     "baseRarity": 1,
+     "maxRarity": 9,
+     "set": "プケプケの尻尾振り",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "弾導強化",
+       "lv": 1,
+       "rarity": 1
+      },
+      {
+       "name": "弓スキル強化",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "植物専門家",
+       "lv": 1,
+       "rarity": 7
+      },
+      {
+       "name": "弓スキル強化",
+       "lv": 2,
+       "rarity": 9
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "毒妖鳥の鱗Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "毒妖鳥の喉袋Ⅰ",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584297"
+    },
+    {
+     "id": "u30d7_u30b1_u30d7_u30b1_body",
+     "name": "プケプケメイル",
+     "part": "body",
+     "baseRarity": 1,
+     "maxRarity": 9,
+     "set": "プケプケの尻尾振り",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "溜め強射",
+       "lv": 1,
+       "rarity": 1
+      },
+      {
+       "name": "環境の活用",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "植物専門家",
+       "lv": 1,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "毒妖鳥の鱗Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "毒妖鳥の甲殻Ⅰ",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584297"
+    },
+    {
+     "id": "u30d7_u30b1_u30d7_u30b1_arm",
+     "name": "プケプケアーム",
+     "part": "arm",
+     "baseRarity": 1,
+     "maxRarity": 9,
+     "set": "プケプケの尻尾振り",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "闘志",
+       "lv": 1,
+       "rarity": 1
+      },
+      {
+       "name": "毒耐性",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "環境の活用",
+       "lv": 1,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "毒妖鳥の鱗Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "毒妖鳥の羽根Ⅰ",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584297"
+    },
+    {
+     "id": "u30d7_u30b1_u30d7_u30b1_waist",
+     "name": "プケプケコイル",
+     "part": "waist",
+     "baseRarity": 1,
+     "maxRarity": 9,
+     "set": "プケプケの尻尾振り",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "毒耐性",
+       "lv": 1,
+       "rarity": 1
+      },
+      {
+       "name": "溜め強射",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "溜め強射",
+       "lv": 2,
+       "rarity": 7
+      },
+      {
+       "name": "溜め強射",
+       "lv": 3,
+       "rarity": 9
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "毒妖鳥の甲殻Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "毒妖鳥の尻尾Ⅰ",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584297"
+    },
+    {
+     "id": "u30d7_u30b1_u30d7_u30b1_leg",
+     "name": "プケプケグリーヴ",
+     "part": "leg",
+     "baseRarity": 1,
+     "maxRarity": 9,
+     "set": "プケプケの尻尾振り",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "闘志",
+       "lv": 1,
+       "rarity": 1
+      },
+      {
+       "name": "植物専門家",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "環境の活用",
+       "lv": 1,
+       "rarity": 7
+      },
+      {
+       "name": "環境の活用",
+       "lv": 1,
+       "rarity": 9
+      },
+      {
+       "name": "植物専門家",
+       "lv": 1,
+       "rarity": 9
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "毒妖鳥の甲殻Ⅰ",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584297"
+    }
+   ]
+  },
+  {
+   "name": "アロイ",
+   "gate": {
+    "type": "basic"
+   },
+   "set": "合金の風障",
+   "pieces": [
+    {
+     "id": "u30a2_u30ed_u30a4_head",
+     "name": "アロイヘルム",
+     "part": "head",
+     "baseRarity": 3,
+     "maxRarity": 9,
+     "set": "合金の風障",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "水耐性強化",
+       "lv": 1,
+       "rarity": 3
+      },
+      {
+       "name": "防御反撃",
+       "lv": 1,
+       "rarity": 6
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "大地の結晶",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584296"
+    },
+    {
+     "id": "u30a2_u30ed_u30a4_body",
+     "name": "アロイメイル",
+     "part": "body",
+     "baseRarity": 3,
+     "maxRarity": 9,
+     "set": "合金の風障",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "剛勢",
+       "lv": 1,
+       "rarity": 3
+      },
+      {
+       "name": "破壊王",
+       "lv": 1,
+       "rarity": 6
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "マカライト鉱石",
+       "qty": 1
+      },
+      {
+       "name": "大地の結晶",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584296"
+    },
+    {
+     "id": "u30a2_u30ed_u30a4_arm",
+     "name": "アロイアーム",
+     "part": "arm",
+     "baseRarity": 3,
+     "maxRarity": 9,
+     "set": "合金の風障",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "風圧耐性",
+       "lv": 1,
+       "rarity": 3
+      },
+      {
+       "name": "防護",
+       "lv": 1,
+       "rarity": 6
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "大地の結晶",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584296"
+    },
+    {
+     "id": "u30a2_u30ed_u30a4_waist",
+     "name": "アロイコイル",
+     "part": "waist",
+     "baseRarity": 3,
+     "maxRarity": 9,
+     "set": "合金の風障",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "風圧耐性",
+       "lv": 1,
+       "rarity": 3
+      },
+      {
+       "name": "剛勢",
+       "lv": 1,
+       "rarity": 6
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "マカライト鉱石",
+       "qty": 1
+      },
+      {
+       "name": "鉄鉱石",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584296"
+    },
+    {
+     "id": "u30a2_u30ed_u30a4_leg",
+     "name": "アロイグリーヴ",
+     "part": "leg",
+     "baseRarity": 3,
+     "maxRarity": 9,
+     "set": "合金の風障",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "防御反撃",
+       "lv": 1,
+       "rarity": 3
+      },
+      {
+       "name": "防護",
+       "lv": 1,
+       "rarity": 6
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "マカライト鉱石",
+       "qty": 1
+      },
+      {
+       "name": "鉄鉱石",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584296"
+    }
+   ]
+  },
+  {
+   "name": "ギルオス",
+   "gate": {
+    "type": "monster",
+    "monsters": [
+     "ドスギルオス"
+    ]
+   },
+   "set": "痺賊竜の不意打ち",
+   "pieces": [
+    {
+     "id": "u30ae_u30eb_u30aa_u30b9_head",
+     "name": "ギルオスヘルム",
+     "part": "head",
+     "baseRarity": 2,
+     "maxRarity": 9,
+     "set": "痺賊竜の不意打ち",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "会心撃【属性】",
+       "lv": 1,
+       "rarity": 2
+      },
+      {
+       "name": "麻痺耐性",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "会心撃【属性】",
+       "lv": 2,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "痺賊竜の鱗Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "痺賊竜の牙Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "痺賊竜の頭巾殻Ⅰ",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584295"
+    },
+    {
+     "id": "u30ae_u30eb_u30aa_u30b9_body",
+     "name": "ギルオスメイル",
+     "part": "body",
+     "baseRarity": 2,
+     "maxRarity": 9,
+     "set": "痺賊竜の不意打ち",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "雷属性ダメージUP",
+       "lv": 1,
+       "rarity": 2
+      },
+      {
+       "name": "環境の活用",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "体力強化",
+       "lv": 1,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "痺賊竜の皮Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "痺賊竜の牙Ⅰ",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584295"
+    },
+    {
+     "id": "u30ae_u30eb_u30aa_u30b9_arm",
+     "name": "ギルオスアーム",
+     "part": "arm",
+     "baseRarity": 2,
+     "maxRarity": 9,
+     "set": "痺賊竜の不意打ち",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "雷属性ダメージUP",
+       "lv": 1,
+       "rarity": 2
+      },
+      {
+       "name": "威嚇",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "雷属性ダメージUP",
+       "lv": 2,
+       "rarity": 7
+      },
+      {
+       "name": "ポテンシャル解放",
+       "lv": 1,
+       "rarity": 9
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "痺賊竜の鱗Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "痺賊竜の皮Ⅰ",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584295"
+    },
+    {
+     "id": "u30ae_u30eb_u30aa_u30b9_waist",
+     "name": "ギルオスコイル",
+     "part": "waist",
+     "baseRarity": 2,
+     "maxRarity": 9,
+     "set": "痺賊竜の不意打ち",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "徹底追撃",
+       "lv": 1,
+       "rarity": 2
+      },
+      {
+       "name": "オトモ強化",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "徹底追撃",
+       "lv": 2,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "痺賊竜の鱗Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "痺賊竜の牙Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "痺賊竜の頭巾殻Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "痺賊竜の尻尾Ⅰ",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584295"
+    },
+    {
+     "id": "u30ae_u30eb_u30aa_u30b9_leg",
+     "name": "ギルオスグリーヴ",
+     "part": "leg",
+     "baseRarity": 2,
+     "maxRarity": 9,
+     "set": "痺賊竜の不意打ち",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "会心撃【属性】",
+       "lv": 1,
+       "rarity": 2
+      },
+      {
+       "name": "麻痺耐性",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "体力強化",
+       "lv": 1,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "痺賊竜の鱗Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "痺賊竜の皮Ⅰ",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584295"
+    }
+   ]
+  },
+  {
+   "name": "ジュラ",
+   "gate": {
+    "type": "monster",
+    "monsters": [
+     "ジュラトドス"
+    ]
+   },
+   "set": "泥魚竜の水御",
+   "pieces": [
+    {
+     "id": "u30b8_u30e5_u30e9_head",
+     "name": "ジュラヘルム",
+     "part": "head",
+     "baseRarity": 2,
+     "maxRarity": 9,
+     "set": "泥魚竜の水御",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "ポテンシャル解放",
+       "lv": 1,
+       "rarity": 2
+      },
+      {
+       "name": "水属性ダメージUP",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "体力回復",
+       "lv": 1,
+       "rarity": 7
+      },
+      {
+       "name": "水属性ダメージUP",
+       "lv": 2,
+       "rarity": 9
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "泥魚竜の鱗Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "泥魚竜の牙Ⅰ",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584294"
+    },
+    {
+     "id": "u30b8_u30e5_u30e9_body",
+     "name": "ジュラメイル",
+     "part": "body",
+     "baseRarity": 2,
+     "maxRarity": 9,
+     "set": "泥魚竜の水御",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "水属性ダメージUP",
+       "lv": 1,
+       "rarity": 2
+      },
+      {
+       "name": "氷耐性強化",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "体力強化",
+       "lv": 1,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "泥魚竜の鱗Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "泥魚竜の甲殻Ⅰ",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584294"
+    },
+    {
+     "id": "u30b8_u30e5_u30e9_arm",
+     "name": "ジュラアーム",
+     "part": "arm",
+     "baseRarity": 2,
+     "maxRarity": 9,
+     "set": "泥魚竜の水御",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "ポテンシャル解放",
+       "lv": 1,
+       "rarity": 2
+      },
+      {
+       "name": "チャージ準備",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "氷耐性強化",
+       "lv": 1,
+       "rarity": 7
+      },
+      {
+       "name": "チャージ準備",
+       "lv": 2,
+       "rarity": 9
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "泥魚竜の甲殻Ⅰ",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584294"
+    },
+    {
+     "id": "u30b8_u30e5_u30e9_waist",
+     "name": "ジュラコイル",
+     "part": "waist",
+     "baseRarity": 2,
+     "maxRarity": 9,
+     "set": "泥魚竜の水御",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "チャージ準備",
+       "lv": 1,
+       "rarity": 2
+      },
+      {
+       "name": "氷耐性強化",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "体力回復",
+       "lv": 1,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "泥魚竜の甲殻Ⅰ",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584294"
+    },
+    {
+     "id": "u30b8_u30e5_u30e9_leg",
+     "name": "ジュラグリーヴ",
+     "part": "leg",
+     "baseRarity": 2,
+     "maxRarity": 9,
+     "set": "泥魚竜の水御",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "ポテンシャル解放",
+       "lv": 1,
+       "rarity": 2
+      },
+      {
+       "name": "制圧回復",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "体力回復",
+       "lv": 1,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "泥魚竜の鱗Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "泥魚竜のヒレⅠ",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584294"
+    }
+   ]
+  },
+  {
+   "name": "ボロス",
+   "gate": {
+    "type": "monster",
+    "monsters": [
+     "ボルボロス"
+    ]
+   },
+   "set": "土砂竜の泥障",
+   "pieces": [
+    {
+     "id": "u30dc_u30ed_u30b9_head",
+     "name": "ボロスヘルム",
+     "part": "head",
+     "baseRarity": 2,
+     "maxRarity": 9,
+     "set": "土砂竜の泥障",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "闘志",
+       "lv": 1,
+       "rarity": 2
+      },
+      {
+       "name": "剛勢",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "剛勢",
+       "lv": 2,
+       "rarity": 7
+      },
+      {
+       "name": "気絶耐性",
+       "lv": 1,
+       "rarity": 9
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "土砂竜の甲殻Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "土砂竜の頭殻Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "土砂竜の爪Ⅰ",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584293"
+    },
+    {
+     "id": "u30dc_u30ed_u30b9_body",
+     "name": "ボロスメイル",
+     "part": "body",
+     "baseRarity": 2,
+     "maxRarity": 9,
+     "set": "土砂竜の泥障",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "闘志",
+       "lv": 1,
+       "rarity": 2
+      },
+      {
+       "name": "貫突",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "貫突",
+       "lv": 2,
+       "rarity": 7
+      },
+      {
+       "name": "防護",
+       "lv": 1,
+       "rarity": 9
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "土砂竜の背甲Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "土砂竜の頭殻Ⅰ",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584293"
+    },
+    {
+     "id": "u30dc_u30ed_u30b9_arm",
+     "name": "ボロスアーム",
+     "part": "arm",
+     "baseRarity": 2,
+     "maxRarity": 9,
+     "set": "土砂竜の泥障",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "気絶耐性",
+       "lv": 1,
+       "rarity": 2
+      },
+      {
+       "name": "ガードテクニック",
+       "lv": 1,
+       "rarity": 5
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "土砂竜の甲殻Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "土砂竜の頭殻Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "土砂竜の爪Ⅰ",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584293"
+    },
+    {
+     "id": "u30dc_u30ed_u30b9_waist",
+     "name": "ボロスコイル",
+     "part": "waist",
+     "baseRarity": 2,
+     "maxRarity": 9,
+     "set": "土砂竜の泥障",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "剛勢",
+       "lv": 1,
+       "rarity": 2
+      },
+      {
+       "name": "防護",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "防護",
+       "lv": 2,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "土砂竜の甲殻Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "土砂竜の背甲Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "土砂竜の尻尾Ⅰ",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584293"
+    },
+    {
+     "id": "u30dc_u30ed_u30b9_leg",
+     "name": "ボロスグリーヴ",
+     "part": "leg",
+     "baseRarity": 2,
+     "maxRarity": 9,
+     "set": "土砂竜の泥障",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "闘志",
+       "lv": 1,
+       "rarity": 2
+      },
+      {
+       "name": "ガードテクニック",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "防護",
+       "lv": 1,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "土砂竜の甲殻Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "土砂竜の背甲Ⅰ",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584293"
+    }
+   ]
+  },
+  {
+   "name": "チェーン",
+   "gate": {
+    "type": "basic"
+   },
+   "set": "寒鉄錬成",
+   "pieces": [
+    {
+     "id": "u30c1_u30a7_u30fc_u30f3_head",
+     "name": "チェーンヘッド",
+     "part": "head",
+     "baseRarity": 1,
+     "maxRarity": 9,
+     "set": "寒鉄錬成",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "氷属性ダメージUP",
+       "lv": 1,
+       "rarity": 1
+      },
+      {
+       "name": "水耐性強化",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "体力回復",
+       "lv": 1,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584292"
+    },
+    {
+     "id": "u30c1_u30a7_u30fc_u30f3_body",
+     "name": "チェーンベスト",
+     "part": "body",
+     "baseRarity": 1,
+     "maxRarity": 9,
+     "set": "寒鉄錬成",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "水耐性強化",
+       "lv": 1,
+       "rarity": 1
+      },
+      {
+       "name": "ガードテクニック",
+       "lv": 1,
+       "rarity": 5
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "鉄鉱石",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584292"
+    },
+    {
+     "id": "u30c1_u30a7_u30fc_u30f3_arm",
+     "name": "チェーングラブ",
+     "part": "arm",
+     "baseRarity": 1,
+     "maxRarity": 9,
+     "set": "寒鉄錬成",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "溜め強化",
+       "lv": 1,
+       "rarity": 1
+      },
+      {
+       "name": "水耐性強化",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "ガードテクニック",
+       "lv": 1,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584292"
+    },
+    {
+     "id": "u30c1_u30a7_u30fc_u30f3_waist",
+     "name": "チェーンベルト",
+     "part": "waist",
+     "baseRarity": 1,
+     "maxRarity": 9,
+     "set": "寒鉄錬成",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "ポテンシャル解放",
+       "lv": 1,
+       "rarity": 1
+      },
+      {
+       "name": "氷属性ダメージUP",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "氷属性ダメージUP",
+       "lv": 2,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "鉄鉱石",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584292"
+    },
+    {
+     "id": "u30c1_u30a7_u30fc_u30f3_leg",
+     "name": "チェーンパンツ",
+     "part": "leg",
+     "baseRarity": 1,
+     "maxRarity": 9,
+     "set": "寒鉄錬成",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "威震",
+       "lv": 1,
+       "rarity": 1
+      },
+      {
+       "name": "体力回復",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "威震",
+       "lv": 2,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "鉄鉱石",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584292"
+    }
+   ]
+  },
+  {
+   "name": "ボーン",
+   "gate": {
+    "type": "basic"
+   },
+   "set": "竜塚の神秘",
+   "pieces": [
+    {
+     "id": "u30dc_u30fc_u30f3_head",
+     "name": "ボーンヘルム",
+     "part": "head",
+     "baseRarity": 2,
+     "maxRarity": 9,
+     "set": "竜塚の神秘",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "変形強化",
+       "lv": 1,
+       "rarity": 2
+      },
+      {
+       "name": "体力強化",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "変形強化",
+       "lv": 2,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "竜骨【小】",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584291"
+    },
+    {
+     "id": "u30dc_u30fc_u30f3_body",
+     "name": "ボーンメイル",
+     "part": "body",
+     "baseRarity": 2,
+     "maxRarity": 9,
+     "set": "竜塚の神秘",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "龍属性ダメージUP",
+       "lv": 1,
+       "rarity": 2
+      },
+      {
+       "name": "体力回復",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "体力強化",
+       "lv": 1,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "竜骨【小】",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584291"
+    },
+    {
+     "id": "u30dc_u30fc_u30f3_arm",
+     "name": "ボーンアーム",
+     "part": "arm",
+     "baseRarity": 2,
+     "maxRarity": 9,
+     "set": "竜塚の神秘",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "破壊王",
+       "lv": 1,
+       "rarity": 2
+      },
+      {
+       "name": "標本の達人",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "体力回復",
+       "lv": 1,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "竜骨【小】",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584291"
+    },
+    {
+     "id": "u30dc_u30fc_u30f3_waist",
+     "name": "ボーンコイル",
+     "part": "waist",
+     "baseRarity": 2,
+     "maxRarity": 9,
+     "set": "竜塚の神秘",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "標本の達人",
+       "lv": 1,
+       "rarity": 2
+      },
+      {
+       "name": "体力強化",
+       "lv": 1,
+       "rarity": 5
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "竜骨【小】",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584291"
+    },
+    {
+     "id": "u30dc_u30fc_u30f3_leg",
+     "name": "ボーングリーヴ",
+     "part": "leg",
+     "baseRarity": 2,
+     "maxRarity": 9,
+     "set": "竜塚の神秘",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "気絶耐性",
+       "lv": 1,
+       "rarity": 2
+      },
+      {
+       "name": "龍属性ダメージUP",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "龍属性ダメージUP",
+       "lv": 2,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "竜骨【小】",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584291"
+    }
+   ]
+  },
+  {
+   "name": "ランゴ",
+   "gate": {
+    "type": "basic"
+   },
+   "set": "巨峰の絶縁",
+   "pieces": [
+    {
+     "id": "u30e9_u30f3_u30b4_head",
+     "name": "ランゴヘルム",
+     "part": "head",
+     "baseRarity": 2,
+     "maxRarity": 9,
+     "set": "巨峰の絶縁",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "麻痺耐性",
+       "lv": 1,
+       "rarity": 2
+      },
+      {
+       "name": "風圧耐性",
+       "lv": 1,
+       "rarity": 5
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "ランゴスタの甲殻",
+       "qty": 1
+      },
+      {
+       "name": "ランゴスタの羽",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584290"
+    },
+    {
+     "id": "u30e9_u30f3_u30b4_body",
+     "name": "ランゴメイル",
+     "part": "body",
+     "baseRarity": 2,
+     "maxRarity": 9,
+     "set": "巨峰の絶縁",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "会心撃【属性】",
+       "lv": 1,
+       "rarity": 2
+      },
+      {
+       "name": "体力強化",
+       "lv": 1,
+       "rarity": 5
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "ランゴスタの羽",
+       "qty": 1
+      },
+      {
+       "name": "鉄鉱石",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584290"
+    },
+    {
+     "id": "u30e9_u30f3_u30b4_arm",
+     "name": "ランゴアーム",
+     "part": "arm",
+     "baseRarity": 2,
+     "maxRarity": 9,
+     "set": "巨峰の絶縁",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "麻痺耐性",
+       "lv": 1,
+       "rarity": 2
+      },
+      {
+       "name": "回避強化",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "洞察",
+       "lv": 1,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "ランゴスタの甲殻",
+       "qty": 1
+      },
+      {
+       "name": "ランゴスタの羽",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584290"
+    },
+    {
+     "id": "u30e9_u30f3_u30b4_waist",
+     "name": "ランゴコイル",
+     "part": "waist",
+     "baseRarity": 2,
+     "maxRarity": 9,
+     "set": "巨峰の絶縁",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "会心撃【属性】",
+       "lv": 1,
+       "rarity": 2
+      },
+      {
+       "name": "麻痺耐性",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "ハニーハンター",
+       "lv": 1,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "ランゴスタの甲殻",
+       "qty": 1
+      },
+      {
+       "name": "鉄鉱石",
+       "qty": 1
+      },
+      {
+       "name": "モンスターの体液",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584290"
+    },
+    {
+     "id": "u30e9_u30f3_u30b4_leg",
+     "name": "ランゴグリーヴ",
+     "part": "leg",
+     "baseRarity": 2,
+     "maxRarity": 9,
+     "set": "巨峰の絶縁",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "回避強化",
+       "lv": 1,
+       "rarity": 2
+      },
+      {
+       "name": "体力強化",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "風圧耐性",
+       "lv": 1,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "ランゴスタの甲殻",
+       "qty": 1
+      },
+      {
+       "name": "鉄鉱石",
+       "qty": 1
+      },
+      {
+       "name": "モンスターの体液",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584290"
+    }
+   ]
+  },
+  {
+   "name": "ジャナフ",
+   "gate": {
+    "type": "monster",
+    "monsters": [
+     "アンジャナフ"
+    ]
+   },
+   "set": "蛮顎竜の灼炎",
+   "pieces": [
+    {
+     "id": "u30b8_u30e3_u30ca_u30d5_head",
+     "name": "ジャナフヘルム",
+     "part": "head",
+     "baseRarity": 3,
+     "maxRarity": 9,
+     "set": "蛮顎竜の灼炎",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "弱点追撃",
+       "lv": 1,
+       "rarity": 3
+      },
+      {
+       "name": "破砕",
+       "lv": 1,
+       "rarity": 6
+      },
+      {
+       "name": "早食い術",
+       "lv": 1,
+       "rarity": 8
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "蛮顎竜の鱗Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "蛮顎竜の牙Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "蛮顎竜の鼻甲Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "蛮顎竜の逆鱗Ⅰ",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584289"
+    },
+    {
+     "id": "u30b8_u30e3_u30ca_u30d5_body",
+     "name": "ジャナフメイル",
+     "part": "body",
+     "baseRarity": 3,
+     "maxRarity": 9,
+     "set": "蛮顎竜の灼炎",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "火耐性強化",
+       "lv": 1,
+       "rarity": 3
+      },
+      {
+       "name": "溜め強化",
+       "lv": 1,
+       "rarity": 6
+      },
+      {
+       "name": "弱点追撃",
+       "lv": 1,
+       "rarity": 8
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "蛮顎竜の毛皮Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "蛮顎竜の牙Ⅰ",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584289"
+    },
+    {
+     "id": "u30b8_u30e3_u30ca_u30d5_arm",
+     "name": "ジャナフアーム",
+     "part": "arm",
+     "baseRarity": 3,
+     "maxRarity": 9,
+     "set": "蛮顎竜の灼炎",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "弱点追撃",
+       "lv": 1,
+       "rarity": 3
+      },
+      {
+       "name": "体力ループ",
+       "lv": 1,
+       "rarity": 6
+      },
+      {
+       "name": "早食い術",
+       "lv": 1,
+       "rarity": 8
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "蛮顎竜の鱗Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "蛮顎竜の毛皮Ⅰ",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584289"
+    },
+    {
+     "id": "u30b8_u30e3_u30ca_u30d5_waist",
+     "name": "ジャナフコイル",
+     "part": "waist",
+     "baseRarity": 3,
+     "maxRarity": 9,
+     "set": "蛮顎竜の灼炎",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "火属性ダメージUP",
+       "lv": 1,
+       "rarity": 3
+      },
+      {
+       "name": "体力ループ",
+       "lv": 1,
+       "rarity": 6
+      },
+      {
+       "name": "火属性ダメージUP",
+       "lv": 2,
+       "rarity": 8
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "蛮顎竜の鱗Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "蛮顎竜の牙Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "蛮顎竜の鼻甲Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "蛮顎竜の尻尾Ⅰ",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584289"
+    },
+    {
+     "id": "u30b8_u30e3_u30ca_u30d5_leg",
+     "name": "ジャナフグリーヴ",
+     "part": "leg",
+     "baseRarity": 3,
+     "maxRarity": 9,
+     "set": "蛮顎竜の灼炎",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "火属性ダメージUP",
+       "lv": 1,
+       "rarity": 3
+      },
+      {
+       "name": "体力ループ",
+       "lv": 1,
+       "rarity": 6
+      },
+      {
+       "name": "逆境",
+       "lv": 1,
+       "rarity": 8
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "蛮顎竜の鱗Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "蛮顎竜の毛皮Ⅰ",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584289"
+    }
+   ]
+  },
+  {
+   "name": "融光種レイア",
+   "gate": {
+    "type": "monster",
+    "monsters": [
+     "融光種リオレイア"
+    ]
+   },
+   "set": "雌火竜の感応",
+   "pieces": [
+    {
+     "id": "u878d_u5149_u7a2e_u30ec_u30a4_u30a2_head",
+     "name": "融光種レイアヘルム",
+     "part": "head",
+     "baseRarity": 3,
+     "maxRarity": 9,
+     "set": "雌火竜の感応",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "復活",
+       "lv": 1,
+       "rarity": 3
+      },
+      {
+       "name": "抜刀一閃",
+       "lv": 1,
+       "rarity": 6
+      },
+      {
+       "name": "抜刀一閃",
+       "lv": 2,
+       "rarity": 8
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "融光種雌火竜の甲殻Ⅰ",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584288"
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30ec_u30a4_u30a2_body",
+     "name": "融光種レイアメイル",
+     "part": "body",
+     "baseRarity": 3,
+     "maxRarity": 9,
+     "set": "雌火竜の感応",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "融光感知",
+       "lv": 1,
+       "rarity": 3
+      },
+      {
+       "name": "練気をまといし刃",
+       "lv": 1,
+       "rarity": 6
+      },
+      {
+       "name": "復活",
+       "lv": 1,
+       "rarity": 8
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "融光種雌火竜の鱗Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "融光種雌火竜の甲殻Ⅰ",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584288"
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30ec_u30a4_u30a2_arm",
+     "name": "融光種レイアアーム",
+     "part": "arm",
+     "baseRarity": 3,
+     "maxRarity": 9,
+     "set": "雌火竜の感応",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "滞空",
+       "lv": 1,
+       "rarity": 3
+      },
+      {
+       "name": "体力強化",
+       "lv": 1,
+       "rarity": 6
+      },
+      {
+       "name": "毒耐性",
+       "lv": 1,
+       "rarity": 8
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "融光種雌火竜の鱗Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "融光種雌火竜の翼膜Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "融光種雌火竜の逆鱗Ⅰ",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584288"
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30ec_u30a4_u30a2_waist",
+     "name": "融光種レイアコイル",
+     "part": "waist",
+     "baseRarity": 3,
+     "maxRarity": 9,
+     "set": "雌火竜の感応",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "融光感知",
+       "lv": 1,
+       "rarity": 3
+      },
+      {
+       "name": "体力強化",
+       "lv": 1,
+       "rarity": 6
+      },
+      {
+       "name": "植物専門家",
+       "lv": 1,
+       "rarity": 8
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "融光種雌火竜の鱗Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "融光種雌火竜の翼膜Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "融光種雌火竜の棘Ⅰ",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584288"
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30ec_u30a4_u30a2_leg",
+     "name": "融光種レイアグリーヴ",
+     "part": "leg",
+     "baseRarity": 3,
+     "maxRarity": 9,
+     "set": "雌火竜の感応",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "抜刀一閃",
+       "lv": 1,
+       "rarity": 3
+      },
+      {
+       "name": "狩人の第六感",
+       "lv": 1,
+       "rarity": 6
+      },
+      {
+       "name": "植物専門家",
+       "lv": 1,
+       "rarity": 8
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "融光種雌火竜の甲殻Ⅰ",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584288"
+    }
+   ]
+  },
+  {
+   "name": "融光種ジャグラス",
+   "gate": {
+    "type": "monster",
+    "monsters": [
+     "融光種ドスジャグラス"
+    ]
+   },
+   "set": "賊竜の回避",
+   "pieces": [
+    {
+     "id": "u878d_u5149_u7a2e_u30b8_u30e3_u30b0_u30e_head",
+     "name": "融光種ジャグラスヘルム",
+     "part": "head",
+     "baseRarity": 4,
+     "maxRarity": 9,
+     "set": "賊竜の回避",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "チャージ準備",
+       "lv": 1,
+       "rarity": 4
+      },
+      {
+       "name": "破壊王",
+       "lv": 1,
+       "rarity": 5
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "融光種賊竜の鱗Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "融光種賊竜のたてがみⅠ",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584287"
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30b8_u30e3_u30b0_u30e_body",
+     "name": "融光種ジャグラスメイル",
+     "part": "body",
+     "baseRarity": 4,
+     "maxRarity": 9,
+     "set": "賊竜の回避",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "チャージ準備",
+       "lv": 1,
+       "rarity": 4
+      },
+      {
+       "name": "気絶耐性",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "チャージ準備",
+       "lv": 2,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "融光種賊竜の鱗Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "融光種賊竜の皮Ⅰ",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584287"
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30b8_u30e3_u30b0_u30e_arm",
+     "name": "融光種ジャグラスアーム",
+     "part": "arm",
+     "baseRarity": 4,
+     "maxRarity": 9,
+     "set": "賊竜の回避",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "洞察",
+       "lv": 1,
+       "rarity": 4
+      },
+      {
+       "name": "弁当好き",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "洞察",
+       "lv": 2,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "融光種賊竜の鱗Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "融光種賊竜の爪Ⅰ",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584287"
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30b8_u30e3_u30b0_u30e_waist",
+     "name": "融光種ジャグラスコイル",
+     "part": "waist",
+     "baseRarity": 4,
+     "maxRarity": 9,
+     "set": "賊竜の回避",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "弁当好き",
+       "lv": 1,
+       "rarity": 4
+      },
+      {
+       "name": "節約術",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "弁当好き",
+       "lv": 2,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "融光種賊竜の皮Ⅰ",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584287"
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30b8_u30e3_u30b0_u30e_leg",
+     "name": "融光種ジャグラスグリーヴ",
+     "part": "leg",
+     "baseRarity": 4,
+     "maxRarity": 9,
+     "set": "賊竜の回避",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "破壊王",
+       "lv": 1,
+       "rarity": 4
+      },
+      {
+       "name": "気絶耐性",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "節約術",
+       "lv": 1,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "融光種賊竜の皮Ⅰ",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584287"
+    }
+   ]
+  },
+  {
+   "name": "融光種プケプケ",
+   "gate": {
+    "type": "monster",
+    "monsters": [
+     "融光種プケプケ"
+    ]
+   },
+   "set": "毒妖鳥の縄張り",
+   "pieces": [
+    {
+     "id": "u878d_u5149_u7a2e_u30d7_u30b1_u30d7_u30b_head",
+     "name": "融光種プケプケヘルム",
+     "part": "head",
+     "baseRarity": 4,
+     "maxRarity": 9,
+     "set": "毒妖鳥の縄張り",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "溜め強射",
+       "lv": 1,
+       "rarity": 4
+      },
+      {
+       "name": "環境の活用",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "溜め強射",
+       "lv": 2,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "融光種毒妖鳥の鱗Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "融光種毒妖鳥の喉袋Ⅰ",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584286"
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30d7_u30b1_u30d7_u30b_body",
+     "name": "融光種プケプケメイル",
+     "part": "body",
+     "baseRarity": 4,
+     "maxRarity": 9,
+     "set": "毒妖鳥の縄張り",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "弓スキル強化",
+       "lv": 1,
+       "rarity": 4
+      },
+      {
+       "name": "制圧回復",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "狩人の第六感",
+       "lv": 1,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "融光種毒妖鳥の鱗Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "融光種毒妖鳥の甲殻Ⅰ",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584286"
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30d7_u30b1_u30d7_u30b_arm",
+     "name": "融光種プケプケアーム",
+     "part": "arm",
+     "baseRarity": 4,
+     "maxRarity": 9,
+     "set": "毒妖鳥の縄張り",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "狩人の第六感",
+       "lv": 1,
+       "rarity": 4
+      },
+      {
+       "name": "アイテム専門家",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "制圧回復",
+       "lv": 1,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "融光種毒妖鳥の鱗Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "融光種毒妖鳥の羽根Ⅰ",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584286"
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30d7_u30b1_u30d7_u30b_waist",
+     "name": "融光種プケプケコイル",
+     "part": "waist",
+     "baseRarity": 4,
+     "maxRarity": 9,
+     "set": "毒妖鳥の縄張り",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "狩人の第六感",
+       "lv": 1,
+       "rarity": 4
+      },
+      {
+       "name": "気力変換",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "アイテム専門家",
+       "lv": 1,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "融光種毒妖鳥の甲殻Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "融光種毒妖鳥の尻尾Ⅰ",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584286"
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30d7_u30b1_u30d7_u30b_leg",
+     "name": "融光種プケプケグリーヴ",
+     "part": "leg",
+     "baseRarity": 4,
+     "maxRarity": 9,
+     "set": "毒妖鳥の縄張り",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "弓スキル強化",
+       "lv": 1,
+       "rarity": 4
+      },
+      {
+       "name": "環境の活用",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "無垢",
+       "lv": 1,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "融光種毒妖鳥の甲殻Ⅰ",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584286"
+    }
+   ]
+  },
+  {
+   "name": "パピメル",
+   "gate": {
+    "type": "basic"
+   },
+   "set": "花蝶の親和",
+   "pieces": [
+    {
+     "id": "u30d1_u30d4_u30e1_u30eb_head",
+     "name": "パピメルテスタ",
+     "part": "head",
+     "baseRarity": 4,
+     "maxRarity": 9,
+     "set": "花蝶の親和",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "滞空",
+       "lv": 1,
+       "rarity": 4
+      },
+      {
+       "name": "洞察",
+       "lv": 1,
+       "rarity": 6
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "マカライト鉱石",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/582574"
+    },
+    {
+     "id": "u30d1_u30d4_u30e1_u30eb_body",
+     "name": "パピメルペット",
+     "part": "body",
+     "baseRarity": 4,
+     "maxRarity": 9,
+     "set": "花蝶の親和",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "回避強化",
+       "lv": 1,
+       "rarity": 4
+      },
+      {
+       "name": "洞察",
+       "lv": 1,
+       "rarity": 6
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "モンスターの体液",
+       "qty": 1
+      },
+      {
+       "name": "マカライト鉱石",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/582574"
+    },
+    {
+     "id": "u30d1_u30d4_u30e1_u30eb_arm",
+     "name": "パピメルマーノ",
+     "part": "arm",
+     "baseRarity": 4,
+     "maxRarity": 9,
+     "set": "花蝶の親和",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "睡眠耐性",
+       "lv": 1,
+       "rarity": 4
+      },
+      {
+       "name": "回避強化",
+       "lv": 1,
+       "rarity": 6
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "マカライト鉱石",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/582574"
+    },
+    {
+     "id": "u30d1_u30d4_u30e1_u30eb_waist",
+     "name": "パピメルアンカ",
+     "part": "waist",
+     "baseRarity": 4,
+     "maxRarity": 9,
+     "set": "花蝶の親和",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "睡眠耐性",
+       "lv": 1,
+       "rarity": 4
+      },
+      {
+       "name": "ハニーハンター",
+       "lv": 1,
+       "rarity": 6
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "モンスターの体液",
+       "qty": 1
+      },
+      {
+       "name": "ランゴスタの甲殻",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/582574"
+    },
+    {
+     "id": "u30d1_u30d4_u30e1_u30eb_leg",
+     "name": "パピメルガンバ",
+     "part": "leg",
+     "baseRarity": 4,
+     "maxRarity": 9,
+     "set": "花蝶の親和",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "滞空",
+       "lv": 1,
+       "rarity": 4
+      },
+      {
+       "name": "弾導強化",
+       "lv": 1,
+       "rarity": 6
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "モンスターの体液",
+       "qty": 1
+      },
+      {
+       "name": "ランゴスタの羽",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/582574"
+    }
+   ]
+  },
+  {
+   "name": "レザー",
+   "gate": {
+    "type": "basic"
+   },
+   "set": "複合ファイバー",
+   "pieces": [
+    {
+     "id": "u30ec_u30b6_u30fc_head",
+     "name": "レザーヘッド",
+     "part": "head",
+     "baseRarity": 1,
+     "maxRarity": 9,
+     "set": "複合ファイバー",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "アイテム専門家",
+       "lv": 1,
+       "rarity": 1
+      },
+      {
+       "name": "復活",
+       "lv": 1,
+       "rarity": 5
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "鉄鉱石",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584285"
+    },
+    {
+     "id": "u30ec_u30b6_u30fc_body",
+     "name": "レザーベスト",
+     "part": "body",
+     "baseRarity": 1,
+     "maxRarity": 9,
+     "set": "複合ファイバー",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "会心撃【属性】",
+       "lv": 1,
+       "rarity": 1
+      },
+      {
+       "name": "アイテム専門家",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "会心撃【属性】",
+       "lv": 2,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "鉄鉱石",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584285"
+    },
+    {
+     "id": "u30ec_u30b6_u30fc_arm",
+     "name": "レザーグラブ",
+     "part": "arm",
+     "baseRarity": 1,
+     "maxRarity": 9,
+     "set": "複合ファイバー",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "一撃貫通",
+       "lv": 1,
+       "rarity": 1
+      },
+      {
+       "name": "火耐性強化",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "防御力DOWN耐性",
+       "lv": 1,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "鉄鉱石",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584285"
+    },
+    {
+     "id": "u30ec_u30b6_u30fc_waist",
+     "name": "レザーベルト",
+     "part": "waist",
+     "baseRarity": 1,
+     "maxRarity": 9,
+     "set": "複合ファイバー",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "火耐性強化",
+       "lv": 1,
+       "rarity": 1
+      },
+      {
+       "name": "壁登りの達人",
+       "lv": 1,
+       "rarity": 5
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "鉄鉱石",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584285"
+    },
+    {
+     "id": "u30ec_u30b6_u30fc_leg",
+     "name": "レザーパンツ",
+     "part": "leg",
+     "baseRarity": 1,
+     "maxRarity": 9,
+     "set": "複合ファイバー",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "防御力DOWN耐性",
+       "lv": 1,
+       "rarity": 1
+      },
+      {
+       "name": "一撃貫通",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "弾導強化",
+       "lv": 1,
+       "rarity": 7
+      },
+      {
+       "name": "一撃貫通",
+       "lv": 2,
+       "rarity": 9
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "鉄鉱石",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584285"
+    }
+   ]
+  },
+  {
+   "name": "カガチ",
+   "gate": {
+    "type": "monster",
+    "monsters": [
+     "トビカガチ"
+    ]
+   },
+   "set": "飛雷竜の雷鎧",
+   "pieces": [
+    {
+     "id": "u30ab_u30ac_u30c1_head",
+     "name": "カガチヘルム",
+     "part": "head",
+     "baseRarity": 5,
+     "maxRarity": 9,
+     "set": "飛雷竜の雷鎧",
+     "orbTier": 2,
+     "skills": [
+      {
+       "name": "威嚇",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "雷属性ダメージUP",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "雷属性ダメージUP",
+       "lv": 2,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅱ",
+       "qty": 1
+      },
+      {
+       "name": "飛雷竜の鱗Ⅱ",
+       "qty": 2
+      },
+      {
+       "name": "飛雷竜の皮膜Ⅱ",
+       "qty": 2
+      },
+      {
+       "name": "飛雷竜の電極針Ⅱ",
+       "qty": 2
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584284"
+    },
+    {
+     "id": "u30ab_u30ac_u30c1_body",
+     "name": "カガチメイル",
+     "part": "body",
+     "baseRarity": 5,
+     "maxRarity": 9,
+     "set": "飛雷竜の雷鎧",
+     "orbTier": 2,
+     "skills": [
+      {
+       "name": "雷耐性強化",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "気力変換",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "気力変換",
+       "lv": 2,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅱ",
+       "qty": 1
+      },
+      {
+       "name": "飛雷竜の毛皮Ⅱ",
+       "qty": 2
+      },
+      {
+       "name": "飛雷竜の皮膜Ⅱ",
+       "qty": 2
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584284"
+    },
+    {
+     "id": "u30ab_u30ac_u30c1_arm",
+     "name": "カガチアーム",
+     "part": "arm",
+     "baseRarity": 5,
+     "maxRarity": 9,
+     "set": "飛雷竜の雷鎧",
+     "orbTier": 2,
+     "skills": [
+      {
+       "name": "雷耐性強化",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "加護",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "加護",
+       "lv": 2,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅱ",
+       "qty": 1
+      },
+      {
+       "name": "飛雷竜の鱗Ⅱ",
+       "qty": 2
+      },
+      {
+       "name": "飛雷竜の皮膜Ⅱ",
+       "qty": 2
+      },
+      {
+       "name": "飛雷竜の爪Ⅱ",
+       "qty": 2
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584284"
+    },
+    {
+     "id": "u30ab_u30ac_u30c1_waist",
+     "name": "カガチコイル",
+     "part": "waist",
+     "baseRarity": 5,
+     "maxRarity": 9,
+     "set": "飛雷竜の雷鎧",
+     "orbTier": 2,
+     "skills": [
+      {
+       "name": "雷属性ダメージUP",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "会心撃【属性】",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "威嚇",
+       "lv": 1,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅱ",
+       "qty": 1
+      },
+      {
+       "name": "飛雷竜の鱗Ⅱ",
+       "qty": 2
+      },
+      {
+       "name": "飛雷竜の毛皮Ⅱ",
+       "qty": 2
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584284"
+    },
+    {
+     "id": "u30ab_u30ac_u30c1_leg",
+     "name": "カガチグリーヴ",
+     "part": "leg",
+     "baseRarity": 5,
+     "maxRarity": 9,
+     "set": "飛雷竜の雷鎧",
+     "orbTier": 2,
+     "skills": [
+      {
+       "name": "気力変換",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "ポテンシャル解放",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "壁登りの達人",
+       "lv": 1,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅱ",
+       "qty": 1
+      },
+      {
+       "name": "飛雷竜の鱗Ⅱ",
+       "qty": 2
+      },
+      {
+       "name": "飛雷竜の毛皮Ⅱ",
+       "qty": 2
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584284"
+    }
+   ]
+  },
+  {
+   "name": "融光種ジャナフ",
+   "gate": {
+    "type": "monster",
+    "monsters": [
+     "融光種アンジャナフ"
+    ]
+   },
+   "set": "蛮顎竜の怒り",
+   "pieces": [
+    {
+     "id": "u878d_u5149_u7a2e_u30b8_u30e3_u30ca_u30d_head",
+     "name": "融光種ジャナフヘルム",
+     "part": "head",
+     "baseRarity": 5,
+     "maxRarity": 9,
+     "set": "蛮顎竜の怒り",
+     "orbTier": 2,
+     "skills": [
+      {
+       "name": "抜刀一閃",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "早食い術",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "逆境",
+       "lv": 1,
+       "rarity": 8
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅱ",
+       "qty": 1
+      },
+      {
+       "name": "融光種蛮顎竜の鱗Ⅱ",
+       "qty": 2
+      },
+      {
+       "name": "融光種蛮顎竜の牙Ⅱ",
+       "qty": 2
+      },
+      {
+       "name": "融光種蛮顎竜の鼻甲Ⅱ",
+       "qty": 2
+      },
+      {
+       "name": "融光種蛮顎竜の逆鱗Ⅱ",
+       "qty": 2
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584283"
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30b8_u30e3_u30ca_u30d_body",
+     "name": "融光種ジャナフメイル",
+     "part": "body",
+     "baseRarity": 5,
+     "maxRarity": 9,
+     "set": "蛮顎竜の怒り",
+     "orbTier": 2,
+     "skills": [
+      {
+       "name": "火耐性強化",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "体力ループ",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "体力ループ",
+       "lv": 2,
+       "rarity": 8
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅱ",
+       "qty": 1
+      },
+      {
+       "name": "融光種蛮顎竜の毛皮Ⅱ",
+       "qty": 2
+      },
+      {
+       "name": "融光種蛮顎竜の牙Ⅱ",
+       "qty": 2
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584283"
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30b8_u30e3_u30ca_u30d_arm",
+     "name": "融光種ジャナフアーム",
+     "part": "arm",
+     "baseRarity": 5,
+     "maxRarity": 9,
+     "set": "蛮顎竜の怒り",
+     "orbTier": 2,
+     "skills": [
+      {
+       "name": "破砕",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "火耐性強化",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "破砕",
+       "lv": 2,
+       "rarity": 8
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅱ",
+       "qty": 1
+      },
+      {
+       "name": "融光種蛮顎竜の鱗Ⅱ",
+       "qty": 2
+      },
+      {
+       "name": "融光種蛮顎竜の毛皮Ⅱ",
+       "qty": 2
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584283"
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30b8_u30e3_u30ca_u30d_waist",
+     "name": "融光種ジャナフコイル",
+     "part": "waist",
+     "baseRarity": 5,
+     "maxRarity": 9,
+     "set": "蛮顎竜の怒り",
+     "orbTier": 2,
+     "skills": [
+      {
+       "name": "溜め強化",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "破壊王",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "早食い術",
+       "lv": 1,
+       "rarity": 8
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅱ",
+       "qty": 1
+      },
+      {
+       "name": "融光種蛮顎竜の鱗Ⅱ",
+       "qty": 2
+      },
+      {
+       "name": "融光種蛮顎竜の牙Ⅱ",
+       "qty": 2
+      },
+      {
+       "name": "融光種蛮顎竜の鼻甲Ⅱ",
+       "qty": 2
+      },
+      {
+       "name": "融光種蛮顎竜の尻尾Ⅱ",
+       "qty": 2
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584283"
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30b8_u30e3_u30ca_u30d_leg",
+     "name": "融光種ジャナフグリーヴ",
+     "part": "leg",
+     "baseRarity": 5,
+     "maxRarity": 9,
+     "set": "蛮顎竜の怒り",
+     "orbTier": 2,
+     "skills": [
+      {
+       "name": "溜め強化",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "火耐性強化",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "溜め強化",
+       "lv": 2,
+       "rarity": 8
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅱ",
+       "qty": 1
+      },
+      {
+       "name": "融光種蛮顎竜の鱗Ⅱ",
+       "qty": 2
+      },
+      {
+       "name": "融光種蛮顎竜の毛皮Ⅱ",
+       "qty": 2
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584283"
+    }
+   ]
+  },
+  {
+   "name": "タロス",
+   "gate": {
+    "type": "basic"
+   },
+   "set": "巨甲の力",
+   "pieces": [
+    {
+     "id": "u30bf_u30ed_u30b9_head",
+     "name": "タロスヘルム",
+     "part": "head",
+     "baseRarity": 4,
+     "maxRarity": 9,
+     "set": "巨甲の力",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "龍耐性強化",
+       "lv": 1,
+       "rarity": 4
+      },
+      {
+       "name": "剥ぎ取り鉄人",
+       "lv": 1,
+       "rarity": 6
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "カンタロスの甲殻",
+       "qty": 1
+      },
+      {
+       "name": "カンタロスの羽",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584282"
+    },
+    {
+     "id": "u30bf_u30ed_u30b9_body",
+     "name": "タロスメイル",
+     "part": "body",
+     "baseRarity": 4,
+     "maxRarity": 9,
+     "set": "巨甲の力",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "弁当好き",
+       "lv": 1,
+       "rarity": 4
+      },
+      {
+       "name": "弱点追撃",
+       "lv": 1,
+       "rarity": 6
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "カンタロスの羽",
+       "qty": 1
+      },
+      {
+       "name": "鉄鉱石",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584282"
+    },
+    {
+     "id": "u30bf_u30ed_u30b9_arm",
+     "name": "タロスアーム",
+     "part": "arm",
+     "baseRarity": 4,
+     "maxRarity": 9,
+     "set": "巨甲の力",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "会心撃【属性】",
+       "lv": 1,
+       "rarity": 4
+      },
+      {
+       "name": "龍属性ダメージUP",
+       "lv": 1,
+       "rarity": 6
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "カンタロスの甲殻",
+       "qty": 1
+      },
+      {
+       "name": "カンタロスの羽",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584282"
+    },
+    {
+     "id": "u30bf_u30ed_u30b9_waist",
+     "name": "タロスコイル",
+     "part": "waist",
+     "baseRarity": 4,
+     "maxRarity": 9,
+     "set": "巨甲の力",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "龍属性ダメージUP",
+       "lv": 1,
+       "rarity": 4
+      },
+      {
+       "name": "弱点追撃",
+       "lv": 1,
+       "rarity": 6
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "カンタロスの甲殻",
+       "qty": 1
+      },
+      {
+       "name": "鉄鉱石",
+       "qty": 1
+      },
+      {
+       "name": "モンスターの体液",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584282"
+    },
+    {
+     "id": "u30bf_u30ed_u30b9_leg",
+     "name": "タロスグリーヴ",
+     "part": "leg",
+     "baseRarity": 4,
+     "maxRarity": 9,
+     "set": "巨甲の力",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "龍耐性強化",
+       "lv": 1,
+       "rarity": 4
+      },
+      {
+       "name": "体力強化",
+       "lv": 1,
+       "rarity": 6
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "カンタロスの甲殻",
+       "qty": 1
+      },
+      {
+       "name": "鉄鉱石",
+       "qty": 1
+      },
+      {
+       "name": "カンタロスの頭",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584282"
+    }
+   ]
+  },
+  {
+   "name": "融光種クルル",
+   "gate": {
+    "type": "monster",
+    "monsters": [
+     "融光種クルルヤック"
+    ]
+   },
+   "set": "掻鳥の巧技",
+   "pieces": [
+    {
+     "id": "u878d_u5149_u7a2e_u30af_u30eb_u30eb_head",
+     "name": "融光種クルルヘルム",
+     "part": "head",
+     "baseRarity": 5,
+     "maxRarity": 9,
+     "set": "掻鳥の巧技",
+     "orbTier": 2,
+     "skills": [
+      {
+       "name": "鬼人の修羅",
+       "lv": 2,
+       "rarity": 5
+      },
+      {
+       "name": "アイテム専門家",
+       "lv": 1,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅱ",
+       "qty": 1
+      },
+      {
+       "name": "融光種掻鳥の鱗Ⅱ",
+       "qty": 2
+      },
+      {
+       "name": "融光種掻鳥のクチバシⅡ",
+       "qty": 2
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584281"
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30af_u30eb_u30eb_body",
+     "name": "融光種クルルメイル",
+     "part": "body",
+     "baseRarity": 5,
+     "maxRarity": 9,
+     "set": "掻鳥の巧技",
+     "orbTier": 2,
+     "skills": [
+      {
+       "name": "連撃強化",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "洞察",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "高圧ガード",
+       "lv": 1,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅱ",
+       "qty": 1
+      },
+      {
+       "name": "融光種掻鳥の鱗Ⅱ",
+       "qty": 2
+      },
+      {
+       "name": "融光種掻鳥の皮Ⅱ",
+       "qty": 2
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584281"
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30af_u30eb_u30eb_arm",
+     "name": "融光種クルルアーム",
+     "part": "arm",
+     "baseRarity": 5,
+     "maxRarity": 9,
+     "set": "掻鳥の巧技",
+     "orbTier": 2,
+     "skills": [
+      {
+       "name": "アイテム専門家",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "火耐性強化",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "アイテム専門家",
+       "lv": 2,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅱ",
+       "qty": 1
+      },
+      {
+       "name": "融光種掻鳥の鱗Ⅱ",
+       "qty": 2
+      },
+      {
+       "name": "融光種掻鳥の飾り羽Ⅱ",
+       "qty": 2
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584281"
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30af_u30eb_u30eb_waist",
+     "name": "融光種クルルコイル",
+     "part": "waist",
+     "baseRarity": 5,
+     "maxRarity": 9,
+     "set": "掻鳥の巧技",
+     "orbTier": 2,
+     "skills": [
+      {
+       "name": "回避強化",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "高圧ガード",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "回避強化",
+       "lv": 2,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅱ",
+       "qty": 1
+      },
+      {
+       "name": "融光種掻鳥の皮Ⅱ",
+       "qty": 2
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584281"
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30af_u30eb_u30eb_leg",
+     "name": "融光種クルルグリーヴ",
+     "part": "leg",
+     "baseRarity": 5,
+     "maxRarity": 9,
+     "set": "掻鳥の巧技",
+     "orbTier": 2,
+     "skills": [
+      {
+       "name": "連撃強化",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "火耐性強化",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "火耐性強化",
+       "lv": 1,
+       "rarity": 7
+      },
+      {
+       "name": "連撃強化",
+       "lv": 2,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅱ",
+       "qty": 1
+      },
+      {
+       "name": "融光種掻鳥の皮Ⅱ",
+       "qty": 2
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584281"
+    }
+   ]
+  },
+  {
+   "name": "融光種ボロス",
+   "gate": {
+    "type": "monster",
+    "monsters": [
+     "融光種ボルボロス"
+    ]
+   },
+   "set": "土砂竜の堅守",
+   "pieces": [
+    {
+     "id": "u878d_u5149_u7a2e_u30dc_u30ed_u30b9_head",
+     "name": "融光種ボロスヘルム",
+     "part": "head",
+     "baseRarity": 5,
+     "maxRarity": 9,
+     "set": "土砂竜の堅守",
+     "orbTier": 2,
+     "skills": [
+      {
+       "name": "リロード強化",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "ガードテクニック",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "リロード強化",
+       "lv": 2,
+       "rarity": 8
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅱ",
+       "qty": 1
+      },
+      {
+       "name": "融光種土砂竜の甲殻Ⅱ",
+       "qty": 2
+      },
+      {
+       "name": "融光種土砂竜の頭殻Ⅱ",
+       "qty": 2
+      },
+      {
+       "name": "融光種土砂竜の爪Ⅱ",
+       "qty": 2
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584280"
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30dc_u30ed_u30b9_body",
+     "name": "融光種ボロスメイル",
+     "part": "body",
+     "baseRarity": 5,
+     "maxRarity": 9,
+     "set": "土砂竜の堅守",
+     "orbTier": 2,
+     "skills": [
+      {
+       "name": "ガードテクニック",
+       "lv": 2,
+       "rarity": 5
+      },
+      {
+       "name": "気絶耐性",
+       "lv": 1,
+       "rarity": 8
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅱ",
+       "qty": 1
+      },
+      {
+       "name": "融光種土砂竜の背甲Ⅱ",
+       "qty": 2
+      },
+      {
+       "name": "融光種土砂竜の頭殻Ⅱ",
+       "qty": 2
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584280"
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30dc_u30ed_u30b9_arm",
+     "name": "融光種ボロスアーム",
+     "part": "arm",
+     "baseRarity": 5,
+     "maxRarity": 9,
+     "set": "土砂竜の堅守",
+     "orbTier": 2,
+     "skills": [
+      {
+       "name": "剛勢",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "気絶耐性",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "剛勢",
+       "lv": 2,
+       "rarity": 8
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅱ",
+       "qty": 1
+      },
+      {
+       "name": "融光種土砂竜の甲殻Ⅱ",
+       "qty": 2
+      },
+      {
+       "name": "融光種土砂竜の頭殻Ⅱ",
+       "qty": 2
+      },
+      {
+       "name": "融光種土砂竜の爪Ⅱ",
+       "qty": 2
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584280"
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30dc_u30ed_u30b9_waist",
+     "name": "融光種ボロスコイル",
+     "part": "waist",
+     "baseRarity": 5,
+     "maxRarity": 9,
+     "set": "土砂竜の堅守",
+     "orbTier": 2,
+     "skills": [
+      {
+       "name": "リロード強化",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "闘志",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "防護",
+       "lv": 1,
+       "rarity": 8
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅱ",
+       "qty": 1
+      },
+      {
+       "name": "融光種土砂竜の甲殻Ⅱ",
+       "qty": 2
+      },
+      {
+       "name": "融光種土砂竜の背甲Ⅱ",
+       "qty": 2
+      },
+      {
+       "name": "融光種土砂竜の尻尾Ⅱ",
+       "qty": 2
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584280"
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30dc_u30ed_u30b9_leg",
+     "name": "融光種ボロスグリーヴ",
+     "part": "leg",
+     "baseRarity": 5,
+     "maxRarity": 9,
+     "set": "土砂竜の堅守",
+     "orbTier": 2,
+     "skills": [
+      {
+       "name": "貫突",
+       "lv": 2,
+       "rarity": 5
+      },
+      {
+       "name": "ガードテクニック",
+       "lv": 1,
+       "rarity": 8
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅱ",
+       "qty": 1
+      },
+      {
+       "name": "融光種土砂竜の甲殻Ⅱ",
+       "qty": 2
+      },
+      {
+       "name": "融光種土砂竜の背甲Ⅱ",
+       "qty": 2
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584280"
+    }
+   ]
+  },
+  {
+   "name": "融光種ジュラ",
+   "gate": {
+    "type": "monster",
+    "monsters": [
+     "融光種ジュラトドス"
+    ]
+   },
+   "set": "泥魚竜の癒流",
+   "pieces": [
+    {
+     "id": "u878d_u5149_u7a2e_u30b8_u30e5_u30e9_head",
+     "name": "融光種ジュラヘルム",
+     "part": "head",
+     "baseRarity": 6,
+     "maxRarity": 9,
+     "set": "泥魚竜の癒流",
+     "orbTier": 2,
+     "skills": [
+      {
+       "name": "のけぞり軽減",
+       "lv": 1,
+       "rarity": 6
+      },
+      {
+       "name": "水耐性強化",
+       "lv": 1,
+       "rarity": 6
+      },
+      {
+       "name": "のけぞり軽減",
+       "lv": 2,
+       "rarity": 8
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅱ",
+       "qty": 1
+      },
+      {
+       "name": "融光種泥魚竜の鱗Ⅱ",
+       "qty": 2
+      },
+      {
+       "name": "融光種泥魚竜の牙Ⅱ",
+       "qty": 2
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584279"
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30b8_u30e5_u30e9_body",
+     "name": "融光種ジュラメイル",
+     "part": "body",
+     "baseRarity": 6,
+     "maxRarity": 9,
+     "set": "泥魚竜の癒流",
+     "orbTier": 2,
+     "skills": [
+      {
+       "name": "一撃貫通",
+       "lv": 1,
+       "rarity": 6
+      },
+      {
+       "name": "体力回復",
+       "lv": 1,
+       "rarity": 6
+      },
+      {
+       "name": "一撃貫通",
+       "lv": 2,
+       "rarity": 8
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅱ",
+       "qty": 1
+      },
+      {
+       "name": "融光種泥魚竜の鱗Ⅱ",
+       "qty": 2
+      },
+      {
+       "name": "融光種泥魚竜の甲殻Ⅱ",
+       "qty": 2
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584279"
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30b8_u30e5_u30e9_arm",
+     "name": "融光種ジュラアーム",
+     "part": "arm",
+     "baseRarity": 6,
+     "maxRarity": 9,
+     "set": "泥魚竜の癒流",
+     "orbTier": 2,
+     "skills": [
+      {
+       "name": "水属性ダメージUP",
+       "lv": 1,
+       "rarity": 6
+      },
+      {
+       "name": "体力回復",
+       "lv": 1,
+       "rarity": 6
+      },
+      {
+       "name": "水属性ダメージUP",
+       "lv": 2,
+       "rarity": 8
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅱ",
+       "qty": 1
+      },
+      {
+       "name": "融光種泥魚竜の甲殻Ⅱ",
+       "qty": 2
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584279"
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30b8_u30e5_u30e9_waist",
+     "name": "融光種ジュラコイル",
+     "part": "waist",
+     "baseRarity": 6,
+     "maxRarity": 9,
+     "set": "泥魚竜の癒流",
+     "orbTier": 2,
+     "skills": [
+      {
+       "name": "一撃貫通",
+       "lv": 1,
+       "rarity": 6
+      },
+      {
+       "name": "狩人の第六感",
+       "lv": 1,
+       "rarity": 6
+      },
+      {
+       "name": "水耐性強化",
+       "lv": 1,
+       "rarity": 8
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅱ",
+       "qty": 1
+      },
+      {
+       "name": "融光種泥魚竜の甲殻Ⅱ",
+       "qty": 2
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584279"
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30b8_u30e5_u30e9_leg",
+     "name": "融光種ジュラグリーヴ",
+     "part": "leg",
+     "baseRarity": 6,
+     "maxRarity": 9,
+     "set": "泥魚竜の癒流",
+     "orbTier": 2,
+     "skills": [
+      {
+       "name": "水属性ダメージUP",
+       "lv": 1,
+       "rarity": 6
+      },
+      {
+       "name": "融光感知",
+       "lv": 1,
+       "rarity": 6
+      },
+      {
+       "name": "体力回復",
+       "lv": 1,
+       "rarity": 8
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅱ",
+       "qty": 1
+      },
+      {
+       "name": "融光種泥魚竜の鱗Ⅱ",
+       "qty": 2
+      },
+      {
+       "name": "融光種泥魚竜のヒレⅡ",
+       "qty": 2
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584279"
+    }
+   ]
+  },
+  {
+   "name": "レイア",
+   "gate": {
+    "type": "monster",
+    "monsters": [
+     "リオレイア"
+    ]
+   },
+   "set": "雌火竜の強躯",
+   "pieces": [
+    {
+     "id": "u30ec_u30a4_u30a2_head",
+     "name": "レイアヘルム",
+     "part": "head",
+     "baseRarity": 6,
+     "maxRarity": 9,
+     "set": "雌火竜の強躯",
+     "orbTier": 2,
+     "skills": [
+      {
+       "name": "練気をまといし刃",
+       "lv": 1,
+       "rarity": 6
+      },
+      {
+       "name": "狩人の第六感",
+       "lv": 1,
+       "rarity": 6
+      },
+      {
+       "name": "練気をまといし刃",
+       "lv": 2,
+       "rarity": 8
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅱ",
+       "qty": 1
+      },
+      {
+       "name": "雌火竜の甲殻Ⅱ",
+       "qty": 2
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584278"
+    },
+    {
+     "id": "u30ec_u30a4_u30a2_body",
+     "name": "レイアメイル",
+     "part": "body",
+     "baseRarity": 6,
+     "maxRarity": 9,
+     "set": "雌火竜の強躯",
+     "orbTier": 2,
+     "skills": [
+      {
+       "name": "滞空",
+       "lv": 1,
+       "rarity": 6
+      },
+      {
+       "name": "毒耐性",
+       "lv": 1,
+       "rarity": 6
+      },
+      {
+       "name": "滞空",
+       "lv": 2,
+       "rarity": 8
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅱ",
+       "qty": 1
+      },
+      {
+       "name": "雌火竜の鱗Ⅱ",
+       "qty": 2
+      },
+      {
+       "name": "雌火竜の甲殻Ⅱ",
+       "qty": 2
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584278"
+    },
+    {
+     "id": "u30ec_u30a4_u30a2_arm",
+     "name": "レイアアーム",
+     "part": "arm",
+     "baseRarity": 6,
+     "maxRarity": 9,
+     "set": "雌火竜の強躯",
+     "orbTier": 2,
+     "skills": [
+      {
+       "name": "抜刀一閃",
+       "lv": 1,
+       "rarity": 6
+      },
+      {
+       "name": "植物専門家",
+       "lv": 1,
+       "rarity": 6
+      },
+      {
+       "name": "抜刀一閃",
+       "lv": 2,
+       "rarity": 8
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅱ",
+       "qty": 1
+      },
+      {
+       "name": "雌火竜の鱗Ⅱ",
+       "qty": 2
+      },
+      {
+       "name": "雌火竜の翼膜Ⅱ",
+       "qty": 2
+      },
+      {
+       "name": "雌火竜の逆鱗Ⅱ",
+       "qty": 2
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584278"
+    },
+    {
+     "id": "u30ec_u30a4_u30a2_waist",
+     "name": "レイアコイル",
+     "part": "waist",
+     "baseRarity": 6,
+     "maxRarity": 9,
+     "set": "雌火竜の強躯",
+     "orbTier": 2,
+     "skills": [
+      {
+       "name": "無垢",
+       "lv": 1,
+       "rarity": 6
+      },
+      {
+       "name": "咆哮耐性",
+       "lv": 1,
+       "rarity": 6
+      },
+      {
+       "name": "練気をまといし刃",
+       "lv": 1,
+       "rarity": 8
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅱ",
+       "qty": 1
+      },
+      {
+       "name": "雌火竜の鱗Ⅱ",
+       "qty": 2
+      },
+      {
+       "name": "雌火竜の翼膜Ⅱ",
+       "qty": 2
+      },
+      {
+       "name": "雌火竜の棘Ⅱ",
+       "qty": 2
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584278"
+    },
+    {
+     "id": "u30ec_u30a4_u30a2_leg",
+     "name": "レイアグリーヴ",
+     "part": "leg",
+     "baseRarity": 6,
+     "maxRarity": 9,
+     "set": "雌火竜の強躯",
+     "orbTier": 2,
+     "skills": [
+      {
+       "name": "体力強化",
+       "lv": 1,
+       "rarity": 6
+      },
+      {
+       "name": "咆哮耐性",
+       "lv": 1,
+       "rarity": 6
+      },
+      {
+       "name": "体力強化",
+       "lv": 2,
+       "rarity": 8
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅱ",
+       "qty": 1
+      },
+      {
+       "name": "雌火竜の甲殻Ⅱ",
+       "qty": 2
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584278"
+    }
+   ]
+  },
+  {
+   "name": "レウス",
+   "gate": {
+    "type": "monster",
+    "monsters": [
+     "リオレウス"
+    ]
+   },
+   "set": "火竜の弱点撃破",
+   "pieces": [
+    {
+     "id": "u30ec_u30a6_u30b9_head",
+     "name": "レウスヘルム",
+     "part": "head",
+     "baseRarity": 6,
+     "maxRarity": 9,
+     "set": "火竜の弱点撃破",
+     "orbTier": 2,
+     "skills": [
+      {
+       "name": "火属性ダメージUP",
+       "lv": 1,
+       "rarity": 6
+      },
+      {
+       "name": "破壊王",
+       "lv": 1,
+       "rarity": 6
+      },
+      {
+       "name": "威嚇",
+       "lv": 1,
+       "rarity": 8
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅱ",
+       "qty": 1
+      },
+      {
+       "name": "火竜の甲殻Ⅱ",
+       "qty": 2
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584277"
+    },
+    {
+     "id": "u30ec_u30a6_u30b9_body",
+     "name": "レウスメイル",
+     "part": "body",
+     "baseRarity": 6,
+     "maxRarity": 9,
+     "set": "火竜の弱点撃破",
+     "orbTier": 2,
+     "skills": [
+      {
+       "name": "火属性ダメージUP",
+       "lv": 2,
+       "rarity": 6
+      },
+      {
+       "name": "体力ループ",
+       "lv": 1,
+       "rarity": 8
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅱ",
+       "qty": 1
+      },
+      {
+       "name": "火竜の鱗Ⅱ",
+       "qty": 2
+      },
+      {
+       "name": "火竜の甲殻Ⅱ",
+       "qty": 2
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584277"
+    },
+    {
+     "id": "u30ec_u30a6_u30b9_arm",
+     "name": "レウスアーム",
+     "part": "arm",
+     "baseRarity": 6,
+     "maxRarity": 9,
+     "set": "火竜の弱点撃破",
+     "orbTier": 2,
+     "skills": [
+      {
+       "name": "威嚇",
+       "lv": 1,
+       "rarity": 6
+      },
+      {
+       "name": "火耐性強化",
+       "lv": 1,
+       "rarity": 6
+      },
+      {
+       "name": "威嚇",
+       "lv": 2,
+       "rarity": 8
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅱ",
+       "qty": 1
+      },
+      {
+       "name": "火竜の鱗Ⅱ",
+       "qty": 2
+      },
+      {
+       "name": "火竜の翼膜Ⅱ",
+       "qty": 2
+      },
+      {
+       "name": "火竜の逆鱗Ⅱ",
+       "qty": 2
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584277"
+    },
+    {
+     "id": "u30ec_u30a6_u30b9_waist",
+     "name": "レウスコイル",
+     "part": "waist",
+     "baseRarity": 6,
+     "maxRarity": 9,
+     "set": "火竜の弱点撃破",
+     "orbTier": 2,
+     "skills": [
+      {
+       "name": "破砕",
+       "lv": 1,
+       "rarity": 6
+      },
+      {
+       "name": "弱点攻撃",
+       "lv": 1,
+       "rarity": 6
+      },
+      {
+       "name": "火耐性強化",
+       "lv": 1,
+       "rarity": 8
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅱ",
+       "qty": 1
+      },
+      {
+       "name": "火竜の鱗Ⅱ",
+       "qty": 2
+      },
+      {
+       "name": "火竜の翼膜Ⅱ",
+       "qty": 2
+      },
+      {
+       "name": "火竜の尻尾Ⅱ",
+       "qty": 2
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584277"
+    },
+    {
+     "id": "u30ec_u30a6_u30b9_leg",
+     "name": "レウスグリーヴ",
+     "part": "leg",
+     "baseRarity": 6,
+     "maxRarity": 9,
+     "set": "火竜の弱点撃破",
+     "orbTier": 2,
+     "skills": [
+      {
+       "name": "火耐性強化",
+       "lv": 1,
+       "rarity": 6
+      },
+      {
+       "name": "破砕",
+       "lv": 1,
+       "rarity": 6
+      },
+      {
+       "name": "破砕",
+       "lv": 2,
+       "rarity": 8
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅱ",
+       "qty": 1
+      },
+      {
+       "name": "火竜の甲殻Ⅱ",
+       "qty": 2
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584277"
+    }
+   ]
+  },
+  {
+   "name": "ハイメタ",
+   "gate": {
+    "type": "basic"
+   },
+   "set": "鉱脈の静寂",
+   "pieces": [
+    {
+     "id": "u30cf_u30a4_u30e1_u30bf_head",
+     "name": "ハイメタヘルム",
+     "part": "head",
+     "baseRarity": 4,
+     "maxRarity": 9,
+     "set": "鉱脈の静寂",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "咆哮耐性",
+       "lv": 1,
+       "rarity": 4
+      },
+      {
+       "name": "採集名人",
+       "lv": 1,
+       "rarity": 6
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "鉄鉱石",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584276"
+    },
+    {
+     "id": "u30cf_u30a4_u30e1_u30bf_body",
+     "name": "ハイメタメイル",
+     "part": "body",
+     "baseRarity": 4,
+     "maxRarity": 9,
+     "set": "鉱脈の静寂",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "氷属性ダメージUP",
+       "lv": 1,
+       "rarity": 4
+      },
+      {
+       "name": "防護",
+       "lv": 1,
+       "rarity": 6
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584276"
+    },
+    {
+     "id": "u30cf_u30a4_u30e1_u30bf_arm",
+     "name": "ハイメタアーム",
+     "part": "arm",
+     "baseRarity": 4,
+     "maxRarity": 9,
+     "set": "鉱脈の静寂",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "氷耐性強化",
+       "lv": 1,
+       "rarity": 4
+      },
+      {
+       "name": "変形強化",
+       "lv": 1,
+       "rarity": 6
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "鉄鉱石",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584276"
+    },
+    {
+     "id": "u30cf_u30a4_u30e1_u30bf_waist",
+     "name": "ハイメタコイル",
+     "part": "waist",
+     "baseRarity": 4,
+     "maxRarity": 9,
+     "set": "鉱脈の静寂",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "変形強化",
+       "lv": 1,
+       "rarity": 4
+      },
+      {
+       "name": "徹底追撃",
+       "lv": 1,
+       "rarity": 6
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "鉄鉱石",
+       "qty": 1
+      },
+      {
+       "name": "とがった爪",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584276"
+    },
+    {
+     "id": "u30cf_u30a4_u30e1_u30bf_leg",
+     "name": "ハイメタグリーヴ",
+     "part": "leg",
+     "baseRarity": 4,
+     "maxRarity": 9,
+     "set": "鉱脈の静寂",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "咆哮耐性",
+       "lv": 1,
+       "rarity": 4
+      },
+      {
+       "name": "氷属性ダメージUP",
+       "lv": 1,
+       "rarity": 6
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "鉄鉱石",
+       "qty": 1
+      },
+      {
+       "name": "とがった爪",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584276"
+    }
+   ]
+  },
+  {
+   "name": "オウビート",
+   "gate": {
+    "type": "basic"
+   },
+   "set": "一角の神秘",
+   "pieces": [
+    {
+     "id": "u30aa_u30a6_u30d3_u30fc_u30c8_head",
+     "name": "オウビートテスタ",
+     "part": "head",
+     "baseRarity": 4,
+     "maxRarity": 9,
+     "set": "一角の神秘",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "気力変換",
+       "lv": 1,
+       "rarity": 4
+      },
+      {
+       "name": "ハニーハンター",
+       "lv": 1,
+       "rarity": 6
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "マカライト鉱石",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584275"
+    },
+    {
+     "id": "u30aa_u30a6_u30d3_u30fc_u30c8_body",
+     "name": "オウビートペット",
+     "part": "body",
+     "baseRarity": 4,
+     "maxRarity": 9,
+     "set": "一角の神秘",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "加護",
+       "lv": 1,
+       "rarity": 4
+      },
+      {
+       "name": "リロード強化",
+       "lv": 1,
+       "rarity": 6
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "モンスターの体液",
+       "qty": 1
+      },
+      {
+       "name": "マカライト鉱石",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584275"
+    },
+    {
+     "id": "u30aa_u30a6_u30d3_u30fc_u30c8_arm",
+     "name": "オウビートマーノ",
+     "part": "arm",
+     "baseRarity": 4,
+     "maxRarity": 9,
+     "set": "一角の神秘",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "無垢",
+       "lv": 1,
+       "rarity": 4
+      },
+      {
+       "name": "弩弾強化",
+       "lv": 1,
+       "rarity": 6
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "マカライト鉱石",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584275"
+    },
+    {
+     "id": "u30aa_u30a6_u30d3_u30fc_u30c8_waist",
+     "name": "オウビートアンカ",
+     "part": "waist",
+     "baseRarity": 4,
+     "maxRarity": 9,
+     "set": "一角の神秘",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "地質専門家",
+       "lv": 1,
+       "rarity": 4
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "モンスターの体液",
+       "qty": 1
+      },
+      {
+       "name": "ランゴスタの甲殻",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584275"
+    },
+    {
+     "id": "u30aa_u30a6_u30d3_u30fc_u30c8_leg",
+     "name": "オウビートガンバ",
+     "part": "leg",
+     "baseRarity": 4,
+     "maxRarity": 9,
+     "set": "一角の神秘",
+     "orbTier": 1,
+     "skills": [
+      {
+       "name": "リロード強化",
+       "lv": 1,
+       "rarity": 4
+      },
+      {
+       "name": "地質専門家",
+       "lv": 1,
+       "rarity": 6
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "モンスターの体液",
+       "qty": 1
+      },
+      {
+       "name": "ランゴスタの羽",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584275"
+    }
+   ]
+  },
+  {
+   "name": "インゴット",
+   "gate": {
+    "type": "map",
+    "map": "熱砂の平原"
+   },
+   "set": "インゴットの耐爆",
+   "pieces": [
+    {
+     "id": "u30a4_u30f3_u30b4_u30c3_u30c8_head",
+     "name": "インゴットヘルム",
+     "part": "head",
+     "baseRarity": 5,
+     "maxRarity": 9,
+     "set": "インゴットの耐爆",
+     "orbTier": 2,
+     "skills": [
+      {
+       "name": "威震",
+       "lv": 2,
+       "rarity": 5
+      },
+      {
+       "name": "風圧耐性",
+       "lv": 1,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅱ",
+       "qty": 1
+      },
+      {
+       "name": "大地の結晶",
+       "qty": 2
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584274"
+    },
+    {
+     "id": "u30a4_u30f3_u30b4_u30c3_u30c8_body",
+     "name": "インゴットメイル",
+     "part": "body",
+     "baseRarity": 5,
+     "maxRarity": 9,
+     "set": "インゴットの耐爆",
+     "orbTier": 2,
+     "skills": [
+      {
+       "name": "爆破耐性",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "防護",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "防護",
+       "lv": 2,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅱ",
+       "qty": 1
+      },
+      {
+       "name": "マカライト鉱石",
+       "qty": 2
+      },
+      {
+       "name": "大地の結晶",
+       "qty": 2
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584274"
+    },
+    {
+     "id": "u30a4_u30f3_u30b4_u30c3_u30c8_arm",
+     "name": "インゴットアーム",
+     "part": "arm",
+     "baseRarity": 5,
+     "maxRarity": 9,
+     "set": "インゴットの耐爆",
+     "orbTier": 2,
+     "skills": [
+      {
+       "name": "防御反撃",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "高圧ガード",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "爆破耐性",
+       "lv": 1,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅱ",
+       "qty": 1
+      },
+      {
+       "name": "大地の結晶",
+       "qty": 2
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584274"
+    },
+    {
+     "id": "u30a4_u30f3_u30b4_u30c3_u30c8_waist",
+     "name": "インゴットコイル",
+     "part": "waist",
+     "baseRarity": 5,
+     "maxRarity": 9,
+     "set": "インゴットの耐爆",
+     "orbTier": 2,
+     "skills": [
+      {
+       "name": "防御反撃",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "風圧耐性",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "防御反撃",
+       "lv": 2,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅱ",
+       "qty": 1
+      },
+      {
+       "name": "マカライト鉱石",
+       "qty": 2
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584274"
+    },
+    {
+     "id": "u30a4_u30f3_u30b4_u30c3_u30c8_leg",
+     "name": "インゴットグリーヴ",
+     "part": "leg",
+     "baseRarity": 5,
+     "maxRarity": 9,
+     "set": "インゴットの耐爆",
+     "orbTier": 2,
+     "skills": [
+      {
+       "name": "防護",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "雷属性ダメージUP",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "怖いもの無し",
+       "lv": 1,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅱ",
+       "qty": 1
+      },
+      {
+       "name": "マカライト鉱石",
+       "qty": 2
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584274"
+    }
+   ]
+  },
   {
    "name": "冒険者",
    "gate": {
     "type": "basic"
    },
-   "setSkill": {
-    "name": "荒野マスタリー",
-    "bonuses": [
-     {
-      "pieces": 2,
-      "skill": "標本の達人",
-      "lv": 1
-     }
-    ]
-   },
+   "set": "荒野マスタリー",
    "pieces": [
     {
-     "id": "adv_head",
+     "id": "u5192_u967a_u8005_head",
      "name": "冒険者ヘルム",
      "part": "head",
      "baseRarity": 2,
      "maxRarity": 9,
+     "set": "荒野マスタリー",
+     "orbTier": 1,
      "skills": [
       {
        "name": "洞察",
@@ -39,14 +6306,31 @@
        "lv": 1,
        "rarity": 7
       }
-     ]
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "ジャグラスの鱗",
+       "qty": 1
+      },
+      {
+       "name": "ジャグラスの皮",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584273"
     },
     {
-     "id": "adv_body",
+     "id": "u5192_u967a_u8005_body",
      "name": "冒険者メイル",
      "part": "body",
      "baseRarity": 2,
      "maxRarity": 9,
+     "set": "荒野マスタリー",
+     "orbTier": 1,
      "skills": [
       {
        "name": "環境の活用",
@@ -63,14 +6347,31 @@
        "lv": 2,
        "rarity": 7
       }
-     ]
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "ジャグラスの皮",
+       "qty": 1
+      },
+      {
+       "name": "竜骨【小】",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584273"
     },
     {
-     "id": "adv_arm",
+     "id": "u5192_u967a_u8005_arm",
      "name": "冒険者アーム",
      "part": "arm",
      "baseRarity": 2,
      "maxRarity": 9,
+     "set": "荒野マスタリー",
+     "orbTier": 1,
      "skills": [
       {
        "name": "標本の達人",
@@ -82,14 +6383,31 @@
        "lv": 1,
        "rarity": 5
       }
-     ]
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "ジャグラスの鱗",
+       "qty": 1
+      },
+      {
+       "name": "ジャグラスの皮",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584273"
     },
     {
-     "id": "adv_waist",
+     "id": "u5192_u967a_u8005_waist",
      "name": "冒険者コイル",
      "part": "waist",
      "baseRarity": 2,
      "maxRarity": 9,
+     "set": "荒野マスタリー",
+     "orbTier": 1,
      "skills": [
       {
        "name": "弩弾強化",
@@ -106,14 +6424,35 @@
        "lv": 2,
        "rarity": 7
       }
-     ]
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "ジャグラスの鱗",
+       "qty": 1
+      },
+      {
+       "name": "竜骨【小】",
+       "qty": 1
+      },
+      {
+       "name": "とがった爪",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584273"
     },
     {
-     "id": "adv_leg",
+     "id": "u5192_u967a_u8005_leg",
      "name": "冒険者グリーヴ",
      "part": "leg",
      "baseRarity": 2,
      "maxRarity": 9,
+     "set": "荒野マスタリー",
+     "orbTier": 1,
      "skills": [
       {
        "name": "洞察",
@@ -125,7 +6464,882 @@
        "lv": 1,
        "rarity": 5
       }
-     ]
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅰ",
+       "qty": 1
+      },
+      {
+       "name": "ジャグラスの鱗",
+       "qty": 1
+      },
+      {
+       "name": "竜骨【小】",
+       "qty": 1
+      },
+      {
+       "name": "とがった爪",
+       "qty": 1
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584273"
+    }
+   ]
+  },
+  {
+   "name": "融光種カガチ",
+   "gate": {
+    "type": "monster",
+    "monsters": [
+     "融光種トビカガチ"
+    ]
+   },
+   "set": "飛雷竜の激昂",
+   "pieces": [
+    {
+     "id": "u878d_u5149_u7a2e_u30ab_u30ac_u30c1_head",
+     "name": "融光種カガチヘルム",
+     "part": "head",
+     "baseRarity": 7,
+     "maxRarity": 9,
+     "set": "飛雷竜の激昂",
+     "orbTier": 3,
+     "skills": [
+      {
+       "name": "雷耐性強化",
+       "lv": 1,
+       "rarity": 7
+      },
+      {
+       "name": "闘志",
+       "lv": 1,
+       "rarity": 7
+      },
+      {
+       "name": "回避強化",
+       "lv": 1,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅲ",
+       "qty": 2
+      },
+      {
+       "name": "融光種飛雷竜の電極針Ⅲ",
+       "qty": 3
+      },
+      {
+       "name": "融光種飛雷竜の鱗Ⅲ",
+       "qty": 3
+      },
+      {
+       "name": "融光種飛雷竜の皮膜Ⅲ",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586293"
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30ab_u30ac_u30c1_body",
+     "name": "融光種カガチメイル",
+     "part": "body",
+     "baseRarity": 7,
+     "maxRarity": 9,
+     "set": "飛雷竜の激昂",
+     "orbTier": 3,
+     "skills": [
+      {
+       "name": "威嚇",
+       "lv": 2,
+       "rarity": 7
+      },
+      {
+       "name": "逆境",
+       "lv": 1,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅲ",
+       "qty": 2
+      },
+      {
+       "name": "融光種飛雷竜の毛皮Ⅲ",
+       "qty": 3
+      },
+      {
+       "name": "融光種飛雷竜の皮膜Ⅲ",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586293"
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30ab_u30ac_u30c1_arm",
+     "name": "融光種カガチアーム",
+     "part": "arm",
+     "baseRarity": 7,
+     "maxRarity": 9,
+     "set": "飛雷竜の激昂",
+     "orbTier": 3,
+     "skills": [
+      {
+       "name": "雷耐性強化",
+       "lv": 1,
+       "rarity": 7
+      },
+      {
+       "name": "弓スキル強化",
+       "lv": 1,
+       "rarity": 7
+      },
+      {
+       "name": "ポテンシャル解放",
+       "lv": 1,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅲ",
+       "qty": 2
+      },
+      {
+       "name": "融光種飛雷竜の鱗Ⅲ",
+       "qty": 3
+      },
+      {
+       "name": "融光種飛雷竜の皮膜Ⅲ",
+       "qty": 3
+      },
+      {
+       "name": "融光種飛雷竜の爪Ⅲ",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586293"
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30ab_u30ac_u30c1_waist",
+     "name": "融光種カガチコイル",
+     "part": "waist",
+     "baseRarity": 7,
+     "maxRarity": 9,
+     "set": "飛雷竜の雷鎧",
+     "orbTier": 3,
+     "skills": [
+      {
+       "name": "弓スキル強化",
+       "lv": 2,
+       "rarity": 7
+      },
+      {
+       "name": "雷耐性強化",
+       "lv": 1,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅲ",
+       "qty": 2
+      },
+      {
+       "name": "融光種飛雷竜の鱗Ⅲ",
+       "qty": 3
+      },
+      {
+       "name": "融光種飛雷竜の毛皮Ⅲ",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586293"
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30ab_u30ac_u30c1_leg",
+     "name": "融光種カガチグリーヴ",
+     "part": "leg",
+     "baseRarity": 7,
+     "maxRarity": 9,
+     "set": "飛雷竜の雷鎧",
+     "orbTier": 3,
+     "skills": [
+      {
+       "name": "回避強化",
+       "lv": 2,
+       "rarity": 7
+      },
+      {
+       "name": "威嚇",
+       "lv": 1,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅲ",
+       "qty": 2
+      },
+      {
+       "name": "融光種飛雷竜の鱗Ⅲ",
+       "qty": 3
+      },
+      {
+       "name": "融光種飛雷竜の毛皮Ⅲ",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586293"
+    }
+   ]
+  },
+  {
+   "name": "融光種ギルオス",
+   "gate": {
+    "type": "monster",
+    "monsters": [
+     "融光種ドスギルオス"
+    ]
+   },
+   "set": "ドスギルオスの統率",
+   "pieces": [
+    {
+     "id": "u878d_u5149_u7a2e_u30ae_u30eb_u30aa_u30b_head",
+     "name": "融光種ギルオスヘルム",
+     "part": "head",
+     "baseRarity": 7,
+     "maxRarity": 9,
+     "set": "ドスギルオスの統率",
+     "orbTier": 3,
+     "skills": [
+      {
+       "name": "麻痺耐性",
+       "lv": 1,
+       "rarity": 7
+      },
+      {
+       "name": "融光感知",
+       "lv": 1,
+       "rarity": 7
+      },
+      {
+       "name": "連撃強化",
+       "lv": 1,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅲ",
+       "qty": 2
+      },
+      {
+       "name": "融光種痺賊竜の鱗Ⅲ",
+       "qty": 3
+      },
+      {
+       "name": "融光種痺賊竜の牙Ⅲ",
+       "qty": 3
+      },
+      {
+       "name": "融光種痺賊竜の頭巾殻Ⅲ",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/585945"
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30ae_u30eb_u30aa_u30b_body",
+     "name": "融光種ギルオスメイル",
+     "part": "body",
+     "baseRarity": 7,
+     "maxRarity": 9,
+     "set": "ドスギルオスの統率",
+     "orbTier": 3,
+     "skills": [
+      {
+       "name": "雷属性ダメージUP",
+       "lv": 2,
+       "rarity": 7
+      },
+      {
+       "name": "麻痺耐性",
+       "lv": 1,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅲ",
+       "qty": 2
+      },
+      {
+       "name": "融光種痺賊竜の皮Ⅲ",
+       "qty": 3
+      },
+      {
+       "name": "融光種痺賊竜の牙Ⅲ",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/585945"
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30ae_u30eb_u30aa_u30b_arm",
+     "name": "融光種ギルオスアーム",
+     "part": "arm",
+     "baseRarity": 7,
+     "maxRarity": 9,
+     "set": "ドスギルオスの統率",
+     "orbTier": 3,
+     "skills": [
+      {
+       "name": "連撃強化",
+       "lv": 2,
+       "rarity": 7
+      },
+      {
+       "name": "のけぞり軽減",
+       "lv": 1,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅲ",
+       "qty": 2
+      },
+      {
+       "name": "融光種痺賊竜の鱗Ⅲ",
+       "qty": 3
+      },
+      {
+       "name": "融光種痺賊竜の皮Ⅲ",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/585945"
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30ae_u30eb_u30aa_u30b_waist",
+     "name": "融光種ギルオスコイル",
+     "part": "waist",
+     "baseRarity": 7,
+     "maxRarity": 9,
+     "set": "ドスギルオスの統率",
+     "orbTier": 3,
+     "skills": [
+      {
+       "name": "雷属性ダメージUP",
+       "lv": 1,
+       "rarity": 7
+      },
+      {
+       "name": "怖いもの無し",
+       "lv": 1,
+       "rarity": 7
+      },
+      {
+       "name": "体力回復",
+       "lv": 1,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅲ",
+       "qty": 2
+      },
+      {
+       "name": "融光種痺賊竜の鱗Ⅲ",
+       "qty": 3
+      },
+      {
+       "name": "融光種痺賊竜の牙Ⅲ",
+       "qty": 3
+      },
+      {
+       "name": "融光種痺賊竜の頭巾殻Ⅲ",
+       "qty": 3
+      },
+      {
+       "name": "融光種痺賊竜の尻尾Ⅲ",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/585945"
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30ae_u30eb_u30aa_u30b_leg",
+     "name": "融光種ギルオスグリーヴ",
+     "part": "leg",
+     "baseRarity": 7,
+     "maxRarity": 9,
+     "set": "ドスギルオスの統率",
+     "orbTier": 3,
+     "skills": [
+      {
+       "name": "体力回復",
+       "lv": 2,
+       "rarity": 7
+      },
+      {
+       "name": "のけぞり軽減",
+       "lv": 1,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅲ",
+       "qty": 2
+      },
+      {
+       "name": "融光種痺賊竜の鱗Ⅲ",
+       "qty": 3
+      },
+      {
+       "name": "融光種痺賊竜の皮Ⅲ",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/585945"
+    }
+   ]
+  },
+  {
+   "name": "ディアブロ",
+   "gate": {
+    "type": "monster",
+    "monsters": [
+     "ディアブロス"
+    ]
+   },
+   "set": "角竜の踏み締め",
+   "pieces": [
+    {
+     "id": "u30c7_u30a3_u30a2_u30d6_u30ed_head",
+     "name": "ディアブロスヘルム",
+     "part": "head",
+     "baseRarity": 7,
+     "maxRarity": 9,
+     "set": "角竜の踏み締め",
+     "orbTier": 3,
+     "skills": [
+      {
+       "name": "振動耐性",
+       "lv": 2,
+       "rarity": 7
+      },
+      {
+       "name": "防護",
+       "lv": 1,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅲ",
+       "qty": 2
+      },
+      {
+       "name": "角竜の甲殻Ⅲ",
+       "qty": 3
+      },
+      {
+       "name": "ねじれた角Ⅲ",
+       "qty": 3
+      },
+      {
+       "name": "角竜の骨髄Ⅲ",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586291"
+    },
+    {
+     "id": "u30c7_u30a3_u30a2_u30d6_u30ed_body",
+     "name": "ディアブロメイル",
+     "part": "body",
+     "baseRarity": 7,
+     "maxRarity": 9,
+     "set": "角竜の踏み締め",
+     "orbTier": 3,
+     "skills": [
+      {
+       "name": "龍属性ダメージUP",
+       "lv": 2,
+       "rarity": 7
+      },
+      {
+       "name": "防護",
+       "lv": 1,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅲ",
+       "qty": 2
+      },
+      {
+       "name": "角竜の背甲Ⅲ",
+       "qty": 3
+      },
+      {
+       "name": "角竜の甲殻Ⅲ",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586291"
+    },
+    {
+     "id": "u30c7_u30a3_u30a2_u30d6_u30ed_arm",
+     "name": "ディアブロアーム",
+     "part": "arm",
+     "baseRarity": 7,
+     "maxRarity": 9,
+     "set": "角竜の踏み締め",
+     "orbTier": 3,
+     "skills": [
+      {
+       "name": "弁当好き",
+       "lv": 1,
+       "rarity": 7
+      },
+      {
+       "name": "弱点追撃",
+       "lv": 1,
+       "rarity": 7
+      },
+      {
+       "name": "ガードテクニック",
+       "lv": 1,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅲ",
+       "qty": 2
+      },
+      {
+       "name": "角竜の牙Ⅲ",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586291"
+    },
+    {
+     "id": "u30c7_u30a3_u30a2_u30d6_u30ed_waist",
+     "name": "ディアブロコイル",
+     "part": "waist",
+     "baseRarity": 7,
+     "maxRarity": 9,
+     "set": "角竜の踏み締め",
+     "orbTier": 3,
+     "skills": [
+      {
+       "name": "貫突",
+       "lv": 1,
+       "rarity": 7
+      },
+      {
+       "name": "ガードテクニック",
+       "lv": 1,
+       "rarity": 7
+      },
+      {
+       "name": "弱点追撃",
+       "lv": 1,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅲ",
+       "qty": 2
+      },
+      {
+       "name": "角竜の牙Ⅲ",
+       "qty": 3
+      },
+      {
+       "name": "角竜の尾甲Ⅲ",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586291"
+    },
+    {
+     "id": "u30c7_u30a3_u30a2_u30d6_u30ed_leg",
+     "name": "ディアブログリーヴ",
+     "part": "leg",
+     "baseRarity": 7,
+     "maxRarity": 9,
+     "set": "角竜の踏み締め",
+     "orbTier": 3,
+     "skills": [
+      {
+       "name": "弁当好き",
+       "lv": 2,
+       "rarity": 7
+      },
+      {
+       "name": "防護",
+       "lv": 1,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅲ",
+       "qty": 2
+      },
+      {
+       "name": "角竜の甲殻Ⅲ",
+       "qty": 3
+      },
+      {
+       "name": "角竜の牙Ⅲ",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586291"
+    }
+   ]
+  },
+  {
+   "name": "ツィツィ",
+   "gate": {
+    "type": "monster",
+    "monsters": [
+     "ツィツィヤック"
+    ]
+   },
+   "set": "眩鳥の追撃",
+   "pieces": [
+    {
+     "id": "u30c4_u30a3_u30c4_u30a3_head",
+     "name": "ツィツィヘルム",
+     "part": "head",
+     "baseRarity": 8,
+     "maxRarity": 9,
+     "set": "眩鳥の追撃",
+     "orbTier": 3,
+     "skills": [
+      {
+       "name": "一撃貫通",
+       "lv": 1,
+       "rarity": 8
+      },
+      {
+       "name": "徹底追撃",
+       "lv": 1,
+       "rarity": 8
+      },
+      {
+       "name": "加護",
+       "lv": 1,
+       "rarity": 8
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅲ",
+       "qty": 2
+      },
+      {
+       "name": "眩鳥の鱗Ⅲ",
+       "qty": 3
+      },
+      {
+       "name": "眩鳥の爪Ⅲ",
+       "qty": 3
+      },
+      {
+       "name": "眩鳥の発光膜Ⅲ",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586645"
+    },
+    {
+     "id": "u30c4_u30a3_u30c4_u30a3_body",
+     "name": "ツィツィメイル",
+     "part": "body",
+     "baseRarity": 8,
+     "maxRarity": 9,
+     "set": "眩鳥の追撃",
+     "orbTier": 3,
+     "skills": [
+      {
+       "name": "水属性ダメージUP",
+       "lv": 2,
+       "rarity": 8
+      },
+      {
+       "name": "加護",
+       "lv": 1,
+       "rarity": 8
+      },
+      {
+       "name": "水属性ダメージUP",
+       "lv": 3,
+       "rarity": 9
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅲ",
+       "qty": 2
+      },
+      {
+       "name": "眩鳥の皮Ⅲ",
+       "qty": 3
+      },
+      {
+       "name": "眩鳥の爪Ⅲ",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586645"
+    },
+    {
+     "id": "u30c4_u30a3_u30c4_u30a3_arm",
+     "name": "ツィツィアーム",
+     "part": "arm",
+     "baseRarity": 8,
+     "maxRarity": 9,
+     "set": "眩鳥の追撃",
+     "orbTier": 3,
+     "skills": [
+      {
+       "name": "一撃貫通",
+       "lv": 2,
+       "rarity": 8
+      },
+      {
+       "name": "睡眠耐性",
+       "lv": 1,
+       "rarity": 8
+      },
+      {
+       "name": "一撃貫通",
+       "lv": 3,
+       "rarity": 9
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅲ",
+       "qty": 2
+      },
+      {
+       "name": "眩鳥の鱗Ⅲ",
+       "qty": 3
+      },
+      {
+       "name": "眩鳥の皮Ⅲ",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586645"
+    },
+    {
+     "id": "u30c4_u30a3_u30c4_u30a3_waist",
+     "name": "ツィツィコイル",
+     "part": "waist",
+     "baseRarity": 8,
+     "maxRarity": 9,
+     "set": "眩鳥の追撃",
+     "orbTier": 3,
+     "skills": [
+      {
+       "name": "水属性ダメージUP",
+       "lv": 1,
+       "rarity": 8
+      },
+      {
+       "name": "徹底追撃",
+       "lv": 1,
+       "rarity": 8
+      },
+      {
+       "name": "気絶耐性",
+       "lv": 1,
+       "rarity": 8
+      },
+      {
+       "name": "水属性ダメージUP",
+       "lv": 2,
+       "rarity": 9
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅲ",
+       "qty": 2
+      },
+      {
+       "name": "眩鳥の鱗Ⅲ",
+       "qty": 3
+      },
+      {
+       "name": "眩鳥の爪Ⅲ",
+       "qty": 3
+      },
+      {
+       "name": "眩鳥の発光膜Ⅲ",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586645"
+    },
+    {
+     "id": "u30c4_u30a3_u30c4_u30a3_leg",
+     "name": "ツィツィグリーヴ",
+     "part": "leg",
+     "baseRarity": 8,
+     "maxRarity": 9,
+     "set": "眩鳥の追撃",
+     "orbTier": 3,
+     "skills": [
+      {
+       "name": "捕獲の達人",
+       "lv": 1,
+       "rarity": 8
+      },
+      {
+       "name": "気絶耐性",
+       "lv": 1,
+       "rarity": 8
+      },
+      {
+       "name": "加護",
+       "lv": 1,
+       "rarity": 8
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅲ",
+       "qty": 2
+      },
+      {
+       "name": "眩鳥の鱗Ⅲ",
+       "qty": 3
+      },
+      {
+       "name": "眩鳥の皮Ⅲ",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586645"
     }
    ]
   },
@@ -133,51 +7347,193 @@
    "name": "ウルムー",
    "gate": {
     "type": "monster",
-    "monster": "パオウルムー"
-   },
-   "setSkill": {
-    "name": "浮空竜の気迫",
-    "bonuses": [
-     {
-      "pieces": 2,
-      "skill": "体力回復",
-      "lv": 1
-     }
+    "monsters": [
+     "パオウルムー"
     ]
    },
+   "set": "浮空竜の気迫",
    "pieces": [
     {
-     "id": "ulm_head",
+     "id": "u30a6_u30eb_u30e0_u30fc_head",
      "name": "ウルムーヘルム",
      "part": "head",
-     "baseRarity": 4,
+     "baseRarity": 8,
      "maxRarity": 9,
+     "set": "浮空竜の気迫",
+     "orbTier": 3,
      "skills": [
       {
        "name": "弩弾強化",
        "lv": 1,
-       "rarity": 4
-      }
-     ]
-    },
-    {
-     "id": "ulm_arm",
-     "name": "ウルムーアーム",
-     "part": "arm",
-     "baseRarity": 4,
-     "maxRarity": 9,
-     "skills": [
-      {
-       "name": "滞空",
-       "lv": 2,
-       "rarity": 4
+       "rarity": 8
       },
       {
        "name": "風圧耐性",
        "lv": 1,
-       "rarity": 4
+       "rarity": 8
+      },
+      {
+       "name": "無垢",
+       "lv": 1,
+       "rarity": 8
       }
-     ]
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅲ",
+       "qty": 2
+      },
+      {
+       "name": "浮空竜の毛皮Ⅲ",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586644"
+    },
+    {
+     "id": "u30a6_u30eb_u30e0_u30fc_body",
+     "name": "ウルムーメイル",
+     "part": "body",
+     "baseRarity": 8,
+     "maxRarity": 9,
+     "set": "浮空竜の気迫",
+     "orbTier": 3,
+     "skills": [
+      {
+       "name": "防御反撃",
+       "lv": 2,
+       "rarity": 8
+      },
+      {
+       "name": "加護",
+       "lv": 1,
+       "rarity": 8
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅲ",
+       "qty": 2
+      },
+      {
+       "name": "浮空竜の鱗Ⅲ",
+       "qty": 3
+      },
+      {
+       "name": "浮空竜の毛皮Ⅲ",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586644"
+    },
+    {
+     "id": "u30a6_u30eb_u30e0_u30fc_arm",
+     "name": "ウルムーアーム",
+     "part": "arm",
+     "baseRarity": 8,
+     "maxRarity": 9,
+     "set": "浮空竜の気迫",
+     "orbTier": 3,
+     "skills": [
+      {
+       "name": "滞空",
+       "lv": 2,
+       "rarity": 8
+      },
+      {
+       "name": "風圧耐性",
+       "lv": 1,
+       "rarity": 8
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅲ",
+       "qty": 2
+      },
+      {
+       "name": "浮空竜の鱗Ⅲ",
+       "qty": 3
+      },
+      {
+       "name": "浮空竜の翼膜Ⅲ",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586644"
+    },
+    {
+     "id": "u30a6_u30eb_u30e0_u30fc_waist",
+     "name": "ウルムーコイル",
+     "part": "waist",
+     "baseRarity": 8,
+     "maxRarity": 9,
+     "set": "浮空竜の気迫",
+     "orbTier": 3,
+     "skills": [
+      {
+       "name": "体力回復",
+       "lv": 2,
+       "rarity": 8
+      },
+      {
+       "name": "加護",
+       "lv": 1,
+       "rarity": 8
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅲ",
+       "qty": 2
+      },
+      {
+       "name": "浮空竜の毛皮Ⅲ",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586644"
+    },
+    {
+     "id": "u30a6_u30eb_u30e0_u30fc_leg",
+     "name": "ウルムーグリーヴ",
+     "part": "leg",
+     "baseRarity": 8,
+     "maxRarity": 9,
+     "set": "浮空竜の気迫",
+     "orbTier": 3,
+     "skills": [
+      {
+       "name": "防御反撃",
+       "lv": 1,
+       "rarity": 8
+      },
+      {
+       "name": "無垢",
+       "lv": 1,
+       "rarity": 8
+      },
+      {
+       "name": "風圧耐性",
+       "lv": 1,
+       "rarity": 8
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅲ",
+       "qty": 2
+      },
+      {
+       "name": "浮空竜の鱗Ⅲ",
+       "qty": 3
+      },
+      {
+       "name": "ゴム質の甲殻Ⅲ",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586644"
     }
    ]
   },
@@ -185,182 +7541,403 @@
    "name": "融光種ウルムー",
    "gate": {
     "type": "monster",
-    "monster": "融光種パオウルムー"
-   },
-   "setSkill": {
-    "name": "浮空竜の気流",
-    "bonuses": [
-     {
-      "pieces": 2,
-      "skill": "高圧ガード",
-      "lv": 1
-     }
+    "monsters": [
+     "融光種パオウルムー"
     ]
    },
+   "set": "浮空竜の気流",
    "pieces": [
     {
-     "id": "yulm_waist",
-     "name": "融光種ウルムーコイル",
-     "part": "waist",
-     "baseRarity": 5,
+     "id": "u878d_u5149_u7a2e_u30a6_u30eb_u30e0_u30f_head",
+     "name": "融光種ウルムーヘルム",
+     "part": "head",
+     "baseRarity": 9,
      "maxRarity": 9,
+     "set": "浮空竜の気流",
+     "orbTier": 4,
      "skills": [
-      {
-       "name": "滞空",
-       "lv": 3,
-       "rarity": 5
-      },
       {
        "name": "アイテム専門家",
        "lv": 1,
-       "rarity": 5
-      }
-     ]
-    },
-    {
-     "id": "yulm_leg",
-     "name": "融光種ウルムーグリーヴ",
-     "part": "leg",
-     "baseRarity": 5,
-     "maxRarity": 9,
-     "skills": [
-      {
-       "name": "滞空",
-       "lv": 2,
-       "rarity": 5
+       "rarity": 9
       },
       {
        "name": "加護",
        "lv": 1,
-       "rarity": 5
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "name": "オウビート",
-   "gate": {
-    "type": "basic"
-   },
-   "setSkill": {
-    "name": "一角の神秘",
-    "bonuses": [
-     {
-      "pieces": 2,
-      "skill": "地質専門家",
-      "lv": 1
-     }
-    ]
-   },
-   "pieces": [
-    {
-     "id": "ow_arm",
-     "name": "オウビートマーノ",
-     "part": "arm",
-     "baseRarity": 4,
-     "maxRarity": 9,
-     "skills": [
+       "rarity": 9
+      },
       {
-       "name": "弩弾強化",
+       "name": "溜め強射",
        "lv": 1,
-       "rarity": 6
+       "rarity": 9
       }
-     ]
-    }
-   ]
-  },
-  {
-   "name": "パピメル",
-   "gate": {
-    "type": "basic"
-   },
-   "setSkill": {
-    "name": "花蝶の親和",
-    "bonuses": [
-     {
-      "pieces": 2,
-      "skill": "睡眠耐性",
-      "lv": 1
-     }
-    ]
-   },
-   "pieces": [
-    {
-     "id": "pap_head",
-     "name": "パピメルテスタ",
-     "part": "head",
-     "baseRarity": 4,
-     "maxRarity": 9,
-     "skills": [
+     ],
+     "materials": [
       {
-       "name": "滞空",
-       "lv": 1,
-       "rarity": 4
+       "name": "狩魂玉Ⅳ",
+       "qty": 2
+      },
+      {
+       "name": "融光種浮空竜の毛皮Ⅳ",
+       "qty": 3
       }
-     ]
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586642"
     },
     {
-     "id": "pap_leg",
-     "name": "パピメルガンバ",
-     "part": "leg",
-     "baseRarity": 4,
+     "id": "u878d_u5149_u7a2e_u30a6_u30eb_u30e0_u30f_body",
+     "name": "融光種ウルムーメイル",
+     "part": "body",
+     "baseRarity": 9,
      "maxRarity": 9,
+     "set": "浮空竜の気流",
+     "orbTier": 4,
      "skills": [
       {
-       "name": "滞空",
-       "lv": 1,
-       "rarity": 4
+       "name": "高圧ガード",
+       "lv": 2,
+       "rarity": 9
       },
+      {
+       "name": "アイテム専門家",
+       "lv": 1,
+       "rarity": 9
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅳ",
+       "qty": 2
+      },
+      {
+       "name": "融光種浮空竜の鱗Ⅳ",
+       "qty": 3
+      },
+      {
+       "name": "融光種浮空竜の毛皮Ⅳ",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586642"
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30a6_u30eb_u30e0_u30f_arm",
+     "name": "融光種ウルムーアーム",
+     "part": "arm",
+     "baseRarity": 9,
+     "maxRarity": 9,
+     "set": "浮空竜の気流",
+     "orbTier": 4,
+     "skills": [
       {
        "name": "弾導強化",
        "lv": 1,
-       "rarity": 4
+       "rarity": 9
+      },
+      {
+       "name": "採集名人",
+       "lv": 1,
+       "rarity": 9
+      },
+      {
+       "name": "溜め強射",
+       "lv": 2,
+       "rarity": 9
       }
-     ]
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅳ",
+       "qty": 2
+      },
+      {
+       "name": "融光種浮空竜の翼膜Ⅳ",
+       "qty": 3
+      },
+      {
+       "name": "融光種浮空竜の鱗Ⅳ",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586642"
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30a6_u30eb_u30e0_u30f_waist",
+     "name": "融光種ウルムーコイル",
+     "part": "waist",
+     "baseRarity": 9,
+     "maxRarity": 9,
+     "set": "浮空竜の気流",
+     "orbTier": 4,
+     "skills": [
+      {
+       "name": "滞空",
+       "lv": 3,
+       "rarity": 9
+      },
+      {
+       "name": "アイテム専門家",
+       "lv": 1,
+       "rarity": 9
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅳ",
+       "qty": 2
+      },
+      {
+       "name": "融光種浮空竜の毛皮Ⅳ",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586642"
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30a6_u30eb_u30e0_u30f_leg",
+     "name": "融光種ウルムーグリーヴ",
+     "part": "leg",
+     "baseRarity": 9,
+     "maxRarity": 9,
+     "set": "浮空竜の気流",
+     "orbTier": 4,
+     "skills": [
+      {
+       "name": "滞空",
+       "lv": 2,
+       "rarity": 9
+      },
+      {
+       "name": "融光感知",
+       "lv": 1,
+       "rarity": 9
+      },
+      {
+       "name": "加護",
+       "lv": 1,
+       "rarity": 9
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅳ",
+       "qty": 2
+      },
+      {
+       "name": "融光種ゴム質の甲殻Ⅳ",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586642"
     }
    ]
   },
   {
-   "name": "レイア",
+   "name": "バルキン",
    "gate": {
     "type": "monster",
-    "monster": "リオレイア"
-   },
-   "setSkill": {
-    "name": "雌火竜の強躯",
-    "bonuses": [
-     {
-      "pieces": 2,
-      "skill": "体力強化",
-      "lv": 1
-     }
+    "monsters": [
+     "ラドバルキン"
     ]
    },
+   "set": "骨鎚竜の鉄壁",
    "pieces": [
     {
-     "id": "rath_body",
-     "name": "レイアメイル",
-     "part": "body",
-     "baseRarity": 4,
+     "id": "u30d0_u30eb_u30ad_u30f3_head",
+     "name": "バルキンヘルム",
+     "part": "head",
+     "baseRarity": 7,
      "maxRarity": 9,
+     "set": "骨鎚竜の鉄壁",
+     "orbTier": 3,
      "skills": [
       {
-       "name": "滞空",
+       "name": "裂傷耐性",
        "lv": 1,
-       "rarity": 4
+       "rarity": 7
       },
       {
-       "name": "滞空",
-       "lv": 2,
-       "rarity": 6
+       "name": "怖いもの無し",
+       "lv": 1,
+       "rarity": 7
       },
       {
-       "name": "毒耐性",
+       "name": "溜め強化",
        "lv": 1,
-       "rarity": 4
+       "rarity": 7
       }
-     ]
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅲ",
+       "qty": 2
+      },
+      {
+       "name": "骨鎚竜の鱗Ⅲ",
+       "qty": 3
+      },
+      {
+       "name": "骨鎚竜の甲殻Ⅲ",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586292"
+    },
+    {
+     "id": "u30d0_u30eb_u30ad_u30f3_body",
+     "name": "バルキンメイル",
+     "part": "body",
+     "baseRarity": 7,
+     "maxRarity": 9,
+     "set": "骨鎚竜の鉄壁",
+     "orbTier": 3,
+     "skills": [
+      {
+       "name": "裂傷耐性",
+       "lv": 1,
+       "rarity": 7
+      },
+      {
+       "name": "威震",
+       "lv": 1,
+       "rarity": 7
+      },
+      {
+       "name": "怖いもの無し",
+       "lv": 1,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅲ",
+       "qty": 2
+      },
+      {
+       "name": "骨鎚竜の甲殻Ⅲ",
+       "qty": 3
+      },
+      {
+       "name": "骨鎚竜の黒油殻Ⅲ",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586292"
+    },
+    {
+     "id": "u30d0_u30eb_u30ad_u30f3_arm",
+     "name": "バルキンアーム",
+     "part": "arm",
+     "baseRarity": 7,
+     "maxRarity": 9,
+     "set": "骨鎚竜の鉄壁",
+     "orbTier": 3,
+     "skills": [
+      {
+       "name": "溜め強化",
+       "lv": 3,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅲ",
+       "qty": 2
+      },
+      {
+       "name": "骨鎚竜の鱗Ⅲ",
+       "qty": 3
+      },
+      {
+       "name": "骨鎚竜の甲殻Ⅲ",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586292"
+    },
+    {
+     "id": "u30d0_u30eb_u30ad_u30f3_waist",
+     "name": "バルキンコイル",
+     "part": "waist",
+     "baseRarity": 7,
+     "maxRarity": 9,
+     "set": "骨鎚竜の鉄壁",
+     "orbTier": 3,
+     "skills": [
+      {
+       "name": "剛勢",
+       "lv": 2,
+       "rarity": 7
+      },
+      {
+       "name": "睡眠耐性",
+       "lv": 1,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅲ",
+       "qty": 2
+      },
+      {
+       "name": "骨鎚竜の骨髄Ⅲ",
+       "qty": 3
+      },
+      {
+       "name": "竜骨塊Ⅲ",
+       "qty": 3
+      },
+      {
+       "name": "骨鎚竜の鱗Ⅲ",
+       "qty": 3
+      },
+      {
+       "name": "骨鎚竜の黒油殻Ⅲ",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586292"
+    },
+    {
+     "id": "u30d0_u30eb_u30ad_u30f3_leg",
+     "name": "バルキングリーヴ",
+     "part": "leg",
+     "baseRarity": 7,
+     "maxRarity": 9,
+     "set": "骨鎚竜の鉄壁",
+     "orbTier": 3,
+     "skills": [
+      {
+       "name": "防御力DOWN耐性",
+       "lv": 2,
+       "rarity": 7
+      },
+      {
+       "name": "裂傷耐性",
+       "lv": 1,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅲ",
+       "qty": 2
+      },
+      {
+       "name": "骨鎚竜の鱗Ⅲ",
+       "qty": 3
+      },
+      {
+       "name": "骨鎚竜の黒油殻Ⅲ",
+       "qty": 3
+      },
+      {
+       "name": "竜骨塊Ⅲ",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586292"
     }
    ]
   },
@@ -368,32 +7945,883 @@
    "name": "ギエナ",
    "gate": {
     "type": "monster",
-    "monster": "レイギエナ"
-   },
-   "setSkill": {
-    "name": "風漂竜の舞",
-    "bonuses": [
-     {
-      "pieces": 2,
-      "skill": "氷耐性強化",
-      "lv": 1
-     }
+    "monsters": [
+     "レイギエナ"
     ]
    },
+   "set": "風漂竜の舞",
    "pieces": [
     {
-     "id": "leg_leg",
+     "id": "u30ae_u30a8_u30ca_head",
+     "name": "ギエナヘルム",
+     "part": "head",
+     "baseRarity": 8,
+     "maxRarity": 9,
+     "set": "風漂竜の舞",
+     "orbTier": 3,
+     "skills": [
+      {
+       "name": "氷耐性強化",
+       "lv": 2,
+       "rarity": 8
+      },
+      {
+       "name": "加護",
+       "lv": 1,
+       "rarity": 8
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅲ",
+       "qty": 2
+      },
+      {
+       "name": "風漂竜の鱗Ⅲ",
+       "qty": 3
+      },
+      {
+       "name": "風漂竜の皮Ⅲ",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586643"
+    },
+    {
+     "id": "u30ae_u30a8_u30ca_body",
+     "name": "ギエナメイル",
+     "part": "body",
+     "baseRarity": 8,
+     "maxRarity": 9,
+     "set": "風漂竜の舞",
+     "orbTier": 3,
+     "skills": [
+      {
+       "name": "抜刀一閃",
+       "lv": 2,
+       "rarity": 8
+      },
+      {
+       "name": "弱点攻撃",
+       "lv": 1,
+       "rarity": 8
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅲ",
+       "qty": 2
+      },
+      {
+       "name": "風漂竜の皮Ⅲ",
+       "qty": 3
+      },
+      {
+       "name": "風漂竜の爪Ⅲ",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586643"
+    },
+    {
+     "id": "u30ae_u30a8_u30ca_arm",
+     "name": "ギエナアーム",
+     "part": "arm",
+     "baseRarity": 8,
+     "maxRarity": 9,
+     "set": "風漂竜の舞",
+     "orbTier": 3,
+     "skills": [
+      {
+       "name": "弱点攻撃",
+       "lv": 1,
+       "rarity": 8
+      },
+      {
+       "name": "加護",
+       "lv": 1,
+       "rarity": 8
+      },
+      {
+       "name": "氷属性ダメージUP",
+       "lv": 1,
+       "rarity": 8
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅲ",
+       "qty": 2
+      },
+      {
+       "name": "風漂竜の逆鱗Ⅲ",
+       "qty": 3
+      },
+      {
+       "name": "風漂竜の翼膜Ⅲ",
+       "qty": 3
+      },
+      {
+       "name": "風漂竜の鱗Ⅲ",
+       "qty": 3
+      },
+      {
+       "name": "風漂竜の爪Ⅲ",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586643"
+    },
+    {
+     "id": "u30ae_u30a8_u30ca_waist",
+     "name": "ギエナコイル",
+     "part": "waist",
+     "baseRarity": 8,
+     "maxRarity": 9,
+     "set": "風漂竜の舞",
+     "orbTier": 3,
+     "skills": [
+      {
+       "name": "加護",
+       "lv": 2,
+       "rarity": 8
+      },
+      {
+       "name": "氷属性ダメージUP",
+       "lv": 1,
+       "rarity": 8
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅲ",
+       "qty": 2
+      },
+      {
+       "name": "風漂竜の鱗Ⅲ",
+       "qty": 3
+      },
+      {
+       "name": "風漂竜の皮Ⅲ",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586643"
+    },
+    {
+     "id": "u30ae_u30a8_u30ca_leg",
      "name": "ギエナグリーヴ",
      "part": "leg",
-     "baseRarity": 5,
+     "baseRarity": 8,
      "maxRarity": 9,
+     "set": "風漂竜の舞",
+     "orbTier": 3,
      "skills": [
       {
        "name": "弩弾強化",
        "lv": 2,
-       "rarity": 5
+       "rarity": 8
+      },
+      {
+       "name": "制圧回復",
+       "lv": 1,
+       "rarity": 8
       }
-     ]
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅲ",
+       "qty": 2
+      },
+      {
+       "name": "風漂竜の尾膜Ⅲ",
+       "qty": 3
+      },
+      {
+       "name": "風漂竜の鱗Ⅲ",
+       "qty": 3
+      },
+      {
+       "name": "風漂竜の爪Ⅲ",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586643"
+    }
+   ]
+  },
+  {
+   "name": "ガロン",
+   "gate": {
+    "type": "monster",
+    "monsters": [
+     "オドガロン"
+    ]
+   },
+   "set": "惨爪竜の靭性",
+   "pieces": [
+    {
+     "id": "u30ac_u30ed_u30f3_head",
+     "name": "ガロンヘルム",
+     "part": "head",
+     "baseRarity": 7,
+     "maxRarity": 9,
+     "set": "惨爪竜の靭性",
+     "orbTier": 3,
+     "skills": [
+      {
+       "name": "気力変換",
+       "lv": 1,
+       "rarity": 7
+      },
+      {
+       "name": "狩人の第六感",
+       "lv": 1,
+       "rarity": 7
+      },
+      {
+       "name": "復活",
+       "lv": 1,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅲ",
+       "qty": 2
+      },
+      {
+       "name": "惨爪竜の鱗Ⅲ",
+       "qty": 3
+      },
+      {
+       "name": "惨爪竜の牙Ⅲ",
+       "qty": 3
+      },
+      {
+       "name": "惨爪竜の逆鱗Ⅲ",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/578946"
+    },
+    {
+     "id": "u30ac_u30ed_u30f3_body",
+     "name": "ガロンメイル",
+     "part": "body",
+     "baseRarity": 7,
+     "maxRarity": 9,
+     "set": "惨爪竜の靭性",
+     "orbTier": 3,
+     "skills": [
+      {
+       "name": "鬼人の修羅",
+       "lv": 2,
+       "rarity": 7
+      },
+      {
+       "name": "復活",
+       "lv": 1,
+       "rarity": 7
+      },
+      {
+       "name": "復活",
+       "lv": 1,
+       "rarity": 8
+      },
+      {
+       "name": "鬼人の修羅",
+       "lv": 2,
+       "rarity": 8
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅲ",
+       "qty": 2
+      },
+      {
+       "name": "惨爪竜の鱗Ⅲ",
+       "qty": 3
+      },
+      {
+       "name": "惨爪竜の硬筋Ⅲ",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/578946"
+    },
+    {
+     "id": "u30ac_u30ed_u30f3_arm",
+     "name": "ガロンアーム",
+     "part": "arm",
+     "baseRarity": 7,
+     "maxRarity": 9,
+     "set": "惨爪竜の靭性",
+     "orbTier": 3,
+     "skills": [
+      {
+       "name": "裂傷耐性",
+       "lv": 2,
+       "rarity": 7
+      },
+      {
+       "name": "みなぎるエナジー",
+       "lv": 1,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅲ",
+       "qty": 2
+      },
+      {
+       "name": "惨爪竜の鱗Ⅲ",
+       "qty": 3
+      },
+      {
+       "name": "惨爪竜の爪Ⅲ",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/578946"
+    },
+    {
+     "id": "u30ac_u30ed_u30f3_waist",
+     "name": "ガロンコイル",
+     "part": "waist",
+     "baseRarity": 7,
+     "maxRarity": 9,
+     "set": "惨爪竜の靭性",
+     "orbTier": 3,
+     "skills": [
+      {
+       "name": "チャージ準備",
+       "lv": 2,
+       "rarity": 7
+      },
+      {
+       "name": "みなぎるエナジー",
+       "lv": 1,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅲ",
+       "qty": 2
+      },
+      {
+       "name": "惨爪竜の硬筋Ⅲ",
+       "qty": 3
+      },
+      {
+       "name": "惨爪竜の尻尾Ⅲ",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/578946"
+    },
+    {
+     "id": "u30ac_u30ed_u30f3_leg",
+     "name": "ガロングリーヴ",
+     "part": "leg",
+     "baseRarity": 7,
+     "maxRarity": 9,
+     "set": "惨爪竜の靭性",
+     "orbTier": 3,
+     "skills": [
+      {
+       "name": "チャージ準備",
+       "lv": 1,
+       "rarity": 7
+      },
+      {
+       "name": "弱点攻撃",
+       "lv": 1,
+       "rarity": 7
+      },
+      {
+       "name": "復活",
+       "lv": 1,
+       "rarity": 7
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅲ",
+       "qty": 2
+      },
+      {
+       "name": "惨爪竜の硬筋Ⅲ",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/578946"
+    }
+   ]
+  },
+  {
+   "name": "リオハート",
+   "gate": {
+    "type": "monster",
+    "monsters": [
+     "リオレイア亜種"
+    ]
+   },
+   "set": "桜火竜の鋭敏",
+   "pieces": [
+    {
+     "id": "u30ea_u30aa_u30cf_u30fc_u30c8_head",
+     "name": "リオハートヘルム",
+     "part": "head",
+     "baseRarity": 9,
+     "maxRarity": 9,
+     "set": "桜火竜の鋭敏",
+     "orbTier": 4,
+     "skills": [
+      {
+       "name": "火属性ダメージUP",
+       "lv": 2,
+       "rarity": 9
+      },
+      {
+       "name": "狩人の第六感",
+       "lv": 1,
+       "rarity": 9
+      },
+      {
+       "name": "体力強化",
+       "lv": 1,
+       "rarity": 9
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅳ",
+       "qty": 2
+      },
+      {
+       "name": "桜火竜の堅殻Ⅳ",
+       "qty": 3
+      },
+      {
+       "name": "雌火竜の逆鱗Ⅳ",
+       "qty": 3
+      },
+      {
+       "name": "桜火竜の上鱗Ⅳ",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586641"
+    },
+    {
+     "id": "u30ea_u30aa_u30cf_u30fc_u30c8_body",
+     "name": "リオハートメイル",
+     "part": "body",
+     "baseRarity": 9,
+     "maxRarity": 9,
+     "set": "桜火竜の鋭敏",
+     "orbTier": 4,
+     "skills": [
+      {
+       "name": "毒耐性",
+       "lv": 2,
+       "rarity": 9
+      },
+      {
+       "name": "復活",
+       "lv": 1,
+       "rarity": 9
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅳ",
+       "qty": 2
+      },
+      {
+       "name": "雌火竜の甲殻Ⅳ",
+       "qty": 3
+      },
+      {
+       "name": "桜火竜の上鱗Ⅳ",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586641"
+    },
+    {
+     "id": "u30ea_u30aa_u30cf_u30fc_u30c8_arm",
+     "name": "リオハートアーム",
+     "part": "arm",
+     "baseRarity": 9,
+     "maxRarity": 9,
+     "set": "桜火竜の鋭敏",
+     "orbTier": 4,
+     "skills": [
+      {
+       "name": "リロード強化",
+       "lv": 2,
+       "rarity": 9
+      },
+      {
+       "name": "狩人の第六感",
+       "lv": 1,
+       "rarity": 9
+      },
+      {
+       "name": "復活",
+       "lv": 1,
+       "rarity": 9
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅳ",
+       "qty": 2
+      },
+      {
+       "name": "桜火竜の上鱗Ⅳ",
+       "qty": 3
+      },
+      {
+       "name": "桜火竜の翼膜Ⅳ",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586641"
+    },
+    {
+     "id": "u30ea_u30aa_u30cf_u30fc_u30c8_waist",
+     "name": "リオハートコイル",
+     "part": "waist",
+     "baseRarity": 9,
+     "maxRarity": 9,
+     "set": "桜火竜の鋭敏",
+     "orbTier": 4,
+     "skills": [
+      {
+       "name": "リロード強化",
+       "lv": 2,
+       "rarity": 9
+      },
+      {
+       "name": "体力強化",
+       "lv": 1,
+       "rarity": 9
+      },
+      {
+       "name": "洞察",
+       "lv": 1,
+       "rarity": 9
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅳ",
+       "qty": 2
+      },
+      {
+       "name": "雌火竜の甲殻Ⅳ",
+       "qty": 3
+      },
+      {
+       "name": "雌火竜の棘Ⅳ",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586641"
+    },
+    {
+     "id": "u30ea_u30aa_u30cf_u30fc_u30c8_leg",
+     "name": "リオハートグリーヴ",
+     "part": "leg",
+     "baseRarity": 9,
+     "maxRarity": 9,
+     "set": "桜火竜の鋭敏",
+     "orbTier": 4,
+     "skills": [
+      {
+       "name": "本気",
+       "lv": 1,
+       "rarity": 9
+      },
+      {
+       "name": "練気をまといし刃",
+       "lv": 2,
+       "rarity": 9
+      },
+      {
+       "name": "復活",
+       "lv": 1,
+       "rarity": 9
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅳ",
+       "qty": 2
+      },
+      {
+       "name": "雌火竜の甲殻Ⅳ",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586641"
+    }
+   ]
+  },
+  {
+   "name": "エアルダ",
+   "gate": {
+    "type": "monster",
+    "monsters": [
+     "ルガエアルダ"
+    ]
+   },
+   "set": "光稜龍の威嚇",
+   "pieces": [
+    {
+     "id": "u30a8_u30a2_u30eb_u30c0_head",
+     "name": "エアルダの誓約",
+     "part": "head",
+     "baseRarity": 9,
+     "maxRarity": 9,
+     "set": "光稜龍の威嚇",
+     "orbTier": 4,
+     "skills": [
+      {
+       "name": "制圧回復",
+       "lv": 2,
+       "rarity": 9
+      },
+      {
+       "name": "高圧ガード",
+       "lv": 1,
+       "rarity": 9
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅳ",
+       "qty": 2
+      },
+      {
+       "name": "光稜龍の冠角",
+       "qty": 3
+      },
+      {
+       "name": "光稜龍の冠棘",
+       "qty": 3
+      },
+      {
+       "name": "光稜龍の稜石鱗",
+       "qty": 3
+      },
+      {
+       "name": "天光蘊融石",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586640"
+    },
+    {
+     "id": "u30a8_u30a2_u30eb_u30c0_body",
+     "name": "エアルダの守護",
+     "part": "body",
+     "baseRarity": 9,
+     "maxRarity": 9,
+     "set": "光稜龍の威嚇",
+     "orbTier": 4,
+     "skills": [
+      {
+       "name": "回避強化",
+       "lv": 3,
+       "rarity": 9
+      },
+      {
+       "name": "みなぎるエナジー",
+       "lv": 1,
+       "rarity": 9
+      }
+     ],
+     "materials": [
+      {
+       "name": "光稜龍の剛晶玉",
+       "qty": 3
+      },
+      {
+       "name": "狩魂玉Ⅳ",
+       "qty": 2
+      },
+      {
+       "name": "天光のたてがみ",
+       "qty": 3
+      },
+      {
+       "name": "光稜龍の輝翼爪",
+       "qty": 3
+      },
+      {
+       "name": "光稜龍の重光殻",
+       "qty": 3
+      },
+      {
+       "name": "天光蘊融石",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586640"
+    },
+    {
+     "id": "u30a8_u30a2_u30eb_u30c0_arm",
+     "name": "エアルダの裁き",
+     "part": "arm",
+     "baseRarity": 9,
+     "maxRarity": 9,
+     "set": "光稜龍の威嚇",
+     "orbTier": 4,
+     "skills": [
+      {
+       "name": "気力変換",
+       "lv": 2,
+       "rarity": 9
+      },
+      {
+       "name": "みなぎるエナジー",
+       "lv": 1,
+       "rarity": 9
+      },
+      {
+       "name": "弱点追撃",
+       "lv": 1,
+       "rarity": 9
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅳ",
+       "qty": 2
+      },
+      {
+       "name": "光稜龍の輝剛爪",
+       "qty": 3
+      },
+      {
+       "name": "光稜龍の重光殻",
+       "qty": 3
+      },
+      {
+       "name": "光稜龍の稜石鱗",
+       "qty": 3
+      },
+      {
+       "name": "天光蘊融石",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586640"
+    },
+    {
+     "id": "u30a8_u30a2_u30eb_u30c0_waist",
+     "name": "エアルダの誠実",
+     "part": "waist",
+     "baseRarity": 9,
+     "maxRarity": 9,
+     "set": "光稜龍の威嚇",
+     "orbTier": 4,
+     "skills": [
+      {
+       "name": "気力変換",
+       "lv": 2,
+       "rarity": 9
+      },
+      {
+       "name": "制圧回復",
+       "lv": 1,
+       "rarity": 9
+      },
+      {
+       "name": "弱点追撃",
+       "lv": 1,
+       "rarity": 9
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅳ",
+       "qty": 2
+      },
+      {
+       "name": "光稜龍の輝翼爪",
+       "qty": 3
+      },
+      {
+       "name": "光稜龍の重光殻",
+       "qty": 3
+      },
+      {
+       "name": "光稜龍の稜石鱗",
+       "qty": 3
+      },
+      {
+       "name": "天光蘊融石",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586640"
+    },
+    {
+     "id": "u30a8_u30a2_u30eb_u30c0_leg",
+     "name": "エアルダの信念",
+     "part": "leg",
+     "baseRarity": 9,
+     "maxRarity": 9,
+     "set": "光稜龍の威嚇",
+     "orbTier": 4,
+     "skills": [
+      {
+       "name": "逆境",
+       "lv": 1,
+       "rarity": 9
+      },
+      {
+       "name": "変形強化",
+       "lv": 2,
+       "rarity": 9
+      },
+      {
+       "name": "徹底追撃",
+       "lv": 1,
+       "rarity": 9
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅳ",
+       "qty": 2
+      },
+      {
+       "name": "光稜龍の鋭尾棘",
+       "qty": 3
+      },
+      {
+       "name": "光稜龍の輝剛爪",
+       "qty": 3
+      },
+      {
+       "name": "光稜龍の重光殻",
+       "qty": 3
+      },
+      {
+       "name": "光稜龍の稜石鱗",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586640"
     }
    ]
   }

@@ -3,6 +3,7 @@
 const APP_VERSION = '2026.11.05-1';
 const STORE_KEY = 'mho-equip:v1';
 const PART_JP = { head: '頭', body: '胴', arm: '腕', waist: '腰', leg: '脚' };
+const ROMAN = { 1: 'Ⅰ', 2: 'Ⅱ', 3: 'Ⅲ', 4: 'Ⅳ', 5: 'Ⅴ', 6: 'Ⅵ' };
 const EL_CLASS = { '火': 'fire', '水': 'water', '雷': 'thunder', '氷': 'ice', '龍': 'dragon', '毒': 'poison', '麻痺': 'para', '睡眠': 'sleep', '爆破': 'blast', '無': 'none' };
 
 const $ = (sel) => document.querySelector(sel);
@@ -22,7 +23,7 @@ let reqId = 0;
 let currentMap = null;
 
 function loadState() {
-  const def = { charId: null, rank: 1, rarityCap: 7, guildLv: 0, defeated: {}, map: null };
+  const def = { charId: null, rank: 1, rarityCap: 7, guildLv: 0, orbTier: 3, heroElement: '火', defeated: {}, map: null };
   try { return Object.assign(def, JSON.parse(localStorage.getItem(STORE_KEY) || '{}')); } catch { return def; }
 }
 function saveState() { try { localStorage.setItem(STORE_KEY, JSON.stringify(state)); } catch {} }
@@ -73,6 +74,28 @@ function renderChars() {
   const c = currentChar();
   $('#charNote').textContent = c.note || (c.mechanics || []).join('。');
   $('#resultTitle').textContent = `${c.name} の最強セット`;
+  renderElementRow(c);
+}
+
+const HERO_ELEMENTS = ['火', '水', '雷', '氷', '龍'];
+function heroElement() { return HERO_ELEMENTS.includes(state.heroElement) ? state.heroElement : '火'; }
+function renderElementRow(c) {
+  const row = $('#elementRow');
+  if (!c.elementSelectable) { row.hidden = true; return; }
+  row.hidden = false;
+  const tabs = $('#elementTabs'); tabs.innerHTML = '';
+  for (const e of HERO_ELEMENTS) {
+    tabs.append(el('button', { type: 'button', class: 'tab', role: 'tab', 'aria-selected': String(e === heroElement()), onclick: () => { state.heroElement = e; saveState(); renderChars(); solve(); } },
+      el('span', { class: 'el', style: `background: var(--el-${EL_CLASS[e]})` }), e));
+  }
+}
+// 主人公は属性を選べるので、重みの「{属性}」を選択中の属性に置き換える
+function effectiveWeights(c) {
+  const w = c.weights || {};
+  if (!c.elementSelectable) return w;
+  const out = {};
+  for (const [k, v] of Object.entries(w)) out[k.replace('{属性}', heroElement())] = v;
+  return out;
 }
 
 function renderPriorities() {
@@ -81,7 +104,7 @@ function renderPriorities() {
   for (const p of (c.priorities || [])) {
     list.append(el('li', { class: 'prio' },
       el('span', { class: 'tier', text: p.tier }),
-      el('span', { class: 'pname', text: p.targetLv ? `${p.skill} Lv${p.targetLv}` : p.skill }),
+      el('span', { class: 'pname', text: (p.targetLv ? `${p.skill} Lv${p.targetLv}` : p.skill).replace('{属性}', c.elementSelectable ? heroElement() : (c.element || '')) }),
       el('span', { class: 'reason', text: p.reason || '' })));
   }
   if (!c.priorities || !c.priorities.length) list.append(el('li', { class: 'empty', text: 'このキャラの優先スキルはまだ未登録です。' }));
@@ -89,7 +112,7 @@ function renderPriorities() {
 
 /* ---------- progression fields ---------- */
 function renderFields() {
-  $('#rank').value = state.rank; $('#rarityCap').value = state.rarityCap; $('#guildLv').value = state.guildLv;
+  $('#rank').value = state.rank; $('#rarityCap').value = state.rarityCap; $('#guildLv').value = state.guildLv; $('#orbTier').value = state.orbTier;
   document.querySelectorAll('.stepper button').forEach((b) => {
     b.addEventListener('click', () => {
       const input = b.parentElement.querySelector('input');
@@ -100,12 +123,19 @@ function renderFields() {
   $('#rank').addEventListener('change', (e) => { state.rank = clamp(e.target, 1, 200); saveState(); renderBoard(); solve(); });
   $('#rarityCap').addEventListener('change', (e) => { state.rarityCap = clamp(e.target, 1, 12); saveState(); solve(); });
   $('#guildLv').addEventListener('change', (e) => { state.guildLv = clamp(e.target, 0, 30); saveState(); solve(); });
+  $('#orbTier').addEventListener('change', (e) => { state.orbTier = clamp(e.target, 1, 6); saveState(); solve(); });
+  $('#markAllMap').addEventListener('click', () => { setMapDefeated(true); });
+  $('#clearAllMap').addEventListener('click', () => { setMapDefeated(false); });
   $('#autoFromRank').addEventListener('click', () => {
     for (const m of DATA.monsters.monsters) {
       if (m.unlockRank != null && m.unlockRank <= state.rank) state.defeated[m.name] = true;
     }
     saveState(); renderMapTabs(); renderBoard(); solve();
   });
+}
+function setMapDefeated(flag) {
+  for (const m of DATA.monsters.monsters) if (m.maps.includes(currentMap)) { if (flag) state.defeated[m.name] = true; else delete state.defeated[m.name]; }
+  saveState(); renderMapTabs(); renderBoard(); solve();
 }
 function clamp(input, lo, hi) { const v = Math.min(hi, Math.max(lo, +input.value || lo)); input.value = v; return v; }
 
@@ -170,7 +200,7 @@ function solve() {
     .filter(n => n.series.length);
   reqId++;
   $('#resultHint').textContent = '計算中…';
-  worker.postMessage({ type: 'solve', reqId, weights: c.weights || {}, availableSeries: avail, rarityCap: state.rarityCap, next, K: 12, topN: 6 });
+  worker.postMessage({ type: 'solve', reqId, weights: effectiveWeights(c), availableSeries: avail, rarityCap: state.rarityCap, orbTier: state.orbTier, next, K: 12, topN: 6 });
 }
 
 function onWorkerMessage(e) {
@@ -206,8 +236,9 @@ function renderResult(res) {
       rar.append(d);
     }
     const lbl = el('span', { class: 'lbl' });
-    if (p.rarity > p.baseRarity) lbl.append('生産レア', String(p.baseRarity), ' → ', el('b', { class: 'need', text: `レア${p.rarity}まで強化` }));
-    else lbl.append(el('b', { text: `レア${p.rarity}` }), '（生産のまま）');
+    const orb = p.orbTier ? `（生産に狩魂玉${ROMAN[p.orbTier] || p.orbTier}）` : '';
+    if (p.rarity > p.baseRarity) lbl.append('生産レア', String(p.baseRarity), ' → ', el('b', { class: 'need', text: `レア${p.rarity}まで強化` }), orb);
+    else lbl.append(el('b', { text: `レア${p.rarity}` }), '（生産のまま）', orb);
     rar.append(lbl);
     const tags = el('div', { class: 'tags' });
     for (const k of p.skills) tags.append(el('span', { class: 'tag' + (k.value > 0 ? ' hit' : '') }, k.name, el('span', { class: 'lv', text: `Lv${k.lv}` })));
@@ -240,9 +271,18 @@ function renderResult(res) {
   if (!res.alts.length) alts.append(el('div', { class: 'empty', text: '候補はこの1通りです。' }));
 }
 
-function renderNext(next) {
+function renderNext(res) {
   const nl = $('#nextList'); nl.innerHTML = '';
-  const nexts = next.slice(0, 8);
+  const nexts = (res.monsters || []).slice(0, 8);
+  for (const x of (res.extras || [])) {
+    if (x.delta < 0.05) continue;
+    const [kind, v] = x.label.split(':');
+    const label = kind === 'orb' ? `狩魂玉${ROMAN[+v] || v}が手に入ったら` : `強化上限をレア${v}にしたら`;
+    nl.append(el('li', { class: 'next' },
+      el('span', { class: 'nname', text: label }),
+      el('span', { class: 'delta', text: fmtPct(x.delta) }),
+      el('span', { class: 'why', text: `セット：${x.changed.join('・')}` })));
+  }
   for (const n of nexts) {
     const flat = n.delta < 0.05;
     nl.append(el('li', { class: 'next' + (flat ? ' flat' : '') },

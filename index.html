@@ -27,6 +27,10 @@
   <section class="panel" id="charPanel">
     <h2>キャラ</h2>
     <div class="chips" id="charChips" role="tablist" aria-label="キャラを選ぶ"></div>
+    <div class="elements" id="elementRow" hidden>
+      <span class="hint">武器の属性</span>
+      <div class="tabs" id="elementTabs" role="tablist"></div>
+    </div>
     <p class="charNote" id="charNote"></p>
   </section>
 
@@ -52,19 +56,33 @@
     </div>
     <div class="row">
       <label class="field">
-        <span>冒険団Lv</span>
+        <span>狩魂玉の最高ランク</span>
         <div class="stepper">
-          <button type="button" data-step="-1" data-for="guildLv" aria-label="冒険団Lvを下げる">−</button>
-          <input id="guildLv" type="number" inputmode="numeric" min="0" max="30" value="0">
-          <button type="button" data-step="1" data-for="guildLv" aria-label="冒険団Lvを上げる">＋</button>
+          <button type="button" data-step="-1" aria-label="狩魂玉ランクを下げる">−</button>
+          <input id="orbTier" type="number" inputmode="numeric" min="1" max="6" value="3">
+          <button type="button" data-step="1" aria-label="狩魂玉ランクを上げる">＋</button>
         </div>
       </label>
+      <label class="field">
+        <span>冒険団Lv</span>
+        <div class="stepper">
+          <button type="button" data-step="-1" aria-label="冒険団Lvを下げる">−</button>
+          <input id="guildLv" type="number" inputmode="numeric" min="0" max="30" value="0">
+          <button type="button" data-step="1" aria-label="冒険団Lvを上げる">＋</button>
+        </div>
+      </label>
+    </div>
+    <div class="row">
       <button type="button" class="ghost" id="autoFromRank">ランクから討伐済みを自動設定</button>
     </div>
 
     <h3>倒したモンスター</h3>
     <p class="hint">タップで討伐済みに。討伐済みのモンスターの素材で作れる防具だけを候補にします。</p>
     <div id="mapTabs" class="tabs" role="tablist"></div>
+    <div class="row boardTools">
+      <button type="button" class="ghost small" id="markAllMap">このマップを全部討伐済みにする</button>
+      <button type="button" class="ghost small" id="clearAllMap">このマップを全部未討伐にする</button>
+    </div>
     <div id="monsterBoard" class="board"></div>
     <div class="oreNote" id="oreNote"></div>
   </section>

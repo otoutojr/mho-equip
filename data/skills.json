@@ -1,163 +1,702 @@
 {
+ "updated": "2026-11-05",
  "skills": [
   {
-   "name": "弩弾強化",
-   "category": "火力",
-   "weapon": "ヘビィボウガン",
-   "maxLv": 4,
-   "levels": [
-    {
-     "lv": 1,
-     "effect": "散弾ダメージ+4%",
-     "value": 4
-    },
-    {
-     "lv": 2,
-     "effect": "+8%",
-     "value": 8
-    },
-    {
-     "lv": 3,
-     "effect": "+12%",
-     "value": 12
-    },
-    {
-     "lv": 4,
-     "effect": "+16%",
-     "value": 16
-    }
-   ]
+   "name": "冒険団の力・ヘルム",
+   "category": null,
+   "weapon": null,
+   "maxLv": 6,
+   "levels": [],
+   "placeholder": true
   },
   {
-   "name": "滞空",
-   "category": "火力",
-   "maxLv": 5,
-   "levels": [
-    {
-     "lv": 1,
-     "effect": "滞空攻撃のダメージ+5%"
-    },
-    {
-     "lv": 2,
-     "effect": "+9%"
-    },
-    {
-     "lv": 3,
-     "effect": "+14%"
-    },
-    {
-     "lv": 4,
-     "effect": "+19%"
-    },
-    {
-     "lv": 5,
-     "effect": "+24%"
-    }
-   ]
-  },
-  {
-   "name": "水属性ダメージUP",
-   "category": "火力",
-   "maxLv": 5,
-   "levels": [
-    {
-     "lv": 1,
-     "effect": "+3%"
-    },
-    {
-     "lv": 2,
-     "effect": "+6%"
-    },
-    {
-     "lv": 3,
-     "effect": "+9%"
-    },
-    {
-     "lv": 4,
-     "effect": "+12%"
-    },
-    {
-     "lv": 5,
-     "effect": "+15%"
-    }
-   ]
-  },
-  {
-   "name": "体力回復",
-   "category": "生存",
-   "maxLv": 3,
-   "levels": []
-  },
-  {
-   "name": "地質専門家",
-   "category": "採取",
-   "maxLv": 3,
-   "levels": []
-  },
-  {
-   "name": "洞察",
-   "maxLv": 2,
-   "levels": []
-  },
-  {
-   "name": "標本の達人",
-   "maxLv": 2,
-   "levels": []
-  },
-  {
-   "name": "環境の活用",
-   "maxLv": 2,
-   "levels": []
-  },
-  {
-   "name": "壁登りの達人",
+   "name": "復活",
+   "category": null,
+   "weapon": null,
    "maxLv": 1,
-   "levels": []
+   "levels": [],
+   "placeholder": true
   },
   {
-   "name": "風圧耐性",
-   "maxLv": 3,
-   "levels": []
+   "name": "早食い術",
+   "category": null,
+   "weapon": null,
+   "maxLv": 1,
+   "levels": [],
+   "placeholder": true
   },
   {
-   "name": "アイテム専門家",
-   "maxLv": 2,
-   "levels": []
+   "name": "冒険団の力・メイル",
+   "category": null,
+   "weapon": null,
+   "maxLv": 6,
+   "levels": [],
+   "placeholder": true
   },
   {
    "name": "加護",
-   "maxLv": 3,
-   "levels": []
-  },
-  {
-   "name": "高圧ガード",
+   "category": null,
+   "weapon": null,
    "maxLv": 2,
-   "levels": []
+   "levels": [],
+   "placeholder": true
   },
   {
-   "name": "睡眠耐性",
-   "maxLv": 3,
-   "levels": []
+   "name": "冒険団の力・アーム",
+   "category": null,
+   "weapon": null,
+   "maxLv": 6,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "冒険団の力・コイル",
+   "category": null,
+   "weapon": null,
+   "maxLv": 6,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "のけぞり軽減",
+   "category": null,
+   "weapon": null,
+   "maxLv": 2,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "冒険団の力・グリーブ",
+   "category": null,
+   "weapon": null,
+   "maxLv": 6,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "気絶耐性",
+   "category": null,
+   "weapon": null,
+   "maxLv": 1,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "弁当好き",
+   "category": null,
+   "weapon": null,
+   "maxLv": 2,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "怖いもの無し",
+   "category": null,
+   "weapon": null,
+   "maxLv": 1,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "威嚇",
+   "category": null,
+   "weapon": null,
+   "maxLv": 2,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "練気をまといし刃",
+   "category": null,
+   "weapon": null,
+   "maxLv": 2,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "徹底追撃",
+   "category": null,
+   "weapon": null,
+   "maxLv": 2,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "抜刀一閃",
+   "category": null,
+   "weapon": null,
+   "maxLv": 2,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "節約術",
+   "category": null,
+   "weapon": null,
+   "maxLv": 1,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "逆境",
+   "category": null,
+   "weapon": null,
+   "maxLv": 1,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "洞察",
+   "category": null,
+   "weapon": null,
+   "maxLv": 2,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "剥ぎ取り名人",
+   "category": null,
+   "weapon": null,
+   "maxLv": 1,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "弱点攻撃",
+   "category": null,
+   "weapon": null,
+   "maxLv": 1,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "火耐性強化",
+   "category": null,
+   "weapon": null,
+   "maxLv": 1,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "アイテム専門家",
+   "category": null,
+   "weapon": null,
+   "maxLv": 2,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "連撃強化",
+   "category": null,
+   "weapon": null,
+   "maxLv": 2,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "鬼人の修羅",
+   "category": null,
+   "weapon": null,
+   "maxLv": 2,
+   "levels": [],
+   "placeholder": true
   },
   {
    "name": "弾導強化",
+   "category": null,
+   "weapon": null,
+   "maxLv": 1,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "弓スキル強化",
+   "category": null,
+   "weapon": null,
+   "maxLv": 2,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "植物専門家",
+   "category": null,
+   "weapon": null,
+   "maxLv": 1,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "溜め強射",
+   "category": null,
+   "weapon": null,
    "maxLv": 3,
-   "levels": []
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "環境の活用",
+   "category": null,
+   "weapon": null,
+   "maxLv": 1,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "闘志",
+   "category": null,
+   "weapon": null,
+   "maxLv": 1,
+   "levels": [],
+   "placeholder": true
   },
   {
    "name": "毒耐性",
-   "maxLv": 3,
-   "levels": []
+   "category": null,
+   "weapon": null,
+   "maxLv": 2,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "水耐性強化",
+   "category": null,
+   "weapon": null,
+   "maxLv": 1,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "防御反撃",
+   "category": null,
+   "weapon": null,
+   "maxLv": 2,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "剛勢",
+   "category": null,
+   "weapon": null,
+   "maxLv": 2,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "破壊王",
+   "category": null,
+   "weapon": null,
+   "maxLv": 1,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "風圧耐性",
+   "category": null,
+   "weapon": null,
+   "maxLv": 1,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "防護",
+   "category": null,
+   "weapon": null,
+   "maxLv": 2,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "会心撃【属性】",
+   "category": null,
+   "weapon": null,
+   "maxLv": 2,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "麻痺耐性",
+   "category": null,
+   "weapon": null,
+   "maxLv": 1,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "雷属性ダメージUP",
+   "category": null,
+   "weapon": null,
+   "maxLv": 2,
+   "levels": [],
+   "placeholder": true
   },
   {
    "name": "体力強化",
+   "category": null,
+   "weapon": null,
+   "maxLv": 2,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "ポテンシャル解放",
+   "category": null,
+   "weapon": null,
+   "maxLv": 1,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "オトモ強化",
+   "category": null,
+   "weapon": null,
+   "maxLv": 1,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "水属性ダメージUP",
+   "category": null,
+   "weapon": null,
    "maxLv": 3,
-   "levels": []
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "体力回復",
+   "category": null,
+   "weapon": null,
+   "maxLv": 2,
+   "levels": [],
+   "placeholder": true
   },
   {
    "name": "氷耐性強化",
+   "category": null,
+   "weapon": null,
+   "maxLv": 2,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "チャージ準備",
+   "category": null,
+   "weapon": null,
+   "maxLv": 2,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "制圧回復",
+   "category": null,
+   "weapon": null,
+   "maxLv": 2,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "貫突",
+   "category": null,
+   "weapon": null,
+   "maxLv": 2,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "ガードテクニック",
+   "category": null,
+   "weapon": null,
+   "maxLv": 2,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "氷属性ダメージUP",
+   "category": null,
+   "weapon": null,
+   "maxLv": 2,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "溜め強化",
+   "category": null,
+   "weapon": null,
    "maxLv": 3,
-   "levels": []
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "威震",
+   "category": null,
+   "weapon": null,
+   "maxLv": 2,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "変形強化",
+   "category": null,
+   "weapon": null,
+   "maxLv": 2,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "龍属性ダメージUP",
+   "category": null,
+   "weapon": null,
+   "maxLv": 2,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "標本の達人",
+   "category": null,
+   "weapon": null,
+   "maxLv": 1,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "回避強化",
+   "category": null,
+   "weapon": null,
+   "maxLv": 3,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "ハニーハンター",
+   "category": null,
+   "weapon": null,
+   "maxLv": 1,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "弱点追撃",
+   "category": null,
+   "weapon": null,
+   "maxLv": 1,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "破砕",
+   "category": null,
+   "weapon": null,
+   "maxLv": 2,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "体力ループ",
+   "category": null,
+   "weapon": null,
+   "maxLv": 2,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "火属性ダメージUP",
+   "category": null,
+   "weapon": null,
+   "maxLv": 2,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "融光感知",
+   "category": null,
+   "weapon": null,
+   "maxLv": 1,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "滞空",
+   "category": null,
+   "weapon": null,
+   "maxLv": 3,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "狩人の第六感",
+   "category": null,
+   "weapon": null,
+   "maxLv": 1,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "気力変換",
+   "category": null,
+   "weapon": null,
+   "maxLv": 2,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "無垢",
+   "category": null,
+   "weapon": null,
+   "maxLv": 1,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "睡眠耐性",
+   "category": null,
+   "weapon": null,
+   "maxLv": 1,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "一撃貫通",
+   "category": null,
+   "weapon": null,
+   "maxLv": 3,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "防御力DOWN耐性",
+   "category": null,
+   "weapon": null,
+   "maxLv": 2,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "壁登りの達人",
+   "category": null,
+   "weapon": null,
+   "maxLv": 1,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "雷耐性強化",
+   "category": null,
+   "weapon": null,
+   "maxLv": 1,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "龍耐性強化",
+   "category": null,
+   "weapon": null,
+   "maxLv": 1,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "剥ぎ取り鉄人",
+   "category": null,
+   "weapon": null,
+   "maxLv": 1,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "高圧ガード",
+   "category": null,
+   "weapon": null,
+   "maxLv": 2,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "リロード強化",
+   "category": null,
+   "weapon": null,
+   "maxLv": 2,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "咆哮耐性",
+   "category": null,
+   "weapon": null,
+   "maxLv": 1,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "採集名人",
+   "category": null,
+   "weapon": null,
+   "maxLv": 1,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "弩弾強化",
+   "category": null,
+   "weapon": null,
+   "maxLv": 2,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "地質専門家",
+   "category": null,
+   "weapon": null,
+   "maxLv": 1,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "爆破耐性",
+   "category": null,
+   "weapon": null,
+   "maxLv": 1,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "振動耐性",
+   "category": null,
+   "weapon": null,
+   "maxLv": 2,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "捕獲の達人",
+   "category": null,
+   "weapon": null,
+   "maxLv": 1,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "裂傷耐性",
+   "category": null,
+   "weapon": null,
+   "maxLv": 2,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "みなぎるエナジー",
+   "category": null,
+   "weapon": null,
+   "maxLv": 1,
+   "levels": [],
+   "placeholder": true
+  },
+  {
+   "name": "本気",
+   "category": null,
+   "weapon": null,
+   "maxLv": 1,
+   "levels": [],
+   "placeholder": true
   }
- ]
+ ],
+ "setSkills": []
 }

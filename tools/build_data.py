@@ -78,6 +78,15 @@ def series_gate(name, monsters_by_series):
     print(f'  !! 入手条件が不明なシリーズ: {name} → basic 扱い')
     return {'type': 'basic', 'unknown': True}
 
+ORB = {'Ⅰ': 1, 'Ⅱ': 2, 'Ⅲ': 3, 'Ⅳ': 4, 'Ⅴ': 5, 'Ⅵ': 6}
+def orb_tier(materials):
+    """生産素材の狩魂玉のティア（Ⅰ〜）。無ければ None"""
+    for m in materials or []:
+        n = m.get('name') or ''
+        if n.startswith('狩魂玉') and len(n) > 3 and n[3] in ORB:
+            return ORB[n[3]]
+    return None
+
 def slug(s):
     return re.sub(r'[^0-9a-zA-Z]+', '_', s.encode('unicode_escape').decode()).strip('_')[:40]
 
@@ -113,9 +122,10 @@ def build_skills(armor_series, raw):
             if b.get('skill'): seen_max[norm(b['skill'])] = max(seen_max[norm(b['skill'])], b.get('lv', 1))
     for name, mx in seen_max.items():
         if name not in skills:
-            skills[name] = {'name': name, 'category': None, 'weapon': None, 'maxLv': max(mx, 1), 'levels': [], 'placeholder': True}
+            # 効果不明のスキル。上限は不明なので大きめにしておく（重みが付かなければ結果に影響しない）
+            skills[name] = {'name': name, 'category': None, 'weapon': None, 'maxLv': max(mx, 7), 'levels': [], 'placeholder': True}
         elif not skills[name].get('maxLv'):
-            skills[name]['maxLv'] = max(mx, 1)
+            skills[name]['maxLv'] = max(mx, 7)
     set_skills = (raw or {}).get('setSkills', [])
     return skills, set_skills
 
@@ -168,36 +178,48 @@ def level_values(skill):
 
 def build_characters(raw, skills, overrides):
     out = []
-    for c in (raw or {}).get('characters', []):
+    chars = list((raw or {}).get('characters', []))
+    # 手作業の補正で優先スキルを丸ごと差し替え/追加できる
+    for cid, ov in ((overrides or {}).get('characters') or {}).items():
+        hit = next((c for c in chars if c['id'] == cid), None)
+        if hit is None:
+            hit = {'id': cid}
+            chars.append(hit)
+        for k, v in ov.items():
+            if k != 'weights': hit[k] = v
+    for c in chars:
+        hero = c['id'].startswith('hero_')
         weights = {}
         prios = []
+        seen = set()
         for p in c.get('skillPriorities', []):
             name = norm(p['skill'])
-            if name not in skills:
-                # 「〇属性ダメージUP」などの表記ゆれは候補検索
-                cands = [k for k in skills if k.replace('属性ダメージUP', '') == name.replace('属性ダメージUP', '')]
-                if cands: name = cands[0]
+            if hero and name.endswith('属性ダメージUP'):
+                name = '{属性}属性ダメージUP'
+            lookup = name.replace('{属性}', '火')
+            if lookup not in skills:
+                cands = [k for k in skills if k.replace('属性ダメージUP', '') == lookup.replace('属性ダメージUP', '')]
+                if cands: lookup = cands[0]
                 else:
-                    print(f"  ?? {c['name']}: スキル名が防具データに無い: {name}")
+                    print(f"  ?? {c.get('name', c['id'])}: スキル名が防具データに無い: {name}")
                     continue
-            # 自分の属性以外の属性スキルは価値なし
-            if name.endswith('属性ダメージUP') and c.get('element') and not name.startswith(c['element']):
+            if not hero and lookup.endswith('属性ダメージUP') and c.get('element') and not lookup.startswith(c['element']):
                 continue
+            if name in seen: continue
+            seen.add(name)
             w = TIER_W.get((p.get('tier') or 'B').upper(), 0.25) * (p.get('factor') or 1.0)
-            vals = level_values(skills[name])
+            vals = level_values(skills[lookup])
             weights[name] = [round(v * w, 3) for v in vals]
             prios.append({'skill': name, 'tier': (p.get('tier') or 'B').upper(), 'targetLv': p.get('targetLv'), 'reason': p.get('reason') or ''})
         # 控えめな汎用補正（同点時に生存スキルを拾う）
         for name in ('体力強化', '加護', '体力回復', '防護'):
             if name in skills and name not in weights:
                 weights[name] = [0.1 * (i + 1) for i in range(skills[name]['maxLv'] or 1)]
-        entry = {'id': c['id'], 'name': c['name'], 'rarity': c.get('rarity'), 'type': c.get('type'), 'weapon': c.get('weapon'), 'element': c.get('element'),
-                 'mechanics': c.get('mechanics') or [], 'priorities': prios, 'weights': weights, 'note': c.get('note') or ''}
-        ov = (overrides or {}).get('characters', {}).get(c['id'])
-        if ov:
-            for k, v in ov.items():
-                if k == 'weights': entry['weights'].update(v)
-                else: entry[k] = v
+        entry = {'id': c['id'], 'name': c.get('name', c['id']), 'rarity': c.get('rarity'), 'type': c.get('type'), 'weapon': c.get('weapon'), 'element': c.get('element'),
+                 'elementSelectable': hero, 'mechanics': c.get('mechanics') or [], 'priorities': prios, 'weights': weights, 'note': c.get('note') or ''}
+        ov = ((overrides or {}).get('characters') or {}).get(c['id'])
+        if ov and ov.get('weights'):
+            entry['weights'].update(ov['weights'])
         out.append(entry)
     order = (overrides or {}).get('characterOrder')
     if order:
@@ -240,7 +262,7 @@ def main():
             pset = norm(p.get('setSkillOverride')) if p.get('setSkillOverride') else main_set
             if pset and pset not in sets: register_set({'name': pset, 'bonuses': []})
             pieces.append({'id': f"{slug(name)}_{p['part']}", 'name': norm(p['name']), 'part': p['part'], 'baseRarity': p.get('baseRarity') or 1,
-                           'maxRarity': p.get('maxRarity') or 9, 'set': pset,
+                           'maxRarity': p.get('maxRarity') or 9, 'set': pset, 'orbTier': orb_tier(p.get('materials')),
                            'skills': [{'name': norm(k['name']), 'lv': k['lv'], 'rarity': k.get('rarity') if k.get('rarity') is not None else (p.get('baseRarity') or 1)} for k in p['skills']],
                            'materials': p.get('materials'), 'sourceUrl': p.get('sourceUrl')})
         series_out.append({'name': name, 'gate': series_gate(name, monsters_by_series), 'set': main_set, 'pieces': pieces})
