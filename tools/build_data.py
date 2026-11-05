@@ -201,6 +201,30 @@ def level_values(skill):
     lin = [3.0 * (i + 1) for i in range(mx)]
     return lin, lin
 
+SKILL_ALIAS = {'破撃': '破砕', '冒険団の力・マニファー': '冒険団の力・アーム', '冒険団の力・グリーブ': '冒険団の力・グリーヴ'}
+
+def expand_priorities(prios):
+    """「会心率系(洞察/弱点攻撃)」「破撃/破砕」のような複合表記を個別スキルに分ける"""
+    out = []
+    for p in prios:
+        raw = norm(p.get('skill') or '')
+        if not raw: continue
+        if raw.startswith('属性ダメージUP'):
+            names = ['{属性}属性ダメージUP']
+        else:
+            inner = re.search(r'[（(](.+?)[）)]', raw)
+            body = inner.group(1) if inner else re.sub(r'[（(].*?[）)]', '', raw)
+            names = [SKILL_ALIAS.get(x.strip(), x.strip()) for x in re.split(r'[/／・]', body) if x.strip()]
+        seen = []
+        for n in names:
+            if n.endswith('系') or n in seen: continue
+            seen.append(n)
+            q = dict(p); q['skill'] = n
+            if n.endswith('属性ダメージUP') and not p.get('factor'):
+                q['factor'] = 0.6  # 属性分にしか乗らないので控えめに
+            out.append(q)
+    return out
+
 def build_characters(raw, skills, overrides):
     out = []
     chars = list((raw or {}).get('characters', []))
@@ -218,7 +242,7 @@ def build_characters(raw, skills, overrides):
         weights_y = {}
         prios = []
         seen = set()
-        for p in c.get('skillPriorities', []):
+        for p in expand_priorities(c.get('skillPriorities', [])):
             name = norm(p['skill'])
             if hero and name.endswith('属性ダメージUP'):
                 name = '{属性}属性ダメージUP'
@@ -243,7 +267,7 @@ def build_characters(raw, skills, overrides):
             if name in skills and name not in weights:
                 weights[name] = [0.1 * (i + 1) for i in range(skills[name]['maxLv'] or 1)]
                 weights_y[name] = weights[name]
-        entry = {'id': c['id'], 'name': c.get('name', c['id']), 'rarity': c.get('rarity'), 'type': c.get('type'), 'weapon': c.get('weapon'), 'element': c.get('element'),
+        entry = {'id': c['id'], 'name': c.get('name', c['id']), 'rarity': c.get('rarity'), 'type': None if hero else c.get('type'), 'weapon': c.get('weapon'), 'element': None if hero else c.get('element'),
                  'elementSelectable': hero, 'mechanics': c.get('mechanics') or [], 'priorities': prios, 'weights': weights, 'weightsYuko': weights_y, 'note': c.get('note') or ''}
         ov = ((overrides or {}).get('characters') or {}).get(c['id'])
         if ov and ov.get('weights'):

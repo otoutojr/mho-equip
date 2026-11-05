@@ -1,6 +1,6 @@
 /* 装備おすすめ ― UI */
 'use strict';
-const APP_VERSION = '2026.11.05-2';
+const APP_VERSION = '2026.11.05-3';
 const STORE_KEY = 'mho-equip:v1';
 const PART_JP = { head: '頭', body: '胴', arm: '腕', waist: '腰', leg: '脚' };
 const ROMAN = { 1: 'Ⅰ', 2: 'Ⅱ', 3: 'Ⅲ', 4: 'Ⅳ', 5: 'Ⅴ', 6: 'Ⅵ' };
@@ -66,9 +66,10 @@ function currentChar() { return DATA.characters.characters.find(c => c.id === st
 function renderChars() {
   const box = $('#charChips'); box.innerHTML = '';
   for (const c of DATA.characters.characters) {
+    const elem = c.elementSelectable ? heroElement() : c.element;
     const chip = el('button', { type: 'button', class: 'chip', role: 'tab', 'aria-selected': String(c.id === state.charId), onclick: () => { state.charId = c.id; saveState(); renderChars(); renderPriorities(); solve(); } },
-      el('span', { class: 'name' }, el('span', { class: 'el', style: `background: var(--el-${EL_CLASS[c.element] || 'none'})` }), c.name),
-      el('span', { class: 'meta', text: `${c.weapon}${c.element && c.element !== '無' ? '・' + c.element : ''}${c.type ? '・' + c.type : ''}` }));
+      el('span', { class: 'name' }, el('span', { class: 'el', style: `background: var(--el-${EL_CLASS[elem] || 'none'})` }), c.name),
+      el('span', { class: 'meta', text: `${c.weapon || ''}${elem && elem !== '無' ? '・' + elem : ''}${c.type ? '・' + c.type : ''}` }));
     box.append(chip);
   }
   const c = currentChar();
