@@ -1,6 +1,6 @@
 /* 装備おすすめ ― UI */
 'use strict';
-const APP_VERSION = '2026.11.05-1';
+const APP_VERSION = '2026.11.05-2';
 const STORE_KEY = 'mho-equip:v1';
 const PART_JP = { head: '頭', body: '胴', arm: '腕', waist: '腰', leg: '脚' };
 const ROMAN = { 1: 'Ⅰ', 2: 'Ⅱ', 3: 'Ⅲ', 4: 'Ⅳ', 5: 'Ⅴ', 6: 'Ⅵ' };
@@ -23,7 +23,7 @@ let reqId = 0;
 let currentMap = null;
 
 function loadState() {
-  const def = { charId: null, rank: 1, rarityCap: 7, guildLv: 0, orbTier: 3, heroElement: '火', defeated: {}, map: null };
+  const def = { charId: null, rank: 1, guildLv: 0, orbTier: 3, heroElement: '火', target: 'normal', defeated: {}, map: null };
   try { return Object.assign(def, JSON.parse(localStorage.getItem(STORE_KEY) || '{}')); } catch { return def; }
 }
 function saveState() { try { localStorage.setItem(STORE_KEY, JSON.stringify(state)); } catch {} }
@@ -91,7 +91,7 @@ function renderElementRow(c) {
 }
 // 主人公は属性を選べるので、重みの「{属性}」を選択中の属性に置き換える
 function effectiveWeights(c) {
-  const w = c.weights || {};
+  const w = (state.target === 'yuko' && c.weightsYuko) ? c.weightsYuko : (c.weights || {});
   if (!c.elementSelectable) return w;
   const out = {};
   for (const [k, v] of Object.entries(w)) out[k.replace('{属性}', heroElement())] = v;
@@ -112,7 +112,7 @@ function renderPriorities() {
 
 /* ---------- progression fields ---------- */
 function renderFields() {
-  $('#rank').value = state.rank; $('#rarityCap').value = state.rarityCap; $('#guildLv').value = state.guildLv; $('#orbTier').value = state.orbTier;
+  $('#rank').value = state.rank; $('#orbTier').value = state.orbTier;
   document.querySelectorAll('.stepper button').forEach((b) => {
     b.addEventListener('click', () => {
       const input = b.parentElement.querySelector('input');
@@ -121,9 +121,11 @@ function renderFields() {
     });
   });
   $('#rank').addEventListener('change', (e) => { state.rank = clamp(e.target, 1, 200); saveState(); renderBoard(); solve(); });
-  $('#rarityCap').addEventListener('change', (e) => { state.rarityCap = clamp(e.target, 1, 12); saveState(); solve(); });
-  $('#guildLv').addEventListener('change', (e) => { state.guildLv = clamp(e.target, 0, 30); saveState(); solve(); });
   $('#orbTier').addEventListener('change', (e) => { state.orbTier = clamp(e.target, 1, 6); saveState(); solve(); });
+  document.querySelectorAll('#targetTabs .tab').forEach((b) => {
+    b.addEventListener('click', () => { state.target = b.dataset.target; saveState(); renderTargetTabs(); solve(); });
+  });
+  renderTargetTabs();
   $('#markAllMap').addEventListener('click', () => { setMapDefeated(true); });
   $('#clearAllMap').addEventListener('click', () => { setMapDefeated(false); });
   $('#autoFromRank').addEventListener('click', () => {
@@ -132,6 +134,9 @@ function renderFields() {
     }
     saveState(); renderMapTabs(); renderBoard(); solve();
   });
+}
+function renderTargetTabs() {
+  document.querySelectorAll('#targetTabs .tab').forEach((b) => b.setAttribute('aria-selected', String((state.target || 'normal') === b.dataset.target)));
 }
 function setMapDefeated(flag) {
   for (const m of DATA.monsters.monsters) if (m.maps.includes(currentMap)) { if (flag) state.defeated[m.name] = true; else delete state.defeated[m.name]; }
@@ -170,6 +175,22 @@ function renderBoard() {
   $('#oreNote').textContent = ore.length ? `素材が鉱石・骨などの防具（${ore.join('・')}）は、そのマップに行けていれば候補に入れています。` : '';
 }
 
+/* ---------- 強化上限（冒険ランクと狩魂玉のランクから） ---------- */
+function rankCap() {
+  let cap = 2;
+  for (const [r, c] of (DATA.monsters.rankCap || [])) if (state.rank >= r) cap = c;
+  return cap;
+}
+function orbCap() { const t = DATA.monsters.orbCap || {}; return t[state.orbTier] || 12; }
+function rarityCap() { return Math.min(rankCap(), orbCap()); }
+function renderCapNote() {
+  const rc = rankCap(), oc = orbCap(), cap = rarityCap();
+  let txt = `いま強化できる上限：レア${cap}`;
+  if (oc < rc) txt += `（ランク${state.rank}ならレア${rc}まで解放済みですが、狩魂玉${ROMAN[state.orbTier]}ではレア${oc}まで）`;
+  else txt += `（冒険ランク${state.rank}で解放されている上限）`;
+  $('#capNote').textContent = txt;
+}
+
 /* ---------- availability ---------- */
 function mapUnlocked(mapName) {
   const m = DATA.monsters.maps.find(x => x.name === mapName);
@@ -183,7 +204,6 @@ function availableSeries() {
     let ok = false;
     if (g.type === 'basic') ok = true;
     else if (g.type === 'monster') ok = (g.monsters || [g.monster]).some(n => state.defeated[n]);
-    else if (g.type === 'guild') ok = state.guildLv >= (g.lv || 1);
     else if (g.type === 'map') ok = mapUnlocked(g.map);
     if (ok) out.push(s.name);
   }
@@ -199,8 +219,9 @@ function solve() {
     .map(m => ({ monster: m.name, series: m.armorSeries.filter(sn => !avail.includes(sn)) }))
     .filter(n => n.series.length);
   reqId++;
+  renderCapNote();
   $('#resultHint').textContent = '計算中…';
-  worker.postMessage({ type: 'solve', reqId, weights: effectiveWeights(c), availableSeries: avail, rarityCap: state.rarityCap, orbTier: state.orbTier, next, K: 12, topN: 6 });
+  worker.postMessage({ type: 'solve', reqId, weights: effectiveWeights(c), availableSeries: avail, rarityCap: rarityCap(), orbTier: state.orbTier, next, K: 12, topN: 6 });
 }
 
 function onWorkerMessage(e) {

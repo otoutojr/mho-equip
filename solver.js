@@ -16,7 +16,7 @@ self.onmessage = (e) => {
     res.ms = Date.now() - t0;
     res.reqId = msg.reqId;
     self.postMessage({ type: 'result', ...res });
-    if (msg.next && msg.next.length && res.best) {
+    if (res.best) {
       const t1 = Date.now();
       const next = solveNext(msg, res.best.score);
       self.postMessage({ type: 'next', reqId: msg.reqId, next, ms: Date.now() - t1 });
@@ -209,7 +209,7 @@ function solveNext(msg, base) {
   const K = Math.max(8, (msg.K || 12) - 2);
   const avail = new Set(msg.availableSeries);
   const next = [];
-  for (const n of msg.next) {
+  for (const n of (msg.next || [])) {
     const avail2 = new Set([...avail, ...n.series]);
     const prep2 = preparePieces(W, avail2, msg.rarityCap, msg.owned, msg.orbTier);
     const by2 = pickCandidates(prep2, W, K);

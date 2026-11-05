@@ -9,7 +9,7 @@ from playwright.sync_api import sync_playwright
 char = sys.argv[1] if len(sys.argv) > 1 else 'pepe'
 rank = sys.argv[2] if len(sys.argv) > 2 else '43'
 mons = sys.argv[3].split(',') if len(sys.argv) > 3 and sys.argv[3] else []
-cap = sys.argv[4] if len(sys.argv) > 4 else '7'
+orb = sys.argv[4] if len(sys.argv) > 4 else '3'
 shots = pathlib.Path('/tmp/claude-0/-home-claude/094b7c7b-727a-5a9e-9d7d-7a958be863c9/scratchpad')
 
 with sync_playwright() as p:
@@ -20,7 +20,9 @@ with sync_playwright() as p:
     page.on("console", lambda m: logs.append(f"{m.type}: {m.text}"))
     page.on("pageerror", lambda e: logs.append(f"PAGEERROR: {e}"))
     page.goto("http://localhost:8765/", wait_until="networkidle")
-    state = {"charId": char, "rank": int(rank), "rarityCap": int(cap), "guildLv": 0, "defeated": {m: True for m in mons}, "map": None}
+    state = {"charId": char, "rank": int(rank), "orbTier": int(orb), "defeated": {m: True for m in mons}, "map": None}
+    if mons == ["ALL"]:
+        state["defeated"] = {m["name"]: True for m in json.load(open("data/monsters.json"))["monsters"]}
     page.evaluate("s => localStorage.setItem('mho-equip:v1', JSON.stringify(s))", state)
     page.reload(wait_until="networkidle")
     page.wait_for_function("document.querySelector('#scoreValue').textContent !== '―' || document.querySelector('#resultHint').textContent.includes('ありません')", timeout=20000)

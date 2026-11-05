@@ -2,158 +2,14 @@
  "updated": "2026-11-05",
  "sets": [
   {
-   "name": "冒険団の逆襲",
+   "name": "掻鳥の巧技",
    "bonuses": [
     {
      "pieces": 2,
-     "skill": "逆境",
+     "skill": "洞察",
      "lv": 1,
-     "effect": "逆境+1",
-     "description": "力尽きるたびに、冒険者の与えるダメージと防御力が1.1倍上がり、防御力+10。狩猟終了まで持続する(最大2回まで)。"
-    }
-   ]
-  },
-  {
-   "name": "ドスジャグラスの抵抗",
-   "bonuses": [
-    {
-     "pieces": 2,
-     "skill": "気絶耐性",
-     "lv": 1,
-     "effect": "気絶耐性+1",
-     "description": "気絶状態の継続時間-60%。"
-    }
-   ]
-  },
-  {
-   "name": "クルルヤックの閃撃",
-   "bonuses": [
-    {
-     "pieces": 2,
-     "skill": "本気",
-     "lv": 1,
-     "effect": "本気+1",
-     "description": "攻撃が弾かれなくなる。"
-    }
-   ]
-  },
-  {
-   "name": "プケプケの尻尾振り",
-   "bonuses": [
-    {
-     "pieces": 2,
-     "skill": "毒耐性",
-     "lv": 1,
-     "effect": "毒耐性+1",
-     "description": "毒状態の継続時間-30%。"
-    }
-   ]
-  },
-  {
-   "name": "合金の風障",
-   "bonuses": [
-    {
-     "pieces": 2,
-     "skill": "風圧耐性",
-     "lv": 1,
-     "effect": "風圧耐性+1",
-     "description": "風圧【小】を軽減する。"
-    }
-   ]
-  },
-  {
-   "name": "痺賊竜の不意打ち",
-   "bonuses": [
-    {
-     "pieces": 2,
-     "skill": "雷属性ダメージUP",
-     "lv": 1,
-     "effect": "雷属性ダメージUP+1",
-     "description": "雷属性ダメージ+3%。融光種モンスターの場合は+8%になる。"
-    }
-   ]
-  },
-  {
-   "name": "泥魚竜の水御",
-   "bonuses": [
-    {
-     "pieces": 2,
-     "skill": "水属性ダメージUP",
-     "lv": 1,
-     "effect": "水属性ダメージUP+1",
-     "description": "水属性ダメージ+3%。融光種モンスターの場合は+8%になる。"
-    }
-   ]
-  },
-  {
-   "name": "土砂竜の泥障",
-   "bonuses": [
-    {
-     "pieces": 2,
-     "skill": "泥耐性",
-     "lv": 1,
-     "effect": "泥耐性+1",
-     "description": "移動速度や回避行動への制限を軽減する。"
-    }
-   ]
-  },
-  {
-   "name": "寒鉄錬成",
-   "bonuses": [
-    {
-     "pieces": 2,
-     "skill": "氷属性ダメージUP",
-     "lv": 1,
-     "effect": "氷属性ダメージUP+1",
-     "description": "氷属性ダメージ+3%。融光種モンスターの場合は+8%になる。"
-    }
-   ]
-  },
-  {
-   "name": "竜塚の神秘",
-   "bonuses": [
-    {
-     "pieces": 2,
-     "skill": "龍属性ダメージUP",
-     "lv": 1,
-     "effect": "龍属性ダメージUP+1",
-     "description": "龍属性ダメージ+3%。融光種モンスターの場合は+8%になる。"
-    }
-   ]
-  },
-  {
-   "name": "巨峰の絶縁",
-   "bonuses": [
-    {
-     "pieces": 2,
-     "skill": "麻痺耐性",
-     "lv": 1,
-     "effect": "麻痺耐性+1",
-     "description": "麻痺状態の継続時間-30%。"
-    }
-   ]
-  },
-  {
-   "name": "蛮顎竜の灼炎",
-   "bonuses": [
-    {
-     "pieces": 2,
-     "skill": "火属性ダメージUP",
-     "lv": 1,
-     "effect": "火属性ダメージUP+1",
-     "description": "火属性ダメージ+3%。融光種モンスターの場合は+8%になる。"
-    }
-   ]
-  },
-  {
-   "name": "雌火竜の感応",
-   "bonuses": [
-    {
-     "pieces": 2,
-     "skill": "融光感知",
-     "lv": 1,
-     "effect": "融光感知+1",
-     "description": "融光種モンスターが狂暴状態のとき、冒険者の与ダメージ+4%。"
+     "effect": "会心率+2%。",
+     "description": "会心率UP。"
     }
    ]
   },
@@ -164,8 +20,44 @@
      "pieces": 2,
      "skill": "洞察",
      "lv": 1,
-     "effect": "洞察+1",
-     "description": "会心率+2%。"
+     "effect": "会心率+2%。",
+     "description": "会心率UP。"
+    }
+   ]
+  },
+  {
+   "name": "火竜の弱点撃破",
+   "bonuses": [
+    {
+     "pieces": 3,
+     "skill": "弱点攻撃",
+     "lv": 1,
+     "effect": "モンスターの肉質が柔らかい部位を攻撃すると、会心率+4%。",
+     "description": "モンスターの肉質が柔らかい部位を攻撃すると、会心率が増加する。"
+    }
+   ]
+  },
+  {
+   "name": "飛雷竜の激昂",
+   "bonuses": [
+    {
+     "pieces": 3,
+     "skill": "ポテンシャル解放",
+     "lv": 1,
+     "effect": "狩猟開始から90秒後、または累計で100のダメージを受けると、会心率+3%、180秒持続。",
+     "description": "特定の条件を満たすと、一定時間会心率UP。"
+    }
+   ]
+  },
+  {
+   "name": "冒険団の逆襲",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "逆境",
+     "lv": 1,
+     "effect": "力尽きるたびに、冒険者の与えるダメージと防御力が1.1倍上がり、防御力+10。狩猟終了まで持続する(最大2回まで)。",
+     "description": "力尽きる度に、ダメージと防御力が一定時間増加する。（最大2回まで）"
     }
    ]
   },
@@ -176,44 +68,8 @@
      "pieces": 2,
      "skill": "無垢",
      "lv": 1,
-     "effect": "無垢+1",
-     "description": "体力が最大時、与ダメージ+3%。"
-    }
-   ]
-  },
-  {
-   "name": "花蝶の親和",
-   "bonuses": [
-    {
-     "pieces": 2,
-     "skill": "睡眠耐性",
-     "lv": 1,
-     "effect": "睡眠耐性+1",
-     "description": "睡眠状態の継続時間-30%。"
-    }
-   ]
-  },
-  {
-   "name": "複合ファイバー",
-   "bonuses": [
-    {
-     "pieces": 2,
-     "skill": "火耐性強化",
-     "lv": 1,
-     "effect": "火耐性強化+1",
-     "description": "火耐性+6。"
-    }
-   ]
-  },
-  {
-   "name": "飛雷竜の雷鎧",
-   "bonuses": [
-    {
-     "pieces": 2,
-     "skill": "雷耐性強化",
-     "lv": 1,
-     "effect": "雷耐性強化+1",
-     "description": "雷耐性+6。"
+     "effect": "体力が最大時、与ダメージ+3%。",
+     "description": "体力が満タンのとき、与ダメージが増加する。"
     }
    ]
   },
@@ -224,140 +80,32 @@
      "pieces": 2,
      "skill": "破壊王",
      "lv": 1,
-     "effect": "破壊王+1",
-     "description": "大型モンスターの部位を破壊しやすくなり、部位に対する蓄積ダメージが1.1倍になる。"
+     "effect": "大型モンスターの部位を破壊しやすくなり、部位に対する蓄積ダメージが1.1倍になる。",
+     "description": "大型モンスターの部位を破壊しやすくなる。"
     }
    ]
   },
   {
-   "name": "巨甲の力",
+   "name": "雌火竜の感応",
    "bonuses": [
     {
-     "pieces": 2,
-     "skill": "龍耐性強化",
+     "pieces": 3,
+     "skill": "融光感知",
      "lv": 1,
-     "effect": "龍耐性強化+1",
-     "description": "龍耐性+6。"
+     "effect": "融光種モンスターが狂暴状態のとき、冒険者の与ダメージ+4%。",
+     "description": "融光種モンスターが狂暴状態のとき、冒険者の与ダメージが増加する。"
     }
    ]
   },
   {
-   "name": "掻鳥の巧技",
+   "name": "蛮顎竜の灼炎",
    "bonuses": [
     {
-     "pieces": 2,
-     "skill": "洞察",
+     "pieces": 3,
+     "skill": "火属性ダメージUP",
      "lv": 1,
-     "effect": "洞察+1",
-     "description": "会心率+2%。"
-    }
-   ]
-  },
-  {
-   "name": "土砂竜の堅守",
-   "bonuses": [
-    {
-     "pieces": 2,
-     "skill": "ガードテクニック",
-     "lv": 1,
-     "effect": "ガードテクニック+1",
-     "description": "ガード時にひるみにくくなり、攻撃の威力をわずかに軽減する。"
-    }
-   ]
-  },
-  {
-   "name": "泥魚竜の癒流",
-   "bonuses": [
-    {
-     "pieces": 2,
-     "skill": "水耐性強化",
-     "lv": 1,
-     "effect": "水耐性強化+1",
-     "description": "水耐性+6。"
-    }
-   ]
-  },
-  {
-   "name": "雌火竜の強躯",
-   "bonuses": [
-    {
-     "pieces": 2,
-     "skill": "体力強化",
-     "lv": 1,
-     "effect": "体力強化+1",
-     "description": "体力+10。"
-    }
-   ]
-  },
-  {
-   "name": "火竜の弱点撃破",
-   "bonuses": [
-    {
-     "pieces": 2,
-     "skill": "弱点攻撃",
-     "lv": 1,
-     "effect": "弱点攻撃+1",
-     "description": "モンスターの肉質が柔らかい部位を攻撃すると、会心率+4%。"
-    }
-   ]
-  },
-  {
-   "name": "鉱脈の静寂",
-   "bonuses": [
-    {
-     "pieces": 2,
-     "skill": "咆哮耐性",
-     "lv": 1,
-     "effect": "咆哮耐性+1",
-     "description": "咆哮【小】の影響を軽減する。"
-    }
-   ]
-  },
-  {
-   "name": "一角の神秘",
-   "bonuses": [
-    {
-     "pieces": 2,
-     "skill": "地質専門家",
-     "lv": 1,
-     "effect": "地質専門家+1",
-     "description": "骨採集ポイントの採集回数1回増加。"
-    }
-   ]
-  },
-  {
-   "name": "インゴットの耐爆",
-   "bonuses": [
-    {
-     "pieces": 2,
-     "skill": "爆破耐性",
-     "lv": 1,
-     "effect": "爆破耐性+1",
-     "description": "爆破までの猶予時間を延長し、爆破ダメージを軽減する。"
-    }
-   ]
-  },
-  {
-   "name": "荒野マスタリー",
-   "bonuses": [
-    {
-     "pieces": 2,
-     "skill": "標本の達人",
-     "lv": 1,
-     "effect": "標本の達人+1",
-     "description": "攻撃で昆虫型の小型モンスターを討伐する時、残骸が残る確率が少し上がる。"
-    }
-   ]
-  },
-  {
-   "name": "飛雷竜の激昂",
-   "bonuses": [
-    {
-     "pieces": 2,
-     "skill": "ポテンシャル解放",
-     "lv": 1,
-     "effect": "ポテンシャル解放+1",
-     "description": "狩猟開始から90秒後、または累計で100のダメージを受けると、会心率+3%、180秒持続。"
+     "effect": "火属性ダメージ+3%。融光種モンスターの場合は+8%になる。",
+     "description": "火属性ダメージが増加する。融光種モンスター相手の場合は効果がさらに強化される。"
     }
    ]
   },
@@ -368,8 +116,248 @@
      "pieces": 2,
      "skill": "オトモ強化",
      "lv": 1,
-     "effect": "オトモ強化+1",
-     "description": "オトモの与ダメージが1.1倍になる。"
+     "effect": "オトモの与ダメージが1.1倍になる。",
+     "description": "オトモの与ダメージが増加する。"
+    }
+   ]
+  },
+  {
+   "name": "竜塚の神秘",
+   "bonuses": [
+    {
+     "pieces": 3,
+     "skill": "龍属性ダメージUP",
+     "lv": 1,
+     "effect": "龍属性ダメージ+3%。融光種モンスターの場合は+8%になる。",
+     "description": "龍属性ダメージが増加する。融光種モンスター相手の場合は効果がさらに強化される。"
+    }
+   ]
+  },
+  {
+   "name": "眩鳥の追撃",
+   "bonuses": [
+    {
+     "pieces": 3,
+     "skill": "徹底追撃",
+     "lv": 1,
+     "effect": "スキル発動時、ダメージ+4%、15秒持続。",
+     "description": "モンスターがひるむか制圧状態になった後、一定時間、与ダメージが増加する。"
+    }
+   ]
+  },
+  {
+   "name": "泥魚竜の水御",
+   "bonuses": [
+    {
+     "pieces": 3,
+     "skill": "水属性ダメージUP",
+     "lv": 1,
+     "effect": "水属性ダメージ+3%。融光種モンスターの場合は+8%になる。",
+     "description": "水属性ダメージが増加する。融光種モンスター相手の場合は効果がさらに強化される。"
+    }
+   ]
+  },
+  {
+   "name": "痺賊竜の不意打ち",
+   "bonuses": [
+    {
+     "pieces": 3,
+     "skill": "雷属性ダメージUP",
+     "lv": 1,
+     "effect": "雷属性ダメージ+3%。融光種モンスターの場合は+8%になる。",
+     "description": "雷属性ダメージが増加する。融光種モンスター相手の場合は効果がさらに強化される。"
+    }
+   ]
+  },
+  {
+   "name": "桜火竜の鋭敏",
+   "bonuses": [
+    {
+     "pieces": 3,
+     "skill": "狩人の第六感",
+     "lv": 1,
+     "effect": "スキル発動時の与ダメージ+4%。120秒持続。",
+     "description": "フィールドのギミックまたは環境生物を使用すると、ダメージが一定時間増加する。"
+    }
+   ]
+  },
+  {
+   "name": "寒鉄錬成",
+   "bonuses": [
+    {
+     "pieces": 3,
+     "skill": "氷属性ダメージUP",
+     "lv": 1,
+     "effect": "氷属性ダメージ+3%。融光種モンスターの場合は+8%になる。",
+     "description": "氷属性ダメージが増加する。融光種モンスター相手の場合は効果がさらに強化される。"
+    }
+   ]
+  },
+  {
+   "name": "光稜龍の威嚇",
+   "bonuses": [
+    {
+     "pieces": 3,
+     "skill": "弱点追撃",
+     "lv": 1,
+     "effect": "75%の確率でスキルが発動し、4%の追加ダメージを与える。",
+     "description": "モンスターの破壊された部位を攻撃すると、一定の確率で追加で1回ダメージを与える。"
+    }
+   ]
+  },
+  {
+   "name": "土砂竜の泥障",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "泥耐性",
+     "lv": 1,
+     "effect": "移動速度や回避行動への制限を軽減する。",
+     "description": "移動速度や回避行動への制限を軽減する。"
+    }
+   ]
+  },
+  {
+   "name": "巨峰の絶縁",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "麻痺耐性",
+     "lv": 1,
+     "effect": "麻痺状態の継続時間-30%。",
+     "description": "麻痺状態の継続時間を短縮する。"
+    }
+   ]
+  },
+  {
+   "name": "合金の風障",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "風圧耐性",
+     "lv": 1,
+     "effect": "風圧【小】を軽減する。",
+     "description": "風圧に耐性を得る。"
+    }
+   ]
+  },
+  {
+   "name": "複合ファイバー",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "火耐性強化",
+     "lv": 1,
+     "effect": "火耐性+6。",
+     "description": "火耐性が強化される。"
+    }
+   ]
+  },
+  {
+   "name": "プケプケの尻尾振り",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "毒耐性",
+     "lv": 1,
+     "effect": "毒状態の継続時間-30%。",
+     "description": "毒状態時の被ダメージを減らす。"
+    }
+   ]
+  },
+  {
+   "name": "巨甲の力",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "龍耐性強化",
+     "lv": 1,
+     "effect": "龍耐性+6。",
+     "description": "龍耐性が強化される。"
+    }
+   ]
+  },
+  {
+   "name": "鉱脈の静寂",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "咆哮耐性",
+     "lv": 1,
+     "effect": "咆哮【小】の影響を軽減する。",
+     "description": "大型モンスターの咆哮に対する耐性を持つ。"
+    }
+   ]
+  },
+  {
+   "name": "花蝶の親和",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "睡眠耐性",
+     "lv": 1,
+     "effect": "睡眠状態の継続時間-30%。",
+     "description": "睡眠状態の継続時間を短縮する。"
+    }
+   ]
+  },
+  {
+   "name": "飛雷竜の雷鎧",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "雷耐性強化",
+     "lv": 1,
+     "effect": "雷耐性+6。",
+     "description": "雷耐性が強化される。"
+    }
+   ]
+  },
+  {
+   "name": "土砂竜の堅守",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "ガードテクニック",
+     "lv": 1,
+     "effect": "ガード時にひるみにくくなり、攻撃の威力をわずかに軽減する。",
+     "description": "ガード時ののけぞり時間を短縮し、スタミナ消費量を軽減する。"
+    }
+   ]
+  },
+  {
+   "name": "インゴットの耐爆",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "爆破耐性",
+     "lv": 1,
+     "effect": "爆破までの猶予時間を延長し、爆破ダメージを軽減する。",
+     "description": "爆破やられに耐性を得る。"
+    }
+   ]
+  },
+  {
+   "name": "泥魚竜の癒流",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "水耐性強化",
+     "lv": 1,
+     "effect": "水耐性+6。",
+     "description": "水耐性が強化される。"
+    }
+   ]
+  },
+  {
+   "name": "雌火竜の強躯",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "体力強化",
+     "lv": 1,
+     "effect": "体力+10。",
+     "description": "冒険者の体力が上がる。"
     }
    ]
   },
@@ -380,44 +368,8 @@
      "pieces": 2,
      "skill": "振動耐性",
      "lv": 1,
-     "effect": "振動耐性+1",
-     "description": "振動【小】を無効化する。"
-    }
-   ]
-  },
-  {
-   "name": "眩鳥の追撃",
-   "bonuses": [
-    {
-     "pieces": 2,
-     "skill": "徹底追撃",
-     "lv": 1,
-     "effect": "徹底追尾+1",
-     "description": "モンスターがのけぞるまたは、制圧状態になった後、一定時間、冒険者の与ダメージが+4%。15秒持続。"
-    }
-   ]
-  },
-  {
-   "name": "浮空竜の気迫",
-   "bonuses": [
-    {
-     "pieces": 2,
-     "skill": "体力回復",
-     "lv": 1,
-     "effect": "体力回復+1",
-     "description": "ダメージを受けたとき、体力ゲージのグレー部分の回復速度が2倍上がる。"
-    }
-   ]
-  },
-  {
-   "name": "浮空竜の気流",
-   "bonuses": [
-    {
-     "pieces": 2,
-     "skill": "高圧ガード",
-     "lv": 1,
-     "effect": "高圧ガード+1",
-     "description": "融光種モンスターが狂暴状態の時、冒険者の防御+20"
+     "effect": "振動【小】を無効化する。",
+     "description": "地面振動に耐性を得る。"
     }
    ]
   },
@@ -428,20 +380,8 @@
      "pieces": 2,
      "skill": "防御力DOWN耐性",
      "lv": 1,
-     "effect": "防御力DOWN耐性+1",
-     "description": "防御力DOWN状態の継続時間-50%。"
-    }
-   ]
-  },
-  {
-   "name": "風漂竜の舞",
-   "bonuses": [
-    {
-     "pieces": 2,
-     "skill": "氷耐性強化",
-     "lv": 1,
-     "effect": "氷耐性強化+1",
-     "description": "氷耐性+6"
+     "effect": "防御力DOWN状態の継続時間-50%。",
+     "description": "防御力DOWNに耐性を得る。"
     }
    ]
   },
@@ -452,32 +392,92 @@
      "pieces": 2,
      "skill": "裂傷耐性",
      "lv": 1,
-     "effect": "裂傷耐性+1",
-     "description": "裂傷状態によるダメージを軽減する。"
+     "effect": "裂傷状態によるダメージを軽減する。",
+     "description": "裂傷状態に耐性を得る。"
     }
    ]
   },
   {
-   "name": "桜火竜の鋭敏",
+   "name": "浮空竜の気迫",
    "bonuses": [
     {
      "pieces": 2,
-     "skill": "狩人の第六感",
+     "skill": "体力回復",
      "lv": 1,
-     "effect": "狩人の第六感+1",
-     "description": "フィールドの罠を使用してモンスターにデバフまたはダメージを与えた時、自分のダメージ+4%。120秒持続。"
+     "effect": "灰色ゲージの自動回復速度が2倍になる。",
+     "description": "ダメージを受けたとき、体力ゲージのグレーの部分の回復速度が上がる。"
     }
    ]
   },
   {
-   "name": "光稜龍の威嚇",
+   "name": "風漂竜の舞",
    "bonuses": [
     {
      "pieces": 2,
-     "skill": "弱点追撃",
+     "skill": "氷耐性強化",
      "lv": 1,
-     "effect": "弱点追撃+1",
-     "description": "モンスターの破壊された部位を攻撃すると、75%の確率で追加で4%分のダメージを与える。"
+     "effect": "氷耐性+6。",
+     "description": "氷耐性が強化される。"
+    }
+   ]
+  },
+  {
+   "name": "浮空竜の気流",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "高圧ガード",
+     "lv": 1,
+     "effect": "スキル発動時、防御力+20。",
+     "description": "融光種モンスターが狂暴状態のとき、冒険者の防御が増加する。"
+    }
+   ]
+  },
+  {
+   "name": "クルルヤックの閃撃",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "本気",
+     "lv": 1,
+     "effect": "攻撃が弾かれなくなる。",
+     "description": "攻撃が弾かれなくなる。"
+    }
+   ]
+  },
+  {
+   "name": "ドスジャグラスの抵抗",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "気絶耐性",
+     "lv": 1,
+     "effect": "気絶状態の継続時間-60%。",
+     "description": "気絶状態の継続時間を短縮する。"
+    }
+   ]
+  },
+  {
+   "name": "一角の神秘",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "地質専門家",
+     "lv": 1,
+     "effect": "骨採集ポイントの採集回数1回増加。",
+     "description": "採集ポイントの採集回数が増える。"
+    }
+   ]
+  },
+  {
+   "name": "荒野マスタリー",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "標本の達人",
+     "lv": 1,
+     "effect": "攻撃で昆虫型の小型モンスターを討伐する時、残骸が残る確率が少し上がる。",
+     "description": "攻撃で昆虫型の小型モンスターを討伐しても、剥ぎ取れる状態で残りやすい。"
     }
    ]
   }
@@ -486,8 +486,7 @@
   {
    "name": "冒険団",
    "gate": {
-    "type": "guild",
-    "lv": 1
+    "type": "basic"
    },
    "set": "冒険団の逆襲",
    "pieces": [
@@ -496,7 +495,7 @@
      "name": "冒険団ヘルム",
      "part": "head",
      "baseRarity": 5,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "冒険団の逆襲",
      "orbTier": null,
      "skills": [
@@ -529,7 +528,7 @@
      "name": "冒険団メイル",
      "part": "body",
      "baseRarity": 5,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "冒険団の逆襲",
      "orbTier": null,
      "skills": [
@@ -562,7 +561,7 @@
      "name": "冒険団アーム",
      "part": "arm",
      "baseRarity": 5,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "冒険団の逆襲",
      "orbTier": null,
      "skills": [
@@ -595,7 +594,7 @@
      "name": "冒険団コイル",
      "part": "waist",
      "baseRarity": 5,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "冒険団の逆襲",
      "orbTier": null,
      "skills": [
@@ -628,7 +627,7 @@
      "name": "冒険団グリーブ",
      "part": "leg",
      "baseRarity": 5,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "冒険団の逆襲",
      "orbTier": null,
      "skills": [
@@ -1336,7 +1335,7 @@
      "name": "アロイヘルム",
      "part": "head",
      "baseRarity": 3,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "合金の風障",
      "orbTier": 1,
      "skills": [
@@ -1368,7 +1367,7 @@
      "name": "アロイメイル",
      "part": "body",
      "baseRarity": 3,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "合金の風障",
      "orbTier": 1,
      "skills": [
@@ -1404,7 +1403,7 @@
      "name": "アロイアーム",
      "part": "arm",
      "baseRarity": 3,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "合金の風障",
      "orbTier": 1,
      "skills": [
@@ -1436,7 +1435,7 @@
      "name": "アロイコイル",
      "part": "waist",
      "baseRarity": 3,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "合金の風障",
      "orbTier": 1,
      "skills": [
@@ -1472,7 +1471,7 @@
      "name": "アロイグリーヴ",
      "part": "leg",
      "baseRarity": 3,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "合金の風障",
      "orbTier": 1,
      "skills": [
@@ -2204,7 +2203,7 @@
      "name": "チェーンヘッド",
      "part": "head",
      "baseRarity": 1,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "寒鉄錬成",
      "orbTier": 1,
      "skills": [
@@ -2237,7 +2236,7 @@
      "name": "チェーンベスト",
      "part": "body",
      "baseRarity": 1,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "寒鉄錬成",
      "orbTier": 1,
      "skills": [
@@ -2269,7 +2268,7 @@
      "name": "チェーングラブ",
      "part": "arm",
      "baseRarity": 1,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "寒鉄錬成",
      "orbTier": 1,
      "skills": [
@@ -2302,7 +2301,7 @@
      "name": "チェーンベルト",
      "part": "waist",
      "baseRarity": 1,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "寒鉄錬成",
      "orbTier": 1,
      "skills": [
@@ -2339,7 +2338,7 @@
      "name": "チェーンパンツ",
      "part": "leg",
      "baseRarity": 1,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "寒鉄錬成",
      "orbTier": 1,
      "skills": [
@@ -2385,7 +2384,7 @@
      "name": "ボーンヘルム",
      "part": "head",
      "baseRarity": 2,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "竜塚の神秘",
      "orbTier": 1,
      "skills": [
@@ -2422,7 +2421,7 @@
      "name": "ボーンメイル",
      "part": "body",
      "baseRarity": 2,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "竜塚の神秘",
      "orbTier": 1,
      "skills": [
@@ -2459,7 +2458,7 @@
      "name": "ボーンアーム",
      "part": "arm",
      "baseRarity": 2,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "竜塚の神秘",
      "orbTier": 1,
      "skills": [
@@ -2496,7 +2495,7 @@
      "name": "ボーンコイル",
      "part": "waist",
      "baseRarity": 2,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "竜塚の神秘",
      "orbTier": 1,
      "skills": [
@@ -2528,7 +2527,7 @@
      "name": "ボーングリーヴ",
      "part": "leg",
      "baseRarity": 2,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "竜塚の神秘",
      "orbTier": 1,
      "skills": [
@@ -2574,7 +2573,7 @@
      "name": "ランゴヘルム",
      "part": "head",
      "baseRarity": 2,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "巨峰の絶縁",
      "orbTier": 1,
      "skills": [
@@ -2610,7 +2609,7 @@
      "name": "ランゴメイル",
      "part": "body",
      "baseRarity": 2,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "巨峰の絶縁",
      "orbTier": 1,
      "skills": [
@@ -2646,7 +2645,7 @@
      "name": "ランゴアーム",
      "part": "arm",
      "baseRarity": 2,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "巨峰の絶縁",
      "orbTier": 1,
      "skills": [
@@ -2687,7 +2686,7 @@
      "name": "ランゴコイル",
      "part": "waist",
      "baseRarity": 2,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "巨峰の絶縁",
      "orbTier": 1,
      "skills": [
@@ -2732,7 +2731,7 @@
      "name": "ランゴグリーヴ",
      "part": "leg",
      "baseRarity": 2,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "巨峰の絶縁",
      "orbTier": 1,
      "skills": [
@@ -2789,7 +2788,7 @@
      "name": "ジャナフヘルム",
      "part": "head",
      "baseRarity": 3,
-     "maxRarity": 9,
+     "maxRarity": 8,
      "set": "蛮顎竜の灼炎",
      "orbTier": 1,
      "skills": [
@@ -2838,7 +2837,7 @@
      "name": "ジャナフメイル",
      "part": "body",
      "baseRarity": 3,
-     "maxRarity": 9,
+     "maxRarity": 8,
      "set": "蛮顎竜の灼炎",
      "orbTier": 1,
      "skills": [
@@ -2879,7 +2878,7 @@
      "name": "ジャナフアーム",
      "part": "arm",
      "baseRarity": 3,
-     "maxRarity": 9,
+     "maxRarity": 8,
      "set": "蛮顎竜の灼炎",
      "orbTier": 1,
      "skills": [
@@ -2920,7 +2919,7 @@
      "name": "ジャナフコイル",
      "part": "waist",
      "baseRarity": 3,
-     "maxRarity": 9,
+     "maxRarity": 8,
      "set": "蛮顎竜の灼炎",
      "orbTier": 1,
      "skills": [
@@ -2969,7 +2968,7 @@
      "name": "ジャナフグリーヴ",
      "part": "leg",
      "baseRarity": 3,
-     "maxRarity": 9,
+     "maxRarity": 8,
      "set": "蛮顎竜の灼炎",
      "orbTier": 1,
      "skills": [
@@ -3022,7 +3021,7 @@
      "name": "融光種レイアヘルム",
      "part": "head",
      "baseRarity": 3,
-     "maxRarity": 9,
+     "maxRarity": 8,
      "set": "雌火竜の感応",
      "orbTier": 1,
      "skills": [
@@ -3059,7 +3058,7 @@
      "name": "融光種レイアメイル",
      "part": "body",
      "baseRarity": 3,
-     "maxRarity": 9,
+     "maxRarity": 8,
      "set": "雌火竜の感応",
      "orbTier": 1,
      "skills": [
@@ -3100,7 +3099,7 @@
      "name": "融光種レイアアーム",
      "part": "arm",
      "baseRarity": 3,
-     "maxRarity": 9,
+     "maxRarity": 8,
      "set": "雌火竜の感応",
      "orbTier": 1,
      "skills": [
@@ -3145,7 +3144,7 @@
      "name": "融光種レイアコイル",
      "part": "waist",
      "baseRarity": 3,
-     "maxRarity": 9,
+     "maxRarity": 8,
      "set": "雌火竜の感応",
      "orbTier": 1,
      "skills": [
@@ -3190,7 +3189,7 @@
      "name": "融光種レイアグリーヴ",
      "part": "leg",
      "baseRarity": 3,
-     "maxRarity": 9,
+     "maxRarity": 8,
      "set": "雌火竜の感応",
      "orbTier": 1,
      "skills": [
@@ -3239,7 +3238,7 @@
      "name": "融光種ジャグラスヘルム",
      "part": "head",
      "baseRarity": 4,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "賊竜の回避",
      "orbTier": 1,
      "skills": [
@@ -3275,7 +3274,7 @@
      "name": "融光種ジャグラスメイル",
      "part": "body",
      "baseRarity": 4,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "賊竜の回避",
      "orbTier": 1,
      "skills": [
@@ -3316,7 +3315,7 @@
      "name": "融光種ジャグラスアーム",
      "part": "arm",
      "baseRarity": 4,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "賊竜の回避",
      "orbTier": 1,
      "skills": [
@@ -3357,7 +3356,7 @@
      "name": "融光種ジャグラスコイル",
      "part": "waist",
      "baseRarity": 4,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "賊竜の回避",
      "orbTier": 1,
      "skills": [
@@ -3394,7 +3393,7 @@
      "name": "融光種ジャグラスグリーヴ",
      "part": "leg",
      "baseRarity": 4,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "賊竜の回避",
      "orbTier": 1,
      "skills": [
@@ -3443,7 +3442,7 @@
      "name": "融光種プケプケヘルム",
      "part": "head",
      "baseRarity": 4,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "毒妖鳥の縄張り",
      "orbTier": 1,
      "skills": [
@@ -3484,7 +3483,7 @@
      "name": "融光種プケプケメイル",
      "part": "body",
      "baseRarity": 4,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "毒妖鳥の縄張り",
      "orbTier": 1,
      "skills": [
@@ -3525,7 +3524,7 @@
      "name": "融光種プケプケアーム",
      "part": "arm",
      "baseRarity": 4,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "毒妖鳥の縄張り",
      "orbTier": 1,
      "skills": [
@@ -3566,7 +3565,7 @@
      "name": "融光種プケプケコイル",
      "part": "waist",
      "baseRarity": 4,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "毒妖鳥の縄張り",
      "orbTier": 1,
      "skills": [
@@ -3607,7 +3606,7 @@
      "name": "融光種プケプケグリーヴ",
      "part": "leg",
      "baseRarity": 4,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "毒妖鳥の縄張り",
      "orbTier": 1,
      "skills": [
@@ -3653,7 +3652,7 @@
      "name": "パピメルテスタ",
      "part": "head",
      "baseRarity": 4,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "花蝶の親和",
      "orbTier": 1,
      "skills": [
@@ -3685,7 +3684,7 @@
      "name": "パピメルペット",
      "part": "body",
      "baseRarity": 4,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "花蝶の親和",
      "orbTier": 1,
      "skills": [
@@ -3721,7 +3720,7 @@
      "name": "パピメルマーノ",
      "part": "arm",
      "baseRarity": 4,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "花蝶の親和",
      "orbTier": 1,
      "skills": [
@@ -3753,7 +3752,7 @@
      "name": "パピメルアンカ",
      "part": "waist",
      "baseRarity": 4,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "花蝶の親和",
      "orbTier": 1,
      "skills": [
@@ -3789,7 +3788,7 @@
      "name": "パピメルガンバ",
      "part": "leg",
      "baseRarity": 4,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "花蝶の親和",
      "orbTier": 1,
      "skills": [
@@ -3834,7 +3833,7 @@
      "name": "レザーヘッド",
      "part": "head",
      "baseRarity": 1,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "複合ファイバー",
      "orbTier": 1,
      "skills": [
@@ -3866,7 +3865,7 @@
      "name": "レザーベスト",
      "part": "body",
      "baseRarity": 1,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "複合ファイバー",
      "orbTier": 1,
      "skills": [
@@ -3903,7 +3902,7 @@
      "name": "レザーグラブ",
      "part": "arm",
      "baseRarity": 1,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "複合ファイバー",
      "orbTier": 1,
      "skills": [
@@ -3940,7 +3939,7 @@
      "name": "レザーベルト",
      "part": "waist",
      "baseRarity": 1,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "複合ファイバー",
      "orbTier": 1,
      "skills": [
@@ -4026,7 +4025,7 @@
      "name": "カガチヘルム",
      "part": "head",
      "baseRarity": 5,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "飛雷竜の雷鎧",
      "orbTier": 2,
      "skills": [
@@ -4071,7 +4070,7 @@
      "name": "カガチメイル",
      "part": "body",
      "baseRarity": 5,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "飛雷竜の雷鎧",
      "orbTier": 2,
      "skills": [
@@ -4112,7 +4111,7 @@
      "name": "カガチアーム",
      "part": "arm",
      "baseRarity": 5,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "飛雷竜の雷鎧",
      "orbTier": 2,
      "skills": [
@@ -4157,7 +4156,7 @@
      "name": "カガチコイル",
      "part": "waist",
      "baseRarity": 5,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "飛雷竜の雷鎧",
      "orbTier": 2,
      "skills": [
@@ -4198,7 +4197,7 @@
      "name": "カガチグリーヴ",
      "part": "leg",
      "baseRarity": 5,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "飛雷竜の雷鎧",
      "orbTier": 2,
      "skills": [
@@ -4251,7 +4250,7 @@
      "name": "融光種ジャナフヘルム",
      "part": "head",
      "baseRarity": 5,
-     "maxRarity": 9,
+     "maxRarity": 8,
      "set": "蛮顎竜の怒り",
      "orbTier": 2,
      "skills": [
@@ -4300,7 +4299,7 @@
      "name": "融光種ジャナフメイル",
      "part": "body",
      "baseRarity": 5,
-     "maxRarity": 9,
+     "maxRarity": 8,
      "set": "蛮顎竜の怒り",
      "orbTier": 2,
      "skills": [
@@ -4341,7 +4340,7 @@
      "name": "融光種ジャナフアーム",
      "part": "arm",
      "baseRarity": 5,
-     "maxRarity": 9,
+     "maxRarity": 8,
      "set": "蛮顎竜の怒り",
      "orbTier": 2,
      "skills": [
@@ -4382,7 +4381,7 @@
      "name": "融光種ジャナフコイル",
      "part": "waist",
      "baseRarity": 5,
-     "maxRarity": 9,
+     "maxRarity": 8,
      "set": "蛮顎竜の怒り",
      "orbTier": 2,
      "skills": [
@@ -4431,7 +4430,7 @@
      "name": "融光種ジャナフグリーヴ",
      "part": "leg",
      "baseRarity": 5,
-     "maxRarity": 9,
+     "maxRarity": 8,
      "set": "蛮顎竜の怒り",
      "orbTier": 2,
      "skills": [
@@ -4481,7 +4480,7 @@
      "name": "タロスヘルム",
      "part": "head",
      "baseRarity": 4,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "巨甲の力",
      "orbTier": 1,
      "skills": [
@@ -4517,7 +4516,7 @@
      "name": "タロスメイル",
      "part": "body",
      "baseRarity": 4,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "巨甲の力",
      "orbTier": 1,
      "skills": [
@@ -4553,7 +4552,7 @@
      "name": "タロスアーム",
      "part": "arm",
      "baseRarity": 4,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "巨甲の力",
      "orbTier": 1,
      "skills": [
@@ -4589,7 +4588,7 @@
      "name": "タロスコイル",
      "part": "waist",
      "baseRarity": 4,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "巨甲の力",
      "orbTier": 1,
      "skills": [
@@ -4629,7 +4628,7 @@
      "name": "タロスグリーヴ",
      "part": "leg",
      "baseRarity": 4,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "巨甲の力",
      "orbTier": 1,
      "skills": [
@@ -4681,7 +4680,7 @@
      "name": "融光種クルルヘルム",
      "part": "head",
      "baseRarity": 5,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "掻鳥の巧技",
      "orbTier": 2,
      "skills": [
@@ -4717,7 +4716,7 @@
      "name": "融光種クルルメイル",
      "part": "body",
      "baseRarity": 5,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "掻鳥の巧技",
      "orbTier": 2,
      "skills": [
@@ -4758,7 +4757,7 @@
      "name": "融光種クルルアーム",
      "part": "arm",
      "baseRarity": 5,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "掻鳥の巧技",
      "orbTier": 2,
      "skills": [
@@ -4799,7 +4798,7 @@
      "name": "融光種クルルコイル",
      "part": "waist",
      "baseRarity": 5,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "掻鳥の巧技",
      "orbTier": 2,
      "skills": [
@@ -4836,7 +4835,7 @@
      "name": "融光種クルルグリーヴ",
      "part": "leg",
      "baseRarity": 5,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "掻鳥の巧技",
      "orbTier": 2,
      "skills": [
@@ -4890,7 +4889,7 @@
      "name": "融光種ボロスヘルム",
      "part": "head",
      "baseRarity": 5,
-     "maxRarity": 9,
+     "maxRarity": 8,
      "set": "土砂竜の堅守",
      "orbTier": 2,
      "skills": [
@@ -4935,7 +4934,7 @@
      "name": "融光種ボロスメイル",
      "part": "body",
      "baseRarity": 5,
-     "maxRarity": 9,
+     "maxRarity": 8,
      "set": "土砂竜の堅守",
      "orbTier": 2,
      "skills": [
@@ -4971,7 +4970,7 @@
      "name": "融光種ボロスアーム",
      "part": "arm",
      "baseRarity": 5,
-     "maxRarity": 9,
+     "maxRarity": 8,
      "set": "土砂竜の堅守",
      "orbTier": 2,
      "skills": [
@@ -5016,7 +5015,7 @@
      "name": "融光種ボロスコイル",
      "part": "waist",
      "baseRarity": 5,
-     "maxRarity": 9,
+     "maxRarity": 8,
      "set": "土砂竜の堅守",
      "orbTier": 2,
      "skills": [
@@ -5061,7 +5060,7 @@
      "name": "融光種ボロスグリーヴ",
      "part": "leg",
      "baseRarity": 5,
-     "maxRarity": 9,
+     "maxRarity": 8,
      "set": "土砂竜の堅守",
      "orbTier": 2,
      "skills": [
@@ -5109,7 +5108,7 @@
      "name": "融光種ジュラヘルム",
      "part": "head",
      "baseRarity": 6,
-     "maxRarity": 9,
+     "maxRarity": 8,
      "set": "泥魚竜の癒流",
      "orbTier": 2,
      "skills": [
@@ -5150,7 +5149,7 @@
      "name": "融光種ジュラメイル",
      "part": "body",
      "baseRarity": 6,
-     "maxRarity": 9,
+     "maxRarity": 8,
      "set": "泥魚竜の癒流",
      "orbTier": 2,
      "skills": [
@@ -5191,7 +5190,7 @@
      "name": "融光種ジュラアーム",
      "part": "arm",
      "baseRarity": 6,
-     "maxRarity": 9,
+     "maxRarity": 8,
      "set": "泥魚竜の癒流",
      "orbTier": 2,
      "skills": [
@@ -5228,7 +5227,7 @@
      "name": "融光種ジュラコイル",
      "part": "waist",
      "baseRarity": 6,
-     "maxRarity": 9,
+     "maxRarity": 8,
      "set": "泥魚竜の癒流",
      "orbTier": 2,
      "skills": [
@@ -5265,7 +5264,7 @@
      "name": "融光種ジュラグリーヴ",
      "part": "leg",
      "baseRarity": 6,
-     "maxRarity": 9,
+     "maxRarity": 8,
      "set": "泥魚竜の癒流",
      "orbTier": 2,
      "skills": [
@@ -5318,7 +5317,7 @@
      "name": "レイアヘルム",
      "part": "head",
      "baseRarity": 6,
-     "maxRarity": 9,
+     "maxRarity": 8,
      "set": "雌火竜の強躯",
      "orbTier": 2,
      "skills": [
@@ -5355,7 +5354,7 @@
      "name": "レイアメイル",
      "part": "body",
      "baseRarity": 6,
-     "maxRarity": 9,
+     "maxRarity": 8,
      "set": "雌火竜の強躯",
      "orbTier": 2,
      "skills": [
@@ -5396,7 +5395,7 @@
      "name": "レイアアーム",
      "part": "arm",
      "baseRarity": 6,
-     "maxRarity": 9,
+     "maxRarity": 8,
      "set": "雌火竜の強躯",
      "orbTier": 2,
      "skills": [
@@ -5441,7 +5440,7 @@
      "name": "レイアコイル",
      "part": "waist",
      "baseRarity": 6,
-     "maxRarity": 9,
+     "maxRarity": 8,
      "set": "雌火竜の強躯",
      "orbTier": 2,
      "skills": [
@@ -5486,7 +5485,7 @@
      "name": "レイアグリーヴ",
      "part": "leg",
      "baseRarity": 6,
-     "maxRarity": 9,
+     "maxRarity": 8,
      "set": "雌火竜の強躯",
      "orbTier": 2,
      "skills": [
@@ -5535,7 +5534,7 @@
      "name": "レウスヘルム",
      "part": "head",
      "baseRarity": 6,
-     "maxRarity": 9,
+     "maxRarity": 8,
      "set": "火竜の弱点撃破",
      "orbTier": 2,
      "skills": [
@@ -5572,7 +5571,7 @@
      "name": "レウスメイル",
      "part": "body",
      "baseRarity": 6,
-     "maxRarity": 9,
+     "maxRarity": 8,
      "set": "火竜の弱点撃破",
      "orbTier": 2,
      "skills": [
@@ -5608,7 +5607,7 @@
      "name": "レウスアーム",
      "part": "arm",
      "baseRarity": 6,
-     "maxRarity": 9,
+     "maxRarity": 8,
      "set": "火竜の弱点撃破",
      "orbTier": 2,
      "skills": [
@@ -5653,7 +5652,7 @@
      "name": "レウスコイル",
      "part": "waist",
      "baseRarity": 6,
-     "maxRarity": 9,
+     "maxRarity": 8,
      "set": "火竜の弱点撃破",
      "orbTier": 2,
      "skills": [
@@ -5698,7 +5697,7 @@
      "name": "レウスグリーヴ",
      "part": "leg",
      "baseRarity": 6,
-     "maxRarity": 9,
+     "maxRarity": 8,
      "set": "火竜の弱点撃破",
      "orbTier": 2,
      "skills": [
@@ -5744,7 +5743,7 @@
      "name": "ハイメタヘルム",
      "part": "head",
      "baseRarity": 4,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "鉱脈の静寂",
      "orbTier": 1,
      "skills": [
@@ -5776,7 +5775,7 @@
      "name": "ハイメタメイル",
      "part": "body",
      "baseRarity": 4,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "鉱脈の静寂",
      "orbTier": 1,
      "skills": [
@@ -5804,7 +5803,7 @@
      "name": "ハイメタアーム",
      "part": "arm",
      "baseRarity": 4,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "鉱脈の静寂",
      "orbTier": 1,
      "skills": [
@@ -5836,7 +5835,7 @@
      "name": "ハイメタコイル",
      "part": "waist",
      "baseRarity": 4,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "鉱脈の静寂",
      "orbTier": 1,
      "skills": [
@@ -5872,7 +5871,7 @@
      "name": "ハイメタグリーヴ",
      "part": "leg",
      "baseRarity": 4,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "鉱脈の静寂",
      "orbTier": 1,
      "skills": [
@@ -5917,7 +5916,7 @@
      "name": "オウビートテスタ",
      "part": "head",
      "baseRarity": 4,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "一角の神秘",
      "orbTier": 1,
      "skills": [
@@ -5949,7 +5948,7 @@
      "name": "オウビートペット",
      "part": "body",
      "baseRarity": 4,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "一角の神秘",
      "orbTier": 1,
      "skills": [
@@ -5985,7 +5984,7 @@
      "name": "オウビートマーノ",
      "part": "arm",
      "baseRarity": 4,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "一角の神秘",
      "orbTier": 1,
      "skills": [
@@ -6017,7 +6016,7 @@
      "name": "オウビートアンカ",
      "part": "waist",
      "baseRarity": 4,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "一角の神秘",
      "orbTier": 1,
      "skills": [
@@ -6048,7 +6047,7 @@
      "name": "オウビートガンバ",
      "part": "leg",
      "baseRarity": 4,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "一角の神秘",
      "orbTier": 1,
      "skills": [
@@ -6094,7 +6093,7 @@
      "name": "インゴットヘルム",
      "part": "head",
      "baseRarity": 5,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "インゴットの耐爆",
      "orbTier": 2,
      "skills": [
@@ -6126,7 +6125,7 @@
      "name": "インゴットメイル",
      "part": "body",
      "baseRarity": 5,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "インゴットの耐爆",
      "orbTier": 2,
      "skills": [
@@ -6167,7 +6166,7 @@
      "name": "インゴットアーム",
      "part": "arm",
      "baseRarity": 5,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "インゴットの耐爆",
      "orbTier": 2,
      "skills": [
@@ -6204,7 +6203,7 @@
      "name": "インゴットコイル",
      "part": "waist",
      "baseRarity": 5,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "インゴットの耐爆",
      "orbTier": 2,
      "skills": [
@@ -6241,7 +6240,7 @@
      "name": "インゴットグリーヴ",
      "part": "leg",
      "baseRarity": 5,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "インゴットの耐爆",
      "orbTier": 2,
      "skills": [
@@ -6287,7 +6286,7 @@
      "name": "冒険者ヘルム",
      "part": "head",
      "baseRarity": 2,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "荒野マスタリー",
      "orbTier": 1,
      "skills": [
@@ -6328,7 +6327,7 @@
      "name": "冒険者メイル",
      "part": "body",
      "baseRarity": 2,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "荒野マスタリー",
      "orbTier": 1,
      "skills": [
@@ -6369,7 +6368,7 @@
      "name": "冒険者アーム",
      "part": "arm",
      "baseRarity": 2,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "荒野マスタリー",
      "orbTier": 1,
      "skills": [
@@ -6405,7 +6404,7 @@
      "name": "冒険者コイル",
      "part": "waist",
      "baseRarity": 2,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "荒野マスタリー",
      "orbTier": 1,
      "skills": [
@@ -6450,7 +6449,7 @@
      "name": "冒険者グリーヴ",
      "part": "leg",
      "baseRarity": 2,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "荒野マスタリー",
      "orbTier": 1,
      "skills": [
@@ -6502,7 +6501,7 @@
      "name": "融光種カガチヘルム",
      "part": "head",
      "baseRarity": 7,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "飛雷竜の激昂",
      "orbTier": 3,
      "skills": [
@@ -6547,7 +6546,7 @@
      "name": "融光種カガチメイル",
      "part": "body",
      "baseRarity": 7,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "飛雷竜の激昂",
      "orbTier": 3,
      "skills": [
@@ -6583,7 +6582,7 @@
      "name": "融光種カガチアーム",
      "part": "arm",
      "baseRarity": 7,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "飛雷竜の激昂",
      "orbTier": 3,
      "skills": [
@@ -6628,7 +6627,7 @@
      "name": "融光種カガチコイル",
      "part": "waist",
      "baseRarity": 7,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "飛雷竜の雷鎧",
      "orbTier": 3,
      "skills": [
@@ -6664,7 +6663,7 @@
      "name": "融光種カガチグリーヴ",
      "part": "leg",
      "baseRarity": 7,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "飛雷竜の雷鎧",
      "orbTier": 3,
      "skills": [
@@ -6712,7 +6711,7 @@
      "name": "融光種ギルオスヘルム",
      "part": "head",
      "baseRarity": 7,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "ドスギルオスの統率",
      "orbTier": 3,
      "skills": [
@@ -6757,7 +6756,7 @@
      "name": "融光種ギルオスメイル",
      "part": "body",
      "baseRarity": 7,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "ドスギルオスの統率",
      "orbTier": 3,
      "skills": [
@@ -6793,7 +6792,7 @@
      "name": "融光種ギルオスアーム",
      "part": "arm",
      "baseRarity": 7,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "ドスギルオスの統率",
      "orbTier": 3,
      "skills": [
@@ -6829,7 +6828,7 @@
      "name": "融光種ギルオスコイル",
      "part": "waist",
      "baseRarity": 7,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "ドスギルオスの統率",
      "orbTier": 3,
      "skills": [
@@ -6878,7 +6877,7 @@
      "name": "融光種ギルオスグリーヴ",
      "part": "leg",
      "baseRarity": 7,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "ドスギルオスの統率",
      "orbTier": 3,
      "skills": [
@@ -6926,7 +6925,7 @@
      "name": "ディアブロスヘルム",
      "part": "head",
      "baseRarity": 7,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "角竜の踏み締め",
      "orbTier": 3,
      "skills": [
@@ -6966,7 +6965,7 @@
      "name": "ディアブロメイル",
      "part": "body",
      "baseRarity": 7,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "角竜の踏み締め",
      "orbTier": 3,
      "skills": [
@@ -7002,7 +7001,7 @@
      "name": "ディアブロアーム",
      "part": "arm",
      "baseRarity": 7,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "角竜の踏み締め",
      "orbTier": 3,
      "skills": [
@@ -7039,7 +7038,7 @@
      "name": "ディアブロコイル",
      "part": "waist",
      "baseRarity": 7,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "角竜の踏み締め",
      "orbTier": 3,
      "skills": [
@@ -7080,7 +7079,7 @@
      "name": "ディアブログリーヴ",
      "part": "leg",
      "baseRarity": 7,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "角竜の踏み締め",
      "orbTier": 3,
      "skills": [
@@ -7358,7 +7357,7 @@
      "name": "ウルムーヘルム",
      "part": "head",
      "baseRarity": 8,
-     "maxRarity": 9,
+     "maxRarity": 8,
      "set": "浮空竜の気迫",
      "orbTier": 3,
      "skills": [
@@ -7395,7 +7394,7 @@
      "name": "ウルムーメイル",
      "part": "body",
      "baseRarity": 8,
-     "maxRarity": 9,
+     "maxRarity": 8,
      "set": "浮空竜の気迫",
      "orbTier": 3,
      "skills": [
@@ -7431,7 +7430,7 @@
      "name": "ウルムーアーム",
      "part": "arm",
      "baseRarity": 8,
-     "maxRarity": 9,
+     "maxRarity": 8,
      "set": "浮空竜の気迫",
      "orbTier": 3,
      "skills": [
@@ -7467,7 +7466,7 @@
      "name": "ウルムーコイル",
      "part": "waist",
      "baseRarity": 8,
-     "maxRarity": 9,
+     "maxRarity": 8,
      "set": "浮空竜の気迫",
      "orbTier": 3,
      "skills": [
@@ -7499,7 +7498,7 @@
      "name": "ウルムーグリーヴ",
      "part": "leg",
      "baseRarity": 8,
-     "maxRarity": 9,
+     "maxRarity": 8,
      "set": "浮空竜の気迫",
      "orbTier": 3,
      "skills": [
@@ -7747,7 +7746,7 @@
      "name": "バルキンヘルム",
      "part": "head",
      "baseRarity": 7,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "骨鎚竜の鉄壁",
      "orbTier": 3,
      "skills": [
@@ -7788,7 +7787,7 @@
      "name": "バルキンメイル",
      "part": "body",
      "baseRarity": 7,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "骨鎚竜の鉄壁",
      "orbTier": 3,
      "skills": [
@@ -7829,7 +7828,7 @@
      "name": "バルキンアーム",
      "part": "arm",
      "baseRarity": 7,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "骨鎚竜の鉄壁",
      "orbTier": 3,
      "skills": [
@@ -7860,7 +7859,7 @@
      "name": "バルキンコイル",
      "part": "waist",
      "baseRarity": 7,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "骨鎚竜の鉄壁",
      "orbTier": 3,
      "skills": [
@@ -7904,7 +7903,7 @@
      "name": "バルキングリーヴ",
      "part": "leg",
      "baseRarity": 7,
-     "maxRarity": 9,
+     "maxRarity": 7,
      "set": "骨鎚竜の鉄壁",
      "orbTier": 3,
      "skills": [
@@ -7956,7 +7955,7 @@
      "name": "ギエナヘルム",
      "part": "head",
      "baseRarity": 8,
-     "maxRarity": 9,
+     "maxRarity": 8,
      "set": "風漂竜の舞",
      "orbTier": 3,
      "skills": [
@@ -7992,7 +7991,7 @@
      "name": "ギエナメイル",
      "part": "body",
      "baseRarity": 8,
-     "maxRarity": 9,
+     "maxRarity": 8,
      "set": "風漂竜の舞",
      "orbTier": 3,
      "skills": [
@@ -8028,7 +8027,7 @@
      "name": "ギエナアーム",
      "part": "arm",
      "baseRarity": 8,
-     "maxRarity": 9,
+     "maxRarity": 8,
      "set": "風漂竜の舞",
      "orbTier": 3,
      "skills": [
@@ -8077,7 +8076,7 @@
      "name": "ギエナコイル",
      "part": "waist",
      "baseRarity": 8,
-     "maxRarity": 9,
+     "maxRarity": 8,
      "set": "風漂竜の舞",
      "orbTier": 3,
      "skills": [
@@ -8113,7 +8112,7 @@
      "name": "ギエナグリーヴ",
      "part": "leg",
      "baseRarity": 8,
-     "maxRarity": 9,
+     "maxRarity": 8,
      "set": "風漂竜の舞",
      "orbTier": 3,
      "skills": [
@@ -8165,7 +8164,7 @@
      "name": "ガロンヘルム",
      "part": "head",
      "baseRarity": 7,
-     "maxRarity": 9,
+     "maxRarity": 8,
      "set": "惨爪竜の靭性",
      "orbTier": 3,
      "skills": [
@@ -8210,7 +8209,7 @@
      "name": "ガロンメイル",
      "part": "body",
      "baseRarity": 7,
-     "maxRarity": 9,
+     "maxRarity": 8,
      "set": "惨爪竜の靭性",
      "orbTier": 3,
      "skills": [
@@ -8256,7 +8255,7 @@
      "name": "ガロンアーム",
      "part": "arm",
      "baseRarity": 7,
-     "maxRarity": 9,
+     "maxRarity": 8,
      "set": "惨爪竜の靭性",
      "orbTier": 3,
      "skills": [
@@ -8292,7 +8291,7 @@
      "name": "ガロンコイル",
      "part": "waist",
      "baseRarity": 7,
-     "maxRarity": 9,
+     "maxRarity": 8,
      "set": "惨爪竜の靭性",
      "orbTier": 3,
      "skills": [
@@ -8328,7 +8327,7 @@
      "name": "ガロングリーヴ",
      "part": "leg",
      "baseRarity": 7,
-     "maxRarity": 9,
+     "maxRarity": 8,
      "set": "惨爪竜の靭性",
      "orbTier": 3,
      "skills": [
@@ -8579,7 +8578,7 @@
    "gate": {
     "type": "monster",
     "monsters": [
-     "ルガエアルダ"
+     "ルガ・エアルダ"
     ]
    },
    "set": "光稜龍の威嚇",

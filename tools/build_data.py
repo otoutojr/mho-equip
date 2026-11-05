@@ -57,9 +57,9 @@ SERIES_MONSTER = {
     'ツィツィ': 'ツィツィヤック', 'ウルムー': 'パオウルムー', 'バルキン': 'ラドバルキン', 'ギエナ': 'レイギエナ',
     'ガロン': 'オドガロン', 'リオハート': 'リオレイア亜種', 'エアルダ': 'ルガエアルダ', 'ブロス亜種': 'ディアブロス亜種',
 }
-BASIC_SERIES = {'冒険者', 'アロイ', 'チェーン', 'ボーン', 'レザー', 'ハイメタ', 'ランゴ', 'パピメル', 'オウビート', 'タロス'}
+BASIC_SERIES = {'冒険者', '冒険団', 'アロイ', 'チェーン', 'ボーン', 'レザー', 'ハイメタ', 'ランゴ', 'パピメル', 'オウビート', 'タロス'}
 MAP_SERIES = {'インゴット': '熱砂の平原'}  # 狩魂玉Ⅱ・大地の結晶が要る
-GUILD_SERIES = {'冒険団': 1}
+GUILD_SERIES = {}
 
 def series_gate(name, monsters_by_series):
     if name in GUILD_SERIES:
@@ -94,13 +94,22 @@ def slug(s):
 PCT = re.compile(r'([+＋]?)(\d+(?:\.\d+)?)\s*[%％]')
 NUM = re.compile(r'[+＋](\d+(?:\.\d+)?)')
 
+ELEM_ATK = re.compile(r'属性攻撃力\s*[+＋](\d+)')
 def parse_value(effect):
-    if not effect: return None
-    m = PCT.search(effect)
-    if m: return float(m.group(2))
+    """効果文から数値を取る。(通常値, 融光種相手の値)。属性攻撃力+N は N×0.12 を加算（目安）"""
+    if not effect: return None, None
+    cleaned = re.sub(r'\d+(?:\.\d+)?\s*[%％]の確率', '', effect)  # 「75%の確率で」は発動率なので除外
+    pcts = [float(m.group(2)) for m in PCT.finditer(cleaned)]
+    bonus = 0.0
+    m = ELEM_ATK.search(effect)
+    if m: bonus = int(m.group(1)) * 0.12
+    if pcts:
+        base = pcts[0] + bonus
+        yuko = (pcts[1] + bonus) if ('融光種' in effect and len(pcts) >= 2) else base
+        return round(base, 2), round(yuko, 2)
     m = NUM.search(effect)
-    if m: return float(m.group(1))
-    return None
+    if m: return float(m.group(1)), float(m.group(1))
+    return (round(bonus, 2) if bonus else None), (round(bonus, 2) if bonus else None)
 
 def build_skills(armor_series, raw):
     skills = collections.OrderedDict()
@@ -110,7 +119,8 @@ def build_skills(armor_series, raw):
             levels = []
             for lv in s.get('levels', []) or []:
                 eff = lv.get('effect')
-                levels.append({'lv': lv['lv'], 'effect': eff, 'value': parse_value(eff)})
+                v, vy = parse_value(eff)
+                levels.append({'lv': lv['lv'], 'effect': eff, 'value': v, 'valueYuko': vy})
             skills[name] = {'name': name, 'category': s.get('category'), 'weapon': s.get('weapon'), 'maxLv': s.get('maxLv') or (len(levels) or None), 'levels': levels}
     # 防具側に出てくるのに無いスキルは仮登録（maxLv は見かけの最大）
     seen_max = collections.Counter()
@@ -137,44 +147,59 @@ def parse_set_bonus(effect):
     return norm(effect), 1
 
 # ---------------------------------------------------------------- monsters
-CHAPTER_RANK = {'1': 1, '2': 8, '3': 16, '4': 24, '5': 32}
+# 章ごとのおおよその冒険ランク（攻略サイトの進行ゲートから）。明記されたランクがあればそちらを優先
+CHAPTER_RANK = {'1': 1, '2': 10, '3': 20, '4': 25, '5': 30, '6': 34}
+MAP_RANK = {'巨木の原野': 1, '熱砂の平原': 10, '朽ち果ての淵': 30, '瑰麗岩礁': 34}
+# マップ不明（巣穴のみ）のモンスターの所属マップ
+MAP_FALLBACK = {'融光種パオウルムー': ['瑰麗岩礁'], 'ルガ・エアルダ': ['瑰麗岩礁'], '融光種ツィツィヤック': ['瑰麗岩礁']}
+# 強化上限レア（冒険ランク → レア）GameWith 防具強化ページの表
+RANK_CAP = [[16, 3], [18, 4], [21, 5], [26, 6], [31, 7], [34, 8], [41, 9], [44, 10], [47, 11]]
+# 狩魂玉のランク → そのランクまでで強化できるレア
+ORB_CAP = {1: 4, 2: 6, 3: 8, 4: 10, 5: 12, 6: 12}
 
 def build_monsters(raw, series_names):
     maps, monsters = [], []
     if not raw:
-        return {'maps': [{'name': '巨木の原野', 'unlockRank': 1}], 'monsters': []}
+        return {'maps': [{'name': '巨木の原野', 'unlockRank': 1}], 'monsters': [], 'rankCap': RANK_CAP, 'orbCap': ORB_CAP}
     for m in raw.get('maps', []):
+        if m.get('kind') and m['kind'] != 'field':
+            continue  # 巣穴の狩猟などはマップではない
         u = m.get('unlock') or {}
         rank = u.get('rank')
-        if rank is None and u.get('chapter'):
-            rank = CHAPTER_RANK.get(str(u['chapter']).strip()[:1])
+        if rank is None:
+            rank = MAP_RANK.get(m['name']) or CHAPTER_RANK.get(str(u.get('chapter') or '').strip()[:1])
         maps.append({'name': m['name'], 'unlockRank': rank, 'note': u.get('note'), 'sourceUrl': m.get('sourceUrl')})
     map_rank = {m['name']: m['unlockRank'] for m in maps}
     for m in raw.get('monsters', []):
+        aser = [norm(x) for x in (m.get('armorSeries') or []) if norm(x) in series_names]
+        if not aser:
+            continue  # 作れる防具が無いモンスターは出さない（未実装・CBT情報のみ等）
         u = m.get('unlock') or {}
         rank = u.get('rank')
         if rank is None and u.get('chapter'):
             rank = CHAPTER_RANK.get(str(u['chapter']).strip()[:1])
+        mps = list(m.get('maps') or []) or MAP_FALLBACK.get(m['name'], [])
         if rank is None:
-            rs = [map_rank.get(x) for x in m.get('maps', []) if map_rank.get(x) is not None]
+            rs = [map_rank.get(x) for x in mps if map_rank.get(x) is not None]
             rank = min(rs) if rs else None
-        aser = [norm(x) for x in (m.get('armorSeries') or []) if norm(x) in series_names]
-        monsters.append({'name': m['name'], 'variant': m.get('variant', 'normal'), 'maps': m.get('maps') or [], 'element': m.get('element') or '無',
-                         'weak': m.get('weak') or [], 'armorSeries': aser, 'unlockRank': rank, 'note': u.get('note'), 'sourceUrl': m.get('sourceUrl')})
-    return {'maps': maps, 'monsters': monsters}
+        monsters.append({'name': m['name'], 'variant': m.get('variant', 'normal'), 'maps': mps, 'element': m.get('element') or '無',
+                         'weak': m.get('weak') or [], 'armorSeries': aser, 'unlockRank': rank, 'chapter': u.get('chapter'),
+                         'note': u.get('note'), 'sourceUrl': m.get('sourceUrl')})
+    return {'maps': maps, 'monsters': monsters, 'rankCap': RANK_CAP, 'orbCap': ORB_CAP}
 
 # ---------------------------------------------------------------- characters
 TIER_W = {'S': 1.0, 'A': 0.55, 'B': 0.25, 'C': 0.1}
 ELEMENTS = ['火', '水', '雷', '氷', '龍']
 
 def level_values(skill):
-    """スキルのレベル別の数値（% など）。無ければ 1レベル=3 の線形。"""
+    """スキルのレベル別の数値（通常, 融光種相手）。無ければ 1レベル=3 の線形。"""
     lv = skill.get('levels') or []
     vals = [x.get('value') for x in lv]
     if vals and all(v is not None for v in vals):
-        return vals
+        return vals, [x.get('valueYuko') if x.get('valueYuko') is not None else x.get('value') for x in lv]
     mx = skill.get('maxLv') or len(vals) or 3
-    return [3.0 * (i + 1) for i in range(mx)]
+    lin = [3.0 * (i + 1) for i in range(mx)]
+    return lin, lin
 
 def build_characters(raw, skills, overrides):
     out = []
@@ -190,6 +215,7 @@ def build_characters(raw, skills, overrides):
     for c in chars:
         hero = c['id'].startswith('hero_')
         weights = {}
+        weights_y = {}
         prios = []
         seen = set()
         for p in c.get('skillPriorities', []):
@@ -208,18 +234,20 @@ def build_characters(raw, skills, overrides):
             if name in seen: continue
             seen.add(name)
             w = TIER_W.get((p.get('tier') or 'B').upper(), 0.25) * (p.get('factor') or 1.0)
-            vals = level_values(skills[lookup])
+            vals, vals_y = level_values(skills[lookup])
             weights[name] = [round(v * w, 3) for v in vals]
+            weights_y[name] = [round(v * w, 3) for v in vals_y]
             prios.append({'skill': name, 'tier': (p.get('tier') or 'B').upper(), 'targetLv': p.get('targetLv'), 'reason': p.get('reason') or ''})
         # 控えめな汎用補正（同点時に生存スキルを拾う）
         for name in ('体力強化', '加護', '体力回復', '防護'):
             if name in skills and name not in weights:
                 weights[name] = [0.1 * (i + 1) for i in range(skills[name]['maxLv'] or 1)]
+                weights_y[name] = weights[name]
         entry = {'id': c['id'], 'name': c.get('name', c['id']), 'rarity': c.get('rarity'), 'type': c.get('type'), 'weapon': c.get('weapon'), 'element': c.get('element'),
-                 'elementSelectable': hero, 'mechanics': c.get('mechanics') or [], 'priorities': prios, 'weights': weights, 'note': c.get('note') or ''}
+                 'elementSelectable': hero, 'mechanics': c.get('mechanics') or [], 'priorities': prios, 'weights': weights, 'weightsYuko': weights_y, 'note': c.get('note') or ''}
         ov = ((overrides or {}).get('characters') or {}).get(c['id'])
         if ov and ov.get('weights'):
-            entry['weights'].update(ov['weights'])
+            entry['weights'].update(ov['weights']); entry['weightsYuko'].update(ov['weights'])
         out.append(entry)
     order = (overrides or {}).get('characterOrder')
     if order:
@@ -227,11 +255,21 @@ def build_characters(raw, skills, overrides):
         out.sort(key=lambda e: pos.get(e['id'], 999))
     return out
 
+def series_max_rarity(raw_mon):
+    out = {}
+    for name, rng in ((raw_mon or {}).get('armorSeriesRarity') or {}).get('series', {}).items():
+        try:
+            out[norm(name)] = int(str(rng).split('-')[-1])
+        except ValueError:
+            pass
+    return out
+
 def main():
     OUT.mkdir(exist_ok=True)
     overrides = load('overrides.json') or {}
     armor_series = merge_armor()
     raw_mon = load('monsters.json')
+    max_rar = series_max_rarity(raw_mon)
     monsters = build_monsters(raw_mon, set(armor_series.keys()))
     monsters_by_series = collections.defaultdict(list)
     for m in monsters['monsters']:
@@ -240,6 +278,13 @@ def main():
     skills, set_skills = build_skills(armor_series, load('skills.json'))
 
     sets = collections.OrderedDict()
+    # Game8 のセットスキル表（必要部位数が GameWith と食い違うものがあり、独立2サイトが一致する Game8 側を採用）
+    for st in set_skills or []:
+        sname = norm(st.get('name'))
+        if not sname: continue
+        bonuses = [{'pieces': b.get('pieces') or st.get('pieces') or 2, 'skill': norm(b.get('skill')), 'lv': b.get('lv') or 1,
+                    'effect': b.get('effect'), 'description': b.get('skillDescription') or b.get('effect')} for b in st.get('bonuses') or [] if b.get('skill')]
+        if bonuses: sets[sname] = {'name': sname, 'bonuses': bonuses}
     def register_set(ss):
         if not ss or not ss.get('name'): return None
         sname = norm(ss['name'])
@@ -261,8 +306,9 @@ def main():
         for p in sorted(s['pieces'], key=lambda p: PART_ORDER.get(p['part'], 9)):
             pset = norm(p.get('setSkillOverride')) if p.get('setSkillOverride') else main_set
             if pset and pset not in sets: register_set({'name': pset, 'bonuses': []})
+            last_unlock = max([k.get('rarity') or 0 for k in p['skills']] + [p.get('baseRarity') or 1])
             pieces.append({'id': f"{slug(name)}_{p['part']}", 'name': norm(p['name']), 'part': p['part'], 'baseRarity': p.get('baseRarity') or 1,
-                           'maxRarity': p.get('maxRarity') or 9, 'set': pset, 'orbTier': orb_tier(p.get('materials')),
+                           'maxRarity': p.get('maxRarity') or max(max_rar.get(name, 0), last_unlock, 7), 'set': pset, 'orbTier': orb_tier(p.get('materials')),
                            'skills': [{'name': norm(k['name']), 'lv': k['lv'], 'rarity': k.get('rarity') if k.get('rarity') is not None else (p.get('baseRarity') or 1)} for k in p['skills']],
                            'materials': p.get('materials'), 'sourceUrl': p.get('sourceUrl')})
         series_out.append({'name': name, 'gate': series_gate(name, monsters_by_series), 'set': main_set, 'pieces': pieces})

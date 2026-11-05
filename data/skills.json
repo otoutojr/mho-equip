@@ -2,701 +2,4291 @@
  "updated": "2026-11-05",
  "skills": [
   {
-   "name": "冒険団の力・ヘルム",
-   "category": null,
+   "name": "抜刀一閃",
+   "category": "火力",
    "weapon": null,
-   "maxLv": 6,
-   "levels": [],
-   "placeholder": true
+   "maxLv": 7,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "スキル発動時、ダメージ+4%。30秒持続。",
+     "value": 4.0,
+     "valueYuko": 4.0
+    },
+    {
+     "lv": 2,
+     "effect": "スキル発動時、ダメージ+8%。30秒持続。",
+     "value": 8.0,
+     "valueYuko": 8.0
+    },
+    {
+     "lv": 3,
+     "effect": "スキル発動時、ダメージ+12%。30秒持続。",
+     "value": 12.0,
+     "valueYuko": 12.0
+    },
+    {
+     "lv": 4,
+     "effect": "スキル発動時、ダメージ+16%。30秒持続。",
+     "value": 16.0,
+     "valueYuko": 16.0
+    },
+    {
+     "lv": 5,
+     "effect": "スキル発動時、ダメージ+20%。30秒持続。",
+     "value": 20.0,
+     "valueYuko": 20.0
+    },
+    {
+     "lv": 6,
+     "effect": "スキル発動時、ダメージ+24%。30秒持続。",
+     "value": 24.0,
+     "valueYuko": 24.0
+    },
+    {
+     "lv": 7,
+     "effect": "属性攻撃力+50。スキル発動時、ダメージ+31%。30秒持続。",
+     "value": 37.0,
+     "valueYuko": 37.0
+    }
+   ]
   },
   {
-   "name": "復活",
-   "category": null,
+   "name": "火属性ダメージUP",
+   "category": "火力",
+   "weapon": null,
+   "maxLv": 7,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "火属性ダメージ+3%。融光種モンスター相手の場合は+8%になる。",
+     "value": 3.0,
+     "valueYuko": 8.0
+    },
+    {
+     "lv": 2,
+     "effect": "火属性ダメージ+6%。融光種モンスター相手の場合は+15%になる。",
+     "value": 6.0,
+     "valueYuko": 15.0
+    },
+    {
+     "lv": 3,
+     "effect": "火属性ダメージ+9%。融光種モンスター相手の場合は+23%になる。",
+     "value": 9.0,
+     "valueYuko": 23.0
+    },
+    {
+     "lv": 4,
+     "effect": "火属性ダメージ+12%。融光種モンスター相手の場合は+30%になる。",
+     "value": 12.0,
+     "valueYuko": 30.0
+    },
+    {
+     "lv": 5,
+     "effect": "火属性ダメージ+16%。融光種モンスター相手の場合は+40%になる。",
+     "value": 16.0,
+     "valueYuko": 40.0
+    },
+    {
+     "lv": 6,
+     "effect": "火属性ダメージ+20%。融光種モンスター相手の場合は+50%になる。",
+     "value": 20.0,
+     "valueYuko": 50.0
+    },
+    {
+     "lv": 7,
+     "effect": "火属性攻撃力+50、火属性ダメージ+28%。融光種モンスターの狩猟時は+70%になる。",
+     "value": 34.0,
+     "valueYuko": 76.0
+    }
+   ]
+  },
+  {
+   "name": "回避強化",
+   "category": "火力",
+   "weapon": null,
+   "maxLv": 7,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "スキル発動時、ダメージ+4%。20秒持続。",
+     "value": 4.0,
+     "valueYuko": 4.0
+    },
+    {
+     "lv": 2,
+     "effect": "スキル発動時、ダメージ+8%。20秒持続。",
+     "value": 8.0,
+     "valueYuko": 8.0
+    },
+    {
+     "lv": 3,
+     "effect": "スキル発動時、ダメージ+12%。20秒持続。",
+     "value": 12.0,
+     "valueYuko": 12.0
+    },
+    {
+     "lv": 4,
+     "effect": "スキル発動時、ダメージ+16%。20秒持続。",
+     "value": 16.0,
+     "valueYuko": 16.0
+    },
+    {
+     "lv": 5,
+     "effect": "スキル発動時、ダメージ+20%。20秒持続。",
+     "value": 20.0,
+     "valueYuko": 20.0
+    },
+    {
+     "lv": 6,
+     "effect": "スキル発動時、ダメージ+24%。20秒持続。",
+     "value": 24.0,
+     "valueYuko": 24.0
+    },
+    {
+     "lv": 7,
+     "effect": "属性攻撃力+50。スキル発動時、ダメージ+31%。20秒持続。",
+     "value": 37.0,
+     "valueYuko": 37.0
+    }
+   ]
+  },
+  {
+   "name": "練気をまといし刃",
+   "category": "火力",
+   "weapon": "練気ゲージ（太刀）",
+   "maxLv": 4,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "スキル発動時、ダメージ+3%。30秒持続。",
+     "value": 3.0,
+     "valueYuko": 3.0
+    },
+    {
+     "lv": 2,
+     "effect": "スキル発動時、ダメージ+7%。30秒持続。",
+     "value": 7.0,
+     "valueYuko": 7.0
+    },
+    {
+     "lv": 3,
+     "effect": "スキル発動時、ダメージ+11%。30秒持続。",
+     "value": 11.0,
+     "valueYuko": 11.0
+    },
+    {
+     "lv": 4,
+     "effect": "属性攻撃力+25。スキル発動時、ダメージ+16%。30秒持続。",
+     "value": 19.0,
+     "valueYuko": 19.0
+    }
+   ]
+  },
+  {
+   "name": "弱点攻撃",
+   "category": "会心",
+   "weapon": null,
+   "maxLv": 3,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "弱点部位を攻撃した時、会心率+4%。",
+     "value": 4.0,
+     "valueYuko": 4.0
+    },
+    {
+     "lv": 2,
+     "effect": "弱点部位を攻撃した時、会心率+8%。",
+     "value": 8.0,
+     "valueYuko": 8.0
+    },
+    {
+     "lv": 3,
+     "effect": "弱点部位を攻撃した時、会心率+14%。",
+     "value": 14.0,
+     "valueYuko": 14.0
+    }
+   ]
+  },
+  {
+   "name": "闘志",
+   "category": "会心",
+   "weapon": null,
+   "maxLv": 5,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "スキル発動時、会心率+3%。",
+     "value": 3.0,
+     "valueYuko": 3.0
+    },
+    {
+     "lv": 2,
+     "effect": "スキル発動時、会心率+5%。",
+     "value": 5.0,
+     "valueYuko": 5.0
+    },
+    {
+     "lv": 3,
+     "effect": "スキル発動時、会心率+7%。",
+     "value": 7.0,
+     "valueYuko": 7.0
+    },
+    {
+     "lv": 4,
+     "effect": "スキル発動時、会心率+11%。",
+     "value": 11.0,
+     "valueYuko": 11.0
+    },
+    {
+     "lv": 5,
+     "effect": "スキル発動時、会心率+15%。",
+     "value": 15.0,
+     "valueYuko": 15.0
+    }
+   ]
+  },
+  {
+   "name": "ポテンシャル解放",
+   "category": "会心",
+   "weapon": null,
+   "maxLv": 5,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "狩猟開始から90秒後、または累計で100のダメージを受けると、会心率+3%、180秒持続。",
+     "value": 3.0,
+     "valueYuko": 3.0
+    },
+    {
+     "lv": 2,
+     "effect": "狩猟開始から90秒後、または累計で100のダメージを受けると、会心率+6%、180秒持続。",
+     "value": 6.0,
+     "valueYuko": 6.0
+    },
+    {
+     "lv": 3,
+     "effect": "狩猟開始から90秒後、または累計で100のダメージを受けると、会心率+9%、180秒持続。",
+     "value": 9.0,
+     "valueYuko": 9.0
+    },
+    {
+     "lv": 4,
+     "effect": "狩猟開始から90秒後、または累計で100のダメージを受けると、会心率+12%、180秒持続。",
+     "value": 12.0,
+     "valueYuko": 12.0
+    },
+    {
+     "lv": 5,
+     "effect": "狩猟開始から90秒後、または累計で100のダメージを受けると、会心率+15%、180秒持続。",
+     "value": 15.0,
+     "valueYuko": 15.0
+    }
+   ]
+  },
+  {
+   "name": "怖いもの無し",
+   "category": "火力",
+   "weapon": null,
+   "maxLv": 5,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "スキル発動時の与ダメージ+3%。",
+     "value": 3.0,
+     "valueYuko": 3.0
+    },
+    {
+     "lv": 2,
+     "effect": "スキル発動時の与ダメージ+6%。",
+     "value": 6.0,
+     "valueYuko": 6.0
+    },
+    {
+     "lv": 3,
+     "effect": "スキル発動時の与ダメージ+10%。",
+     "value": 10.0,
+     "valueYuko": 10.0
+    },
+    {
+     "lv": 4,
+     "effect": "スキル発動時の与ダメージ+14%。",
+     "value": 14.0,
+     "valueYuko": 14.0
+    },
+    {
+     "lv": 5,
+     "effect": "スキル発動時の与ダメージ+19%。",
+     "value": 19.0,
+     "valueYuko": 19.0
+    }
+   ]
+  },
+  {
+   "name": "破壊王",
+   "category": "火力",
+   "weapon": null,
+   "maxLv": 3,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "部位に対する蓄積ダメージが1.1倍になる。",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 2,
+     "effect": "部位に対する蓄積ダメージが1.2倍になる。",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 3,
+     "effect": "部位に対する蓄積ダメージが1.3倍になる。",
+     "value": null,
+     "valueYuko": null
+    }
+   ]
+  },
+  {
+   "name": "洞察",
+   "category": "会心",
+   "weapon": null,
+   "maxLv": 7,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "会心率+2%。",
+     "value": 2.0,
+     "valueYuko": 2.0
+    },
+    {
+     "lv": 2,
+     "effect": "会心率+4%。",
+     "value": 4.0,
+     "valueYuko": 4.0
+    },
+    {
+     "lv": 3,
+     "effect": "会心率+6%。",
+     "value": 6.0,
+     "valueYuko": 6.0
+    },
+    {
+     "lv": 4,
+     "effect": "会心率+8%。",
+     "value": 8.0,
+     "valueYuko": 8.0
+    },
+    {
+     "lv": 5,
+     "effect": "会心率+10%。",
+     "value": 10.0,
+     "valueYuko": 10.0
+    },
+    {
+     "lv": 6,
+     "effect": "会心率+13%。",
+     "value": 13.0,
+     "valueYuko": 13.0
+    },
+    {
+     "lv": 7,
+     "effect": "会心率+16%。",
+     "value": 16.0,
+     "valueYuko": 16.0
+    }
+   ]
+  },
+  {
+   "name": "無垢",
+   "category": "火力",
+   "weapon": null,
+   "maxLv": 3,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "スキル発動時の与ダメージ+3%。",
+     "value": 3.0,
+     "valueYuko": 3.0
+    },
+    {
+     "lv": 2,
+     "effect": "スキル発動時の与ダメージ+6%。",
+     "value": 6.0,
+     "valueYuko": 6.0
+    },
+    {
+     "lv": 3,
+     "effect": "スキル発動時の与ダメージ+9%。",
+     "value": 9.0,
+     "valueYuko": 9.0
+    }
+   ]
+  },
+  {
+   "name": "会心撃【属性】",
+   "category": "会心",
+   "weapon": null,
+   "maxLv": 3,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "攻撃で会心が発生した際に、与える属性ダメージ+5%。",
+     "value": 5.0,
+     "valueYuko": 5.0
+    },
+    {
+     "lv": 2,
+     "effect": "攻撃で会心が発生した際に、与える属性ダメージ+10%。",
+     "value": 10.0,
+     "valueYuko": 10.0
+    },
+    {
+     "lv": 3,
+     "effect": "攻撃で会心が発生した際に、与える属性ダメージ+15%。",
+     "value": 15.0,
+     "valueYuko": 15.0
+    }
+   ]
+  },
+  {
+   "name": "本気",
+   "category": "生存",
    "weapon": null,
    "maxLv": 1,
-   "levels": [],
-   "placeholder": true
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "攻撃が弾かれなくなる。",
+     "value": null,
+     "valueYuko": null
+    }
+   ]
+  },
+  {
+   "name": "弱点追撃",
+   "category": "火力",
+   "weapon": null,
+   "maxLv": 5,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "75%の確率でスキルが発動し、4%の追加ダメージを与える。",
+     "value": 4.0,
+     "valueYuko": 4.0
+    },
+    {
+     "lv": 2,
+     "effect": "75%の確率でスキルが発動し、9%の追加ダメージを与える。",
+     "value": 9.0,
+     "valueYuko": 9.0
+    },
+    {
+     "lv": 3,
+     "effect": "75%の確率でスキルが発動し、14%の追加ダメージを与える。",
+     "value": 14.0,
+     "valueYuko": 14.0
+    },
+    {
+     "lv": 4,
+     "effect": "75%の確率でスキルが発動し、18%の追加ダメージを与える。",
+     "value": 18.0,
+     "valueYuko": 18.0
+    },
+    {
+     "lv": 5,
+     "effect": "75%の確率でスキルが発動し、25%の追加ダメージを与える。",
+     "value": 25.0,
+     "valueYuko": 25.0
+    }
+   ]
+  },
+  {
+   "name": "徹底追撃",
+   "category": "火力",
+   "weapon": null,
+   "maxLv": 3,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "スキル発動時、ダメージ+4%、15秒持続。",
+     "value": 4.0,
+     "valueYuko": 4.0
+    },
+    {
+     "lv": 2,
+     "effect": "スキル発動時、ダメージ+8%、15秒持続。",
+     "value": 8.0,
+     "valueYuko": 8.0
+    },
+    {
+     "lv": 3,
+     "effect": "スキル発動時、ダメージ+11%、15秒持続。",
+     "value": 11.0,
+     "valueYuko": 11.0
+    }
+   ]
+  },
+  {
+   "name": "融光感知",
+   "category": "火力",
+   "weapon": null,
+   "maxLv": 5,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "スキル発動時の与ダメージ+4%。",
+     "value": 4.0,
+     "valueYuko": 4.0
+    },
+    {
+     "lv": 2,
+     "effect": "スキル発動時の与ダメージ+8%。",
+     "value": 8.0,
+     "valueYuko": 8.0
+    },
+    {
+     "lv": 3,
+     "effect": "スキル発動時の与ダメージ+13%。",
+     "value": 13.0,
+     "valueYuko": 13.0
+    },
+    {
+     "lv": 4,
+     "effect": "スキル発動時の与ダメージ+18%。",
+     "value": 18.0,
+     "valueYuko": 18.0
+    },
+    {
+     "lv": 5,
+     "effect": "スキル発動時の与ダメージ+25%。",
+     "value": 25.0,
+     "valueYuko": 25.0
+    }
+   ]
+  },
+  {
+   "name": "狩人の第六感",
+   "category": "火力",
+   "weapon": null,
+   "maxLv": 3,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "スキル発動時の与ダメージ+4%。120秒持続。",
+     "value": 4.0,
+     "valueYuko": 4.0
+    },
+    {
+     "lv": 2,
+     "effect": "スキル発動時の与ダメージ+8%。120秒持続。",
+     "value": 8.0,
+     "valueYuko": 8.0
+    },
+    {
+     "lv": 3,
+     "effect": "スキル発動時の与ダメージ+12%。120秒持続。",
+     "value": 12.0,
+     "valueYuko": 12.0
+    }
+   ]
+  },
+  {
+   "name": "咆哮耐性",
+   "category": "生存",
+   "weapon": null,
+   "maxLv": 3,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "咆哮【小】の影響を軽減する。",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 2,
+     "effect": "咆哮【小】を無効化し、咆哮【大】の影響を軽減する。",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 3,
+     "effect": "咆哮【小】【大】を無効化する。",
+     "value": null,
+     "valueYuko": null
+    }
+   ]
+  },
+  {
+   "name": "剥ぎ取り鉄人",
+   "category": "その他",
+   "weapon": null,
+   "maxLv": 1,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "剥ぎ取り中に攻撃を受けても、のけぞらなくなる。",
+     "value": null,
+     "valueYuko": null
+    }
+   ]
+  },
+  {
+   "name": "風圧耐性",
+   "category": "生存",
+   "weapon": null,
+   "maxLv": 3,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "風圧【小】を軽減する。",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 2,
+     "effect": "風圧【小】を無効化し、風圧【大】を軽減する。",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 3,
+     "effect": "風圧【小】【大】を無効化する。",
+     "value": null,
+     "valueYuko": null
+    }
+   ]
   },
   {
    "name": "早食い術",
-   "category": null,
+   "category": "その他",
    "weapon": null,
-   "maxLv": 1,
-   "levels": [],
-   "placeholder": true
+   "maxLv": 3,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "肉を食べたり、回復薬や解毒薬などのアイテムを使う速度が少し上昇する。",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 2,
+     "effect": "肉を食べたり、回復薬や解毒薬などのアイテムを使う速度が上昇する。",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 3,
+     "effect": "肉を食べたり、回復薬や解毒薬などのアイテムを使う速度が大きく上昇する。",
+     "value": null,
+     "valueYuko": null
+    }
+   ]
   },
   {
-   "name": "冒険団の力・メイル",
-   "category": null,
+   "name": "復活",
+   "category": "生存",
    "weapon": null,
-   "maxLv": 6,
-   "levels": [],
-   "placeholder": true
+   "maxLv": 3,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "体力回復時、回復量が1.1倍になる。",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 2,
+     "effect": "体力回復時、回復量が1.2倍になる。",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 3,
+     "effect": "体力回復時、回復量が1.3倍になる。",
+     "value": null,
+     "valueYuko": null
+    }
+   ]
   },
   {
    "name": "加護",
-   "category": null,
+   "category": "生存",
    "weapon": null,
-   "maxLv": 2,
-   "levels": [],
-   "placeholder": true
+   "maxLv": 5,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "ダメージを受けた際、25%の確率でそのダメージ-15%。",
+     "value": 15.0,
+     "valueYuko": 15.0
+    },
+    {
+     "lv": 2,
+     "effect": "ダメージを受けた際、25%の確率でそのダメージ-30%。",
+     "value": 30.0,
+     "valueYuko": 30.0
+    },
+    {
+     "lv": 3,
+     "effect": "ダメージを受けた際、25%の確率でそのダメージ-50%。",
+     "value": 50.0,
+     "valueYuko": 50.0
+    },
+    {
+     "lv": 4,
+     "effect": "ダメージを受けた際、25%の確率でそのダメージ-60%。",
+     "value": 60.0,
+     "valueYuko": 60.0
+    },
+    {
+     "lv": 5,
+     "effect": "ダメージを受けた際、40%の確率でそのダメージ-60%。",
+     "value": 60.0,
+     "valueYuko": 60.0
+    }
+   ]
+  },
+  {
+   "name": "気絶耐性",
+   "category": "生存",
+   "weapon": null,
+   "maxLv": 3,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "気絶状態の継続時間-60%。",
+     "value": 60.0,
+     "valueYuko": 60.0
+    },
+    {
+     "lv": 2,
+     "effect": "気絶状態の継続時間-90%。",
+     "value": 90.0,
+     "valueYuko": 90.0
+    },
+    {
+     "lv": 3,
+     "effect": "気絶状態にならない。",
+     "value": null,
+     "valueYuko": null
+    }
+   ]
+  },
+  {
+   "name": "毒耐性",
+   "category": "生存",
+   "weapon": null,
+   "maxLv": 3,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "毒状態の継続時間-30%。",
+     "value": 30.0,
+     "valueYuko": 30.0
+    },
+    {
+     "lv": 2,
+     "effect": "毒状態の継続時間-60%。",
+     "value": 60.0,
+     "valueYuko": 60.0
+    },
+    {
+     "lv": 3,
+     "effect": "毒状態にならない。",
+     "value": null,
+     "valueYuko": null
+    }
+   ]
+  },
+  {
+   "name": "麻痺耐性",
+   "category": "生存",
+   "weapon": null,
+   "maxLv": 3,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "麻痺状態の継続時間-30%。",
+     "value": 30.0,
+     "valueYuko": 30.0
+    },
+    {
+     "lv": 2,
+     "effect": "麻痺状態の継続時間-60%。",
+     "value": 60.0,
+     "valueYuko": 60.0
+    },
+    {
+     "lv": 3,
+     "effect": "麻痺状態にならない。",
+     "value": null,
+     "valueYuko": null
+    }
+   ]
+  },
+  {
+   "name": "睡眠耐性",
+   "category": "生存",
+   "weapon": null,
+   "maxLv": 3,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "睡眠状態の継続時間-30%。",
+     "value": 30.0,
+     "valueYuko": 30.0
+    },
+    {
+     "lv": 2,
+     "effect": "睡眠状態の継続時間-60%。",
+     "value": 60.0,
+     "valueYuko": 60.0
+    },
+    {
+     "lv": 3,
+     "effect": "睡眠状態にならない。",
+     "value": null,
+     "valueYuko": null
+    }
+   ]
+  },
+  {
+   "name": "振動耐性",
+   "category": "生存",
+   "weapon": null,
+   "maxLv": 3,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "振動【小】を無効化する。",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 2,
+     "effect": "振動【小】を無効化し、振動【大】の影響を軽減する。",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 3,
+     "effect": "振動【小】【大】を無効化する。",
+     "value": null,
+     "valueYuko": null
+    }
+   ]
+  },
+  {
+   "name": "体力回復",
+   "category": "生存",
+   "weapon": null,
+   "maxLv": 3,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "灰色ゲージの自動回復速度が2倍になる。",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 2,
+     "effect": "灰色ゲージの自動回復速度が3倍になる。",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 3,
+     "effect": "灰色ゲージの自動回復速度が4倍になる。",
+     "value": null,
+     "valueYuko": null
+    }
+   ]
+  },
+  {
+   "name": "チャージ準備",
+   "category": "火力",
+   "weapon": null,
+   "maxLv": 7,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "スタミナを最大のまま5秒維持すると、ダメージ+4%。",
+     "value": 4.0,
+     "valueYuko": 4.0
+    },
+    {
+     "lv": 2,
+     "effect": "スタミナを最大のまま5秒維持すると、ダメージ+8%。",
+     "value": 8.0,
+     "valueYuko": 8.0
+    },
+    {
+     "lv": 3,
+     "effect": "スタミナを最大のまま5秒維持すると、ダメージ+12%。",
+     "value": 12.0,
+     "valueYuko": 12.0
+    },
+    {
+     "lv": 4,
+     "effect": "スタミナを最大のまま5秒維持すると、ダメージ+16%。",
+     "value": 16.0,
+     "valueYuko": 16.0
+    },
+    {
+     "lv": 5,
+     "effect": "スタミナを最大のまま5秒維持すると、ダメージ+20%。",
+     "value": 20.0,
+     "valueYuko": 20.0
+    },
+    {
+     "lv": 6,
+     "effect": "スタミナを最大のまま5秒維持すると、ダメージ+24%。",
+     "value": 24.0,
+     "valueYuko": 24.0
+    },
+    {
+     "lv": 7,
+     "effect": "属性攻撃力+50。スタミナを最大のまま5秒維持すると、ダメージ+31%。",
+     "value": 37.0,
+     "valueYuko": 37.0
+    }
+   ]
+  },
+  {
+   "name": "のけぞり軽減",
+   "category": "生存",
+   "weapon": null,
+   "maxLv": 3,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "小ダメージ時ののけぞりを無効化する。",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 2,
+     "effect": "小ダメージ時ののけぞりを無効化し、しりもちをのけぞりに軽減する。",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 3,
+     "effect": "小ダメージ時ののけぞり、しりもちを無効化する。",
+     "value": null,
+     "valueYuko": null
+    }
+   ]
+  },
+  {
+   "name": "環境の活用",
+   "category": "生存",
+   "weapon": null,
+   "maxLv": 3,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "体力が50追加で回復する。",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 2,
+     "effect": "体力が80追加で回復する。",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 3,
+     "effect": "体力が100追加で回復する。",
+     "value": null,
+     "valueYuko": null
+    }
+   ]
+  },
+  {
+   "name": "壁登りの達人",
+   "category": "その他",
+   "weapon": null,
+   "maxLv": 1,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "スタミナ消費量-25%。",
+     "value": 25.0,
+     "valueYuko": 25.0
+    }
+   ]
+  },
+  {
+   "name": "体力強化",
+   "category": "生存",
+   "weapon": null,
+   "maxLv": 3,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "体力+10。",
+     "value": 10.0,
+     "valueYuko": 10.0
+    },
+    {
+     "lv": 2,
+     "effect": "体力+20。",
+     "value": 20.0,
+     "valueYuko": 20.0
+    },
+    {
+     "lv": 3,
+     "effect": "体力+30。",
+     "value": 30.0,
+     "valueYuko": 30.0
+    }
+   ]
+  },
+  {
+   "name": "火耐性強化",
+   "category": "生存",
+   "weapon": null,
+   "maxLv": 3,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "火耐性+6。",
+     "value": 6.0,
+     "valueYuko": 6.0
+    },
+    {
+     "lv": 2,
+     "effect": "火耐性+12。",
+     "value": 12.0,
+     "valueYuko": 12.0
+    },
+    {
+     "lv": 3,
+     "effect": "火耐性+20。",
+     "value": 20.0,
+     "valueYuko": 20.0
+    }
+   ]
+  },
+  {
+   "name": "水耐性強化",
+   "category": "生存",
+   "weapon": null,
+   "maxLv": 3,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "水耐性+6。",
+     "value": 6.0,
+     "valueYuko": 6.0
+    },
+    {
+     "lv": 2,
+     "effect": "水耐性+12。",
+     "value": 12.0,
+     "valueYuko": 12.0
+    },
+    {
+     "lv": 3,
+     "effect": "水耐性+20。",
+     "value": 20.0,
+     "valueYuko": 20.0
+    }
+   ]
+  },
+  {
+   "name": "氷耐性強化",
+   "category": "生存",
+   "weapon": null,
+   "maxLv": 3,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "氷耐性+6。",
+     "value": 6.0,
+     "valueYuko": 6.0
+    },
+    {
+     "lv": 2,
+     "effect": "氷耐性+12。",
+     "value": 12.0,
+     "valueYuko": 12.0
+    },
+    {
+     "lv": 3,
+     "effect": "氷耐性+20。",
+     "value": 20.0,
+     "valueYuko": 20.0
+    }
+   ]
+  },
+  {
+   "name": "雷耐性強化",
+   "category": "生存",
+   "weapon": null,
+   "maxLv": 3,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "雷耐性+6。",
+     "value": 6.0,
+     "valueYuko": 6.0
+    },
+    {
+     "lv": 2,
+     "effect": "雷耐性+12。",
+     "value": 12.0,
+     "valueYuko": 12.0
+    },
+    {
+     "lv": 3,
+     "effect": "雷耐性+20。",
+     "value": 20.0,
+     "valueYuko": 20.0
+    }
+   ]
+  },
+  {
+   "name": "龍耐性強化",
+   "category": "生存",
+   "weapon": null,
+   "maxLv": 3,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "龍耐性+6。",
+     "value": 6.0,
+     "valueYuko": 6.0
+    },
+    {
+     "lv": 2,
+     "effect": "龍耐性+12。",
+     "value": 12.0,
+     "valueYuko": 12.0
+    },
+    {
+     "lv": 3,
+     "effect": "龍耐性+20。",
+     "value": 20.0,
+     "valueYuko": 20.0
+    }
+   ]
+  },
+  {
+   "name": "爆破耐性",
+   "category": "生存",
+   "weapon": null,
+   "maxLv": 3,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "爆破までの猶予時間を延長し、爆破ダメージを軽減する。",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 2,
+     "effect": "爆破までの猶予時間をさらに延長し、爆破ダメージを大きく軽減する。",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 3,
+     "effect": "爆破やられ状態にならない。",
+     "value": null,
+     "valueYuko": null
+    }
+   ]
+  },
+  {
+   "name": "防護",
+   "category": "生存",
+   "weapon": null,
+   "maxLv": 7,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "防御力+5。",
+     "value": 5.0,
+     "valueYuko": 5.0
+    },
+    {
+     "lv": 2,
+     "effect": "防御力+10。",
+     "value": 10.0,
+     "valueYuko": 10.0
+    },
+    {
+     "lv": 3,
+     "effect": "防御力+15。",
+     "value": 15.0,
+     "valueYuko": 15.0
+    },
+    {
+     "lv": 4,
+     "effect": "防御力+20。",
+     "value": 20.0,
+     "valueYuko": 20.0
+    },
+    {
+     "lv": 5,
+     "effect": "防御力+25。",
+     "value": 25.0,
+     "valueYuko": 25.0
+    },
+    {
+     "lv": 6,
+     "effect": "防御力+30。",
+     "value": 30.0,
+     "valueYuko": 30.0
+    },
+    {
+     "lv": 7,
+     "effect": "防御力+35。",
+     "value": 35.0,
+     "valueYuko": 35.0
+    }
+   ]
+  },
+  {
+   "name": "逆境",
+   "category": "火力",
+   "weapon": null,
+   "maxLv": 1,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "1回毎にダメージが1.1倍になり、防御力+10。",
+     "value": 10.0,
+     "valueYuko": 10.0
+    }
+   ]
+  },
+  {
+   "name": "水属性ダメージUP",
+   "category": "火力",
+   "weapon": null,
+   "maxLv": 7,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "水属性ダメージ+3%。融光種モンスター相手の場合は+8%になる。",
+     "value": 3.0,
+     "valueYuko": 8.0
+    },
+    {
+     "lv": 2,
+     "effect": "水属性ダメージ+6%。融光種モンスター相手の場合は+15%になる。",
+     "value": 6.0,
+     "valueYuko": 15.0
+    },
+    {
+     "lv": 3,
+     "effect": "水属性ダメージ+9%。融光種モンスター相手の場合は+23%になる。",
+     "value": 9.0,
+     "valueYuko": 23.0
+    },
+    {
+     "lv": 4,
+     "effect": "水属性ダメージ+12%。融光種モンスター相手の場合は+30%になる。",
+     "value": 12.0,
+     "valueYuko": 30.0
+    },
+    {
+     "lv": 5,
+     "effect": "水属性ダメージ+16%。融光種モンスター相手の場合は+40%になる。",
+     "value": 16.0,
+     "valueYuko": 40.0
+    },
+    {
+     "lv": 6,
+     "effect": "水属性ダメージ+20%。融光種モンスター相手の場合は+50%になる。",
+     "value": 20.0,
+     "valueYuko": 50.0
+    },
+    {
+     "lv": 7,
+     "effect": "水属性攻撃力+50、水属性ダメージ+28%。融光種モンスターの狩猟時は+70%になる。",
+     "value": 34.0,
+     "valueYuko": 76.0
+    }
+   ]
+  },
+  {
+   "name": "氷属性ダメージUP",
+   "category": "火力",
+   "weapon": null,
+   "maxLv": 7,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "氷属性ダメージ+3%。融光種モンスター相手の場合は+8%になる。",
+     "value": 3.0,
+     "valueYuko": 8.0
+    },
+    {
+     "lv": 2,
+     "effect": "氷属性ダメージ+6%。融光種モンスター相手の場合は+15%になる。",
+     "value": 6.0,
+     "valueYuko": 15.0
+    },
+    {
+     "lv": 3,
+     "effect": "氷属性ダメージ+9%。融光種モンスター相手の場合は+23%になる。",
+     "value": 9.0,
+     "valueYuko": 23.0
+    },
+    {
+     "lv": 4,
+     "effect": "氷属性ダメージ+12%。融光種モンスター相手の場合は+30%になる。",
+     "value": 12.0,
+     "valueYuko": 30.0
+    },
+    {
+     "lv": 5,
+     "effect": "氷属性ダメージ+16%。融光種モンスター相手の場合は+40%になる。",
+     "value": 16.0,
+     "valueYuko": 40.0
+    },
+    {
+     "lv": 6,
+     "effect": "氷属性ダメージ+20%。融光種モンスター相手の場合は+50%になる。",
+     "value": 20.0,
+     "valueYuko": 50.0
+    },
+    {
+     "lv": 7,
+     "effect": "氷属性攻撃力+50、氷属性ダメージ+28%。融光種モンスターの狩猟時は+70%になる。",
+     "value": 34.0,
+     "valueYuko": 76.0
+    }
+   ]
+  },
+  {
+   "name": "雷属性ダメージUP",
+   "category": "火力",
+   "weapon": null,
+   "maxLv": 7,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "雷属性ダメージ+3%。融光種モンスター相手の場合は+8%になる。",
+     "value": 3.0,
+     "valueYuko": 8.0
+    },
+    {
+     "lv": 2,
+     "effect": "雷属性ダメージ+6%。融光種モンスター相手の場合は+15%になる。",
+     "value": 6.0,
+     "valueYuko": 15.0
+    },
+    {
+     "lv": 3,
+     "effect": "雷属性ダメージ+9%。融光種モンスター相手の場合は+23%になる。",
+     "value": 9.0,
+     "valueYuko": 23.0
+    },
+    {
+     "lv": 4,
+     "effect": "雷属性ダメージ+12%。融光種モンスター相手の場合は+30%になる。",
+     "value": 12.0,
+     "valueYuko": 30.0
+    },
+    {
+     "lv": 5,
+     "effect": "雷属性ダメージ+16%。融光種モンスター相手の場合は+40%になる。",
+     "value": 16.0,
+     "valueYuko": 40.0
+    },
+    {
+     "lv": 6,
+     "effect": "雷属性ダメージ+20%。融光種モンスター相手の場合は+50%になる。",
+     "value": 20.0,
+     "valueYuko": 50.0
+    },
+    {
+     "lv": 7,
+     "effect": "雷属性攻撃力+50、雷属性ダメージ+28%。融光種モンスターの狩猟時は+70%になる。",
+     "value": 34.0,
+     "valueYuko": 76.0
+    }
+   ]
+  },
+  {
+   "name": "龍属性ダメージUP",
+   "category": "火力",
+   "weapon": null,
+   "maxLv": 7,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "龍属性ダメージ+3%。融光種モンスター相手の場合は+8%になる。",
+     "value": 3.0,
+     "valueYuko": 8.0
+    },
+    {
+     "lv": 2,
+     "effect": "龍属性ダメージ+6%。融光種モンスター相手の場合は+15%になる。",
+     "value": 6.0,
+     "valueYuko": 15.0
+    },
+    {
+     "lv": 3,
+     "effect": "龍属性ダメージ+9%。融光種モンスター相手の場合は+23%になる。",
+     "value": 9.0,
+     "valueYuko": 23.0
+    },
+    {
+     "lv": 4,
+     "effect": "龍属性ダメージ+12%。融光種モンスター相手の場合は+30%になる。",
+     "value": 12.0,
+     "valueYuko": 30.0
+    },
+    {
+     "lv": 5,
+     "effect": "龍属性ダメージ+16%。融光種モンスター相手の場合は+40%になる。",
+     "value": 16.0,
+     "valueYuko": 40.0
+    },
+    {
+     "lv": 6,
+     "effect": "龍属性ダメージ+20%。融光種モンスター相手の場合は+50%になる。",
+     "value": 20.0,
+     "valueYuko": 50.0
+    },
+    {
+     "lv": 7,
+     "effect": "龍属性攻撃力+50、龍属性ダメージ+28%。融光種モンスターの狩猟時は+70%になる。",
+     "value": 34.0,
+     "valueYuko": 76.0
+    }
+   ]
+  },
+  {
+   "name": "節約術",
+   "category": "その他",
+   "weapon": null,
+   "maxLv": 3,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "効果発動確率が25%になる。",
+     "value": 25.0,
+     "valueYuko": 25.0
+    },
+    {
+     "lv": 2,
+     "effect": "効果発動確率が50%になる。",
+     "value": 50.0,
+     "valueYuko": 50.0
+    },
+    {
+     "lv": 3,
+     "effect": "効果発動確率が75%になる。",
+     "value": 75.0,
+     "valueYuko": 75.0
+    }
+   ]
+  },
+  {
+   "name": "植物専門家",
+   "category": "その他",
+   "weapon": null,
+   "maxLv": 3,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "草系消費アイテムの取得数+1。",
+     "value": 1.0,
+     "valueYuko": 1.0
+    },
+    {
+     "lv": 2,
+     "effect": "更に実、種子系消費アイテムの取得数+1。",
+     "value": 1.0,
+     "valueYuko": 1.0
+    },
+    {
+     "lv": 3,
+     "effect": "更に虫系消費アイテムの取得数+1。",
+     "value": 1.0,
+     "valueYuko": 1.0
+    }
+   ]
+  },
+  {
+   "name": "ハニーハンター",
+   "category": "その他",
+   "weapon": null,
+   "maxLv": 1,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "ハチミツ取得数+1。",
+     "value": 1.0,
+     "valueYuko": 1.0
+    }
+   ]
+  },
+  {
+   "name": "捕獲の達人",
+   "category": "その他",
+   "weapon": null,
+   "maxLv": 1,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "捕獲でもらえる報酬の数が高確率で多くなる。（クエストの途中からは効果が得られません）",
+     "value": null,
+     "valueYuko": null
+    }
+   ]
+  },
+  {
+   "name": "ガードテクニック",
+   "category": "生存",
+   "weapon": null,
+   "maxLv": 5,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "攻撃の威力をわずかに軽減する。",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 2,
+     "effect": "攻撃の威力がわずかに減少し、スタミナ消費量-15%。",
+     "value": 15.0,
+     "valueYuko": 15.0
+    },
+    {
+     "lv": 3,
+     "effect": "攻撃の威力が大幅に減少し、スタミナ消費量-15%。",
+     "value": 15.0,
+     "valueYuko": 15.0
+    },
+    {
+     "lv": 4,
+     "effect": "攻撃の威力が大幅に減少し、スタミナ消費量-30%。",
+     "value": 30.0,
+     "valueYuko": 30.0
+    },
+    {
+     "lv": 5,
+     "effect": "攻撃の威力が極めて大きく減少し、スタミナ消費量-50%。",
+     "value": 50.0,
+     "valueYuko": 50.0
+    }
+   ]
+  },
+  {
+   "name": "みなぎるエナジー",
+   "category": "生存",
+   "weapon": null,
+   "maxLv": 3,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "体力が75に達するまで自動回復が継続する。",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 2,
+     "effect": "体力が100に達するまで自動回復が継続する。",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 3,
+     "effect": "体力が125に達するまで自動回復が継続する。",
+     "value": null,
+     "valueYuko": null
+    }
+   ]
+  },
+  {
+   "name": "防御反撃",
+   "category": "火力",
+   "weapon": null,
+   "maxLv": 7,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "スキル発動後、ダメージ+4%。30秒持続。",
+     "value": 4.0,
+     "valueYuko": 4.0
+    },
+    {
+     "lv": 2,
+     "effect": "スキル発動後、ダメージ+8%。30秒持続。",
+     "value": 8.0,
+     "valueYuko": 8.0
+    },
+    {
+     "lv": 3,
+     "effect": "スキル発動後、ダメージ+12%。30秒持続。",
+     "value": 12.0,
+     "valueYuko": 12.0
+    },
+    {
+     "lv": 4,
+     "effect": "スキル発動後、ダメージ+16%。30秒持続。",
+     "value": 16.0,
+     "valueYuko": 16.0
+    },
+    {
+     "lv": 5,
+     "effect": "スキル発動後、ダメージ+20%。30秒持続。",
+     "value": 20.0,
+     "valueYuko": 20.0
+    },
+    {
+     "lv": 6,
+     "effect": "スキル発動後、ダメージ+24%。30秒持続。",
+     "value": 24.0,
+     "valueYuko": 24.0
+    },
+    {
+     "lv": 7,
+     "effect": "属性攻撃力+50。スキル発動後、ダメージ+31%。30秒持続。",
+     "value": 37.0,
+     "valueYuko": 37.0
+    }
+   ]
+  },
+  {
+   "name": "裂傷耐性",
+   "category": "生存",
+   "weapon": null,
+   "maxLv": 3,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "裂傷状態によるダメージを軽減する。",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 2,
+     "effect": "裂傷状態によるダメージを大きく軽減する。",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 3,
+     "effect": "裂傷状態にならない。",
+     "value": null,
+     "valueYuko": null
+    }
+   ]
+  },
+  {
+   "name": "防御力DOWN耐性",
+   "category": "生存",
+   "weapon": null,
+   "maxLv": 3,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "防御力DOWN状態の継続時間-50%。",
+     "value": 50.0,
+     "valueYuko": 50.0
+    },
+    {
+     "lv": 2,
+     "effect": "防御力DOWN状態の継続時間-75%。",
+     "value": 75.0,
+     "valueYuko": 75.0
+    },
+    {
+     "lv": 3,
+     "effect": "防御力DOWN状態にならない。",
+     "value": null,
+     "valueYuko": null
+    }
+   ]
+  },
+  {
+   "name": "弓スキル強化",
+   "category": "弾・矢",
+   "weapon": "弓",
+   "maxLv": 4,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "スキルダメージ+4%。",
+     "value": 4.0,
+     "valueYuko": 4.0
+    },
+    {
+     "lv": 2,
+     "effect": "スキルダメージ+8%。",
+     "value": 8.0,
+     "valueYuko": 8.0
+    },
+    {
+     "lv": 3,
+     "effect": "スキルダメージ+13%。",
+     "value": 13.0,
+     "valueYuko": 13.0
+    },
+    {
+     "lv": 4,
+     "effect": "属性攻撃力+25。スキルダメージ+20%。",
+     "value": 23.0,
+     "valueYuko": 23.0
+    }
+   ]
+  },
+  {
+   "name": "アイテム専門家",
+   "category": "その他",
+   "weapon": null,
+   "maxLv": 3,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "効果時間が1.10倍になる。",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 2,
+     "effect": "効果時間が1.25倍になる。",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 3,
+     "effect": "効果時間が1.50倍になる。",
+     "value": null,
+     "valueYuko": null
+    }
+   ]
+  },
+  {
+   "name": "威嚇",
+   "category": "その他",
+   "weapon": null,
+   "maxLv": 3,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "発見されていても狩猟状態になりにくい。",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 2,
+     "effect": "発見されていても狩猟状態にほとんどならない。",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 3,
+     "effect": "発見されていても狩猟状態にならない。",
+     "value": null,
+     "valueYuko": null
+    }
+   ]
+  },
+  {
+   "name": "採集名人",
+   "category": "その他",
+   "weapon": null,
+   "maxLv": 1,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "採集時、速度が上昇し、ひるみ無効になる。",
+     "value": null,
+     "valueYuko": null
+    }
+   ]
+  },
+  {
+   "name": "地質専門家",
+   "category": "その他",
+   "weapon": null,
+   "maxLv": 3,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "骨採集ポイントの採集回数1回増加。",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 2,
+     "effect": "更に特産品採集ポイントの採集回数が1回増える。",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 3,
+     "effect": "更に鉱石採掘ポイントの採集回数+1回",
+     "value": 1.0,
+     "valueYuko": 1.0
+    }
+   ]
+  },
+  {
+   "name": "剥ぎ取り名人",
+   "category": "その他",
+   "weapon": null,
+   "maxLv": 1,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "剥ぎ取り回数+1回。（クエストの途中から使用した場合は無効）",
+     "value": 1.0,
+     "valueYuko": 1.0
+    }
+   ]
+  },
+  {
+   "name": "標本の達人",
+   "category": "その他",
+   "weapon": null,
+   "maxLv": 3,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "遺骸が残る確率が上がる。",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 2,
+     "effect": "遺骸が残る確率が上がる。",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 3,
+     "effect": "かならず遺骸が残るようになる。",
+     "value": null,
+     "valueYuko": null
+    }
+   ]
+  },
+  {
+   "name": "滞空",
+   "category": "火力",
+   "weapon": null,
+   "maxLv": 7,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "滞空攻撃のダメージ+5%。",
+     "value": 5.0,
+     "valueYuko": 5.0
+    },
+    {
+     "lv": 2,
+     "effect": "滞空攻撃のダメージ+9%。",
+     "value": 9.0,
+     "valueYuko": 9.0
+    },
+    {
+     "lv": 3,
+     "effect": "滞空攻撃のダメージ+14%。",
+     "value": 14.0,
+     "valueYuko": 14.0
+    },
+    {
+     "lv": 4,
+     "effect": "滞空攻撃のダメージ+19%。",
+     "value": 19.0,
+     "valueYuko": 19.0
+    },
+    {
+     "lv": 5,
+     "effect": "滞空攻撃のダメージ+24%。",
+     "value": 24.0,
+     "valueYuko": 24.0
+    },
+    {
+     "lv": 6,
+     "effect": "滞空攻撃のダメージ+29%。",
+     "value": 29.0,
+     "valueYuko": 29.0
+    },
+    {
+     "lv": 7,
+     "effect": "属性攻撃力+50。滞空攻撃のダメージ+37%。",
+     "value": 43.0,
+     "valueYuko": 43.0
+    }
+   ]
+  },
+  {
+   "name": "弾導強化",
+   "category": "弾・矢",
+   "weapon": "弾・矢",
+   "maxLv": 1,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "弾・矢が最大威力になる距離を短くする。",
+     "value": null,
+     "valueYuko": null
+    }
+   ]
+  },
+  {
+   "name": "体力ループ",
+   "category": "生存",
+   "weapon": null,
+   "maxLv": 3,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "体力が2回復する。8秒間に1回のみ発動可能。",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 2,
+     "effect": "体力が3回復する。8秒間に1回のみ発動可能。",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 3,
+     "effect": "体力が4回復する。8秒間に1回のみ発動可能。",
+     "value": null,
+     "valueYuko": null
+    }
+   ]
+  },
+  {
+   "name": "連撃強化",
+   "category": "火力",
+   "weapon": null,
+   "maxLv": 7,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "3秒以内に連続で5回攻撃を命中させると、与ダメージ+4%。12秒持続。",
+     "value": 4.0,
+     "valueYuko": 4.0
+    },
+    {
+     "lv": 2,
+     "effect": "3秒以内に連続で5回攻撃を命中させると、与ダメージ+8%。12秒持続。",
+     "value": 8.0,
+     "valueYuko": 8.0
+    },
+    {
+     "lv": 3,
+     "effect": "3秒以内に連続で5回攻撃を命中させると、与ダメージ+12%。12秒持続。",
+     "value": 12.0,
+     "valueYuko": 12.0
+    },
+    {
+     "lv": 4,
+     "effect": "3秒以内に連続で5回攻撃を命中させると、与ダメージ+16%。12秒持続。",
+     "value": 16.0,
+     "valueYuko": 16.0
+    },
+    {
+     "lv": 5,
+     "effect": "3秒以内に連続で5回攻撃を命中させると、与ダメージ+20%。12秒持続。",
+     "value": 20.0,
+     "valueYuko": 20.0
+    },
+    {
+     "lv": 6,
+     "effect": "3秒以内に連続で5回攻撃を命中させると、与ダメージ+24%。12秒持続。",
+     "value": 24.0,
+     "valueYuko": 24.0
+    },
+    {
+     "lv": 7,
+     "effect": "属性攻撃力+50。3秒以内に連続で5回攻撃を命中させると、与ダメージ+31%。12秒持続。",
+     "value": 37.0,
+     "valueYuko": 37.0
+    }
+   ]
+  },
+  {
+   "name": "溜め強化",
+   "category": "火力",
+   "weapon": null,
+   "maxLv": 7,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "スキル発動時、ダメージ+4%。15秒持続。",
+     "value": 4.0,
+     "valueYuko": 4.0
+    },
+    {
+     "lv": 2,
+     "effect": "スキル発動時、ダメージ+8%。15秒持続。",
+     "value": 8.0,
+     "valueYuko": 8.0
+    },
+    {
+     "lv": 3,
+     "effect": "スキル発動時、ダメージ+12%。15秒持続。",
+     "value": 12.0,
+     "valueYuko": 12.0
+    },
+    {
+     "lv": 4,
+     "effect": "スキル発動時、ダメージ+16%。15秒持続。",
+     "value": 16.0,
+     "valueYuko": 16.0
+    },
+    {
+     "lv": 5,
+     "effect": "スキル発動時、ダメージ+20%。15秒持続。",
+     "value": 20.0,
+     "valueYuko": 20.0
+    },
+    {
+     "lv": 6,
+     "effect": "スキル発動時、ダメージ+24%。15秒持続。",
+     "value": 24.0,
+     "valueYuko": 24.0
+    },
+    {
+     "lv": 7,
+     "effect": "属性攻撃力+50。スキル発動時、ダメージ+31%。15秒持続。",
+     "value": 37.0,
+     "valueYuko": 37.0
+    }
+   ]
+  },
+  {
+   "name": "オトモ強化",
+   "category": "火力",
+   "weapon": null,
+   "maxLv": 1,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "オトモの与ダメージが1.1倍になる。",
+     "value": null,
+     "valueYuko": null
+    }
+   ]
+  },
+  {
+   "name": "弁当好き",
+   "category": "火力",
+   "weapon": null,
+   "maxLv": 7,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "スキル発動時、ダメージ+4%。30秒持続。",
+     "value": 4.0,
+     "valueYuko": 4.0
+    },
+    {
+     "lv": 2,
+     "effect": "スキル発動時、ダメージ+8%。30秒持続。",
+     "value": 8.0,
+     "valueYuko": 8.0
+    },
+    {
+     "lv": 3,
+     "effect": "スキル発動時、ダメージ+12%。30秒持続。",
+     "value": 12.0,
+     "valueYuko": 12.0
+    },
+    {
+     "lv": 4,
+     "effect": "スキル発動時、ダメージ+16%。30秒持続。",
+     "value": 16.0,
+     "valueYuko": 16.0
+    },
+    {
+     "lv": 5,
+     "effect": "スキル発動時、ダメージ+20%。30秒持続。",
+     "value": 20.0,
+     "valueYuko": 20.0
+    },
+    {
+     "lv": 6,
+     "effect": "スキル発動時、ダメージ+24%。30秒持続。",
+     "value": 24.0,
+     "valueYuko": 24.0
+    },
+    {
+     "lv": 7,
+     "effect": "属性攻撃力+50。スキル発動時、ダメージ+31%。30秒持続。",
+     "value": 37.0,
+     "valueYuko": 37.0
+    }
+   ]
+  },
+  {
+   "name": "鬼人の修羅",
+   "category": "火力",
+   "weapon": "鬼人化（双剣）",
+   "maxLv": 4,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "スキル発動時、ダメージ+4%。",
+     "value": 4.0,
+     "valueYuko": 4.0
+    },
+    {
+     "lv": 2,
+     "effect": "スキル発動時、ダメージ+8%。",
+     "value": 8.0,
+     "valueYuko": 8.0
+    },
+    {
+     "lv": 3,
+     "effect": "スキル発動時、ダメージ+13%。",
+     "value": 13.0,
+     "valueYuko": 13.0
+    },
+    {
+     "lv": 4,
+     "effect": "属性攻撃力+25。スキル発動時、ダメージ+20%。",
+     "value": 23.0,
+     "valueYuko": 23.0
+    }
+   ]
+  },
+  {
+   "name": "一撃貫通",
+   "category": "弾・矢",
+   "weapon": "貫通攻撃（弾・矢）",
+   "maxLv": 7,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "スキル発動時の与ダメージ+5%。",
+     "value": 5.0,
+     "valueYuko": 5.0
+    },
+    {
+     "lv": 2,
+     "effect": "スキル発動時の与ダメージ+9%。",
+     "value": 9.0,
+     "valueYuko": 9.0
+    },
+    {
+     "lv": 3,
+     "effect": "スキル発動時の与ダメージ+14%。",
+     "value": 14.0,
+     "valueYuko": 14.0
+    },
+    {
+     "lv": 4,
+     "effect": "スキル発動時の与ダメージ+19%。",
+     "value": 19.0,
+     "valueYuko": 19.0
+    },
+    {
+     "lv": 5,
+     "effect": "スキル発動時の与ダメージ+24%。",
+     "value": 24.0,
+     "valueYuko": 24.0
+    },
+    {
+     "lv": 6,
+     "effect": "スキル発動時の与ダメージ+29%。",
+     "value": 29.0,
+     "valueYuko": 29.0
+    },
+    {
+     "lv": 7,
+     "effect": "属性攻撃力+50。スキル発動時、ダメージ+37%。",
+     "value": 43.0,
+     "valueYuko": 43.0
+    }
+   ]
+  },
+  {
+   "name": "溜め強射",
+   "category": "弾・矢",
+   "weapon": "遠距離武器",
+   "maxLv": 7,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "スキル発動時の与ダメージ+5%。",
+     "value": 5.0,
+     "valueYuko": 5.0
+    },
+    {
+     "lv": 2,
+     "effect": "スキル発動時の与ダメージ+9%。",
+     "value": 9.0,
+     "valueYuko": 9.0
+    },
+    {
+     "lv": 3,
+     "effect": "スキル発動時の与ダメージ+14%。",
+     "value": 14.0,
+     "valueYuko": 14.0
+    },
+    {
+     "lv": 4,
+     "effect": "スキル発動時の与ダメージ+19%。",
+     "value": 19.0,
+     "valueYuko": 19.0
+    },
+    {
+     "lv": 5,
+     "effect": "スキル発動時の与ダメージ+24%。",
+     "value": 24.0,
+     "valueYuko": 24.0
+    },
+    {
+     "lv": 6,
+     "effect": "スキル発動時の与ダメージ+29%。",
+     "value": 29.0,
+     "valueYuko": 29.0
+    },
+    {
+     "lv": 7,
+     "effect": "属性攻撃力+50。スキル発動時、ダメージ+37%。",
+     "value": 43.0,
+     "valueYuko": 43.0
+    }
+   ]
+  },
+  {
+   "name": "剛勢",
+   "category": "火力",
+   "weapon": null,
+   "maxLv": 7,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "剛猛を発動した後、与ダメージ+4%。30秒持続。",
+     "value": 4.0,
+     "valueYuko": 4.0
+    },
+    {
+     "lv": 2,
+     "effect": "剛猛を発動した後、与ダメージ+8%。30秒持続。",
+     "value": 8.0,
+     "valueYuko": 8.0
+    },
+    {
+     "lv": 3,
+     "effect": "剛猛を発動した後、与ダメージ+12%。30秒持続。",
+     "value": 12.0,
+     "valueYuko": 12.0
+    },
+    {
+     "lv": 4,
+     "effect": "剛猛を発動した後、与ダメージ+16%。30秒持続。",
+     "value": 16.0,
+     "valueYuko": 16.0
+    },
+    {
+     "lv": 5,
+     "effect": "剛猛を発動した後、与ダメージ+20%。30秒持続。",
+     "value": 20.0,
+     "valueYuko": 20.0
+    },
+    {
+     "lv": 6,
+     "effect": "剛猛を発動した後、与ダメージ+24%。30秒持続。",
+     "value": 24.0,
+     "valueYuko": 24.0
+    },
+    {
+     "lv": 7,
+     "effect": "属性攻撃力+50。剛猛発動時、与ダメージ+31%。30秒持続。",
+     "value": 37.0,
+     "valueYuko": 37.0
+    }
+   ]
+  },
+  {
+   "name": "気力変換",
+   "category": "火力",
+   "weapon": null,
+   "maxLv": 7,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "スキル発動時、その攻撃の与ダメージ+5%。",
+     "value": 5.0,
+     "valueYuko": 5.0
+    },
+    {
+     "lv": 2,
+     "effect": "スキル発動時、その攻撃の与ダメージ+9%。",
+     "value": 9.0,
+     "valueYuko": 9.0
+    },
+    {
+     "lv": 3,
+     "effect": "スキル発動時、その攻撃の与ダメージ+14%。",
+     "value": 14.0,
+     "valueYuko": 14.0
+    },
+    {
+     "lv": 4,
+     "effect": "スキル発動時、その攻撃の与ダメージ+19%。",
+     "value": 19.0,
+     "valueYuko": 19.0
+    },
+    {
+     "lv": 5,
+     "effect": "スキル発動時、その攻撃の与ダメージ+24%。",
+     "value": 24.0,
+     "valueYuko": 24.0
+    },
+    {
+     "lv": 6,
+     "effect": "スキル発動時、その攻撃の与ダメージ+29%。",
+     "value": 29.0,
+     "valueYuko": 29.0
+    },
+    {
+     "lv": 7,
+     "effect": "属性攻撃力+50。スキル発動時、今回の攻撃の与ダメージ+37%。",
+     "value": 43.0,
+     "valueYuko": 43.0
+    }
+   ]
+  },
+  {
+   "name": "リロード強化",
+   "category": "弾・矢",
+   "weapon": "弾薬リロード（ヘビィボウガン）",
+   "maxLv": 7,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "リロード後、与ダメージ+4%。30秒持続。",
+     "value": 4.0,
+     "valueYuko": 4.0
+    },
+    {
+     "lv": 2,
+     "effect": "リロード後、与ダメージ+8%。30秒持続。",
+     "value": 8.0,
+     "valueYuko": 8.0
+    },
+    {
+     "lv": 3,
+     "effect": "リロード後、与ダメージ+12%。30秒持続。",
+     "value": 12.0,
+     "valueYuko": 12.0
+    },
+    {
+     "lv": 4,
+     "effect": "リロード後、与ダメージ+16%。30秒持続。",
+     "value": 16.0,
+     "valueYuko": 16.0
+    },
+    {
+     "lv": 5,
+     "effect": "リロード後、与ダメージ+20%。30秒持続。",
+     "value": 20.0,
+     "valueYuko": 20.0
+    },
+    {
+     "lv": 6,
+     "effect": "リロード後、与ダメージ+24%。30秒持続。",
+     "value": 24.0,
+     "valueYuko": 24.0
+    },
+    {
+     "lv": 7,
+     "effect": "属性攻撃力+50。リロード後、与ダメージ+31%。30秒持続。",
+     "value": 37.0,
+     "valueYuko": 37.0
+    }
+   ]
+  },
+  {
+   "name": "破砕",
+   "category": "火力",
+   "weapon": "大剣",
+   "maxLv": 4,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "スキル発動時、ダメージ+3%。60秒持続。",
+     "value": 3.0,
+     "valueYuko": 3.0
+    },
+    {
+     "lv": 2,
+     "effect": "スキル発動時、ダメージ+7%。60秒持続。",
+     "value": 7.0,
+     "valueYuko": 7.0
+    },
+    {
+     "lv": 3,
+     "effect": "スキル発動時、ダメージ+11%。60秒持続。",
+     "value": 11.0,
+     "valueYuko": 11.0
+    },
+    {
+     "lv": 4,
+     "effect": "スキル発動時、ダメージ+16%。属性攻撃力+25。60秒持続。",
+     "value": 19.0,
+     "valueYuko": 19.0
+    }
+   ]
+  },
+  {
+   "name": "貫突",
+   "category": "火力",
+   "weapon": "ランス",
+   "maxLv": 4,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "8秒以内に同じ部位に3回攻撃を命中させると、与ダメージ+3%。30秒持続。",
+     "value": 3.0,
+     "valueYuko": 3.0
+    },
+    {
+     "lv": 2,
+     "effect": "8秒以内に同じ部位に3回攻撃を命中させると、与ダメージ+7%。30秒持続。",
+     "value": 7.0,
+     "valueYuko": 7.0
+    },
+    {
+     "lv": 3,
+     "effect": "8秒以内に同じ部位に3回攻撃を命中させると、与ダメージ+11%。30秒持続。",
+     "value": 11.0,
+     "valueYuko": 11.0
+    },
+    {
+     "lv": 4,
+     "effect": "属性攻撃力+25。8秒以内に同じ部位に3回攻撃を命中させると、与ダメージ+16%。30秒持続。",
+     "value": 19.0,
+     "valueYuko": 19.0
+    }
+   ]
+  },
+  {
+   "name": "威震",
+   "category": "火力",
+   "weapon": "打撃タイプの武器",
+   "maxLv": 4,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "スキル発動時、ダメージ+3%。15秒持続。",
+     "value": 3.0,
+     "valueYuko": 3.0
+    },
+    {
+     "lv": 2,
+     "effect": "スキル発動時、ダメージ+7%。15秒持続。",
+     "value": 7.0,
+     "valueYuko": 7.0
+    },
+    {
+     "lv": 3,
+     "effect": "スキル発動時、ダメージ+11%。15秒持続。",
+     "value": 11.0,
+     "valueYuko": 11.0
+    },
+    {
+     "lv": 4,
+     "effect": "属性攻撃力+25。スキル発動時、ダメージ+16%。15秒持続。",
+     "value": 19.0,
+     "valueYuko": 19.0
+    }
+   ]
+  },
+  {
+   "name": "弩弾強化",
+   "category": "弾・矢",
+   "weapon": "ボウガン",
+   "maxLv": 4,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "通常弾、散弾、貫通弾のダメージ+3%。",
+     "value": 3.0,
+     "valueYuko": 3.0
+    },
+    {
+     "lv": 2,
+     "effect": "通常弾、散弾、貫通弾のダメージ+7%。",
+     "value": 7.0,
+     "valueYuko": 7.0
+    },
+    {
+     "lv": 3,
+     "effect": "通常弾、散弾、貫通弾のダメージ+11%。",
+     "value": 11.0,
+     "valueYuko": 11.0
+    },
+    {
+     "lv": 4,
+     "effect": "属性攻撃力+25。通常弾、散弾、貫通弾のダメージ+16%。",
+     "value": 19.0,
+     "valueYuko": 19.0
+    }
+   ]
+  },
+  {
+   "name": "高圧ガード",
+   "category": "生存",
+   "weapon": null,
+   "maxLv": 3,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "スキル発動時、防御力+20。",
+     "value": 20.0,
+     "valueYuko": 20.0
+    },
+    {
+     "lv": 2,
+     "effect": "スキル発動時、防御力+40。",
+     "value": 40.0,
+     "valueYuko": 40.0
+    },
+    {
+     "lv": 3,
+     "effect": "スキル発動時、防御力+60。",
+     "value": 60.0,
+     "valueYuko": 60.0
+    }
+   ]
+  },
+  {
+   "name": "制圧回復",
+   "category": "生存",
+   "weapon": null,
+   "maxLv": 3,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "スキル発動時、体力を5回復する。発動間隔は3秒。",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 2,
+     "effect": "スキル発動時、体力を10回復する。発動間隔は3秒。",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 3,
+     "effect": "スキル発動時、体力を15回復する。発動間隔は3秒。",
+     "value": null,
+     "valueYuko": null
+    }
+   ]
+  },
+  {
+   "name": "変形強化",
+   "category": "火力",
+   "weapon": "武器変形（チャージアックス）",
+   "maxLv": 4,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "スキル発動時、ダメージ+3%。60秒持続。",
+     "value": 3.0,
+     "valueYuko": 3.0
+    },
+    {
+     "lv": 2,
+     "effect": "スキル発動時、ダメージ+7%。60秒持続。",
+     "value": 7.0,
+     "valueYuko": 7.0
+    },
+    {
+     "lv": 3,
+     "effect": "スキル発動時、ダメージ+11%。60秒持続。",
+     "value": 11.0,
+     "valueYuko": 11.0
+    },
+    {
+     "lv": 4,
+     "effect": "スキル発動時、ダメージ+16%、属性攻撃力+25。60秒持続。",
+     "value": 19.0,
+     "valueYuko": 19.0
+    }
+   ]
+  },
+  {
+   "name": "泥耐性",
+   "category": "生存",
+   "weapon": null,
+   "maxLv": 1,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "移動速度や回避行動への制限を軽減する。",
+     "value": null,
+     "valueYuko": null
+    }
+   ]
+  },
+  {
+   "name": "冒険団の力・ヘルム",
+   "category": "その他",
+   "weapon": null,
+   "maxLv": 8,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "指定の冒険ランクに到達すると、この装備はレア度1になる",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 2,
+     "effect": "指定の冒険ランクに到達すると、この装備はレア度2になる",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 3,
+     "effect": "指定の冒険ランクに到達すると、この装備はレア度3になる",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 4,
+     "effect": "指定の冒険ランクに到達すると、この装備はレア度4になる",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 5,
+     "effect": "指定の冒険ランクに到達すると、この装備はレア度5になる",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 6,
+     "effect": "指定の冒険ランクに到達すると、この装備はレア度6になる",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 7,
+     "effect": "指定の冒険ランクに到達すると、この装備はレア度7になる",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 8,
+     "effect": "指定の冒険ランクに到達すると、この装備はレア度8になる",
+     "value": null,
+     "valueYuko": null
+    }
+   ]
+  },
+  {
+   "name": "冒険団の力・メイル",
+   "category": "その他",
+   "weapon": null,
+   "maxLv": 8,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "指定の冒険ランクに到達すると、この装備はレア度1になる",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 2,
+     "effect": "指定の冒険ランクに到達すると、この装備はレア度2になる",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 3,
+     "effect": "指定の冒険ランクに到達すると、この装備はレア度3になる",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 4,
+     "effect": "指定の冒険ランクに到達すると、この装備はレア度4になる",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 5,
+     "effect": "指定の冒険ランクに到達すると、この装備はレア度5になる",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 6,
+     "effect": "指定の冒険ランクに到達すると、この装備はレア度6になる",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 7,
+     "effect": "指定の冒険ランクに到達すると、この装備はレア度7になる",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 8,
+     "effect": "指定の冒険ランクに到達すると、この装備はレア度8になる",
+     "value": null,
+     "valueYuko": null
+    }
+   ]
+  },
+  {
+   "name": "冒険団の力・マニファー",
+   "category": "その他",
+   "weapon": null,
+   "maxLv": 8,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "指定の冒険ランクに到達すると、この装備はレア度1になる",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 2,
+     "effect": "指定の冒険ランクに到達すると、この装備はレア度2になる",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 3,
+     "effect": "指定の冒険ランクに到達すると、この装備はレア度3になる",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 4,
+     "effect": "指定の冒険ランクに到達すると、この装備はレア度4になる",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 5,
+     "effect": "指定の冒険ランクに到達すると、この装備はレア度5になる",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 6,
+     "effect": "指定の冒険ランクに到達すると、この装備はレア度6になる",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 7,
+     "effect": "指定の冒険ランクに到達すると、この装備はレア度7になる",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 8,
+     "effect": "指定の冒険ランクに到達すると、この装備はレア度8になる",
+     "value": null,
+     "valueYuko": null
+    }
+   ]
+  },
+  {
+   "name": "冒険団の力・コイル",
+   "category": "その他",
+   "weapon": null,
+   "maxLv": 8,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "指定の冒険ランクに到達すると、この装備はレア度1になる",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 2,
+     "effect": "指定の冒険ランクに到達すると、この装備はレア度2になる",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 3,
+     "effect": "指定の冒険ランクに到達すると、この装備はレア度3になる",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 4,
+     "effect": "指定の冒険ランクに到達すると、この装備はレア度4になる",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 5,
+     "effect": "指定の冒険ランクに到達すると、この装備はレア度5になる",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 6,
+     "effect": "指定の冒険ランクに到達すると、この装備はレア度6になる",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 7,
+     "effect": "指定の冒険ランクに到達すると、この装備はレア度7になる",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 8,
+     "effect": "指定の冒険ランクに到達すると、この装備はレア度8になる",
+     "value": null,
+     "valueYuko": null
+    }
+   ]
+  },
+  {
+   "name": "冒険団の力・グリーブ",
+   "category": "その他",
+   "weapon": null,
+   "maxLv": 8,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "指定の冒険ランクに到達すると、この装備はレア度1になる",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 2,
+     "effect": "指定の冒険ランクに到達すると、この装備はレア度2になる",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 3,
+     "effect": "指定の冒険ランクに到達すると、この装備はレア度3になる",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 4,
+     "effect": "指定の冒険ランクに到達すると、この装備はレア度4になる",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 5,
+     "effect": "指定の冒険ランクに到達すると、この装備はレア度5になる",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 6,
+     "effect": "指定の冒険ランクに到達すると、この装備はレア度6になる",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 7,
+     "effect": "指定の冒険ランクに到達すると、この装備はレア度7になる",
+     "value": null,
+     "valueYuko": null
+    },
+    {
+     "lv": 8,
+     "effect": "指定の冒険ランクに到達すると、この装備はレア度8になる",
+     "value": null,
+     "valueYuko": null
+    }
+   ]
   },
   {
    "name": "冒険団の力・アーム",
    "category": null,
    "weapon": null,
-   "maxLv": 6,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "冒険団の力・コイル",
-   "category": null,
-   "weapon": null,
-   "maxLv": 6,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "のけぞり軽減",
-   "category": null,
-   "weapon": null,
-   "maxLv": 2,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "冒険団の力・グリーブ",
-   "category": null,
-   "weapon": null,
-   "maxLv": 6,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "気絶耐性",
-   "category": null,
-   "weapon": null,
-   "maxLv": 1,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "弁当好き",
-   "category": null,
-   "weapon": null,
-   "maxLv": 2,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "怖いもの無し",
-   "category": null,
-   "weapon": null,
-   "maxLv": 1,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "威嚇",
-   "category": null,
-   "weapon": null,
-   "maxLv": 2,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "練気をまといし刃",
-   "category": null,
-   "weapon": null,
-   "maxLv": 2,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "徹底追撃",
-   "category": null,
-   "weapon": null,
-   "maxLv": 2,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "抜刀一閃",
-   "category": null,
-   "weapon": null,
-   "maxLv": 2,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "節約術",
-   "category": null,
-   "weapon": null,
-   "maxLv": 1,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "逆境",
-   "category": null,
-   "weapon": null,
-   "maxLv": 1,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "洞察",
-   "category": null,
-   "weapon": null,
-   "maxLv": 2,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "剥ぎ取り名人",
-   "category": null,
-   "weapon": null,
-   "maxLv": 1,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "弱点攻撃",
-   "category": null,
-   "weapon": null,
-   "maxLv": 1,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "火耐性強化",
-   "category": null,
-   "weapon": null,
-   "maxLv": 1,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "アイテム専門家",
-   "category": null,
-   "weapon": null,
-   "maxLv": 2,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "連撃強化",
-   "category": null,
-   "weapon": null,
-   "maxLv": 2,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "鬼人の修羅",
-   "category": null,
-   "weapon": null,
-   "maxLv": 2,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "弾導強化",
-   "category": null,
-   "weapon": null,
-   "maxLv": 1,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "弓スキル強化",
-   "category": null,
-   "weapon": null,
-   "maxLv": 2,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "植物専門家",
-   "category": null,
-   "weapon": null,
-   "maxLv": 1,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "溜め強射",
-   "category": null,
-   "weapon": null,
-   "maxLv": 3,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "環境の活用",
-   "category": null,
-   "weapon": null,
-   "maxLv": 1,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "闘志",
-   "category": null,
-   "weapon": null,
-   "maxLv": 1,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "毒耐性",
-   "category": null,
-   "weapon": null,
-   "maxLv": 2,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "水耐性強化",
-   "category": null,
-   "weapon": null,
-   "maxLv": 1,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "防御反撃",
-   "category": null,
-   "weapon": null,
-   "maxLv": 2,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "剛勢",
-   "category": null,
-   "weapon": null,
-   "maxLv": 2,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "破壊王",
-   "category": null,
-   "weapon": null,
-   "maxLv": 1,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "風圧耐性",
-   "category": null,
-   "weapon": null,
-   "maxLv": 1,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "防護",
-   "category": null,
-   "weapon": null,
-   "maxLv": 2,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "会心撃【属性】",
-   "category": null,
-   "weapon": null,
-   "maxLv": 2,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "麻痺耐性",
-   "category": null,
-   "weapon": null,
-   "maxLv": 1,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "雷属性ダメージUP",
-   "category": null,
-   "weapon": null,
-   "maxLv": 2,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "体力強化",
-   "category": null,
-   "weapon": null,
-   "maxLv": 2,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "ポテンシャル解放",
-   "category": null,
-   "weapon": null,
-   "maxLv": 1,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "オトモ強化",
-   "category": null,
-   "weapon": null,
-   "maxLv": 1,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "水属性ダメージUP",
-   "category": null,
-   "weapon": null,
-   "maxLv": 3,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "体力回復",
-   "category": null,
-   "weapon": null,
-   "maxLv": 2,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "氷耐性強化",
-   "category": null,
-   "weapon": null,
-   "maxLv": 2,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "チャージ準備",
-   "category": null,
-   "weapon": null,
-   "maxLv": 2,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "制圧回復",
-   "category": null,
-   "weapon": null,
-   "maxLv": 2,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "貫突",
-   "category": null,
-   "weapon": null,
-   "maxLv": 2,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "ガードテクニック",
-   "category": null,
-   "weapon": null,
-   "maxLv": 2,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "氷属性ダメージUP",
-   "category": null,
-   "weapon": null,
-   "maxLv": 2,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "溜め強化",
-   "category": null,
-   "weapon": null,
-   "maxLv": 3,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "威震",
-   "category": null,
-   "weapon": null,
-   "maxLv": 2,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "変形強化",
-   "category": null,
-   "weapon": null,
-   "maxLv": 2,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "龍属性ダメージUP",
-   "category": null,
-   "weapon": null,
-   "maxLv": 2,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "標本の達人",
-   "category": null,
-   "weapon": null,
-   "maxLv": 1,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "回避強化",
-   "category": null,
-   "weapon": null,
-   "maxLv": 3,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "ハニーハンター",
-   "category": null,
-   "weapon": null,
-   "maxLv": 1,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "弱点追撃",
-   "category": null,
-   "weapon": null,
-   "maxLv": 1,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "破砕",
-   "category": null,
-   "weapon": null,
-   "maxLv": 2,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "体力ループ",
-   "category": null,
-   "weapon": null,
-   "maxLv": 2,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "火属性ダメージUP",
-   "category": null,
-   "weapon": null,
-   "maxLv": 2,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "融光感知",
-   "category": null,
-   "weapon": null,
-   "maxLv": 1,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "滞空",
-   "category": null,
-   "weapon": null,
-   "maxLv": 3,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "狩人の第六感",
-   "category": null,
-   "weapon": null,
-   "maxLv": 1,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "気力変換",
-   "category": null,
-   "weapon": null,
-   "maxLv": 2,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "無垢",
-   "category": null,
-   "weapon": null,
-   "maxLv": 1,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "睡眠耐性",
-   "category": null,
-   "weapon": null,
-   "maxLv": 1,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "一撃貫通",
-   "category": null,
-   "weapon": null,
-   "maxLv": 3,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "防御力DOWN耐性",
-   "category": null,
-   "weapon": null,
-   "maxLv": 2,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "壁登りの達人",
-   "category": null,
-   "weapon": null,
-   "maxLv": 1,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "雷耐性強化",
-   "category": null,
-   "weapon": null,
-   "maxLv": 1,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "龍耐性強化",
-   "category": null,
-   "weapon": null,
-   "maxLv": 1,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "剥ぎ取り鉄人",
-   "category": null,
-   "weapon": null,
-   "maxLv": 1,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "高圧ガード",
-   "category": null,
-   "weapon": null,
-   "maxLv": 2,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "リロード強化",
-   "category": null,
-   "weapon": null,
-   "maxLv": 2,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "咆哮耐性",
-   "category": null,
-   "weapon": null,
-   "maxLv": 1,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "採集名人",
-   "category": null,
-   "weapon": null,
-   "maxLv": 1,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "弩弾強化",
-   "category": null,
-   "weapon": null,
-   "maxLv": 2,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "地質専門家",
-   "category": null,
-   "weapon": null,
-   "maxLv": 1,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "爆破耐性",
-   "category": null,
-   "weapon": null,
-   "maxLv": 1,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "振動耐性",
-   "category": null,
-   "weapon": null,
-   "maxLv": 2,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "捕獲の達人",
-   "category": null,
-   "weapon": null,
-   "maxLv": 1,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "裂傷耐性",
-   "category": null,
-   "weapon": null,
-   "maxLv": 2,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "みなぎるエナジー",
-   "category": null,
-   "weapon": null,
-   "maxLv": 1,
-   "levels": [],
-   "placeholder": true
-  },
-  {
-   "name": "本気",
-   "category": null,
-   "weapon": null,
-   "maxLv": 1,
+   "maxLv": 7,
    "levels": [],
    "placeholder": true
   }
  ],
- "setSkills": []
+ "setSkills": [
+  {
+   "name": "掻鳥の巧技",
+   "category": "会心",
+   "series": [
+    "融光種クルル"
+   ],
+   "seriesAliases": [],
+   "pieces": 2,
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "洞察",
+     "lv": 1,
+     "effect": "会心率+2%。",
+     "effectSource": "gamewith",
+     "skillLevelEffect": "会心率+2%。",
+     "skillDescription": "会心率UP。"
+    }
+   ],
+   "gear": [
+    "融光種クルルヘルム",
+    "融光種クルルメイル",
+    "融光種クルルアーム",
+    "融光種クルルコイル",
+    "融光種クルルグリーヴ"
+   ],
+   "sourceUrl": "https://game8.jp/mhoutlanders/838975",
+   "sourceUrls": {
+    "game8": "https://game8.jp/mhoutlanders/838975",
+    "gamewith": "https://gamewith.jp/mhoutlanders/560125"
+   },
+   "piecesGameWith": 2
+  },
+  {
+   "name": "賊竜の回避",
+   "category": "会心",
+   "series": [
+    "融光種ジャグラス"
+   ],
+   "seriesAliases": [],
+   "pieces": 2,
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "洞察",
+     "lv": 1,
+     "effect": "会心率+2%。",
+     "effectSource": "gamewith",
+     "skillLevelEffect": "会心率+2%。",
+     "skillDescription": "会心率UP。"
+    }
+   ],
+   "gear": [
+    "融光種ジャグラスヘルム",
+    "融光種ジャグラスメイル",
+    "融光種ジャグラスアーム",
+    "融光種ジャグラスコイル",
+    "融光種ジャグラスグリーヴ"
+   ],
+   "sourceUrl": "https://game8.jp/mhoutlanders/838967",
+   "sourceUrls": {
+    "game8": "https://game8.jp/mhoutlanders/838967",
+    "gamewith": "https://gamewith.jp/mhoutlanders/584559"
+   },
+   "piecesGameWith": 2
+  },
+  {
+   "name": "火竜の弱点撃破",
+   "category": "会心",
+   "series": [
+    "レウス"
+   ],
+   "seriesAliases": [],
+   "pieces": 3,
+   "bonuses": [
+    {
+     "pieces": 3,
+     "skill": "弱点攻撃",
+     "lv": 1,
+     "effect": "モンスターの肉質が柔らかい部位を攻撃すると、会心率+4%。",
+     "effectSource": "gamewith",
+     "skillLevelEffect": "弱点部位を攻撃した時、会心率+4%。",
+     "skillDescription": "モンスターの肉質が柔らかい部位を攻撃すると、会心率が増加する。"
+    }
+   ],
+   "gear": [
+    "レウスヘルム",
+    "レウスメイル",
+    "レウスアーム",
+    "レウスコイル",
+    "レウスグリーヴ"
+   ],
+   "sourceUrl": "https://game8.jp/mhoutlanders/838980",
+   "sourceUrls": {
+    "game8": "https://game8.jp/mhoutlanders/838980",
+    "gamewith": "https://gamewith.jp/mhoutlanders/584548"
+   },
+   "piecesGameWith": 2,
+   "piecesConflict": true
+  },
+  {
+   "name": "飛雷竜の激昂",
+   "category": "会心",
+   "series": [
+    "融光種カガチ"
+   ],
+   "seriesAliases": [],
+   "pieces": 3,
+   "bonuses": [
+    {
+     "pieces": 3,
+     "skill": "ポテンシャル解放",
+     "lv": 1,
+     "effect": "狩猟開始から90秒後、または累計で100のダメージを受けると、会心率+3%、180秒持続。",
+     "effectSource": "gamewith",
+     "skillLevelEffect": "狩猟開始から90秒後、または累計で100のダメージを受けると、会心率+3%、180秒持続。",
+     "skillDescription": "特定の条件を満たすと、一定時間会心率UP。"
+    }
+   ],
+   "gear": [
+    "融光種カガチヘルム",
+    "融光種カガチメイル",
+    "融光種カガチアーム",
+    "融光種カガチコイル",
+    "融光種カガチグリーヴ"
+   ],
+   "sourceUrl": "https://game8.jp/mhoutlanders/838983",
+   "sourceUrls": {
+    "game8": "https://game8.jp/mhoutlanders/838983",
+    "gamewith": "https://gamewith.jp/mhoutlanders/584545"
+   },
+   "piecesGameWith": 2,
+   "piecesConflict": true,
+   "gearGameWith": [
+    "融光種カガチヘルム",
+    "融光種カガチアーム"
+   ]
+  },
+  {
+   "name": "冒険団の逆襲",
+   "category": "火力",
+   "series": [
+    "アカハネ冒険団"
+   ],
+   "seriesAliases": [
+    "冒険団"
+   ],
+   "pieces": 2,
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "逆境",
+     "lv": 1,
+     "effect": "力尽きるたびに、冒険者の与えるダメージと防御力が1.1倍上がり、防御力+10。狩猟終了まで持続する(最大2回まで)。",
+     "effectSource": "gamewith",
+     "skillLevelEffect": "1回毎にダメージが1.1倍になり、防御力+10。",
+     "skillDescription": "力尽きる度に、ダメージと防御力が一定時間増加する。（最大2回まで）"
+    }
+   ],
+   "gear": [
+    "冒険団ヘルム",
+    "冒険団メイル",
+    "冒険団マニファー",
+    "冒険団コイル",
+    "冒険団グリーブ"
+   ],
+   "sourceUrl": "https://game8.jp/mhoutlanders/838994",
+   "sourceUrls": {
+    "game8": "https://game8.jp/mhoutlanders/838994",
+    "gamewith": "https://gamewith.jp/mhoutlanders/584574"
+   },
+   "piecesGameWith": 2
+  },
+  {
+   "name": "毒妖鳥の縄張り",
+   "category": "火力",
+   "series": [
+    "融光種プケプケ"
+   ],
+   "seriesAliases": [],
+   "pieces": 2,
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "無垢",
+     "lv": 1,
+     "effect": "体力が最大時、与ダメージ+3%。",
+     "effectSource": "gamewith",
+     "skillLevelEffect": "スキル発動時の与ダメージ+3%。",
+     "skillDescription": "体力が満タンのとき、与ダメージが増加する。"
+    }
+   ],
+   "gear": [
+    "融光種プケプケヘルム",
+    "融光種プケプケメイル",
+    "融光種プケプケアーム",
+    "融光種プケプケコイル",
+    "融光種プケプケグリーヴ"
+   ],
+   "sourceUrl": "https://game8.jp/mhoutlanders/838968",
+   "sourceUrls": {
+    "game8": "https://game8.jp/mhoutlanders/838968",
+    "gamewith": "https://gamewith.jp/mhoutlanders/560125"
+   },
+   "piecesGameWith": 2
+  },
+  {
+   "name": "蛮顎竜の怒り",
+   "category": "火力",
+   "series": [
+    "融光種ジャナフ"
+   ],
+   "seriesAliases": [],
+   "pieces": 2,
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "破壊王",
+     "lv": 1,
+     "effect": "大型モンスターの部位を破壊しやすくなり、部位に対する蓄積ダメージが1.1倍になる。",
+     "effectSource": "gamewith",
+     "skillLevelEffect": "部位に対する蓄積ダメージが1.1倍になる。",
+     "skillDescription": "大型モンスターの部位を破壊しやすくなる。"
+    }
+   ],
+   "gear": [
+    "融光種ジャナフヘルム",
+    "融光種ジャナフメイル",
+    "融光種ジャナフアーム",
+    "融光種ジャナフコイル",
+    "融光種ジャナフグリーヴ"
+   ],
+   "sourceUrl": "https://game8.jp/mhoutlanders/838974",
+   "sourceUrls": {
+    "game8": "https://game8.jp/mhoutlanders/838974",
+    "gamewith": "https://gamewith.jp/mhoutlanders/584553"
+   },
+   "piecesGameWith": 2
+  },
+  {
+   "name": "雌火竜の感応",
+   "category": "火力",
+   "series": [
+    "融光種レイア"
+   ],
+   "seriesAliases": [],
+   "pieces": 3,
+   "bonuses": [
+    {
+     "pieces": 3,
+     "skill": "融光感知",
+     "lv": 1,
+     "effect": "融光種モンスターが狂暴状態のとき、冒険者の与ダメージ+4%。",
+     "effectSource": "gamewith",
+     "skillLevelEffect": "スキル発動時の与ダメージ+4%。",
+     "skillDescription": "融光種モンスターが狂暴状態のとき、冒険者の与ダメージが増加する。"
+    }
+   ],
+   "gear": [
+    "融光種レイアヘルム",
+    "融光種レイアメイル",
+    "融光種レイアアーム",
+    "融光種レイアコイル",
+    "融光種レイアグリーヴ"
+   ],
+   "sourceUrl": "https://game8.jp/mhoutlanders/838965",
+   "sourceUrls": {
+    "game8": "https://game8.jp/mhoutlanders/838965",
+    "gamewith": "https://gamewith.jp/mhoutlanders/584561"
+   },
+   "piecesGameWith": 2,
+   "piecesConflict": true
+  },
+  {
+   "name": "蛮顎竜の灼炎",
+   "category": "火力",
+   "series": [
+    "ジャナフ"
+   ],
+   "seriesAliases": [],
+   "pieces": 3,
+   "bonuses": [
+    {
+     "pieces": 3,
+     "skill": "火属性ダメージUP",
+     "lv": 1,
+     "effect": "火属性ダメージ+3%。融光種モンスターの場合は+8%になる。",
+     "effectSource": "gamewith",
+     "skillLevelEffect": "火属性ダメージ+3%。融光種モンスター相手の場合は+8%になる。",
+     "skillDescription": "火属性ダメージが増加する。融光種モンスター相手の場合は効果がさらに強化される。"
+    }
+   ],
+   "gear": [
+    "ジャナフヘルム",
+    "ジャナフメイル",
+    "ジャナフアーム",
+    "ジャナフコイル",
+    "ジャナフグリーヴ"
+   ],
+   "sourceUrl": "https://game8.jp/mhoutlanders/838964",
+   "sourceUrls": {
+    "game8": "https://game8.jp/mhoutlanders/838964",
+    "gamewith": "https://gamewith.jp/mhoutlanders/584562"
+   },
+   "piecesGameWith": 2,
+   "piecesConflict": true
+  },
+  {
+   "name": "ドスギルオスの統率",
+   "category": "火力",
+   "series": [
+    "融光種ドスギル"
+   ],
+   "seriesAliases": [
+    "融光種ギルオス"
+   ],
+   "pieces": 2,
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "オトモ強化",
+     "lv": 1,
+     "effect": "オトモの与ダメージが1.1倍になる。",
+     "effectSource": "gamewith",
+     "skillLevelEffect": "オトモの与ダメージが1.1倍になる。",
+     "skillDescription": "オトモの与ダメージが増加する。"
+    }
+   ],
+   "gear": [
+    "融光種ギルオスヘルム",
+    "融光種ギルオスメイル",
+    "融光種ギルオスアーム",
+    "融光種ギルオスコイル",
+    "融光種ギルオスグリーヴ"
+   ],
+   "sourceUrl": "https://game8.jp/mhoutlanders/838982",
+   "sourceUrls": {
+    "game8": "https://game8.jp/mhoutlanders/838982",
+    "gamewith": "https://gamewith.jp/mhoutlanders/584546"
+   },
+   "piecesGameWith": 2,
+   "gearGameWith": [
+    "融光種ギルオスヘルム",
+    "融光種ギルオスメイル",
+    "融光種ギルオスアーム"
+   ]
+  },
+  {
+   "name": "竜塚の神秘",
+   "category": "火力",
+   "series": [
+    "ボーン"
+   ],
+   "seriesAliases": [],
+   "pieces": 3,
+   "bonuses": [
+    {
+     "pieces": 3,
+     "skill": "龍属性ダメージUP",
+     "lv": 1,
+     "effect": "龍属性ダメージ+3%。融光種モンスターの場合は+8%になる。",
+     "effectSource": "gamewith",
+     "skillLevelEffect": "龍属性ダメージ+3%。融光種モンスター相手の場合は+8%になる。",
+     "skillDescription": "龍属性ダメージが増加する。融光種モンスター相手の場合は効果がさらに強化される。"
+    }
+   ],
+   "gear": [
+    "ボーンヘルム",
+    "ボーンメイル",
+    "ボーンアーム",
+    "ボーンコイル",
+    "ボーングリーヴ"
+   ],
+   "sourceUrl": "https://game8.jp/mhoutlanders/838961",
+   "sourceUrls": {
+    "game8": "https://game8.jp/mhoutlanders/838961",
+    "gamewith": "https://gamewith.jp/mhoutlanders/584565"
+   },
+   "piecesGameWith": 2,
+   "piecesConflict": true
+  },
+  {
+   "name": "眩鳥の追撃",
+   "category": "火力",
+   "series": [
+    "ツィツィ"
+   ],
+   "seriesAliases": [],
+   "pieces": 3,
+   "bonuses": [
+    {
+     "pieces": 3,
+     "skill": "徹底追撃",
+     "lv": 1,
+     "effect": "スキル発動時、ダメージ+4%、15秒持続。",
+     "effectSource": "game8-skill-level",
+     "skillLevelEffect": "スキル発動時、ダメージ+4%、15秒持続。",
+     "skillDescription": "モンスターがひるむか制圧状態になった後、一定時間、与ダメージが増加する。"
+    }
+   ],
+   "gear": [
+    "ツィツィヘルム",
+    "ツィツィメイル",
+    "ツィツィアーム",
+    "ツィツィコイル",
+    "ツィツィグリーヴ"
+   ],
+   "sourceUrl": "https://game8.jp/mhoutlanders/838986",
+   "sourceUrls": {
+    "game8": "https://game8.jp/mhoutlanders/838986",
+    "gamewith": null
+   }
+  },
+  {
+   "name": "泥魚竜の水御",
+   "category": "火力",
+   "series": [
+    "ジュラ"
+   ],
+   "seriesAliases": [],
+   "pieces": 3,
+   "bonuses": [
+    {
+     "pieces": 3,
+     "skill": "水属性ダメージUP",
+     "lv": 1,
+     "effect": "水属性ダメージ+3%。融光種モンスターの場合は+8%になる。",
+     "effectSource": "gamewith",
+     "skillLevelEffect": "水属性ダメージ+3%。融光種モンスター相手の場合は+8%になる。",
+     "skillDescription": "水属性ダメージが増加する。融光種モンスター相手の場合は効果がさらに強化される。"
+    }
+   ],
+   "gear": [
+    "ジュラヘルム",
+    "ジュラメイル",
+    "ジュラアーム",
+    "ジュラコイル",
+    "ジュラグリーヴ"
+   ],
+   "sourceUrl": "https://game8.jp/mhoutlanders/838959",
+   "sourceUrls": {
+    "game8": "https://game8.jp/mhoutlanders/838959",
+    "gamewith": "https://gamewith.jp/mhoutlanders/584567"
+   },
+   "piecesGameWith": 2,
+   "piecesConflict": true
+  },
+  {
+   "name": "痺賊竜の不意打ち",
+   "category": "火力",
+   "series": [
+    "ドスギル"
+   ],
+   "seriesAliases": [
+    "ギルオス"
+   ],
+   "pieces": 3,
+   "bonuses": [
+    {
+     "pieces": 3,
+     "skill": "雷属性ダメージUP",
+     "lv": 1,
+     "effect": "雷属性ダメージ+3%。融光種モンスターの場合は+8%になる。",
+     "effectSource": "gamewith",
+     "skillLevelEffect": "雷属性ダメージ+3%。融光種モンスター相手の場合は+8%になる。",
+     "skillDescription": "雷属性ダメージが増加する。融光種モンスター相手の場合は効果がさらに強化される。"
+    }
+   ],
+   "gear": [
+    "ギルオスヘルム",
+    "ギルオスメイル",
+    "ギルオスアーム",
+    "ギルオスコイル",
+    "ギルオスグリーヴ"
+   ],
+   "sourceUrl": "https://game8.jp/mhoutlanders/838958",
+   "sourceUrls": {
+    "game8": "https://game8.jp/mhoutlanders/838958",
+    "gamewith": "https://gamewith.jp/mhoutlanders/584568"
+   },
+   "piecesGameWith": 2,
+   "piecesConflict": true
+  },
+  {
+   "name": "桜火竜の鋭敏",
+   "category": "火力",
+   "series": [
+    "リオハート"
+   ],
+   "seriesAliases": [],
+   "pieces": 3,
+   "bonuses": [
+    {
+     "pieces": 3,
+     "skill": "狩人の第六感",
+     "lv": 1,
+     "effect": "スキル発動時の与ダメージ+4%。120秒持続。",
+     "effectSource": "game8-skill-level",
+     "skillLevelEffect": "スキル発動時の与ダメージ+4%。120秒持続。",
+     "skillDescription": "フィールドのギミックまたは環境生物を使用すると、ダメージが一定時間増加する。"
+    }
+   ],
+   "gear": [
+    "リオハートヘルム",
+    "リオハートメイル",
+    "リオハートアーム",
+    "リオハートコイル",
+    "リオハートグリーヴ"
+   ],
+   "sourceUrl": "https://game8.jp/mhoutlanders/838989",
+   "sourceUrls": {
+    "game8": "https://game8.jp/mhoutlanders/838989",
+    "gamewith": null
+   }
+  },
+  {
+   "name": "寒鉄錬成",
+   "category": "火力",
+   "series": [
+    "チェーン"
+   ],
+   "seriesAliases": [],
+   "pieces": 3,
+   "bonuses": [
+    {
+     "pieces": 3,
+     "skill": "氷属性ダメージUP",
+     "lv": 1,
+     "effect": "氷属性ダメージ+3%。融光種モンスターの場合は+8%になる。",
+     "effectSource": "gamewith",
+     "skillLevelEffect": "氷属性ダメージ+3%。融光種モンスター相手の場合は+8%になる。",
+     "skillDescription": "氷属性ダメージが増加する。融光種モンスター相手の場合は効果がさらに強化される。"
+    }
+   ],
+   "gear": [
+    "チェーンヘッド",
+    "チェーンベスト",
+    "チェーングラブ",
+    "チェーンベルト",
+    "チェーンパンツ"
+   ],
+   "sourceUrl": "https://game8.jp/mhoutlanders/838957",
+   "sourceUrls": {
+    "game8": "https://game8.jp/mhoutlanders/838957",
+    "gamewith": "https://gamewith.jp/mhoutlanders/584569"
+   },
+   "piecesGameWith": 2,
+   "piecesConflict": true
+  },
+  {
+   "name": "光稜龍の威嚇",
+   "category": "火力",
+   "series": [
+    "エアルダ"
+   ],
+   "seriesAliases": [],
+   "pieces": 3,
+   "bonuses": [
+    {
+     "pieces": 3,
+     "skill": "弱点追撃",
+     "lv": 1,
+     "effect": "75%の確率でスキルが発動し、4%の追加ダメージを与える。",
+     "effectSource": "game8-skill-level",
+     "skillLevelEffect": "75%の確率でスキルが発動し、4%の追加ダメージを与える。",
+     "skillDescription": "モンスターの破壊された部位を攻撃すると、一定の確率で追加で1回ダメージを与える。"
+    }
+   ],
+   "gear": [
+    "エアルダの誓約",
+    "エアルダの守護",
+    "エアルダの裁き",
+    "エアルダの誠実",
+    "エアルダの信念"
+   ],
+   "sourceUrl": "https://game8.jp/mhoutlanders/838991",
+   "sourceUrls": {
+    "game8": "https://game8.jp/mhoutlanders/838991",
+    "gamewith": null
+   }
+  },
+  {
+   "name": "土砂竜の泥障",
+   "category": "生存",
+   "series": [
+    "ボロス"
+   ],
+   "seriesAliases": [],
+   "pieces": 2,
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "泥耐性",
+     "lv": 1,
+     "effect": "移動速度や回避行動への制限を軽減する。",
+     "effectSource": "gamewith",
+     "skillLevelEffect": "移動速度や回避行動への制限を軽減する。",
+     "skillDescription": "移動速度や回避行動への制限を軽減する。"
+    }
+   ],
+   "gear": [
+    "ボロスヘルム",
+    "ボロスメイル",
+    "ボロスアーム",
+    "ボロスコイル",
+    "ボロスグリーヴ"
+   ],
+   "sourceUrl": "https://game8.jp/mhoutlanders/838960",
+   "sourceUrls": {
+    "game8": "https://game8.jp/mhoutlanders/838960",
+    "gamewith": "https://gamewith.jp/mhoutlanders/584566"
+   },
+   "piecesGameWith": 2
+  },
+  {
+   "name": "巨峰の絶縁",
+   "category": "生存",
+   "series": [
+    "ランゴ"
+   ],
+   "seriesAliases": [],
+   "pieces": 2,
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "麻痺耐性",
+     "lv": 1,
+     "effect": "麻痺状態の継続時間-30%。",
+     "effectSource": "gamewith",
+     "skillLevelEffect": "麻痺状態の継続時間-30%。",
+     "skillDescription": "麻痺状態の継続時間を短縮する。"
+    }
+   ],
+   "gear": [
+    "ランゴヘルム",
+    "ランゴメイル",
+    "ランゴアーム",
+    "ランゴコイル",
+    "ランゴグリーヴ"
+   ],
+   "sourceUrl": "https://game8.jp/mhoutlanders/838963",
+   "sourceUrls": {
+    "game8": "https://game8.jp/mhoutlanders/838963",
+    "gamewith": "https://gamewith.jp/mhoutlanders/584563"
+   },
+   "piecesGameWith": 2
+  },
+  {
+   "name": "合金の風障",
+   "category": "生存",
+   "series": [
+    "アロイ"
+   ],
+   "seriesAliases": [],
+   "pieces": 2,
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "風圧耐性",
+     "lv": 1,
+     "effect": "風圧【小】を軽減する。",
+     "effectSource": "gamewith",
+     "skillLevelEffect": "風圧【小】を軽減する。",
+     "skillDescription": "風圧に耐性を得る。"
+    }
+   ],
+   "gear": [
+    "アロイヘルム",
+    "アロイメイル",
+    "アロイアーム",
+    "アロイコイル",
+    "アロイグリーヴ"
+   ],
+   "sourceUrl": "https://game8.jp/mhoutlanders/838966",
+   "sourceUrls": {
+    "game8": "https://game8.jp/mhoutlanders/838966",
+    "gamewith": "https://gamewith.jp/mhoutlanders/584560"
+   },
+   "piecesGameWith": 2
+  },
+  {
+   "name": "複合ファイバー",
+   "category": "生存",
+   "series": [
+    "レザー"
+   ],
+   "seriesAliases": [],
+   "pieces": 2,
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "火耐性強化",
+     "lv": 1,
+     "effect": "火耐性+6。",
+     "effectSource": "gamewith",
+     "skillLevelEffect": "火耐性+6。",
+     "skillDescription": "火耐性が強化される。"
+    }
+   ],
+   "gear": [
+    "レザーヘッド",
+    "レザーベスト",
+    "レザーグラブ",
+    "レザーベルト",
+    "レザーパンツ"
+   ],
+   "sourceUrl": "https://game8.jp/mhoutlanders/838956",
+   "sourceUrls": {
+    "game8": "https://game8.jp/mhoutlanders/838956",
+    "gamewith": "https://gamewith.jp/mhoutlanders/584570"
+   },
+   "piecesGameWith": 2
+  },
+  {
+   "name": "プケプケの尻尾振り",
+   "category": "生存",
+   "series": [
+    "プケプケ"
+   ],
+   "seriesAliases": [],
+   "pieces": 2,
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "毒耐性",
+     "lv": 1,
+     "effect": "毒状態の継続時間-30%。",
+     "effectSource": "gamewith",
+     "skillLevelEffect": "毒状態の継続時間-30%。",
+     "skillDescription": "毒状態時の被ダメージを減らす。"
+    }
+   ],
+   "gear": [
+    "プケプケヘルム",
+    "プケプケメイル",
+    "プケプケアーム",
+    "プケプケコイル",
+    "プケプケグリーヴ"
+   ],
+   "sourceUrl": "https://game8.jp/mhoutlanders/838955",
+   "sourceUrls": {
+    "game8": "https://game8.jp/mhoutlanders/838955",
+    "gamewith": "https://gamewith.jp/mhoutlanders/584571"
+   },
+   "piecesGameWith": 2
+  },
+  {
+   "name": "巨甲の力",
+   "category": "生存",
+   "series": [
+    "タロス"
+   ],
+   "seriesAliases": [],
+   "pieces": 2,
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "龍耐性強化",
+     "lv": 1,
+     "effect": "龍耐性+6。",
+     "effectSource": "gamewith",
+     "skillLevelEffect": "龍耐性+6。",
+     "skillDescription": "龍耐性が強化される。"
+    }
+   ],
+   "gear": [
+    "タロスヘルム",
+    "タロスメイル",
+    "タロスアーム",
+    "タロスコイル",
+    "タロスグリーヴ"
+   ],
+   "sourceUrl": "https://game8.jp/mhoutlanders/838969",
+   "sourceUrls": {
+    "game8": "https://game8.jp/mhoutlanders/838969",
+    "gamewith": "https://gamewith.jp/mhoutlanders/584558"
+   },
+   "piecesGameWith": 2
+  },
+  {
+   "name": "鉱脈の静寂",
+   "category": "生存",
+   "series": [
+    "ハイメタ"
+   ],
+   "seriesAliases": [],
+   "pieces": 2,
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "咆哮耐性",
+     "lv": 1,
+     "effect": "咆哮【小】の影響を軽減する。",
+     "effectSource": "gamewith",
+     "skillLevelEffect": "咆哮【小】の影響を軽減する。",
+     "skillDescription": "大型モンスターの咆哮に対する耐性を持つ。"
+    }
+   ],
+   "gear": [
+    "ハイメタヘルム",
+    "ハイメタメイル",
+    "ハイメタアーム",
+    "ハイメタコイル",
+    "ハイメタグリーヴ"
+   ],
+   "sourceUrl": "https://game8.jp/mhoutlanders/838970",
+   "sourceUrls": {
+    "game8": "https://game8.jp/mhoutlanders/838970",
+    "gamewith": "https://gamewith.jp/mhoutlanders/584557"
+   },
+   "piecesGameWith": 2
+  },
+  {
+   "name": "花蝶の親和",
+   "category": "生存",
+   "series": [
+    "パピメル"
+   ],
+   "seriesAliases": [],
+   "pieces": 2,
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "睡眠耐性",
+     "lv": 1,
+     "effect": "睡眠状態の継続時間-30%。",
+     "effectSource": "gamewith",
+     "skillLevelEffect": "睡眠状態の継続時間-30%。",
+     "skillDescription": "睡眠状態の継続時間を短縮する。"
+    }
+   ],
+   "gear": [
+    "パピメルテスタ",
+    "パピメルペット",
+    "パピメルマーノ",
+    "パピメルアンカ",
+    "パピメルガンバ"
+   ],
+   "sourceUrl": "https://game8.jp/mhoutlanders/838972",
+   "sourceUrls": {
+    "game8": "https://game8.jp/mhoutlanders/838972",
+    "gamewith": "https://gamewith.jp/mhoutlanders/584555"
+   },
+   "piecesGameWith": 2
+  },
+  {
+   "name": "飛雷竜の雷鎧",
+   "category": "生存",
+   "series": [
+    "カガチ"
+   ],
+   "seriesAliases": [],
+   "pieces": 2,
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "雷耐性強化",
+     "lv": 1,
+     "effect": "雷耐性+6。",
+     "effectSource": "gamewith",
+     "skillLevelEffect": "雷耐性+6。",
+     "skillDescription": "雷耐性が強化される。"
+    }
+   ],
+   "gear": [
+    "カガチヘルム",
+    "カガチメイル",
+    "カガチアーム",
+    "カガチコイル",
+    "カガチグリーヴ"
+   ],
+   "sourceUrl": "https://game8.jp/mhoutlanders/838973",
+   "sourceUrls": {
+    "game8": "https://game8.jp/mhoutlanders/838973",
+    "gamewith": "https://gamewith.jp/mhoutlanders/584554"
+   },
+   "piecesGameWith": 2,
+   "gearGameWith": [
+    "カガチヘルム",
+    "カガチメイル",
+    "カガチアーム",
+    "カガチコイル",
+    "融光種カガチコイル",
+    "カガチグリーヴ",
+    "融光種カガチグリーヴ"
+   ]
+  },
+  {
+   "name": "土砂竜の堅守",
+   "category": "生存",
+   "series": [
+    "融光種ボロス"
+   ],
+   "seriesAliases": [],
+   "pieces": 2,
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "ガードテクニック",
+     "lv": 1,
+     "effect": "ガード時にひるみにくくなり、攻撃の威力をわずかに軽減する。",
+     "effectSource": "gamewith",
+     "skillLevelEffect": "攻撃の威力をわずかに軽減する。",
+     "skillDescription": "ガード時ののけぞり時間を短縮し、スタミナ消費量を軽減する。"
+    }
+   ],
+   "gear": [
+    "融光種ボロスヘルム",
+    "融光種ボロスメイル",
+    "融光種ボロスアーム",
+    "融光種ボロスコイル",
+    "融光種ボロスグリーヴ"
+   ],
+   "sourceUrl": "https://game8.jp/mhoutlanders/838976",
+   "sourceUrls": {
+    "game8": "https://game8.jp/mhoutlanders/838976",
+    "gamewith": "https://gamewith.jp/mhoutlanders/584552"
+   },
+   "piecesGameWith": 2
+  },
+  {
+   "name": "インゴットの耐爆",
+   "category": "生存",
+   "series": [
+    "インゴット"
+   ],
+   "seriesAliases": [],
+   "pieces": 2,
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "爆破耐性",
+     "lv": 1,
+     "effect": "爆破までの猶予時間を延長し、爆破ダメージを軽減する。",
+     "effectSource": "gamewith",
+     "skillLevelEffect": "爆破までの猶予時間を延長し、爆破ダメージを軽減する。",
+     "skillDescription": "爆破やられに耐性を得る。"
+    }
+   ],
+   "gear": [
+    "インゴットヘルム",
+    "インゴットメイル",
+    "インゴットアーム",
+    "インゴットコイル",
+    "インゴットグリーヴ"
+   ],
+   "sourceUrl": "https://game8.jp/mhoutlanders/838977",
+   "sourceUrls": {
+    "game8": "https://game8.jp/mhoutlanders/838977",
+    "gamewith": "https://gamewith.jp/mhoutlanders/584551"
+   },
+   "piecesGameWith": 2
+  },
+  {
+   "name": "泥魚竜の癒流",
+   "category": "生存",
+   "series": [
+    "融光種ジュラ"
+   ],
+   "seriesAliases": [],
+   "pieces": 2,
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "水耐性強化",
+     "lv": 1,
+     "effect": "水耐性+6。",
+     "effectSource": "gamewith",
+     "skillLevelEffect": "水耐性+6。",
+     "skillDescription": "水耐性が強化される。"
+    }
+   ],
+   "gear": [
+    "融光種ジュラヘルム",
+    "融光種ジュラメイル",
+    "融光種ジュラアーム",
+    "融光種ジュラコイル",
+    "融光種ジュラグリーヴ"
+   ],
+   "sourceUrl": "https://game8.jp/mhoutlanders/838978",
+   "sourceUrls": {
+    "game8": "https://game8.jp/mhoutlanders/838978",
+    "gamewith": "https://gamewith.jp/mhoutlanders/584550"
+   },
+   "piecesGameWith": 2
+  },
+  {
+   "name": "雌火竜の強躯",
+   "category": "生存",
+   "series": [
+    "レイア"
+   ],
+   "seriesAliases": [],
+   "pieces": 2,
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "体力強化",
+     "lv": 1,
+     "effect": "体力+10。",
+     "effectSource": "gamewith",
+     "skillLevelEffect": "体力+10。",
+     "skillDescription": "冒険者の体力が上がる。"
+    }
+   ],
+   "gear": [
+    "レイアヘルム",
+    "レイアメイル",
+    "レイアアーム",
+    "レイアコイル",
+    "レイアグリーヴ"
+   ],
+   "sourceUrl": "https://game8.jp/mhoutlanders/838979",
+   "sourceUrls": {
+    "game8": "https://game8.jp/mhoutlanders/838979",
+    "gamewith": "https://gamewith.jp/mhoutlanders/584549"
+   },
+   "piecesGameWith": 2
+  },
+  {
+   "name": "角竜の踏み締め",
+   "category": "生存",
+   "series": [
+    "ディアブロ"
+   ],
+   "seriesAliases": [],
+   "pieces": 2,
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "振動耐性",
+     "lv": 1,
+     "effect": "振動【小】を無効化する。",
+     "effectSource": "gamewith",
+     "skillLevelEffect": "振動【小】を無効化する。",
+     "skillDescription": "地面振動に耐性を得る。"
+    }
+   ],
+   "gear": [
+    "ディアブロスヘルム",
+    "ディアブロメイル",
+    "ディアブロアーム",
+    "ディアブロコイル",
+    "ディアブログリーヴ"
+   ],
+   "sourceUrl": "https://game8.jp/mhoutlanders/838981",
+   "sourceUrls": {
+    "game8": "https://game8.jp/mhoutlanders/838981",
+    "gamewith": "https://gamewith.jp/mhoutlanders/584547"
+   },
+   "piecesGameWith": 2,
+   "gearGameWith": [
+    "ディアブロメイル",
+    "ディアブログリーヴ"
+   ]
+  },
+  {
+   "name": "骨鎚竜の鉄壁",
+   "category": "生存",
+   "series": [
+    "バルキン"
+   ],
+   "seriesAliases": [],
+   "pieces": 2,
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "防御力DOWN耐性",
+     "lv": 1,
+     "effect": "防御力DOWN状態の継続時間-50%。",
+     "effectSource": "gamewith",
+     "skillLevelEffect": "防御力DOWN状態の継続時間-50%。",
+     "skillDescription": "防御力DOWNに耐性を得る。"
+    }
+   ],
+   "gear": [
+    "バルキンヘルム",
+    "バルキンメイル",
+    "バルキンアーム",
+    "バルキンコイル",
+    "バルキングリーヴ"
+   ],
+   "sourceUrl": "https://game8.jp/mhoutlanders/838984",
+   "sourceUrls": {
+    "game8": "https://game8.jp/mhoutlanders/838984",
+    "gamewith": "https://gamewith.jp/mhoutlanders/584544"
+   },
+   "piecesGameWith": 2,
+   "gearGameWith": [
+    "バルキンヘルム",
+    "バルキンメイル",
+    "バルキンアーム",
+    "バルキンコイル"
+   ]
+  },
+  {
+   "name": "惨爪竜の靭性",
+   "category": "生存",
+   "series": [
+    "ガロン"
+   ],
+   "seriesAliases": [],
+   "pieces": 2,
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "裂傷耐性",
+     "lv": 1,
+     "effect": "裂傷状態によるダメージを軽減する。",
+     "effectSource": "gamewith",
+     "skillLevelEffect": "裂傷状態によるダメージを軽減する。",
+     "skillDescription": "裂傷状態に耐性を得る。"
+    }
+   ],
+   "gear": [
+    "ガロンヘルム",
+    "ガロンメイル",
+    "ガロンアーム",
+    "ガロンコイル",
+    "ガロングリーヴ"
+   ],
+   "sourceUrl": "https://game8.jp/mhoutlanders/838985",
+   "sourceUrls": {
+    "game8": "https://game8.jp/mhoutlanders/838985",
+    "gamewith": "https://gamewith.jp/mhoutlanders/584543"
+   },
+   "piecesGameWith": 2,
+   "gearGameWith": [
+    "ガロンメイル"
+   ]
+  },
+  {
+   "name": "浮空竜の気迫",
+   "category": "生存",
+   "series": [
+    "ウルムー"
+   ],
+   "seriesAliases": [],
+   "pieces": 2,
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "体力回復",
+     "lv": 1,
+     "effect": "灰色ゲージの自動回復速度が2倍になる。",
+     "effectSource": "game8-skill-level",
+     "skillLevelEffect": "灰色ゲージの自動回復速度が2倍になる。",
+     "skillDescription": "ダメージを受けたとき、体力ゲージのグレーの部分の回復速度が上がる。"
+    }
+   ],
+   "gear": [
+    "ウルムーヘルム",
+    "ウルムーメイル",
+    "ウルムーアーム",
+    "ウルムーコイル",
+    "ウルムーグリーヴ"
+   ],
+   "sourceUrl": "https://game8.jp/mhoutlanders/838987",
+   "sourceUrls": {
+    "game8": "https://game8.jp/mhoutlanders/838987",
+    "gamewith": null
+   }
+  },
+  {
+   "name": "風漂竜の舞",
+   "category": "生存",
+   "series": [
+    "ギエナ"
+   ],
+   "seriesAliases": [],
+   "pieces": 2,
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "氷耐性強化",
+     "lv": 1,
+     "effect": "氷耐性+6。",
+     "effectSource": "game8-skill-level",
+     "skillLevelEffect": "氷耐性+6。",
+     "skillDescription": "氷耐性が強化される。"
+    }
+   ],
+   "gear": [
+    "ギエナヘルム",
+    "ギエナメイル",
+    "ギエナアーム",
+    "ギエナコイル",
+    "ギエナグリーヴ"
+   ],
+   "sourceUrl": "https://game8.jp/mhoutlanders/838988",
+   "sourceUrls": {
+    "game8": "https://game8.jp/mhoutlanders/838988",
+    "gamewith": null
+   }
+  },
+  {
+   "name": "浮空竜の気流",
+   "category": "生存",
+   "series": [
+    "融光種ウルムー"
+   ],
+   "seriesAliases": [],
+   "pieces": 2,
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "高圧ガード",
+     "lv": 1,
+     "effect": "スキル発動時、防御力+20。",
+     "effectSource": "game8-skill-level",
+     "skillLevelEffect": "スキル発動時、防御力+20。",
+     "skillDescription": "融光種モンスターが狂暴状態のとき、冒険者の防御が増加する。"
+    }
+   ],
+   "gear": [
+    "融光種ウルムーヘルム",
+    "融光種ウルムーメイル",
+    "融光種ウルムーアーム",
+    "融光種ウルムーコイル",
+    "融光種ウルムーグリーヴ"
+   ],
+   "sourceUrl": "https://game8.jp/mhoutlanders/838990",
+   "sourceUrls": {
+    "game8": "https://game8.jp/mhoutlanders/838990",
+    "gamewith": null
+   }
+  },
+  {
+   "name": "クルルヤックの閃撃",
+   "category": "生存",
+   "series": [
+    "クルル"
+   ],
+   "seriesAliases": [],
+   "pieces": 2,
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "本気",
+     "lv": 1,
+     "effect": "攻撃が弾かれなくなる。",
+     "effectSource": "gamewith",
+     "skillLevelEffect": "攻撃が弾かれなくなる。",
+     "skillDescription": "攻撃が弾かれなくなる。"
+    }
+   ],
+   "gear": [
+    "クルルヘルム",
+    "クルルメイル",
+    "クルルアーム",
+    "クルルコイル",
+    "クルルグリーヴ"
+   ],
+   "sourceUrl": "https://game8.jp/mhoutlanders/838992",
+   "sourceUrls": {
+    "game8": "https://game8.jp/mhoutlanders/838992",
+    "gamewith": "https://gamewith.jp/mhoutlanders/584572"
+   },
+   "piecesGameWith": 2
+  },
+  {
+   "name": "ドスジャグラスの抵抗",
+   "category": "生存",
+   "series": [
+    "ジャグラス"
+   ],
+   "seriesAliases": [],
+   "pieces": 2,
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "気絶耐性",
+     "lv": 1,
+     "effect": "気絶状態の継続時間-60%。",
+     "effectSource": "gamewith",
+     "skillLevelEffect": "気絶状態の継続時間-60%。",
+     "skillDescription": "気絶状態の継続時間を短縮する。"
+    }
+   ],
+   "gear": [
+    "ジャグラスヘルム",
+    "ジャグラスメイル",
+    "ジャグラスアーム",
+    "ジャグラスコイル",
+    "ジャグラスグリーヴ"
+   ],
+   "sourceUrl": "https://game8.jp/mhoutlanders/838993",
+   "sourceUrls": {
+    "game8": "https://game8.jp/mhoutlanders/838993",
+    "gamewith": "https://gamewith.jp/mhoutlanders/584573"
+   },
+   "piecesGameWith": 2
+  },
+  {
+   "name": "一角の神秘",
+   "category": "その他",
+   "series": [
+    "オウビート"
+   ],
+   "seriesAliases": [],
+   "pieces": 2,
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "地質専門家",
+     "lv": 1,
+     "effect": "骨採集ポイントの採集回数1回増加。",
+     "effectSource": "gamewith",
+     "skillLevelEffect": "骨採集ポイントの採集回数1回増加。",
+     "skillDescription": "採集ポイントの採集回数が増える。"
+    }
+   ],
+   "gear": [
+    "オウビートテスタ",
+    "オウビートペット",
+    "オウビートマーノ",
+    "オウビートアンカ",
+    "オウビートガンバ"
+   ],
+   "sourceUrl": "https://game8.jp/mhoutlanders/838971",
+   "sourceUrls": {
+    "game8": "https://game8.jp/mhoutlanders/838971",
+    "gamewith": "https://gamewith.jp/mhoutlanders/584556"
+   },
+   "piecesGameWith": 2
+  },
+  {
+   "name": "荒野マスタリー",
+   "category": "その他",
+   "series": [
+    "冒険者"
+   ],
+   "seriesAliases": [],
+   "pieces": 2,
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "標本の達人",
+     "lv": 1,
+     "effect": "攻撃で昆虫型の小型モンスターを討伐する時、残骸が残る確率が少し上がる。",
+     "effectSource": "gamewith",
+     "skillLevelEffect": "遺骸が残る確率が上がる。",
+     "skillDescription": "攻撃で昆虫型の小型モンスターを討伐しても、剥ぎ取れる状態で残りやすい。"
+    }
+   ],
+   "gear": [
+    "冒険者ヘルム",
+    "冒険者メイル",
+    "冒険者アーム",
+    "冒険者コイル",
+    "冒険者グリーヴ"
+   ],
+   "sourceUrl": "https://game8.jp/mhoutlanders/838962",
+   "sourceUrls": {
+    "game8": "https://game8.jp/mhoutlanders/838962",
+    "gamewith": "https://gamewith.jp/mhoutlanders/584564"
+   },
+   "piecesGameWith": 2
+  }
+ ]
 }

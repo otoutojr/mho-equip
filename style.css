@@ -99,6 +99,7 @@ main { max-width: 720px; margin: 0 auto; padding: 0 12px; }
   border-radius: 8px; padding: 10px 12px; font-size: 13px; flex: 1 1 200px;
 }
 .ghost:active { background: #3a3224; }
+.capNote { font-size: 13px; color: var(--gold); margin: 2px 0 10px; }
 .ghost.small { padding: 7px 10px; font-size: 12px; flex: 1 1 140px; }
 .boardTools { margin: 0 0 10px; }
 
@@ -135,6 +136,7 @@ main { max-width: 720px; margin: 0 auto; padding: 0 12px; }
 
 /* result */
 .result { border-color: var(--gold-deep); }
+.targetTabs { margin: 4px 0 10px; }
 .resultHead { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
 .score { text-align: right; }
 .score #scoreValue { font-family: var(--display); font-size: 28px; font-weight: 700; color: var(--gold); letter-spacing: .02em; }

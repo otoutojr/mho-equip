@@ -1,5 +1,5 @@
 /* 装備おすすめ service worker: ネットワーク優先、オフライン時はキャッシュ */
-const VERSION = '2026.11.05-1';
+const VERSION = '2026.11.05-2';
 const CACHE = 'mho-equip-' + VERSION;
 const SHELL = ['./', 'index.html', 'style.css', 'app.js', 'solver.js', 'manifest.webmanifest',
   'data/armor.json', 'data/skills.json', 'data/monsters.json', 'data/characters.json',

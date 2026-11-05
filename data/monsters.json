@@ -1,66 +1,616 @@
 {
+ "updated": "2026-11-05",
  "maps": [
   {
    "name": "巨木の原野",
-   "unlockRank": 1
+   "unlockRank": 1,
+   "note": "開始マップ。1章でアオイと素材採集に向かう最初のフィールド（Game8 1章攻略 step 8「アオイと巨木の原野で素材を集める」）。冒険ランク条件の記載なし。",
+   "sourceUrl": "https://game8.jp/mhoutlanders/787270"
   },
   {
    "name": "熱砂の平原",
-   "unlockRank": 10
+   "unlockRank": 10,
+   "note": "Gamerch攻略チャート 2章 step13「熱砂の平原へ向かう ※フィールド「熱砂の平原」が解放」。Game8 2章 step12「熱砂の平原へ向かう（巨木の原野経由）」。1章クリア直後（2章冒頭）に到達。2章開始条件は百錬の証「駆け出し冒険者Ⅰ」（GameWith）。冒険ランク条件の明記なし（2章後半に冒険ランク17の進行ゲートあり）。",
+   "sourceUrl": "https://gamerch.com/mho/1027279"
   },
   {
    "name": "朽ち果ての淵",
-   "unlockRank": 30
+   "unlockRank": 30,
+   "note": "Game8見出し「冒険ランク30以降のストーリー5章で解放」、本文「ストーリー5章「風砂の果てまで」でディアブロスを狩猟した後に解放され行けるようになります。」",
+   "sourceUrl": "https://game8.jp/mhoutlanders/839922"
+  },
+  {
+   "name": "瑰麗岩礁",
+   "unlockRank": 34,
+   "note": "Game8「ストーリー6章「風砂の果てまで」で解放され行けるようになります。」（章タイトルは5章のものが誤記されているが6章＝緋色の黄昏）。「冒険ランクを34まで上げる必要があります。」Game8 5章攻略も「冒険ランク34へ上げると5章がクリアとなり、6章へ進みます」。6章 step2「ムービーを何個か見ると新たなマップに上陸します」、step6「天気が瑰麗岩礁でのみ発生する「胞子風」になります」。",
+   "sourceUrl": "https://game8.jp/mhoutlanders/840134"
   }
  ],
  "monsters": [
   {
-   "name": "リオレイア",
+   "name": "ドスジャグラス",
    "variant": "normal",
    "maps": [
     "巨木の原野"
    ],
+   "element": "無",
+   "weak": [
+    "火",
+    "雷",
+    "氷"
+   ],
+   "armorSeries": [
+    "ジャグラス"
+   ],
+   "unlockRank": 1,
+   "chapter": "1",
+   "note": "1章 step13-15 でドスジャグラスと戦闘・討伐（最初の大型）。Game8ページに解放条件の記載なし。巣穴の狩猟 難易度Ⅰ〜。",
+   "sourceUrl": "https://game8.jp/mhoutlanders/784033"
+  },
+  {
+   "name": "クルルヤック",
+   "variant": "normal",
+   "maps": [
+    "巨木の原野",
+    "熱砂の平原"
+   ],
+   "element": "無",
+   "weak": [
+    "水"
+   ],
+   "armorSeries": [
+    "クルル"
+   ],
+   "unlockRank": 1,
+   "chapter": "1",
+   "note": "1章 step32「クルルヤック battle at the anomaly site」。Game8ページに解放条件の記載なし。",
+   "sourceUrl": "https://game8.jp/mhoutlanders/784076"
+  },
+  {
+   "name": "プケプケ",
+   "variant": "normal",
+   "maps": [
+    "巨木の原野"
+   ],
+   "element": "毒",
+   "weak": [
+    "雷",
+    "火",
+    "氷"
+   ],
+   "armorSeries": [
+    "プケプケ"
+   ],
+   "unlockRank": 1,
+   "chapter": "1",
+   "note": "1章 step51「融石群生地でプケプケと戦闘」。Game8ページに解放条件の記載なし。",
+   "sourceUrl": "https://game8.jp/mhoutlanders/784119"
+  },
+  {
+   "name": "ドスギルオス",
+   "variant": "normal",
+   "maps": [
+    "巨木の原野",
+    "朽ち果ての淵"
+   ],
+   "element": "麻痺",
+   "weak": [
+    "水",
+    "火",
+    "氷"
+   ],
+   "armorSeries": [
+    "ギルオス"
+   ],
+   "unlockRank": 1,
+   "chapter": "1",
+   "note": "1章 step65「融石洞窟でドスギルオスと戦闘」。Game8ページに解放条件の記載なし。",
+   "sourceUrl": "https://game8.jp/mhoutlanders/784143"
+  },
+  {
+   "name": "ボルボロス",
+   "variant": "normal",
+   "maps": [
+    "熱砂の平原"
+   ],
+   "element": "水",
+   "weak": [
+    "火",
+    "氷"
+   ],
+   "armorSeries": [
+    "ボロス"
+   ],
+   "unlockRank": 10,
+   "chapter": "2",
+   "note": "2章 step32「ボルボロスと戦闘」（冒険ランク17ゲートより前）。生態レベル2への限界突破課題の討伐対象でもある。Game8ページに解放条件の記載なし。",
+   "sourceUrl": "https://game8.jp/mhoutlanders/784170"
+  },
+  {
+   "name": "ジュラトドス",
+   "variant": "normal",
+   "maps": [
+    "熱砂の平原"
+   ],
+   "element": "水",
+   "weak": [
+    "雷"
+   ],
+   "armorSeries": [
+    "ジュラ"
+   ],
+   "unlockRank": 10,
+   "chapter": "2",
+   "note": "2章 step17「ジュラトドスと戦闘（水源の滝付近）」＝熱砂の平原で最初に戦う大型。Game8ページに解放条件の記載なし。",
+   "sourceUrl": "https://game8.jp/mhoutlanders/784169"
+  },
+  {
+   "name": "アンジャナフ",
+   "variant": "normal",
+   "maps": [
+    "熱砂の平原"
+   ],
    "element": "火",
+   "weak": [
+    "水",
+    "雷",
+    "氷"
+   ],
+   "armorSeries": [
+    "ジャナフ"
+   ],
+   "unlockRank": 17,
+   "chapter": "2",
+   "note": "2章 step42「冒険ランクを17にする」→ step45「アンジャナフと戦闘（焦げ跡のある目的地）」。「2章では、冒険ランクを17に上げないとストーリーを進行できなくなります。」（Gamerchは同箇所を冒険ランク16と記載）。rank=17はストーリー順序に基づく下限であり、フィールド出現自体のランク条件は記載なし。1章 step14 では巨木の原野でドスジャグラスとの縄張り争いに登場。生態レベル2→3の限界突破課題の討伐対象（3章）。",
+   "sourceUrl": "https://game8.jp/mhoutlanders/784234"
+  },
+  {
+   "name": "リオレイア",
+   "variant": "normal",
+   "maps": [
+    "巨木の原野",
+    "熱砂の平原"
+   ],
+   "element": "火",
+   "weak": [
+    "龍",
+    "雷"
+   ],
    "armorSeries": [
     "レイア"
    ],
-   "unlockRank": 20
+   "unlockRank": 25,
+   "chapter": "4",
+   "note": "1章冒頭にイベント戦闘で登場（狩猟ではない）。狩猟対象としては GameWith/Gamerch の章別狩猟モンスター表で4章（融光種クルルヤック, 融光種ボルボロス, 融光種ジュラトドス, リオレイア, リオレウス）。Game8の4章攻略は冒険ランク27の手順以降が「準備中」のため正確な手順は未確認。Gamerch 4章は「冒険ランクを30に上げる」を含む。rankLowerBound=22 は3章の冒険ランク22ゲート。",
+   "sourceUrl": "https://game8.jp/mhoutlanders/784727"
+  },
+  {
+   "name": "トビカガチ",
+   "variant": "normal",
+   "maps": [
+    "巨木の原野"
+   ],
+   "element": "雷",
+   "weak": [
+    "火",
+    "水",
+    "氷"
+   ],
+   "armorSeries": [
+    "カガチ"
+   ],
+   "unlockRank": 22,
+   "chapter": "3",
+   "note": "3章 step14「冒険ランクを22に上げる」→ step18「トビカガチと戦闘」（手がかりエリア、雲煙の森ミニキャンプから）。（Gamerchは3章のゲートを冒険ランク21と記載）。rank=22はストーリー順序に基づく。",
+   "sourceUrl": "https://game8.jp/mhoutlanders/784721"
+  },
+  {
+   "name": "リオレウス",
+   "variant": "normal",
+   "maps": [
+    "巨木の原野",
+    "熱砂の平原"
+   ],
+   "element": "火",
+   "weak": [
+    "龍",
+    "雷"
+   ],
+   "armorSeries": [
+    "レウス"
+   ],
+   "unlockRank": 25,
+   "chapter": "4",
+   "note": "GameWith/Gamerch の章別狩猟モンスター表で4章。Game8 2章ページの出現モンスター一覧に「リオレウス」と書かれているが本文手順はリオレイア/融光種リオレイア（Game8側の表記揺れ）。Game8 4章攻略は冒険ランク27以降が準備中。",
+   "sourceUrl": "https://game8.jp/mhoutlanders/784737"
+  },
+  {
+   "name": "オドガロン",
+   "variant": "normal",
+   "maps": [
+    "朽ち果ての淵"
+   ],
+   "element": "無",
+   "weak": [
+    "氷",
+    "雷"
+   ],
+   "armorSeries": [
+    "ガロン"
+   ],
+   "unlockRank": 32,
+   "chapter": "5",
+   "note": "5章 step19「冒険ランクを32に上げましょう」→ step21「オドガロン（マップを進むと遭遇）」。大型一覧では出現場所「巣穴で狩猟」、個別ページは出現マップ「朽ち果ての淵」。",
+   "sourceUrl": "https://game8.jp/mhoutlanders/785155"
+  },
+  {
+   "name": "ツィツィヤック",
+   "variant": "normal",
+   "maps": [
+    "瑰麗岩礁"
+   ],
+   "element": "無",
+   "weak": [
+    "雷",
+    "氷"
+   ],
+   "armorSeries": [
+    "ツィツィ"
+   ],
+   "unlockRank": 34,
+   "chapter": "6",
+   "note": "6章 step3「高台へ向かいツィツィヤックと戦闘」（step2 で新マップに上陸直後）。6章突入には冒険ランク34が必要（5章 step23）。maps=瑰麗岩礁は6章攻略の文脈からの推定（Game8の個別ページは「巣穴の狩猟で出現」のみ、gamewith.ai の生息地は泥の沼地）。",
+   "sourceUrl": "https://game8.jp/mhoutlanders/785034"
   },
   {
    "name": "パオウルムー",
    "variant": "normal",
    "maps": [
-    "朽ち果ての淵"
+    "瑰麗岩礁"
    ],
    "element": "無",
+   "weak": [
+    "火",
+    "雷"
+   ],
    "armorSeries": [
     "ウルムー"
    ],
-   "unlockRank": 35
-  },
-  {
-   "name": "融光種パオウルムー",
-   "variant": "yuko",
-   "maps": [
-    "朽ち果ての淵"
-   ],
-   "element": "無",
-   "armorSeries": [
-    "融光種ウルムー"
-   ],
-   "unlockRank": 40
+   "unlockRank": 34,
+   "chapter": "6",
+   "note": "6章 step7「パオウルムーと戦闘」（冒険ランク36の手順より前）。Game8個別ページ: 出現マップ「巣穴の狩猟で出現」、武器は「武器はありません。」。maps=瑰麗岩礁は6章攻略の文脈からの推定。gamewith.ai 生息地: 泥の沼地/雲煙の森。",
+   "sourceUrl": "https://game8.jp/mhoutlanders/785065"
   },
   {
    "name": "レイギエナ",
    "variant": "normal",
    "maps": [
-    "朽ち果ての淵"
+    "瑰麗岩礁"
    ],
    "element": "氷",
+   "weak": [
+    "雷",
+    "火"
+   ],
    "armorSeries": [
     "ギエナ"
    ],
-   "unlockRank": 38
+   "unlockRank": 36,
+   "chapter": "6",
+   "note": "6章 step11「冒険ランクを36に上げる」→ step13「隕石の落下地点でレイギエナと戦闘」。「レイギエナ討伐後、新コンテンツ「融光種討伐」が解放されます。」Game8個別ページ: 出現マップ「巣穴の狩猟で出現」。maps=瑰麗岩礁は推定。",
+   "sourceUrl": "https://game8.jp/mhoutlanders/785080"
+  },
+  {
+   "name": "ディアブロス",
+   "variant": "normal",
+   "maps": [
+    "熱砂の平原",
+    "朽ち果ての淵"
+   ],
+   "element": "無",
+   "weak": [
+    "氷",
+    "水",
+    "龍"
+   ],
+   "armorSeries": [
+    "ディアブロ"
+   ],
+   "unlockRank": 30,
+   "chapter": "5",
+   "note": "5章 step3 で最初に戦う大型。朽ち果ての淵ページ「冒険ランク30以降のストーリー5章で解放」「5章でディアブロスを狩猟した後に解放」。5章 step1 は「レベルが30になったら」（プレイヤーレベル表記）。Gamerch 4章末「冒険ランクを30に上げる」。",
+   "sourceUrl": "https://game8.jp/mhoutlanders/785148"
+  },
+  {
+   "name": "ラドバルキン",
+   "variant": "normal",
+   "maps": [
+    "朽ち果ての淵"
+   ],
+   "element": "無",
+   "weak": [
+    "龍",
+    "火",
+    "水",
+    "雷",
+    "氷"
+   ],
+   "armorSeries": [
+    "バルキン"
+   ],
+   "unlockRank": 30,
+   "chapter": "5",
+   "note": "5章 step10「ラドバルキン（一定の場所）」。ディアブロス・融光種ドスギルオスの後、冒険ランク32の手順より前。Game8個別ページ: 出現マップ「朽ち果ての淵」。大型一覧では「巣穴で狩猟」。",
+   "sourceUrl": "https://game8.jp/mhoutlanders/785150"
+  },
+  {
+   "name": "リオレイア亜種",
+   "variant": "亜種",
+   "maps": [
+    "巨木の原野"
+   ],
+   "element": "火",
+   "weak": [
+    "龍",
+    "雷"
+   ],
+   "armorSeries": [
+    "リオハート"
+   ],
+   "unlockRank": 34,
+   "chapter": "6",
+   "note": "GameWith/Gamerch の章別狩猟モンスター表で6章（ツィツィヤック, パオウルムー, レイギエナ, リオレイア亜種, ルガ・エアルダ）。Game8 6章攻略は「冒険ランクを38に上げる」の次が「準備中」でリオレイア亜種は未掲載。Gamerch 6章の手順に冒険ランク36/38/40。rankLowerBound=38 は未確認の推定（6章後半）。Game8個別ページ: 出現マップ 巨木の原野（雲煙の森）。",
+   "sourceUrl": "https://game8.jp/mhoutlanders/785161"
+  },
+  {
+   "name": "ルガ・エアルダ",
+   "variant": "normal",
+   "maps": [
+    "瑰麗岩礁"
+   ],
+   "element": "火",
+   "weak": [
+    "火",
+    "氷",
+    "龍"
+   ],
+   "armorSeries": [
+    "エアルダ"
+   ],
+   "unlockRank": 34,
+   "chapter": "6",
+   "note": "新古龍。Game8 大型一覧: 出現場所「巣穴で狩猟」（個別ページへのリンクなし）。GameWith/Gamerch 章別表で6章の最後（ルガ・エアルダ）。Game8 6章攻略は冒険ランク38以降が準備中のため未掲載。Gamerch 6章に「冒険ランクを40に上げる」。防具: エアルダシリーズ（レア9、狩魂玉Ⅳ×2＋光稜龍素材＋天光蘊融石）。Game8 頭防具一覧では頭防具名が「光稜龍の聖誓」、gamewith.ai では「エアルダの誓約」。",
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586566"
+  },
+  {
+   "name": "融光種リオレイア",
+   "variant": "yuko",
+   "maps": [
+    "巨木の原野",
+    "熱砂の平原",
+    "朽ち果ての淵"
+   ],
+   "element": "火",
+   "weak": [
+    "雷"
+   ],
+   "armorSeries": [
+    "融光種レイア"
+   ],
+   "unlockRank": 17,
+   "chapter": "2",
+   "note": "2章 step50「？？？（リオレイア）と戦闘」→ step52「融光種リオレイアを剥ぎ取る」＝2章ボス、ストーリー最初の融光種。冒険ランク17ゲート（step42）の後。GameWith 2章表でも「？？？」＝融光種リオレイア。Gamerch: 推奨戦力2,272。",
+   "sourceUrl": "https://game8.jp/mhoutlanders/784283"
+  },
+  {
+   "name": "融光種ドスジャグラス",
+   "variant": "yuko",
+   "maps": [
+    "巨木の原野"
+   ],
+   "element": "無",
+   "weak": [
+    "火"
+   ],
+   "armorSeries": [
+    "融光種ジャグラス"
+   ],
+   "unlockRank": 20,
+   "chapter": "3",
+   "note": "3章 step2「村に融光種ドスジャグラスが現れ戦闘が始まります」→ step6「巣穴の狩猟で討伐」。3章開始条件は百錬の証「頼れる先輩Ⅰ」（GameWith）。3章開始時の冒険ランク条件記載なし（2章の17ゲート後）。生態レベル3→4の限界突破課題の討伐対象（4章）。GameWith: 出現ランク ★4/★5。",
+   "sourceUrl": "https://game8.jp/mhoutlanders/784386"
+  },
+  {
+   "name": "融光種プケプケ",
+   "variant": "yuko",
+   "maps": [
+    "巨木の原野"
+   ],
+   "element": "毒",
+   "weak": [
+    "雷"
+   ],
+   "armorSeries": [
+    "融光種プケプケ"
+   ],
+   "unlockRank": 20,
+   "chapter": "3",
+   "note": "3章 step8「雲煙の森の目的地で融光種プケプケと戦闘」（冒険ランク22の手順より前）。",
+   "sourceUrl": "https://game8.jp/mhoutlanders/784387"
+  },
+  {
+   "name": "融光種アンジャナフ",
+   "variant": "yuko",
+   "maps": [
+    "巨木の原野",
+    "熱砂の平原",
+    "朽ち果ての淵"
+   ],
+   "element": "火",
+   "weak": [
+    "水"
+   ],
+   "armorSeries": [
+    "融光種ジャナフ"
+   ],
+   "unlockRank": 22,
+   "chapter": "3",
+   "note": "3章 step14「冒険ランクを22に上げる」→ step22「融光種アンジャナフと戦闘」（音の発生源）。融光種討伐 2026/11/16〜11/22 の対象。",
+   "sourceUrl": "https://game8.jp/mhoutlanders/784445"
+  },
+  {
+   "name": "融光種クルルヤック",
+   "variant": "yuko",
+   "maps": [
+    "熱砂の平原"
+   ],
+   "element": "火",
+   "weak": [
+    "水"
+   ],
+   "armorSeries": [
+    "融光種クルル"
+   ],
+   "unlockRank": 25,
+   "chapter": "4",
+   "note": "4章 step3「熱砂の平原のミニキャンプで融光種クルルヤック」＝4章最初の大型。4章開始条件は百錬の証「頼れる先輩Ⅲ」（GameWith）。融光種討伐 2026/11/2〜11/9 の対象（弱点: 水、狙う部位: 前脚）。",
+   "sourceUrl": "https://game8.jp/mhoutlanders/784446"
+  },
+  {
+   "name": "融光種ボルボロス",
+   "variant": "yuko",
+   "maps": [
+    "熱砂の平原"
+   ],
+   "element": "水",
+   "weak": [
+    "火"
+   ],
+   "armorSeries": [
+    "融光種ボロス"
+   ],
+   "unlockRank": 25,
+   "chapter": "4",
+   "note": "4章 step8「大砂海への道中の目的地で融光種ボルボロス」（冒険ランク27の手順より前）。",
+   "sourceUrl": "https://game8.jp/mhoutlanders/784702"
+  },
+  {
+   "name": "融光種ジュラトドス",
+   "variant": "yuko",
+   "maps": [
+    "熱砂の平原"
+   ],
+   "element": "水",
+   "weak": [
+    "氷"
+   ],
+   "armorSeries": [
+    "融光種ジュラ"
+   ],
+   "unlockRank": 25,
+   "chapter": "4",
+   "note": "GameWith/Gamerch の章別表で4章。Game8 4章攻略は冒険ランク27の手順以降が準備中のため手順位置は未確認（27以降の可能性あり）。弱点は通常種（雷）と異なり氷。",
+   "sourceUrl": "https://game8.jp/mhoutlanders/784715"
+  },
+  {
+   "name": "融光種パオウルムー",
+   "variant": "yuko",
+   "maps": [
+    "瑰麗岩礁"
+   ],
+   "element": "無",
+   "weak": [
+    "火"
+   ],
+   "armorSeries": [
+    "融光種ウルムー"
+   ],
+   "unlockRank": 34,
+   "chapter": null,
+   "note": "Game8個別ページ: 出現マップ「巣穴の狩猟で出現」、解放条件の記載なし、「武器はありません。」。Game8 巣穴の狩猟ページの難易度Ⅲ一覧には未掲載。融光種討伐（6章レイギエナ討伐後に解放）の 2026/11/9〜11/15 対象。gamewith.ai 生息地: 泥の沼地/雲煙の森、★11〜★14、素材はⅣ以上。防具は融光種ウルムーシリーズ（レア9、狩魂玉Ⅳ×2）。rankLowerBound=36 は融光種討伐解放（6章レイギエナ＝冒険ランク36手順後）に基づく推定。",
+   "sourceUrl": "https://game8.jp/mhoutlanders/785248"
+  },
+  {
+   "name": "融光種ドスギルオス",
+   "variant": "yuko",
+   "maps": [
+    "朽ち果ての淵"
+   ],
+   "element": "麻痺",
+   "weak": [
+    "龍"
+   ],
+   "armorSeries": [
+    "融光種ギルオス"
+   ],
+   "unlockRank": 30,
+   "chapter": "5",
+   "note": "5章 step6「融光種ドスギルオス（指定された場所、頭を狙う）」＝ディアブロスの次。冒険ランク32の手順より前。弱点は通常種（水）と異なり龍。防具レア7（狩魂玉Ⅲ）。",
+   "sourceUrl": "https://game8.jp/mhoutlanders/811084"
+  },
+  {
+   "name": "融光種トビカガチ",
+   "variant": "yuko",
+   "maps": [
+    "朽ち果ての淵"
+   ],
+   "element": "雷",
+   "weak": [
+    "水"
+   ],
+   "armorSeries": [
+    "融光種カガチ"
+   ],
+   "unlockRank": 30,
+   "chapter": "5",
+   "note": "5章 step17「融光種トビカガチ（指定された場所で調査）」。冒険ランク32の手順（step19）より前。防具レア7（狩魂玉Ⅲ）。",
+   "sourceUrl": "https://game8.jp/mhoutlanders/811085"
   }
- ]
+ ],
+ "rankCap": [
+  [
+   16,
+   3
+  ],
+  [
+   18,
+   4
+  ],
+  [
+   21,
+   5
+  ],
+  [
+   26,
+   6
+  ],
+  [
+   31,
+   7
+  ],
+  [
+   34,
+   8
+  ],
+  [
+   41,
+   9
+  ],
+  [
+   44,
+   10
+  ],
+  [
+   47,
+   11
+  ]
+ ],
+ "orbCap": {
+  "1": 4,
+  "2": 6,
+  "3": 8,
+  "4": 10,
+  "5": 12,
+  "6": 12
+ }
 }

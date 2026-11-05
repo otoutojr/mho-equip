@@ -46,16 +46,6 @@
         </div>
       </label>
       <label class="field">
-        <span>強化できる上限レア</span>
-        <div class="stepper">
-          <button type="button" data-step="-1" data-for="rarityCap" aria-label="上限レアを下げる">−</button>
-          <input id="rarityCap" type="number" inputmode="numeric" min="1" max="12" value="7">
-          <button type="button" data-step="1" data-for="rarityCap" aria-label="上限レアを上げる">＋</button>
-        </div>
-      </label>
-    </div>
-    <div class="row">
-      <label class="field">
         <span>狩魂玉の最高ランク</span>
         <div class="stepper">
           <button type="button" data-step="-1" aria-label="狩魂玉ランクを下げる">−</button>
@@ -63,15 +53,8 @@
           <button type="button" data-step="1" aria-label="狩魂玉ランクを上げる">＋</button>
         </div>
       </label>
-      <label class="field">
-        <span>冒険団Lv</span>
-        <div class="stepper">
-          <button type="button" data-step="-1" aria-label="冒険団Lvを下げる">−</button>
-          <input id="guildLv" type="number" inputmode="numeric" min="0" max="30" value="0">
-          <button type="button" data-step="1" aria-label="冒険団Lvを上げる">＋</button>
-        </div>
-      </label>
     </div>
+    <p class="capNote" id="capNote"></p>
     <div class="row">
       <button type="button" class="ghost" id="autoFromRank">ランクから討伐済みを自動設定</button>
     </div>
@@ -91,6 +74,10 @@
     <div class="resultHead">
       <h2 id="resultTitle">最強セット</h2>
       <div class="score"><span id="scoreValue">―</span><span class="scoreLabel">火力スキル合計（目安）</span></div>
+    </div>
+    <div class="tabs targetTabs" id="targetTabs" role="tablist" aria-label="想定する相手">
+      <button type="button" class="tab" role="tab" data-target="normal">通常モンスター向け</button>
+      <button type="button" class="tab" role="tab" data-target="yuko">融光種向け</button>
     </div>
     <p class="hint" id="resultHint"></p>
     <ol class="rack" id="rack"></ol>
