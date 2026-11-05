@@ -1,6 +1,6 @@
 /* 装備おすすめ ― UI */
 'use strict';
-const APP_VERSION = '2026.11.06-2';
+const APP_VERSION = '2026.11.06-3';
 const STORE_KEY = 'mho-equip:v1';
 const PART_JP = { head: '頭', body: '胴', arm: '腕', waist: '腰', leg: '脚' };
 const ROMAN = { 1: 'Ⅰ', 2: 'Ⅱ', 3: 'Ⅲ', 4: 'Ⅳ', 5: 'Ⅴ', 6: 'Ⅵ' };
@@ -23,7 +23,7 @@ let reqId = 0;
 let currentMap = null;
 
 function loadState() {
-  const def = { charId: null, rank: 1, guildLv: 0, orbTier: 3, heroElement: '火', target: 'normal', defeated: {}, map: null };
+  const def = { charId: null, rank: 1, guildLv: 0, orbTier: 3, heroElement: '火', target: 'normal', tune: {}, defeated: {}, map: null };
   try { return Object.assign(def, JSON.parse(localStorage.getItem(STORE_KEY) || '{}')); } catch { return def; }
 }
 function saveState() { try { localStorage.setItem(STORE_KEY, JSON.stringify(state)); } catch {} }
@@ -127,12 +127,60 @@ function renderElementRow(c) {
   }
 }
 // 主人公は属性を選べるので、重みの「{属性}」を選択中の属性に置き換える
+/* ---------- ダメージモデル（ブラウザ側で再計算。発動率の調整を反映） ---------- */
+const UPTIME_KINDS = new Set(['dmg', 'crit', 'proc']);
+function tuneOf(c) { if (!state.tune) state.tune = {}; return state.tune[c.id] || {}; }
+function skillDef(name) { return DATA.skills.skills.find(s => s.name === name.replace('{属性}', '火')); }
+function uptimeOf(c, name) { const t = tuneOf(c); const sp = c.modelSkills[name]; return t[name] != null ? t[name] : (sp.uptime ?? 1); }
+function elementShareOf(c) { const t = tuneOf(c); return t.__elementShare != null ? t.__elementShare : (c.model.elementShare ?? 0.35); }
+function modelWeights(c, yuko) {
+  const m = c.model, e = elementShareOf(c);
+  const wE = m.weaponElement || 600, critPer = m.critPerPct ?? 0.004, critRate = m.critRate ?? 0.3;
+  const out = {};
+  for (const [name, sp] of Object.entries(c.modelSkills)) {
+    const sk = skillDef(name); const levels = (sk && sk.levels) || [];
+    const up = uptimeOf(c, name), share = sp.share ?? 1;
+    let arr = levels.map((l) => {
+      const pct = l.pct || 0, p = ((yuko ? (l.pctYuko ?? pct) : pct) || 0) / 100;
+      let mult;
+      switch (sp.kind) {
+        case 'element': mult = (1 + p * e) * (1 + p * (sp.core || 0)); break;
+        case 'crit': mult = 1 + pct * up * critPer; break;
+        case 'elemCrit': mult = 1 + p * critRate * e; break;
+        case 'proc': mult = 1 + (sp.chance ?? 0.75) * p * up; break;
+        case 'flat': mult = 1 + p * (sp.value ?? 0.3); break;
+        default: mult = 1 + p * up * share;
+      }
+      if (l.flat) mult *= 1 + (l.flat / wE) * e;
+      return 100 * Math.log(mult);
+    });
+    if (!arr.length) arr = Array.from({ length: (sk && sk.maxLv) || 1 }, (_, i) => (sp.fallback ?? 0.5) * (i + 1));
+    out[name] = arr;
+  }
+  return out;
+}
 function effectiveWeights(c) {
-  const w = (state.target === 'yuko' && c.weightsYuko) ? c.weightsYuko : (c.weights || {});
+  const yuko = state.target === 'yuko';
+  let w = Object.assign({}, (yuko && c.weightsYuko) ? c.weightsYuko : (c.weights || {}));
+  if (c.modelSkills && c.model) Object.assign(w, modelWeights(c, yuko));
   if (!c.elementSelectable) return w;
   const out = {};
   for (const [k, v] of Object.entries(w)) out[k.replace('{属性}', heroElement())] = v;
   return out;
+}
+let tuneTimer = null;
+function setTune(c, key, val) {
+  if (!state.tune) state.tune = {};
+  const t = Object.assign({}, state.tune[c.id] || {});
+  t[key] = val; state.tune[c.id] = t; saveState();
+  clearTimeout(tuneTimer); tuneTimer = setTimeout(solve, 250);
+}
+function slider(label, value, onInput, isDefault) {
+  const out = el('span', { class: 'tuneVal', text: `${Math.round(value * 100)}%` });
+  const input = el('input', { type: 'range', min: '0', max: '100', step: '5', value: String(Math.round(value * 100)), 'aria-label': label });
+  input.addEventListener('input', () => { out.textContent = `${input.value}%`; wrap.classList.remove('isDefault'); onInput(+input.value / 100); });
+  const wrap = el('label', { class: 'tune' + (isDefault ? ' isDefault' : '') }, el('span', { class: 'tuneLbl', text: label }), input, out);
+  return wrap;
 }
 
 function renderPriorities() {
@@ -141,6 +189,14 @@ function renderPriorities() {
   $('#prioHint').textContent = c.scoreMode === 'log'
     ? `スキルごとに「効果値 × 発動している割合 × 乗るダメージの割合」で評価し、掛け合わせて倍率にしています。${c.model && c.model.elementShare ? `属性ダメージの割合は約${Math.round(c.model.elementShare * 100)}%で想定。` : ''}`
     : '攻略サイトの推奨をもとにした優先度です。';
+  const tunable = c.modelSkills && c.model;
+  const tb = $('#tuneBar'); tb.innerHTML = '';
+  if (tunable) {
+    const t = tuneOf(c);
+    tb.append(el('p', { class: 'hint', text: 'スライダーで「実際どれくらい発動しているか」を自分の立ち回りに合わせて変えられます。変えるとすぐ再計算します（この端末に保存）。' }));
+    tb.append(slider('属性ダメージの割合', elementShareOf(c), (v) => setTune(c, '__elementShare', v), t.__elementShare == null));
+    if (Object.keys(t).length) tb.append(el('button', { type: 'button', class: 'ghost small', text: '発動率を初期値に戻す', onclick: () => { delete state.tune[c.id]; saveState(); renderPriorities(); solve(); } }));
+  }
   for (const p of (c.priorities || [])) {
     const li = el('li', { class: 'prio' },
       el('span', { class: 'tier', text: p.tier }),
@@ -148,6 +204,10 @@ function renderPriorities() {
       el('span', { class: 'reason', text: p.reason || '' }));
     if (p.assumption) li.append(el('span', { class: 'assume', text: '想定：' + p.assumption }));
     if (p.sources && p.sources.length) li.append(el('span', { class: 'src', text: '出典：' + p.sources.join('・') }));
+    const sp = tunable && c.modelSkills[p.skill];
+    if (sp && UPTIME_KINDS.has(sp.kind)) {
+      li.append(slider('発動率', uptimeOf(c, p.skill), (v) => setTune(c, p.skill, v), tuneOf(c)[p.skill] == null));
+    }
     list.append(li);
   }
   if (!c.priorities || !c.priorities.length) list.append(el('li', { class: 'empty', text: 'このキャラの優先スキルはまだ未登録です。' }));

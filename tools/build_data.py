@@ -131,7 +131,8 @@ def build_skills(armor_series, raw):
             for lv in s.get('levels', []) or []:
                 eff = lv.get('effect')
                 v, vy = parse_value(eff)
-                levels.append({'lv': lv['lv'], 'effect': eff, 'value': v, 'valueYuko': vy})
+                pct, pct_y, flat = parse_level(eff)
+                levels.append({'lv': lv['lv'], 'effect': eff, 'value': v, 'valueYuko': vy, 'pct': pct, 'pctYuko': pct_y, 'flat': flat})
             skills[name] = {'name': name, 'category': s.get('category'), 'weapon': s.get('weapon'), 'maxLv': s.get('maxLv') or (len(levels) or None), 'levels': levels}
     # 防具側に出てくるのに無いスキルは仮登録（maxLv は見かけの最大）
     seen_max = collections.Counter()
@@ -339,6 +340,7 @@ def build_characters(raw, skills, overrides):
         entry = {'id': c['id'], 'name': c.get('name', c['id']), 'rarity': c.get('rarity'), 'type': None if hero else c.get('type'), 'weapon': c.get('weapon'), 'element': None if hero else c.get('element'),
                  'elementSelectable': hero, 'mechanics': c.get('mechanics') or [], 'priorities': prios, 'weights': weights, 'weightsYuko': weights_y, 'note': c.get('note') or '',
                  'scoreMode': 'log' if c.get('model') else 'sum', 'model': ({k: v for k, v in c['model'].items() if k != 'skills'} if c.get('model') else None),
+                 'modelSkills': ({k: {kk: vv for kk, vv in v.items() if kk in ('kind', 'uptime', 'share', 'chance', 'core', 'value', 'fallback')} for k, v in c['model']['skills'].items()} if c.get('model') else None),
                  'sources': c.get('sources') or []}
         ov = ((overrides or {}).get('characters') or {}).get(c['id'])
         if ov and ov.get('weights'):

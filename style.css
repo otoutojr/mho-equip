@@ -251,3 +251,11 @@ main { max-width: 720px; margin: 0 auto; padding: 0 10px; }
   body { font-size: 14px; }
   .board { grid-template-columns: repeat(auto-fill, minmax(128px, 1fr)); }
 }
+
+/* uptime tuning */
+.tuneBar { margin: 0 0 8px; display: grid; gap: 6px; }
+.tuneBar .ghost.small { justify-self: start; flex: none; }
+.tune { display: grid; grid-template-columns: auto 1fr 42px; align-items: center; gap: 8px; margin-top: 6px; font-size: 11px; color: var(--muted); }
+.tune input[type=range] { width: 100%; accent-color: var(--gold); height: 22px; }
+.tune .tuneVal { text-align: right; font-family: var(--display); font-weight: 700; font-size: 13px; color: var(--gold); }
+.tune.isDefault .tuneVal { color: var(--muted); }

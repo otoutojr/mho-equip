@@ -11,43 +11,64 @@
      "lv": 1,
      "effect": "スキル発動時、ダメージ+4%。30秒持続。",
      "value": 4.0,
-     "valueYuko": 4.0
+     "valueYuko": 4.0,
+     "pct": 4.0,
+     "pctYuko": 4.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "スキル発動時、ダメージ+8%。30秒持続。",
      "value": 8.0,
-     "valueYuko": 8.0
+     "valueYuko": 8.0,
+     "pct": 8.0,
+     "pctYuko": 8.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "スキル発動時、ダメージ+12%。30秒持続。",
      "value": 12.0,
-     "valueYuko": 12.0
+     "valueYuko": 12.0,
+     "pct": 12.0,
+     "pctYuko": 12.0,
+     "flat": 0
     },
     {
      "lv": 4,
      "effect": "スキル発動時、ダメージ+16%。30秒持続。",
      "value": 16.0,
-     "valueYuko": 16.0
+     "valueYuko": 16.0,
+     "pct": 16.0,
+     "pctYuko": 16.0,
+     "flat": 0
     },
     {
      "lv": 5,
      "effect": "スキル発動時、ダメージ+20%。30秒持続。",
      "value": 20.0,
-     "valueYuko": 20.0
+     "valueYuko": 20.0,
+     "pct": 20.0,
+     "pctYuko": 20.0,
+     "flat": 0
     },
     {
      "lv": 6,
      "effect": "スキル発動時、ダメージ+24%。30秒持続。",
      "value": 24.0,
-     "valueYuko": 24.0
+     "valueYuko": 24.0,
+     "pct": 24.0,
+     "pctYuko": 24.0,
+     "flat": 0
     },
     {
      "lv": 7,
      "effect": "属性攻撃力+50。スキル発動時、ダメージ+31%。30秒持続。",
      "value": 37.0,
-     "valueYuko": 37.0
+     "valueYuko": 37.0,
+     "pct": 31.0,
+     "pctYuko": 31.0,
+     "flat": 50
     }
    ]
   },
@@ -61,43 +82,64 @@
      "lv": 1,
      "effect": "火属性ダメージ+3%。融光種モンスター相手の場合は+8%になる。",
      "value": 3.0,
-     "valueYuko": 8.0
+     "valueYuko": 8.0,
+     "pct": 3.0,
+     "pctYuko": 8.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "火属性ダメージ+6%。融光種モンスター相手の場合は+15%になる。",
      "value": 6.0,
-     "valueYuko": 15.0
+     "valueYuko": 15.0,
+     "pct": 6.0,
+     "pctYuko": 15.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "火属性ダメージ+9%。融光種モンスター相手の場合は+23%になる。",
      "value": 9.0,
-     "valueYuko": 23.0
+     "valueYuko": 23.0,
+     "pct": 9.0,
+     "pctYuko": 23.0,
+     "flat": 0
     },
     {
      "lv": 4,
      "effect": "火属性ダメージ+12%。融光種モンスター相手の場合は+30%になる。",
      "value": 12.0,
-     "valueYuko": 30.0
+     "valueYuko": 30.0,
+     "pct": 12.0,
+     "pctYuko": 30.0,
+     "flat": 0
     },
     {
      "lv": 5,
      "effect": "火属性ダメージ+16%。融光種モンスター相手の場合は+40%になる。",
      "value": 16.0,
-     "valueYuko": 40.0
+     "valueYuko": 40.0,
+     "pct": 16.0,
+     "pctYuko": 40.0,
+     "flat": 0
     },
     {
      "lv": 6,
      "effect": "火属性ダメージ+20%。融光種モンスター相手の場合は+50%になる。",
      "value": 20.0,
-     "valueYuko": 50.0
+     "valueYuko": 50.0,
+     "pct": 20.0,
+     "pctYuko": 50.0,
+     "flat": 0
     },
     {
      "lv": 7,
      "effect": "火属性攻撃力+50、火属性ダメージ+28%。融光種モンスターの狩猟時は+70%になる。",
      "value": 34.0,
-     "valueYuko": 76.0
+     "valueYuko": 76.0,
+     "pct": 28.0,
+     "pctYuko": 70.0,
+     "flat": 50
     }
    ]
   },
@@ -111,43 +153,64 @@
      "lv": 1,
      "effect": "スキル発動時、ダメージ+4%。20秒持続。",
      "value": 4.0,
-     "valueYuko": 4.0
+     "valueYuko": 4.0,
+     "pct": 4.0,
+     "pctYuko": 4.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "スキル発動時、ダメージ+8%。20秒持続。",
      "value": 8.0,
-     "valueYuko": 8.0
+     "valueYuko": 8.0,
+     "pct": 8.0,
+     "pctYuko": 8.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "スキル発動時、ダメージ+12%。20秒持続。",
      "value": 12.0,
-     "valueYuko": 12.0
+     "valueYuko": 12.0,
+     "pct": 12.0,
+     "pctYuko": 12.0,
+     "flat": 0
     },
     {
      "lv": 4,
      "effect": "スキル発動時、ダメージ+16%。20秒持続。",
      "value": 16.0,
-     "valueYuko": 16.0
+     "valueYuko": 16.0,
+     "pct": 16.0,
+     "pctYuko": 16.0,
+     "flat": 0
     },
     {
      "lv": 5,
      "effect": "スキル発動時、ダメージ+20%。20秒持続。",
      "value": 20.0,
-     "valueYuko": 20.0
+     "valueYuko": 20.0,
+     "pct": 20.0,
+     "pctYuko": 20.0,
+     "flat": 0
     },
     {
      "lv": 6,
      "effect": "スキル発動時、ダメージ+24%。20秒持続。",
      "value": 24.0,
-     "valueYuko": 24.0
+     "valueYuko": 24.0,
+     "pct": 24.0,
+     "pctYuko": 24.0,
+     "flat": 0
     },
     {
      "lv": 7,
      "effect": "属性攻撃力+50。スキル発動時、ダメージ+31%。20秒持続。",
      "value": 37.0,
-     "valueYuko": 37.0
+     "valueYuko": 37.0,
+     "pct": 31.0,
+     "pctYuko": 31.0,
+     "flat": 50
     }
    ]
   },
@@ -161,25 +224,37 @@
      "lv": 1,
      "effect": "スキル発動時、ダメージ+3%。30秒持続。",
      "value": 3.0,
-     "valueYuko": 3.0
+     "valueYuko": 3.0,
+     "pct": 3.0,
+     "pctYuko": 3.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "スキル発動時、ダメージ+7%。30秒持続。",
      "value": 7.0,
-     "valueYuko": 7.0
+     "valueYuko": 7.0,
+     "pct": 7.0,
+     "pctYuko": 7.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "スキル発動時、ダメージ+11%。30秒持続。",
      "value": 11.0,
-     "valueYuko": 11.0
+     "valueYuko": 11.0,
+     "pct": 11.0,
+     "pctYuko": 11.0,
+     "flat": 0
     },
     {
      "lv": 4,
      "effect": "属性攻撃力+25。スキル発動時、ダメージ+16%。30秒持続。",
      "value": 19.0,
-     "valueYuko": 19.0
+     "valueYuko": 19.0,
+     "pct": 16.0,
+     "pctYuko": 16.0,
+     "flat": 25
     }
    ]
   },
@@ -193,19 +268,28 @@
      "lv": 1,
      "effect": "弱点部位を攻撃した時、会心率+4%。",
      "value": 4.0,
-     "valueYuko": 4.0
+     "valueYuko": 4.0,
+     "pct": 4.0,
+     "pctYuko": 4.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "弱点部位を攻撃した時、会心率+8%。",
      "value": 8.0,
-     "valueYuko": 8.0
+     "valueYuko": 8.0,
+     "pct": 8.0,
+     "pctYuko": 8.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "弱点部位を攻撃した時、会心率+14%。",
      "value": 14.0,
-     "valueYuko": 14.0
+     "valueYuko": 14.0,
+     "pct": 14.0,
+     "pctYuko": 14.0,
+     "flat": 0
     }
    ]
   },
@@ -219,31 +303,46 @@
      "lv": 1,
      "effect": "スキル発動時、会心率+3%。",
      "value": 3.0,
-     "valueYuko": 3.0
+     "valueYuko": 3.0,
+     "pct": 3.0,
+     "pctYuko": 3.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "スキル発動時、会心率+5%。",
      "value": 5.0,
-     "valueYuko": 5.0
+     "valueYuko": 5.0,
+     "pct": 5.0,
+     "pctYuko": 5.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "スキル発動時、会心率+7%。",
      "value": 7.0,
-     "valueYuko": 7.0
+     "valueYuko": 7.0,
+     "pct": 7.0,
+     "pctYuko": 7.0,
+     "flat": 0
     },
     {
      "lv": 4,
      "effect": "スキル発動時、会心率+11%。",
      "value": 11.0,
-     "valueYuko": 11.0
+     "valueYuko": 11.0,
+     "pct": 11.0,
+     "pctYuko": 11.0,
+     "flat": 0
     },
     {
      "lv": 5,
      "effect": "スキル発動時、会心率+15%。",
      "value": 15.0,
-     "valueYuko": 15.0
+     "valueYuko": 15.0,
+     "pct": 15.0,
+     "pctYuko": 15.0,
+     "flat": 0
     }
    ]
   },
@@ -257,31 +356,46 @@
      "lv": 1,
      "effect": "狩猟開始から90秒後、または累計で100のダメージを受けると、会心率+3%、180秒持続。",
      "value": 3.0,
-     "valueYuko": 3.0
+     "valueYuko": 3.0,
+     "pct": 3.0,
+     "pctYuko": 3.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "狩猟開始から90秒後、または累計で100のダメージを受けると、会心率+6%、180秒持続。",
      "value": 6.0,
-     "valueYuko": 6.0
+     "valueYuko": 6.0,
+     "pct": 6.0,
+     "pctYuko": 6.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "狩猟開始から90秒後、または累計で100のダメージを受けると、会心率+9%、180秒持続。",
      "value": 9.0,
-     "valueYuko": 9.0
+     "valueYuko": 9.0,
+     "pct": 9.0,
+     "pctYuko": 9.0,
+     "flat": 0
     },
     {
      "lv": 4,
      "effect": "狩猟開始から90秒後、または累計で100のダメージを受けると、会心率+12%、180秒持続。",
      "value": 12.0,
-     "valueYuko": 12.0
+     "valueYuko": 12.0,
+     "pct": 12.0,
+     "pctYuko": 12.0,
+     "flat": 0
     },
     {
      "lv": 5,
      "effect": "狩猟開始から90秒後、または累計で100のダメージを受けると、会心率+15%、180秒持続。",
      "value": 15.0,
-     "valueYuko": 15.0
+     "valueYuko": 15.0,
+     "pct": 15.0,
+     "pctYuko": 15.0,
+     "flat": 0
     }
    ]
   },
@@ -295,31 +409,46 @@
      "lv": 1,
      "effect": "スキル発動時の与ダメージ+3%。",
      "value": 3.0,
-     "valueYuko": 3.0
+     "valueYuko": 3.0,
+     "pct": 3.0,
+     "pctYuko": 3.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "スキル発動時の与ダメージ+6%。",
      "value": 6.0,
-     "valueYuko": 6.0
+     "valueYuko": 6.0,
+     "pct": 6.0,
+     "pctYuko": 6.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "スキル発動時の与ダメージ+10%。",
      "value": 10.0,
-     "valueYuko": 10.0
+     "valueYuko": 10.0,
+     "pct": 10.0,
+     "pctYuko": 10.0,
+     "flat": 0
     },
     {
      "lv": 4,
      "effect": "スキル発動時の与ダメージ+14%。",
      "value": 14.0,
-     "valueYuko": 14.0
+     "valueYuko": 14.0,
+     "pct": 14.0,
+     "pctYuko": 14.0,
+     "flat": 0
     },
     {
      "lv": 5,
      "effect": "スキル発動時の与ダメージ+19%。",
      "value": 19.0,
-     "valueYuko": 19.0
+     "valueYuko": 19.0,
+     "pct": 19.0,
+     "pctYuko": 19.0,
+     "flat": 0
     }
    ]
   },
@@ -333,19 +462,28 @@
      "lv": 1,
      "effect": "部位に対する蓄積ダメージが1.1倍になる。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "部位に対する蓄積ダメージが1.2倍になる。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "部位に対する蓄積ダメージが1.3倍になる。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     }
    ]
   },
@@ -359,43 +497,64 @@
      "lv": 1,
      "effect": "会心率+2%。",
      "value": 2.0,
-     "valueYuko": 2.0
+     "valueYuko": 2.0,
+     "pct": 2.0,
+     "pctYuko": 2.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "会心率+4%。",
      "value": 4.0,
-     "valueYuko": 4.0
+     "valueYuko": 4.0,
+     "pct": 4.0,
+     "pctYuko": 4.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "会心率+6%。",
      "value": 6.0,
-     "valueYuko": 6.0
+     "valueYuko": 6.0,
+     "pct": 6.0,
+     "pctYuko": 6.0,
+     "flat": 0
     },
     {
      "lv": 4,
      "effect": "会心率+8%。",
      "value": 8.0,
-     "valueYuko": 8.0
+     "valueYuko": 8.0,
+     "pct": 8.0,
+     "pctYuko": 8.0,
+     "flat": 0
     },
     {
      "lv": 5,
      "effect": "会心率+10%。",
      "value": 10.0,
-     "valueYuko": 10.0
+     "valueYuko": 10.0,
+     "pct": 10.0,
+     "pctYuko": 10.0,
+     "flat": 0
     },
     {
      "lv": 6,
      "effect": "会心率+13%。",
      "value": 13.0,
-     "valueYuko": 13.0
+     "valueYuko": 13.0,
+     "pct": 13.0,
+     "pctYuko": 13.0,
+     "flat": 0
     },
     {
      "lv": 7,
      "effect": "会心率+16%。",
      "value": 16.0,
-     "valueYuko": 16.0
+     "valueYuko": 16.0,
+     "pct": 16.0,
+     "pctYuko": 16.0,
+     "flat": 0
     }
    ]
   },
@@ -409,19 +568,28 @@
      "lv": 1,
      "effect": "スキル発動時の与ダメージ+3%。",
      "value": 3.0,
-     "valueYuko": 3.0
+     "valueYuko": 3.0,
+     "pct": 3.0,
+     "pctYuko": 3.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "スキル発動時の与ダメージ+6%。",
      "value": 6.0,
-     "valueYuko": 6.0
+     "valueYuko": 6.0,
+     "pct": 6.0,
+     "pctYuko": 6.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "スキル発動時の与ダメージ+9%。",
      "value": 9.0,
-     "valueYuko": 9.0
+     "valueYuko": 9.0,
+     "pct": 9.0,
+     "pctYuko": 9.0,
+     "flat": 0
     }
    ]
   },
@@ -435,19 +603,28 @@
      "lv": 1,
      "effect": "攻撃で会心が発生した際に、与える属性ダメージ+5%。",
      "value": 5.0,
-     "valueYuko": 5.0
+     "valueYuko": 5.0,
+     "pct": 5.0,
+     "pctYuko": 5.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "攻撃で会心が発生した際に、与える属性ダメージ+10%。",
      "value": 10.0,
-     "valueYuko": 10.0
+     "valueYuko": 10.0,
+     "pct": 10.0,
+     "pctYuko": 10.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "攻撃で会心が発生した際に、与える属性ダメージ+15%。",
      "value": 15.0,
-     "valueYuko": 15.0
+     "valueYuko": 15.0,
+     "pct": 15.0,
+     "pctYuko": 15.0,
+     "flat": 0
     }
    ]
   },
@@ -461,7 +638,10 @@
      "lv": 1,
      "effect": "攻撃が弾かれなくなる。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     }
    ]
   },
@@ -475,31 +655,46 @@
      "lv": 1,
      "effect": "75%の確率でスキルが発動し、4%の追加ダメージを与える。",
      "value": 4.0,
-     "valueYuko": 4.0
+     "valueYuko": 4.0,
+     "pct": 4.0,
+     "pctYuko": 4.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "75%の確率でスキルが発動し、9%の追加ダメージを与える。",
      "value": 9.0,
-     "valueYuko": 9.0
+     "valueYuko": 9.0,
+     "pct": 9.0,
+     "pctYuko": 9.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "75%の確率でスキルが発動し、14%の追加ダメージを与える。",
      "value": 14.0,
-     "valueYuko": 14.0
+     "valueYuko": 14.0,
+     "pct": 14.0,
+     "pctYuko": 14.0,
+     "flat": 0
     },
     {
      "lv": 4,
      "effect": "75%の確率でスキルが発動し、18%の追加ダメージを与える。",
      "value": 18.0,
-     "valueYuko": 18.0
+     "valueYuko": 18.0,
+     "pct": 18.0,
+     "pctYuko": 18.0,
+     "flat": 0
     },
     {
      "lv": 5,
      "effect": "75%の確率でスキルが発動し、25%の追加ダメージを与える。",
      "value": 25.0,
-     "valueYuko": 25.0
+     "valueYuko": 25.0,
+     "pct": 25.0,
+     "pctYuko": 25.0,
+     "flat": 0
     }
    ]
   },
@@ -513,19 +708,28 @@
      "lv": 1,
      "effect": "スキル発動時、ダメージ+4%、15秒持続。",
      "value": 4.0,
-     "valueYuko": 4.0
+     "valueYuko": 4.0,
+     "pct": 4.0,
+     "pctYuko": 4.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "スキル発動時、ダメージ+8%、15秒持続。",
      "value": 8.0,
-     "valueYuko": 8.0
+     "valueYuko": 8.0,
+     "pct": 8.0,
+     "pctYuko": 8.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "スキル発動時、ダメージ+11%、15秒持続。",
      "value": 11.0,
-     "valueYuko": 11.0
+     "valueYuko": 11.0,
+     "pct": 11.0,
+     "pctYuko": 11.0,
+     "flat": 0
     }
    ]
   },
@@ -539,31 +743,46 @@
      "lv": 1,
      "effect": "スキル発動時の与ダメージ+4%。",
      "value": 4.0,
-     "valueYuko": 4.0
+     "valueYuko": 4.0,
+     "pct": 4.0,
+     "pctYuko": 4.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "スキル発動時の与ダメージ+8%。",
      "value": 8.0,
-     "valueYuko": 8.0
+     "valueYuko": 8.0,
+     "pct": 8.0,
+     "pctYuko": 8.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "スキル発動時の与ダメージ+13%。",
      "value": 13.0,
-     "valueYuko": 13.0
+     "valueYuko": 13.0,
+     "pct": 13.0,
+     "pctYuko": 13.0,
+     "flat": 0
     },
     {
      "lv": 4,
      "effect": "スキル発動時の与ダメージ+18%。",
      "value": 18.0,
-     "valueYuko": 18.0
+     "valueYuko": 18.0,
+     "pct": 18.0,
+     "pctYuko": 18.0,
+     "flat": 0
     },
     {
      "lv": 5,
      "effect": "スキル発動時の与ダメージ+25%。",
      "value": 25.0,
-     "valueYuko": 25.0
+     "valueYuko": 25.0,
+     "pct": 25.0,
+     "pctYuko": 25.0,
+     "flat": 0
     }
    ]
   },
@@ -577,19 +796,28 @@
      "lv": 1,
      "effect": "スキル発動時の与ダメージ+4%。120秒持続。",
      "value": 4.0,
-     "valueYuko": 4.0
+     "valueYuko": 4.0,
+     "pct": 4.0,
+     "pctYuko": 4.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "スキル発動時の与ダメージ+8%。120秒持続。",
      "value": 8.0,
-     "valueYuko": 8.0
+     "valueYuko": 8.0,
+     "pct": 8.0,
+     "pctYuko": 8.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "スキル発動時の与ダメージ+12%。120秒持続。",
      "value": 12.0,
-     "valueYuko": 12.0
+     "valueYuko": 12.0,
+     "pct": 12.0,
+     "pctYuko": 12.0,
+     "flat": 0
     }
    ]
   },
@@ -603,19 +831,28 @@
      "lv": 1,
      "effect": "咆哮【小】の影響を軽減する。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "咆哮【小】を無効化し、咆哮【大】の影響を軽減する。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "咆哮【小】【大】を無効化する。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     }
    ]
   },
@@ -629,7 +866,10 @@
      "lv": 1,
      "effect": "剥ぎ取り中に攻撃を受けても、のけぞらなくなる。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     }
    ]
   },
@@ -643,19 +883,28 @@
      "lv": 1,
      "effect": "風圧【小】を軽減する。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "風圧【小】を無効化し、風圧【大】を軽減する。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "風圧【小】【大】を無効化する。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     }
    ]
   },
@@ -669,19 +918,28 @@
      "lv": 1,
      "effect": "肉を食べたり、回復薬や解毒薬などのアイテムを使う速度が少し上昇する。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "肉を食べたり、回復薬や解毒薬などのアイテムを使う速度が上昇する。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "肉を食べたり、回復薬や解毒薬などのアイテムを使う速度が大きく上昇する。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     }
    ]
   },
@@ -695,19 +953,28 @@
      "lv": 1,
      "effect": "体力回復時、回復量が1.1倍になる。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "体力回復時、回復量が1.2倍になる。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "体力回復時、回復量が1.3倍になる。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     }
    ]
   },
@@ -721,31 +988,46 @@
      "lv": 1,
      "effect": "ダメージを受けた際、25%の確率でそのダメージ-15%。",
      "value": 15.0,
-     "valueYuko": 15.0
+     "valueYuko": 15.0,
+     "pct": 15.0,
+     "pctYuko": 15.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "ダメージを受けた際、25%の確率でそのダメージ-30%。",
      "value": 30.0,
-     "valueYuko": 30.0
+     "valueYuko": 30.0,
+     "pct": 30.0,
+     "pctYuko": 30.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "ダメージを受けた際、25%の確率でそのダメージ-50%。",
      "value": 50.0,
-     "valueYuko": 50.0
+     "valueYuko": 50.0,
+     "pct": 50.0,
+     "pctYuko": 50.0,
+     "flat": 0
     },
     {
      "lv": 4,
      "effect": "ダメージを受けた際、25%の確率でそのダメージ-60%。",
      "value": 60.0,
-     "valueYuko": 60.0
+     "valueYuko": 60.0,
+     "pct": 60.0,
+     "pctYuko": 60.0,
+     "flat": 0
     },
     {
      "lv": 5,
      "effect": "ダメージを受けた際、40%の確率でそのダメージ-60%。",
      "value": 60.0,
-     "valueYuko": 60.0
+     "valueYuko": 60.0,
+     "pct": 60.0,
+     "pctYuko": 60.0,
+     "flat": 0
     }
    ]
   },
@@ -759,19 +1041,28 @@
      "lv": 1,
      "effect": "気絶状態の継続時間-60%。",
      "value": 60.0,
-     "valueYuko": 60.0
+     "valueYuko": 60.0,
+     "pct": 60.0,
+     "pctYuko": 60.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "気絶状態の継続時間-90%。",
      "value": 90.0,
-     "valueYuko": 90.0
+     "valueYuko": 90.0,
+     "pct": 90.0,
+     "pctYuko": 90.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "気絶状態にならない。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     }
    ]
   },
@@ -785,19 +1076,28 @@
      "lv": 1,
      "effect": "毒状態の継続時間-30%。",
      "value": 30.0,
-     "valueYuko": 30.0
+     "valueYuko": 30.0,
+     "pct": 30.0,
+     "pctYuko": 30.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "毒状態の継続時間-60%。",
      "value": 60.0,
-     "valueYuko": 60.0
+     "valueYuko": 60.0,
+     "pct": 60.0,
+     "pctYuko": 60.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "毒状態にならない。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     }
    ]
   },
@@ -811,19 +1111,28 @@
      "lv": 1,
      "effect": "麻痺状態の継続時間-30%。",
      "value": 30.0,
-     "valueYuko": 30.0
+     "valueYuko": 30.0,
+     "pct": 30.0,
+     "pctYuko": 30.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "麻痺状態の継続時間-60%。",
      "value": 60.0,
-     "valueYuko": 60.0
+     "valueYuko": 60.0,
+     "pct": 60.0,
+     "pctYuko": 60.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "麻痺状態にならない。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     }
    ]
   },
@@ -837,19 +1146,28 @@
      "lv": 1,
      "effect": "睡眠状態の継続時間-30%。",
      "value": 30.0,
-     "valueYuko": 30.0
+     "valueYuko": 30.0,
+     "pct": 30.0,
+     "pctYuko": 30.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "睡眠状態の継続時間-60%。",
      "value": 60.0,
-     "valueYuko": 60.0
+     "valueYuko": 60.0,
+     "pct": 60.0,
+     "pctYuko": 60.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "睡眠状態にならない。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     }
    ]
   },
@@ -863,19 +1181,28 @@
      "lv": 1,
      "effect": "振動【小】を無効化する。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "振動【小】を無効化し、振動【大】の影響を軽減する。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "振動【小】【大】を無効化する。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     }
    ]
   },
@@ -889,19 +1216,28 @@
      "lv": 1,
      "effect": "灰色ゲージの自動回復速度が2倍になる。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "灰色ゲージの自動回復速度が3倍になる。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "灰色ゲージの自動回復速度が4倍になる。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     }
    ]
   },
@@ -915,43 +1251,64 @@
      "lv": 1,
      "effect": "スタミナを最大のまま5秒維持すると、ダメージ+4%。",
      "value": 4.0,
-     "valueYuko": 4.0
+     "valueYuko": 4.0,
+     "pct": 4.0,
+     "pctYuko": 4.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "スタミナを最大のまま5秒維持すると、ダメージ+8%。",
      "value": 8.0,
-     "valueYuko": 8.0
+     "valueYuko": 8.0,
+     "pct": 8.0,
+     "pctYuko": 8.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "スタミナを最大のまま5秒維持すると、ダメージ+12%。",
      "value": 12.0,
-     "valueYuko": 12.0
+     "valueYuko": 12.0,
+     "pct": 12.0,
+     "pctYuko": 12.0,
+     "flat": 0
     },
     {
      "lv": 4,
      "effect": "スタミナを最大のまま5秒維持すると、ダメージ+16%。",
      "value": 16.0,
-     "valueYuko": 16.0
+     "valueYuko": 16.0,
+     "pct": 16.0,
+     "pctYuko": 16.0,
+     "flat": 0
     },
     {
      "lv": 5,
      "effect": "スタミナを最大のまま5秒維持すると、ダメージ+20%。",
      "value": 20.0,
-     "valueYuko": 20.0
+     "valueYuko": 20.0,
+     "pct": 20.0,
+     "pctYuko": 20.0,
+     "flat": 0
     },
     {
      "lv": 6,
      "effect": "スタミナを最大のまま5秒維持すると、ダメージ+24%。",
      "value": 24.0,
-     "valueYuko": 24.0
+     "valueYuko": 24.0,
+     "pct": 24.0,
+     "pctYuko": 24.0,
+     "flat": 0
     },
     {
      "lv": 7,
      "effect": "属性攻撃力+50。スタミナを最大のまま5秒維持すると、ダメージ+31%。",
      "value": 37.0,
-     "valueYuko": 37.0
+     "valueYuko": 37.0,
+     "pct": 31.0,
+     "pctYuko": 31.0,
+     "flat": 50
     }
    ]
   },
@@ -965,19 +1322,28 @@
      "lv": 1,
      "effect": "小ダメージ時ののけぞりを無効化する。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "小ダメージ時ののけぞりを無効化し、しりもちをのけぞりに軽減する。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "小ダメージ時ののけぞり、しりもちを無効化する。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     }
    ]
   },
@@ -991,19 +1357,28 @@
      "lv": 1,
      "effect": "体力が50追加で回復する。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "体力が80追加で回復する。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "体力が100追加で回復する。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     }
    ]
   },
@@ -1017,7 +1392,10 @@
      "lv": 1,
      "effect": "スタミナ消費量-25%。",
      "value": 25.0,
-     "valueYuko": 25.0
+     "valueYuko": 25.0,
+     "pct": 25.0,
+     "pctYuko": 25.0,
+     "flat": 0
     }
    ]
   },
@@ -1031,19 +1409,28 @@
      "lv": 1,
      "effect": "体力+10。",
      "value": 10.0,
-     "valueYuko": 10.0
+     "valueYuko": 10.0,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "体力+20。",
      "value": 20.0,
-     "valueYuko": 20.0
+     "valueYuko": 20.0,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "体力+30。",
      "value": 30.0,
-     "valueYuko": 30.0
+     "valueYuko": 30.0,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     }
    ]
   },
@@ -1057,19 +1444,28 @@
      "lv": 1,
      "effect": "火耐性+6。",
      "value": 6.0,
-     "valueYuko": 6.0
+     "valueYuko": 6.0,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "火耐性+12。",
      "value": 12.0,
-     "valueYuko": 12.0
+     "valueYuko": 12.0,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "火耐性+20。",
      "value": 20.0,
-     "valueYuko": 20.0
+     "valueYuko": 20.0,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     }
    ]
   },
@@ -1083,19 +1479,28 @@
      "lv": 1,
      "effect": "水耐性+6。",
      "value": 6.0,
-     "valueYuko": 6.0
+     "valueYuko": 6.0,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "水耐性+12。",
      "value": 12.0,
-     "valueYuko": 12.0
+     "valueYuko": 12.0,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "水耐性+20。",
      "value": 20.0,
-     "valueYuko": 20.0
+     "valueYuko": 20.0,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     }
    ]
   },
@@ -1109,19 +1514,28 @@
      "lv": 1,
      "effect": "氷耐性+6。",
      "value": 6.0,
-     "valueYuko": 6.0
+     "valueYuko": 6.0,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "氷耐性+12。",
      "value": 12.0,
-     "valueYuko": 12.0
+     "valueYuko": 12.0,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "氷耐性+20。",
      "value": 20.0,
-     "valueYuko": 20.0
+     "valueYuko": 20.0,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     }
    ]
   },
@@ -1135,19 +1549,28 @@
      "lv": 1,
      "effect": "雷耐性+6。",
      "value": 6.0,
-     "valueYuko": 6.0
+     "valueYuko": 6.0,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "雷耐性+12。",
      "value": 12.0,
-     "valueYuko": 12.0
+     "valueYuko": 12.0,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "雷耐性+20。",
      "value": 20.0,
-     "valueYuko": 20.0
+     "valueYuko": 20.0,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     }
    ]
   },
@@ -1161,19 +1584,28 @@
      "lv": 1,
      "effect": "龍耐性+6。",
      "value": 6.0,
-     "valueYuko": 6.0
+     "valueYuko": 6.0,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "龍耐性+12。",
      "value": 12.0,
-     "valueYuko": 12.0
+     "valueYuko": 12.0,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "龍耐性+20。",
      "value": 20.0,
-     "valueYuko": 20.0
+     "valueYuko": 20.0,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     }
    ]
   },
@@ -1187,19 +1619,28 @@
      "lv": 1,
      "effect": "爆破までの猶予時間を延長し、爆破ダメージを軽減する。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "爆破までの猶予時間をさらに延長し、爆破ダメージを大きく軽減する。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "爆破やられ状態にならない。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     }
    ]
   },
@@ -1213,43 +1654,64 @@
      "lv": 1,
      "effect": "防御力+5。",
      "value": 5.0,
-     "valueYuko": 5.0
+     "valueYuko": 5.0,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "防御力+10。",
      "value": 10.0,
-     "valueYuko": 10.0
+     "valueYuko": 10.0,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "防御力+15。",
      "value": 15.0,
-     "valueYuko": 15.0
+     "valueYuko": 15.0,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 4,
      "effect": "防御力+20。",
      "value": 20.0,
-     "valueYuko": 20.0
+     "valueYuko": 20.0,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 5,
      "effect": "防御力+25。",
      "value": 25.0,
-     "valueYuko": 25.0
+     "valueYuko": 25.0,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 6,
      "effect": "防御力+30。",
      "value": 30.0,
-     "valueYuko": 30.0
+     "valueYuko": 30.0,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 7,
      "effect": "防御力+35。",
      "value": 35.0,
-     "valueYuko": 35.0
+     "valueYuko": 35.0,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     }
    ]
   },
@@ -1263,7 +1725,10 @@
      "lv": 1,
      "effect": "1回毎にダメージが1.1倍になり、防御力+10。",
      "value": 10.0,
-     "valueYuko": 10.0
+     "valueYuko": 10.0,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     }
    ]
   },
@@ -1277,43 +1742,64 @@
      "lv": 1,
      "effect": "水属性ダメージ+3%。融光種モンスター相手の場合は+8%になる。",
      "value": 3.0,
-     "valueYuko": 8.0
+     "valueYuko": 8.0,
+     "pct": 3.0,
+     "pctYuko": 8.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "水属性ダメージ+6%。融光種モンスター相手の場合は+15%になる。",
      "value": 6.0,
-     "valueYuko": 15.0
+     "valueYuko": 15.0,
+     "pct": 6.0,
+     "pctYuko": 15.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "水属性ダメージ+9%。融光種モンスター相手の場合は+23%になる。",
      "value": 9.0,
-     "valueYuko": 23.0
+     "valueYuko": 23.0,
+     "pct": 9.0,
+     "pctYuko": 23.0,
+     "flat": 0
     },
     {
      "lv": 4,
      "effect": "水属性ダメージ+12%。融光種モンスター相手の場合は+30%になる。",
      "value": 12.0,
-     "valueYuko": 30.0
+     "valueYuko": 30.0,
+     "pct": 12.0,
+     "pctYuko": 30.0,
+     "flat": 0
     },
     {
      "lv": 5,
      "effect": "水属性ダメージ+16%。融光種モンスター相手の場合は+40%になる。",
      "value": 16.0,
-     "valueYuko": 40.0
+     "valueYuko": 40.0,
+     "pct": 16.0,
+     "pctYuko": 40.0,
+     "flat": 0
     },
     {
      "lv": 6,
      "effect": "水属性ダメージ+20%。融光種モンスター相手の場合は+50%になる。",
      "value": 20.0,
-     "valueYuko": 50.0
+     "valueYuko": 50.0,
+     "pct": 20.0,
+     "pctYuko": 50.0,
+     "flat": 0
     },
     {
      "lv": 7,
      "effect": "水属性攻撃力+50、水属性ダメージ+28%。融光種モンスターの狩猟時は+70%になる。",
      "value": 34.0,
-     "valueYuko": 76.0
+     "valueYuko": 76.0,
+     "pct": 28.0,
+     "pctYuko": 70.0,
+     "flat": 50
     }
    ]
   },
@@ -1327,43 +1813,64 @@
      "lv": 1,
      "effect": "氷属性ダメージ+3%。融光種モンスター相手の場合は+8%になる。",
      "value": 3.0,
-     "valueYuko": 8.0
+     "valueYuko": 8.0,
+     "pct": 3.0,
+     "pctYuko": 8.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "氷属性ダメージ+6%。融光種モンスター相手の場合は+15%になる。",
      "value": 6.0,
-     "valueYuko": 15.0
+     "valueYuko": 15.0,
+     "pct": 6.0,
+     "pctYuko": 15.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "氷属性ダメージ+9%。融光種モンスター相手の場合は+23%になる。",
      "value": 9.0,
-     "valueYuko": 23.0
+     "valueYuko": 23.0,
+     "pct": 9.0,
+     "pctYuko": 23.0,
+     "flat": 0
     },
     {
      "lv": 4,
      "effect": "氷属性ダメージ+12%。融光種モンスター相手の場合は+30%になる。",
      "value": 12.0,
-     "valueYuko": 30.0
+     "valueYuko": 30.0,
+     "pct": 12.0,
+     "pctYuko": 30.0,
+     "flat": 0
     },
     {
      "lv": 5,
      "effect": "氷属性ダメージ+16%。融光種モンスター相手の場合は+40%になる。",
      "value": 16.0,
-     "valueYuko": 40.0
+     "valueYuko": 40.0,
+     "pct": 16.0,
+     "pctYuko": 40.0,
+     "flat": 0
     },
     {
      "lv": 6,
      "effect": "氷属性ダメージ+20%。融光種モンスター相手の場合は+50%になる。",
      "value": 20.0,
-     "valueYuko": 50.0
+     "valueYuko": 50.0,
+     "pct": 20.0,
+     "pctYuko": 50.0,
+     "flat": 0
     },
     {
      "lv": 7,
      "effect": "氷属性攻撃力+50、氷属性ダメージ+28%。融光種モンスターの狩猟時は+70%になる。",
      "value": 34.0,
-     "valueYuko": 76.0
+     "valueYuko": 76.0,
+     "pct": 28.0,
+     "pctYuko": 70.0,
+     "flat": 50
     }
    ]
   },
@@ -1377,43 +1884,64 @@
      "lv": 1,
      "effect": "雷属性ダメージ+3%。融光種モンスター相手の場合は+8%になる。",
      "value": 3.0,
-     "valueYuko": 8.0
+     "valueYuko": 8.0,
+     "pct": 3.0,
+     "pctYuko": 8.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "雷属性ダメージ+6%。融光種モンスター相手の場合は+15%になる。",
      "value": 6.0,
-     "valueYuko": 15.0
+     "valueYuko": 15.0,
+     "pct": 6.0,
+     "pctYuko": 15.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "雷属性ダメージ+9%。融光種モンスター相手の場合は+23%になる。",
      "value": 9.0,
-     "valueYuko": 23.0
+     "valueYuko": 23.0,
+     "pct": 9.0,
+     "pctYuko": 23.0,
+     "flat": 0
     },
     {
      "lv": 4,
      "effect": "雷属性ダメージ+12%。融光種モンスター相手の場合は+30%になる。",
      "value": 12.0,
-     "valueYuko": 30.0
+     "valueYuko": 30.0,
+     "pct": 12.0,
+     "pctYuko": 30.0,
+     "flat": 0
     },
     {
      "lv": 5,
      "effect": "雷属性ダメージ+16%。融光種モンスター相手の場合は+40%になる。",
      "value": 16.0,
-     "valueYuko": 40.0
+     "valueYuko": 40.0,
+     "pct": 16.0,
+     "pctYuko": 40.0,
+     "flat": 0
     },
     {
      "lv": 6,
      "effect": "雷属性ダメージ+20%。融光種モンスター相手の場合は+50%になる。",
      "value": 20.0,
-     "valueYuko": 50.0
+     "valueYuko": 50.0,
+     "pct": 20.0,
+     "pctYuko": 50.0,
+     "flat": 0
     },
     {
      "lv": 7,
      "effect": "雷属性攻撃力+50、雷属性ダメージ+28%。融光種モンスターの狩猟時は+70%になる。",
      "value": 34.0,
-     "valueYuko": 76.0
+     "valueYuko": 76.0,
+     "pct": 28.0,
+     "pctYuko": 70.0,
+     "flat": 50
     }
    ]
   },
@@ -1427,43 +1955,64 @@
      "lv": 1,
      "effect": "龍属性ダメージ+3%。融光種モンスター相手の場合は+8%になる。",
      "value": 3.0,
-     "valueYuko": 8.0
+     "valueYuko": 8.0,
+     "pct": 3.0,
+     "pctYuko": 8.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "龍属性ダメージ+6%。融光種モンスター相手の場合は+15%になる。",
      "value": 6.0,
-     "valueYuko": 15.0
+     "valueYuko": 15.0,
+     "pct": 6.0,
+     "pctYuko": 15.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "龍属性ダメージ+9%。融光種モンスター相手の場合は+23%になる。",
      "value": 9.0,
-     "valueYuko": 23.0
+     "valueYuko": 23.0,
+     "pct": 9.0,
+     "pctYuko": 23.0,
+     "flat": 0
     },
     {
      "lv": 4,
      "effect": "龍属性ダメージ+12%。融光種モンスター相手の場合は+30%になる。",
      "value": 12.0,
-     "valueYuko": 30.0
+     "valueYuko": 30.0,
+     "pct": 12.0,
+     "pctYuko": 30.0,
+     "flat": 0
     },
     {
      "lv": 5,
      "effect": "龍属性ダメージ+16%。融光種モンスター相手の場合は+40%になる。",
      "value": 16.0,
-     "valueYuko": 40.0
+     "valueYuko": 40.0,
+     "pct": 16.0,
+     "pctYuko": 40.0,
+     "flat": 0
     },
     {
      "lv": 6,
      "effect": "龍属性ダメージ+20%。融光種モンスター相手の場合は+50%になる。",
      "value": 20.0,
-     "valueYuko": 50.0
+     "valueYuko": 50.0,
+     "pct": 20.0,
+     "pctYuko": 50.0,
+     "flat": 0
     },
     {
      "lv": 7,
      "effect": "龍属性攻撃力+50、龍属性ダメージ+28%。融光種モンスターの狩猟時は+70%になる。",
      "value": 34.0,
-     "valueYuko": 76.0
+     "valueYuko": 76.0,
+     "pct": 28.0,
+     "pctYuko": 70.0,
+     "flat": 50
     }
    ]
   },
@@ -1477,19 +2026,28 @@
      "lv": 1,
      "effect": "効果発動確率が25%になる。",
      "value": 25.0,
-     "valueYuko": 25.0
+     "valueYuko": 25.0,
+     "pct": 25.0,
+     "pctYuko": 25.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "効果発動確率が50%になる。",
      "value": 50.0,
-     "valueYuko": 50.0
+     "valueYuko": 50.0,
+     "pct": 50.0,
+     "pctYuko": 50.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "効果発動確率が75%になる。",
      "value": 75.0,
-     "valueYuko": 75.0
+     "valueYuko": 75.0,
+     "pct": 75.0,
+     "pctYuko": 75.0,
+     "flat": 0
     }
    ]
   },
@@ -1503,19 +2061,28 @@
      "lv": 1,
      "effect": "草系消費アイテムの取得数+1。",
      "value": 1.0,
-     "valueYuko": 1.0
+     "valueYuko": 1.0,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "更に実、種子系消費アイテムの取得数+1。",
      "value": 1.0,
-     "valueYuko": 1.0
+     "valueYuko": 1.0,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "更に虫系消費アイテムの取得数+1。",
      "value": 1.0,
-     "valueYuko": 1.0
+     "valueYuko": 1.0,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     }
    ]
   },
@@ -1529,7 +2096,10 @@
      "lv": 1,
      "effect": "ハチミツ取得数+1。",
      "value": 1.0,
-     "valueYuko": 1.0
+     "valueYuko": 1.0,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     }
    ]
   },
@@ -1543,7 +2113,10 @@
      "lv": 1,
      "effect": "捕獲でもらえる報酬の数が高確率で多くなる。（クエストの途中からは効果が得られません）",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     }
    ]
   },
@@ -1557,31 +2130,46 @@
      "lv": 1,
      "effect": "攻撃の威力をわずかに軽減する。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "攻撃の威力がわずかに減少し、スタミナ消費量-15%。",
      "value": 15.0,
-     "valueYuko": 15.0
+     "valueYuko": 15.0,
+     "pct": 15.0,
+     "pctYuko": 15.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "攻撃の威力が大幅に減少し、スタミナ消費量-15%。",
      "value": 15.0,
-     "valueYuko": 15.0
+     "valueYuko": 15.0,
+     "pct": 15.0,
+     "pctYuko": 15.0,
+     "flat": 0
     },
     {
      "lv": 4,
      "effect": "攻撃の威力が大幅に減少し、スタミナ消費量-30%。",
      "value": 30.0,
-     "valueYuko": 30.0
+     "valueYuko": 30.0,
+     "pct": 30.0,
+     "pctYuko": 30.0,
+     "flat": 0
     },
     {
      "lv": 5,
      "effect": "攻撃の威力が極めて大きく減少し、スタミナ消費量-50%。",
      "value": 50.0,
-     "valueYuko": 50.0
+     "valueYuko": 50.0,
+     "pct": 50.0,
+     "pctYuko": 50.0,
+     "flat": 0
     }
    ]
   },
@@ -1595,19 +2183,28 @@
      "lv": 1,
      "effect": "体力が75に達するまで自動回復が継続する。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "体力が100に達するまで自動回復が継続する。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "体力が125に達するまで自動回復が継続する。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     }
    ]
   },
@@ -1621,43 +2218,64 @@
      "lv": 1,
      "effect": "スキル発動後、ダメージ+4%。30秒持続。",
      "value": 4.0,
-     "valueYuko": 4.0
+     "valueYuko": 4.0,
+     "pct": 4.0,
+     "pctYuko": 4.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "スキル発動後、ダメージ+8%。30秒持続。",
      "value": 8.0,
-     "valueYuko": 8.0
+     "valueYuko": 8.0,
+     "pct": 8.0,
+     "pctYuko": 8.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "スキル発動後、ダメージ+12%。30秒持続。",
      "value": 12.0,
-     "valueYuko": 12.0
+     "valueYuko": 12.0,
+     "pct": 12.0,
+     "pctYuko": 12.0,
+     "flat": 0
     },
     {
      "lv": 4,
      "effect": "スキル発動後、ダメージ+16%。30秒持続。",
      "value": 16.0,
-     "valueYuko": 16.0
+     "valueYuko": 16.0,
+     "pct": 16.0,
+     "pctYuko": 16.0,
+     "flat": 0
     },
     {
      "lv": 5,
      "effect": "スキル発動後、ダメージ+20%。30秒持続。",
      "value": 20.0,
-     "valueYuko": 20.0
+     "valueYuko": 20.0,
+     "pct": 20.0,
+     "pctYuko": 20.0,
+     "flat": 0
     },
     {
      "lv": 6,
      "effect": "スキル発動後、ダメージ+24%。30秒持続。",
      "value": 24.0,
-     "valueYuko": 24.0
+     "valueYuko": 24.0,
+     "pct": 24.0,
+     "pctYuko": 24.0,
+     "flat": 0
     },
     {
      "lv": 7,
      "effect": "属性攻撃力+50。スキル発動後、ダメージ+31%。30秒持続。",
      "value": 37.0,
-     "valueYuko": 37.0
+     "valueYuko": 37.0,
+     "pct": 31.0,
+     "pctYuko": 31.0,
+     "flat": 50
     }
    ]
   },
@@ -1671,19 +2289,28 @@
      "lv": 1,
      "effect": "裂傷状態によるダメージを軽減する。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "裂傷状態によるダメージを大きく軽減する。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "裂傷状態にならない。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     }
    ]
   },
@@ -1697,19 +2324,28 @@
      "lv": 1,
      "effect": "防御力DOWN状態の継続時間-50%。",
      "value": 50.0,
-     "valueYuko": 50.0
+     "valueYuko": 50.0,
+     "pct": 50.0,
+     "pctYuko": 50.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "防御力DOWN状態の継続時間-75%。",
      "value": 75.0,
-     "valueYuko": 75.0
+     "valueYuko": 75.0,
+     "pct": 75.0,
+     "pctYuko": 75.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "防御力DOWN状態にならない。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     }
    ]
   },
@@ -1723,25 +2359,37 @@
      "lv": 1,
      "effect": "スキルダメージ+4%。",
      "value": 4.0,
-     "valueYuko": 4.0
+     "valueYuko": 4.0,
+     "pct": 4.0,
+     "pctYuko": 4.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "スキルダメージ+8%。",
      "value": 8.0,
-     "valueYuko": 8.0
+     "valueYuko": 8.0,
+     "pct": 8.0,
+     "pctYuko": 8.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "スキルダメージ+13%。",
      "value": 13.0,
-     "valueYuko": 13.0
+     "valueYuko": 13.0,
+     "pct": 13.0,
+     "pctYuko": 13.0,
+     "flat": 0
     },
     {
      "lv": 4,
      "effect": "属性攻撃力+25。スキルダメージ+20%。",
      "value": 23.0,
-     "valueYuko": 23.0
+     "valueYuko": 23.0,
+     "pct": 20.0,
+     "pctYuko": 20.0,
+     "flat": 25
     }
    ]
   },
@@ -1755,19 +2403,28 @@
      "lv": 1,
      "effect": "効果時間が1.10倍になる。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "効果時間が1.25倍になる。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "効果時間が1.50倍になる。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     }
    ]
   },
@@ -1781,19 +2438,28 @@
      "lv": 1,
      "effect": "発見されていても狩猟状態になりにくい。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "発見されていても狩猟状態にほとんどならない。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "発見されていても狩猟状態にならない。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     }
    ]
   },
@@ -1807,7 +2473,10 @@
      "lv": 1,
      "effect": "採集時、速度が上昇し、ひるみ無効になる。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     }
    ]
   },
@@ -1821,19 +2490,28 @@
      "lv": 1,
      "effect": "骨採集ポイントの採集回数1回増加。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "更に特産品採集ポイントの採集回数が1回増える。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "更に鉱石採掘ポイントの採集回数+1回",
      "value": 1.0,
-     "valueYuko": 1.0
+     "valueYuko": 1.0,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     }
    ]
   },
@@ -1847,7 +2525,10 @@
      "lv": 1,
      "effect": "剥ぎ取り回数+1回。（クエストの途中から使用した場合は無効）",
      "value": 1.0,
-     "valueYuko": 1.0
+     "valueYuko": 1.0,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     }
    ]
   },
@@ -1861,19 +2542,28 @@
      "lv": 1,
      "effect": "遺骸が残る確率が上がる。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "遺骸が残る確率が上がる。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "かならず遺骸が残るようになる。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     }
    ]
   },
@@ -1887,43 +2577,64 @@
      "lv": 1,
      "effect": "滞空攻撃のダメージ+5%。",
      "value": 5.0,
-     "valueYuko": 5.0
+     "valueYuko": 5.0,
+     "pct": 5.0,
+     "pctYuko": 5.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "滞空攻撃のダメージ+9%。",
      "value": 9.0,
-     "valueYuko": 9.0
+     "valueYuko": 9.0,
+     "pct": 9.0,
+     "pctYuko": 9.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "滞空攻撃のダメージ+14%。",
      "value": 14.0,
-     "valueYuko": 14.0
+     "valueYuko": 14.0,
+     "pct": 14.0,
+     "pctYuko": 14.0,
+     "flat": 0
     },
     {
      "lv": 4,
      "effect": "滞空攻撃のダメージ+19%。",
      "value": 19.0,
-     "valueYuko": 19.0
+     "valueYuko": 19.0,
+     "pct": 19.0,
+     "pctYuko": 19.0,
+     "flat": 0
     },
     {
      "lv": 5,
      "effect": "滞空攻撃のダメージ+24%。",
      "value": 24.0,
-     "valueYuko": 24.0
+     "valueYuko": 24.0,
+     "pct": 24.0,
+     "pctYuko": 24.0,
+     "flat": 0
     },
     {
      "lv": 6,
      "effect": "滞空攻撃のダメージ+29%。",
      "value": 29.0,
-     "valueYuko": 29.0
+     "valueYuko": 29.0,
+     "pct": 29.0,
+     "pctYuko": 29.0,
+     "flat": 0
     },
     {
      "lv": 7,
      "effect": "属性攻撃力+50。滞空攻撃のダメージ+37%。",
      "value": 43.0,
-     "valueYuko": 43.0
+     "valueYuko": 43.0,
+     "pct": 37.0,
+     "pctYuko": 37.0,
+     "flat": 50
     }
    ]
   },
@@ -1937,7 +2648,10 @@
      "lv": 1,
      "effect": "弾・矢が最大威力になる距離を短くする。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     }
    ]
   },
@@ -1951,19 +2665,28 @@
      "lv": 1,
      "effect": "体力が2回復する。8秒間に1回のみ発動可能。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "体力が3回復する。8秒間に1回のみ発動可能。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "体力が4回復する。8秒間に1回のみ発動可能。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     }
    ]
   },
@@ -1977,43 +2700,64 @@
      "lv": 1,
      "effect": "3秒以内に連続で5回攻撃を命中させると、与ダメージ+4%。12秒持続。",
      "value": 4.0,
-     "valueYuko": 4.0
+     "valueYuko": 4.0,
+     "pct": 4.0,
+     "pctYuko": 4.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "3秒以内に連続で5回攻撃を命中させると、与ダメージ+8%。12秒持続。",
      "value": 8.0,
-     "valueYuko": 8.0
+     "valueYuko": 8.0,
+     "pct": 8.0,
+     "pctYuko": 8.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "3秒以内に連続で5回攻撃を命中させると、与ダメージ+12%。12秒持続。",
      "value": 12.0,
-     "valueYuko": 12.0
+     "valueYuko": 12.0,
+     "pct": 12.0,
+     "pctYuko": 12.0,
+     "flat": 0
     },
     {
      "lv": 4,
      "effect": "3秒以内に連続で5回攻撃を命中させると、与ダメージ+16%。12秒持続。",
      "value": 16.0,
-     "valueYuko": 16.0
+     "valueYuko": 16.0,
+     "pct": 16.0,
+     "pctYuko": 16.0,
+     "flat": 0
     },
     {
      "lv": 5,
      "effect": "3秒以内に連続で5回攻撃を命中させると、与ダメージ+20%。12秒持続。",
      "value": 20.0,
-     "valueYuko": 20.0
+     "valueYuko": 20.0,
+     "pct": 20.0,
+     "pctYuko": 20.0,
+     "flat": 0
     },
     {
      "lv": 6,
      "effect": "3秒以内に連続で5回攻撃を命中させると、与ダメージ+24%。12秒持続。",
      "value": 24.0,
-     "valueYuko": 24.0
+     "valueYuko": 24.0,
+     "pct": 24.0,
+     "pctYuko": 24.0,
+     "flat": 0
     },
     {
      "lv": 7,
      "effect": "属性攻撃力+50。3秒以内に連続で5回攻撃を命中させると、与ダメージ+31%。12秒持続。",
      "value": 37.0,
-     "valueYuko": 37.0
+     "valueYuko": 37.0,
+     "pct": 31.0,
+     "pctYuko": 31.0,
+     "flat": 50
     }
    ]
   },
@@ -2027,43 +2771,64 @@
      "lv": 1,
      "effect": "スキル発動時、ダメージ+4%。15秒持続。",
      "value": 4.0,
-     "valueYuko": 4.0
+     "valueYuko": 4.0,
+     "pct": 4.0,
+     "pctYuko": 4.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "スキル発動時、ダメージ+8%。15秒持続。",
      "value": 8.0,
-     "valueYuko": 8.0
+     "valueYuko": 8.0,
+     "pct": 8.0,
+     "pctYuko": 8.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "スキル発動時、ダメージ+12%。15秒持続。",
      "value": 12.0,
-     "valueYuko": 12.0
+     "valueYuko": 12.0,
+     "pct": 12.0,
+     "pctYuko": 12.0,
+     "flat": 0
     },
     {
      "lv": 4,
      "effect": "スキル発動時、ダメージ+16%。15秒持続。",
      "value": 16.0,
-     "valueYuko": 16.0
+     "valueYuko": 16.0,
+     "pct": 16.0,
+     "pctYuko": 16.0,
+     "flat": 0
     },
     {
      "lv": 5,
      "effect": "スキル発動時、ダメージ+20%。15秒持続。",
      "value": 20.0,
-     "valueYuko": 20.0
+     "valueYuko": 20.0,
+     "pct": 20.0,
+     "pctYuko": 20.0,
+     "flat": 0
     },
     {
      "lv": 6,
      "effect": "スキル発動時、ダメージ+24%。15秒持続。",
      "value": 24.0,
-     "valueYuko": 24.0
+     "valueYuko": 24.0,
+     "pct": 24.0,
+     "pctYuko": 24.0,
+     "flat": 0
     },
     {
      "lv": 7,
      "effect": "属性攻撃力+50。スキル発動時、ダメージ+31%。15秒持続。",
      "value": 37.0,
-     "valueYuko": 37.0
+     "valueYuko": 37.0,
+     "pct": 31.0,
+     "pctYuko": 31.0,
+     "flat": 50
     }
    ]
   },
@@ -2077,7 +2842,10 @@
      "lv": 1,
      "effect": "オトモの与ダメージが1.1倍になる。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     }
    ]
   },
@@ -2091,43 +2859,64 @@
      "lv": 1,
      "effect": "スキル発動時、ダメージ+4%。30秒持続。",
      "value": 4.0,
-     "valueYuko": 4.0
+     "valueYuko": 4.0,
+     "pct": 4.0,
+     "pctYuko": 4.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "スキル発動時、ダメージ+8%。30秒持続。",
      "value": 8.0,
-     "valueYuko": 8.0
+     "valueYuko": 8.0,
+     "pct": 8.0,
+     "pctYuko": 8.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "スキル発動時、ダメージ+12%。30秒持続。",
      "value": 12.0,
-     "valueYuko": 12.0
+     "valueYuko": 12.0,
+     "pct": 12.0,
+     "pctYuko": 12.0,
+     "flat": 0
     },
     {
      "lv": 4,
      "effect": "スキル発動時、ダメージ+16%。30秒持続。",
      "value": 16.0,
-     "valueYuko": 16.0
+     "valueYuko": 16.0,
+     "pct": 16.0,
+     "pctYuko": 16.0,
+     "flat": 0
     },
     {
      "lv": 5,
      "effect": "スキル発動時、ダメージ+20%。30秒持続。",
      "value": 20.0,
-     "valueYuko": 20.0
+     "valueYuko": 20.0,
+     "pct": 20.0,
+     "pctYuko": 20.0,
+     "flat": 0
     },
     {
      "lv": 6,
      "effect": "スキル発動時、ダメージ+24%。30秒持続。",
      "value": 24.0,
-     "valueYuko": 24.0
+     "valueYuko": 24.0,
+     "pct": 24.0,
+     "pctYuko": 24.0,
+     "flat": 0
     },
     {
      "lv": 7,
      "effect": "属性攻撃力+50。スキル発動時、ダメージ+31%。30秒持続。",
      "value": 37.0,
-     "valueYuko": 37.0
+     "valueYuko": 37.0,
+     "pct": 31.0,
+     "pctYuko": 31.0,
+     "flat": 50
     }
    ]
   },
@@ -2141,25 +2930,37 @@
      "lv": 1,
      "effect": "スキル発動時、ダメージ+4%。",
      "value": 4.0,
-     "valueYuko": 4.0
+     "valueYuko": 4.0,
+     "pct": 4.0,
+     "pctYuko": 4.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "スキル発動時、ダメージ+8%。",
      "value": 8.0,
-     "valueYuko": 8.0
+     "valueYuko": 8.0,
+     "pct": 8.0,
+     "pctYuko": 8.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "スキル発動時、ダメージ+13%。",
      "value": 13.0,
-     "valueYuko": 13.0
+     "valueYuko": 13.0,
+     "pct": 13.0,
+     "pctYuko": 13.0,
+     "flat": 0
     },
     {
      "lv": 4,
      "effect": "属性攻撃力+25。スキル発動時、ダメージ+20%。",
      "value": 23.0,
-     "valueYuko": 23.0
+     "valueYuko": 23.0,
+     "pct": 20.0,
+     "pctYuko": 20.0,
+     "flat": 25
     }
    ]
   },
@@ -2173,43 +2974,64 @@
      "lv": 1,
      "effect": "スキル発動時の与ダメージ+5%。",
      "value": 5.0,
-     "valueYuko": 5.0
+     "valueYuko": 5.0,
+     "pct": 5.0,
+     "pctYuko": 5.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "スキル発動時の与ダメージ+9%。",
      "value": 9.0,
-     "valueYuko": 9.0
+     "valueYuko": 9.0,
+     "pct": 9.0,
+     "pctYuko": 9.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "スキル発動時の与ダメージ+14%。",
      "value": 14.0,
-     "valueYuko": 14.0
+     "valueYuko": 14.0,
+     "pct": 14.0,
+     "pctYuko": 14.0,
+     "flat": 0
     },
     {
      "lv": 4,
      "effect": "スキル発動時の与ダメージ+19%。",
      "value": 19.0,
-     "valueYuko": 19.0
+     "valueYuko": 19.0,
+     "pct": 19.0,
+     "pctYuko": 19.0,
+     "flat": 0
     },
     {
      "lv": 5,
      "effect": "スキル発動時の与ダメージ+24%。",
      "value": 24.0,
-     "valueYuko": 24.0
+     "valueYuko": 24.0,
+     "pct": 24.0,
+     "pctYuko": 24.0,
+     "flat": 0
     },
     {
      "lv": 6,
      "effect": "スキル発動時の与ダメージ+29%。",
      "value": 29.0,
-     "valueYuko": 29.0
+     "valueYuko": 29.0,
+     "pct": 29.0,
+     "pctYuko": 29.0,
+     "flat": 0
     },
     {
      "lv": 7,
      "effect": "属性攻撃力+50。スキル発動時、ダメージ+37%。",
      "value": 43.0,
-     "valueYuko": 43.0
+     "valueYuko": 43.0,
+     "pct": 37.0,
+     "pctYuko": 37.0,
+     "flat": 50
     }
    ]
   },
@@ -2223,43 +3045,64 @@
      "lv": 1,
      "effect": "スキル発動時の与ダメージ+5%。",
      "value": 5.0,
-     "valueYuko": 5.0
+     "valueYuko": 5.0,
+     "pct": 5.0,
+     "pctYuko": 5.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "スキル発動時の与ダメージ+9%。",
      "value": 9.0,
-     "valueYuko": 9.0
+     "valueYuko": 9.0,
+     "pct": 9.0,
+     "pctYuko": 9.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "スキル発動時の与ダメージ+14%。",
      "value": 14.0,
-     "valueYuko": 14.0
+     "valueYuko": 14.0,
+     "pct": 14.0,
+     "pctYuko": 14.0,
+     "flat": 0
     },
     {
      "lv": 4,
      "effect": "スキル発動時の与ダメージ+19%。",
      "value": 19.0,
-     "valueYuko": 19.0
+     "valueYuko": 19.0,
+     "pct": 19.0,
+     "pctYuko": 19.0,
+     "flat": 0
     },
     {
      "lv": 5,
      "effect": "スキル発動時の与ダメージ+24%。",
      "value": 24.0,
-     "valueYuko": 24.0
+     "valueYuko": 24.0,
+     "pct": 24.0,
+     "pctYuko": 24.0,
+     "flat": 0
     },
     {
      "lv": 6,
      "effect": "スキル発動時の与ダメージ+29%。",
      "value": 29.0,
-     "valueYuko": 29.0
+     "valueYuko": 29.0,
+     "pct": 29.0,
+     "pctYuko": 29.0,
+     "flat": 0
     },
     {
      "lv": 7,
      "effect": "属性攻撃力+50。スキル発動時、ダメージ+37%。",
      "value": 43.0,
-     "valueYuko": 43.0
+     "valueYuko": 43.0,
+     "pct": 37.0,
+     "pctYuko": 37.0,
+     "flat": 50
     }
    ]
   },
@@ -2273,43 +3116,64 @@
      "lv": 1,
      "effect": "剛猛を発動した後、与ダメージ+4%。30秒持続。",
      "value": 4.0,
-     "valueYuko": 4.0
+     "valueYuko": 4.0,
+     "pct": 4.0,
+     "pctYuko": 4.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "剛猛を発動した後、与ダメージ+8%。30秒持続。",
      "value": 8.0,
-     "valueYuko": 8.0
+     "valueYuko": 8.0,
+     "pct": 8.0,
+     "pctYuko": 8.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "剛猛を発動した後、与ダメージ+12%。30秒持続。",
      "value": 12.0,
-     "valueYuko": 12.0
+     "valueYuko": 12.0,
+     "pct": 12.0,
+     "pctYuko": 12.0,
+     "flat": 0
     },
     {
      "lv": 4,
      "effect": "剛猛を発動した後、与ダメージ+16%。30秒持続。",
      "value": 16.0,
-     "valueYuko": 16.0
+     "valueYuko": 16.0,
+     "pct": 16.0,
+     "pctYuko": 16.0,
+     "flat": 0
     },
     {
      "lv": 5,
      "effect": "剛猛を発動した後、与ダメージ+20%。30秒持続。",
      "value": 20.0,
-     "valueYuko": 20.0
+     "valueYuko": 20.0,
+     "pct": 20.0,
+     "pctYuko": 20.0,
+     "flat": 0
     },
     {
      "lv": 6,
      "effect": "剛猛を発動した後、与ダメージ+24%。30秒持続。",
      "value": 24.0,
-     "valueYuko": 24.0
+     "valueYuko": 24.0,
+     "pct": 24.0,
+     "pctYuko": 24.0,
+     "flat": 0
     },
     {
      "lv": 7,
      "effect": "属性攻撃力+50。剛猛発動時、与ダメージ+31%。30秒持続。",
      "value": 37.0,
-     "valueYuko": 37.0
+     "valueYuko": 37.0,
+     "pct": 31.0,
+     "pctYuko": 31.0,
+     "flat": 50
     }
    ]
   },
@@ -2323,43 +3187,64 @@
      "lv": 1,
      "effect": "スキル発動時、その攻撃の与ダメージ+5%。",
      "value": 5.0,
-     "valueYuko": 5.0
+     "valueYuko": 5.0,
+     "pct": 5.0,
+     "pctYuko": 5.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "スキル発動時、その攻撃の与ダメージ+9%。",
      "value": 9.0,
-     "valueYuko": 9.0
+     "valueYuko": 9.0,
+     "pct": 9.0,
+     "pctYuko": 9.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "スキル発動時、その攻撃の与ダメージ+14%。",
      "value": 14.0,
-     "valueYuko": 14.0
+     "valueYuko": 14.0,
+     "pct": 14.0,
+     "pctYuko": 14.0,
+     "flat": 0
     },
     {
      "lv": 4,
      "effect": "スキル発動時、その攻撃の与ダメージ+19%。",
      "value": 19.0,
-     "valueYuko": 19.0
+     "valueYuko": 19.0,
+     "pct": 19.0,
+     "pctYuko": 19.0,
+     "flat": 0
     },
     {
      "lv": 5,
      "effect": "スキル発動時、その攻撃の与ダメージ+24%。",
      "value": 24.0,
-     "valueYuko": 24.0
+     "valueYuko": 24.0,
+     "pct": 24.0,
+     "pctYuko": 24.0,
+     "flat": 0
     },
     {
      "lv": 6,
      "effect": "スキル発動時、その攻撃の与ダメージ+29%。",
      "value": 29.0,
-     "valueYuko": 29.0
+     "valueYuko": 29.0,
+     "pct": 29.0,
+     "pctYuko": 29.0,
+     "flat": 0
     },
     {
      "lv": 7,
      "effect": "属性攻撃力+50。スキル発動時、今回の攻撃の与ダメージ+37%。",
      "value": 43.0,
-     "valueYuko": 43.0
+     "valueYuko": 43.0,
+     "pct": 37.0,
+     "pctYuko": 37.0,
+     "flat": 50
     }
    ]
   },
@@ -2373,43 +3258,64 @@
      "lv": 1,
      "effect": "リロード後、与ダメージ+4%。30秒持続。",
      "value": 4.0,
-     "valueYuko": 4.0
+     "valueYuko": 4.0,
+     "pct": 4.0,
+     "pctYuko": 4.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "リロード後、与ダメージ+8%。30秒持続。",
      "value": 8.0,
-     "valueYuko": 8.0
+     "valueYuko": 8.0,
+     "pct": 8.0,
+     "pctYuko": 8.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "リロード後、与ダメージ+12%。30秒持続。",
      "value": 12.0,
-     "valueYuko": 12.0
+     "valueYuko": 12.0,
+     "pct": 12.0,
+     "pctYuko": 12.0,
+     "flat": 0
     },
     {
      "lv": 4,
      "effect": "リロード後、与ダメージ+16%。30秒持続。",
      "value": 16.0,
-     "valueYuko": 16.0
+     "valueYuko": 16.0,
+     "pct": 16.0,
+     "pctYuko": 16.0,
+     "flat": 0
     },
     {
      "lv": 5,
      "effect": "リロード後、与ダメージ+20%。30秒持続。",
      "value": 20.0,
-     "valueYuko": 20.0
+     "valueYuko": 20.0,
+     "pct": 20.0,
+     "pctYuko": 20.0,
+     "flat": 0
     },
     {
      "lv": 6,
      "effect": "リロード後、与ダメージ+24%。30秒持続。",
      "value": 24.0,
-     "valueYuko": 24.0
+     "valueYuko": 24.0,
+     "pct": 24.0,
+     "pctYuko": 24.0,
+     "flat": 0
     },
     {
      "lv": 7,
      "effect": "属性攻撃力+50。リロード後、与ダメージ+31%。30秒持続。",
      "value": 37.0,
-     "valueYuko": 37.0
+     "valueYuko": 37.0,
+     "pct": 31.0,
+     "pctYuko": 31.0,
+     "flat": 50
     }
    ]
   },
@@ -2423,25 +3329,37 @@
      "lv": 1,
      "effect": "スキル発動時、ダメージ+3%。60秒持続。",
      "value": 3.0,
-     "valueYuko": 3.0
+     "valueYuko": 3.0,
+     "pct": 3.0,
+     "pctYuko": 3.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "スキル発動時、ダメージ+7%。60秒持続。",
      "value": 7.0,
-     "valueYuko": 7.0
+     "valueYuko": 7.0,
+     "pct": 7.0,
+     "pctYuko": 7.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "スキル発動時、ダメージ+11%。60秒持続。",
      "value": 11.0,
-     "valueYuko": 11.0
+     "valueYuko": 11.0,
+     "pct": 11.0,
+     "pctYuko": 11.0,
+     "flat": 0
     },
     {
      "lv": 4,
      "effect": "スキル発動時、ダメージ+16%。属性攻撃力+25。60秒持続。",
      "value": 19.0,
-     "valueYuko": 19.0
+     "valueYuko": 19.0,
+     "pct": 16.0,
+     "pctYuko": 16.0,
+     "flat": 25
     }
    ]
   },
@@ -2455,25 +3373,37 @@
      "lv": 1,
      "effect": "8秒以内に同じ部位に3回攻撃を命中させると、与ダメージ+3%。30秒持続。",
      "value": 3.0,
-     "valueYuko": 3.0
+     "valueYuko": 3.0,
+     "pct": 3.0,
+     "pctYuko": 3.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "8秒以内に同じ部位に3回攻撃を命中させると、与ダメージ+7%。30秒持続。",
      "value": 7.0,
-     "valueYuko": 7.0
+     "valueYuko": 7.0,
+     "pct": 7.0,
+     "pctYuko": 7.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "8秒以内に同じ部位に3回攻撃を命中させると、与ダメージ+11%。30秒持続。",
      "value": 11.0,
-     "valueYuko": 11.0
+     "valueYuko": 11.0,
+     "pct": 11.0,
+     "pctYuko": 11.0,
+     "flat": 0
     },
     {
      "lv": 4,
      "effect": "属性攻撃力+25。8秒以内に同じ部位に3回攻撃を命中させると、与ダメージ+16%。30秒持続。",
      "value": 19.0,
-     "valueYuko": 19.0
+     "valueYuko": 19.0,
+     "pct": 16.0,
+     "pctYuko": 16.0,
+     "flat": 25
     }
    ]
   },
@@ -2487,25 +3417,37 @@
      "lv": 1,
      "effect": "スキル発動時、ダメージ+3%。15秒持続。",
      "value": 3.0,
-     "valueYuko": 3.0
+     "valueYuko": 3.0,
+     "pct": 3.0,
+     "pctYuko": 3.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "スキル発動時、ダメージ+7%。15秒持続。",
      "value": 7.0,
-     "valueYuko": 7.0
+     "valueYuko": 7.0,
+     "pct": 7.0,
+     "pctYuko": 7.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "スキル発動時、ダメージ+11%。15秒持続。",
      "value": 11.0,
-     "valueYuko": 11.0
+     "valueYuko": 11.0,
+     "pct": 11.0,
+     "pctYuko": 11.0,
+     "flat": 0
     },
     {
      "lv": 4,
      "effect": "属性攻撃力+25。スキル発動時、ダメージ+16%。15秒持続。",
      "value": 19.0,
-     "valueYuko": 19.0
+     "valueYuko": 19.0,
+     "pct": 16.0,
+     "pctYuko": 16.0,
+     "flat": 25
     }
    ]
   },
@@ -2519,25 +3461,37 @@
      "lv": 1,
      "effect": "通常弾、散弾、貫通弾のダメージ+3%。",
      "value": 3.0,
-     "valueYuko": 3.0
+     "valueYuko": 3.0,
+     "pct": 3.0,
+     "pctYuko": 3.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "通常弾、散弾、貫通弾のダメージ+7%。",
      "value": 7.0,
-     "valueYuko": 7.0
+     "valueYuko": 7.0,
+     "pct": 7.0,
+     "pctYuko": 7.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "通常弾、散弾、貫通弾のダメージ+11%。",
      "value": 11.0,
-     "valueYuko": 11.0
+     "valueYuko": 11.0,
+     "pct": 11.0,
+     "pctYuko": 11.0,
+     "flat": 0
     },
     {
      "lv": 4,
      "effect": "属性攻撃力+25。通常弾、散弾、貫通弾のダメージ+16%。",
      "value": 19.0,
-     "valueYuko": 19.0
+     "valueYuko": 19.0,
+     "pct": 16.0,
+     "pctYuko": 16.0,
+     "flat": 25
     }
    ]
   },
@@ -2551,19 +3505,28 @@
      "lv": 1,
      "effect": "スキル発動時、防御力+20。",
      "value": 20.0,
-     "valueYuko": 20.0
+     "valueYuko": 20.0,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "スキル発動時、防御力+40。",
      "value": 40.0,
-     "valueYuko": 40.0
+     "valueYuko": 40.0,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "スキル発動時、防御力+60。",
      "value": 60.0,
-     "valueYuko": 60.0
+     "valueYuko": 60.0,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     }
    ]
   },
@@ -2577,19 +3540,28 @@
      "lv": 1,
      "effect": "スキル発動時、体力を5回復する。発動間隔は3秒。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "スキル発動時、体力を10回復する。発動間隔は3秒。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "スキル発動時、体力を15回復する。発動間隔は3秒。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     }
    ]
   },
@@ -2603,25 +3575,37 @@
      "lv": 1,
      "effect": "スキル発動時、ダメージ+3%。60秒持続。",
      "value": 3.0,
-     "valueYuko": 3.0
+     "valueYuko": 3.0,
+     "pct": 3.0,
+     "pctYuko": 3.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "スキル発動時、ダメージ+7%。60秒持続。",
      "value": 7.0,
-     "valueYuko": 7.0
+     "valueYuko": 7.0,
+     "pct": 7.0,
+     "pctYuko": 7.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "スキル発動時、ダメージ+11%。60秒持続。",
      "value": 11.0,
-     "valueYuko": 11.0
+     "valueYuko": 11.0,
+     "pct": 11.0,
+     "pctYuko": 11.0,
+     "flat": 0
     },
     {
      "lv": 4,
      "effect": "スキル発動時、ダメージ+16%、属性攻撃力+25。60秒持続。",
      "value": 19.0,
-     "valueYuko": 19.0
+     "valueYuko": 19.0,
+     "pct": 16.0,
+     "pctYuko": 16.0,
+     "flat": 25
     }
    ]
   },
@@ -2635,7 +3619,10 @@
      "lv": 1,
      "effect": "移動速度や回避行動への制限を軽減する。",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     }
    ]
   },
@@ -2649,49 +3636,73 @@
      "lv": 1,
      "effect": "指定の冒険ランクに到達すると、この装備はレア度1になる",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "指定の冒険ランクに到達すると、この装備はレア度2になる",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "指定の冒険ランクに到達すると、この装備はレア度3になる",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 4,
      "effect": "指定の冒険ランクに到達すると、この装備はレア度4になる",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 5,
      "effect": "指定の冒険ランクに到達すると、この装備はレア度5になる",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 6,
      "effect": "指定の冒険ランクに到達すると、この装備はレア度6になる",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 7,
      "effect": "指定の冒険ランクに到達すると、この装備はレア度7になる",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 8,
      "effect": "指定の冒険ランクに到達すると、この装備はレア度8になる",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     }
    ]
   },
@@ -2705,49 +3716,73 @@
      "lv": 1,
      "effect": "指定の冒険ランクに到達すると、この装備はレア度1になる",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "指定の冒険ランクに到達すると、この装備はレア度2になる",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "指定の冒険ランクに到達すると、この装備はレア度3になる",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 4,
      "effect": "指定の冒険ランクに到達すると、この装備はレア度4になる",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 5,
      "effect": "指定の冒険ランクに到達すると、この装備はレア度5になる",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 6,
      "effect": "指定の冒険ランクに到達すると、この装備はレア度6になる",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 7,
      "effect": "指定の冒険ランクに到達すると、この装備はレア度7になる",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 8,
      "effect": "指定の冒険ランクに到達すると、この装備はレア度8になる",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     }
    ]
   },
@@ -2761,49 +3796,73 @@
      "lv": 1,
      "effect": "指定の冒険ランクに到達すると、この装備はレア度1になる",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "指定の冒険ランクに到達すると、この装備はレア度2になる",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "指定の冒険ランクに到達すると、この装備はレア度3になる",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 4,
      "effect": "指定の冒険ランクに到達すると、この装備はレア度4になる",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 5,
      "effect": "指定の冒険ランクに到達すると、この装備はレア度5になる",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 6,
      "effect": "指定の冒険ランクに到達すると、この装備はレア度6になる",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 7,
      "effect": "指定の冒険ランクに到達すると、この装備はレア度7になる",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 8,
      "effect": "指定の冒険ランクに到達すると、この装備はレア度8になる",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     }
    ]
   },
@@ -2817,49 +3876,73 @@
      "lv": 1,
      "effect": "指定の冒険ランクに到達すると、この装備はレア度1になる",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "指定の冒険ランクに到達すると、この装備はレア度2になる",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "指定の冒険ランクに到達すると、この装備はレア度3になる",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 4,
      "effect": "指定の冒険ランクに到達すると、この装備はレア度4になる",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 5,
      "effect": "指定の冒険ランクに到達すると、この装備はレア度5になる",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 6,
      "effect": "指定の冒険ランクに到達すると、この装備はレア度6になる",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 7,
      "effect": "指定の冒険ランクに到達すると、この装備はレア度7になる",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 8,
      "effect": "指定の冒険ランクに到達すると、この装備はレア度8になる",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     }
    ]
   },
@@ -2873,49 +3956,73 @@
      "lv": 1,
      "effect": "指定の冒険ランクに到達すると、この装備はレア度1になる",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 2,
      "effect": "指定の冒険ランクに到達すると、この装備はレア度2になる",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 3,
      "effect": "指定の冒険ランクに到達すると、この装備はレア度3になる",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 4,
      "effect": "指定の冒険ランクに到達すると、この装備はレア度4になる",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 5,
      "effect": "指定の冒険ランクに到達すると、この装備はレア度5になる",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 6,
      "effect": "指定の冒険ランクに到達すると、この装備はレア度6になる",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 7,
      "effect": "指定の冒険ランクに到達すると、この装備はレア度7になる",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     },
     {
      "lv": 8,
      "effect": "指定の冒険ランクに到達すると、この装備はレア度8になる",
      "value": null,
-     "valueYuko": null
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
     }
    ]
   },

@@ -27,23 +27,24 @@
      "skill": "リロード強化",
      "tier": "S",
      "targetLv": 7,
-     "reason": "リロード後30秒 与ダメUP。ヘビィはリロード頻度が高くジャストガードでも更新されるのでほぼ常時",
+     "reason": "リロード後30秒 与ダメUP。マガジンを撃ち切るたび・ジャストガードの自動リロードでも更新され、30秒と長いのでほぼ切れない。Game8は「どの属性でも活躍できる」として中盤〜終盤の主軸、終盤最強装備はLv7",
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "プレイ体感"
      ],
-     "assumption": "発動率80%"
+     "assumption": "発動率90%"
     },
     {
      "skill": "連撃強化",
-     "tier": "S",
+     "tier": "A",
      "targetLv": 7,
-     "reason": "3秒以内5ヒットで与ダメUP。機関竜弾中は確実に維持できる（貫通弾・斬裂弾では不発）",
+     "reason": "3秒以内5ヒットで12秒 与ダメUP。機関竜弾・散弾中は維持できるが、徹甲榴弾・斬裂弾（裂破）と貫通弾では発動せず、通常弾の単発撃ちでは条件を満たしにくい",
      "sources": [
       "Game8"
      ],
-     "assumption": "発動率75%"
+     "assumption": "発動率55%（機関竜弾・散弾を撃っている時間）"
     },
     {
      "skill": "{属性}属性ダメージUP",
@@ -197,22 +198,22 @@
      1.563
     ],
     "リロード強化": [
-     3.15,
-     6.204,
-     9.167,
-     12.045,
-     14.842,
-     17.563,
-     25.029
+     3.537,
+     6.953,
+     10.256,
+     13.453,
+     16.551,
+     19.557,
+     27.483
     ],
     "連撃強化": [
-     2.956,
-     5.827,
-     8.618,
-     11.333,
-     13.976,
-     16.551,
-     23.779
+     2.176,
+     4.306,
+     6.391,
+     8.434,
+     10.436,
+     12.399,
+     18.618
     ],
     "弩弾強化": [
      1.341,
@@ -319,22 +320,22 @@
      1.563
     ],
     "リロード強化": [
-     3.15,
-     6.204,
-     9.167,
-     12.045,
-     14.842,
-     17.563,
-     25.029
+     3.537,
+     6.953,
+     10.256,
+     13.453,
+     16.551,
+     19.557,
+     27.483
     ],
     "連撃強化": [
-     2.956,
-     5.827,
-     8.618,
-     11.333,
-     13.976,
-     16.551,
-     23.779
+     2.176,
+     4.306,
+     6.391,
+     8.434,
+     10.436,
+     12.399,
+     18.618
     ],
     "弩弾強化": [
      1.341,
@@ -418,6 +419,66 @@
     "weaponElement": 600,
     "critPerPct": 0.005,
     "critRate": 0.3
+   },
+   "modelSkills": {
+    "{属性}属性ダメージUP": {
+     "kind": "element",
+     "core": 0.0
+    },
+    "洞察": {
+     "kind": "crit",
+     "uptime": 1.0
+    },
+    "弱点攻撃": {
+     "kind": "crit",
+     "uptime": 0.65
+    },
+    "会心撃【属性】": {
+     "kind": "elemCrit"
+    },
+    "リロード強化": {
+     "kind": "dmg",
+     "uptime": 0.9,
+     "share": 1.0
+    },
+    "連撃強化": {
+     "kind": "dmg",
+     "uptime": 0.55,
+     "share": 1.0
+    },
+    "弩弾強化": {
+     "kind": "dmg",
+     "uptime": 1.0,
+     "share": 0.45
+    },
+    "闘志": {
+     "kind": "crit",
+     "uptime": 0.5
+    },
+    "ポテンシャル解放": {
+     "kind": "crit",
+     "uptime": 0.65
+    },
+    "弱点追撃": {
+     "kind": "proc",
+     "uptime": 0.5,
+     "chance": 0.75
+    },
+    "徹底追撃": {
+     "kind": "dmg",
+     "uptime": 0.4,
+     "share": 1.0
+    },
+    "防御反撃": {
+     "kind": "dmg",
+     "uptime": 0.3,
+     "share": 1.0
+    },
+    "ガードテクニック": {
+     "kind": "flat",
+     "value": 0.02,
+     "fallback": 0.2
+    }
    },
    "sources": [
     {
@@ -721,6 +782,43 @@
     "critPerPct": 0.0025,
     "critRate": 0.2
    },
+   "modelSkills": {
+    "滞空": {
+     "kind": "dmg",
+     "uptime": 0.9,
+     "share": 1.0
+    },
+    "連撃強化": {
+     "kind": "dmg",
+     "uptime": 0.8,
+     "share": 1.0
+    },
+    "弩弾強化": {
+     "kind": "dmg",
+     "uptime": 1.0,
+     "share": 0.65
+    },
+    "水属性ダメージUP": {
+     "kind": "element",
+     "core": 0.08
+    },
+    "洞察": {
+     "kind": "crit",
+     "uptime": 1.0
+    },
+    "弱点攻撃": {
+     "kind": "crit",
+     "uptime": 0.6
+    },
+    "会心撃【属性】": {
+     "kind": "elemCrit"
+    },
+    "弾導強化": {
+     "kind": "flat",
+     "value": 0.02,
+     "fallback": 0.2
+    }
+   },
    "sources": [
     {
      "title": "Game8 ペペ",
@@ -992,6 +1090,41 @@
     "weaponElement": 600,
     "critPerPct": 0.0025,
     "critRate": 0.3
+   },
+   "modelSkills": {
+    "連撃強化": {
+     "kind": "dmg",
+     "uptime": 0.9,
+     "share": 1.0
+    },
+    "火属性ダメージUP": {
+     "kind": "element",
+     "core": 0.0
+    },
+    "鬼人の修羅": {
+     "kind": "dmg",
+     "uptime": 0.5,
+     "share": 1.0
+    },
+    "回避強化": {
+     "kind": "dmg",
+     "uptime": 0.5,
+     "share": 1.0
+    },
+    "弱点追撃": {
+     "kind": "proc",
+     "uptime": 0.5,
+     "chance": 0.75
+    },
+    "洞察": {
+     "kind": "crit",
+     "uptime": 1.0
+    },
+    "本気": {
+     "kind": "flat",
+     "value": 0.02,
+     "fallback": 0.2
+    }
    },
    "sources": [
     {
@@ -1281,6 +1414,45 @@
     "critPerPct": 0.0025,
     "critRate": 0.3
    },
+   "modelSkills": {
+    "雷属性ダメージUP": {
+     "kind": "element",
+     "core": 0.06
+    },
+    "防御反撃": {
+     "kind": "dmg",
+     "uptime": 0.5,
+     "share": 1.0
+    },
+    "溜め強化": {
+     "kind": "dmg",
+     "uptime": 0.35,
+     "share": 1.0
+    },
+    "破砕": {
+     "kind": "dmg",
+     "uptime": 0.5,
+     "share": 1.0
+    },
+    "剛勢": {
+     "kind": "dmg",
+     "uptime": 0.3,
+     "share": 1.0
+    },
+    "徹底追撃": {
+     "kind": "dmg",
+     "uptime": 0.5,
+     "share": 1.0
+    },
+    "会心撃【属性】": {
+     "kind": "elemCrit"
+    },
+    "破壊王": {
+     "kind": "flat",
+     "value": 0.02,
+     "fallback": 0.2
+    }
+   },
    "sources": [
     {
      "title": "Game8 ブリックス",
@@ -1548,6 +1720,39 @@
     "critPerPct": 0.0025,
     "critRate": 0.3
    },
+   "modelSkills": {
+    "龍属性ダメージUP": {
+     "kind": "element",
+     "core": 0.0
+    },
+    "防御反撃": {
+     "kind": "dmg",
+     "uptime": 0.6,
+     "share": 1.0
+    },
+    "貫突": {
+     "kind": "dmg",
+     "uptime": 0.6,
+     "share": 1.0
+    },
+    "闘志": {
+     "kind": "crit",
+     "uptime": 0.5
+    },
+    "剛勢": {
+     "kind": "dmg",
+     "uptime": 0.3,
+     "share": 1.0
+    },
+    "会心撃【属性】": {
+     "kind": "elemCrit"
+    },
+    "ガードテクニック": {
+     "kind": "flat",
+     "value": 0.02,
+     "fallback": 0.2
+    }
+   },
    "sources": [
     {
      "title": "Game8 アケニア",
@@ -1780,6 +1985,37 @@
     "weaponElement": 600,
     "critPerPct": 0.0025,
     "critRate": 0.3
+   },
+   "modelSkills": {
+    "弓スキル強化": {
+     "kind": "dmg",
+     "uptime": 1.0,
+     "share": 0.7
+    },
+    "水属性ダメージUP": {
+     "kind": "element",
+     "core": 0.0
+    },
+    "溜め強射": {
+     "kind": "dmg",
+     "uptime": 0.6,
+     "share": 1.0
+    },
+    "気力変換": {
+     "kind": "dmg",
+     "uptime": 1.0,
+     "share": 0.85
+    },
+    "無垢": {
+     "kind": "dmg",
+     "uptime": 0.4,
+     "share": 1.0
+    },
+    "弾導強化": {
+     "kind": "flat",
+     "value": 0.02,
+     "fallback": 0.2
+    }
    },
    "sources": [
     {
@@ -2076,6 +2312,46 @@
     "critPerPct": 0.0025,
     "critRate": 0.3
    },
+   "modelSkills": {
+    "貫突": {
+     "kind": "dmg",
+     "uptime": 0.8,
+     "share": 1.0
+    },
+    "水属性ダメージUP": {
+     "kind": "element",
+     "core": 0.2
+    },
+    "溜め強化": {
+     "kind": "dmg",
+     "uptime": 0.45,
+     "share": 1.0
+    },
+    "回避強化": {
+     "kind": "dmg",
+     "uptime": 0.5,
+     "share": 1.0
+    },
+    "連撃強化": {
+     "kind": "dmg",
+     "uptime": 0.4,
+     "share": 1.0
+    },
+    "防御反撃": {
+     "kind": "dmg",
+     "uptime": 0.4,
+     "share": 1.0
+    },
+    "闘志": {
+     "kind": "crit",
+     "uptime": 0.5
+    },
+    "破壊王": {
+     "kind": "flat",
+     "value": 0.02,
+     "fallback": 0.2
+    }
+   },
    "sources": [
     {
      "title": "Game8 フォリオ",
@@ -2359,6 +2635,45 @@
     "weaponElement": 600,
     "critPerPct": 0.005,
     "critRate": 0.35
+   },
+   "modelSkills": {
+    "火属性ダメージUP": {
+     "kind": "element",
+     "core": 0.0
+    },
+    "練気をまといし刃": {
+     "kind": "dmg",
+     "uptime": 0.8,
+     "share": 1.0
+    },
+    "抜刀一閃": {
+     "kind": "dmg",
+     "uptime": 0.6,
+     "share": 1.0
+    },
+    "回避強化": {
+     "kind": "dmg",
+     "uptime": 0.5,
+     "share": 1.0
+    },
+    "洞察": {
+     "kind": "crit",
+     "uptime": 1.0
+    },
+    "弱点攻撃": {
+     "kind": "crit",
+     "uptime": 0.65
+    },
+    "狩人の第六感": {
+     "kind": "dmg",
+     "uptime": 0.3,
+     "share": 1.0
+    },
+    "本気": {
+     "kind": "flat",
+     "value": 0.02,
+     "fallback": 0.2
+    }
    },
    "sources": [
     {
@@ -2645,6 +2960,45 @@
     "critPerPct": 0.0025,
     "critRate": 0.3
    },
+   "modelSkills": {
+    "雷属性ダメージUP": {
+     "kind": "element",
+     "core": 0.2
+    },
+    "弓スキル強化": {
+     "kind": "dmg",
+     "uptime": 1.0,
+     "share": 0.7
+    },
+    "一撃貫通": {
+     "kind": "dmg",
+     "uptime": 1.0,
+     "share": 0.5
+    },
+    "溜め強射": {
+     "kind": "dmg",
+     "uptime": 0.7,
+     "share": 1.0
+    },
+    "気力変換": {
+     "kind": "dmg",
+     "uptime": 1.0,
+     "share": 0.85
+    },
+    "無垢": {
+     "kind": "dmg",
+     "uptime": 0.4,
+     "share": 1.0
+    },
+    "会心撃【属性】": {
+     "kind": "elemCrit"
+    },
+    "弾導強化": {
+     "kind": "flat",
+     "value": 0.02,
+     "fallback": 0.2
+    }
+   },
    "sources": [
     {
      "title": "Game8 ルカ",
@@ -2898,6 +3252,38 @@
     "weaponElement": 600,
     "critPerPct": 0.0035,
     "critRate": 0.3
+   },
+   "modelSkills": {
+    "連撃強化": {
+     "kind": "dmg",
+     "uptime": 0.9,
+     "share": 1.0
+    },
+    "龍属性ダメージUP": {
+     "kind": "element",
+     "core": 0.0
+    },
+    "鬼人の修羅": {
+     "kind": "dmg",
+     "uptime": 0.6,
+     "share": 1.0
+    },
+    "弱点攻撃": {
+     "kind": "crit",
+     "uptime": 0.7
+    },
+    "洞察": {
+     "kind": "crit",
+     "uptime": 1.0
+    },
+    "会心撃【属性】": {
+     "kind": "elemCrit"
+    },
+    "本気": {
+     "kind": "flat",
+     "value": 0.02,
+     "fallback": 0.2
+    }
    },
    "sources": [
     {
@@ -3198,6 +3584,46 @@
     "critPerPct": 0.0025,
     "critRate": 0.3
    },
+   "modelSkills": {
+    "溜め強化": {
+     "kind": "dmg",
+     "uptime": 0.8,
+     "share": 1.0
+    },
+    "龍属性ダメージUP": {
+     "kind": "element",
+     "core": 0.2
+    },
+    "剛勢": {
+     "kind": "dmg",
+     "uptime": 0.5,
+     "share": 1.0
+    },
+    "滞空": {
+     "kind": "dmg",
+     "uptime": 1.0,
+     "share": 0.3
+    },
+    "破砕": {
+     "kind": "dmg",
+     "uptime": 0.6,
+     "share": 1.0
+    },
+    "弱点追撃": {
+     "kind": "proc",
+     "uptime": 0.5,
+     "chance": 0.75
+    },
+    "闘志": {
+     "kind": "crit",
+     "uptime": 0.5
+    },
+    "破壊王": {
+     "kind": "flat",
+     "value": 0.02,
+     "fallback": 0.2
+    }
+   },
    "sources": [
     {
      "title": "Game8 エンショウ",
@@ -3463,6 +3889,41 @@
     "weaponElement": 600,
     "critPerPct": 0.0025,
     "critRate": 0.3
+   },
+   "modelSkills": {
+    "溜め強化": {
+     "kind": "dmg",
+     "uptime": 0.8,
+     "share": 1.0
+    },
+    "氷属性ダメージUP": {
+     "kind": "element",
+     "core": 0.2
+    },
+    "気力変換": {
+     "kind": "dmg",
+     "uptime": 1.0,
+     "share": 0.7
+    },
+    "威震": {
+     "kind": "dmg",
+     "uptime": 0.6,
+     "share": 1.0
+    },
+    "ポテンシャル解放": {
+     "kind": "crit",
+     "uptime": 0.65
+    },
+    "徹底追撃": {
+     "kind": "dmg",
+     "uptime": 0.4,
+     "share": 1.0
+    },
+    "破壊王": {
+     "kind": "flat",
+     "value": 0.02,
+     "fallback": 0.2
+    }
    },
    "sources": [
     {
@@ -3753,6 +4214,45 @@
     "weaponElement": 600,
     "critPerPct": 0.0025,
     "critRate": 0.3
+   },
+   "modelSkills": {
+    "連撃強化": {
+     "kind": "dmg",
+     "uptime": 0.9,
+     "share": 1.0
+    },
+    "雷属性ダメージUP": {
+     "kind": "element",
+     "core": 0.0
+    },
+    "回避強化": {
+     "kind": "dmg",
+     "uptime": 0.5,
+     "share": 1.0
+    },
+    "鬼人の修羅": {
+     "kind": "dmg",
+     "uptime": 0.35,
+     "share": 1.0
+    },
+    "洞察": {
+     "kind": "crit",
+     "uptime": 1.0
+    },
+    "徹底追撃": {
+     "kind": "dmg",
+     "uptime": 0.4,
+     "share": 1.0
+    },
+    "闘志": {
+     "kind": "crit",
+     "uptime": 0.5
+    },
+    "無垢": {
+     "kind": "dmg",
+     "uptime": 0.4,
+     "share": 1.0
+    }
    },
    "sources": [
     {
@@ -4049,6 +4549,46 @@
     "weaponElement": 600,
     "critPerPct": 0.0025,
     "critRate": 0.3
+   },
+   "modelSkills": {
+    "火属性ダメージUP": {
+     "kind": "element",
+     "core": 0.0
+    },
+    "練気をまといし刃": {
+     "kind": "dmg",
+     "uptime": 0.75,
+     "share": 1.0
+    },
+    "弁当好き": {
+     "kind": "dmg",
+     "uptime": 0.6,
+     "share": 1.0
+    },
+    "回避強化": {
+     "kind": "dmg",
+     "uptime": 0.4,
+     "share": 1.0
+    },
+    "抜刀一閃": {
+     "kind": "dmg",
+     "uptime": 0.4,
+     "share": 1.0
+    },
+    "弱点攻撃": {
+     "kind": "crit",
+     "uptime": 0.6
+    },
+    "弱点追撃": {
+     "kind": "proc",
+     "uptime": 0.5,
+     "chance": 0.75
+    },
+    "破砕": {
+     "kind": "flat",
+     "value": 0.02,
+     "fallback": 0.2
+    }
    },
    "sources": [
     {
@@ -4371,6 +4911,48 @@
     "weaponElement": 600,
     "critPerPct": 0.005,
     "critRate": 0.3
+   },
+   "modelSkills": {
+    "{属性}属性ダメージUP": {
+     "kind": "element",
+     "core": 0.0
+    },
+    "洞察": {
+     "kind": "crit",
+     "uptime": 1.0
+    },
+    "弱点攻撃": {
+     "kind": "crit",
+     "uptime": 0.65
+    },
+    "会心撃【属性】": {
+     "kind": "elemCrit"
+    },
+    "練気をまといし刃": {
+     "kind": "dmg",
+     "uptime": 0.8,
+     "share": 1.0
+    },
+    "抜刀一閃": {
+     "kind": "dmg",
+     "uptime": 0.6,
+     "share": 1.0
+    },
+    "回避強化": {
+     "kind": "dmg",
+     "uptime": 0.5,
+     "share": 1.0
+    },
+    "連撃強化": {
+     "kind": "dmg",
+     "uptime": 0.5,
+     "share": 1.0
+    },
+    "本気": {
+     "kind": "flat",
+     "value": 0.02,
+     "fallback": 0.2
+    }
    },
    "sources": [
     {
@@ -4699,6 +5281,48 @@
     "critPerPct": 0.005,
     "critRate": 0.3
    },
+   "modelSkills": {
+    "{属性}属性ダメージUP": {
+     "kind": "element",
+     "core": 0.0
+    },
+    "洞察": {
+     "kind": "crit",
+     "uptime": 1.0
+    },
+    "弱点攻撃": {
+     "kind": "crit",
+     "uptime": 0.65
+    },
+    "会心撃【属性】": {
+     "kind": "elemCrit"
+    },
+    "溜め強化": {
+     "kind": "dmg",
+     "uptime": 0.8,
+     "share": 1.0
+    },
+    "破砕": {
+     "kind": "dmg",
+     "uptime": 0.65,
+     "share": 1.0
+    },
+    "剛勢": {
+     "kind": "dmg",
+     "uptime": 0.4,
+     "share": 1.0
+    },
+    "弱点追撃": {
+     "kind": "proc",
+     "uptime": 0.5,
+     "chance": 0.75
+    },
+    "破壊王": {
+     "kind": "flat",
+     "value": 0.02,
+     "fallback": 0.2
+    }
+   },
    "sources": [
     {
      "title": "GameWith 大剣最強装備",
@@ -4965,6 +5589,38 @@
     "weaponElement": 600,
     "critPerPct": 0.005,
     "critRate": 0.3
+   },
+   "modelSkills": {
+    "{属性}属性ダメージUP": {
+     "kind": "element",
+     "core": 0.0
+    },
+    "洞察": {
+     "kind": "crit",
+     "uptime": 1.0
+    },
+    "弱点攻撃": {
+     "kind": "crit",
+     "uptime": 0.65
+    },
+    "会心撃【属性】": {
+     "kind": "elemCrit"
+    },
+    "連撃強化": {
+     "kind": "dmg",
+     "uptime": 0.9,
+     "share": 1.0
+    },
+    "鬼人の修羅": {
+     "kind": "dmg",
+     "uptime": 0.6,
+     "share": 1.0
+    },
+    "本気": {
+     "kind": "flat",
+     "value": 0.02,
+     "fallback": 0.2
+    }
    },
    "sources": [
     {
@@ -5322,6 +5978,52 @@
     "weaponElement": 600,
     "critPerPct": 0.005,
     "critRate": 0.3
+   },
+   "modelSkills": {
+    "{属性}属性ダメージUP": {
+     "kind": "element",
+     "core": 0.0
+    },
+    "洞察": {
+     "kind": "crit",
+     "uptime": 1.0
+    },
+    "弱点攻撃": {
+     "kind": "crit",
+     "uptime": 0.65
+    },
+    "会心撃【属性】": {
+     "kind": "elemCrit"
+    },
+    "貫突": {
+     "kind": "dmg",
+     "uptime": 0.8,
+     "share": 1.0
+    },
+    "防御反撃": {
+     "kind": "dmg",
+     "uptime": 0.55,
+     "share": 1.0
+    },
+    "溜め強化": {
+     "kind": "dmg",
+     "uptime": 0.45,
+     "share": 1.0
+    },
+    "闘志": {
+     "kind": "crit",
+     "uptime": 0.5
+    },
+    "連撃強化": {
+     "kind": "dmg",
+     "uptime": 0.35,
+     "share": 1.0
+    },
+    "ガードテクニック": {
+     "kind": "flat",
+     "value": 0.02,
+     "fallback": 0.2
+    }
    },
    "sources": [
     {
@@ -5722,6 +6424,62 @@
     "critPerPct": 0.005,
     "critRate": 0.3
    },
+   "modelSkills": {
+    "{属性}属性ダメージUP": {
+     "kind": "element",
+     "core": 0.0
+    },
+    "洞察": {
+     "kind": "crit",
+     "uptime": 1.0
+    },
+    "弱点攻撃": {
+     "kind": "crit",
+     "uptime": 0.65
+    },
+    "会心撃【属性】": {
+     "kind": "elemCrit"
+    },
+    "弓スキル強化": {
+     "kind": "dmg",
+     "uptime": 1.0,
+     "share": 0.7
+    },
+    "溜め強射": {
+     "kind": "dmg",
+     "uptime": 0.75,
+     "share": 1.0
+    },
+    "気力変換": {
+     "kind": "dmg",
+     "uptime": 1.0,
+     "share": 0.85
+    },
+    "一撃貫通": {
+     "kind": "dmg",
+     "uptime": 1.0,
+     "share": 0.25
+    },
+    "連撃強化": {
+     "kind": "dmg",
+     "uptime": 0.5,
+     "share": 1.0
+    },
+    "無垢": {
+     "kind": "dmg",
+     "uptime": 0.4,
+     "share": 1.0
+    },
+    "ポテンシャル解放": {
+     "kind": "crit",
+     "uptime": 0.65
+    },
+    "弾導強化": {
+     "kind": "flat",
+     "value": 0.02,
+     "fallback": 0.2
+    }
+   },
    "sources": [
     {
      "title": "GameWith 弓最強装備",
@@ -6020,6 +6778,43 @@
     "weaponElement": 600,
     "critPerPct": 0.005,
     "critRate": 0.3
+   },
+   "modelSkills": {
+    "{属性}属性ダメージUP": {
+     "kind": "element",
+     "core": 0.0
+    },
+    "洞察": {
+     "kind": "crit",
+     "uptime": 1.0
+    },
+    "弱点攻撃": {
+     "kind": "crit",
+     "uptime": 0.65
+    },
+    "会心撃【属性】": {
+     "kind": "elemCrit"
+    },
+    "溜め強化": {
+     "kind": "dmg",
+     "uptime": 0.8,
+     "share": 1.0
+    },
+    "気力変換": {
+     "kind": "dmg",
+     "uptime": 1.0,
+     "share": 0.7
+    },
+    "威震": {
+     "kind": "dmg",
+     "uptime": 0.6,
+     "share": 1.0
+    },
+    "破壊王": {
+     "kind": "flat",
+     "value": 0.02,
+     "fallback": 0.2
+    }
    },
    "sources": [
     {
@@ -6339,6 +7134,48 @@
     "weaponElement": 600,
     "critPerPct": 0.005,
     "critRate": 0.3
+   },
+   "modelSkills": {
+    "{属性}属性ダメージUP": {
+     "kind": "element",
+     "core": 0.0
+    },
+    "洞察": {
+     "kind": "crit",
+     "uptime": 1.0
+    },
+    "弱点攻撃": {
+     "kind": "crit",
+     "uptime": 0.65
+    },
+    "会心撃【属性】": {
+     "kind": "elemCrit"
+    },
+    "変形強化": {
+     "kind": "dmg",
+     "uptime": 0.9,
+     "share": 1.0
+    },
+    "チャージ準備": {
+     "kind": "dmg",
+     "uptime": 0.5,
+     "share": 1.0
+    },
+    "連撃強化": {
+     "kind": "dmg",
+     "uptime": 0.5,
+     "share": 1.0
+    },
+    "徹底追撃": {
+     "kind": "dmg",
+     "uptime": 0.4,
+     "share": 1.0
+    },
+    "高圧ガード": {
+     "kind": "flat",
+     "value": 0.02,
+     "fallback": 0.2
+    }
    },
    "sources": [
     {
