@@ -283,6 +283,15 @@ def build_characters(raw, skills, overrides):
             chars.append(hit)
         for k, v in ov.items():
             if k != 'weights': hit[k] = v
+    # ダメージモデル（models.json）があれば優先
+    models = load('models.json') or {}
+    for cid, m in (models.get('characters') or {}).items():
+        hit = next((c for c in chars if c['id'] == cid), None)
+        if hit is None:
+            hit = {'id': cid}; chars.append(hit)
+        hit['model'] = m['model']
+        for k in ('name', 'note', 'sources', 'rarity', 'type', 'weapon', 'element', 'mechanics'):
+            if k in m: hit[k] = m[k]
     for c in chars:
         hero = c['id'].startswith('hero_')
         weights = {}
