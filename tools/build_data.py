@@ -253,7 +253,7 @@ def model_weights(model, skill_name, skill, yuko=False):
         if kind == 'dmg':
             m = 1 + p * up * share
         elif kind == 'element':
-            m = 1 + p * e
+            m = (1 + p * e) * (1 + p * spec.get('core', 0.0))
         elif kind == 'crit':
             m = 1 + pct * up * crit_per
         elif kind == 'elemCrit':

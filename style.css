@@ -240,6 +240,9 @@ main { max-width: 720px; margin: 0 auto; padding: 0 10px; }
 .sheet h2 { font-family: var(--display); margin: 0 0 8px; font-size: 16px; }
 .sheet ol { padding-left: 20px; margin: 0 0 8px; }
 .sheet li { margin: 2px 0; }
+.sheet details { margin: 8px 0; font-size: 12px; color: var(--muted); }
+.sheet details ul { padding-left: 18px; margin: 6px 0; }
+.sheet summary { cursor: pointer; color: var(--gold); }
 
 .foot { max-width: 720px; margin: 16px auto 0; padding: 0 16px; color: var(--muted); font-size: 11px; }
 .foot p { margin: 4px 0; }
