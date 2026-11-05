@@ -1,6 +1,6 @@
 /* 装備おすすめ ― UI */
 'use strict';
-const APP_VERSION = '2026.11.05-3';
+const APP_VERSION = '2026.11.06-1';
 const STORE_KEY = 'mho-equip:v1';
 const PART_JP = { head: '頭', body: '胴', arm: '腕', waist: '腰', leg: '脚' };
 const ROMAN = { 1: 'Ⅰ', 2: 'Ⅱ', 3: 'Ⅲ', 4: 'Ⅳ', 5: 'Ⅴ', 6: 'Ⅵ' };
@@ -47,6 +47,7 @@ function init() {
     worker.postMessage({ type: 'init', armor: d.armor, skills: d.skills });
     renderChars();
     renderFields();
+    renderMenu();
     renderMapTabs();
     renderBoard();
     renderPriorities();
@@ -58,6 +59,41 @@ function init() {
   if ('serviceWorker' in navigator && location.protocol !== 'file:') {
     navigator.serviceWorker.register('sw.js').catch(() => {});
   }
+}
+
+/* ---------- menu / help ---------- */
+function setMenu(open) {
+  $('#menu').hidden = !open; $('#menuBack').hidden = !open;
+  $('#menuBtn').setAttribute('aria-expanded', String(open));
+}
+function setHelp(open) { $('#helpSheet').hidden = !open; $('#helpBack').hidden = !open; }
+function renderMenu() {
+  $('#menuBtn').addEventListener('click', () => setMenu($('#menu').hidden));
+  $('#menuBack').addEventListener('click', () => setMenu(false));
+  document.querySelectorAll('#menu a.menuItem').forEach(a => a.addEventListener('click', () => {
+    setMenu(false);
+    if (a.getAttribute('href') === '#progressPanel') $('#monsterFold').open = true;
+  }));
+  $('#menuAuto').addEventListener('click', () => { setMenu(false); autoFromRank(); });
+  $('#menuAllDone').addEventListener('click', () => { setMenu(false); for (const m of DATA.monsters.monsters) state.defeated[m.name] = true; saveState(); renderMapTabs(); renderBoard(); solve(); });
+  $('#menuReset').addEventListener('click', () => {
+    setMenu(false);
+    if (!confirm('ランク・討伐チェックなどの入力を全部消します。いい？')) return;
+    const keep = { charId: state.charId };
+    for (const k of Object.keys(state)) delete state[k];
+    Object.assign(state, { charId: keep.charId, rank: 1, orbTier: 3, heroElement: '火', target: 'normal', defeated: {}, map: null });
+    saveState(); renderFields(true); renderTargetTabs(); renderMapTabs(); renderBoard(); renderChars(); solve();
+  });
+  $('#menuHelp').addEventListener('click', () => { setMenu(false); setHelp(true); });
+  $('#helpBack').addEventListener('click', () => setHelp(false));
+  $('#helpClose').addEventListener('click', () => setHelp(false));
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') { setMenu(false); setHelp(false); } });
+}
+function autoFromRank() {
+  for (const m of DATA.monsters.monsters) {
+    if (m.unlockRank != null && m.unlockRank <= state.rank) state.defeated[m.name] = true;
+  }
+  saveState(); renderMapTabs(); renderBoard(); solve();
 }
 
 /* ---------- characters ---------- */
@@ -102,18 +138,30 @@ function effectiveWeights(c) {
 function renderPriorities() {
   const c = currentChar();
   const list = $('#prioList'); list.innerHTML = '';
+  $('#prioHint').textContent = c.scoreMode === 'log'
+    ? `スキルごとに「効果値 × 発動している割合 × 乗るダメージの割合」で評価し、掛け合わせて倍率にしています。${c.model && c.model.elementShare ? `属性ダメージの割合は約${Math.round(c.model.elementShare * 100)}%で想定。` : ''}`
+    : '攻略サイトの推奨をもとにした優先度です。';
   for (const p of (c.priorities || [])) {
-    list.append(el('li', { class: 'prio' },
+    const li = el('li', { class: 'prio' },
       el('span', { class: 'tier', text: p.tier }),
       el('span', { class: 'pname', text: (p.targetLv ? `${p.skill} Lv${p.targetLv}` : p.skill).replace('{属性}', c.elementSelectable ? heroElement() : (c.element || '')) }),
-      el('span', { class: 'reason', text: p.reason || '' })));
+      el('span', { class: 'reason', text: p.reason || '' }));
+    if (p.assumption) li.append(el('span', { class: 'assume', text: '想定：' + p.assumption }));
+    if (p.sources && p.sources.length) li.append(el('span', { class: 'src', text: '出典：' + p.sources.join('・') }));
+    list.append(li);
   }
   if (!c.priorities || !c.priorities.length) list.append(el('li', { class: 'empty', text: 'このキャラの優先スキルはまだ未登録です。' }));
+  const sl = $('#sourceList'); sl.innerHTML = '';
+  if (c.sources && c.sources.length) {
+    sl.append('参照：');
+    c.sources.forEach((u, i) => { sl.append(el('a', { href: u.url || u, target: '_blank', rel: 'noopener', text: u.title || `[${i + 1}]` }), ' '); });
+  }
 }
 
 /* ---------- progression fields ---------- */
-function renderFields() {
+function renderFields(valuesOnly) {
   $('#rank').value = state.rank; $('#orbTier').value = state.orbTier;
+  if (valuesOnly) return;
   document.querySelectorAll('.stepper button').forEach((b) => {
     b.addEventListener('click', () => {
       const input = b.parentElement.querySelector('input');
@@ -129,12 +177,7 @@ function renderFields() {
   renderTargetTabs();
   $('#markAllMap').addEventListener('click', () => { setMapDefeated(true); });
   $('#clearAllMap').addEventListener('click', () => { setMapDefeated(false); });
-  $('#autoFromRank').addEventListener('click', () => {
-    for (const m of DATA.monsters.monsters) {
-      if (m.unlockRank != null && m.unlockRank <= state.rank) state.defeated[m.name] = true;
-    }
-    saveState(); renderMapTabs(); renderBoard(); solve();
-  });
+  $('#autoFromRank').addEventListener('click', autoFromRank);
 }
 function renderTargetTabs() {
   document.querySelectorAll('#targetTabs .tab').forEach((b) => b.setAttribute('aria-selected', String((state.target || 'normal') === b.dataset.target)));
@@ -147,6 +190,8 @@ function clamp(input, lo, hi) { const v = Math.min(hi, Math.max(lo, +input.value
 
 /* ---------- monster board ---------- */
 function renderMapTabs() {
+  const all = DATA.monsters.monsters.length, done = DATA.monsters.monsters.filter(x => state.defeated[x.name]).length;
+  $('#monsterCount').textContent = `${done}/${all} 討伐済み`;
   const tabs = $('#mapTabs'); tabs.innerHTML = '';
   for (const m of DATA.monsters.maps) {
     const total = DATA.monsters.monsters.filter(x => x.maps.includes(m.name)).length;
@@ -223,17 +268,24 @@ function solve() {
   renderCapNote();
   $('#resultHint').textContent = '計算中…';
   worker.postMessage({ type: 'solve', reqId, weights: effectiveWeights(c), availableSeries: avail, rarityCap: rarityCap(), orbTier: state.orbTier, next, K: 12, topN: 6 });
+  worker.postMessage({ type: 'solve', reqId, goal: true, weights: effectiveWeights(c), availableSeries: DATA.armor.series.map(s => s.name), rarityCap: 12, orbTier: 6, next: [], K: 12, topN: 3 });
 }
 
+let lastBase = 0;
 function onWorkerMessage(e) {
   const msg = e.data;
   if (msg.reqId !== reqId) return;
+  if (msg.goal) { if (msg.type === 'result') renderGoal(msg); return; }
   if (msg.type === 'result') { renderResult(msg); $('#nextList').innerHTML = ''; $('#nextList').append(el('li', { class: 'empty', text: '伸びしろを計算中…' })); }
   if (msg.type === 'next') renderNext(msg.next);
 }
 
 function rarityClass(r) { return r >= 8 ? 'top' : r >= 6 ? 'high' : r >= 4 ? 'mid' : 'low'; }
-function fmtPct(v) { return (v >= 0 ? '+' : '') + (Math.round(v * 10) / 10).toString() + '%'; }
+function isLog() { const c = currentChar(); return c && c.scoreMode === 'log'; }
+// スコア表示：倍率モデルのキャラは ×1.42、それ以外は +42%
+function fmtScore(v) { return isLog() ? '×' + Math.exp(v / 100).toFixed(2) : (v >= 0 ? '+' : '') + (Math.round(v * 10) / 10) + '%'; }
+function fmtDelta(d) { const v = isLog() ? (Math.exp(d / 100) - 1) * 100 : d; return (v >= 0 ? '+' : '') + (Math.round(v * 10) / 10) + '%'; }
+function fmtPct(v) { return fmtScore(v); }
 
 function renderResult(res) {
   const rack = $('#rack'); rack.innerHTML = '';
@@ -245,7 +297,9 @@ function renderResult(res) {
     return;
   }
   const b = res.best;
-  $('#scoreValue').textContent = fmtPct(b.score);
+  lastBase = b.score;
+  $('#scoreValue').textContent = fmtScore(b.score);
+  $('#scoreLabel').textContent = isLog() ? '想定ダメージ倍率（スキル無し比）' : '火力スキル合計（目安）';
   const needs = b.pieces.filter(p => p.rarity > p.baseRarity);
   $('#resultHint').textContent = needs.length
     ? `強化が必要：${needs.map(p => `${p.name}→レア${p.rarity}`).join('、')}`
@@ -286,7 +340,7 @@ function renderResult(res) {
   const alts = $('#altList'); alts.innerHTML = '';
   for (const a of res.alts) {
     alts.append(el('div', { class: 'alt' },
-      el('span', { class: 'altScore', text: fmtPct(a.score) }),
+      el('span', { class: 'altScore', text: fmtScore(a.score) }),
       el('span', { text: a.totals.filter(t => t.value > 0).map(t => `${t.skill}${t.lv}`).join('・') || '―' }),
       el('ul', {}, ...a.pieces.map(p => el('li', { text: `${PART_JP[p.part]} ${p.name}${p.rarity > p.baseRarity ? `（レア${p.rarity}）` : ''}` })))));
   }
@@ -302,17 +356,29 @@ function renderNext(res) {
     const label = kind === 'orb' ? `狩魂玉${ROMAN[+v] || v}が手に入ったら` : `強化上限をレア${v}にしたら`;
     nl.append(el('li', { class: 'next' },
       el('span', { class: 'nname', text: label }),
-      el('span', { class: 'delta', text: fmtPct(x.delta) }),
+      el('span', { class: 'delta', text: fmtDelta(x.delta) }),
       el('span', { class: 'why', text: `セット：${x.changed.join('・')}` })));
   }
   for (const n of nexts) {
     const flat = n.delta < 0.05;
     nl.append(el('li', { class: 'next' + (flat ? ' flat' : '') },
       el('span', { class: 'nname', text: n.monster }),
-      el('span', { class: 'delta', text: flat ? '変化なし' : fmtPct(n.delta) }),
+      el('span', { class: 'delta', text: flat ? '変化なし' : fmtDelta(n.delta) }),
       el('span', { class: 'why', text: flat ? 'いまのセットは変わりません' : `入れ替わる部位：${n.changed.join('・') || '―'}` })));
   }
   if (!nexts.length) nl.append(el('li', { class: 'empty', text: '未討伐のモンスターがありません。' }));
+}
+
+function renderGoal(res) {
+  const box = $('#goalBody'); box.innerHTML = '';
+  if (!res.best) { box.append(el('div', { class: 'empty', text: '計算できませんでした。' })); return; }
+  const b = res.best;
+  const skills = b.totals.filter(t => t.value > 0).map(t => `${t.skill} Lv${t.lv}`).join('・');
+  const gain = lastBase ? fmtDelta(b.score - lastBase) : '';
+  box.append(el('div', { class: 'goal' },
+    el('div', {}, el('span', { class: 'gScore', text: fmtScore(b.score) }), gain ? el('span', { class: 'hint', text: `　いまのセットから${gain}` }) : null),
+    el('div', { text: skills || '―' }),
+    el('ul', {}, ...b.pieces.map(p => el('li', { text: `${PART_JP[p.part]} ${p.name}${p.rarity > p.baseRarity ? `（レア${p.rarity}）` : ''}` })))));
 }
 
 document.addEventListener('DOMContentLoaded', init);

@@ -95,6 +95,17 @@ PCT = re.compile(r'([+＋]?)(\d+(?:\.\d+)?)\s*[%％]')
 NUM = re.compile(r'[+＋](\d+(?:\.\d+)?)')
 
 ELEM_ATK = re.compile(r'属性攻撃力\s*[+＋](\d+)')
+def parse_level(effect):
+    """効果文 → (pct, pct_yuko, flat_elem_atk)。確率の%は除外"""
+    if not effect: return (0.0, 0.0, 0)
+    cleaned = re.sub(r'\d+(?:\.\d+)?\s*[%％]の確率', '', effect)
+    pcts = [float(m.group(2)) for m in PCT.finditer(cleaned)]
+    m = ELEM_ATK.search(effect)
+    flat = int(m.group(1)) if m else 0
+    pct = pcts[0] if pcts else 0.0
+    yuko = pcts[1] if ('融光種' in effect and len(pcts) >= 2) else pct
+    return (pct, yuko, flat)
+
 def parse_value(effect):
     """効果文から数値を取る。(通常値, 融光種相手の値)。属性攻撃力+N は N×0.12 を加算（目安）"""
     if not effect: return None, None
@@ -225,6 +236,42 @@ def expand_priorities(prios):
             out.append(q)
     return out
 
+import math
+def model_weights(model, skill_name, skill, yuko=False):
+    """ダメージモデルからレベル別の重み（100×ln(倍率)）を作る"""
+    spec = model['skills'][skill_name]
+    e = model.get('elementShare', 0.35)
+    wE = model.get('weaponElement', 130)
+    crit_per = model.get('critPerPct', 0.004)   # 会心率+1%あたりの期待ダメージ増（割合）
+    crit_rate = model.get('critRate', 0.3)
+    out = []
+    for lv in skill.get('levels') or []:
+        pct, pct_y, flat = parse_level(lv.get('effect'))
+        p = (pct_y if yuko else pct) / 100.0
+        kind = spec.get('kind', 'dmg')
+        up = spec.get('uptime', 1.0); share = spec.get('share', 1.0)
+        if kind == 'dmg':
+            m = 1 + p * up * share
+        elif kind == 'element':
+            m = 1 + p * e
+        elif kind == 'crit':
+            m = 1 + pct * up * crit_per
+        elif kind == 'elemCrit':
+            m = 1 + p * crit_rate * e
+        elif kind == 'proc':
+            m = 1 + spec.get('chance', 0.75) * p * up
+        elif kind == 'flat':
+            m = 1 + p * spec.get('value', 0.3)
+        else:
+            m = 1 + p * up * share
+        if flat:
+            m *= 1 + (flat / wE) * e
+        out.append(round(100 * math.log(m), 3))
+    if not out:
+        mx = skill.get('maxLv') or 1
+        out = [round(spec.get('fallback', 0.5) * (i + 1), 3) for i in range(mx)]
+    return out
+
 def build_characters(raw, skills, overrides):
     out = []
     chars = list((raw or {}).get('characters', []))
@@ -263,12 +310,27 @@ def build_characters(raw, skills, overrides):
             weights_y[name] = [round(v * w, 3) for v in vals_y]
             prios.append({'skill': name, 'tier': (p.get('tier') or 'B').upper(), 'targetLv': p.get('targetLv'), 'reason': p.get('reason') or ''})
         # 控えめな汎用補正（同点時に生存スキルを拾う）
+        model = c.get('model')
+        if model:
+            weights, weights_y, prios = {}, {}, []
+            for sname, spec in model['skills'].items():
+                key = sname
+                lookup = sname.replace('{属性}', '火')
+                if lookup not in skills:
+                    print(f"  ?? {c.get('name', c['id'])}: モデルのスキルが無い: {sname}"); continue
+                weights[key] = model_weights(model, sname, skills[lookup], False)
+                weights_y[key] = model_weights(model, sname, skills[lookup], True)
+                if spec.get('reason') is not None:
+                    prios.append({'skill': key, 'tier': spec.get('tier', 'A'), 'targetLv': spec.get('targetLv'), 'reason': spec.get('reason', ''), 'sources': spec.get('sources', []), 'assumption': spec.get('assumption', '')})
+            prios.sort(key=lambda q: -max(weights[q['skill']]))
         for name in ('体力強化', '加護', '体力回復', '防護'):
             if name in skills and name not in weights:
                 weights[name] = [0.1 * (i + 1) for i in range(skills[name]['maxLv'] or 1)]
                 weights_y[name] = weights[name]
         entry = {'id': c['id'], 'name': c.get('name', c['id']), 'rarity': c.get('rarity'), 'type': None if hero else c.get('type'), 'weapon': c.get('weapon'), 'element': None if hero else c.get('element'),
-                 'elementSelectable': hero, 'mechanics': c.get('mechanics') or [], 'priorities': prios, 'weights': weights, 'weightsYuko': weights_y, 'note': c.get('note') or ''}
+                 'elementSelectable': hero, 'mechanics': c.get('mechanics') or [], 'priorities': prios, 'weights': weights, 'weightsYuko': weights_y, 'note': c.get('note') or '',
+                 'scoreMode': 'log' if c.get('model') else 'sum', 'model': ({k: v for k, v in c['model'].items() if k != 'skills'} if c.get('model') else None),
+                 'sources': c.get('sources') or []}
         ov = ((overrides or {}).get('characters') or {}).get(c['id'])
         if ov and ov.get('weights'):
             entry['weights'].update(ov['weights']); entry['weightsYuko'].update(ov['weights'])

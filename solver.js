@@ -15,8 +15,9 @@ self.onmessage = (e) => {
     const res = solve(msg);
     res.ms = Date.now() - t0;
     res.reqId = msg.reqId;
+    res.goal = !!msg.goal;
     self.postMessage({ type: 'result', ...res });
-    if (res.best) {
+    if (res.best && !msg.goal) {
       const t1 = Date.now();
       const next = solveNext(msg, res.best.score);
       self.postMessage({ type: 'next', reqId: msg.reqId, next, ms: Date.now() - t1 });

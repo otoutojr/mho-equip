@@ -19,9 +19,30 @@
 </head>
 <body>
 <header class="masthead">
-  <h1>装備おすすめ</h1>
-  <p class="sub">モンハンアウトランダーズ ― いま作れる防具で組む最強セット</p>
+  <div class="mastInner">
+    <h1>装備おすすめ</h1>
+    <button type="button" class="menuBtn" id="menuBtn" aria-label="メニュー" aria-expanded="false" aria-controls="menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </header>
+
+<div class="menuBack" id="menuBack" hidden></div>
+<nav class="menu" id="menu" hidden aria-label="メニュー">
+  <p class="menuTitle">移動</p>
+  <a href="#charPanel" class="menuItem">キャラを選ぶ</a>
+  <a href="#progressPanel" class="menuItem">進行度・倒したモンスター</a>
+  <a href="#resultPanel" class="menuItem">最強セット</a>
+  <a href="#nextPanel" class="menuItem">次に狩ると強くなる相手</a>
+  <a href="#goalPanel" class="menuItem">最終目標（全部解放したとき）</a>
+  <a href="#prioPanel" class="menuItem">狙うスキルと根拠</a>
+  <p class="menuTitle">操作</p>
+  <button type="button" class="menuItem" id="menuAuto">ランクから討伐済みを自動設定</button>
+  <button type="button" class="menuItem" id="menuAllDone">全モンスターを討伐済みにする</button>
+  <button type="button" class="menuItem" id="menuReset">入力をリセット</button>
+  <p class="menuTitle">その他</p>
+  <button type="button" class="menuItem" id="menuHelp">使い方</button>
+</nav>
 
 <main id="app" aria-live="polite">
   <section class="panel" id="charPanel">
@@ -55,25 +76,24 @@
       </label>
     </div>
     <p class="capNote" id="capNote"></p>
-    <div class="row">
-      <button type="button" class="ghost" id="autoFromRank">ランクから討伐済みを自動設定</button>
-    </div>
-
-    <h3>倒したモンスター</h3>
-    <p class="hint">タップで討伐済みに。討伐済みのモンスターの素材で作れる防具だけを候補にします。</p>
-    <div id="mapTabs" class="tabs" role="tablist"></div>
-    <div class="row boardTools">
-      <button type="button" class="ghost small" id="markAllMap">このマップを全部討伐済みにする</button>
-      <button type="button" class="ghost small" id="clearAllMap">このマップを全部未討伐にする</button>
-    </div>
-    <div id="monsterBoard" class="board"></div>
-    <div class="oreNote" id="oreNote"></div>
+    <details class="fold" id="monsterFold">
+      <summary><span>倒したモンスター</span><span class="foldMeta" id="monsterCount"></span></summary>
+      <p class="hint">タップで討伐済みに。討伐済みのモンスターの素材で作れる防具だけを候補にします。</p>
+      <div class="row boardTools">
+        <button type="button" class="ghost small" id="autoFromRank">ランクから自動設定</button>
+        <button type="button" class="ghost small" id="markAllMap">このマップを全部討伐済み</button>
+        <button type="button" class="ghost small" id="clearAllMap">このマップを全部未討伐</button>
+      </div>
+      <div id="mapTabs" class="tabs" role="tablist"></div>
+      <div id="monsterBoard" class="board"></div>
+      <div class="oreNote" id="oreNote"></div>
+    </details>
   </section>
 
   <section class="panel result" id="resultPanel">
     <div class="resultHead">
       <h2 id="resultTitle">最強セット</h2>
-      <div class="score"><span id="scoreValue">―</span><span class="scoreLabel">火力スキル合計（目安）</span></div>
+      <div class="score"><span id="scoreValue">―</span><span class="scoreLabel" id="scoreLabel">想定ダメージ倍率</span></div>
     </div>
     <div class="tabs targetTabs" id="targetTabs" role="tablist" aria-label="想定する相手">
       <button type="button" class="tab" role="tab" data-target="normal">通常モンスター向け</button>
@@ -94,14 +114,36 @@
     <ol id="nextList" class="nextList"></ol>
   </section>
 
+  <section class="panel" id="goalPanel">
+    <h2>最終目標</h2>
+    <p class="hint">全モンスター・全強化を解放したときの最強スキル構成。いま作れるかは関係なく、このキャラの到達点。</p>
+    <div id="goalBody"></div>
+  </section>
+
   <section class="panel" id="prioPanel">
-    <h2>このキャラで狙うスキル</h2>
+    <h2>狙うスキルと根拠</h2>
+    <p class="hint" id="prioHint"></p>
     <ul id="prioList" class="prioList"></ul>
+    <div class="sourceList" id="sourceList"></div>
   </section>
 </main>
 
+<div class="menuBack" id="helpBack" hidden></div>
+<section class="sheet" id="helpSheet" hidden aria-label="使い方">
+  <h2>使い方</h2>
+  <ol>
+    <li>キャラを選ぶ（主人公は武器種ごと、属性も選べる）</li>
+    <li>冒険ランクと、持っている狩魂玉の最高ランクを入れる → 強化できる上限レアが決まる</li>
+    <li>倒したモンスターにチェック（「ランクから自動設定」でまとめて可）</li>
+    <li>最強セットに、各部位を何レアまで強化すればいいかが出る</li>
+    <li>「次に狩ると強くなる相手」で、次の目標が分かる</li>
+  </ol>
+  <p>想定ダメージ倍率は、各スキルの効果値に「そのキャラでどれだけ乗るか」（発動率・弾種・属性の割合）を掛けて掛け合わせた目安です。根拠は「狙うスキルと根拠」に書いてあります。</p>
+  <button type="button" class="ghost" id="helpClose">閉じる</button>
+</section>
+
 <footer class="foot">
-  <p>データは攻略サイト（GameWith・Game8）の掲載情報をもとに手作業でまとめたものです。数値はゲーム内表記と異なる場合があります。</p>
+  <p>データは攻略サイト（GameWith・Game8・アルテマ・Gamerch 等）の掲載情報をもとに手作業でまとめたものです。数値はゲーム内表記と異なる場合があります。</p>
   <p id="dataDate"></p>
 </footer>
 
