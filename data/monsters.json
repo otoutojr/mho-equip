@@ -1,0 +1,66 @@
+{
+ "maps": [
+  {
+   "name": "巨木の原野",
+   "unlockRank": 1
+  },
+  {
+   "name": "熱砂の平原",
+   "unlockRank": 10
+  },
+  {
+   "name": "朽ち果ての淵",
+   "unlockRank": 30
+  }
+ ],
+ "monsters": [
+  {
+   "name": "リオレイア",
+   "variant": "normal",
+   "maps": [
+    "巨木の原野"
+   ],
+   "element": "火",
+   "armorSeries": [
+    "レイア"
+   ],
+   "unlockRank": 20
+  },
+  {
+   "name": "パオウルムー",
+   "variant": "normal",
+   "maps": [
+    "朽ち果ての淵"
+   ],
+   "element": "無",
+   "armorSeries": [
+    "ウルムー"
+   ],
+   "unlockRank": 35
+  },
+  {
+   "name": "融光種パオウルムー",
+   "variant": "yuko",
+   "maps": [
+    "朽ち果ての淵"
+   ],
+   "element": "無",
+   "armorSeries": [
+    "融光種ウルムー"
+   ],
+   "unlockRank": 40
+  },
+  {
+   "name": "レイギエナ",
+   "variant": "normal",
+   "maps": [
+    "朽ち果ての淵"
+   ],
+   "element": "氷",
+   "armorSeries": [
+    "ギエナ"
+   ],
+   "unlockRank": 38
+  }
+ ]
+}

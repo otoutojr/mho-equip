@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>装備おすすめ ― アウトランダーズ</title>
+<meta name="description" content="冒険ランクと倒したモンスターから、いま作れる最強の防具構成を計算するモンハンアウトランダーズ用ツール">
+<meta name="theme-color" content="#22201c">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="装備おすすめ">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/icon-180.png">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <h1>装備おすすめ</h1>
+  <p class="sub">モンハンアウトランダーズ ― いま作れる防具で組む最強セット</p>
+</header>
+
+<main id="app" aria-live="polite">
+  <section class="panel" id="charPanel">
+    <h2>キャラ</h2>
+    <div class="chips" id="charChips" role="tablist" aria-label="キャラを選ぶ"></div>
+    <p class="charNote" id="charNote"></p>
+  </section>
+
+  <section class="panel" id="progressPanel">
+    <h2>進行度</h2>
+    <div class="row">
+      <label class="field">
+        <span>冒険ランク</span>
+        <div class="stepper">
+          <button type="button" data-step="-1" aria-label="ランクを下げる">−</button>
+          <input id="rank" type="number" inputmode="numeric" min="1" max="200" value="1">
+          <button type="button" data-step="1" aria-label="ランクを上げる">＋</button>
+        </div>
+      </label>
+      <label class="field">
+        <span>強化できる上限レア</span>
+        <div class="stepper">
+          <button type="button" data-step="-1" data-for="rarityCap" aria-label="上限レアを下げる">−</button>
+          <input id="rarityCap" type="number" inputmode="numeric" min="1" max="12" value="7">
+          <button type="button" data-step="1" data-for="rarityCap" aria-label="上限レアを上げる">＋</button>
+        </div>
+      </label>
+    </div>
+    <div class="row">
+      <label class="field">
+        <span>冒険団Lv</span>
+        <div class="stepper">
+          <button type="button" data-step="-1" data-for="guildLv" aria-label="冒険団Lvを下げる">−</button>
+          <input id="guildLv" type="number" inputmode="numeric" min="0" max="30" value="0">
+          <button type="button" data-step="1" data-for="guildLv" aria-label="冒険団Lvを上げる">＋</button>
+        </div>
+      </label>
+      <button type="button" class="ghost" id="autoFromRank">ランクから討伐済みを自動設定</button>
+    </div>
+
+    <h3>倒したモンスター</h3>
+    <p class="hint">タップで討伐済みに。討伐済みのモンスターの素材で作れる防具だけを候補にします。</p>
+    <div id="mapTabs" class="tabs" role="tablist"></div>
+    <div id="monsterBoard" class="board"></div>
+    <div class="oreNote" id="oreNote"></div>
+  </section>
+
+  <section class="panel result" id="resultPanel">
+    <div class="resultHead">
+      <h2 id="resultTitle">最強セット</h2>
+      <div class="score"><span id="scoreValue">―</span><span class="scoreLabel">火力スキル合計（目安）</span></div>
+    </div>
+    <p class="hint" id="resultHint"></p>
+    <ol class="rack" id="rack"></ol>
+    <div class="skillTotals" id="skillTotals"></div>
+    <details class="alts" id="alts">
+      <summary>ほかの候補セット</summary>
+      <div id="altList"></div>
+    </details>
+  </section>
+
+  <section class="panel" id="nextPanel">
+    <h2>次に狩ると強くなる相手</h2>
+    <p class="hint">まだ倒していないモンスターを1体倒した場合に、セットがどれだけ強くなるか。</p>
+    <ol id="nextList" class="nextList"></ol>
+  </section>
+
+  <section class="panel" id="prioPanel">
+    <h2>このキャラで狙うスキル</h2>
+    <ul id="prioList" class="prioList"></ul>
+  </section>
+</main>
+
+<footer class="foot">
+  <p>データは攻略サイト（GameWith・Game8）の掲載情報をもとに手作業でまとめたものです。数値はゲーム内表記と異なる場合があります。</p>
+  <p id="dataDate"></p>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>

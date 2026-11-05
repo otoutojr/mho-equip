@@ -1,0 +1,401 @@
+{
+ "updated": "fixture",
+ "series": [
+  {
+   "name": "冒険者",
+   "gate": {
+    "type": "basic"
+   },
+   "setSkill": {
+    "name": "荒野マスタリー",
+    "bonuses": [
+     {
+      "pieces": 2,
+      "skill": "標本の達人",
+      "lv": 1
+     }
+    ]
+   },
+   "pieces": [
+    {
+     "id": "adv_head",
+     "name": "冒険者ヘルム",
+     "part": "head",
+     "baseRarity": 2,
+     "maxRarity": 9,
+     "skills": [
+      {
+       "name": "洞察",
+       "lv": 1,
+       "rarity": 2
+      },
+      {
+       "name": "地質専門家",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "体力回復",
+       "lv": 1,
+       "rarity": 7
+      }
+     ]
+    },
+    {
+     "id": "adv_body",
+     "name": "冒険者メイル",
+     "part": "body",
+     "baseRarity": 2,
+     "maxRarity": 9,
+     "skills": [
+      {
+       "name": "環境の活用",
+       "lv": 1,
+       "rarity": 2
+      },
+      {
+       "name": "弩弾強化",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "弩弾強化",
+       "lv": 2,
+       "rarity": 7
+      }
+     ]
+    },
+    {
+     "id": "adv_arm",
+     "name": "冒険者アーム",
+     "part": "arm",
+     "baseRarity": 2,
+     "maxRarity": 9,
+     "skills": [
+      {
+       "name": "標本の達人",
+       "lv": 1,
+       "rarity": 2
+      },
+      {
+       "name": "体力回復",
+       "lv": 1,
+       "rarity": 5
+      }
+     ]
+    },
+    {
+     "id": "adv_waist",
+     "name": "冒険者コイル",
+     "part": "waist",
+     "baseRarity": 2,
+     "maxRarity": 9,
+     "skills": [
+      {
+       "name": "弩弾強化",
+       "lv": 1,
+       "rarity": 2
+      },
+      {
+       "name": "地質専門家",
+       "lv": 1,
+       "rarity": 5
+      },
+      {
+       "name": "弩弾強化",
+       "lv": 2,
+       "rarity": 7
+      }
+     ]
+    },
+    {
+     "id": "adv_leg",
+     "name": "冒険者グリーヴ",
+     "part": "leg",
+     "baseRarity": 2,
+     "maxRarity": 9,
+     "skills": [
+      {
+       "name": "洞察",
+       "lv": 1,
+       "rarity": 2
+      },
+      {
+       "name": "壁登りの達人",
+       "lv": 1,
+       "rarity": 5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "ウルムー",
+   "gate": {
+    "type": "monster",
+    "monster": "パオウルムー"
+   },
+   "setSkill": {
+    "name": "浮空竜の気迫",
+    "bonuses": [
+     {
+      "pieces": 2,
+      "skill": "体力回復",
+      "lv": 1
+     }
+    ]
+   },
+   "pieces": [
+    {
+     "id": "ulm_head",
+     "name": "ウルムーヘルム",
+     "part": "head",
+     "baseRarity": 4,
+     "maxRarity": 9,
+     "skills": [
+      {
+       "name": "弩弾強化",
+       "lv": 1,
+       "rarity": 4
+      }
+     ]
+    },
+    {
+     "id": "ulm_arm",
+     "name": "ウルムーアーム",
+     "part": "arm",
+     "baseRarity": 4,
+     "maxRarity": 9,
+     "skills": [
+      {
+       "name": "滞空",
+       "lv": 2,
+       "rarity": 4
+      },
+      {
+       "name": "風圧耐性",
+       "lv": 1,
+       "rarity": 4
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "融光種ウルムー",
+   "gate": {
+    "type": "monster",
+    "monster": "融光種パオウルムー"
+   },
+   "setSkill": {
+    "name": "浮空竜の気流",
+    "bonuses": [
+     {
+      "pieces": 2,
+      "skill": "高圧ガード",
+      "lv": 1
+     }
+    ]
+   },
+   "pieces": [
+    {
+     "id": "yulm_waist",
+     "name": "融光種ウルムーコイル",
+     "part": "waist",
+     "baseRarity": 5,
+     "maxRarity": 9,
+     "skills": [
+      {
+       "name": "滞空",
+       "lv": 3,
+       "rarity": 5
+      },
+      {
+       "name": "アイテム専門家",
+       "lv": 1,
+       "rarity": 5
+      }
+     ]
+    },
+    {
+     "id": "yulm_leg",
+     "name": "融光種ウルムーグリーヴ",
+     "part": "leg",
+     "baseRarity": 5,
+     "maxRarity": 9,
+     "skills": [
+      {
+       "name": "滞空",
+       "lv": 2,
+       "rarity": 5
+      },
+      {
+       "name": "加護",
+       "lv": 1,
+       "rarity": 5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "オウビート",
+   "gate": {
+    "type": "basic"
+   },
+   "setSkill": {
+    "name": "一角の神秘",
+    "bonuses": [
+     {
+      "pieces": 2,
+      "skill": "地質専門家",
+      "lv": 1
+     }
+    ]
+   },
+   "pieces": [
+    {
+     "id": "ow_arm",
+     "name": "オウビートマーノ",
+     "part": "arm",
+     "baseRarity": 4,
+     "maxRarity": 9,
+     "skills": [
+      {
+       "name": "弩弾強化",
+       "lv": 1,
+       "rarity": 6
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "パピメル",
+   "gate": {
+    "type": "basic"
+   },
+   "setSkill": {
+    "name": "花蝶の親和",
+    "bonuses": [
+     {
+      "pieces": 2,
+      "skill": "睡眠耐性",
+      "lv": 1
+     }
+    ]
+   },
+   "pieces": [
+    {
+     "id": "pap_head",
+     "name": "パピメルテスタ",
+     "part": "head",
+     "baseRarity": 4,
+     "maxRarity": 9,
+     "skills": [
+      {
+       "name": "滞空",
+       "lv": 1,
+       "rarity": 4
+      }
+     ]
+    },
+    {
+     "id": "pap_leg",
+     "name": "パピメルガンバ",
+     "part": "leg",
+     "baseRarity": 4,
+     "maxRarity": 9,
+     "skills": [
+      {
+       "name": "滞空",
+       "lv": 1,
+       "rarity": 4
+      },
+      {
+       "name": "弾導強化",
+       "lv": 1,
+       "rarity": 4
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "レイア",
+   "gate": {
+    "type": "monster",
+    "monster": "リオレイア"
+   },
+   "setSkill": {
+    "name": "雌火竜の強躯",
+    "bonuses": [
+     {
+      "pieces": 2,
+      "skill": "体力強化",
+      "lv": 1
+     }
+    ]
+   },
+   "pieces": [
+    {
+     "id": "rath_body",
+     "name": "レイアメイル",
+     "part": "body",
+     "baseRarity": 4,
+     "maxRarity": 9,
+     "skills": [
+      {
+       "name": "滞空",
+       "lv": 1,
+       "rarity": 4
+      },
+      {
+       "name": "滞空",
+       "lv": 2,
+       "rarity": 6
+      },
+      {
+       "name": "毒耐性",
+       "lv": 1,
+       "rarity": 4
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "ギエナ",
+   "gate": {
+    "type": "monster",
+    "monster": "レイギエナ"
+   },
+   "setSkill": {
+    "name": "風漂竜の舞",
+    "bonuses": [
+     {
+      "pieces": 2,
+      "skill": "氷耐性強化",
+      "lv": 1
+     }
+    ]
+   },
+   "pieces": [
+    {
+     "id": "leg_leg",
+     "name": "ギエナグリーヴ",
+     "part": "leg",
+     "baseRarity": 5,
+     "maxRarity": 9,
+     "skills": [
+      {
+       "name": "弩弾強化",
+       "lv": 2,
+       "rarity": 5
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

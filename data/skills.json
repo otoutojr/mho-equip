@@ -1,0 +1,163 @@
+{
+ "skills": [
+  {
+   "name": "弩弾強化",
+   "category": "火力",
+   "weapon": "ヘビィボウガン",
+   "maxLv": 4,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "散弾ダメージ+4%",
+     "value": 4
+    },
+    {
+     "lv": 2,
+     "effect": "+8%",
+     "value": 8
+    },
+    {
+     "lv": 3,
+     "effect": "+12%",
+     "value": 12
+    },
+    {
+     "lv": 4,
+     "effect": "+16%",
+     "value": 16
+    }
+   ]
+  },
+  {
+   "name": "滞空",
+   "category": "火力",
+   "maxLv": 5,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "滞空攻撃のダメージ+5%"
+    },
+    {
+     "lv": 2,
+     "effect": "+9%"
+    },
+    {
+     "lv": 3,
+     "effect": "+14%"
+    },
+    {
+     "lv": 4,
+     "effect": "+19%"
+    },
+    {
+     "lv": 5,
+     "effect": "+24%"
+    }
+   ]
+  },
+  {
+   "name": "水属性ダメージUP",
+   "category": "火力",
+   "maxLv": 5,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "+3%"
+    },
+    {
+     "lv": 2,
+     "effect": "+6%"
+    },
+    {
+     "lv": 3,
+     "effect": "+9%"
+    },
+    {
+     "lv": 4,
+     "effect": "+12%"
+    },
+    {
+     "lv": 5,
+     "effect": "+15%"
+    }
+   ]
+  },
+  {
+   "name": "体力回復",
+   "category": "生存",
+   "maxLv": 3,
+   "levels": []
+  },
+  {
+   "name": "地質専門家",
+   "category": "採取",
+   "maxLv": 3,
+   "levels": []
+  },
+  {
+   "name": "洞察",
+   "maxLv": 2,
+   "levels": []
+  },
+  {
+   "name": "標本の達人",
+   "maxLv": 2,
+   "levels": []
+  },
+  {
+   "name": "環境の活用",
+   "maxLv": 2,
+   "levels": []
+  },
+  {
+   "name": "壁登りの達人",
+   "maxLv": 1,
+   "levels": []
+  },
+  {
+   "name": "風圧耐性",
+   "maxLv": 3,
+   "levels": []
+  },
+  {
+   "name": "アイテム専門家",
+   "maxLv": 2,
+   "levels": []
+  },
+  {
+   "name": "加護",
+   "maxLv": 3,
+   "levels": []
+  },
+  {
+   "name": "高圧ガード",
+   "maxLv": 2,
+   "levels": []
+  },
+  {
+   "name": "睡眠耐性",
+   "maxLv": 3,
+   "levels": []
+  },
+  {
+   "name": "弾導強化",
+   "maxLv": 3,
+   "levels": []
+  },
+  {
+   "name": "毒耐性",
+   "maxLv": 3,
+   "levels": []
+  },
+  {
+   "name": "体力強化",
+   "maxLv": 3,
+   "levels": []
+  },
+  {
+   "name": "氷耐性強化",
+   "maxLv": 3,
+   "levels": []
+  }
+ ]
+}
