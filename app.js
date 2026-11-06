@@ -1,6 +1,6 @@
 /* 融光工房 ― UI */
 'use strict';
-const APP_VERSION = '2026.11.06-12';
+const APP_VERSION = '2026.11.06-13';
 const STORE_KEY = 'mho-equip:v1';
 const PART_JP = { head: '頭', body: '胴', arm: '腕', waist: '腰', leg: '脚' };
 const EL_CLASS = { '火': 'fire', '水': 'water', '雷': 'thunder', '氷': 'ice', '龍': 'dragon', '毒': 'poison', '麻痺': 'para', '睡眠': 'sleep', '爆破': 'blast', '無': 'none' };
@@ -343,7 +343,13 @@ function buildOpenRank(b) {
   return null;
 }
 function refLabel(r) {
-  return [r.stage, r.rarityRange ? `レア${r.rarityRange}` : null, r.label].filter(Boolean).join('・');
+  const label = r.label && !/おすすめ装備|最強装備/.test(r.label) && r.label !== r.stage ? r.label : null;
+  return [r.stage, r.rarityRange ? `レア${r.rarityRange}` : null, label].filter(Boolean).join('・');
+}
+// 同じサイトの同じ見出し（キャラページとまとめページの再掲など）は1つにまとめる
+function uniqRefs(refs) {
+  const seen = new Set();
+  return refs.filter(r => { const k = r.source + '|' + refLabel(r); if (seen.has(k)) return false; seen.add(k); return true; });
 }
 function renderBuilds(rows) {
   const box = $('#dbList'); box.innerHTML = '';
@@ -370,7 +376,7 @@ function renderBuilds(rows) {
   for (const x of items) {
     const { b, row } = x;
     const head = el('div', { class: 'dbHead' },
-      el('div', { class: 'dbRefs' }, ...b.refs.map(r => el('span', { class: 'dbSrc' }, el('b', { text: r.source }), refLabel(r) ? ` ${refLabel(r)}` : '')),
+      el('div', { class: 'dbRefs' }, ...uniqRefs(b.refs).map(r => el('span', { class: 'dbSrc' }, el('b', { text: r.source }), refLabel(r) ? ` ${refLabel(r)}` : '')),
         b.sourceCount > 1 ? el('span', { class: 'badge agree', text: `${b.sourceCount}サイト一致` }) : null),
       x.now && row ? el('span', { class: 'dbDps' }, fmtInt(x.dps), el('small', { text: 'DPS目安' })) : el('span', { class: 'dbLock', text: x.openAt ? `ランク${x.openAt}から` : '作れる条件不明' }));
     const wname = b.weapon ? (b.weapon.name || b.weapon.raw) : '―';
@@ -402,7 +408,7 @@ function renderBuilds(rows) {
       .map(([k, lv]) => `${k} ${have.get(k) || 0}/${lv}`);
     const gapLine = x.now && row && gap.length ? el('p', { class: 'dbGap', text: `攻略サイトの想定（${b.refs[0].rarityRange ? `レア${b.refs[0].rarityRange}` : '最大強化'}）まであと：${gap.join('・')}。強化上限が上がると揃う` }) : null;
     const det = el('details', { class: 'dbDet' }, el('summary', { text: '攻略サイトの解説・スキル' }),
-      ...b.refs.map(r => el('div', { class: 'dbRef' },
+      ...uniqRefs(b.refs).map(r => el('div', { class: 'dbRef' },
         el('p', { class: 'dbRefHead' }, el('b', { text: r.source }), ` ${refLabel(r)}`, r.updated ? el('span', { class: 'muted', text: `（${r.updated}）` }) : null),
         r.skills && r.skills.length ? el('p', { class: 'dbRefSk', text: '掲載スキル：' + r.skills.map(k => `${k.skill}${k.lv ?? ''}`).join('・') }) : null,
         r.comment ? el('p', { class: 'dbRefCm', text: r.comment }) : null,

@@ -37,6 +37,14 @@ def variants(n):
     return out
 
 
+HERO_BY_TYPE = {'ヘビィボウガン': 'hero_hbg', '太刀': 'hero_ls', '大剣': 'hero_gs', '双剣': 'hero_db', 'ランス': 'hero_lance',
+                '弓': 'hero_bow', 'ハンマー': 'hero_hammer', 'チャージアックス': 'hero_cb'}
+
+
+def skill_name(s):
+    return unicodedata.normalize('NFKC', s or '').replace('搔', '掻').strip()
+
+
 def load(name):
     p = RAW / name
     if not p.exists():
@@ -83,6 +91,11 @@ def main():
             continue
         for b in d.get('builds') or []:
             n_in += 1
+            # まとめページの再掲（同じサイトの個別ページと同一）は数えない。キャラページと武器種ページの重複は下で1件にまとまる
+            if b.get('sameAsBuild') or (b.get('sameAs') and not b.get('charId')):
+                continue
+            if not b.get('charId') and b.get('weaponType') in HERO_BY_TYPE:  # 武器種別の序盤装備ページ＝主人公向け
+                b = dict(b, charId=HERO_BY_TYPE[b['weaponType']])
             src = b.get('source') or d.get('source') or fname
             arm = b.get('armor') or {}
             pieces = {}
@@ -91,7 +104,14 @@ def main():
                 p = find_piece(raw, part)
                 if raw and not p:
                     unresolved[f'防具 {raw}（{src}）'] += 1
-                pieces[part] = {'id': p['id'], 'name': p['name']} if p else ({'id': None, 'raw': raw} if raw else None)
+                pieces[part] = {'id': p['id'], 'name': p['name'], 'part': p['part']} if p else ({'id': None, 'raw': raw} if raw else None)
+            # サイトの表で部位の欄がずれている防具（GameWith の「手」にメイルなど）は本来の部位に戻す
+            for part in PARTS:
+                q = pieces[part]
+                if q and q.get('part') and q['part'] != part and not pieces.get(q['part']):
+                    pieces[q['part']] = q; pieces[part] = None
+            for q in pieces.values():
+                if q: q.pop('part', None)
             w = find_weapon(b.get('weapon'))
             if b.get('weapon') and not w:
                 unresolved[f'武器 {b.get("weapon")}（{src}）'] += 1
@@ -100,7 +120,7 @@ def main():
                            [(pieces[x] or {}).get('id') or (pieces[x] or {}).get('raw') or '-' for x in PARTS])
             ref = {'source': src, 'label': b.get('label'), 'stage': b.get('stage'), 'rarityRange': b.get('rarityRange'),
                    'url': b.get('sourceUrl'), 'updated': b.get('pageUpdated'), 'comment': (b.get('comment') or '')[:200],
-                   'skills': [{'skill': k.get('skill'), 'lv': k.get('lv')} for k in b.get('skills') or [] if k.get('skill')]}
+                   'skills': [{'skill': skill_name(k.get('skill')), 'lv': k.get('lv')} for k in b.get('skills') or [] if k.get('skill')]}
             if key in merged:
                 if not any(r['source'] == ref['source'] and r['label'] == ref['label'] and r['url'] == ref['url'] for r in merged[key]['refs']):
                     merged[key]['refs'].append(ref)
