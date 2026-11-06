@@ -289,3 +289,4 @@ main { max-width: 640px; margin: 0 auto; padding: 0 10px; }
 }
 
 .rar .more { font-size: 10px; color: var(--muted); }
+.conflict { margin-top: 4px; font-size: 10px; line-height: 1.45; color: var(--ember-hi); opacity: .85; }

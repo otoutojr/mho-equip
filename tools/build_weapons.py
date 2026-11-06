@@ -2,7 +2,8 @@
 """武器データ（GameWith から収集した weapons.json）をアプリ用 data/weapons.json に変換する。
 
 - 生産レア〜最大レアの全レアについて攻撃力・属性値を持たせる
-- 個別ページに無いレア（冒険団武器のレア8〜13など）は、前後の既知の値から等比補間して est:true を付ける
+- レア8〜12 は gamewith.ai の武器ごとのレア別表（rarity_rules.json の weaponHighRarity）で埋める
+- それでも無いレア（冒険団武器などのレア13）は、前後の既知の値から等比補間して est:true を付ける
 """
 import json, sys, pathlib, datetime
 
@@ -19,11 +20,26 @@ def interp(known, r, key):
     return round(a * (b / a) ** ((r - lo) / (hi - lo)))
 
 
+def pct(v):
+    try:
+        return float(str(v).rstrip('%')) if v not in (None, '-', '') else None
+    except ValueError:
+        return None
+
+
 def main():
     d = json.loads(RAW.read_text(encoding='utf-8'))
+    rules = RAW.parent / 'rarity_rules.json'
+    high = {x['name']: x for x in json.loads(rules.read_text(encoding='utf-8')).get('weaponHighRarity', [])} if rules.exists() else {}
     out = []
     for w in d['weapons']:
         known = {int(r): st for r, st in (w.get('stats') or {}).items() if st.get('attack')}
+        for r, st in ((high.get(w['name']) or {}).get('stats') or {}).items():
+            r = int(r)
+            if r in known or not st.get('attack'):
+                continue
+            aff = pct(st.get('crit'))
+            known[r] = {'attack': st['attack'], 'element': st.get('element'), 'affinity': aff if aff is not None else (w.get('affinity') or 0), 'src': 'gamewith.ai'}
         # gamewith.ai（英語版）の最大レア値も補間の手がかりに使う（冒険団などはレア12の値がある）
         for g in w.get('gamewithAi') or []:
             r = g.get('rarity')
@@ -40,6 +56,8 @@ def main():
                 stats[r] = {'attack': st['attack'], 'element': st.get('element'), 'affinity': st.get('affinity', w.get('affinity') or 0)}
                 if st.get('fromList'):
                     stats[r]['src'] = 'list'
+                elif st.get('src'):
+                    stats[r]['src'] = st['src']
             else:
                 atk = interp(known, r, 'attack')
                 if atk is None:

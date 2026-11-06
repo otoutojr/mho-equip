@@ -173,34 +173,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 474,
-     "element": null,
-     "affinity": 0,
-     "est": true
+     "attack": 492,
+     "element": 0,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 578,
-     "element": null,
-     "affinity": 0,
-     "est": true
+     "attack": 610,
+     "element": 0,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 704,
-     "element": null,
-     "affinity": 0,
-     "est": true
+     "attack": 741,
+     "element": 0,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 858,
-     "element": null,
-     "affinity": 0,
-     "est": true
+     "attack": 886,
+     "element": 0,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 1045,
-     "element": null,
-     "affinity": 0,
-     "src": "list"
+     "element": 0,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 1211,
@@ -265,34 +265,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 316,
-     "element": 158,
-     "affinity": 0,
-     "est": true
+     "attack": 328,
+     "element": 164,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 385,
-     "element": 193,
-     "affinity": 0,
-     "est": true
+     "attack": 407,
+     "element": 203,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 469,
-     "element": 235,
-     "affinity": 0,
-     "est": true
+     "attack": 494,
+     "element": 247,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 572,
-     "element": 286,
-     "affinity": 0,
-     "est": true
+     "attack": 591,
+     "element": 295,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 697,
      "element": 348,
-     "affinity": 0,
-     "src": "list"
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 808,
@@ -357,34 +357,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 316,
-     "element": 158,
-     "affinity": 0,
-     "est": true
+     "attack": 328,
+     "element": 164,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 385,
-     "element": 193,
-     "affinity": 0,
-     "est": true
+     "attack": 407,
+     "element": 203,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 469,
-     "element": 235,
-     "affinity": 0,
-     "est": true
+     "attack": 494,
+     "element": 247,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 572,
-     "element": 286,
-     "affinity": 0,
-     "est": true
+     "attack": 591,
+     "element": 295,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 697,
      "element": 348,
-     "affinity": 0,
-     "src": "list"
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 808,
@@ -449,34 +449,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 316,
-     "element": 158,
-     "affinity": 0,
-     "est": true
+     "attack": 328,
+     "element": 164,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 385,
-     "element": 193,
-     "affinity": 0,
-     "est": true
+     "attack": 407,
+     "element": 203,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 469,
-     "element": 235,
-     "affinity": 0,
-     "est": true
+     "attack": 494,
+     "element": 247,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 572,
-     "element": 286,
-     "affinity": 0,
-     "est": true
+     "attack": 591,
+     "element": 295,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 697,
      "element": 348,
-     "affinity": 0,
-     "src": "list"
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 808,
@@ -541,34 +541,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 316,
-     "element": 158,
-     "affinity": 0,
-     "est": true
+     "attack": 328,
+     "element": 164,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 385,
-     "element": 193,
-     "affinity": 0,
-     "est": true
+     "attack": 407,
+     "element": 203,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 469,
-     "element": 235,
-     "affinity": 0,
-     "est": true
+     "attack": 494,
+     "element": 247,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 572,
-     "element": 286,
-     "affinity": 0,
-     "est": true
+     "attack": 591,
+     "element": 295,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 697,
      "element": 348,
-     "affinity": 0,
-     "src": "list"
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 808,
@@ -633,34 +633,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 316,
-     "element": 158,
-     "affinity": 0,
-     "est": true
+     "attack": 328,
+     "element": 164,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 385,
-     "element": 193,
-     "affinity": 0,
-     "est": true
+     "attack": 407,
+     "element": 203,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 469,
-     "element": 235,
-     "affinity": 0,
-     "est": true
+     "attack": 494,
+     "element": 247,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 572,
-     "element": 286,
-     "affinity": 0,
-     "est": true
+     "attack": 591,
+     "element": 295,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 697,
      "element": 348,
-     "affinity": 0,
-     "src": "list"
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 808,
@@ -908,34 +908,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 327,
-     "element": 163,
-     "affinity": 0,
-     "est": true
+     "attack": 339,
+     "element": 170,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 398,
-     "element": 199,
-     "affinity": 0,
-     "est": true
+     "attack": 420,
+     "element": 210,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 485,
-     "element": 242,
-     "affinity": 0,
-     "est": true
+     "attack": 510,
+     "element": 255,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 591,
-     "element": 295,
-     "affinity": 0,
-     "est": true
+     "attack": 610,
+     "element": 305,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 720,
      "element": 360,
-     "affinity": 0,
-     "src": "list"
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 834,
@@ -1130,34 +1130,34 @@
      "affinity": 4
     },
     "8": {
-     "attack": 318,
-     "element": 160,
-     "affinity": 6,
-     "est": true
+     "attack": 331,
+     "element": 165,
+     "affinity": 4.2,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 388,
-     "element": 194,
-     "affinity": 6,
-     "est": true
+     "attack": 410,
+     "element": 205,
+     "affinity": 4.5,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 473,
-     "element": 237,
-     "affinity": 6,
-     "est": true
+     "attack": 498,
+     "element": 249,
+     "affinity": 4.8,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 576,
-     "element": 288,
-     "affinity": 6,
-     "est": true
+     "attack": 595,
+     "element": 298,
+     "affinity": 5.1,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 702,
      "element": 351,
      "affinity": 5.4,
-     "src": "list"
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 814,
@@ -1556,34 +1556,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 474,
-     "element": null,
-     "affinity": 0,
-     "est": true
+     "attack": 492,
+     "element": 0,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 578,
-     "element": null,
-     "affinity": 0,
-     "est": true
+     "attack": 610,
+     "element": 0,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 704,
-     "element": null,
-     "affinity": 0,
-     "est": true
+     "attack": 741,
+     "element": 0,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 858,
-     "element": null,
-     "affinity": 0,
-     "est": true
+     "attack": 886,
+     "element": 0,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 1045,
-     "element": null,
-     "affinity": 0,
-     "src": "list"
+     "element": 0,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 1211,
@@ -1648,34 +1648,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 316,
-     "element": 158,
-     "affinity": 0,
-     "est": true
+     "attack": 328,
+     "element": 164,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 385,
-     "element": 193,
-     "affinity": 0,
-     "est": true
+     "attack": 407,
+     "element": 203,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 469,
-     "element": 235,
-     "affinity": 0,
-     "est": true
+     "attack": 494,
+     "element": 247,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 572,
-     "element": 286,
-     "affinity": 0,
-     "est": true
+     "attack": 591,
+     "element": 295,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 697,
      "element": 348,
-     "affinity": 0,
-     "src": "list"
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 808,
@@ -1740,34 +1740,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 316,
-     "element": 158,
-     "affinity": 0,
-     "est": true
+     "attack": 328,
+     "element": 164,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 385,
-     "element": 193,
-     "affinity": 0,
-     "est": true
+     "attack": 407,
+     "element": 203,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 469,
-     "element": 235,
-     "affinity": 0,
-     "est": true
+     "attack": 494,
+     "element": 247,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 572,
-     "element": 286,
-     "affinity": 0,
-     "est": true
+     "attack": 591,
+     "element": 295,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 697,
      "element": 348,
-     "affinity": 0,
-     "src": "list"
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 808,
@@ -1832,34 +1832,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 316,
-     "element": 158,
-     "affinity": 0,
-     "est": true
+     "attack": 328,
+     "element": 164,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 385,
-     "element": 193,
-     "affinity": 0,
-     "est": true
+     "attack": 407,
+     "element": 203,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 469,
-     "element": 235,
-     "affinity": 0,
-     "est": true
+     "attack": 494,
+     "element": 247,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 572,
-     "element": 286,
-     "affinity": 0,
-     "est": true
+     "attack": 591,
+     "element": 295,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 697,
      "element": 348,
-     "affinity": 0,
-     "src": "list"
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 808,
@@ -1924,34 +1924,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 316,
-     "element": 158,
-     "affinity": 0,
-     "est": true
+     "attack": 328,
+     "element": 164,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 385,
-     "element": 193,
-     "affinity": 0,
-     "est": true
+     "attack": 407,
+     "element": 203,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 469,
-     "element": 235,
-     "affinity": 0,
-     "est": true
+     "attack": 494,
+     "element": 247,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 572,
-     "element": 286,
-     "affinity": 0,
-     "est": true
+     "attack": 591,
+     "element": 295,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 697,
      "element": 348,
-     "affinity": 0,
-     "src": "list"
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 808,
@@ -2016,34 +2016,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 316,
-     "element": 158,
-     "affinity": 0,
-     "est": true
+     "attack": 328,
+     "element": 164,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 385,
-     "element": 193,
-     "affinity": 0,
-     "est": true
+     "attack": 407,
+     "element": 203,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 469,
-     "element": 235,
-     "affinity": 0,
-     "est": true
+     "attack": 494,
+     "element": 247,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 572,
-     "element": 286,
-     "affinity": 0,
-     "est": true
+     "attack": 591,
+     "element": 295,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 697,
      "element": 348,
-     "affinity": 0,
-     "src": "list"
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 808,
@@ -2286,34 +2286,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 334,
-     "element": 167,
-     "affinity": 0,
-     "est": true
+     "attack": 346,
+     "element": 173,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 407,
-     "element": 203,
-     "affinity": 0,
-     "est": true
+     "attack": 429,
+     "element": 215,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 495,
-     "element": 248,
-     "affinity": 0,
-     "est": true
+     "attack": 521,
+     "element": 261,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 603,
-     "element": 302,
-     "affinity": 0,
-     "est": true
+     "attack": 624,
+     "element": 312,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 735,
      "element": 368,
-     "affinity": 0,
-     "src": "list"
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 852,
@@ -2439,34 +2439,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 344,
-     "element": 172,
-     "affinity": 0,
-     "est": true
+     "attack": 357,
+     "element": 179,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 419,
-     "element": 209,
-     "affinity": 0,
-     "est": true
+     "attack": 443,
+     "element": 221,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 511,
-     "element": 255,
-     "affinity": 0,
-     "est": true
+     "attack": 538,
+     "element": 269,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 623,
-     "element": 311,
-     "affinity": 0,
-     "est": true
+     "attack": 643,
+     "element": 322,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 759,
      "element": 379,
-     "affinity": 0,
-     "src": "list"
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 879,
@@ -2854,34 +2854,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 474,
-     "element": null,
-     "affinity": 0,
-     "est": true
+     "attack": 492,
+     "element": 0,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 578,
-     "element": null,
-     "affinity": 0,
-     "est": true
+     "attack": 610,
+     "element": 0,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 704,
-     "element": null,
-     "affinity": 0,
-     "est": true
+     "attack": 741,
+     "element": 0,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 858,
-     "element": null,
-     "affinity": 0,
-     "est": true
+     "attack": 886,
+     "element": 0,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 1045,
-     "element": null,
-     "affinity": 0,
-     "src": "list"
+     "element": 0,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 1211,
@@ -2946,34 +2946,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 316,
-     "element": 158,
-     "affinity": 0,
-     "est": true
+     "attack": 328,
+     "element": 164,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 385,
-     "element": 193,
-     "affinity": 0,
-     "est": true
+     "attack": 407,
+     "element": 203,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 469,
-     "element": 235,
-     "affinity": 0,
-     "est": true
+     "attack": 494,
+     "element": 247,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 572,
-     "element": 286,
-     "affinity": 0,
-     "est": true
+     "attack": 591,
+     "element": 295,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 697,
      "element": 348,
-     "affinity": 0,
-     "src": "list"
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 808,
@@ -3038,34 +3038,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 316,
-     "element": 158,
-     "affinity": 0,
-     "est": true
+     "attack": 328,
+     "element": 164,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 385,
-     "element": 193,
-     "affinity": 0,
-     "est": true
+     "attack": 407,
+     "element": 203,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 469,
-     "element": 235,
-     "affinity": 0,
-     "est": true
+     "attack": 494,
+     "element": 247,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 572,
-     "element": 286,
-     "affinity": 0,
-     "est": true
+     "attack": 591,
+     "element": 295,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 697,
      "element": 348,
-     "affinity": 0,
-     "src": "list"
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 808,
@@ -3130,34 +3130,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 316,
-     "element": 158,
-     "affinity": 0,
-     "est": true
+     "attack": 328,
+     "element": 164,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 385,
-     "element": 193,
-     "affinity": 0,
-     "est": true
+     "attack": 407,
+     "element": 203,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 469,
-     "element": 235,
-     "affinity": 0,
-     "est": true
+     "attack": 494,
+     "element": 247,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 572,
-     "element": 286,
-     "affinity": 0,
-     "est": true
+     "attack": 591,
+     "element": 295,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 697,
      "element": 348,
-     "affinity": 0,
-     "src": "list"
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 808,
@@ -3222,34 +3222,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 316,
-     "element": 158,
-     "affinity": 0,
-     "est": true
+     "attack": 328,
+     "element": 164,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 385,
-     "element": 193,
-     "affinity": 0,
-     "est": true
+     "attack": 407,
+     "element": 203,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 469,
-     "element": 235,
-     "affinity": 0,
-     "est": true
+     "attack": 494,
+     "element": 247,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 572,
-     "element": 286,
-     "affinity": 0,
-     "est": true
+     "attack": 591,
+     "element": 295,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 697,
      "element": 348,
-     "affinity": 0,
-     "src": "list"
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 808,
@@ -3314,34 +3314,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 316,
-     "element": 158,
-     "affinity": 0,
-     "est": true
+     "attack": 328,
+     "element": 164,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 385,
-     "element": 193,
-     "affinity": 0,
-     "est": true
+     "attack": 407,
+     "element": 203,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 469,
-     "element": 235,
-     "affinity": 0,
-     "est": true
+     "attack": 494,
+     "element": 247,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 572,
-     "element": 286,
-     "affinity": 0,
-     "est": true
+     "attack": 591,
+     "element": 295,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 697,
      "element": 348,
-     "affinity": 0,
-     "src": "list"
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 808,
@@ -3542,34 +3542,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 327,
-     "element": 163,
-     "affinity": 0,
-     "est": true
+     "attack": 339,
+     "element": 170,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 398,
-     "element": 199,
-     "affinity": 0,
-     "est": true
+     "attack": 420,
+     "element": 210,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 485,
-     "element": 242,
-     "affinity": 0,
-     "est": true
+     "attack": 510,
+     "element": 255,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 591,
-     "element": 295,
-     "affinity": 0,
-     "est": true
+     "attack": 610,
+     "element": 305,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 720,
      "element": 360,
-     "affinity": 0,
-     "src": "list"
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 834,
@@ -3695,34 +3695,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 327,
-     "element": 163,
-     "affinity": 0,
-     "est": true
+     "attack": 339,
+     "element": 170,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 398,
-     "element": 199,
-     "affinity": 0,
-     "est": true
+     "attack": 420,
+     "element": 210,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 485,
-     "element": 242,
-     "affinity": 0,
-     "est": true
+     "attack": 510,
+     "element": 255,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 591,
-     "element": 295,
-     "affinity": 0,
-     "est": true
+     "attack": 610,
+     "element": 305,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 720,
      "element": 360,
-     "affinity": 0,
-     "src": "list"
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 834,
@@ -4075,34 +4075,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 474,
-     "element": null,
-     "affinity": 0,
-     "est": true
+     "attack": 492,
+     "element": 0,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 578,
-     "element": null,
-     "affinity": 0,
-     "est": true
+     "attack": 610,
+     "element": 0,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 704,
-     "element": null,
-     "affinity": 0,
-     "est": true
+     "attack": 741,
+     "element": 0,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 858,
-     "element": null,
-     "affinity": 0,
-     "est": true
+     "attack": 886,
+     "element": 0,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 1045,
-     "element": null,
-     "affinity": 0,
-     "src": "list"
+     "element": 0,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 1211,
@@ -4167,34 +4167,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 316,
-     "element": 158,
-     "affinity": 0,
-     "est": true
+     "attack": 328,
+     "element": 164,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 385,
-     "element": 193,
-     "affinity": 0,
-     "est": true
+     "attack": 407,
+     "element": 203,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 469,
-     "element": 235,
-     "affinity": 0,
-     "est": true
+     "attack": 494,
+     "element": 247,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 572,
-     "element": 286,
-     "affinity": 0,
-     "est": true
+     "attack": 591,
+     "element": 295,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 697,
      "element": 348,
-     "affinity": 0,
-     "src": "list"
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 808,
@@ -4259,34 +4259,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 316,
-     "element": 158,
-     "affinity": 0,
-     "est": true
+     "attack": 328,
+     "element": 164,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 385,
-     "element": 193,
-     "affinity": 0,
-     "est": true
+     "attack": 407,
+     "element": 203,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 469,
-     "element": 235,
-     "affinity": 0,
-     "est": true
+     "attack": 494,
+     "element": 247,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 572,
-     "element": 286,
-     "affinity": 0,
-     "est": true
+     "attack": 591,
+     "element": 295,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 697,
      "element": 348,
-     "affinity": 0,
-     "src": "list"
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 808,
@@ -4351,34 +4351,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 316,
-     "element": 158,
-     "affinity": 0,
-     "est": true
+     "attack": 328,
+     "element": 164,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 385,
-     "element": 193,
-     "affinity": 0,
-     "est": true
+     "attack": 407,
+     "element": 203,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 469,
-     "element": 235,
-     "affinity": 0,
-     "est": true
+     "attack": 494,
+     "element": 247,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 572,
-     "element": 286,
-     "affinity": 0,
-     "est": true
+     "attack": 591,
+     "element": 295,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 697,
      "element": 348,
-     "affinity": 0,
-     "src": "list"
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 808,
@@ -4443,34 +4443,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 316,
-     "element": 158,
-     "affinity": 0,
-     "est": true
+     "attack": 328,
+     "element": 164,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 385,
-     "element": 193,
-     "affinity": 0,
-     "est": true
+     "attack": 407,
+     "element": 203,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 469,
-     "element": 235,
-     "affinity": 0,
-     "est": true
+     "attack": 494,
+     "element": 247,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 572,
-     "element": 286,
-     "affinity": 0,
-     "est": true
+     "attack": 591,
+     "element": 295,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 697,
      "element": 348,
-     "affinity": 0,
-     "src": "list"
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 808,
@@ -4535,34 +4535,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 316,
-     "element": 158,
-     "affinity": 0,
-     "est": true
+     "attack": 328,
+     "element": 164,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 385,
-     "element": 193,
-     "affinity": 0,
-     "est": true
+     "attack": 407,
+     "element": 203,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 469,
-     "element": 235,
-     "affinity": 0,
-     "est": true
+     "attack": 494,
+     "element": 247,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 572,
-     "element": 286,
-     "affinity": 0,
-     "est": true
+     "attack": 591,
+     "element": 295,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 697,
      "element": 348,
-     "affinity": 0,
-     "src": "list"
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 808,
@@ -4763,34 +4763,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 327,
-     "element": 163,
-     "affinity": 0,
-     "est": true
+     "attack": 339,
+     "element": 170,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 398,
-     "element": 199,
-     "affinity": 0,
-     "est": true
+     "attack": 420,
+     "element": 210,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 485,
-     "element": 242,
-     "affinity": 0,
-     "est": true
+     "attack": 510,
+     "element": 255,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 591,
-     "element": 295,
-     "affinity": 0,
-     "est": true
+     "attack": 610,
+     "element": 305,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 720,
      "element": 360,
-     "affinity": 0,
-     "src": "list"
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 834,
@@ -4948,34 +4948,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 334,
-     "element": 167,
-     "affinity": 0,
-     "est": true
+     "attack": 346,
+     "element": 173,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 407,
-     "element": 203,
-     "affinity": 0,
-     "est": true
+     "attack": 429,
+     "element": 215,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 495,
-     "element": 248,
-     "affinity": 0,
-     "est": true
+     "attack": 521,
+     "element": 261,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 603,
-     "element": 302,
-     "affinity": 0,
-     "est": true
+     "attack": 624,
+     "element": 312,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 735,
      "element": 368,
-     "affinity": 0,
-     "src": "list"
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 852,
@@ -5376,34 +5376,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 474,
-     "element": null,
-     "affinity": 0,
-     "est": true
+     "attack": 492,
+     "element": 0,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 578,
-     "element": null,
-     "affinity": 0,
-     "est": true
+     "attack": 610,
+     "element": 0,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 704,
-     "element": null,
-     "affinity": 0,
-     "est": true
+     "attack": 741,
+     "element": 0,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 858,
-     "element": null,
-     "affinity": 0,
-     "est": true
+     "attack": 886,
+     "element": 0,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 1045,
-     "element": null,
-     "affinity": 0,
-     "src": "list"
+     "element": 0,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 1211,
@@ -5468,34 +5468,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 316,
-     "element": 158,
-     "affinity": 0,
-     "est": true
+     "attack": 328,
+     "element": 164,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 385,
-     "element": 193,
-     "affinity": 0,
-     "est": true
+     "attack": 407,
+     "element": 203,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 469,
-     "element": 235,
-     "affinity": 0,
-     "est": true
+     "attack": 494,
+     "element": 247,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 572,
-     "element": 286,
-     "affinity": 0,
-     "est": true
+     "attack": 591,
+     "element": 295,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 697,
      "element": 348,
-     "affinity": 0,
-     "src": "list"
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 808,
@@ -5560,34 +5560,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 316,
-     "element": 158,
-     "affinity": 0,
-     "est": true
+     "attack": 328,
+     "element": 164,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 385,
-     "element": 193,
-     "affinity": 0,
-     "est": true
+     "attack": 407,
+     "element": 203,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 469,
-     "element": 235,
-     "affinity": 0,
-     "est": true
+     "attack": 494,
+     "element": 247,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 572,
-     "element": 286,
-     "affinity": 0,
-     "est": true
+     "attack": 591,
+     "element": 295,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 697,
      "element": 348,
-     "affinity": 0,
-     "src": "list"
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 808,
@@ -5652,34 +5652,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 316,
-     "element": 158,
-     "affinity": 0,
-     "est": true
+     "attack": 328,
+     "element": 164,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 385,
-     "element": 193,
-     "affinity": 0,
-     "est": true
+     "attack": 407,
+     "element": 203,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 469,
-     "element": 235,
-     "affinity": 0,
-     "est": true
+     "attack": 494,
+     "element": 247,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 572,
-     "element": 286,
-     "affinity": 0,
-     "est": true
+     "attack": 591,
+     "element": 295,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 697,
      "element": 348,
-     "affinity": 0,
-     "src": "list"
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 808,
@@ -5744,34 +5744,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 316,
-     "element": 158,
-     "affinity": 0,
-     "est": true
+     "attack": 328,
+     "element": 164,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 385,
-     "element": 193,
-     "affinity": 0,
-     "est": true
+     "attack": 407,
+     "element": 203,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 469,
-     "element": 235,
-     "affinity": 0,
-     "est": true
+     "attack": 494,
+     "element": 247,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 572,
-     "element": 286,
-     "affinity": 0,
-     "est": true
+     "attack": 591,
+     "element": 295,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 697,
      "element": 348,
-     "affinity": 0,
-     "src": "list"
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 808,
@@ -5836,34 +5836,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 316,
-     "element": 158,
-     "affinity": 0,
-     "est": true
+     "attack": 328,
+     "element": 164,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 385,
-     "element": 193,
-     "affinity": 0,
-     "est": true
+     "attack": 407,
+     "element": 203,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 469,
-     "element": 235,
-     "affinity": 0,
-     "est": true
+     "attack": 494,
+     "element": 247,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 572,
-     "element": 286,
-     "affinity": 0,
-     "est": true
+     "attack": 591,
+     "element": 295,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 697,
      "element": 348,
-     "affinity": 0,
-     "src": "list"
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 808,
@@ -6111,34 +6111,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 327,
-     "element": 163,
-     "affinity": 0,
-     "est": true
+     "attack": 339,
+     "element": 170,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 398,
-     "element": 199,
-     "affinity": 0,
-     "est": true
+     "attack": 420,
+     "element": 210,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 485,
-     "element": 242,
-     "affinity": 0,
-     "est": true
+     "attack": 510,
+     "element": 255,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 591,
-     "element": 295,
-     "affinity": 0,
-     "est": true
+     "attack": 610,
+     "element": 305,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 720,
      "element": 360,
-     "affinity": 0,
-     "src": "list"
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 834,
@@ -6296,34 +6296,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 327,
-     "element": 163,
-     "affinity": 0,
-     "est": true
+     "attack": 339,
+     "element": 170,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 398,
-     "element": 199,
-     "affinity": 0,
-     "est": true
+     "attack": 420,
+     "element": 210,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 485,
-     "element": 242,
-     "affinity": 0,
-     "est": true
+     "attack": 510,
+     "element": 255,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 591,
-     "element": 295,
-     "affinity": 0,
-     "est": true
+     "attack": 610,
+     "element": 305,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 720,
      "element": 360,
-     "affinity": 0,
-     "src": "list"
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 834,
@@ -6617,34 +6617,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 474,
-     "element": null,
-     "affinity": 0,
-     "est": true
+     "attack": 492,
+     "element": 0,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 578,
-     "element": null,
-     "affinity": 0,
-     "est": true
+     "attack": 610,
+     "element": 0,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 704,
-     "element": null,
-     "affinity": 0,
-     "est": true
+     "attack": 741,
+     "element": 0,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 858,
-     "element": null,
-     "affinity": 0,
-     "est": true
+     "attack": 886,
+     "element": 0,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 1045,
-     "element": null,
-     "affinity": 0,
-     "src": "list"
+     "element": 0,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 1211,
@@ -6709,34 +6709,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 316,
-     "element": 158,
-     "affinity": 0,
-     "est": true
+     "attack": 328,
+     "element": 164,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 385,
-     "element": 193,
-     "affinity": 0,
-     "est": true
+     "attack": 407,
+     "element": 203,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 469,
-     "element": 235,
-     "affinity": 0,
-     "est": true
+     "attack": 494,
+     "element": 247,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 572,
-     "element": 286,
-     "affinity": 0,
-     "est": true
+     "attack": 591,
+     "element": 295,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 697,
      "element": 348,
-     "affinity": 0,
-     "src": "list"
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 808,
@@ -6801,34 +6801,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 316,
-     "element": 158,
-     "affinity": 0,
-     "est": true
+     "attack": 328,
+     "element": 164,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 385,
-     "element": 193,
-     "affinity": 0,
-     "est": true
+     "attack": 407,
+     "element": 203,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 469,
-     "element": 235,
-     "affinity": 0,
-     "est": true
+     "attack": 494,
+     "element": 247,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 572,
-     "element": 286,
-     "affinity": 0,
-     "est": true
+     "attack": 591,
+     "element": 295,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 697,
      "element": 348,
-     "affinity": 0,
-     "src": "list"
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 808,
@@ -6893,34 +6893,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 316,
-     "element": 158,
-     "affinity": 0,
-     "est": true
+     "attack": 328,
+     "element": 164,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 385,
-     "element": 193,
-     "affinity": 0,
-     "est": true
+     "attack": 407,
+     "element": 203,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 469,
-     "element": 235,
-     "affinity": 0,
-     "est": true
+     "attack": 494,
+     "element": 247,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 572,
-     "element": 286,
-     "affinity": 0,
-     "est": true
+     "attack": 591,
+     "element": 295,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 697,
      "element": 348,
-     "affinity": 0,
-     "src": "list"
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 808,
@@ -6985,34 +6985,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 316,
-     "element": 158,
-     "affinity": 0,
-     "est": true
+     "attack": 328,
+     "element": 164,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 385,
-     "element": 193,
-     "affinity": 0,
-     "est": true
+     "attack": 407,
+     "element": 203,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 469,
-     "element": 235,
-     "affinity": 0,
-     "est": true
+     "attack": 494,
+     "element": 247,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 572,
-     "element": 286,
-     "affinity": 0,
-     "est": true
+     "attack": 591,
+     "element": 295,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 697,
      "element": 348,
-     "affinity": 0,
-     "src": "list"
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 808,
@@ -7077,34 +7077,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 316,
-     "element": 158,
-     "affinity": 0,
-     "est": true
+     "attack": 328,
+     "element": 164,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 385,
-     "element": 193,
-     "affinity": 0,
-     "est": true
+     "attack": 407,
+     "element": 203,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 469,
-     "element": 235,
-     "affinity": 0,
-     "est": true
+     "attack": 494,
+     "element": 247,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 572,
-     "element": 286,
-     "affinity": 0,
-     "est": true
+     "attack": 591,
+     "element": 295,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 697,
      "element": 348,
-     "affinity": 0,
-     "src": "list"
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 808,
@@ -7320,34 +7320,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 327,
-     "element": 163,
-     "affinity": 0,
-     "est": true
+     "attack": 339,
+     "element": 170,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 398,
-     "element": 199,
-     "affinity": 0,
-     "est": true
+     "attack": 420,
+     "element": 210,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 485,
-     "element": 242,
-     "affinity": 0,
-     "est": true
+     "attack": 510,
+     "element": 255,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 591,
-     "element": 295,
-     "affinity": 0,
-     "est": true
+     "attack": 610,
+     "element": 305,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 720,
      "element": 360,
-     "affinity": 0,
-     "src": "list"
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 834,
@@ -7446,34 +7446,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 327,
-     "element": 163,
-     "affinity": 0,
-     "est": true
+     "attack": 339,
+     "element": 170,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 398,
-     "element": 199,
-     "affinity": 0,
-     "est": true
+     "attack": 420,
+     "element": 210,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 485,
-     "element": 242,
-     "affinity": 0,
-     "est": true
+     "attack": 510,
+     "element": 255,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 591,
-     "element": 295,
-     "affinity": 0,
-     "est": true
+     "attack": 610,
+     "element": 305,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 720,
      "element": 360,
-     "affinity": 0,
-     "src": "list"
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 834,
@@ -7924,34 +7924,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 474,
-     "element": null,
-     "affinity": 0,
-     "est": true
+     "attack": 492,
+     "element": 0,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 578,
-     "element": null,
-     "affinity": 0,
-     "est": true
+     "attack": 610,
+     "element": 0,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 704,
-     "element": null,
-     "affinity": 0,
-     "est": true
+     "attack": 741,
+     "element": 0,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 858,
-     "element": null,
-     "affinity": 0,
-     "est": true
+     "attack": 886,
+     "element": 0,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 1045,
-     "element": null,
-     "affinity": 0,
-     "src": "list"
+     "element": 0,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 1211,
@@ -8016,34 +8016,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 316,
-     "element": 158,
-     "affinity": 0,
-     "est": true
+     "attack": 328,
+     "element": 164,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 385,
-     "element": 193,
-     "affinity": 0,
-     "est": true
+     "attack": 407,
+     "element": 203,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 469,
-     "element": 235,
-     "affinity": 0,
-     "est": true
+     "attack": 494,
+     "element": 247,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 572,
-     "element": 286,
-     "affinity": 0,
-     "est": true
+     "attack": 591,
+     "element": 295,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 697,
      "element": 348,
-     "affinity": 0,
-     "src": "list"
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 808,
@@ -8108,34 +8108,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 316,
-     "element": 158,
-     "affinity": 0,
-     "est": true
+     "attack": 328,
+     "element": 164,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 385,
-     "element": 193,
-     "affinity": 0,
-     "est": true
+     "attack": 407,
+     "element": 203,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 469,
-     "element": 235,
-     "affinity": 0,
-     "est": true
+     "attack": 494,
+     "element": 247,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 572,
-     "element": 286,
-     "affinity": 0,
-     "est": true
+     "attack": 591,
+     "element": 295,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 697,
      "element": 348,
-     "affinity": 0,
-     "src": "list"
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 808,
@@ -8200,34 +8200,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 316,
-     "element": 158,
-     "affinity": 0,
-     "est": true
+     "attack": 328,
+     "element": 164,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 385,
-     "element": 193,
-     "affinity": 0,
-     "est": true
+     "attack": 407,
+     "element": 203,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 469,
-     "element": 235,
-     "affinity": 0,
-     "est": true
+     "attack": 494,
+     "element": 247,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 572,
-     "element": 286,
-     "affinity": 0,
-     "est": true
+     "attack": 591,
+     "element": 295,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 697,
      "element": 348,
-     "affinity": 0,
-     "src": "list"
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 808,
@@ -8292,34 +8292,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 316,
-     "element": 158,
-     "affinity": 0,
-     "est": true
+     "attack": 328,
+     "element": 164,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 385,
-     "element": 193,
-     "affinity": 0,
-     "est": true
+     "attack": 407,
+     "element": 203,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 469,
-     "element": 235,
-     "affinity": 0,
-     "est": true
+     "attack": 494,
+     "element": 247,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 572,
-     "element": 286,
-     "affinity": 0,
-     "est": true
+     "attack": 591,
+     "element": 295,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 697,
      "element": 348,
-     "affinity": 0,
-     "src": "list"
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 808,
@@ -8384,34 +8384,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 316,
-     "element": 158,
-     "affinity": 0,
-     "est": true
+     "attack": 328,
+     "element": 164,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 385,
-     "element": 193,
-     "affinity": 0,
-     "est": true
+     "attack": 407,
+     "element": 203,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 469,
-     "element": 235,
-     "affinity": 0,
-     "est": true
+     "attack": 494,
+     "element": 247,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 572,
-     "element": 286,
-     "affinity": 0,
-     "est": true
+     "attack": 591,
+     "element": 295,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 697,
      "element": 348,
-     "affinity": 0,
-     "src": "list"
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 808,
@@ -8575,34 +8575,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 327,
-     "element": 163,
-     "affinity": 0,
-     "est": true
+     "attack": 339,
+     "element": 170,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 398,
-     "element": 199,
-     "affinity": 0,
-     "est": true
+     "attack": 420,
+     "element": 210,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 485,
-     "element": 242,
-     "affinity": 0,
-     "est": true
+     "attack": 510,
+     "element": 255,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 591,
-     "element": 295,
-     "affinity": 0,
-     "est": true
+     "attack": 610,
+     "element": 305,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 720,
      "element": 360,
-     "affinity": 0,
-     "src": "list"
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 834,
@@ -8790,34 +8790,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 327,
-     "element": 163,
-     "affinity": 0,
-     "est": true
+     "attack": 339,
+     "element": 170,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 398,
-     "element": 199,
-     "affinity": 0,
-     "est": true
+     "attack": 420,
+     "element": 210,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 485,
-     "element": 242,
-     "affinity": 0,
-     "est": true
+     "attack": 510,
+     "element": 255,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 591,
-     "element": 295,
-     "affinity": 0,
-     "est": true
+     "attack": 610,
+     "element": 305,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 720,
      "element": 360,
-     "affinity": 0,
-     "src": "list"
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 834,
@@ -9259,34 +9259,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 474,
-     "element": null,
-     "affinity": 0,
-     "est": true
+     "attack": 492,
+     "element": 0,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 578,
-     "element": null,
-     "affinity": 0,
-     "est": true
+     "attack": 610,
+     "element": 0,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 704,
-     "element": null,
-     "affinity": 0,
-     "est": true
+     "attack": 741,
+     "element": 0,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 858,
-     "element": null,
-     "affinity": 0,
-     "est": true
+     "attack": 886,
+     "element": 0,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 1045,
-     "element": null,
-     "affinity": 0,
-     "src": "list"
+     "element": 0,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 1211,
@@ -9351,34 +9351,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 316,
-     "element": 158,
-     "affinity": 0,
-     "est": true
+     "attack": 328,
+     "element": 164,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 385,
-     "element": 193,
-     "affinity": 0,
-     "est": true
+     "attack": 407,
+     "element": 203,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 469,
-     "element": 235,
-     "affinity": 0,
-     "est": true
+     "attack": 494,
+     "element": 247,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 572,
-     "element": 286,
-     "affinity": 0,
-     "est": true
+     "attack": 591,
+     "element": 295,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 697,
      "element": 348,
-     "affinity": 0,
-     "src": "list"
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 808,
@@ -9443,34 +9443,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 316,
-     "element": 158,
-     "affinity": 0,
-     "est": true
+     "attack": 328,
+     "element": 164,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 385,
-     "element": 193,
-     "affinity": 0,
-     "est": true
+     "attack": 407,
+     "element": 203,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 469,
-     "element": 235,
-     "affinity": 0,
-     "est": true
+     "attack": 494,
+     "element": 247,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 572,
-     "element": 286,
-     "affinity": 0,
-     "est": true
+     "attack": 591,
+     "element": 295,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 697,
      "element": 348,
-     "affinity": 0,
-     "src": "list"
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 808,
@@ -9535,34 +9535,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 316,
-     "element": 158,
-     "affinity": 0,
-     "est": true
+     "attack": 328,
+     "element": 164,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 385,
-     "element": 193,
-     "affinity": 0,
-     "est": true
+     "attack": 407,
+     "element": 203,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 469,
-     "element": 235,
-     "affinity": 0,
-     "est": true
+     "attack": 494,
+     "element": 247,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 572,
-     "element": 286,
-     "affinity": 0,
-     "est": true
+     "attack": 591,
+     "element": 295,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 697,
      "element": 348,
-     "affinity": 0,
-     "src": "list"
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 808,
@@ -9627,34 +9627,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 316,
-     "element": 158,
-     "affinity": 0,
-     "est": true
+     "attack": 328,
+     "element": 164,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 385,
-     "element": 193,
-     "affinity": 0,
-     "est": true
+     "attack": 407,
+     "element": 203,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 469,
-     "element": 235,
-     "affinity": 0,
-     "est": true
+     "attack": 494,
+     "element": 247,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 572,
-     "element": 286,
-     "affinity": 0,
-     "est": true
+     "attack": 591,
+     "element": 295,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 697,
      "element": 348,
-     "affinity": 0,
-     "src": "list"
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 808,
@@ -9719,34 +9719,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 316,
-     "element": 158,
-     "affinity": 0,
-     "est": true
+     "attack": 328,
+     "element": 164,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 385,
-     "element": 193,
-     "affinity": 0,
-     "est": true
+     "attack": 407,
+     "element": 203,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 469,
-     "element": 235,
-     "affinity": 0,
-     "est": true
+     "attack": 494,
+     "element": 247,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 572,
-     "element": 286,
-     "affinity": 0,
-     "est": true
+     "attack": 591,
+     "element": 295,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 697,
      "element": 348,
-     "affinity": 0,
-     "src": "list"
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 808,
@@ -9915,34 +9915,34 @@
      "affinity": 5
     },
     "8": {
-     "attack": 306,
-     "element": 153,
-     "affinity": 8,
-     "est": true
+     "attack": 318,
+     "element": 159,
+     "affinity": 5.6,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 373,
-     "element": 187,
-     "affinity": 8,
-     "est": true
+     "attack": 394,
+     "element": 197,
+     "affinity": 6.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 455,
-     "element": 228,
-     "affinity": 8,
-     "est": true
+     "attack": 479,
+     "element": 240,
+     "affinity": 6.4,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 554,
-     "element": 277,
-     "affinity": 8,
-     "est": true
+     "attack": 573,
+     "element": 286,
+     "affinity": 6.8,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 676,
      "element": 338,
      "affinity": 7.2,
-     "src": "list"
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 783,
@@ -9994,34 +9994,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 327,
-     "element": 163,
-     "affinity": 0,
-     "est": true
+     "attack": 339,
+     "element": 170,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 398,
-     "element": 199,
-     "affinity": 0,
-     "est": true
+     "attack": 420,
+     "element": 210,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 485,
-     "element": 242,
-     "affinity": 0,
-     "est": true
+     "attack": 510,
+     "element": 255,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 591,
-     "element": 295,
-     "affinity": 0,
-     "est": true
+     "attack": 610,
+     "element": 305,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 720,
      "element": 360,
-     "affinity": 0,
-     "src": "list"
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 834,
@@ -10179,34 +10179,34 @@
      "affinity": 0
     },
     "8": {
-     "attack": 334,
-     "element": 167,
-     "affinity": 0,
-     "est": true
+     "attack": 346,
+     "element": 173,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 407,
-     "element": 203,
-     "affinity": 0,
-     "est": true
+     "attack": 429,
+     "element": 215,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 495,
-     "element": 248,
-     "affinity": 0,
-     "est": true
+     "attack": 521,
+     "element": 261,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 603,
-     "element": 302,
-     "affinity": 0,
-     "est": true
+     "attack": 624,
+     "element": 312,
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 735,
      "element": 368,
-     "affinity": 0,
-     "src": "list"
+     "affinity": 0.0,
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 852,
@@ -10273,34 +10273,34 @@
      "affinity": 5
     },
     "8": {
-     "attack": 306,
-     "element": 153,
-     "affinity": 8,
-     "est": true
+     "attack": 318,
+     "element": 159,
+     "affinity": 5.6,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 373,
-     "element": 187,
-     "affinity": 8,
-     "est": true
+     "attack": 394,
+     "element": 197,
+     "affinity": 6.0,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 455,
-     "element": 228,
-     "affinity": 8,
-     "est": true
+     "attack": 479,
+     "element": 240,
+     "affinity": 6.4,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 554,
-     "element": 277,
-     "affinity": 8,
-     "est": true
+     "attack": 573,
+     "element": 286,
+     "affinity": 6.8,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 676,
      "element": 338,
      "affinity": 7.2,
-     "src": "list"
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 783,
@@ -10342,34 +10342,34 @@
      "affinity": 4
     },
     "8": {
-     "attack": 318,
-     "element": 160,
-     "affinity": 6,
-     "est": true
+     "attack": 331,
+     "element": 165,
+     "affinity": 4.2,
+     "src": "gamewith.ai"
     },
     "9": {
-     "attack": 388,
-     "element": 194,
-     "affinity": 6,
-     "est": true
+     "attack": 410,
+     "element": 205,
+     "affinity": 4.5,
+     "src": "gamewith.ai"
     },
     "10": {
-     "attack": 473,
-     "element": 237,
-     "affinity": 6,
-     "est": true
+     "attack": 498,
+     "element": 249,
+     "affinity": 4.8,
+     "src": "gamewith.ai"
     },
     "11": {
-     "attack": 576,
-     "element": 288,
-     "affinity": 6,
-     "est": true
+     "attack": 595,
+     "element": 298,
+     "affinity": 5.1,
+     "src": "gamewith.ai"
     },
     "12": {
      "attack": 702,
      "element": 351,
      "affinity": 5.4,
-     "src": "list"
+     "src": "gamewith.ai"
     },
     "13": {
      "attack": 814,

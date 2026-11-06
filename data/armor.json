@@ -495,7 +495,7 @@
      "name": "冒険団ヘルム",
      "part": "head",
      "baseRarity": 5,
-     "maxRarity": 6,
+     "maxRarity": 12,
      "docMax": 6,
      "set": "冒険団の逆襲",
      "orbTier": null,
@@ -532,7 +532,8 @@
      ],
      "sources": [
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -540,7 +541,7 @@
      "name": "冒険団メイル",
      "part": "body",
      "baseRarity": 5,
-     "maxRarity": 6,
+     "maxRarity": 12,
      "docMax": 6,
      "set": "冒険団の逆襲",
      "orbTier": null,
@@ -577,7 +578,8 @@
      ],
      "sources": [
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -585,7 +587,7 @@
      "name": "冒険団アーム",
      "part": "arm",
      "baseRarity": 5,
-     "maxRarity": 6,
+     "maxRarity": 12,
      "docMax": 6,
      "set": "冒険団の逆襲",
      "orbTier": null,
@@ -615,7 +617,8 @@
      "sourceUrl": "https://gamewith.jp/mhoutlanders/584300",
      "sources": [
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -623,7 +626,7 @@
      "name": "冒険団コイル",
      "part": "waist",
      "baseRarity": 5,
-     "maxRarity": 6,
+     "maxRarity": 12,
      "docMax": 6,
      "set": "冒険団の逆襲",
      "orbTier": null,
@@ -660,7 +663,8 @@
      ],
      "sources": [
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -668,7 +672,7 @@
      "name": "冒険団グリーブ",
      "part": "leg",
      "baseRarity": 5,
-     "maxRarity": 6,
+     "maxRarity": 12,
      "docMax": 6,
      "set": "冒険団の逆襲",
      "orbTier": null,
@@ -705,7 +709,8 @@
      ],
      "sources": [
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     }
    ]
@@ -725,7 +730,7 @@
      "name": "ジャグラスヘルム",
      "part": "head",
      "baseRarity": 1,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "ドスジャグラスの抵抗",
      "orbTier": 1,
@@ -769,7 +774,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -777,7 +783,7 @@
      "name": "ジャグラスメイル",
      "part": "body",
      "baseRarity": 1,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "ドスジャグラスの抵抗",
      "orbTier": 1,
@@ -816,7 +822,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -824,7 +831,7 @@
      "name": "ジャグラスアーム",
      "part": "arm",
      "baseRarity": 1,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "ドスジャグラスの抵抗",
      "orbTier": 1,
@@ -868,7 +875,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -876,7 +884,7 @@
      "name": "ジャグラスコイル",
      "part": "waist",
      "baseRarity": 1,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "ドスジャグラスの抵抗",
      "orbTier": 1,
@@ -906,7 +914,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -914,7 +923,7 @@
      "name": "ジャグラスグリーヴ",
      "part": "leg",
      "baseRarity": 1,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "ドスジャグラスの抵抗",
      "orbTier": 1,
@@ -949,7 +958,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     }
    ]
@@ -969,7 +979,7 @@
      "name": "クルルヘルム",
      "part": "head",
      "baseRarity": 1,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "クルルヤックの閃撃",
      "orbTier": 1,
@@ -1008,7 +1018,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -1016,7 +1027,7 @@
      "name": "クルルメイル",
      "part": "body",
      "baseRarity": 1,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "クルルヤックの閃撃",
      "orbTier": 1,
@@ -1055,7 +1066,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -1063,7 +1075,7 @@
      "name": "クルルアーム",
      "part": "arm",
      "baseRarity": 1,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "クルルヤックの閃撃",
      "orbTier": 1,
@@ -1102,7 +1114,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -1110,7 +1123,7 @@
      "name": "クルルコイル",
      "part": "waist",
      "baseRarity": 1,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "クルルヤックの閃撃",
      "orbTier": 1,
@@ -1126,13 +1139,13 @@
        "rarity": 5
       },
       {
-       "name": "弱点攻撃",
-       "lv": 1,
-       "rarity": 7
-      },
-      {
        "name": "連撃強化",
        "lv": 2,
+       "rarity": 9
+      },
+      {
+       "name": "弱点攻撃",
+       "lv": 1,
        "rarity": 9
       }
      ],
@@ -1150,25 +1163,28 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ],
      "conflicts": [
       {
        "rarity": 7,
        "skill": "弱点攻撃",
-       "chosen": 1,
+       "chosen": 0,
        "values": {
         "Game8": 1,
-        "GameWith": 0
+        "GameWith": 0,
+        "gamewith.ai": 0
        }
       },
       {
        "rarity": 8,
        "skill": "弱点攻撃",
-       "chosen": 1,
+       "chosen": 0,
        "values": {
         "Game8": 1,
-        "GameWith": 0
+        "GameWith": 0,
+        "gamewith.ai": 0
        }
       }
      ]
@@ -1178,7 +1194,7 @@
      "name": "クルルグリーヴ",
      "part": "leg",
      "baseRarity": 1,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "クルルヤックの閃撃",
      "orbTier": 1,
@@ -1218,7 +1234,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     }
    ]
@@ -1238,7 +1255,7 @@
      "name": "プケプケヘルム",
      "part": "head",
      "baseRarity": 1,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "プケプケの尻尾振り",
      "orbTier": 1,
@@ -1282,7 +1299,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -1290,7 +1308,7 @@
      "name": "プケプケメイル",
      "part": "body",
      "baseRarity": 1,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "プケプケの尻尾振り",
      "orbTier": 1,
@@ -1329,7 +1347,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -1337,7 +1356,7 @@
      "name": "プケプケアーム",
      "part": "arm",
      "baseRarity": 1,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "プケプケの尻尾振り",
      "orbTier": 1,
@@ -1376,7 +1395,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -1384,7 +1404,7 @@
      "name": "プケプケコイル",
      "part": "waist",
      "baseRarity": 1,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "プケプケの尻尾振り",
      "orbTier": 1,
@@ -1428,7 +1448,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -1436,7 +1457,7 @@
      "name": "プケプケグリーヴ",
      "part": "leg",
      "baseRarity": 1,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "プケプケの尻尾振り",
      "orbTier": 1,
@@ -1471,7 +1492,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     }
    ]
@@ -1488,7 +1510,7 @@
      "name": "アロイヘルム",
      "part": "head",
      "baseRarity": 3,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "合金の風障",
      "orbTier": 1,
@@ -1528,7 +1550,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -1536,7 +1559,7 @@
      "name": "アロイメイル",
      "part": "body",
      "baseRarity": 3,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "合金の風障",
      "orbTier": 1,
@@ -1575,7 +1598,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -1583,7 +1607,7 @@
      "name": "アロイアーム",
      "part": "arm",
      "baseRarity": 3,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "合金の風障",
      "orbTier": 1,
@@ -1613,7 +1637,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -1621,7 +1646,7 @@
      "name": "アロイコイル",
      "part": "waist",
      "baseRarity": 3,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "合金の風障",
      "orbTier": 1,
@@ -1660,7 +1685,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -1668,7 +1694,7 @@
      "name": "アロイグリーヴ",
      "part": "leg",
      "baseRarity": 3,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "合金の風障",
      "orbTier": 1,
@@ -1707,7 +1733,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     }
    ]
@@ -1727,7 +1754,7 @@
      "name": "ギルオスヘルム",
      "part": "head",
      "baseRarity": 2,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "痺賊竜の不意打ち",
      "orbTier": 1,
@@ -1770,7 +1797,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -1778,7 +1806,7 @@
      "name": "ギルオスメイル",
      "part": "body",
      "baseRarity": 2,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "痺賊竜の不意打ち",
      "orbTier": 1,
@@ -1817,7 +1845,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -1825,7 +1854,7 @@
      "name": "ギルオスアーム",
      "part": "arm",
      "baseRarity": 2,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "痺賊竜の不意打ち",
      "orbTier": 1,
@@ -1869,7 +1898,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -1877,7 +1907,7 @@
      "name": "ギルオスコイル",
      "part": "waist",
      "baseRarity": 2,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "痺賊竜の不意打ち",
      "orbTier": 1,
@@ -1924,7 +1954,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -1932,7 +1963,7 @@
      "name": "ギルオスグリーヴ",
      "part": "leg",
      "baseRarity": 2,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "痺賊竜の不意打ち",
      "orbTier": 1,
@@ -1971,7 +2002,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     }
    ]
@@ -1991,7 +2023,7 @@
      "name": "ジュラヘルム",
      "part": "head",
      "baseRarity": 2,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "泥魚竜の水御",
      "orbTier": 1,
@@ -2035,7 +2067,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -2043,7 +2076,7 @@
      "name": "ジュラメイル",
      "part": "body",
      "baseRarity": 2,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "泥魚竜の水御",
      "orbTier": 1,
@@ -2082,7 +2115,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -2090,7 +2124,7 @@
      "name": "ジュラアーム",
      "part": "arm",
      "baseRarity": 2,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "泥魚竜の水御",
      "orbTier": 1,
@@ -2130,7 +2164,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -2138,7 +2173,7 @@
      "name": "ジュラコイル",
      "part": "waist",
      "baseRarity": 2,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "泥魚竜の水御",
      "orbTier": 1,
@@ -2173,7 +2208,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -2181,7 +2217,7 @@
      "name": "ジュラグリーヴ",
      "part": "leg",
      "baseRarity": 2,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "泥魚竜の水御",
      "orbTier": 1,
@@ -2220,7 +2256,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     }
    ]
@@ -2240,7 +2277,7 @@
      "name": "ボロスヘルム",
      "part": "head",
      "baseRarity": 2,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "土砂竜の泥障",
      "orbTier": 1,
@@ -2288,7 +2325,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -2296,7 +2334,7 @@
      "name": "ボロスメイル",
      "part": "body",
      "baseRarity": 2,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "土砂竜の泥障",
      "orbTier": 1,
@@ -2340,7 +2378,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -2348,7 +2387,7 @@
      "name": "ボロスアーム",
      "part": "arm",
      "baseRarity": 2,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "土砂竜の泥障",
      "orbTier": 1,
@@ -2386,7 +2425,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -2394,7 +2434,7 @@
      "name": "ボロスコイル",
      "part": "waist",
      "baseRarity": 2,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "土砂竜の泥障",
      "orbTier": 1,
@@ -2437,7 +2477,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -2445,7 +2486,7 @@
      "name": "ボロスグリーヴ",
      "part": "leg",
      "baseRarity": 2,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "土砂竜の泥障",
      "orbTier": 1,
@@ -2484,7 +2525,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     }
    ]
@@ -2501,7 +2543,7 @@
      "name": "チェーンヘッド",
      "part": "head",
      "baseRarity": 1,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "寒鉄錬成",
      "orbTier": 1,
@@ -2532,7 +2574,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -2540,7 +2583,7 @@
      "name": "チェーンベスト",
      "part": "body",
      "baseRarity": 1,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "寒鉄錬成",
      "orbTier": 1,
@@ -2570,7 +2613,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -2578,7 +2622,7 @@
      "name": "チェーングラブ",
      "part": "arm",
      "baseRarity": 1,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "寒鉄錬成",
      "orbTier": 1,
@@ -2609,7 +2653,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -2617,7 +2662,7 @@
      "name": "チェーンベルト",
      "part": "waist",
      "baseRarity": 1,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "寒鉄錬成",
      "orbTier": 1,
@@ -2657,7 +2702,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -2665,7 +2711,7 @@
      "name": "チェーンパンツ",
      "part": "leg",
      "baseRarity": 1,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "寒鉄錬成",
      "orbTier": 1,
@@ -2705,7 +2751,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     }
    ]
@@ -2722,7 +2769,7 @@
      "name": "ボーンヘルム",
      "part": "head",
      "baseRarity": 2,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "竜塚の神秘",
      "orbTier": 1,
@@ -2762,7 +2809,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -2770,7 +2818,7 @@
      "name": "ボーンメイル",
      "part": "body",
      "baseRarity": 2,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "竜塚の神秘",
      "orbTier": 1,
@@ -2805,7 +2853,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -2813,7 +2862,7 @@
      "name": "ボーンアーム",
      "part": "arm",
      "baseRarity": 2,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "竜塚の神秘",
      "orbTier": 1,
@@ -2848,7 +2897,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -2856,7 +2906,7 @@
      "name": "ボーンコイル",
      "part": "waist",
      "baseRarity": 2,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "竜塚の神秘",
      "orbTier": 1,
@@ -2886,7 +2936,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -2894,7 +2945,7 @@
      "name": "ボーングリーヴ",
      "part": "leg",
      "baseRarity": 2,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "竜塚の神秘",
      "orbTier": 1,
@@ -2934,7 +2985,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     }
    ]
@@ -2951,7 +3003,7 @@
      "name": "ランゴヘルム",
      "part": "head",
      "baseRarity": 2,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "巨峰の絶縁",
      "orbTier": 1,
@@ -2985,7 +3037,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -2993,7 +3046,7 @@
      "name": "ランゴメイル",
      "part": "body",
      "baseRarity": 2,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "巨峰の絶縁",
      "orbTier": 1,
@@ -3027,7 +3080,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -3035,7 +3089,7 @@
      "name": "ランゴアーム",
      "part": "arm",
      "baseRarity": 2,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "巨峰の絶縁",
      "orbTier": 1,
@@ -3079,7 +3133,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -3087,7 +3142,7 @@
      "name": "ランゴコイル",
      "part": "waist",
      "baseRarity": 2,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "巨峰の絶縁",
      "orbTier": 1,
@@ -3130,7 +3185,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -3138,7 +3194,7 @@
      "name": "ランゴグリーヴ",
      "part": "leg",
      "baseRarity": 2,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "巨峰の絶縁",
      "orbTier": 1,
@@ -3181,7 +3237,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     }
    ]
@@ -3201,7 +3258,7 @@
      "name": "ジャナフヘルム",
      "part": "head",
      "baseRarity": 3,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "蛮顎竜の灼炎",
      "orbTier": 1,
@@ -3253,7 +3310,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -3261,7 +3319,7 @@
      "name": "ジャナフメイル",
      "part": "body",
      "baseRarity": 3,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "蛮顎竜の灼炎",
      "orbTier": 1,
@@ -3305,7 +3363,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -3313,7 +3372,7 @@
      "name": "ジャナフアーム",
      "part": "arm",
      "baseRarity": 3,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "蛮顎竜の灼炎",
      "orbTier": 1,
@@ -3352,7 +3411,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -3360,7 +3420,7 @@
      "name": "ジャナフコイル",
      "part": "waist",
      "baseRarity": 3,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "蛮顎竜の灼炎",
      "orbTier": 1,
@@ -3412,7 +3472,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -3420,7 +3481,7 @@
      "name": "ジャナフグリーヴ",
      "part": "leg",
      "baseRarity": 3,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "蛮顎竜の灼炎",
      "orbTier": 1,
@@ -3459,7 +3520,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     }
    ]
@@ -3479,7 +3541,7 @@
      "name": "融光種レイアヘルム",
      "part": "head",
      "baseRarity": 3,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "雌火竜の感応",
      "orbTier": 1,
@@ -3519,7 +3581,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -3527,7 +3590,7 @@
      "name": "融光種レイアメイル",
      "part": "body",
      "baseRarity": 3,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "雌火竜の感応",
      "orbTier": 1,
@@ -3571,7 +3634,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -3579,7 +3643,7 @@
      "name": "融光種レイアアーム",
      "part": "arm",
      "baseRarity": 3,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "雌火竜の感応",
      "orbTier": 1,
@@ -3622,7 +3686,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -3630,7 +3695,7 @@
      "name": "融光種レイアコイル",
      "part": "waist",
      "baseRarity": 3,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "雌火竜の感応",
      "orbTier": 1,
@@ -3673,7 +3738,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -3681,7 +3747,7 @@
      "name": "融光種レイアグリーヴ",
      "part": "leg",
      "baseRarity": 3,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "雌火竜の感応",
      "orbTier": 1,
@@ -3721,7 +3787,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     }
    ]
@@ -3741,7 +3808,7 @@
      "name": "融光種ジャグラスヘルム",
      "part": "head",
      "baseRarity": 4,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "賊竜の回避",
      "orbTier": 1,
@@ -3759,7 +3826,7 @@
       {
        "name": "洞察",
        "lv": 1,
-       "rarity": 7
+       "rarity": 8
       }
      ],
      "materials": [
@@ -3780,16 +3847,18 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ],
      "conflicts": [
       {
        "rarity": 7,
        "skill": "洞察",
-       "chosen": 1,
+       "chosen": 0,
        "values": {
         "Game8": 1,
-        "GameWith": 0
+        "GameWith": 0,
+        "gamewith.ai": 0
        }
       }
      ]
@@ -3799,7 +3868,7 @@
      "name": "融光種ジャグラスメイル",
      "part": "body",
      "baseRarity": 4,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "賊竜の回避",
      "orbTier": 1,
@@ -3843,7 +3912,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -3851,7 +3921,7 @@
      "name": "融光種ジャグラスアーム",
      "part": "arm",
      "baseRarity": 4,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "賊竜の回避",
      "orbTier": 1,
@@ -3890,7 +3960,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -3898,7 +3969,7 @@
      "name": "融光種ジャグラスコイル",
      "part": "waist",
      "baseRarity": 4,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "賊竜の回避",
      "orbTier": 1,
@@ -3938,7 +4009,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -3946,7 +4018,7 @@
      "name": "融光種ジャグラスグリーヴ",
      "part": "leg",
      "baseRarity": 4,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "賊竜の回避",
      "orbTier": 1,
@@ -3981,7 +4053,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     }
    ]
@@ -4001,7 +4074,7 @@
      "name": "融光種プケプケヘルム",
      "part": "head",
      "baseRarity": 4,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "毒妖鳥の縄張り",
      "orbTier": 1,
@@ -4045,7 +4118,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -4053,7 +4127,7 @@
      "name": "融光種プケプケメイル",
      "part": "body",
      "baseRarity": 4,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "毒妖鳥の縄張り",
      "orbTier": 1,
@@ -4097,7 +4171,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -4105,7 +4180,7 @@
      "name": "融光種プケプケアーム",
      "part": "arm",
      "baseRarity": 4,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "毒妖鳥の縄張り",
      "orbTier": 1,
@@ -4144,7 +4219,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -4152,7 +4228,7 @@
      "name": "融光種プケプケコイル",
      "part": "waist",
      "baseRarity": 4,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "毒妖鳥の縄張り",
      "orbTier": 1,
@@ -4191,7 +4267,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -4199,7 +4276,7 @@
      "name": "融光種プケプケグリーヴ",
      "part": "leg",
      "baseRarity": 4,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "毒妖鳥の縄張り",
      "orbTier": 1,
@@ -4239,7 +4316,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     }
    ]
@@ -4256,7 +4334,7 @@
      "name": "パピメルテスタ",
      "part": "head",
      "baseRarity": 4,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "花蝶の親和",
      "orbTier": 1,
@@ -4296,7 +4374,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -4304,7 +4383,7 @@
      "name": "パピメルペット",
      "part": "body",
      "baseRarity": 4,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "花蝶の親和",
      "orbTier": 1,
@@ -4343,7 +4422,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -4351,7 +4431,7 @@
      "name": "パピメルマーノ",
      "part": "arm",
      "baseRarity": 4,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "花蝶の親和",
      "orbTier": 1,
@@ -4386,7 +4466,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -4394,7 +4475,7 @@
      "name": "パピメルアンカ",
      "part": "waist",
      "baseRarity": 4,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "花蝶の親和",
      "orbTier": 1,
@@ -4428,7 +4509,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -4436,7 +4518,7 @@
      "name": "パピメルガンバ",
      "part": "leg",
      "baseRarity": 4,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "花蝶の親和",
      "orbTier": 1,
@@ -4475,7 +4557,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     }
    ]
@@ -4492,7 +4575,7 @@
      "name": "レザーヘッド",
      "part": "head",
      "baseRarity": 1,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "複合ファイバー",
      "orbTier": 1,
@@ -4522,7 +4605,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -4530,7 +4614,7 @@
      "name": "レザーベスト",
      "part": "body",
      "baseRarity": 1,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "複合ファイバー",
      "orbTier": 1,
@@ -4565,7 +4649,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -4573,7 +4658,7 @@
      "name": "レザーグラブ",
      "part": "arm",
      "baseRarity": 1,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "複合ファイバー",
      "orbTier": 1,
@@ -4608,7 +4693,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -4616,7 +4702,7 @@
      "name": "レザーベルト",
      "part": "waist",
      "baseRarity": 1,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "複合ファイバー",
      "orbTier": 1,
@@ -4646,7 +4732,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -4654,7 +4741,7 @@
      "name": "レザーパンツ",
      "part": "leg",
      "baseRarity": 1,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "複合ファイバー",
      "orbTier": 1,
@@ -4694,7 +4781,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     }
    ]
@@ -4714,7 +4802,7 @@
      "name": "カガチヘルム",
      "part": "head",
      "baseRarity": 5,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "飛雷竜の雷鎧",
      "orbTier": 2,
@@ -4762,7 +4850,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -4770,7 +4859,7 @@
      "name": "カガチメイル",
      "part": "body",
      "baseRarity": 5,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "飛雷竜の雷鎧",
      "orbTier": 2,
@@ -4814,7 +4903,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -4822,7 +4912,7 @@
      "name": "カガチアーム",
      "part": "arm",
      "baseRarity": 5,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "飛雷竜の雷鎧",
      "orbTier": 2,
@@ -4865,7 +4955,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -4873,7 +4964,7 @@
      "name": "カガチコイル",
      "part": "waist",
      "baseRarity": 5,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "飛雷竜の雷鎧",
      "orbTier": 2,
@@ -4912,7 +5003,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -4920,7 +5012,7 @@
      "name": "カガチグリーヴ",
      "part": "leg",
      "baseRarity": 5,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "飛雷竜の雷鎧",
      "orbTier": 2,
@@ -4959,7 +5051,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     }
    ]
@@ -4979,7 +5072,7 @@
      "name": "融光種ジャナフヘルム",
      "part": "head",
      "baseRarity": 5,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "蛮顎竜の怒り",
      "orbTier": 2,
@@ -5026,7 +5119,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -5034,7 +5128,7 @@
      "name": "融光種ジャナフメイル",
      "part": "body",
      "baseRarity": 5,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "蛮顎竜の怒り",
      "orbTier": 2,
@@ -5073,7 +5167,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -5081,7 +5176,7 @@
      "name": "融光種ジャナフアーム",
      "part": "arm",
      "baseRarity": 5,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "蛮顎竜の怒り",
      "orbTier": 2,
@@ -5125,7 +5220,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -5133,7 +5229,7 @@
      "name": "融光種ジャナフコイル",
      "part": "waist",
      "baseRarity": 5,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "蛮顎竜の怒り",
      "orbTier": 2,
@@ -5180,7 +5276,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -5188,7 +5285,7 @@
      "name": "融光種ジャナフグリーヴ",
      "part": "leg",
      "baseRarity": 5,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "蛮顎竜の怒り",
      "orbTier": 2,
@@ -5232,7 +5329,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     }
    ]
@@ -5249,7 +5347,7 @@
      "name": "タロスヘルム",
      "part": "head",
      "baseRarity": 4,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "巨甲の力",
      "orbTier": 1,
@@ -5283,7 +5381,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -5291,7 +5390,7 @@
      "name": "タロスメイル",
      "part": "body",
      "baseRarity": 4,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "巨甲の力",
      "orbTier": 1,
@@ -5330,7 +5429,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -5338,7 +5438,7 @@
      "name": "タロスアーム",
      "part": "arm",
      "baseRarity": 4,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "巨甲の力",
      "orbTier": 1,
@@ -5382,7 +5482,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -5390,7 +5491,7 @@
      "name": "タロスコイル",
      "part": "waist",
      "baseRarity": 4,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "巨甲の力",
      "orbTier": 1,
@@ -5433,7 +5534,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -5441,7 +5543,7 @@
      "name": "タロスグリーヴ",
      "part": "leg",
      "baseRarity": 4,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "巨甲の力",
      "orbTier": 1,
@@ -5479,7 +5581,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     }
    ]
@@ -5499,7 +5602,7 @@
      "name": "融光種クルルヘルム",
      "part": "head",
      "baseRarity": 5,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "掻鳥の巧技",
      "orbTier": 2,
@@ -5538,7 +5641,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -5546,7 +5650,7 @@
      "name": "融光種クルルメイル",
      "part": "body",
      "baseRarity": 5,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "掻鳥の巧技",
      "orbTier": 2,
@@ -5585,7 +5689,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -5593,7 +5698,7 @@
      "name": "融光種クルルアーム",
      "part": "arm",
      "baseRarity": 5,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "掻鳥の巧技",
      "orbTier": 2,
@@ -5632,7 +5737,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -5640,7 +5746,7 @@
      "name": "融光種クルルコイル",
      "part": "waist",
      "baseRarity": 5,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "掻鳥の巧技",
      "orbTier": 2,
@@ -5680,7 +5786,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -5688,7 +5795,7 @@
      "name": "融光種クルルグリーヴ",
      "part": "leg",
      "baseRarity": 5,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "掻鳥の巧技",
      "orbTier": 2,
@@ -5728,7 +5835,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     }
    ]
@@ -5748,7 +5856,7 @@
      "name": "融光種ボロスヘルム",
      "part": "head",
      "baseRarity": 5,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "土砂竜の堅守",
      "orbTier": 2,
@@ -5796,7 +5904,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -5804,7 +5913,7 @@
      "name": "融光種ボロスメイル",
      "part": "body",
      "baseRarity": 5,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "土砂竜の堅守",
      "orbTier": 2,
@@ -5838,7 +5947,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -5846,7 +5956,7 @@
      "name": "融光種ボロスアーム",
      "part": "arm",
      "baseRarity": 5,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "土砂竜の堅守",
      "orbTier": 2,
@@ -5894,7 +6004,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -5902,7 +6013,7 @@
      "name": "融光種ボロスコイル",
      "part": "waist",
      "baseRarity": 5,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "土砂竜の堅守",
      "orbTier": 2,
@@ -5945,7 +6056,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -5953,7 +6065,7 @@
      "name": "融光種ボロスグリーヴ",
      "part": "leg",
      "baseRarity": 5,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "土砂竜の堅守",
      "orbTier": 2,
@@ -5992,7 +6104,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     }
    ]
@@ -6012,7 +6125,7 @@
      "name": "融光種ジュラヘルム",
      "part": "head",
      "baseRarity": 6,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "泥魚竜の癒流",
      "orbTier": 2,
@@ -6051,7 +6164,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -6059,7 +6173,7 @@
      "name": "融光種ジュラメイル",
      "part": "body",
      "baseRarity": 6,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "泥魚竜の癒流",
      "orbTier": 2,
@@ -6103,7 +6217,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -6111,7 +6226,7 @@
      "name": "融光種ジュラアーム",
      "part": "arm",
      "baseRarity": 6,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "泥魚竜の癒流",
      "orbTier": 2,
@@ -6151,7 +6266,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -6159,7 +6275,7 @@
      "name": "融光種ジュラコイル",
      "part": "waist",
      "baseRarity": 6,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "泥魚竜の癒流",
      "orbTier": 2,
@@ -6194,7 +6310,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -6202,7 +6319,7 @@
      "name": "融光種ジュラグリーヴ",
      "part": "leg",
      "baseRarity": 6,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "泥魚竜の癒流",
      "orbTier": 2,
@@ -6241,7 +6358,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     }
    ]
@@ -6261,7 +6379,7 @@
      "name": "レイアヘルム",
      "part": "head",
      "baseRarity": 6,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "雌火竜の強躯",
      "orbTier": 2,
@@ -6301,7 +6419,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -6309,7 +6428,7 @@
      "name": "レイアメイル",
      "part": "body",
      "baseRarity": 6,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "雌火竜の強躯",
      "orbTier": 2,
@@ -6353,7 +6472,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -6361,7 +6481,7 @@
      "name": "レイアアーム",
      "part": "arm",
      "baseRarity": 6,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "雌火竜の強躯",
      "orbTier": 2,
@@ -6409,7 +6529,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -6417,7 +6538,7 @@
      "name": "レイアコイル",
      "part": "waist",
      "baseRarity": 6,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "雌火竜の強躯",
      "orbTier": 2,
@@ -6465,7 +6586,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -6473,7 +6595,7 @@
      "name": "レイアグリーヴ",
      "part": "leg",
      "baseRarity": 6,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "雌火竜の強躯",
      "orbTier": 2,
@@ -6508,7 +6630,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     }
    ]
@@ -6528,7 +6651,7 @@
      "name": "レウスヘルム",
      "part": "head",
      "baseRarity": 6,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "火竜の弱点撃破",
      "orbTier": 2,
@@ -6563,7 +6686,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -6571,7 +6695,7 @@
      "name": "レウスメイル",
      "part": "body",
      "baseRarity": 6,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "火竜の弱点撃破",
      "orbTier": 2,
@@ -6610,7 +6734,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -6618,7 +6743,7 @@
      "name": "レウスアーム",
      "part": "arm",
      "baseRarity": 6,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "火竜の弱点撃破",
      "orbTier": 2,
@@ -6661,7 +6786,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -6669,7 +6795,7 @@
      "name": "レウスコイル",
      "part": "waist",
      "baseRarity": 6,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "火竜の弱点撃破",
      "orbTier": 2,
@@ -6717,7 +6843,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -6725,7 +6852,7 @@
      "name": "レウスグリーヴ",
      "part": "leg",
      "baseRarity": 6,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "火竜の弱点撃破",
      "orbTier": 2,
@@ -6765,7 +6892,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     }
    ]
@@ -6782,7 +6910,7 @@
      "name": "ハイメタヘルム",
      "part": "head",
      "baseRarity": 4,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "鉱脈の静寂",
      "orbTier": 1,
@@ -6812,7 +6940,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -6820,7 +6949,7 @@
      "name": "ハイメタメイル",
      "part": "body",
      "baseRarity": 4,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "鉱脈の静寂",
      "orbTier": 1,
@@ -6856,7 +6985,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -6864,7 +6994,7 @@
      "name": "ハイメタアーム",
      "part": "arm",
      "baseRarity": 4,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "鉱脈の静寂",
      "orbTier": 1,
@@ -6904,7 +7034,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -6912,7 +7043,7 @@
      "name": "ハイメタコイル",
      "part": "waist",
      "baseRarity": 4,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "鉱脈の静寂",
      "orbTier": 1,
@@ -6956,7 +7087,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -6964,7 +7096,7 @@
      "name": "ハイメタグリーヴ",
      "part": "leg",
      "baseRarity": 4,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "鉱脈の静寂",
      "orbTier": 1,
@@ -7008,7 +7140,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     }
    ]
@@ -7025,7 +7158,7 @@
      "name": "オウビートテスタ",
      "part": "head",
      "baseRarity": 4,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "一角の神秘",
      "orbTier": 1,
@@ -7060,7 +7193,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -7068,7 +7202,7 @@
      "name": "オウビートペット",
      "part": "body",
      "baseRarity": 4,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "一角の神秘",
      "orbTier": 1,
@@ -7112,7 +7246,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -7120,7 +7255,7 @@
      "name": "オウビートマーノ",
      "part": "arm",
      "baseRarity": 4,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "一角の神秘",
      "orbTier": 1,
@@ -7160,7 +7295,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -7168,7 +7304,7 @@
      "name": "オウビートアンカ",
      "part": "waist",
      "baseRarity": 4,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "一角の神秘",
      "orbTier": 1,
@@ -7202,7 +7338,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ],
      "conflicts": [
       {
@@ -7230,7 +7367,7 @@
      "name": "オウビートガンバ",
      "part": "leg",
      "baseRarity": 4,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "一角の神秘",
      "orbTier": 1,
@@ -7269,7 +7406,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     }
    ]
@@ -7287,7 +7425,7 @@
      "name": "インゴットヘルム",
      "part": "head",
      "baseRarity": 5,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "インゴットの耐爆",
      "orbTier": 2,
@@ -7322,7 +7460,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -7330,7 +7469,7 @@
      "name": "インゴットメイル",
      "part": "body",
      "baseRarity": 5,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "インゴットの耐爆",
      "orbTier": 2,
@@ -7369,7 +7508,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -7377,7 +7517,7 @@
      "name": "インゴットアーム",
      "part": "arm",
      "baseRarity": 5,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "インゴットの耐爆",
      "orbTier": 2,
@@ -7412,7 +7552,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -7420,7 +7561,7 @@
      "name": "インゴットコイル",
      "part": "waist",
      "baseRarity": 5,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "インゴットの耐爆",
      "orbTier": 2,
@@ -7460,7 +7601,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -7468,7 +7610,7 @@
      "name": "インゴットグリーヴ",
      "part": "leg",
      "baseRarity": 5,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "インゴットの耐爆",
      "orbTier": 2,
@@ -7508,7 +7650,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     }
    ]
@@ -7525,7 +7668,7 @@
      "name": "冒険者ヘルム",
      "part": "head",
      "baseRarity": 2,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "荒野マスタリー",
      "orbTier": 1,
@@ -7564,7 +7707,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -7572,7 +7716,7 @@
      "name": "冒険者メイル",
      "part": "body",
      "baseRarity": 2,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "荒野マスタリー",
      "orbTier": 1,
@@ -7616,7 +7760,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -7624,7 +7769,7 @@
      "name": "冒険者アーム",
      "part": "arm",
      "baseRarity": 2,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "荒野マスタリー",
      "orbTier": 1,
@@ -7658,7 +7803,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -7666,7 +7812,7 @@
      "name": "冒険者コイル",
      "part": "waist",
      "baseRarity": 2,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "荒野マスタリー",
      "orbTier": 1,
@@ -7714,7 +7860,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -7722,7 +7869,7 @@
      "name": "冒険者グリーヴ",
      "part": "leg",
      "baseRarity": 2,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "荒野マスタリー",
      "orbTier": 1,
@@ -7760,7 +7907,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     }
    ]
@@ -7780,7 +7928,7 @@
      "name": "融光種カガチヘルム",
      "part": "head",
      "baseRarity": 7,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "飛雷竜の激昂",
      "orbTier": 3,
@@ -7828,7 +7976,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -7836,7 +7985,7 @@
      "name": "融光種カガチメイル",
      "part": "body",
      "baseRarity": 7,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "飛雷竜の激昂",
      "orbTier": 3,
@@ -7870,7 +8019,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -7878,7 +8028,7 @@
      "name": "融光種カガチアーム",
      "part": "arm",
      "baseRarity": 7,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "飛雷竜の激昂",
      "orbTier": 3,
@@ -7926,7 +8076,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -7934,7 +8085,7 @@
      "name": "融光種カガチコイル",
      "part": "waist",
      "baseRarity": 7,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "飛雷竜の雷鎧",
      "orbTier": 3,
@@ -7973,7 +8124,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -7981,7 +8133,7 @@
      "name": "融光種カガチグリーヴ",
      "part": "leg",
      "baseRarity": 7,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "飛雷竜の雷鎧",
      "orbTier": 3,
@@ -8020,7 +8172,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     }
    ]
@@ -8040,7 +8193,7 @@
      "name": "融光種ギルオスヘルム",
      "part": "head",
      "baseRarity": 7,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "ドスギルオスの統率",
      "orbTier": 3,
@@ -8088,7 +8241,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -8096,7 +8250,7 @@
      "name": "融光種ギルオスメイル",
      "part": "body",
      "baseRarity": 7,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "ドスギルオスの統率",
      "orbTier": 3,
@@ -8135,7 +8289,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -8143,7 +8298,7 @@
      "name": "融光種ギルオスアーム",
      "part": "arm",
      "baseRarity": 7,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "ドスギルオスの統率",
      "orbTier": 3,
@@ -8182,7 +8337,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -8190,7 +8346,7 @@
      "name": "融光種ギルオスコイル",
      "part": "waist",
      "baseRarity": 7,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "ドスギルオスの統率",
      "orbTier": 3,
@@ -8242,7 +8398,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -8250,7 +8407,7 @@
      "name": "融光種ギルオスグリーヴ",
      "part": "leg",
      "baseRarity": 7,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "ドスギルオスの統率",
      "orbTier": 3,
@@ -8284,7 +8441,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     }
    ]
@@ -8304,7 +8462,7 @@
      "name": "ディアブロスヘルム",
      "part": "head",
      "baseRarity": 7,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "角竜の踏み締め",
      "orbTier": 3,
@@ -8342,7 +8500,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -8350,7 +8509,7 @@
      "name": "ディアブロメイル",
      "part": "body",
      "baseRarity": 7,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "角竜の踏み締め",
      "orbTier": 3,
@@ -8389,7 +8548,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -8397,7 +8557,7 @@
      "name": "ディアブロアーム",
      "part": "arm",
      "baseRarity": 7,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "角竜の踏み締め",
      "orbTier": 3,
@@ -8437,7 +8597,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -8445,7 +8606,7 @@
      "name": "ディアブロコイル",
      "part": "waist",
      "baseRarity": 7,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "角竜の踏み締め",
      "orbTier": 3,
@@ -8489,7 +8650,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -8497,7 +8659,7 @@
      "name": "ディアブログリーヴ",
      "part": "leg",
      "baseRarity": 7,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "角竜の踏み締め",
      "orbTier": 3,
@@ -8536,7 +8698,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     }
    ]
@@ -8556,7 +8719,7 @@
      "name": "ツィツィヘルム",
      "part": "head",
      "baseRarity": 8,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "眩鳥の追撃",
      "orbTier": 3,
@@ -8579,7 +8742,7 @@
       {
        "name": "一撃貫通",
        "lv": 2,
-       "rarity": 9
+       "rarity": 10
       }
      ],
      "materials": [
@@ -8604,16 +8767,18 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ],
      "conflicts": [
       {
        "rarity": 9,
        "skill": "一撃貫通",
-       "chosen": 2,
+       "chosen": 1,
        "values": {
         "GameWith": 1,
-        "Game8": 2
+        "Game8": 2,
+        "gamewith.ai": 1
        }
       }
      ]
@@ -8623,7 +8788,7 @@
      "name": "ツィツィメイル",
      "part": "body",
      "baseRarity": 8,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "眩鳥の追撃",
      "orbTier": 3,
@@ -8662,7 +8827,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -8670,7 +8836,7 @@
      "name": "ツィツィアーム",
      "part": "arm",
      "baseRarity": 8,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "眩鳥の追撃",
      "orbTier": 3,
@@ -8709,7 +8875,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -8717,7 +8884,7 @@
      "name": "ツィツィコイル",
      "part": "waist",
      "baseRarity": 8,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "眩鳥の追撃",
      "orbTier": 3,
@@ -8765,7 +8932,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -8773,7 +8941,7 @@
      "name": "ツィツィグリーヴ",
      "part": "leg",
      "baseRarity": 8,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "眩鳥の追撃",
      "orbTier": 3,
@@ -8812,7 +8980,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     }
    ]
@@ -8832,7 +9001,7 @@
      "name": "ウルムーヘルム",
      "part": "head",
      "baseRarity": 8,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "浮空竜の気迫",
      "orbTier": 3,
@@ -8872,7 +9041,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -8880,7 +9050,7 @@
      "name": "ウルムーメイル",
      "part": "body",
      "baseRarity": 8,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "浮空竜の気迫",
      "orbTier": 3,
@@ -8919,7 +9089,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -8927,7 +9098,7 @@
      "name": "ウルムーアーム",
      "part": "arm",
      "baseRarity": 8,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "浮空竜の気迫",
      "orbTier": 3,
@@ -8966,7 +9137,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -8974,7 +9146,7 @@
      "name": "ウルムーコイル",
      "part": "waist",
      "baseRarity": 8,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "浮空竜の気迫",
      "orbTier": 3,
@@ -9004,7 +9176,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -9012,7 +9185,7 @@
      "name": "ウルムーグリーヴ",
      "part": "leg",
      "baseRarity": 8,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "浮空竜の気迫",
      "orbTier": 3,
@@ -9056,7 +9229,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     }
    ]
@@ -9076,7 +9250,7 @@
      "name": "融光種ウルムーヘルム",
      "part": "head",
      "baseRarity": 9,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "浮空竜の気流",
      "orbTier": 4,
@@ -9111,7 +9285,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -9119,7 +9294,7 @@
      "name": "融光種ウルムーメイル",
      "part": "body",
      "baseRarity": 9,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "浮空竜の気流",
      "orbTier": 4,
@@ -9153,7 +9328,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -9161,7 +9337,7 @@
      "name": "融光種ウルムーアーム",
      "part": "arm",
      "baseRarity": 9,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "浮空竜の気流",
      "orbTier": 4,
@@ -9200,7 +9376,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -9208,7 +9385,7 @@
      "name": "融光種ウルムーコイル",
      "part": "waist",
      "baseRarity": 9,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "浮空竜の気流",
      "orbTier": 4,
@@ -9238,7 +9415,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -9246,7 +9424,7 @@
      "name": "融光種ウルムーグリーヴ",
      "part": "leg",
      "baseRarity": 9,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "浮空竜の気流",
      "orbTier": 4,
@@ -9281,7 +9459,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     }
    ]
@@ -9301,7 +9480,7 @@
      "name": "バルキンヘルム",
      "part": "head",
      "baseRarity": 7,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "骨鎚竜の鉄壁",
      "orbTier": 3,
@@ -9345,7 +9524,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -9353,7 +9533,7 @@
      "name": "バルキンメイル",
      "part": "body",
      "baseRarity": 7,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "骨鎚竜の鉄壁",
      "orbTier": 3,
@@ -9397,7 +9577,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -9405,7 +9586,7 @@
      "name": "バルキンアーム",
      "part": "arm",
      "baseRarity": 7,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "骨鎚竜の鉄壁",
      "orbTier": 3,
@@ -9439,7 +9620,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -9447,7 +9629,7 @@
      "name": "バルキンコイル",
      "part": "waist",
      "baseRarity": 7,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "骨鎚竜の鉄壁",
      "orbTier": 3,
@@ -9494,7 +9676,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -9502,7 +9685,7 @@
      "name": "バルキングリーヴ",
      "part": "leg",
      "baseRarity": 7,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "骨鎚竜の鉄壁",
      "orbTier": 3,
@@ -9540,7 +9723,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     }
    ]
@@ -9560,7 +9744,7 @@
      "name": "ギエナヘルム",
      "part": "head",
      "baseRarity": 8,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "風漂竜の舞",
      "orbTier": 3,
@@ -9594,7 +9778,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -9602,7 +9787,7 @@
      "name": "ギエナメイル",
      "part": "body",
      "baseRarity": 8,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "風漂竜の舞",
      "orbTier": 3,
@@ -9641,7 +9826,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -9649,7 +9835,7 @@
      "name": "ギエナアーム",
      "part": "arm",
      "baseRarity": 8,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "風漂竜の舞",
      "orbTier": 3,
@@ -9701,7 +9887,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -9709,7 +9896,7 @@
      "name": "ギエナコイル",
      "part": "waist",
      "baseRarity": 8,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "風漂竜の舞",
      "orbTier": 3,
@@ -9743,7 +9930,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -9751,7 +9939,7 @@
      "name": "ギエナグリーヴ",
      "part": "leg",
      "baseRarity": 8,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "風漂竜の舞",
      "orbTier": 3,
@@ -9794,7 +9982,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     }
    ]
@@ -9814,7 +10003,7 @@
      "name": "ガロンヘルム",
      "part": "head",
      "baseRarity": 7,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "惨爪竜の靭性",
      "orbTier": 3,
@@ -9862,7 +10051,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -9870,7 +10060,7 @@
      "name": "ガロンメイル",
      "part": "body",
      "baseRarity": 7,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "惨爪竜の靭性",
      "orbTier": 3,
@@ -9909,7 +10099,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -9917,7 +10108,7 @@
      "name": "ガロンアーム",
      "part": "arm",
      "baseRarity": 7,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "惨爪竜の靭性",
      "orbTier": 3,
@@ -9951,7 +10142,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -9959,7 +10151,7 @@
      "name": "ガロンコイル",
      "part": "waist",
      "baseRarity": 7,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "惨爪竜の靭性",
      "orbTier": 3,
@@ -9998,7 +10190,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -10006,7 +10199,7 @@
      "name": "ガロングリーヴ",
      "part": "leg",
      "baseRarity": 7,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "惨爪竜の靭性",
      "orbTier": 3,
@@ -10046,7 +10239,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     }
    ]
@@ -10066,7 +10260,7 @@
      "name": "リオハートヘルム",
      "part": "head",
      "baseRarity": 9,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "桜火竜の鋭敏",
      "orbTier": 4,
@@ -10109,7 +10303,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -10117,7 +10312,7 @@
      "name": "リオハートメイル",
      "part": "body",
      "baseRarity": 9,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "桜火竜の鋭敏",
      "orbTier": 4,
@@ -10151,7 +10346,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -10159,7 +10355,7 @@
      "name": "リオハートアーム",
      "part": "arm",
      "baseRarity": 9,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "桜火竜の鋭敏",
      "orbTier": 4,
@@ -10198,7 +10394,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -10206,7 +10403,7 @@
      "name": "リオハートコイル",
      "part": "waist",
      "baseRarity": 9,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "桜火竜の鋭敏",
      "orbTier": 4,
@@ -10245,7 +10442,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -10253,7 +10451,7 @@
      "name": "リオハートグリーヴ",
      "part": "leg",
      "baseRarity": 9,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "桜火竜の鋭敏",
      "orbTier": 4,
@@ -10288,7 +10486,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     }
    ]
@@ -10308,7 +10507,7 @@
      "name": "エアルダの誓約",
      "part": "head",
      "baseRarity": 9,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "光稜龍の威嚇",
      "orbTier": 4,
@@ -10350,7 +10549,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -10358,7 +10558,7 @@
      "name": "エアルダの守護",
      "part": "body",
      "baseRarity": 9,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "光稜龍の威嚇",
      "orbTier": 4,
@@ -10404,7 +10604,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -10412,7 +10613,7 @@
      "name": "エアルダの裁き",
      "part": "arm",
      "baseRarity": 9,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "光稜龍の威嚇",
      "orbTier": 4,
@@ -10459,7 +10660,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -10467,7 +10669,7 @@
      "name": "エアルダの誠実",
      "part": "waist",
      "baseRarity": 9,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "光稜龍の威嚇",
      "orbTier": 4,
@@ -10514,7 +10716,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     },
     {
@@ -10522,7 +10725,7 @@
      "name": "エアルダの信念",
      "part": "leg",
      "baseRarity": 9,
-     "maxRarity": 10,
+     "maxRarity": 12,
      "docMax": 10,
      "set": "光稜龍の威嚇",
      "orbTier": 4,
@@ -10569,7 +10772,8 @@
      "sources": [
       "Game8",
       "GameWith",
-      "Gamerch"
+      "Gamerch",
+      "gamewith.ai"
      ]
     }
    ]

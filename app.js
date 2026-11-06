@@ -1,6 +1,6 @@
 /* 融光工房 ― UI */
 'use strict';
-const APP_VERSION = '2026.11.06-10';
+const APP_VERSION = '2026.11.06-11';
 const STORE_KEY = 'mho-equip:v1';
 const PART_JP = { head: '頭', body: '胴', arm: '腕', waist: '腰', leg: '脚' };
 const EL_CLASS = { '火': 'fire', '水': 'water', '雷': 'thunder', '氷': 'ice', '龍': 'dragon', '毒': 'poison', '麻痺': 'para', '睡眠': 'sleep', '爆破': 'blast', '無': 'none' };
@@ -401,6 +401,20 @@ function renderResult(res) {
   }
   const b = res.best;
   const needs = b.pieces.filter(p => p.rarity > p.baseRarity);
+  const armorById = new Map(DATA.armor.series.flatMap(s => s.pieces.map(q => [q.id, q])));
+  // 攻略サイト間で解放レアが割れている部位は、多数決で採った値と各サイトの値を添える
+  const conflictNote = (p) => {
+    const src = armorById.get(p.id);
+    const cs = ((src && src.conflicts) || []).filter(c => c.skill && c.rarity === p.rarity); // 採用したレアでサイトの値が割れている時だけ
+    if (!cs.length) return null;
+    const seen = new Set(), parts = [];
+    for (const c of cs) {
+      if (seen.has(c.skill)) continue; seen.add(c.skill);
+      const vals = Object.entries(c.values).map(([s, v]) => `${s} Lv${v}`).join('・');
+      parts.push(`${c.skill}（レア${c.rarity}：${vals} → Lv${c.chosen}を採用）`);
+    }
+    return el('div', { class: 'conflict', text: `※サイトで食い違い：${parts.join('、')}` });
+  };
   $('#resultHint').textContent = needs.length ? `強化：${needs.map(p => `${p.name}→レア${p.rarity}`).join('、')}` : '全部位、生産したままでOK';
   const capNow = rankCap();
   for (const p of b.pieces) {
@@ -412,7 +426,7 @@ function renderResult(res) {
     for (const k of p.skills) tags.append(el('span', { class: 'tag' + (k.value > 0.3 ? ' hit' : '') }, k.name, el('span', { class: 'lv', text: String(k.lv) })));
     rack.append(el('li', { class: 'slot' },
       el('div', { class: 'slotIcon', title: PART_JP[p.part] }, svgIcon(p.part)),
-      el('div', {}, el('div', { class: 'pname' }, p.name), rarDiamonds(p.rarity, top, lbl), tags)));
+      el('div', {}, el('div', { class: 'pname' }, p.name), rarDiamonds(p.rarity, top, lbl), tags, conflictNote(p))));
   }
   const tot = $('#skillTotals'); tot.innerHTML = '';
   const shown = b.totals.filter(t => t.value > 0.3);

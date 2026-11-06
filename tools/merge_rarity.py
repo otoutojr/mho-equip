@@ -41,8 +41,15 @@ def load_sources(raw):
         for p in d.get(field) or []:
             k = key(p.get('name'))
             if not k: continue
-            ul = [(u.get('rarity'), norm_skill(u.get('skill')), u.get('lv')) for u in p.get('unlocks') or [] if u.get('skill')]
-            table[k] = {'max': p.get('maxRarity'), 'base': p.get('baseRarity'), 'unlocks': ul,
+            if src == 'gamewith.ai':
+                # gamewith.ai 自身のレア別表（levels）だけを使う。上に足してある game8.co 分はレア表記が当てにならないので入れない
+                rows = p.get('levels') or []
+                ul = [(r['rarity'], norm_skill(x['skill']), x['lv']) for r in rows for x in r.get('skills') or [] if x.get('skill')]
+                mx = max([r['rarity'] for r in rows], default=None)
+            else:
+                ul = [(u.get('rarity'), norm_skill(u.get('skill')), u.get('lv')) for u in p.get('unlocks') or [] if u.get('skill')]
+                mx = p.get('maxRarity')
+            table[k] = {'max': mx, 'base': p.get('baseRarity'), 'unlocks': ul,
                         'url': p.get('sourceUrl') or p.get('source'), 'part': p.get('part')}
         out[src] = table
         print(f'  {LABEL[src]}: {len(table)} 部位')

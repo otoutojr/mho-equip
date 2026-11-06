@@ -15,7 +15,9 @@
 import json, re, sys, datetime, pathlib, collections
 import merge_rarity
 
-ARMOR_MAX_DEFAULT = 10  # どのサイトにも最大レアが無い部位の上限（Game8 の全防具が レア10 まで）
+# 防具の強化上限は部位ごとではなく冒険ランクの表で決まる（GameWith「防具のみレア度9と12で追加強化される」）。
+# 攻略サイトにスキルが載っているのはレア10まで（docMax）。それより上は防御力だけ上がる扱い
+ARMOR_MAX = 12
 
 RAW = pathlib.Path(sys.argv[1]) if len(sys.argv) > 1 else pathlib.Path('/tmp/claude-0/-home-claude/094b7c7b-727a-5a9e-9d7d-7a958be863c9/scratchpad/data')
 OUT = pathlib.Path(__file__).resolve().parent.parent / 'data'
@@ -421,7 +423,7 @@ def main():
     for s in series_out:
         for p in s['pieces']:
             merge_rarity.merge_piece(p, rsrc)
-            p['maxRarity'] = max(p['docMax'], p.get('maxSeen') or 0) if p.get('maxSeen') else ARMOR_MAX_DEFAULT
+            p['maxRarity'] = max(ARMOR_MAX, p['docMax'])
             p.pop('maxSeen', None)
             xc[merge_rarity.check_max(p, gmax)] += 1
             n_conf += len([c for c in p.get('conflicts', []) if 'skill' in c])
