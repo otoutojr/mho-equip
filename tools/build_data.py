@@ -416,14 +416,16 @@ def main():
 
     # レア別スキルを Game8 / Gamerch / gamewith.ai と突き合わせる（GameWith はレア7前後までしか載っていない）
     rsrc = merge_rarity.load_sources(RAW)
-    n_conf = 0
+    gmax = merge_rarity.load_gamerch_max(RAW)
+    n_conf = 0; xc = collections.Counter()
     for s in series_out:
         for p in s['pieces']:
             merge_rarity.merge_piece(p, rsrc)
             p['maxRarity'] = max(p['docMax'], p.get('maxSeen') or 0) if p.get('maxSeen') else ARMOR_MAX_DEFAULT
             p.pop('maxSeen', None)
+            xc[merge_rarity.check_max(p, gmax)] += 1
             n_conf += len([c for c in p.get('conflicts', []) if 'skill' in c])
-    print(f'  レア別スキルの食い違い: {n_conf} 件')
+    print(f'  レア別スキルの食い違い: {n_conf} 件 / Gamerch 最大強化スキルと一致 {xc[True]}・不一致 {xc[False]}・照合なし {xc[None]}')
     armor_out = {'updated': TODAY, 'sets': list(sets.values()), 'series': series_out}
 
     chars = build_characters(load('characters.json'), skills, overrides)

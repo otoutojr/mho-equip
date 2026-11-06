@@ -33,8 +33,8 @@ def _load(raw, name):
 def load_sources(raw):
     """{source: {piece_key: {'max': int|None, 'base': int|None, 'unlocks': [(rarity, skill, lv)], 'url': str}}}"""
     out = {}
-    for src, fname, field in [('gamerch', 'armor_gamerch.json', 'pieces'), ('game8', 'armor_game8.json', 'pieces'),
-                              ('gamewith.ai', 'rarity_rules.json', 'armorHighRarity')]:
+    # Gamerch は解放レアを載せていない（最大強化時のLvだけ）ので、レア別の多数決には入れず check_max で照合だけする
+    for src, fname, field in [('game8', 'armor_game8.json', 'pieces'), ('gamewith.ai', 'rarity_rules.json', 'armorHighRarity')]:
         d = _load(raw, fname)
         if not d: continue
         table = {}
@@ -123,3 +123,33 @@ def merge_piece(piece, sources):
 def series_max(raw):
     d = _load(raw, 'rarity_rules.json') or {}
     return ((d.get('armorMaxRarity') or {}).get('perSeries')) or {}
+
+GAMERCH_ALIAS = {'ディアブロヘルム': 'ディアブロスヘルム', '冒険団グリーヴ': '冒険団グリーブ'}
+# Gamerch の融光種ウルムーのページは実装前の仮名のまま（レベルの並びは GameWith / Game8 と同じ）
+GAMERCH_SKILL_ALIAS = {'精霊の加護': '加護', '溜め射撃強化': '溜め強射', 'アイテム使用強化': 'アイテム専門家', '窮地の冷静': '高圧ガード',
+                       '飛燕': '滞空', '採集の達人': '採集名人', '冒険団の力・グリーヴ': '冒険団の力・グリーブ'}
+
+def load_gamerch_max(raw):
+    """Gamerch の「最大強化時のスキル」 {piece_key: {skill: lv}}"""
+    d = _load(raw, 'armor_gamerch.json')
+    if not d: return {}
+    out = {}
+    for p in d.get('pieces') or []:
+        k = key(GAMERCH_ALIAS.get(p['name'], p['name']))
+        out[k] = {GAMERCH_SKILL_ALIAS.get(norm_skill(s['skill']), norm_skill(s['skill'])): max(s['levels']) for s in p.get('gamerchSkills') or [] if s.get('levels')}
+    print(f'  Gamerch（最大強化時）: {len(out)} 部位')
+    return out
+
+def check_max(piece, gmax):
+    """合成したデータの最大レア時点のスキルが Gamerch と一致するか。一致したら sources に足す"""
+    g = gmax.get(key(piece['name']))
+    if g is None: return None
+    top = {}
+    for k in piece['skills']:
+        top[k['name']] = max(top.get(k['name'], 0), k['lv'])
+    if top == g:
+        piece['sources'] = sorted(set(piece.get('sources', [])) | {'Gamerch'})
+        return True
+    piece.setdefault('conflicts', []).append({'type': 'maxSkills', 'source': 'Gamerch',
+        'values': {sk: {'Gamerch': g.get(sk, 0), 'merged': top.get(sk, 0)} for sk in set(g) | set(top) if g.get(sk, 0) != top.get(sk, 0)}})
+    return False
