@@ -247,6 +247,7 @@ def model_weights(model, skill_name, skill, yuko=False):
     """ダメージモデルからレベル別の重み（100×ln(倍率)）を作る"""
     spec = model['skills'][skill_name]
     e = model.get('elementShare', 0.35)
+    e_up = model.get('elemUpShare', e)  # 属性ダメージUP が乗る割合（make_models.py の説明を参照）
     wE = model.get('weaponElement', 130)
     crit_per = model.get('critPerPct', 0.004)   # 会心率+1%あたりの期待ダメージ増（割合）
     crit_rate = model.get('critRate', 0.3)
@@ -259,7 +260,7 @@ def model_weights(model, skill_name, skill, yuko=False):
         if kind == 'dmg':
             m = 1 + p * up * share
         elif kind == 'element':
-            m = (1 + p * e) * (1 + p * spec.get('core', 0.0))
+            m = (1 + p * e_up) * (1 + p * spec.get('core', 0.0))
         elif kind == 'crit':
             m = 1 + pct * up * crit_per
         elif kind == 'elemCrit':
@@ -268,6 +269,8 @@ def model_weights(model, skill_name, skill, yuko=False):
             m = 1 + spec.get('chance', 0.75) * p * up
         elif kind == 'flat':
             m = 1 + p * spec.get('value', 0.3)
+        elif kind == 'fixed':
+            m = 1 + spec.get('value', 0.03) * (lv.get('lv') or 1)
         else:
             m = 1 + p * up * share
         if flat:

@@ -3,7 +3,10 @@
 
 モデルの考え方：
   倍率 = Π(1 + 効果% × 発動している割合(uptime) × 乗るダメージの割合(share))
-  属性ダメージUP は「属性ダメージの割合(elementShare)」にだけ乗る
+  属性ダメージUP は elemUpShare（既定 ELEM_UP_SHARE）の割合で乗る。
+    最初は「属性ダメージの割合(elementShare≒0.35)」だけに乗るとしていたが、それだと Game8 の終盤装備
+    （全武器種・全属性で属性ダメージUP Lv7＋武器種スキル）と全く合わなかった。
+    1.2 にすると Game8 の終盤装備（レア8〜10）を主人公の太刀・双剣・ランス・弓・ハンマー・チャアクでほぼ部位まで再現できたので、この値を使う。
   会心率+X% は「1%あたりの期待ダメージ増(critPerPct)」に換算（会心倍率1.25想定で0.25%、主人公・ミドリはコアパッシブで+0.25%）
   属性攻撃力+N はキャラの属性攻撃力(weaponElement≒ランク40台で600想定。コアパッシブの閾値1500から逆算)に対する割合 × elementShare
 出典・想定は各スキルに書き、サイトの「狙うスキルと根拠」に表示する。
@@ -25,6 +28,11 @@ def elemcrit(tier='B', lv=3, reason='会心時の属性ダメージUP', sources=
     return {'kind': 'elemCrit', 'tier': tier, 'targetLv': lv, 'reason': reason, 'sources': list(sources), 'assumption': assumption}
 def proc(uptime, chance=0.75, tier='B', lv=None, reason='', sources=(), assumption=''):
     return {'kind': 'proc', 'uptime': uptime, 'chance': chance, 'tier': tier, 'targetLv': lv, 'reason': reason, 'sources': list(sources), 'assumption': assumption}
+def fixed(value, tier='A', reason='', sources=(), assumption=''):
+    # 効果に数値が無いスキル（弾導強化など）を「Lvあたり value の与ダメ増」とみなす
+    return {'kind': 'fixed', 'value': value, 'tier': tier, 'targetLv': 1, 'reason': reason, 'sources': list(sources), 'assumption': assumption}
+RANGE = fixed(0.05, 'A', '最大威力になる距離が短くなる＝クリティカル距離で当てやすい。Game8 の水・氷・龍弓の終盤装備、GameWith の弓「快適さ重視」が採用。使っている人の体感でも積むと強い',
+              (G8, GW, 'プレイ体感'), '適正距離で当たる割合が増える分を与ダメ+5%とみなす')
 def tiny(reason='快適スキル（火力には直接乗らない）', sources=()):
     return {'kind': 'flat', 'value': 0.02, 'tier': 'C', 'targetLv': 1, 'reason': reason, 'sources': list(sources), 'assumption': '同点のときだけ優先', 'fallback': 0.2}
 
@@ -147,14 +155,14 @@ models['hero_bow'] = {
     'sources': [{'title': 'GameWith 弓最強装備', 'url': 'https://gamewith.jp/mhoutlanders/584347'}, {'title': 'Game8 主人公(弓)', 'url': 'https://game8.jp/mhoutlanders/785411'}],
     'model': {'elementShare': 0.4, 'weaponElement': 600, 'critPerPct': CRIT_HERO, 'critRate': 0.3, 'skills': {
         **hero_common(),
-        '弓スキル強化': dmg(1.0, 0.7, 'S', 4, '弓のスキル1〜3のダメージUP（常時）', (GW, G8, GR), 'スキル攻撃が総ダメージの70%'),
-        '溜め強射': dmg(0.75, 1.0, 'S', 7, '溜め段階を維持している間 与ダメUP', (GR, GW, AL, G8, GAI), '発動率75%'),
-        '気力変換': dmg(1.0, 0.85, 'A', 7, 'スタミナ消費攻撃の与ダメUP。弓はほぼ全行動が対象', (GW, GR), 'スタミナ消費攻撃が総ダメージの85%'),
+        '弓スキル強化': dmg(1.0, 0.9, 'S', 4, '弓のスキル1〜3（ステップ射撃・剛射・曲射・千竜追射）のダメージUP。Game8・GameWith の主人公弓の装備は全部 Lv4', (GW, G8, GR), 'スキル攻撃が総ダメージの90%'),
+        '溜め強射': dmg(0.45, 1.0, 'A', 7, '溜め段階を維持している間 与ダメUP。攻撃を中断すると溜め段階が戻る。Game8 終盤装備は不採用、GameWith 汎用は Lv2', (GR, GW, AL, G8, GAI), '発動率45%'),
+        '気力変換': dmg(1.0, 0.6, 'A', 7, 'スタミナ消費攻撃の与ダメUP。GameWith 汎用は Lv2、Game8 終盤装備は不採用', (GW, GR), 'スタミナ消費攻撃が総ダメージの60%'),
         '一撃貫通': dmg(1.0, 0.25, 'B', 7, '貫通矢（千竜追射など）の与ダメUP', (G8,), '貫通矢が総ダメージの25%'),
         '連撃強化': dmg(0.5, 1.0, 'B', 7, '連射・曲射の多段ヒット（連撃ダメージ）で発動できる。貫通矢では不発', (), '発動率50%（要検証）'),
         '無垢': dmg(0.4, 1.0, 'B', 3, '体力満タン時 与ダメUP', (GW, G8), '満タン維持40%'),
         'ポテンシャル解放': crit(0.65, 'B', 3, '開始90秒後から会心率UP', (GW, G8, GR), '狩猟時間の65%'),
-        '弾導強化': tiny('最大威力になる距離が短くなる（快適）', (GW, G8, AL)),
+        '弾導強化': RANGE,
     }},
 }
 
@@ -171,7 +179,7 @@ models['pepe'] = {
         '洞察': crit(1.0, 'A', 3, '会心率UP', (GW,), '会心率1%＝期待ダメージ+0.25%'),
         '弱点攻撃': crit(0.6, 'B', 3, '弱点部位での会心率UP', (G8,), '弱点部位60%'),
         '会心撃【属性】': elemcrit(),
-        '弾導強化': tiny('散弾は近いほど全弾当たる。快適', (G8,)),
+        '弾導強化': RANGE,
     }},
 }
 
@@ -203,7 +211,7 @@ models['luca'] = {
         '気力変換': dmg(1.0, 0.85, 'A', 7, 'スタミナ消費攻撃の与ダメUP', (GW,), 'スタミナ消費攻撃85%'),
         '無垢': dmg(0.4, 1.0, 'B', 3, '体力満タン時 与ダメUP', (G8,), '満タン維持40%'),
         '会心撃【属性】': elemcrit(),
-        '弾導強化': tiny('適正距離を伸ばす快適スキル', (GW,)),
+        '弾導強化': RANGE,
     }},
 }
 
@@ -309,7 +317,7 @@ models['madre'] = {
         '溜め強射': dmg(0.6, 1.0, 'A', 7, '溜め段階維持中 与ダメUP', (GW,), '発動率60%'),
         '気力変換': dmg(1.0, 0.85, 'A', 7, 'スタミナ消費攻撃の与ダメUP', (GW,), 'スタミナ消費攻撃85%'),
         '無垢': dmg(0.4, 1.0, 'B', 3, '体力満タン時 与ダメUP', (G8,), '満タン維持40%'),
-        '弾導強化': tiny('適正距離を伸ばす快適スキル', (G8,)),
+        '弾導強化': RANGE,
     }},
 }
 
@@ -362,8 +370,10 @@ models['ryunosuke'] = {
 }
 
 HERO_ELEMENT_NOTE = ' 属性は、Game8・アルテマが火（レウス／ジャナフ／リオハート防具と絵装リオレイアが揃う）を先頭に推奨、GameWithは「5属性のうち一番数値の高い武器」。爆破・毒・麻痺武器だと属性特化と会心コアパッシブが発動しないので不利。'
+ELEM_UP_SHARE = 1.2
 for cid, m in models.items():
     if cid.startswith('hero_'):
         m['note'] = m['note'] + HERO_ELEMENT_NOTE
+    m['model'].setdefault('elemUpShare', ELEM_UP_SHARE)
 json.dump({'characters': models}, open(OUT, 'w'), ensure_ascii=False, indent=1)
 print('wrote', OUT, len(models), 'models')

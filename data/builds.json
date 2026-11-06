@@ -1,0 +1,3554 @@
+{
+ "updated": "2026-11-06",
+ "builds": [
+  {
+   "id": "b001",
+   "charId": "hero_hbg",
+   "charName": null,
+   "weaponType": "ヘビィボウガン",
+   "element": "雷",
+   "weapon": {
+    "name": "融光種カガチノシシ"
+   },
+   "pieces": {
+    "head": {
+     "id": "u878d_u5149_u7a2e_u30dc_u30ed_u30b9_head",
+     "name": "融光種ボロスヘルム"
+    },
+    "body": {
+     "id": "u30aa_u30a6_u30d3_u30fc_u30c8_body",
+     "name": "オウビートペット"
+    },
+    "arm": {
+     "id": "u878d_u5149_u7a2e_u30ae_u30eb_u30aa_u30b_arm",
+     "name": "融光種ギルオスアーム"
+    },
+    "waist": {
+     "id": "u30ea_u30aa_u30cf_u30fc_u30c8_waist",
+     "name": "リオハートコイル"
+    },
+    "leg": {
+     "id": "u878d_u5149_u7a2e_u30af_u30eb_u30eb_leg",
+     "name": "融光種クルルグリーヴ"
+    }
+   },
+   "refs": [
+    {
+     "source": "Game8",
+     "label": null,
+     "stage": "終盤",
+     "rarityRange": "8〜10",
+     "url": "https://game8.jp/mhoutlanders/",
+     "updated": null,
+     "comment": "終盤の汎用装備は「リロード強化」を最大レベルまで採用し、「連撃強化」で更に火力を高めるのがおすすめです。連撃強化は斬裂弾や貫通弾では効果が発動しないので、通常弾や散弾、機関竜弾で発動させましょう。",
+     "skills": []
+    }
+   ],
+   "sourceCount": 1
+  },
+  {
+   "id": "b002",
+   "charId": "hero_hbg",
+   "charName": null,
+   "weaponType": "ヘビィボウガン",
+   "element": "火",
+   "weapon": {
+    "name": "ボーンシューター"
+   },
+   "pieces": {
+    "head": {
+     "id": "u30ea_u30aa_u30cf_u30fc_u30c8_head",
+     "name": "リオハートヘルム"
+    },
+    "body": {
+     "id": "u30ec_u30a6_u30b9_body",
+     "name": "レウスメイル"
+    },
+    "arm": {
+     "id": "u878d_u5149_u7a2e_u30ae_u30eb_u30aa_u30b_arm",
+     "name": "融光種ギルオスアーム"
+    },
+    "waist": {
+     "id": "u30b8_u30e3_u30ca_u30d5_waist",
+     "name": "ジャナフコイル"
+    },
+    "leg": {
+     "id": "u878d_u5149_u7a2e_u30af_u30eb_u30eb_leg",
+     "name": "融光種クルルグリーヴ"
+    }
+   },
+   "refs": [
+    {
+     "source": "Game8",
+     "label": "火属性",
+     "stage": "終盤",
+     "rarityRange": "8〜10",
+     "url": "https://game8.jp/mhoutlanders/",
+     "updated": null,
+     "comment": "終盤では「火属性ダメージUP」を最大レベルまで採用しつつ、「連撃強化」で更に火力を高めるのがおすすめです。連撃強化は斬裂弾や貫通弾では効果が発動しないので、通常弾や散弾、機関竜弾で発動させましょう。",
+     "skills": [
+      {
+       "skill": "火属性ダメージUP",
+       "lv": 7
+      },
+      {
+       "skill": "連撃強化",
+       "lv": 5
+      },
+      {
+       "skill": "体力ループ",
+       "lv": 2
+      },
+      {
+       "skill": "狩人の第六感",
+       "lv": 1
+      },
+      {
+       "skill": "弱点攻撃",
+       "lv": 1
+      },
+      {
+       "skill": "体力強化",
+       "lv": 1
+      },
+      {
+       "skill": "のけぞり軽減",
+       "lv": 1
+      },
+      {
+       "skill": "早食い術",
+       "lv": 1
+      },
+      {
+       "skill": "火耐性強化",
+       "lv": 1
+      }
+     ]
+    }
+   ],
+   "sourceCount": 1
+  },
+  {
+   "id": "b003",
+   "charId": "hero_hbg",
+   "charName": null,
+   "weaponType": "ヘビィボウガン",
+   "element": "水",
+   "weapon": {
+    "name": "融光種アクアアサルト"
+   },
+   "pieces": {
+    "head": {
+     "id": "u30b8_u30e5_u30e9_head",
+     "name": "ジュラヘルム"
+    },
+    "body": {
+     "id": "u30c4_u30a3_u30c4_u30a3_body",
+     "name": "ツィツィメイル"
+    },
+    "arm": {
+     "id": "u878d_u5149_u7a2e_u30ae_u30eb_u30aa_u30b_arm",
+     "name": "融光種ギルオスアーム"
+    },
+    "waist": {
+     "id": "u30c4_u30a3_u30c4_u30a3_waist",
+     "name": "ツィツィコイル"
+    },
+    "leg": {
+     "id": "u878d_u5149_u7a2e_u30af_u30eb_u30eb_leg",
+     "name": "融光種クルルグリーヴ"
+    }
+   },
+   "refs": [
+    {
+     "source": "Game8",
+     "label": "水属性",
+     "stage": "終盤",
+     "rarityRange": "8〜10",
+     "url": "https://game8.jp/mhoutlanders/",
+     "updated": null,
+     "comment": "終盤では「水属性ダメージUP」を最大レベルまで採用しつつ、「連撃強化」で更に火力を高めるのがおすすめです。連撃強化は斬裂弾や貫通弾では効果が発動しないので、通常弾や散弾、機関竜弾で発動させましょう。",
+     "skills": [
+      {
+       "skill": "水属性ダメージUP",
+       "lv": 7
+      },
+      {
+       "skill": "連撃強化",
+       "lv": 5
+      },
+      {
+       "skill": "加護",
+       "lv": 1
+      },
+      {
+       "skill": "気絶耐性",
+       "lv": 1
+      },
+      {
+       "skill": "弱点攻撃",
+       "lv": 1
+      },
+      {
+       "skill": "体力回復",
+       "lv": 1
+      },
+      {
+       "skill": "徹底追撃",
+       "lv": 1
+      },
+      {
+       "skill": "のけぞり軽減",
+       "lv": 1
+      },
+      {
+       "skill": "火耐性強化",
+       "lv": 1
+      },
+      {
+       "skill": "ポテンシャル解放",
+       "lv": 1
+      }
+     ]
+    }
+   ],
+   "sourceCount": 1
+  },
+  {
+   "id": "b004",
+   "charId": "hero_hbg",
+   "charName": null,
+   "weaponType": "ヘビィボウガン",
+   "element": "雷",
+   "weapon": {
+    "name": "融光種カガチノシシ"
+   },
+   "pieces": {
+    "head": {
+     "id": "u878d_u5149_u7a2e_u30ae_u30eb_u30aa_u30b_head",
+     "name": "融光種ギルオスヘルム"
+    },
+    "body": {
+     "id": "u878d_u5149_u7a2e_u30ae_u30eb_u30aa_u30b_body",
+     "name": "融光種ギルオスメイル"
+    },
+    "arm": {
+     "id": "u878d_u5149_u7a2e_u30ae_u30eb_u30aa_u30b_arm",
+     "name": "融光種ギルオスアーム"
+    },
+    "waist": {
+     "id": "u878d_u5149_u7a2e_u30ae_u30eb_u30aa_u30b_waist",
+     "name": "融光種ギルオスコイル"
+    },
+    "leg": {
+     "id": "u30a4_u30f3_u30b4_u30c3_u30c8_leg",
+     "name": "インゴットグリーヴ"
+    }
+   },
+   "refs": [
+    {
+     "source": "Game8",
+     "label": "雷属性",
+     "stage": "終盤",
+     "rarityRange": "8〜10",
+     "url": "https://game8.jp/mhoutlanders/",
+     "updated": null,
+     "comment": "終盤では「雷属性ダメージUP」を最大レベルまで採用しつつ、「連撃強化」で更に火力を高めるのがおすすめです。連撃強化は斬裂弾や貫通弾では効果が発動しないので、通常弾や散弾、機関竜弾で発動させましょう。",
+     "skills": [
+      {
+       "skill": "雷属性ダメージUP",
+       "lv": 7
+      },
+      {
+       "skill": "連撃強化",
+       "lv": 5
+      },
+      {
+       "skill": "怖いもの無し",
+       "lv": 2
+      },
+      {
+       "skill": "麻痺耐性",
+       "lv": 2
+      },
+      {
+       "skill": "オトモ強化",
+       "lv": 1
+      },
+      {
+       "skill": "体力回復",
+       "lv": 1
+      },
+      {
+       "skill": "のけぞり軽減",
+       "lv": 1
+      },
+      {
+       "skill": "防護",
+       "lv": 1
+      },
+      {
+       "skill": "融光感知",
+       "lv": 1
+      }
+     ]
+    }
+   ],
+   "sourceCount": 1
+  },
+  {
+   "id": "b005",
+   "charId": "hero_hbg",
+   "charName": null,
+   "weaponType": "ヘビィボウガン",
+   "element": "氷",
+   "weapon": {
+    "name": "ロゼッテス"
+   },
+   "pieces": {
+    "head": {
+     "id": "u878d_u5149_u7a2e_u30ae_u30eb_u30aa_u30b_head",
+     "name": "融光種ギルオスヘルム"
+    },
+    "body": {
+     "id": "u30cf_u30a4_u30e1_u30bf_body",
+     "name": "ハイメタメイル"
+    },
+    "arm": {
+     "id": "u878d_u5149_u7a2e_u30ae_u30eb_u30aa_u30b_arm",
+     "name": "融光種ギルオスアーム"
+    },
+    "waist": {
+     "id": "u30c1_u30a7_u30fc_u30f3_waist",
+     "name": "チェーンベルト"
+    },
+    "leg": {
+     "id": "u30cf_u30a4_u30e1_u30bf_leg",
+     "name": "ハイメタグリーヴ"
+    }
+   },
+   "refs": [
+    {
+     "source": "Game8",
+     "label": "氷属性",
+     "stage": "終盤",
+     "rarityRange": "8〜10",
+     "url": "https://game8.jp/mhoutlanders/",
+     "updated": null,
+     "comment": "終盤では「氷属性ダメージUP」を最大レベルまで採用しつつ、「連撃強化」で更に火力を高めるのがおすすめです。連撃強化は斬裂弾や貫通弾では効果が発動しないので、通常弾や散弾、機関竜弾で発動させましょう。",
+     "skills": [
+      {
+       "skill": "氷属性ダメージUP",
+       "lv": 7
+      },
+      {
+       "skill": "連撃強化",
+       "lv": 5
+      },
+      {
+       "skill": "咆哮耐性",
+       "lv": 2
+      },
+      {
+       "skill": "オトモ強化",
+       "lv": 1
+      },
+      {
+       "skill": "体力回復",
+       "lv": 1
+      },
+      {
+       "skill": "徹底追撃",
+       "lv": 1
+      },
+      {
+       "skill": "のけぞり軽減",
+       "lv": 1
+      },
+      {
+       "skill": "防護",
+       "lv": 1
+      },
+      {
+       "skill": "ポテンシャル解放",
+       "lv": 1
+      },
+      {
+       "skill": "麻痺耐性",
+       "lv": 1
+      },
+      {
+       "skill": "融光感知",
+       "lv": 1
+      }
+     ]
+    }
+   ],
+   "sourceCount": 1
+  },
+  {
+   "id": "b006",
+   "charId": "hero_hbg",
+   "charName": null,
+   "weaponType": "ヘビィボウガン",
+   "element": "龍",
+   "weapon": {
+    "name": "黒鋼の砲筒"
+   },
+   "pieces": {
+    "head": {
+     "id": "u878d_u5149_u7a2e_u30dc_u30ed_u30b9_head",
+     "name": "融光種ボロスヘルム"
+    },
+    "body": {
+     "id": "u30c7_u30a3_u30a2_u30d6_u30ed_body",
+     "name": "ディアブロメイル"
+    },
+    "arm": {
+     "id": "u30bf_u30ed_u30b9_arm",
+     "name": "タロスアーム"
+    },
+    "waist": {
+     "id": "u30ea_u30aa_u30cf_u30fc_u30c8_waist",
+     "name": "リオハートコイル"
+    },
+    "leg": {
+     "id": "u30dc_u30fc_u30f3_leg",
+     "name": "ボーングリーヴ"
+    }
+   },
+   "refs": [
+    {
+     "source": "Game8",
+     "label": "龍属性",
+     "stage": "終盤",
+     "rarityRange": "8〜10",
+     "url": "https://game8.jp/mhoutlanders/",
+     "updated": null,
+     "comment": "終盤では「龍属性ダメージUP」を最大レベルまで採用しつつ、「リロード強化」で更に火力を高めるのがおすすめです。生産武器の性能がいまいちなので、鋭精武器の生産も視野に入れましょう。",
+     "skills": [
+      {
+       "skill": "龍属性ダメージUP",
+       "lv": 7
+      },
+      {
+       "skill": "リロード強化",
+       "lv": 4
+      },
+      {
+       "skill": "体力強化",
+       "lv": 2
+      },
+      {
+       "skill": "ガードテクニック",
+       "lv": 1
+      },
+      {
+       "skill": "会心撃【属性】",
+       "lv": 1
+      },
+      {
+       "skill": "気絶耐性",
+       "lv": 1
+      },
+      {
+       "skill": "洞察",
+       "lv": 1
+      },
+      {
+       "skill": "破壊王",
+       "lv": 1
+      },
+      {
+       "skill": "防護",
+       "lv": 1
+      },
+      {
+       "skill": "融光感知",
+       "lv": 1
+      }
+     ]
+    }
+   ],
+   "sourceCount": 1
+  },
+  {
+   "id": "b007",
+   "charId": "hero_ls",
+   "charName": null,
+   "weaponType": "太刀",
+   "element": "火",
+   "weapon": {
+    "name": "飛竜刀【紅葉】"
+   },
+   "pieces": {
+    "head": {
+     "id": "u30ea_u30aa_u30cf_u30fc_u30c8_head",
+     "name": "リオハートヘルム"
+    },
+    "body": {
+     "id": "u30ec_u30a6_u30b9_body",
+     "name": "レウスメイル"
+    },
+    "arm": {
+     "id": "u30b8_u30e3_u30b0_u30e9_u30b9_arm",
+     "name": "ジャグラスアーム"
+    },
+    "waist": {
+     "id": "u30b8_u30e3_u30ca_u30d5_waist",
+     "name": "ジャナフコイル"
+    },
+    "leg": {
+     "id": "u30ea_u30aa_u30cf_u30fc_u30c8_leg",
+     "name": "リオハートグリーヴ"
+    }
+   },
+   "refs": [
+    {
+     "source": "Game8",
+     "label": "火属性",
+     "stage": "終盤",
+     "rarityRange": "8〜10",
+     "url": "https://game8.jp/mhoutlanders/",
+     "updated": null,
+     "comment": "終盤では「火属性ダメージUP」を最大レベルまで採用しつつ、「練気をまといし刃」で更に火力を高めるのがおすすめです。「練気をまといし刃」は練気ゲージ段階が上がると与ダメージが増加するため、太刀と相性が良いです。武器は「飛竜刀【紅葉】」を採用しています。",
+     "skills": [
+      {
+       "skill": "火属性ダメージUP",
+       "lv": 7
+      },
+      {
+       "skill": "練気をまといし刃",
+       "lv": 4
+      },
+      {
+       "skill": "体力ループ",
+       "lv": 2
+      },
+      {
+       "skill": "威嚇",
+       "lv": 1
+      },
+      {
+       "skill": "狩人の第六感",
+       "lv": 1
+      },
+      {
+       "skill": "体力強化",
+       "lv": 1
+      },
+      {
+       "skill": "徹底追撃",
+       "lv": 1
+      },
+      {
+       "skill": "早食い術",
+       "lv": 1
+      },
+      {
+       "skill": "復活",
+       "lv": 1
+      },
+      {
+       "skill": "本気",
+       "lv": 1
+      }
+     ]
+    }
+   ],
+   "sourceCount": 1
+  },
+  {
+   "id": "b008",
+   "charId": "hero_ls",
+   "charName": null,
+   "weaponType": "太刀",
+   "element": "水",
+   "weapon": {
+    "name": "融光種シュラムショテル"
+   },
+   "pieces": {
+    "head": {
+     "id": "u30b8_u30e5_u30e9_head",
+     "name": "ジュラヘルム"
+    },
+    "body": {
+     "id": "u30c4_u30a3_u30c4_u30a3_body",
+     "name": "ツィツィメイル"
+    },
+    "arm": {
+     "id": "u30b8_u30e3_u30b0_u30e9_u30b9_arm",
+     "name": "ジャグラスアーム"
+    },
+    "waist": {
+     "id": "u30c4_u30a3_u30c4_u30a3_waist",
+     "name": "ツィツィコイル"
+    },
+    "leg": {
+     "id": "u30ea_u30aa_u30cf_u30fc_u30c8_leg",
+     "name": "リオハートグリーヴ"
+    }
+   },
+   "refs": [
+    {
+     "source": "Game8",
+     "label": "水属性",
+     "stage": "終盤",
+     "rarityRange": "8〜10",
+     "url": "https://game8.jp/mhoutlanders/",
+     "updated": null,
+     "comment": "終盤では「水属性ダメージUP」を最大レベルまで採用しつつ、「練気をまといし刃」で更に火力を高めるのがおすすめです。「練気をまといし刃」は練気ゲージ段階が上がると与ダメージが増加するため、太刀と相性が良いです。武器は「融光種シュラムショテル」を採用しています。",
+     "skills": [
+      {
+       "skill": "水属性ダメージUP",
+       "lv": 7
+      },
+      {
+       "skill": "練気をまといし刃",
+       "lv": 4
+      },
+      {
+       "skill": "徹底追撃",
+       "lv": 2
+      },
+      {
+       "skill": "威嚇",
+       "lv": 1
+      },
+      {
+       "skill": "加護",
+       "lv": 1
+      },
+      {
+       "skill": "気絶耐性",
+       "lv": 1
+      },
+      {
+       "skill": "体力回復",
+       "lv": 1
+      },
+      {
+       "skill": "復活",
+       "lv": 1
+      },
+      {
+       "skill": "ポテンシャル解放",
+       "lv": 1
+      },
+      {
+       "skill": "本気",
+       "lv": 1
+      }
+     ]
+    }
+   ],
+   "sourceCount": 1
+  },
+  {
+   "id": "b009",
+   "charId": "hero_ls",
+   "charName": null,
+   "weaponType": "太刀",
+   "element": "雷",
+   "weapon": {
+    "raw": "融光種カガチノキバ"
+   },
+   "pieces": {
+    "head": {
+     "id": "u30ab_u30ac_u30c1_head",
+     "name": "カガチヘルム"
+    },
+    "body": {
+     "id": "u878d_u5149_u7a2e_u30ec_u30a4_u30a2_body",
+     "name": "融光種レイアメイル"
+    },
+    "arm": {
+     "id": "u30ae_u30eb_u30aa_u30b9_arm",
+     "name": "ギルオスアーム"
+    },
+    "waist": {
+     "id": "u878d_u5149_u7a2e_u30ae_u30eb_u30aa_u30b_waist",
+     "name": "融光種ギルオスコイル"
+    },
+    "leg": {
+     "id": "u30ea_u30aa_u30cf_u30fc_u30c8_leg",
+     "name": "リオハートグリーヴ"
+    }
+   },
+   "refs": [
+    {
+     "source": "Game8",
+     "label": "雷属性",
+     "stage": "終盤",
+     "rarityRange": "8〜10",
+     "url": "https://game8.jp/mhoutlanders/",
+     "updated": null,
+     "comment": "終盤では「雷属性ダメージUP」を最大レベルまで採用しつつ、「練気をまといし刃」で更に火力を高めるのがおすすめです。「練気をまといし刃」は練気ゲージ段階が上がると与ダメージが増加するため、太刀と相性が良いです。武器は「融光種カガチノキバ」を採用しています。",
+     "skills": [
+      {
+       "skill": "雷属性ダメージUP",
+       "lv": 7
+      },
+      {
+       "skill": "練気をまといし刃",
+       "lv": 4
+      },
+      {
+       "skill": "威嚇",
+       "lv": 2
+      },
+      {
+       "skill": "復活",
+       "lv": 2
+      },
+      {
+       "skill": "怖いもの無し",
+       "lv": 1
+      },
+      {
+       "skill": "体力回復",
+       "lv": 1
+      },
+      {
+       "skill": "ポテンシャル解放",
+       "lv": 1
+      },
+      {
+       "skill": "本気",
+       "lv": 1
+      },
+      {
+       "skill": "融光感知",
+       "lv": 1
+      }
+     ]
+    }
+   ],
+   "sourceCount": 1
+  },
+  {
+   "id": "b010",
+   "charId": "hero_ls",
+   "charName": null,
+   "weaponType": "太刀",
+   "element": "氷",
+   "weapon": {
+    "name": "グレイスショテル"
+   },
+   "pieces": {
+    "head": {
+     "id": "u30ec_u30a4_u30a2_head",
+     "name": "レイアヘルム"
+    },
+    "body": {
+     "id": "u30cf_u30a4_u30e1_u30bf_body",
+     "name": "ハイメタメイル"
+    },
+    "arm": {
+     "id": "u30ae_u30a8_u30ca_arm",
+     "name": "ギエナアーム"
+    },
+    "waist": {
+     "id": "u30c1_u30a7_u30fc_u30f3_waist",
+     "name": "チェーンベルト"
+    },
+    "leg": {
+     "id": "u30ea_u30aa_u30cf_u30fc_u30c8_leg",
+     "name": "リオハートグリーヴ"
+    }
+   },
+   "refs": [
+    {
+     "source": "Game8",
+     "label": "氷属性",
+     "stage": "終盤",
+     "rarityRange": "8〜10",
+     "url": "https://game8.jp/mhoutlanders/",
+     "updated": null,
+     "comment": "終盤では「氷属性ダメージUP」を最大レベルまで採用しつつ、「練気をまといし刃」で更に火力を高めるのがおすすめです。「練気をまといし刃」は練気ゲージ段階が上がると与ダメージが増加するため、太刀と相性が良いです。武器は「グレイスショテル」を採用しています。",
+     "skills": [
+      {
+       "skill": "氷属性ダメージUP",
+       "lv": 7
+      },
+      {
+       "skill": "練気をまといし刃",
+       "lv": 4
+      },
+      {
+       "skill": "加護",
+       "lv": 1
+      },
+      {
+       "skill": "狩人の第六感",
+       "lv": 1
+      },
+      {
+       "skill": "弱点攻撃",
+       "lv": 1
+      },
+      {
+       "skill": "植物専門家",
+       "lv": 1
+      },
+      {
+       "skill": "体力回復",
+       "lv": 1
+      },
+      {
+       "skill": "復活",
+       "lv": 1
+      },
+      {
+       "skill": "防護",
+       "lv": 1
+      },
+      {
+       "skill": "ポテンシャル解放",
+       "lv": 1
+      },
+      {
+       "skill": "本気",
+       "lv": 1
+      }
+     ]
+    }
+   ],
+   "sourceCount": 1
+  },
+  {
+   "id": "b011",
+   "charId": "hero_ls",
+   "charName": null,
+   "weaponType": "太刀",
+   "element": "龍",
+   "weapon": {
+    "name": "黒鋼の太刀"
+   },
+   "pieces": {
+    "head": {
+     "id": "u30ec_u30a4_u30a2_head",
+     "name": "レイアヘルム"
+    },
+    "body": {
+     "id": "u30c7_u30a3_u30a2_u30d6_u30ed_body",
+     "name": "ディアブロメイル"
+    },
+    "arm": {
+     "id": "u30bf_u30ed_u30b9_arm",
+     "name": "タロスアーム"
+    },
+    "waist": {
+     "id": "u30ec_u30a4_u30a2_waist",
+     "name": "レイアコイル"
+    },
+    "leg": {
+     "id": "u30dc_u30fc_u30f3_leg",
+     "name": "ボーングリーヴ"
+    }
+   },
+   "refs": [
+    {
+     "source": "Game8",
+     "label": "龍属性",
+     "stage": "終盤",
+     "rarityRange": "8〜10",
+     "url": "https://game8.jp/mhoutlanders/",
+     "updated": null,
+     "comment": "終盤では「龍属性ダメージUP」を最大レベルまで採用しつつ、「練気をまといし刃」で更に火力を高めるのがおすすめです。「練気をまといし刃」は練気ゲージ段階が上がると与ダメージが増加するため、太刀と相性が良いです。また、「雌火竜の強躯」で「体力強化」も発動します。武器は「黒鋼の太刀」を採用しています。",
+     "skills": [
+      {
+       "skill": "龍属性ダメージUP",
+       "lv": 7
+      },
+      {
+       "skill": "練気をまといし刃",
+       "lv": 4
+      },
+      {
+       "skill": "体力強化",
+       "lv": 2
+      },
+      {
+       "skill": "会心撃【属性】",
+       "lv": 1
+      },
+      {
+       "skill": "狩人の第六感",
+       "lv": 1
+      },
+      {
+       "skill": "気絶耐性",
+       "lv": 1
+      },
+      {
+       "skill": "植物専門家",
+       "lv": 1
+      },
+      {
+       "skill": "破壊王",
+       "lv": 1
+      },
+      {
+       "skill": "防護",
+       "lv": 1
+      },
+      {
+       "skill": "咆哮耐性",
+       "lv": 1
+      },
+      {
+       "skill": "無垢",
+       "lv": 1
+      }
+     ]
+    }
+   ],
+   "sourceCount": 1
+  },
+  {
+   "id": "b012",
+   "charId": "hero_ls",
+   "charName": null,
+   "weaponType": "太刀",
+   "element": "麻痺",
+   "weapon": {
+    "name": "ダークショテル"
+   },
+   "pieces": {
+    "head": {
+     "id": "u30ec_u30a4_u30a2_head",
+     "name": "レイアヘルム"
+    },
+    "body": {
+     "id": "u30a8_u30a2_u30eb_u30c0_body",
+     "name": "エアルダの守護"
+    },
+    "arm": {
+     "id": "u30e9_u30f3_u30b4_arm",
+     "name": "ランゴアーム"
+    },
+    "waist": {
+     "id": "u878d_u5149_u7a2e_u30af_u30eb_u30eb_waist",
+     "name": "融光種クルルコイル"
+    },
+    "leg": {
+     "id": "u30ea_u30aa_u30cf_u30fc_u30c8_leg",
+     "name": "リオハートグリーヴ"
+    }
+   },
+   "refs": [
+    {
+     "source": "Game8",
+     "label": null,
+     "stage": "終盤",
+     "rarityRange": "8〜10",
+     "url": "https://game8.jp/mhoutlanders/",
+     "updated": null,
+     "comment": "終盤の汎用装備では「回避強化」を最大レベルまで採用しつつ、「練気をまといし刃」で更に火力を高めるのがおすすめです。「練気をまといし刃」は練気ゲージ段階が上がると与ダメージが増加するため、太刀と相性が良いです。武器は麻痺属性の「ダークショテル」を採用しています。",
+     "skills": []
+    }
+   ],
+   "sourceCount": 1
+  },
+  {
+   "id": "b013",
+   "charId": "hero_gs",
+   "charName": null,
+   "weaponType": "大剣",
+   "element": "火",
+   "weapon": {
+    "name": "フレイムブレイド"
+   },
+   "pieces": {
+    "head": {
+     "id": "u30ea_u30aa_u30cf_u30fc_u30c8_head",
+     "name": "リオハートヘルム"
+    },
+    "body": {
+     "id": "u30ec_u30a6_u30b9_body",
+     "name": "レウスメイル"
+    },
+    "arm": {
+     "id": "u878d_u5149_u7a2e_u30b8_u30e3_u30ca_u30d_arm",
+     "name": "融光種ジャナフアーム"
+    },
+    "waist": {
+     "id": "u30b8_u30e3_u30ca_u30d5_waist",
+     "name": "ジャナフコイル"
+    },
+    "leg": {
+     "id": "u30ec_u30a6_u30b9_leg",
+     "name": "レウスグリーヴ"
+    }
+   },
+   "refs": [
+    {
+     "source": "Game8",
+     "label": "火属性",
+     "stage": "終盤",
+     "rarityRange": "8〜10",
+     "url": "https://game8.jp/mhoutlanders/",
+     "updated": null,
+     "comment": "終盤では「火属性ダメージUP」を最大レベルまで採用しつつ、「破砕」で更に火力を高めるのがおすすめです。「破砕」はモンスターのひるみや部位破壊で与ダメージが増加するため、大剣と相性が良いです。武器は「フレイムブレイド」を採用しています。",
+     "skills": [
+      {
+       "skill": "火属性ダメージUP",
+       "lv": 7
+      },
+      {
+       "skill": "破砕",
+       "lv": 4
+      },
+      {
+       "skill": "体力ループ",
+       "lv": 2
+      },
+      {
+       "skill": "破壊王",
+       "lv": 2
+      },
+      {
+       "skill": "火耐性強化",
+       "lv": 2
+      },
+      {
+       "skill": "狩人の第六感",
+       "lv": 1
+      },
+      {
+       "skill": "体力強化",
+       "lv": 1
+      },
+      {
+       "skill": "早食い術",
+       "lv": 1
+      }
+     ]
+    }
+   ],
+   "sourceCount": 1
+  },
+  {
+   "id": "b014",
+   "charId": "hero_gs",
+   "charName": null,
+   "weaponType": "大剣",
+   "element": "水",
+   "weapon": {
+    "name": "融光種アクアスラッシャー"
+   },
+   "pieces": {
+    "head": {
+     "id": "u30b8_u30e5_u30e9_head",
+     "name": "ジュラヘルム"
+    },
+    "body": {
+     "id": "u30c4_u30a3_u30c4_u30a3_body",
+     "name": "ツィツィメイル"
+    },
+    "arm": {
+     "id": "u878d_u5149_u7a2e_u30b8_u30e3_u30ca_u30d_arm",
+     "name": "融光種ジャナフアーム"
+    },
+    "waist": {
+     "id": "u30c4_u30a3_u30c4_u30a3_waist",
+     "name": "ツィツィコイル"
+    },
+    "leg": {
+     "id": "u30ec_u30a6_u30b9_leg",
+     "name": "レウスグリーヴ"
+    }
+   },
+   "refs": [
+    {
+     "source": "Game8",
+     "label": "水属性",
+     "stage": "終盤",
+     "rarityRange": "8〜10",
+     "url": "https://game8.jp/mhoutlanders/",
+     "updated": null,
+     "comment": "終盤では「水属性ダメージUP」を最大レベルまで採用しつつ、「破砕」で更に火力を高めるのがおすすめです。「破砕」はモンスターのひるみや部位破壊で与ダメージが増加するため、大剣と相性が良いです。武器は「融光種アクアスラッシャー」を採用しています。",
+     "skills": [
+      {
+       "skill": "水属性ダメージUP",
+       "lv": 7
+      },
+      {
+       "skill": "破砕",
+       "lv": 4
+      },
+      {
+       "skill": "破壊王",
+       "lv": 2
+      },
+      {
+       "skill": "火耐性強化",
+       "lv": 2
+      },
+      {
+       "skill": "加護",
+       "lv": 1
+      },
+      {
+       "skill": "気絶耐性",
+       "lv": 1
+      },
+      {
+       "skill": "体力回復",
+       "lv": 1
+      },
+      {
+       "skill": "徹底追撃",
+       "lv": 1
+      },
+      {
+       "skill": "ポテンシャル解放",
+       "lv": 1
+      }
+     ]
+    }
+   ],
+   "sourceCount": 1
+  },
+  {
+   "id": "b015",
+   "charId": "hero_gs",
+   "charName": null,
+   "weaponType": "大剣",
+   "element": "雷",
+   "weapon": {
+    "name": "融光種ライトニングパニッシュ"
+   },
+   "pieces": {
+    "head": {
+     "id": "u30ab_u30ac_u30c1_head",
+     "name": "カガチヘルム"
+    },
+    "body": {
+     "id": "u878d_u5149_u7a2e_u30ae_u30eb_u30aa_u30b_body",
+     "name": "融光種ギルオスメイル"
+    },
+    "arm": {
+     "id": "u878d_u5149_u7a2e_u30b8_u30e3_u30ca_u30d_arm",
+     "name": "融光種ジャナフアーム"
+    },
+    "waist": {
+     "id": "u878d_u5149_u7a2e_u30ae_u30eb_u30aa_u30b_waist",
+     "name": "融光種ギルオスコイル"
+    },
+    "leg": {
+     "id": "u30ec_u30a6_u30b9_leg",
+     "name": "レウスグリーヴ"
+    }
+   },
+   "refs": [
+    {
+     "source": "Game8",
+     "label": "雷属性",
+     "stage": "終盤",
+     "rarityRange": "8〜10",
+     "url": "https://game8.jp/mhoutlanders/",
+     "updated": null,
+     "comment": "終盤では「雷属性ダメージUP」を最大レベルまで採用しつつ、「破砕」で更に火力を高めるのがおすすめです。「破砕」はモンスターのひるみや部位破壊で与ダメージが増加するため、大剣と相性が良いです。また、「ドスギルオスの統率」で「オトモ強化」も発動します。武器は「融光種ライトニングパニッシュ」を採用しています。",
+     "skills": [
+      {
+       "skill": "雷属性ダメージUP",
+       "lv": 7
+      },
+      {
+       "skill": "破砕",
+       "lv": 4
+      },
+      {
+       "skill": "破壊王",
+       "lv": 2
+      },
+      {
+       "skill": "火耐性強化",
+       "lv": 2
+      },
+      {
+       "skill": "威嚇",
+       "lv": 1
+      },
+      {
+       "skill": "オトモ強化",
+       "lv": 1
+      },
+      {
+       "skill": "怖いもの無し",
+       "lv": 1
+      },
+      {
+       "skill": "体力回復",
+       "lv": 1
+      },
+      {
+       "skill": "麻痺耐性",
+       "lv": 1
+      }
+     ]
+    }
+   ],
+   "sourceCount": 1
+  },
+  {
+   "id": "b016",
+   "charId": "hero_gs",
+   "charName": null,
+   "weaponType": "大剣",
+   "element": "氷",
+   "weapon": {
+    "raw": "フリーズブレイド"
+   },
+   "pieces": {
+    "head": {
+     "id": "u30b8_u30e3_u30ca_u30d5_head",
+     "name": "ジャナフヘルム"
+    },
+    "body": {
+     "id": "u30cf_u30a4_u30e1_u30bf_body",
+     "name": "ハイメタメイル"
+    },
+    "arm": {
+     "id": "u30ae_u30a8_u30ca_arm",
+     "name": "ギエナアーム"
+    },
+    "waist": {
+     "id": "u30ec_u30a6_u30b9_waist",
+     "name": "レウスコイル"
+    },
+    "leg": {
+     "id": "u30cf_u30a4_u30e1_u30bf_leg",
+     "name": "ハイメタグリーヴ"
+    }
+   },
+   "refs": [
+    {
+     "source": "Game8",
+     "label": "氷属性",
+     "stage": "終盤",
+     "rarityRange": "8〜10",
+     "url": "https://game8.jp/mhoutlanders/",
+     "updated": null,
+     "comment": "終盤では「氷属性ダメージUP」を最大レベルまで採用しつつ、「破砕」で更に火力を高めるのがおすすめです。「破砕」はモンスターのひるみや部位破壊で与ダメージが増加するため、大剣と相性が良いです。また、「鉱脈の静寂」で「咆哮耐性」も発動します。武器は「フリーズブレイド」を採用しています。",
+     "skills": [
+      {
+       "skill": "氷属性ダメージUP",
+       "lv": 7
+      },
+      {
+       "skill": "破砕",
+       "lv": 4
+      },
+      {
+       "skill": "弱点攻撃",
+       "lv": 2
+      },
+      {
+       "skill": "咆哮耐性",
+       "lv": 2
+      },
+      {
+       "skill": "加護",
+       "lv": 1
+      },
+      {
+       "skill": "弱点追撃",
+       "lv": 1
+      },
+      {
+       "skill": "徹底追撃",
+       "lv": 1
+      },
+      {
+       "skill": "早食い術",
+       "lv": 1
+      },
+      {
+       "skill": "火耐性強化",
+       "lv": 1
+      },
+      {
+       "skill": "防護",
+       "lv": 1
+      }
+     ]
+    }
+   ],
+   "sourceCount": 1
+  },
+  {
+   "id": "b017",
+   "charId": "hero_gs",
+   "charName": null,
+   "weaponType": "大剣",
+   "element": "龍",
+   "weapon": {
+    "name": "龍骨大剣"
+   },
+   "pieces": {
+    "head": {
+     "id": "u30b8_u30e3_u30ca_u30d5_head",
+     "name": "ジャナフヘルム"
+    },
+    "body": {
+     "id": "u30c7_u30a3_u30a2_u30d6_u30ed_body",
+     "name": "ディアブロメイル"
+    },
+    "arm": {
+     "id": "u30bf_u30ed_u30b9_arm",
+     "name": "タロスアーム"
+    },
+    "waist": {
+     "id": "u30ec_u30a6_u30b9_waist",
+     "name": "レウスコイル"
+    },
+    "leg": {
+     "id": "u30dc_u30fc_u30f3_leg",
+     "name": "ボーングリーヴ"
+    }
+   },
+   "refs": [
+    {
+     "source": "Game8",
+     "label": "龍属性",
+     "stage": "終盤",
+     "rarityRange": "8〜10",
+     "url": "https://game8.jp/mhoutlanders/",
+     "updated": null,
+     "comment": "終盤では「龍属性ダメージUP」を最大レベルまで採用しつつ、「破砕」で更に火力を高めるのがおすすめです。「破砕」はモンスターのひるみや部位破壊で与ダメージが増加するため、大剣と相性が良いです。武器は「龍骨大剣」を採用しています。",
+     "skills": [
+      {
+       "skill": "龍属性ダメージUP",
+       "lv": 7
+      },
+      {
+       "skill": "破砕",
+       "lv": 4
+      },
+      {
+       "skill": "会心撃【属性】",
+       "lv": 1
+      },
+      {
+       "skill": "気絶耐性",
+       "lv": 1
+      },
+      {
+       "skill": "弱点攻撃",
+       "lv": 1
+      },
+      {
+       "skill": "弱点追撃",
+       "lv": 1
+      },
+      {
+       "skill": "体力強化",
+       "lv": 1
+      },
+      {
+       "skill": "破壊王",
+       "lv": 1
+      },
+      {
+       "skill": "早食い術",
+       "lv": 1
+      },
+      {
+       "skill": "火耐性強化",
+       "lv": 1
+      },
+      {
+       "skill": "防護",
+       "lv": 1
+      }
+     ]
+    }
+   ],
+   "sourceCount": 1
+  },
+  {
+   "id": "b018",
+   "charId": "hero_gs",
+   "charName": null,
+   "weaponType": "大剣",
+   "element": "麻痺",
+   "weapon": {
+    "name": "融光種マラドハディード"
+   },
+   "pieces": {
+    "head": {
+     "id": "u30b8_u30e3_u30ca_u30d5_head",
+     "name": "ジャナフヘルム"
+    },
+    "body": {
+     "id": "u30b8_u30e3_u30ca_u30d5_body",
+     "name": "ジャナフメイル"
+    },
+    "arm": {
+     "id": "u30d0_u30eb_u30ad_u30f3_arm",
+     "name": "バルキンアーム"
+    },
+    "waist": {
+     "id": "u30ec_u30a6_u30b9_waist",
+     "name": "レウスコイル"
+    },
+    "leg": {
+     "id": "u878d_u5149_u7a2e_u30b8_u30e3_u30ca_u30d_leg",
+     "name": "融光種ジャナフグリーヴ"
+    }
+   },
+   "refs": [
+    {
+     "source": "Game8",
+     "label": null,
+     "stage": "終盤",
+     "rarityRange": "8〜10",
+     "url": "https://game8.jp/mhoutlanders/",
+     "updated": null,
+     "comment": "終盤の汎用装備では「溜め強化」を最大レベルまで採用しつつ、「破砕」で更に火力を高めるのがおすすめです。「破砕」はモンスターのひるみや部位破壊で与ダメージが増加するため、大剣と相性が良いです。武器は「融光種マラドハディード」を採用しています。",
+     "skills": []
+    }
+   ],
+   "sourceCount": 1
+  },
+  {
+   "id": "b019",
+   "charId": "hero_db",
+   "charName": null,
+   "weaponType": "双剣",
+   "element": "火",
+   "weapon": {
+    "raw": "血吸いの鎖鎌"
+   },
+   "pieces": {
+    "head": {
+     "id": "u30ea_u30aa_u30cf_u30fc_u30c8_head",
+     "name": "リオハートヘルム"
+    },
+    "body": {
+     "id": "u30ec_u30a6_u30b9_body",
+     "name": "レウスメイル"
+    },
+    "arm": {
+     "id": "u878d_u5149_u7a2e_u30ae_u30eb_u30aa_u30b_arm",
+     "name": "融光種ギルオスアーム"
+    },
+    "waist": {
+     "id": "u30b8_u30e3_u30ca_u30d5_waist",
+     "name": "ジャナフコイル"
+    },
+    "leg": {
+     "id": "u878d_u5149_u7a2e_u30af_u30eb_u30eb_leg",
+     "name": "融光種クルルグリーヴ"
+    }
+   },
+   "refs": [
+    {
+     "source": "Game8",
+     "label": "火属性",
+     "stage": "終盤",
+     "rarityRange": "8〜10",
+     "url": "https://game8.jp/mhoutlanders/",
+     "updated": null,
+     "comment": "終盤では「火属性ダメージUP」を最大レベルまで採用しつつ、「連撃強化」で更に火力を高めるのがおすすめです。連撃強化は手数の多い双剣と相性が良く、基本的にどのコンボでも発動してくれます。",
+     "skills": [
+      {
+       "skill": "火属性ダメージUP",
+       "lv": 7
+      },
+      {
+       "skill": "連撃強化",
+       "lv": 5
+      },
+      {
+       "skill": "体力ループ",
+       "lv": 2
+      },
+      {
+       "skill": "狩人の第六感",
+       "lv": 1
+      },
+      {
+       "skill": "弱点攻撃",
+       "lv": 1
+      },
+      {
+       "skill": "体力強化",
+       "lv": 1
+      },
+      {
+       "skill": "のけぞり軽減",
+       "lv": 1
+      },
+      {
+       "skill": "早食い術",
+       "lv": 1
+      },
+      {
+       "skill": "火耐性強化",
+       "lv": 1
+      }
+     ]
+    }
+   ],
+   "sourceCount": 1
+  },
+  {
+   "id": "b020",
+   "charId": "hero_db",
+   "charName": null,
+   "weaponType": "双剣",
+   "element": "水",
+   "weapon": {
+    "name": "融光種マッドバンガー"
+   },
+   "pieces": {
+    "head": {
+     "id": "u30b8_u30e5_u30e9_head",
+     "name": "ジュラヘルム"
+    },
+    "body": {
+     "id": "u30c4_u30a3_u30c4_u30a3_body",
+     "name": "ツィツィメイル"
+    },
+    "arm": {
+     "id": "u878d_u5149_u7a2e_u30ae_u30eb_u30aa_u30b_arm",
+     "name": "融光種ギルオスアーム"
+    },
+    "waist": {
+     "id": "u30c4_u30a3_u30c4_u30a3_waist",
+     "name": "ツィツィコイル"
+    },
+    "leg": {
+     "id": "u878d_u5149_u7a2e_u30af_u30eb_u30eb_leg",
+     "name": "融光種クルルグリーヴ"
+    }
+   },
+   "refs": [
+    {
+     "source": "Game8",
+     "label": "水属性",
+     "stage": "終盤",
+     "rarityRange": "8〜10",
+     "url": "https://game8.jp/mhoutlanders/",
+     "updated": null,
+     "comment": "終盤では「水属性ダメージUP」を最大レベルまで採用しつつ、「連撃強化」で更に火力を高めるのがおすすめです。連撃強化は手数の多い双剣と相性が良く、基本的にどのコンボでも発動してくれます。",
+     "skills": [
+      {
+       "skill": "水属性ダメージUP",
+       "lv": 7
+      },
+      {
+       "skill": "連撃強化",
+       "lv": 5
+      },
+      {
+       "skill": "加護",
+       "lv": 1
+      },
+      {
+       "skill": "気絶耐性",
+       "lv": 1
+      },
+      {
+       "skill": "弱点攻撃",
+       "lv": 1
+      },
+      {
+       "skill": "体力回復",
+       "lv": 1
+      },
+      {
+       "skill": "徹底追撃",
+       "lv": 1
+      },
+      {
+       "skill": "のけぞり軽減",
+       "lv": 1
+      },
+      {
+       "skill": "火耐性強化",
+       "lv": 1
+      },
+      {
+       "skill": "ポテンシャル解放",
+       "lv": 1
+      }
+     ]
+    }
+   ],
+   "sourceCount": 1
+  },
+  {
+   "id": "b021",
+   "charId": "hero_db",
+   "charName": null,
+   "weaponType": "双剣",
+   "element": "雷",
+   "weapon": {
+    "name": "パルサーハチェット"
+   },
+   "pieces": {
+    "head": {
+     "id": "u878d_u5149_u7a2e_u30ae_u30eb_u30aa_u30b_head",
+     "name": "融光種ギルオスヘルム"
+    },
+    "body": {
+     "id": "u878d_u5149_u7a2e_u30ae_u30eb_u30aa_u30b_body",
+     "name": "融光種ギルオスメイル"
+    },
+    "arm": {
+     "id": "u878d_u5149_u7a2e_u30ae_u30eb_u30aa_u30b_arm",
+     "name": "融光種ギルオスアーム"
+    },
+    "waist": {
+     "id": "u878d_u5149_u7a2e_u30ae_u30eb_u30aa_u30b_waist",
+     "name": "融光種ギルオスコイル"
+    },
+    "leg": {
+     "id": "u30a4_u30f3_u30b4_u30c3_u30c8_leg",
+     "name": "インゴットグリーヴ"
+    }
+   },
+   "refs": [
+    {
+     "source": "Game8",
+     "label": "雷属性",
+     "stage": "終盤",
+     "rarityRange": "8〜10",
+     "url": "https://game8.jp/mhoutlanders/",
+     "updated": null,
+     "comment": "終盤では「雷属性ダメージUP」を最大レベルまで採用しつつ、「連撃強化」で更に火力を高めるのがおすすめです。連撃強化は手数の多い双剣と相性が良く、基本的にどのコンボでも発動してくれます。",
+     "skills": [
+      {
+       "skill": "雷属性ダメージUP",
+       "lv": 7
+      },
+      {
+       "skill": "連撃強化",
+       "lv": 5
+      },
+      {
+       "skill": "怖いもの無し",
+       "lv": 2
+      },
+      {
+       "skill": "麻痺耐性",
+       "lv": 2
+      },
+      {
+       "skill": "オトモ強化",
+       "lv": 1
+      },
+      {
+       "skill": "体力回復",
+       "lv": 1
+      },
+      {
+       "skill": "のけぞり軽減",
+       "lv": 1
+      },
+      {
+       "skill": "防護",
+       "lv": 1
+      },
+      {
+       "skill": "融光感知",
+       "lv": 1
+      }
+     ]
+    }
+   ],
+   "sourceCount": 1
+  },
+  {
+   "id": "b022",
+   "charId": "hero_db",
+   "charName": null,
+   "weaponType": "双剣",
+   "element": "氷",
+   "weapon": {
+    "name": "フリーズダガー"
+   },
+   "pieces": {
+    "head": {
+     "id": "u878d_u5149_u7a2e_u30ae_u30eb_u30aa_u30b_head",
+     "name": "融光種ギルオスヘルム"
+    },
+    "body": {
+     "id": "u30cf_u30a4_u30e1_u30bf_body",
+     "name": "ハイメタメイル"
+    },
+    "arm": {
+     "id": "u878d_u5149_u7a2e_u30ae_u30eb_u30aa_u30b_arm",
+     "name": "融光種ギルオスアーム"
+    },
+    "waist": {
+     "id": "u30c1_u30a7_u30fc_u30f3_waist",
+     "name": "チェーンベルト"
+    },
+    "leg": {
+     "id": "u30cf_u30a4_u30e1_u30bf_leg",
+     "name": "ハイメタグリーヴ"
+    }
+   },
+   "refs": [
+    {
+     "source": "Game8",
+     "label": "氷属性",
+     "stage": "終盤",
+     "rarityRange": "8〜10",
+     "url": "https://game8.jp/mhoutlanders/",
+     "updated": null,
+     "comment": "終盤では「氷属性ダメージUP」を最大レベルまで採用しつつ、「連撃強化」で更に火力を高めるのがおすすめです。連撃強化は手数の多い双剣と相性が良く、基本的にどのコンボでも発動してくれます。",
+     "skills": [
+      {
+       "skill": "氷属性ダメージUP",
+       "lv": 7
+      },
+      {
+       "skill": "連撃強化",
+       "lv": 5
+      },
+      {
+       "skill": "咆哮耐性",
+       "lv": 2
+      },
+      {
+       "skill": "オトモ強化",
+       "lv": 1
+      },
+      {
+       "skill": "体力回復",
+       "lv": 1
+      },
+      {
+       "skill": "徹底追撃",
+       "lv": 1
+      },
+      {
+       "skill": "のけぞり軽減",
+       "lv": 1
+      },
+      {
+       "skill": "防護",
+       "lv": 1
+      },
+      {
+       "skill": "ポテンシャル解放",
+       "lv": 1
+      },
+      {
+       "skill": "麻痺耐性",
+       "lv": 1
+      },
+      {
+       "skill": "融光感知",
+       "lv": 1
+      }
+     ]
+    }
+   ],
+   "sourceCount": 1
+  },
+  {
+   "id": "b023",
+   "charId": "hero_db",
+   "charName": null,
+   "weaponType": "双剣",
+   "element": "龍",
+   "weapon": {
+    "name": "黒鋼の双剣"
+   },
+   "pieces": {
+    "head": {
+     "id": "u878d_u5149_u7a2e_u30ae_u30eb_u30aa_u30b_head",
+     "name": "融光種ギルオスヘルム"
+    },
+    "body": {
+     "id": "u30c7_u30a3_u30a2_u30d6_u30ed_body",
+     "name": "ディアブロメイル"
+    },
+    "arm": {
+     "id": "u30bf_u30ed_u30b9_arm",
+     "name": "タロスアーム"
+    },
+    "waist": {
+     "id": "u30af_u30eb_u30eb_waist",
+     "name": "クルルコイル"
+    },
+    "leg": {
+     "id": "u30dc_u30fc_u30f3_leg",
+     "name": "ボーングリーヴ"
+    }
+   },
+   "refs": [
+    {
+     "source": "Game8",
+     "label": "龍属性",
+     "stage": "終盤",
+     "rarityRange": "8〜10",
+     "url": "https://game8.jp/mhoutlanders/",
+     "updated": null,
+     "comment": "終盤では「龍属性ダメージUP」を最大レベルまで採用しつつ、「連撃強化」で更に火力を高めるのがおすすめです。連撃強化は手数の多い双剣と相性が良く、基本的にどのコンボでも発動してくれます。",
+     "skills": [
+      {
+       "skill": "龍属性ダメージUP",
+       "lv": 7
+      },
+      {
+       "skill": "連撃強化",
+       "lv": 4
+      },
+      {
+       "skill": "会心撃【属性】",
+       "lv": 1
+      },
+      {
+       "skill": "気絶耐性",
+       "lv": 1
+      },
+      {
+       "skill": "弱点攻撃",
+       "lv": 1
+      },
+      {
+       "skill": "体力強化",
+       "lv": 1
+      },
+      {
+       "skill": "破壊王",
+       "lv": 1
+      },
+      {
+       "skill": "火耐性強化",
+       "lv": 1
+      },
+      {
+       "skill": "防護",
+       "lv": 1
+      },
+      {
+       "skill": "麻痺耐性",
+       "lv": 1
+      },
+      {
+       "skill": "融光感知",
+       "lv": 1
+      }
+     ]
+    }
+   ],
+   "sourceCount": 1
+  },
+  {
+   "id": "b024",
+   "charId": "hero_lance",
+   "charName": null,
+   "weaponType": "ランス",
+   "element": "火",
+   "weapon": {
+    "name": "フレイムランス"
+   },
+   "pieces": {
+    "head": {
+     "id": "u30ea_u30aa_u30cf_u30fc_u30c8_head",
+     "name": "リオハートヘルム"
+    },
+    "body": {
+     "id": "u30ec_u30a6_u30b9_body",
+     "name": "レウスメイル"
+    },
+    "arm": {
+     "id": "u30a4_u30f3_u30b4_u30c3_u30c8_arm",
+     "name": "インゴットアーム"
+    },
+    "waist": {
+     "id": "u30b8_u30e3_u30ca_u30d5_waist",
+     "name": "ジャナフコイル"
+    },
+    "leg": {
+     "id": "u30a6_u30eb_u30e0_u30fc_leg",
+     "name": "ウルムーグリーヴ"
+    }
+   },
+   "refs": [
+    {
+     "source": "Game8",
+     "label": "火属性",
+     "stage": "終盤",
+     "rarityRange": "8〜10",
+     "url": "https://game8.jp/mhoutlanders/",
+     "updated": null,
+     "comment": "終盤では「火属性ダメージUP」を最大レベルまで採用しつつ、「防御反撃」で更に火力を高めるのがおすすめです。「防御反撃」はジャストガード成功後に与ダメージが増加するスキルです。武器は「フレイムランス」を採用しています。",
+     "skills": [
+      {
+       "skill": "火属性ダメージUP",
+       "lv": 7
+      },
+      {
+       "skill": "防御反撃",
+       "lv": 3
+      },
+      {
+       "skill": "体力ループ",
+       "lv": 2
+      },
+      {
+       "skill": "狩人の第六感",
+       "lv": 1
+      },
+      {
+       "skill": "高圧ガード",
+       "lv": 1
+      },
+      {
+       "skill": "体力強化",
+       "lv": 1
+      },
+      {
+       "skill": "爆破耐性",
+       "lv": 1
+      },
+      {
+       "skill": "早食い術",
+       "lv": 1
+      },
+      {
+       "skill": "風圧耐性",
+       "lv": 1
+      },
+      {
+       "skill": "無垢",
+       "lv": 1
+      }
+     ]
+    }
+   ],
+   "sourceCount": 1
+  },
+  {
+   "id": "b025",
+   "charId": "hero_lance",
+   "charName": null,
+   "weaponType": "ランス",
+   "element": "水",
+   "weapon": {
+    "name": "融光種アクアホーン"
+   },
+   "pieces": {
+    "head": {
+     "id": "u30b8_u30e5_u30e9_head",
+     "name": "ジュラヘルム"
+    },
+    "body": {
+     "id": "u30c4_u30a3_u30c4_u30a3_body",
+     "name": "ツィツィメイル"
+    },
+    "arm": {
+     "id": "u878d_u5149_u7a2e_u30b8_u30e5_u30e9_arm",
+     "name": "融光種ジュラアーム"
+    },
+    "waist": {
+     "id": "u30c7_u30a3_u30a2_u30d6_u30ed_waist",
+     "name": "ディアブロコイル"
+    },
+    "leg": {
+     "id": "u878d_u5149_u7a2e_u30dc_u30ed_u30b9_leg",
+     "name": "融光種ボロスグリーヴ"
+    }
+   },
+   "refs": [
+    {
+     "source": "Game8",
+     "label": "水属性",
+     "stage": "終盤",
+     "rarityRange": "8〜10",
+     "url": "https://game8.jp/mhoutlanders/",
+     "updated": null,
+     "comment": "終盤では「水属性ダメージUP」を最大レベルまで採用しつつ、「貫突」で更に火力を高めるのがおすすめです。「貫突」は同じ部位に攻撃を当て続けると与ダメージが増加するため、ランスと相性が良いです。武器は「融光種アクアホーン」を採用しています。",
+     "skills": [
+      {
+       "skill": "水属性ダメージUP",
+       "lv": 7
+      },
+      {
+       "skill": "貫突",
+       "lv": 4
+      },
+      {
+       "skill": "ガードテクニック",
+       "lv": 2
+      },
+      {
+       "skill": "弱点追撃",
+       "lv": 2
+      },
+      {
+       "skill": "体力回復",
+       "lv": 2
+      },
+      {
+       "skill": "加護",
+       "lv": 1
+      },
+      {
+       "skill": "狩人の第六感",
+       "lv": 1
+      },
+      {
+       "skill": "ポテンシャル解放",
+       "lv": 1
+      }
+     ]
+    }
+   ],
+   "sourceCount": 1
+  },
+  {
+   "id": "b026",
+   "charId": "hero_lance",
+   "charName": null,
+   "weaponType": "ランス",
+   "element": "雷",
+   "weapon": {
+    "name": "融光種ライトニングパイル"
+   },
+   "pieces": {
+    "head": {
+     "id": "u30ab_u30ac_u30c1_head",
+     "name": "カガチヘルム"
+    },
+    "body": {
+     "id": "u878d_u5149_u7a2e_u30ae_u30eb_u30aa_u30b_body",
+     "name": "融光種ギルオスメイル"
+    },
+    "arm": {
+     "id": "u30ae_u30eb_u30aa_u30b9_arm",
+     "name": "ギルオスアーム"
+    },
+    "waist": {
+     "id": "u30c7_u30a3_u30a2_u30d6_u30ed_waist",
+     "name": "ディアブロコイル"
+    },
+    "leg": {
+     "id": "u878d_u5149_u7a2e_u30dc_u30ed_u30b9_leg",
+     "name": "融光種ボロスグリーヴ"
+    }
+   },
+   "refs": [
+    {
+     "source": "Game8",
+     "label": "雷属性",
+     "stage": "終盤",
+     "rarityRange": "8〜10",
+     "url": "https://game8.jp/mhoutlanders/",
+     "updated": null,
+     "comment": "終盤では「雷属性ダメージUP」を最大レベルまで採用しつつ、「貫突」で更に火力を高めるのがおすすめです。「貫突」は同じ部位に攻撃を当て続けると与ダメージが増加するため、ランスと相性が良いです。武器は「融光種ライトニングパイル」を採用しています。",
+     "skills": [
+      {
+       "skill": "雷属性ダメージUP",
+       "lv": 7
+      },
+      {
+       "skill": "貫突",
+       "lv": 4
+      },
+      {
+       "skill": "威嚇",
+       "lv": 2
+      },
+      {
+       "skill": "ガードテクニック",
+       "lv": 2
+      },
+      {
+       "skill": "弱点追撃",
+       "lv": 2
+      },
+      {
+       "skill": "ポテンシャル解放",
+       "lv": 1
+      },
+      {
+       "skill": "麻痺耐性",
+       "lv": 1
+      }
+     ]
+    }
+   ],
+   "sourceCount": 1
+  },
+  {
+   "id": "b027",
+   "charId": "hero_lance",
+   "charName": null,
+   "weaponType": "ランス",
+   "element": "氷",
+   "weapon": {
+    "name": "グレイスランサー"
+   },
+   "pieces": {
+    "head": {
+     "id": "u30a2_u30ed_u30a4_head",
+     "name": "アロイヘルム"
+    },
+    "body": {
+     "id": "u30cf_u30a4_u30e1_u30bf_body",
+     "name": "ハイメタメイル"
+    },
+    "arm": {
+     "id": "u30ae_u30a8_u30ca_arm",
+     "name": "ギエナアーム"
+    },
+    "waist": {
+     "id": "u30a4_u30f3_u30b4_u30c3_u30c8_waist",
+     "name": "インゴットコイル"
+    },
+    "leg": {
+     "id": "u30cf_u30a4_u30e1_u30bf_leg",
+     "name": "ハイメタグリーヴ"
+    }
+   },
+   "refs": [
+    {
+     "source": "Game8",
+     "label": "氷属性",
+     "stage": "終盤",
+     "rarityRange": "8〜10",
+     "url": "https://game8.jp/mhoutlanders/",
+     "updated": null,
+     "comment": "終盤では「氷属性ダメージUP」を最大レベルまで採用しつつ、「防御反撃」で更に火力を高めるのがおすすめです。「防御反撃」はジャストガード成功後に与ダメージが増加するスキルです。また、「鉱脈の静寂」で「咆哮耐性」も発動します。武器は「グレイスランサー」を採用しています。",
+     "skills": [
+      {
+       "skill": "氷属性ダメージUP",
+       "lv": 7
+      },
+      {
+       "skill": "防御反撃",
+       "lv": 4
+      },
+      {
+       "skill": "咆哮耐性",
+       "lv": 2
+      },
+      {
+       "skill": "加護",
+       "lv": 1
+      },
+      {
+       "skill": "怖いもの無し",
+       "lv": 1
+      },
+      {
+       "skill": "弱点攻撃",
+       "lv": 1
+      },
+      {
+       "skill": "徹底追撃",
+       "lv": 1
+      },
+      {
+       "skill": "破壊王",
+       "lv": 1
+      },
+      {
+       "skill": "風圧耐性",
+       "lv": 1
+      },
+      {
+       "skill": "防護",
+       "lv": 1
+      },
+      {
+       "skill": "水耐性強化",
+       "lv": 1
+      }
+     ]
+    }
+   ],
+   "sourceCount": 1
+  },
+  {
+   "id": "b028",
+   "charId": "hero_lance",
+   "charName": null,
+   "weaponType": "ランス",
+   "element": "龍",
+   "weapon": {
+    "name": "黒鋼の槍"
+   },
+   "pieces": {
+    "head": {
+     "id": "u30a2_u30ed_u30a4_head",
+     "name": "アロイヘルム"
+    },
+    "body": {
+     "id": "u30c7_u30a3_u30a2_u30d6_u30ed_body",
+     "name": "ディアブロメイル"
+    },
+    "arm": {
+     "id": "u30bf_u30ed_u30b9_arm",
+     "name": "タロスアーム"
+    },
+    "waist": {
+     "id": "u30a4_u30f3_u30b4_u30c3_u30c8_waist",
+     "name": "インゴットコイル"
+    },
+    "leg": {
+     "id": "u30dc_u30fc_u30f3_leg",
+     "name": "ボーングリーヴ"
+    }
+   },
+   "refs": [
+    {
+     "source": "Game8",
+     "label": "龍属性",
+     "stage": "終盤",
+     "rarityRange": "8〜10",
+     "url": "https://game8.jp/mhoutlanders/",
+     "updated": null,
+     "comment": "終盤では「龍属性ダメージUP」を最大レベルまで採用しつつ、「防御反撃」で更に火力を高めるのがおすすめです。「防御反撃」はジャストガード成功後に与ダメージが増加するスキルです。武器は「黒鋼の槍」を採用しています。",
+     "skills": [
+      {
+       "skill": "龍属性ダメージUP",
+       "lv": 7
+      },
+      {
+       "skill": "防御反撃",
+       "lv": 4
+      },
+      {
+       "skill": "破壊王",
+       "lv": 2
+      },
+      {
+       "skill": "会心撃【属性】",
+       "lv": 1
+      },
+      {
+       "skill": "気絶耐性",
+       "lv": 1
+      },
+      {
+       "skill": "怖いもの無し",
+       "lv": 1
+      },
+      {
+       "skill": "体力強化",
+       "lv": 1
+      },
+      {
+       "skill": "風圧耐性",
+       "lv": 1
+      },
+      {
+       "skill": "防護",
+       "lv": 1
+      },
+      {
+       "skill": "水耐性強化",
+       "lv": 1
+      }
+     ]
+    }
+   ],
+   "sourceCount": 1
+  },
+  {
+   "id": "b029",
+   "charId": "hero_hammer",
+   "charName": null,
+   "weaponType": "ハンマー",
+   "element": "火",
+   "weapon": {
+    "name": "融光種ブレイズハンマー"
+   },
+   "pieces": {
+    "head": {
+     "id": "u30ea_u30aa_u30cf_u30fc_u30c8_head",
+     "name": "リオハートヘルム"
+    },
+    "body": {
+     "id": "u30ec_u30a6_u30b9_body",
+     "name": "レウスメイル"
+    },
+    "arm": {
+     "id": "u30d0_u30eb_u30ad_u30f3_arm",
+     "name": "バルキンアーム"
+    },
+    "waist": {
+     "id": "u30b8_u30e3_u30ca_u30d5_waist",
+     "name": "ジャナフコイル"
+    },
+    "leg": {
+     "id": "u878d_u5149_u7a2e_u30b8_u30e3_u30ca_u30d_leg",
+     "name": "融光種ジャナフグリーヴ"
+    }
+   },
+   "refs": [
+    {
+     "source": "Game8",
+     "label": "火属性",
+     "stage": "終盤",
+     "rarityRange": "8〜10",
+     "url": "https://game8.jp/mhoutlanders/",
+     "updated": null,
+     "comment": "終盤では「火属性ダメージUP」を最大レベルまで採用しつつ、「溜め強化」で更に火力を高めるのがおすすめです。「溜め強化」は溜め攻撃を当てると与ダメージが増加するスキルです。武器は「融光種ブレイズハンマー」を採用しています。",
+     "skills": [
+      {
+       "skill": "火属性ダメージUP",
+       "lv": 7
+      },
+      {
+       "skill": "溜め強化",
+       "lv": 5
+      },
+      {
+       "skill": "狩人の第六感",
+       "lv": 2
+      },
+      {
+       "skill": "体力ループ",
+       "lv": 2
+      },
+      {
+       "skill": "睡眠耐性",
+       "lv": 1
+      },
+      {
+       "skill": "体力強化",
+       "lv": 1
+      },
+      {
+       "skill": "早食い術",
+       "lv": 1
+      },
+      {
+       "skill": "火耐性強化",
+       "lv": 1
+      }
+     ]
+    }
+   ],
+   "sourceCount": 1
+  },
+  {
+   "id": "b030",
+   "charId": "hero_hammer",
+   "charName": null,
+   "weaponType": "ハンマー",
+   "element": "水",
+   "weapon": {
+    "name": "融光種アクアハンマー"
+   },
+   "pieces": {
+    "head": {
+     "id": "u30b8_u30e5_u30e9_head",
+     "name": "ジュラヘルム"
+    },
+    "body": {
+     "id": "u30c4_u30a3_u30c4_u30a3_body",
+     "name": "ツィツィメイル"
+    },
+    "arm": {
+     "id": "u30d0_u30eb_u30ad_u30f3_arm",
+     "name": "バルキンアーム"
+    },
+    "waist": {
+     "id": "u30c4_u30a3_u30c4_u30a3_waist",
+     "name": "ツィツィコイル"
+    },
+    "leg": {
+     "id": "u878d_u5149_u7a2e_u30b8_u30e3_u30ca_u30d_leg",
+     "name": "融光種ジャナフグリーヴ"
+    }
+   },
+   "refs": [
+    {
+     "source": "Game8",
+     "label": "水属性",
+     "stage": "終盤",
+     "rarityRange": "8〜10",
+     "url": "https://game8.jp/mhoutlanders/",
+     "updated": null,
+     "comment": "終盤では「水属性ダメージUP」を最大レベルまで採用しつつ、「溜め強化」で更に火力を高めるのがおすすめです。「溜め強化」は溜め攻撃を当てると与ダメージが増加するスキルです。武器は「融光種アクアハンマー」を採用しています。",
+     "skills": [
+      {
+       "skill": "水属性ダメージUP",
+       "lv": 7
+      },
+      {
+       "skill": "溜め強化",
+       "lv": 5
+      },
+      {
+       "skill": "加護",
+       "lv": 1
+      },
+      {
+       "skill": "狩人の第六感",
+       "lv": 1
+      },
+      {
+       "skill": "気絶耐性",
+       "lv": 1
+      },
+      {
+       "skill": "睡眠耐性",
+       "lv": 1
+      },
+      {
+       "skill": "体力回復",
+       "lv": 1
+      },
+      {
+       "skill": "徹底追撃",
+       "lv": 1
+      },
+      {
+       "skill": "火耐性強化",
+       "lv": 1
+      },
+      {
+       "skill": "ポテンシャル解放",
+       "lv": 1
+      }
+     ]
+    }
+   ],
+   "sourceCount": 1
+  },
+  {
+   "id": "b031",
+   "charId": "hero_hammer",
+   "charName": null,
+   "weaponType": "ハンマー",
+   "element": "雷",
+   "weapon": {
+    "name": "融光種ライトニングバッシュ"
+   },
+   "pieces": {
+    "head": {
+     "id": "u30ab_u30ac_u30c1_head",
+     "name": "カガチヘルム"
+    },
+    "body": {
+     "id": "u30b8_u30e3_u30ca_u30d5_body",
+     "name": "ジャナフメイル"
+    },
+    "arm": {
+     "id": "u30d0_u30eb_u30ad_u30f3_arm",
+     "name": "バルキンアーム"
+    },
+    "waist": {
+     "id": "u878d_u5149_u7a2e_u30ae_u30eb_u30aa_u30b_waist",
+     "name": "融光種ギルオスコイル"
+    },
+    "leg": {
+     "id": "u30a4_u30f3_u30b4_u30c3_u30c8_leg",
+     "name": "インゴットグリーヴ"
+    }
+   },
+   "refs": [
+    {
+     "source": "Game8",
+     "label": "雷属性",
+     "stage": "終盤",
+     "rarityRange": "8〜10",
+     "url": "https://game8.jp/mhoutlanders/",
+     "updated": null,
+     "comment": "終盤では「雷属性ダメージUP」を最大レベルまで採用しつつ、「溜め強化」で更に火力を高めるのがおすすめです。「溜め強化」は溜め攻撃を当てると与ダメージが増加するスキルです。武器は「融光種ライトニングバッシュ」を採用しています。",
+     "skills": [
+      {
+       "skill": "雷属性ダメージUP",
+       "lv": 7
+      },
+      {
+       "skill": "溜め強化",
+       "lv": 5
+      },
+      {
+       "skill": "怖いもの無し",
+       "lv": 2
+      },
+      {
+       "skill": "威嚇",
+       "lv": 1
+      },
+      {
+       "skill": "弱点追撃",
+       "lv": 1
+      },
+      {
+       "skill": "睡眠耐性",
+       "lv": 1
+      },
+      {
+       "skill": "体力回復",
+       "lv": 1
+      },
+      {
+       "skill": "火耐性強化",
+       "lv": 1
+      },
+      {
+       "skill": "防護",
+       "lv": 1
+      }
+     ]
+    }
+   ],
+   "sourceCount": 1
+  },
+  {
+   "id": "b032",
+   "charId": "hero_hammer",
+   "charName": null,
+   "weaponType": "ハンマー",
+   "element": "氷",
+   "weapon": {
+    "raw": "ブロスヘッド"
+   },
+   "pieces": {
+    "head": {
+     "id": "u30d0_u30eb_u30ad_u30f3_head",
+     "name": "バルキンヘルム"
+    },
+    "body": {
+     "id": "u30cf_u30a4_u30e1_u30bf_body",
+     "name": "ハイメタメイル"
+    },
+    "arm": {
+     "id": "u30d0_u30eb_u30ad_u30f3_arm",
+     "name": "バルキンアーム"
+    },
+    "waist": {
+     "id": "u30c1_u30a7_u30fc_u30f3_waist",
+     "name": "チェーンベルト"
+    },
+    "leg": {
+     "id": "u30cf_u30a4_u30e1_u30bf_leg",
+     "name": "ハイメタグリーヴ"
+    }
+   },
+   "refs": [
+    {
+     "source": "Game8",
+     "label": "氷属性",
+     "stage": "終盤",
+     "rarityRange": "8〜10",
+     "url": "https://game8.jp/mhoutlanders/",
+     "updated": null,
+     "comment": "終盤では「氷属性ダメージUP」を最大レベルまで採用しつつ、「溜め強化」で更に火力を高めるのがおすすめです。「溜め強化」は溜め攻撃を当てると与ダメージが増加するスキルです。また、「鉱脈の静寂」で「咆哮耐性」も発動します。武器は「ブロスヘッド」を採用しています。",
+     "skills": [
+      {
+       "skill": "氷属性ダメージUP",
+       "lv": 7
+      },
+      {
+       "skill": "溜め強化",
+       "lv": 5
+      },
+      {
+       "skill": "咆哮耐性",
+       "lv": 2
+      },
+      {
+       "skill": "怖いもの無し",
+       "lv": 1
+      },
+      {
+       "skill": "睡眠耐性",
+       "lv": 1
+      },
+      {
+       "skill": "体力回復",
+       "lv": 1
+      },
+      {
+       "skill": "徹底追撃",
+       "lv": 1
+      },
+      {
+       "skill": "防御力DOWN耐性",
+       "lv": 1
+      },
+      {
+       "skill": "防護",
+       "lv": 1
+      },
+      {
+       "skill": "ポテンシャル解放",
+       "lv": 1
+      },
+      {
+       "skill": "裂傷耐性",
+       "lv": 1
+      }
+     ]
+    }
+   ],
+   "sourceCount": 1
+  },
+  {
+   "id": "b033",
+   "charId": "hero_hammer",
+   "charName": null,
+   "weaponType": "ハンマー",
+   "element": "龍",
+   "weapon": {
+    "name": "龍骨大槌"
+   },
+   "pieces": {
+    "head": {
+     "id": "u30ac_u30ed_u30f3_head",
+     "name": "ガロンヘルム"
+    },
+    "body": {
+     "id": "u30c7_u30a3_u30a2_u30d6_u30ed_body",
+     "name": "ディアブロメイル"
+    },
+    "arm": {
+     "id": "u30bf_u30ed_u30b9_arm",
+     "name": "タロスアーム"
+    },
+    "waist": {
+     "id": "u30a8_u30a2_u30eb_u30c0_waist",
+     "name": "エアルダの誠実"
+    },
+    "leg": {
+     "id": "u30dc_u30fc_u30f3_leg",
+     "name": "ボーングリーヴ"
+    }
+   },
+   "refs": [
+    {
+     "source": "Game8",
+     "label": "龍属性",
+     "stage": "終盤",
+     "rarityRange": "8〜10",
+     "url": "https://game8.jp/mhoutlanders/",
+     "updated": null,
+     "comment": "終盤では「龍属性ダメージUP」を最大レベルまで採用しつつ、「気力変換」で更に火力を高めるのがおすすめです。「気力変換」はスタミナを消費する攻撃スキルの与ダメージが増加するスキルです。武器は「龍骨大槌」を採用しています。",
+     "skills": [
+      {
+       "skill": "龍属性ダメージUP",
+       "lv": 7
+      },
+      {
+       "skill": "気力変換",
+       "lv": 4
+      },
+      {
+       "skill": "会心撃【属性】",
+       "lv": 1
+      },
+      {
+       "skill": "狩人の第六感",
+       "lv": 1
+      },
+      {
+       "skill": "気絶耐性",
+       "lv": 1
+      },
+      {
+       "skill": "弱点追撃",
+       "lv": 1
+      },
+      {
+       "skill": "制圧回復",
+       "lv": 1
+      },
+      {
+       "skill": "体力強化",
+       "lv": 1
+      },
+      {
+       "skill": "破壊王",
+       "lv": 1
+      },
+      {
+       "skill": "復活",
+       "lv": 1
+      },
+      {
+       "skill": "防護",
+       "lv": 1
+      }
+     ]
+    }
+   ],
+   "sourceCount": 1
+  },
+  {
+   "id": "b034",
+   "charId": "hero_cb",
+   "charName": null,
+   "weaponType": "チャージアックス",
+   "element": "火",
+   "weapon": {
+    "raw": "憎しみの炎"
+   },
+   "pieces": {
+    "head": {
+     "id": "u30ea_u30aa_u30cf_u30fc_u30c8_head",
+     "name": "リオハートヘルム"
+    },
+    "body": {
+     "id": "u30ec_u30a6_u30b9_body",
+     "name": "レウスメイル"
+    },
+    "arm": {
+     "id": "u30cf_u30a4_u30e1_u30bf_arm",
+     "name": "ハイメタアーム"
+    },
+    "waist": {
+     "id": "u30b8_u30e3_u30ca_u30d5_waist",
+     "name": "ジャナフコイル"
+    },
+    "leg": {
+     "id": "u30a8_u30a2_u30eb_u30c0_leg",
+     "name": "エアルダの信念"
+    }
+   },
+   "refs": [
+    {
+     "source": "Game8",
+     "label": "火属性",
+     "stage": "終盤",
+     "rarityRange": "8〜10",
+     "url": "https://game8.jp/mhoutlanders/",
+     "updated": null,
+     "comment": "終盤では「龍属性ダメージUP」を最大レベルまで採用しつつ、「変形強化」で更に火力を高めるのがおすすめです。武器は会心率が上昇する「ディア＝ヘカテル」を採用しています。",
+     "skills": [
+      {
+       "skill": "火属性ダメージUP",
+       "lv": 7
+      },
+      {
+       "skill": "変形強化",
+       "lv": 4
+      },
+      {
+       "skill": "体力ループ",
+       "lv": 2
+      },
+      {
+       "skill": "徹底追撃",
+       "lv": 2
+      },
+      {
+       "skill": "狩人の第六感",
+       "lv": 1
+      },
+      {
+       "skill": "逆境",
+       "lv": 1
+      },
+      {
+       "skill": "氷耐性強化",
+       "lv": 1
+      },
+      {
+       "skill": "体力強化",
+       "lv": 1
+      },
+      {
+       "skill": "早食い術",
+       "lv": 1
+      }
+     ]
+    }
+   ],
+   "sourceCount": 1
+  },
+  {
+   "id": "b035",
+   "charId": "hero_cb",
+   "charName": null,
+   "weaponType": "チャージアックス",
+   "element": "水",
+   "weapon": {
+    "name": "融光種泥流の盾斧"
+   },
+   "pieces": {
+    "head": {
+     "id": "u30b8_u30e5_u30e9_head",
+     "name": "ジュラヘルム"
+    },
+    "body": {
+     "id": "u30c4_u30a3_u30c4_u30a3_body",
+     "name": "ツィツィメイル"
+    },
+    "arm": {
+     "id": "u30cf_u30a4_u30e1_u30bf_arm",
+     "name": "ハイメタアーム"
+    },
+    "waist": {
+     "id": "u30c4_u30a3_u30c4_u30a3_waist",
+     "name": "ツィツィコイル"
+    },
+    "leg": {
+     "id": "u30a8_u30a2_u30eb_u30c0_leg",
+     "name": "エアルダの信念"
+    }
+   },
+   "refs": [
+    {
+     "source": "Game8",
+     "label": "水属性",
+     "stage": "終盤",
+     "rarityRange": "8〜10",
+     "url": "https://game8.jp/mhoutlanders/",
+     "updated": null,
+     "comment": "終盤では「龍属性ダメージUP」を最大レベルまで採用しつつ、「変形強化」で更に火力を高めるのがおすすめです。さらに「徹底追撃」を採用しているため、スタンか制圧したとき更に与ダメージが上昇します。",
+     "skills": [
+      {
+       "skill": "水属性ダメージUP",
+       "lv": 7
+      },
+      {
+       "skill": "変形強化",
+       "lv": 4
+      },
+      {
+       "skill": "徹底追撃",
+       "lv": 3
+      },
+      {
+       "skill": "加護",
+       "lv": 1
+      },
+      {
+       "skill": "気絶耐性",
+       "lv": 1
+      },
+      {
+       "skill": "逆境",
+       "lv": 1
+      },
+      {
+       "skill": "氷耐性強化",
+       "lv": 1
+      },
+      {
+       "skill": "体力回復",
+       "lv": 1
+      },
+      {
+       "skill": "ポテンシャル解放",
+       "lv": 1
+      }
+     ]
+    }
+   ],
+   "sourceCount": 1
+  },
+  {
+   "id": "b036",
+   "charId": "hero_cb",
+   "charName": null,
+   "weaponType": "チャージアックス",
+   "element": "雷",
+   "weapon": {
+    "name": "パルサーアームズ"
+   },
+   "pieces": {
+    "head": {
+     "id": "u30ab_u30ac_u30c1_head",
+     "name": "カガチヘルム"
+    },
+    "body": {
+     "id": "u878d_u5149_u7a2e_u30ae_u30eb_u30aa_u30b_body",
+     "name": "融光種ギルオスメイル"
+    },
+    "arm": {
+     "id": "u30ae_u30eb_u30aa_u30b9_arm",
+     "name": "ギルオスアーム"
+    },
+    "waist": {
+     "id": "u30cf_u30a4_u30e1_u30bf_waist",
+     "name": "ハイメタコイル"
+    },
+    "leg": {
+     "id": "u30a8_u30a2_u30eb_u30c0_leg",
+     "name": "エアルダの信念"
+    }
+   },
+   "refs": [
+    {
+     "source": "Game8",
+     "label": "雷属性",
+     "stage": "終盤",
+     "rarityRange": "8〜10",
+     "url": "https://game8.jp/mhoutlanders/",
+     "updated": null,
+     "comment": "終盤では「雷属性ダメージUP」を最大レベルまで採用しつつ、「変形強化」で更に火力を高めるのがおすすめです。武器は会心率ガ上昇する「パルサーアームズ」を採用しています。",
+     "skills": [
+      {
+       "skill": "雷属性ダメージUP",
+       "lv": 7
+      },
+      {
+       "skill": "変形強化",
+       "lv": 4
+      },
+      {
+       "skill": "威嚇",
+       "lv": 2
+      },
+      {
+       "skill": "徹底追撃",
+       "lv": 2
+      },
+      {
+       "skill": "逆境",
+       "lv": 1
+      },
+      {
+       "skill": "防護",
+       "lv": 1
+      },
+      {
+       "skill": "ポテンシャル解放",
+       "lv": 1
+      },
+      {
+       "skill": "麻痺耐性",
+       "lv": 1
+      }
+     ]
+    }
+   ],
+   "sourceCount": 1
+  },
+  {
+   "id": "b037",
+   "charId": "hero_cb",
+   "charName": null,
+   "weaponType": "チャージアックス",
+   "element": "氷",
+   "weapon": {
+    "name": "氷結の盾斧"
+   },
+   "pieces": {
+    "head": {
+     "id": "u30dc_u30fc_u30f3_head",
+     "name": "ボーンヘルム"
+    },
+    "body": {
+     "id": "u30cf_u30a4_u30e1_u30bf_body",
+     "name": "ハイメタメイル"
+    },
+    "arm": {
+     "id": "u30ae_u30a8_u30ca_arm",
+     "name": "ギエナアーム"
+    },
+    "waist": {
+     "id": "u30cf_u30a4_u30e1_u30bf_waist",
+     "name": "ハイメタコイル"
+    },
+    "leg": {
+     "id": "u30cf_u30a4_u30e1_u30bf_leg",
+     "name": "ハイメタグリーヴ"
+    }
+   },
+   "refs": [
+    {
+     "source": "Game8",
+     "label": "氷属性",
+     "stage": "終盤",
+     "rarityRange": "8〜10",
+     "url": "https://game8.jp/mhoutlanders/",
+     "updated": null,
+     "comment": "終盤では「氷属性ダメージUP」を最大レベルまで採用しつつ、「変形強化」で更に火力を高めるのがおすすめです。さらに「徹底追撃」を採用しているため、スタンか制圧したとき更に与ダメージが上昇します。",
+     "skills": [
+      {
+       "skill": "氷属性ダメージUP",
+       "lv": 7
+      },
+      {
+       "skill": "変形強化",
+       "lv": 4
+      },
+      {
+       "skill": "徹底追撃",
+       "lv": 2
+      },
+      {
+       "skill": "防護",
+       "lv": 2
+      },
+      {
+       "skill": "咆哮耐性",
+       "lv": 2
+      },
+      {
+       "skill": "加護",
+       "lv": 1
+      },
+      {
+       "skill": "弱点攻撃",
+       "lv": 1
+      },
+      {
+       "skill": "体力強化",
+       "lv": 1
+      },
+      {
+       "skill": "破壊王",
+       "lv": 1
+      }
+     ]
+    }
+   ],
+   "sourceCount": 1
+  },
+  {
+   "id": "b038",
+   "charId": "hero_cb",
+   "charName": null,
+   "weaponType": "チャージアックス",
+   "element": "龍",
+   "weapon": {
+    "name": "ディア＝ヘカテル"
+   },
+   "pieces": {
+    "head": {
+     "id": "u30dc_u30fc_u30f3_head",
+     "name": "ボーンヘルム"
+    },
+    "body": {
+     "id": "u30c7_u30a3_u30a2_u30d6_u30ed_body",
+     "name": "ディアブロメイル"
+    },
+    "arm": {
+     "id": "u30bf_u30ed_u30b9_arm",
+     "name": "タロスアーム"
+    },
+    "waist": {
+     "id": "u30cf_u30a4_u30e1_u30bf_waist",
+     "name": "ハイメタコイル"
+    },
+    "leg": {
+     "id": "u30dc_u30fc_u30f3_leg",
+     "name": "ボーングリーヴ"
+    }
+   },
+   "refs": [
+    {
+     "source": "Game8",
+     "label": "龍属性",
+     "stage": "終盤",
+     "rarityRange": "8〜10",
+     "url": "https://game8.jp/mhoutlanders/",
+     "updated": null,
+     "comment": "終盤では「龍属性ダメージUP」を最大レベルまで採用しつつ、「変形強化」で更に火力を高めるのがおすすめです。武器は会心率が上昇する「ディア＝ヘカテル」を採用しています。",
+     "skills": [
+      {
+       "skill": "龍属性ダメージUP",
+       "lv": 7
+      },
+      {
+       "skill": "変形強化",
+       "lv": 4
+      },
+      {
+       "skill": "体力強化",
+       "lv": 2
+      },
+      {
+       "skill": "破壊王",
+       "lv": 2
+      },
+      {
+       "skill": "防護",
+       "lv": 2
+      },
+      {
+       "skill": "会心撃【属性】",
+       "lv": 1
+      },
+      {
+       "skill": "気絶耐性",
+       "lv": 1
+      },
+      {
+       "skill": "徹底追撃",
+       "lv": 1
+      }
+     ]
+    }
+   ],
+   "sourceCount": 1
+  },
+  {
+   "id": "b039",
+   "charId": "hero_bow",
+   "charName": null,
+   "weaponType": "弓",
+   "element": "火",
+   "weapon": {
+    "name": "火竜の強弓"
+   },
+   "pieces": {
+    "head": {
+     "id": "u30ea_u30aa_u30cf_u30fc_u30c8_head",
+     "name": "リオハートヘルム"
+    },
+    "body": {
+     "id": "u30ec_u30a6_u30b9_body",
+     "name": "レウスメイル"
+    },
+    "arm": {
+     "id": "u878d_u5149_u7a2e_u30ab_u30ac_u30c1_arm",
+     "name": "融光種カガチアーム"
+    },
+    "waist": {
+     "id": "u30b8_u30e3_u30ca_u30d5_waist",
+     "name": "ジャナフコイル"
+    },
+    "leg": {
+     "id": "u878d_u5149_u7a2e_u30d7_u30b1_u30d7_u30b_leg",
+     "name": "融光種プケプケグリーヴ"
+    }
+   },
+   "refs": [
+    {
+     "source": "Game8",
+     "label": "火属性",
+     "stage": "終盤",
+     "rarityRange": "8〜10",
+     "url": "https://game8.jp/mhoutlanders/",
+     "updated": null,
+     "comment": "終盤では「火属性ダメージUP」を最大レベルまで採用しつつ、「弓スキル強化」で更に火力を高めるのがおすすめです。武器は会心率が上昇する「火竜の強弓」を採用しています。",
+     "skills": [
+      {
+       "skill": "火属性ダメージUP",
+       "lv": 7
+      },
+      {
+       "skill": "弓スキル強化",
+       "lv": 4
+      },
+      {
+       "skill": "体力ループ",
+       "lv": 2
+      },
+      {
+       "skill": "雷耐性強化",
+       "lv": 1
+      },
+      {
+       "skill": "狩人の第六感",
+       "lv": 1
+      },
+      {
+       "skill": "環境の活用",
+       "lv": 1
+      },
+      {
+       "skill": "体力強化",
+       "lv": 1
+      },
+      {
+       "skill": "早食い術",
+       "lv": 1
+      },
+      {
+       "skill": "ポテンシャル解放",
+       "lv": 1
+      },
+      {
+       "skill": "無垢",
+       "lv": 1
+      }
+     ]
+    }
+   ],
+   "sourceCount": 1
+  },
+  {
+   "id": "b040",
+   "charId": "hero_bow",
+   "charName": null,
+   "weaponType": "弓",
+   "element": "水",
+   "weapon": {
+    "name": "融光種アクアアロー"
+   },
+   "pieces": {
+    "head": {
+     "id": "u30d7_u30b1_u30d7_u30b1_head",
+     "name": "プケプケヘルム"
+    },
+    "body": {
+     "id": "u30c4_u30a3_u30c4_u30a3_body",
+     "name": "ツィツィメイル"
+    },
+    "arm": {
+     "id": "u878d_u5149_u7a2e_u30b8_u30e5_u30e9_arm",
+     "name": "融光種ジュラアーム"
+    },
+    "waist": {
+     "id": "u30c4_u30a3_u30c4_u30a3_waist",
+     "name": "ツィツィコイル"
+    },
+    "leg": {
+     "id": "u878d_u5149_u7a2e_u30d7_u30b1_u30d7_u30b_leg",
+     "name": "融光種プケプケグリーヴ"
+    }
+   },
+   "refs": [
+    {
+     "source": "Game8",
+     "label": "水属性",
+     "stage": "終盤",
+     "rarityRange": "8〜10",
+     "url": "https://game8.jp/mhoutlanders/",
+     "updated": null,
+     "comment": "終盤では「水属性ダメージUP」を最大レベルまで採用しつつ、「弓スキル強化」で更に火力を高めるのがおすすめです。また、「弾導強化」を採用することで適正距離を伸ばしています。",
+     "skills": [
+      {
+       "skill": "水属性ダメージUP",
+       "lv": 7
+      },
+      {
+       "skill": "弓スキル強化",
+       "lv": 4
+      },
+      {
+       "skill": "加護",
+       "lv": 1
+      },
+      {
+       "skill": "狩人の第六感",
+       "lv": 1
+      },
+      {
+       "skill": "環境の活用",
+       "lv": 1
+      },
+      {
+       "skill": "気絶耐性",
+       "lv": 1
+      },
+      {
+       "skill": "植物専門家",
+       "lv": 1
+      },
+      {
+       "skill": "体力回復",
+       "lv": 1
+      },
+      {
+       "skill": "弾導強化",
+       "lv": 1
+      },
+      {
+       "skill": "徹底追撃",
+       "lv": 1
+      },
+      {
+       "skill": "無垢",
+       "lv": 1
+      }
+     ]
+    }
+   ],
+   "sourceCount": 1
+  },
+  {
+   "id": "b041",
+   "charId": "hero_bow",
+   "charName": null,
+   "weaponType": "弓",
+   "element": "雷",
+   "weapon": {
+    "name": "パルサーボウ"
+   },
+   "pieces": {
+    "head": {
+     "id": "u30d7_u30b1_u30d7_u30b1_head",
+     "name": "プケプケヘルム"
+    },
+    "body": {
+     "id": "u878d_u5149_u7a2e_u30ae_u30eb_u30aa_u30b_body",
+     "name": "融光種ギルオスメイル"
+    },
+    "arm": {
+     "id": "u30ae_u30eb_u30aa_u30b9_arm",
+     "name": "ギルオスアーム"
+    },
+    "waist": {
+     "id": "u878d_u5149_u7a2e_u30ab_u30ac_u30c1_waist",
+     "name": "融光種カガチコイル"
+    },
+    "leg": {
+     "id": "u30a4_u30f3_u30b4_u30c3_u30c8_leg",
+     "name": "インゴットグリーヴ"
+    }
+   },
+   "refs": [
+    {
+     "source": "Game8",
+     "label": "雷属性",
+     "stage": "終盤",
+     "rarityRange": "8〜10",
+     "url": "https://game8.jp/mhoutlanders/",
+     "updated": null,
+     "comment": "終盤では「雷属性ダメージUP」を最大レベルまで採用しつつ、「弓スキル強化」で更に火力を高めるのがおすすめです。武器は会心率が上昇する「パルサーボウ」を採用しています。",
+     "skills": [
+      {
+       "skill": "雷属性ダメージUP",
+       "lv": 7
+      },
+      {
+       "skill": "弓スキル強化",
+       "lv": 4
+      },
+      {
+       "skill": "ポテンシャル解放",
+       "lv": 2
+      },
+      {
+       "skill": "威嚇",
+       "lv": 1
+      },
+      {
+       "skill": "雷耐性強化",
+       "lv": 1
+      },
+      {
+       "skill": "怖いもの無し",
+       "lv": 1
+      },
+      {
+       "skill": "植物専門家",
+       "lv": 1
+      },
+      {
+       "skill": "弾導強化",
+       "lv": 1
+      },
+      {
+       "skill": "防護",
+       "lv": 1
+      },
+      {
+       "skill": "麻痺耐性",
+       "lv": 1
+      }
+     ]
+    }
+   ],
+   "sourceCount": 1
+  },
+  {
+   "id": "b042",
+   "charId": "hero_bow",
+   "charName": null,
+   "weaponType": "弓",
+   "element": "氷",
+   "weapon": {
+    "raw": "グレイスアロー"
+   },
+   "pieces": {
+    "head": {
+     "id": "u30d7_u30b1_u30d7_u30b1_head",
+     "name": "プケプケヘルム"
+    },
+    "body": {
+     "id": "u30cf_u30a4_u30e1_u30bf_body",
+     "name": "ハイメタメイル"
+    },
+    "arm": {
+     "id": "u878d_u5149_u7a2e_u30ab_u30ac_u30c1_arm",
+     "name": "融光種カガチアーム"
+    },
+    "waist": {
+     "id": "u30c1_u30a7_u30fc_u30f3_waist",
+     "name": "チェーンベルト"
+    },
+    "leg": {
+     "id": "u30cf_u30a4_u30e1_u30bf_leg",
+     "name": "ハイメタグリーヴ"
+    }
+   },
+   "refs": [
+    {
+     "source": "Game8",
+     "label": "氷属性",
+     "stage": "終盤",
+     "rarityRange": "8〜10",
+     "url": "https://game8.jp/mhoutlanders/",
+     "updated": null,
+     "comment": "終盤では「氷属性ダメージUP」を最大レベルまで採用しつつ、「弓スキル強化」で更に火力を高めるのがおすすめです。また、「弾導強化」を採用することで適正距離を伸ばしています。",
+     "skills": [
+      {
+       "skill": "氷属性ダメージUP",
+       "lv": 7
+      },
+      {
+       "skill": "弓スキル強化",
+       "lv": 4
+      },
+      {
+       "skill": "咆哮耐性",
+       "lv": 2
+      },
+      {
+       "skill": "ポテンシャル解放",
+       "lv": 2
+      },
+      {
+       "skill": "雷耐性強化",
+       "lv": 1
+      },
+      {
+       "skill": "植物専門家",
+       "lv": 1
+      },
+      {
+       "skill": "体力回復",
+       "lv": 1
+      },
+      {
+       "skill": "弾導強化",
+       "lv": 1
+      },
+      {
+       "skill": "徹底追撃",
+       "lv": 1
+      },
+      {
+       "skill": "防護",
+       "lv": 1
+      }
+     ]
+    }
+   ],
+   "sourceCount": 1
+  },
+  {
+   "id": "b043",
+   "charId": "hero_bow",
+   "charName": null,
+   "weaponType": "弓",
+   "element": "龍",
+   "weapon": {
+    "name": "ローゼスアロー"
+   },
+   "pieces": {
+    "head": {
+     "id": "u30d7_u30b1_u30d7_u30b1_head",
+     "name": "プケプケヘルム"
+    },
+    "body": {
+     "id": "u30c7_u30a3_u30a2_u30d6_u30ed_body",
+     "name": "ディアブロメイル"
+    },
+    "arm": {
+     "id": "u30bf_u30ed_u30b9_arm",
+     "name": "タロスアーム"
+    },
+    "waist": {
+     "id": "u878d_u5149_u7a2e_u30ab_u30ac_u30c1_waist",
+     "name": "融光種カガチコイル"
+    },
+    "leg": {
+     "id": "u30dc_u30fc_u30f3_leg",
+     "name": "ボーングリーヴ"
+    }
+   },
+   "refs": [
+    {
+     "source": "Game8",
+     "label": "龍属性",
+     "stage": "終盤",
+     "rarityRange": "8〜10",
+     "url": "https://game8.jp/mhoutlanders/",
+     "updated": null,
+     "comment": "終盤では「龍属性ダメージUP」を最大レベルまで採用しつつ、「弓スキル強化」で更に火力を高めるのがおすすめです。武器は会心率が上昇する「ローゼスアロー」を採用しています。",
+     "skills": [
+      {
+       "skill": "龍属性ダメージUP",
+       "lv": 7
+      },
+      {
+       "skill": "弓スキル強化",
+       "lv": 4
+      },
+      {
+       "skill": "会心撃【属性】",
+       "lv": 1
+      },
+      {
+       "skill": "雷耐性強化",
+       "lv": 1
+      },
+      {
+       "skill": "気絶耐性",
+       "lv": 1
+      },
+      {
+       "skill": "植物専門家",
+       "lv": 1
+      },
+      {
+       "skill": "体力強化",
+       "lv": 1
+      },
+      {
+       "skill": "弾導強化",
+       "lv": 1
+      },
+      {
+       "skill": "破壊王",
+       "lv": 1
+      },
+      {
+       "skill": "防護",
+       "lv": 1
+      },
+      {
+       "skill": "ポテンシャル解放",
+       "lv": 1
+      }
+     ]
+    }
+   ],
+   "sourceCount": 1
+  }
+ ],
+ "unresolved": [
+  {
+   "name": "武器 融光種カガチノキバ（Game8）",
+   "count": 1
+  },
+  {
+   "name": "武器 フリーズブレイド（Game8）",
+   "count": 1
+  },
+  {
+   "name": "武器 血吸いの鎖鎌（Game8）",
+   "count": 1
+  },
+  {
+   "name": "武器 ブロスヘッド（Game8）",
+   "count": 1
+  },
+  {
+   "name": "武器 憎しみの炎（Game8）",
+   "count": 1
+  },
+  {
+   "name": "武器 グレイスアロー（Game8）",
+   "count": 1
+  }
+ ]
+}

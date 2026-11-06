@@ -10,6 +10,7 @@ const PARTS = ['head', 'body', 'arm', 'waist', 'leg'];
 self.onmessage = (e) => {
   const msg = e.data;
   if (msg.type === 'init') { DB = buildDb(msg.armor, msg.skills); self.postMessage({ type: 'ready' }); return; }
+  if (msg.type === 'evalBuilds') { self.postMessage({ type: 'builds', reqId: msg.reqId, rows: evalBuilds(msg) }); return; }
   if (msg.type === 'solve') {
     const t0 = Date.now();
     const res = solve(msg);
@@ -106,24 +107,45 @@ function makeWeightTable(weights) {
 }
 const wval = (W, s, lv) => { const a = W[s]; if (!a || lv <= 0) return 0; return a[Math.min(lv, a.length) - 1] || 0; };
 
+// 強化上限 rarityCap までで一番スキルの価値が高くなる、いちばん低いレア
+function bestRarity(p, W, rarityCap) {
+  const lo = p.baseRarity;
+  // 強化上限は「生産後にどこまで上げられるか」。生産レアが上限より高い防具はそのまま生産できる扱い
+  const cap = Math.max(lo, Math.min(p.maxRarity, rarityCap));
+  let bestVal = -1, bestR = lo, bestSk = null;
+  for (let r = lo; r <= cap; r++) {
+    const sk = skillsAtRarity(p, r);
+    let v = 0;
+    for (const k of sk) v += wval(W, k.s, Math.min(k.lv, DB.skillMax[k.s]));
+    if (v > bestVal + 1e-9) { bestVal = v; bestR = r; bestSk = sk; }
+  }
+  return { ref: p, value: bestVal, rarity: bestR, sk: bestSk, cost: bestR - lo };
+}
+
 function preparePieces(W, availableSeries, rarityCap, ownedMap, orbTier) {
   const out = [];
   for (const p of DB.pieces) {
     if (!availableSeries.has(p.series)) continue;
     if (p.orbTier && orbTier && p.orbTier > orbTier) continue; // 生産に要る狩魂玉のランクが足りない
-    const lo = p.baseRarity;
-    // 強化上限は「生産後にどこまで上げられるか」。生産レアが上限より高い防具はそのまま生産できる扱い
-    const cap = Math.max(lo, Math.min(p.maxRarity, rarityCap));
-    let bestVal = -1, bestR = lo, bestSk = null;
-    for (let r = lo; r <= cap; r++) {
-      const sk = skillsAtRarity(p, r);
-      let v = 0;
-      for (const k of sk) v += wval(W, k.s, Math.min(k.lv, DB.skillMax[k.s]));
-      if (v > bestVal + 1e-9) { bestVal = v; bestR = r; bestSk = sk; }
-    }
-    out.push({ ref: p, value: bestVal, rarity: bestR, sk: bestSk, cost: bestR - lo, owned: ownedMap ? ownedMap[p.id] : null });
+    const c = bestRarity(p, W, rarityCap);
+    c.owned = ownedMap ? ownedMap[p.id] : null;
+    out.push(c);
   }
   return out;
+}
+
+// 攻略サイトの構成（部位が決まっている）を、今の強化上限で採点する
+function evalBuilds(msg) {
+  const W = makeWeightTable(msg.weights);
+  const byId = new Map(DB.pieces.map(p => [p.id, p]));
+  const acc = new Int32Array(DB.skillNames.length), sc = new Int32Array(DB.sets.length + 1), touched = new Int32Array(260);
+  return msg.builds.map((b) => {
+    const combo = b.pieces.map(id => (id && byId.has(id)) ? bestRarity(byId.get(id), W, msg.rarityCap) : null);
+    const have = combo.filter(Boolean);
+    const r = evaluate(combo, W, acc, sc, touched);
+    const d = describe({ score: r.score, combo: have, setHits: r.setHits }, W);
+    return { key: b.key, score: r.score, missing: combo.length - have.length, set: d };
+  });
 }
 
 function pickCandidates(prepared, W, K) {

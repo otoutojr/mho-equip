@@ -1,8 +1,8 @@
 /* 装備おすすめ service worker: ネットワーク優先、オフライン時はキャッシュ */
-const VERSION = '2026.11.06-11';
+const VERSION = '2026.11.06-12';
 const CACHE = 'mho-equip-' + VERSION;
 const SHELL = ['./', 'index.html', 'style.css', 'app.js', 'solver.js', 'manifest.webmanifest',
-  'data/armor.json', 'data/skills.json', 'data/monsters.json', 'data/characters.json', 'data/weapons.json',
+  'data/armor.json', 'data/skills.json', 'data/monsters.json', 'data/characters.json', 'data/weapons.json', 'data/builds.json',
   'icons/icon-180.png', 'icons/icon-192.png', 'icons/icon-512.png'];
 
 self.addEventListener('install', (e) => {

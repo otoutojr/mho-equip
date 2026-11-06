@@ -36,8 +36,9 @@
 <div class="menuBack" id="menuBack" hidden></div>
 <nav class="menu" id="menu" hidden aria-label="メニュー">
   <a href="#pickPanel" class="menuItem">キャラ・ランク</a>
+  <a href="#dbPanel" class="menuItem">攻略サイトのおすすめ構成</a>
   <a href="#meterPanel" class="menuItem">DPS</a>
-  <a href="#loadoutPanel" class="menuItem">最強装備</a>
+  <a href="#loadoutPanel" class="menuItem">計算で組んだ最強装備</a>
   <a href="#comparePanel" class="menuItem">構成ごとのDPS比較</a>
   <a href="#nextPanel" class="menuItem">ランクが上がると</a>
   <a href="#goalPanel" class="menuItem">到達点</a>
@@ -71,6 +72,12 @@
     </div>
   </section>
 
+  <section class="panel dbPanel" id="dbPanel">
+    <h2>攻略サイトのおすすめ構成</h2>
+    <p class="hint" id="dbHint">読み込み中…</p>
+    <ol class="dbList" id="dbList"></ol>
+  </section>
+
   <section class="meter" id="meterPanel" aria-live="polite">
     <div class="meterTop"><span id="meterWho"></span><span class="targetSwitch" id="targetTabs" role="tablist" aria-label="相手">
       <button type="button" class="tsw" role="tab" data-target="normal">通常</button><button type="button" class="tsw" role="tab" data-target="yuko">融光種</button>
@@ -82,7 +89,8 @@
   </section>
 
   <section class="panel loadout" id="loadoutPanel">
-    <h2>最強装備</h2>
+    <h2>計算で組んだ最強装備</h2>
+    <p class="hint">攻略サイトに載っていない組み合わせも含めて、全防具から計算で一番DPSが出る5部位を探したもの。</p>
     <p class="hint" id="resultHint"></p>
     <div id="weaponSlot"></div>
     <ol class="rack" id="rack"></ol>
