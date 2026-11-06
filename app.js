@@ -1,6 +1,6 @@
 /* 装備おすすめ ― UI */
 'use strict';
-const APP_VERSION = '2026.11.06-6';
+const APP_VERSION = '2026.11.06-7';
 const STORE_KEY = 'mho-equip:v1';
 const PART_JP = { head: '頭', body: '胴', arm: '腕', waist: '腰', leg: '脚' };
 const ROMAN = { 1: 'Ⅰ', 2: 'Ⅱ', 3: 'Ⅲ', 4: 'Ⅳ', 5: 'Ⅴ', 6: 'Ⅵ' };
@@ -293,40 +293,49 @@ function weaponStatsAt(w, r) {
   const keys = Object.keys(st).map(Number).filter(k => k <= r).sort((a, b) => b - a);
   return keys.length ? st[keys[0]] : null;
 }
-function bestWeapon(c, rank = state.rank) {
+function weaponCands(c, rank = state.rank, capOverride = null) {
   const list = (DATA.weapons && DATA.weapons.weapons) || [];
-  if (!list.length) return null;
   const type = c.weapon || WEAPON_TYPE[state.heroWeapon];
   const elem = charElement(c);
-  const cap = rankCap(rank);
+  const cap = capOverride || rankCap(rank);
   const e = (c.model && c.model.elementShare) || 0.35;
-  const cands = [];
+  const out = [];
   for (const w of list) {
     if (w.type !== type || w.element !== elem) continue;
     if ((w.baseRarity || 1) > cap) continue;
-    if ((w.monsters || []).length && !(w.monsters || []).every(m => monsterOpen(m, rank))) continue;
+    if (!(w.monsters || []).every(m => monsterOpen(m, rank))) continue;
     const r = Math.min(w.maxRarity || cap, cap);
     const st = weaponStatsAt(w, r);
     if (!st) continue;
-    const score = (st.attack || 0) * (1 + ((w.affinity || 0) / 100) * 0.25) * (1 - e) * 2 + (st.element || 0) * e * 2;
-    cands.push({ w, r, st, score });
+    // 物理と属性の割合で重み付け（属性の割合はキャラのモデルと同じ）。会心率は+25%×確率
+    const score = (st.attack || 0) * (1 + ((st.affinity ?? w.affinity ?? 0) / 100) * 0.25) * (1 - e) + (st.element || 0) * 2 * e;
+    out.push({ w, r, st, score });
   }
-  cands.sort((a, b) => b.score - a.score);
-  return cands[0] || null;
+  return out.sort((a, b) => b.score - a.score);
+}
+function weaponCard(b, label) {
+  const { w, r, st } = b;
+  const need = r > (w.baseRarity || 1);
+  const aff = st.affinity ?? w.affinity;
+  return el('div', { class: 'slot weapon' },
+    el('div', { class: 'part', text: '武' }),
+    el('div', {},
+      label ? el('div', { class: 'wlabel', text: label }) : null,
+      el('div', { class: 'pname' }, w.name, el('span', { class: 'series', text: `${w.type}・${w.element}属性${w.guild ? '・鉄鉱石で強化できる冒険団武器' : ''}` })),
+      el('div', { class: 'rar' }, el('span', { class: 'lbl' },
+        need ? el('b', { class: 'need', text: `レア${r}まで強化` }) : el('b', { text: `レア${r}` }),
+        `　攻撃${st.attack}・${w.element}${st.element || '―'}${aff ? `・会心${aff}%` : ''}${st.est ? '（推定値）' : ''}`))));
 }
 function renderWeapon(c) {
   const box = $('#weaponSlot'); box.innerHTML = '';
   if (!DATA.weapons) return;
-  const b = bestWeapon(c);
-  if (!b) { box.append(el('div', { class: 'slot weapon' }, el('div', { class: 'part', text: '武' }), el('div', { class: 'empty', text: `${charElement(c)}属性の${c.weapon || WEAPON_TYPE[state.heroWeapon]}はまだ作れません。` }))); return; }
-  const { w, r, st } = b;
-  const need = r > (w.baseRarity || 1);
-  box.append(el('div', { class: 'slot weapon' },
-    el('div', { class: 'part', text: '武' }),
-    el('div', {},
-      el('div', { class: 'pname' }, w.name, el('span', { class: 'series', text: `${w.type}・${w.element}属性` })),
-      el('div', { class: 'rar' }, el('span', { class: 'lbl' }, need ? el('b', { class: 'need', text: `レア${r}まで強化` }) : el('b', { text: `レア${r}` }), `　攻撃力${st.attack}・${w.element}${st.element || '―'}${w.affinity ? `・会心${w.affinity}%` : ''}`)),
-      w.skill ? el('div', { class: 'tags' }, el('span', { class: 'tag', text: w.skill })) : null)));
+  const cands = weaponCands(c);
+  if (!cands.length) { box.append(el('div', { class: 'slot weapon' }, el('div', { class: 'part', text: '武' }), el('div', { class: 'empty', text: `このランクで作れる${charElement(c)}属性の${c.weapon || WEAPON_TYPE[state.heroWeapon]}が見つかりません。` }))); return; }
+  box.append(weaponCard(cands[0]));
+  if (cands[0].w.guild) {
+    const alt = cands.find(x => !x.w.guild);
+    if (alt) box.append(el('div', { class: 'walt', text: `冒険団武器を使わないなら：${alt.w.name}（レア${alt.r}・攻撃${alt.st.attack}・${alt.w.element}${alt.st.element || '―'}）` }));
+  }
 }
 
 let lastBase = 0;
@@ -463,8 +472,10 @@ function renderGoal(res) {
   const b = res.best;
   const skills = b.totals.filter(t => t.value > 0).map(t => `${t.skill} Lv${t.lv}`).join('・');
   const gain = lastBase ? fmtDelta(b.score - lastBase) : '';
+  const gw = DATA.weapons ? weaponCands(currentChar(), 99, 14)[0] : null;
   box.append(el('div', { class: 'goal' },
     el('div', {}, el('span', { class: 'gScore', text: fmtScore(b.score) }), gain ? el('span', { class: 'hint', text: `　いまのセットから${gain}` }) : null),
+    gw ? el('div', { class: 'gWeapon', text: `武器：${gw.w.name}（レア${gw.r}・攻撃${gw.st.attack}・${gw.w.element}${gw.st.element || '―'}${gw.st.est ? '・推定値' : ''}）` }) : null,
     el('div', { text: skills || '―' }),
     el('ul', {}, ...b.pieces.map(p => el('li', { text: `${PART_JP[p.part]} ${p.name}${p.rarity > p.baseRarity ? `（レア${p.rarity}）` : ''}` })))));
 }

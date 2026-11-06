@@ -309,3 +309,8 @@ main { max-width: 720px; margin: 0 auto; padding: 0 10px; }
 .rankBox { margin-top: 12px; border-top: 1px solid var(--line); padding-top: 8px; }
 .slot.weapon { margin-top: 8px; }
 .next .nwhy { font-weight: 400; font-size: 11px; color: var(--muted); }
+
+.wlabel { font-size: 11px; color: var(--gold); }
+.walt { font-size: 11px; color: var(--muted); margin: 4px 2px 0; }
+.gWeapon { font-size: 12px; color: var(--text); margin: 2px 0; }
+.slot.weapon { border: 1px solid var(--gold-deep); }

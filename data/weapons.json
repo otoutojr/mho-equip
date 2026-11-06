@@ -1,0 +1,10519 @@
+{
+ "updated": "2026-11-06",
+ "weapons": [
+  {
+   "name": "ジャグラスブレイド",
+   "type": "大剣",
+   "element": "水",
+   "baseRarity": 1,
+   "maxRarity": 6,
+   "stats": {
+    "1": {
+     "attack": 35,
+     "element": null,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 54,
+     "element": 27,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 78,
+     "element": 39,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 111,
+     "element": 55,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 154,
+     "element": 77,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 206,
+     "element": 103,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "ドスジャグラス"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/561697"
+  },
+  {
+   "name": "ブルームブレード",
+   "type": "大剣",
+   "element": "毒",
+   "baseRarity": 1,
+   "maxRarity": 6,
+   "stats": {
+    "1": {
+     "attack": 48,
+     "element": 24,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 74,
+     "element": 37,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 107,
+     "element": 54,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 153,
+     "element": 77,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 212,
+     "element": 106,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 284,
+     "element": 142,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "プケプケ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583916"
+  },
+  {
+   "name": "バスターソード",
+   "type": "大剣",
+   "element": "毒",
+   "baseRarity": 1,
+   "maxRarity": 4,
+   "stats": {
+    "1": {
+     "attack": 52,
+     "element": null,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 73,
+     "element": 37,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 105,
+     "element": 53,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 150,
+     "element": 75,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583917"
+  },
+  {
+   "name": "アカハネ冒険団大剣",
+   "type": "大剣",
+   "element": "無",
+   "baseRarity": 1,
+   "maxRarity": 14,
+   "stats": {
+    "1": {
+     "attack": 40,
+     "element": null,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 78,
+     "element": null,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 113,
+     "element": null,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 161,
+     "element": null,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 223,
+     "element": null,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 299,
+     "element": null,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 389,
+     "element": null,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 474,
+     "element": null,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 578,
+     "element": null,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 704,
+     "element": null,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 858,
+     "element": null,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 1045,
+     "element": null,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 1211,
+     "element": null,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 1404,
+     "element": null,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": true,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583919"
+  },
+  {
+   "name": "アカハネ冒険団大剣・水",
+   "type": "大剣",
+   "element": "水",
+   "baseRarity": 1,
+   "maxRarity": 14,
+   "stats": {
+    "1": {
+     "attack": 24,
+     "element": 17,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 52,
+     "element": 26,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 75,
+     "element": 38,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 107,
+     "element": 54,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 149,
+     "element": 74,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 199,
+     "element": 100,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 259,
+     "element": 130,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 316,
+     "element": 158,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 385,
+     "element": 193,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 469,
+     "element": 235,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 572,
+     "element": 286,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 697,
+     "element": 348,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 808,
+     "element": 404,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 936,
+     "element": 468,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": true,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583918"
+  },
+  {
+   "name": "アカハネ冒険団大剣・火",
+   "type": "大剣",
+   "element": "火",
+   "baseRarity": 1,
+   "maxRarity": 14,
+   "stats": {
+    "1": {
+     "attack": 24,
+     "element": 17,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 52,
+     "element": 26,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 75,
+     "element": 38,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 107,
+     "element": 54,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 149,
+     "element": 74,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 199,
+     "element": 100,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 259,
+     "element": 130,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 316,
+     "element": 158,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 385,
+     "element": 193,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 469,
+     "element": 235,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 572,
+     "element": 286,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 697,
+     "element": 348,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 808,
+     "element": 404,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 936,
+     "element": 468,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": true,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583920"
+  },
+  {
+   "name": "アカハネ冒険団大剣・氷",
+   "type": "大剣",
+   "element": "氷",
+   "baseRarity": 1,
+   "maxRarity": 14,
+   "stats": {
+    "1": {
+     "attack": 24,
+     "element": 17,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 52,
+     "element": 26,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 75,
+     "element": 38,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 107,
+     "element": 54,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 149,
+     "element": 74,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 199,
+     "element": 100,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 259,
+     "element": 130,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 316,
+     "element": 158,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 385,
+     "element": 193,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 469,
+     "element": 235,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 572,
+     "element": 286,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 697,
+     "element": 348,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 808,
+     "element": 404,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 936,
+     "element": 468,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": true,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583921"
+  },
+  {
+   "name": "アカハネ冒険団大剣・雷",
+   "type": "大剣",
+   "element": "雷",
+   "baseRarity": 1,
+   "maxRarity": 14,
+   "stats": {
+    "1": {
+     "attack": 24,
+     "element": 17,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 52,
+     "element": 26,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 75,
+     "element": 38,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 107,
+     "element": 54,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 149,
+     "element": 74,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 199,
+     "element": 100,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 259,
+     "element": 130,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 316,
+     "element": 158,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 385,
+     "element": 193,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 469,
+     "element": 235,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 572,
+     "element": 286,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 697,
+     "element": 348,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 808,
+     "element": 404,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 936,
+     "element": 468,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": true,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583922"
+  },
+  {
+   "name": "アカハネ冒険団大剣・龍",
+   "type": "大剣",
+   "element": "龍",
+   "baseRarity": 1,
+   "maxRarity": 14,
+   "stats": {
+    "1": {
+     "attack": 24,
+     "element": 17,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 52,
+     "element": 26,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 75,
+     "element": 38,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 107,
+     "element": 54,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 149,
+     "element": 74,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 199,
+     "element": 100,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 259,
+     "element": 130,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 316,
+     "element": 158,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 385,
+     "element": 193,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 469,
+     "element": 235,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 572,
+     "element": 286,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 697,
+     "element": 348,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 808,
+     "element": 404,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 936,
+     "element": 468,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": true,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583923"
+  },
+  {
+   "name": "ギルオスブレイド",
+   "type": "大剣",
+   "element": "麻痺",
+   "baseRarity": 2,
+   "maxRarity": 6,
+   "stats": {
+    "2": {
+     "attack": 64,
+     "element": 32,
+     "affinity": 3
+    },
+    "3": {
+     "attack": 93,
+     "element": 47,
+     "affinity": 4
+    },
+    "4": {
+     "attack": 133,
+     "element": 67,
+     "affinity": 4
+    },
+    "5": {
+     "attack": 184,
+     "element": 92,
+     "affinity": 4
+    },
+    "6": {
+     "attack": 247,
+     "element": 124,
+     "affinity": 5
+    }
+   },
+   "affinity": 5,
+   "monsters": [
+    "ドスギルオス"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583984"
+  },
+  {
+   "name": "ドラグロバスター",
+   "type": "大剣",
+   "element": "麻痺",
+   "baseRarity": 2,
+   "maxRarity": 6,
+   "stats": {
+    "2": {
+     "attack": 70,
+     "element": null,
+     "affinity": -5
+    },
+    "3": {
+     "attack": 101,
+     "element": 51,
+     "affinity": -5
+    },
+    "4": {
+     "attack": 145,
+     "element": 73,
+     "affinity": -5
+    },
+    "5": {
+     "attack": 200,
+     "element": 100,
+     "affinity": -4
+    },
+    "6": {
+     "attack": 269,
+     "element": 135,
+     "affinity": -4
+    }
+   },
+   "affinity": -4,
+   "monsters": [
+    "ボルボロス"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583985"
+  },
+  {
+   "name": "アクアスラッシャー",
+   "type": "大剣",
+   "element": "水",
+   "baseRarity": 2,
+   "maxRarity": 6,
+   "stats": {
+    "2": {
+     "attack": 54,
+     "element": 27,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 78,
+     "element": 39,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 111,
+     "element": 55,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 154,
+     "element": 77,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 206,
+     "element": 103,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "ジュラトドス"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583986"
+  },
+  {
+   "name": "ボーンブレイド",
+   "type": "大剣",
+   "element": "氷",
+   "baseRarity": 3,
+   "maxRarity": 5,
+   "stats": {
+    "3": {
+     "attack": 78,
+     "element": null,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 111,
+     "element": 55,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 154,
+     "element": 77,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583998"
+  },
+  {
+   "name": "フラムエルヘレヴ",
+   "type": "大剣",
+   "element": "火",
+   "baseRarity": 3,
+   "maxRarity": 7,
+   "stats": {
+    "3": {
+     "attack": 79,
+     "element": 40,
+     "affinity": -5
+    },
+    "4": {
+     "attack": 113,
+     "element": 57,
+     "affinity": -5
+    },
+    "5": {
+     "attack": 157,
+     "element": 79,
+     "affinity": -4
+    },
+    "6": {
+     "attack": 211,
+     "element": 105,
+     "affinity": -4
+    },
+    "7": {
+     "attack": 274,
+     "element": 137,
+     "affinity": -4
+    }
+   },
+   "affinity": -4,
+   "monsters": [
+    "アンジャナフ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583999"
+  },
+  {
+   "name": "龍骨大剣",
+   "type": "大剣",
+   "element": "龍",
+   "baseRarity": 4,
+   "maxRarity": 14,
+   "stats": {
+    "4": {
+     "attack": 111,
+     "element": 55,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 154,
+     "element": 77,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 206,
+     "element": 103,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 268,
+     "element": 134,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 327,
+     "element": 163,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 398,
+     "element": 199,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 485,
+     "element": 242,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 591,
+     "element": 295,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 720,
+     "element": 360,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 834,
+     "element": 417,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 967,
+     "element": 484,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584015"
+  },
+  {
+   "name": "融光種ジャグラスブレイド",
+   "type": "大剣",
+   "element": "水",
+   "baseRarity": 4,
+   "maxRarity": 6,
+   "stats": {
+    "4": {
+     "attack": 113,
+     "element": null,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 157,
+     "element": 78,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 210,
+     "element": 105,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "融光種ドスジャグラス"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584016"
+  },
+  {
+   "name": "融光種ブルームブレード",
+   "type": "大剣",
+   "element": "毒",
+   "baseRarity": 4,
+   "maxRarity": 6,
+   "stats": {
+    "4": {
+     "attack": 158,
+     "element": 79,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 219,
+     "element": 110,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 293,
+     "element": 147,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "融光種プケプケ"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584017"
+  },
+  {
+   "name": "サンダーブレイド",
+   "type": "大剣",
+   "element": "雷",
+   "baseRarity": 5,
+   "maxRarity": 6,
+   "stats": {
+    "5": {
+     "attack": 157,
+     "element": 78,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 210,
+     "element": 105,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "トビカガチ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584033"
+  },
+  {
+   "name": "融光種フラムエルヘレヴ",
+   "type": "大剣",
+   "element": "火",
+   "baseRarity": 5,
+   "maxRarity": 7,
+   "stats": {
+    "5": {
+     "attack": 157,
+     "element": 79,
+     "affinity": -4
+    },
+    "6": {
+     "attack": 211,
+     "element": 105,
+     "affinity": -4
+    },
+    "7": {
+     "attack": 274,
+     "element": 137,
+     "affinity": -4
+    }
+   },
+   "affinity": -4,
+   "monsters": [
+    "融光種アンジャナフ"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584034"
+  },
+  {
+   "name": "融光種ドラグロバスター",
+   "type": "大剣",
+   "element": "麻痺",
+   "baseRarity": 5,
+   "maxRarity": 7,
+   "stats": {
+    "5": {
+     "attack": 209,
+     "element": null,
+     "affinity": -9
+    },
+    "6": {
+     "attack": 280,
+     "element": 140,
+     "affinity": -8
+    },
+    "7": {
+     "attack": 365,
+     "element": 183,
+     "affinity": -8
+    }
+   },
+   "affinity": -8,
+   "monsters": [
+    "融光種ボルボロス"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584035"
+  },
+  {
+   "name": "黒鋼の大剣",
+   "type": "大剣",
+   "element": "龍",
+   "baseRarity": 6,
+   "maxRarity": 14,
+   "stats": {
+    "6": {
+     "attack": 201,
+     "element": 100,
+     "affinity": 4
+    },
+    "7": {
+     "attack": 261,
+     "element": 131,
+     "affinity": 4
+    },
+    "8": {
+     "attack": 318,
+     "element": 160,
+     "affinity": 6,
+     "est": true
+    },
+    "9": {
+     "attack": 388,
+     "element": 194,
+     "affinity": 6,
+     "est": true
+    },
+    "10": {
+     "attack": 473,
+     "element": 237,
+     "affinity": 6,
+     "est": true
+    },
+    "11": {
+     "attack": 576,
+     "element": 288,
+     "affinity": 6,
+     "est": true
+    },
+    "12": {
+     "attack": 702,
+     "element": 351,
+     "affinity": 5.4,
+     "src": "list"
+    },
+    "13": {
+     "attack": 814,
+     "element": 407,
+     "affinity": 6,
+     "est": true
+    },
+    "14": {
+     "attack": 944,
+     "element": 472,
+     "affinity": 6,
+     "src": "list"
+    }
+   },
+   "affinity": 6,
+   "monsters": [],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584055"
+  },
+  {
+   "name": "融光種アクアスラッシャー",
+   "type": "大剣",
+   "element": "水",
+   "baseRarity": 6,
+   "maxRarity": 7,
+   "stats": {
+    "6": {
+     "attack": 217,
+     "element": 109,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 282,
+     "element": 141,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "融光種ジュラトドス"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584056"
+  },
+  {
+   "name": "フレイムブレイド",
+   "type": "大剣",
+   "element": "火",
+   "baseRarity": 6,
+   "maxRarity": 7,
+   "stats": {
+    "6": {
+     "attack": 201,
+     "element": 100,
+     "affinity": 4
+    },
+    "7": {
+     "attack": 261,
+     "element": 131,
+     "affinity": 4
+    }
+   },
+   "affinity": 4,
+   "monsters": [
+    "リオレウス"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584057"
+  },
+  {
+   "name": "融光種マラドハディード",
+   "type": "大剣",
+   "element": "麻痺",
+   "baseRarity": 7,
+   "maxRarity": 7,
+   "stats": {
+    "7": {
+     "attack": 352,
+     "element": 176,
+     "affinity": 2
+    }
+   },
+   "affinity": 2,
+   "monsters": [
+    "融光種ドスギルオス"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/585733"
+  },
+  {
+   "name": "融光種ライトニングパニッシュ",
+   "type": "大剣",
+   "element": "雷",
+   "baseRarity": 7,
+   "maxRarity": 7,
+   "stats": {
+    "7": {
+     "attack": 282,
+     "element": 141,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "融光種トビカガチ"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/585734"
+  },
+  {
+   "name": "フラムエルヘレヴ改",
+   "type": "大剣",
+   "element": "火",
+   "baseRarity": 8,
+   "maxRarity": 8,
+   "stats": {
+    "8": {
+     "attack": 347,
+     "element": 173,
+     "affinity": -3.9
+    }
+   },
+   "affinity": -3.9,
+   "monsters": [
+    "アンジャナフ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": true,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586493"
+  },
+  {
+   "name": "融光種フラムエルヘレヴ改",
+   "type": "大剣",
+   "element": "火",
+   "baseRarity": 8,
+   "maxRarity": 8,
+   "stats": {
+    "8": {
+     "attack": 347,
+     "element": 173,
+     "affinity": -3.9
+    }
+   },
+   "affinity": -3.9,
+   "monsters": [
+    "融光種アンジャナフ"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": true,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586613"
+  },
+  {
+   "name": "融光種ボルボシュレッダー",
+   "type": "大剣",
+   "element": "麻痺",
+   "baseRarity": 8,
+   "maxRarity": 8,
+   "stats": {
+    "8": {
+     "attack": 462,
+     "element": 231,
+     "affinity": -7.8
+    }
+   },
+   "affinity": -7.8,
+   "monsters": [
+    "融光種ボルボロス"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": true,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586499"
+  },
+  {
+   "name": "融光種ウォーターゴーレム",
+   "type": "大剣",
+   "element": "水",
+   "baseRarity": 8,
+   "maxRarity": 8,
+   "stats": {
+    "8": {
+     "attack": 357,
+     "element": 179,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "融光種ジュラトドス"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": true,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586506"
+  },
+  {
+   "name": "レッドウィング",
+   "type": "大剣",
+   "element": "火",
+   "baseRarity": 8,
+   "maxRarity": 8,
+   "stats": {
+    "8": {
+     "attack": 331,
+     "element": 165,
+     "affinity": 4.2
+    }
+   },
+   "affinity": 4.2,
+   "monsters": [
+    "リオレウス"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": true,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586612"
+  },
+  {
+   "name": "ジャグラスハッカー",
+   "type": "大剣",
+   "element": "水",
+   "baseRarity": 9,
+   "maxRarity": 9,
+   "stats": {
+    "9": {
+     "attack": 420,
+     "element": 210,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "ドスジャグラス"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": true,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586847"
+  },
+  {
+   "name": "融光種ジャグラスハッカー",
+   "type": "大剣",
+   "element": "水",
+   "baseRarity": 9,
+   "maxRarity": 9,
+   "stats": {
+    "9": {
+     "attack": 429,
+     "element": 215,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "融光種ドスジャグラス"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": true,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586850"
+  },
+  {
+   "name": "鉄刀",
+   "type": "太刀",
+   "element": "水",
+   "baseRarity": 1,
+   "maxRarity": 4,
+   "stats": {
+    "1": {
+     "attack": 52,
+     "element": null,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 54,
+     "element": 27,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 78,
+     "element": 39,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 111,
+     "element": 55,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583924"
+  },
+  {
+   "name": "アルリーシャ",
+   "type": "太刀",
+   "element": "睡眠",
+   "baseRarity": 1,
+   "maxRarity": 6,
+   "stats": {
+    "1": {
+     "attack": 42,
+     "element": null,
+     "affinity": 3
+    },
+    "2": {
+     "attack": 64,
+     "element": 32,
+     "affinity": 3
+    },
+    "3": {
+     "attack": 93,
+     "element": 47,
+     "affinity": 4
+    },
+    "4": {
+     "attack": 133,
+     "element": 67,
+     "affinity": 4
+    },
+    "5": {
+     "attack": 184,
+     "element": 92,
+     "affinity": 4
+    },
+    "6": {
+     "attack": 247,
+     "element": 124,
+     "affinity": 5
+    }
+   },
+   "affinity": 5,
+   "monsters": [
+    "クルルヤック"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583925"
+  },
+  {
+   "name": "アカハネ冒険団太刀",
+   "type": "太刀",
+   "element": "無",
+   "baseRarity": 1,
+   "maxRarity": 14,
+   "stats": {
+    "1": {
+     "attack": 40,
+     "element": null,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 78,
+     "element": null,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 113,
+     "element": null,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 161,
+     "element": null,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 223,
+     "element": null,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 299,
+     "element": null,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 389,
+     "element": null,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 474,
+     "element": null,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 578,
+     "element": null,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 704,
+     "element": null,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 858,
+     "element": null,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 1045,
+     "element": null,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 1211,
+     "element": null,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 1404,
+     "element": null,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": true,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583926"
+  },
+  {
+   "name": "アカハネ冒険団太刀・水",
+   "type": "太刀",
+   "element": "水",
+   "baseRarity": 1,
+   "maxRarity": 14,
+   "stats": {
+    "1": {
+     "attack": 24,
+     "element": 17,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 52,
+     "element": 26,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 75,
+     "element": 38,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 107,
+     "element": 54,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 149,
+     "element": 74,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 199,
+     "element": 100,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 259,
+     "element": 130,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 316,
+     "element": 158,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 385,
+     "element": 193,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 469,
+     "element": 235,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 572,
+     "element": 286,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 697,
+     "element": 348,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 808,
+     "element": 404,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 936,
+     "element": 468,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": true,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583931"
+  },
+  {
+   "name": "アカハネ冒険団太刀・火",
+   "type": "太刀",
+   "element": "火",
+   "baseRarity": 1,
+   "maxRarity": 14,
+   "stats": {
+    "1": {
+     "attack": 24,
+     "element": 17,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 52,
+     "element": 26,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 75,
+     "element": 38,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 107,
+     "element": 54,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 149,
+     "element": 74,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 199,
+     "element": 100,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 259,
+     "element": 130,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 316,
+     "element": 158,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 385,
+     "element": 193,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 469,
+     "element": 235,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 572,
+     "element": 286,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 697,
+     "element": 348,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 808,
+     "element": 404,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 936,
+     "element": 468,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": true,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583930"
+  },
+  {
+   "name": "アカハネ冒険団太刀・氷",
+   "type": "太刀",
+   "element": "氷",
+   "baseRarity": 1,
+   "maxRarity": 14,
+   "stats": {
+    "1": {
+     "attack": 24,
+     "element": 17,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 52,
+     "element": 26,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 75,
+     "element": 38,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 107,
+     "element": 54,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 149,
+     "element": 74,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 199,
+     "element": 100,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 259,
+     "element": 130,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 316,
+     "element": 158,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 385,
+     "element": 193,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 469,
+     "element": 235,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 572,
+     "element": 286,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 697,
+     "element": 348,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 808,
+     "element": 404,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 936,
+     "element": 468,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": true,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583929"
+  },
+  {
+   "name": "アカハネ冒険団太刀・雷",
+   "type": "太刀",
+   "element": "雷",
+   "baseRarity": 1,
+   "maxRarity": 14,
+   "stats": {
+    "1": {
+     "attack": 24,
+     "element": 17,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 52,
+     "element": 26,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 75,
+     "element": 38,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 107,
+     "element": 54,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 149,
+     "element": 74,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 199,
+     "element": 100,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 259,
+     "element": 130,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 316,
+     "element": 158,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 385,
+     "element": 193,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 469,
+     "element": 235,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 572,
+     "element": 286,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 697,
+     "element": 348,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 808,
+     "element": 404,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 936,
+     "element": 468,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": true,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583928"
+  },
+  {
+   "name": "アカハネ冒険団太刀・龍",
+   "type": "太刀",
+   "element": "龍",
+   "baseRarity": 1,
+   "maxRarity": 14,
+   "stats": {
+    "1": {
+     "attack": 24,
+     "element": 17,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 52,
+     "element": 26,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 75,
+     "element": 38,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 107,
+     "element": 54,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 149,
+     "element": 74,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 199,
+     "element": 100,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 259,
+     "element": 130,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 316,
+     "element": 158,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 385,
+     "element": 193,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 469,
+     "element": 235,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 572,
+     "element": 286,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 697,
+     "element": 348,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 808,
+     "element": 404,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 936,
+     "element": 468,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": true,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583927"
+  },
+  {
+   "name": "シュラムショテル",
+   "type": "太刀",
+   "element": "水",
+   "baseRarity": 2,
+   "maxRarity": 6,
+   "stats": {
+    "2": {
+     "attack": 55,
+     "element": 27,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 79,
+     "element": 40,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 113,
+     "element": 57,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 157,
+     "element": 78,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 210,
+     "element": 105,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "ジュラトドス"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583987"
+  },
+  {
+   "name": "ボーンショテル",
+   "type": "太刀",
+   "element": "睡眠",
+   "baseRarity": 3,
+   "maxRarity": 5,
+   "stats": {
+    "3": {
+     "attack": 101,
+     "element": null,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 144,
+     "element": 72,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 200,
+     "element": 100,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584000"
+  },
+  {
+   "name": "ブレイズショテル",
+   "type": "太刀",
+   "element": "火",
+   "baseRarity": 3,
+   "maxRarity": 7,
+   "stats": {
+    "3": {
+     "attack": 79,
+     "element": 40,
+     "affinity": -5
+    },
+    "4": {
+     "attack": 113,
+     "element": 57,
+     "affinity": -5
+    },
+    "5": {
+     "attack": 157,
+     "element": 79,
+     "affinity": -4
+    },
+    "6": {
+     "attack": 211,
+     "element": 105,
+     "affinity": -4
+    },
+    "7": {
+     "attack": 274,
+     "element": 137,
+     "affinity": -4
+    }
+   },
+   "affinity": -4,
+   "monsters": [
+    "アンジャナフ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584001"
+  },
+  {
+   "name": "融光種飛竜刀【青葉】",
+   "type": "太刀",
+   "element": "毒",
+   "baseRarity": 3,
+   "maxRarity": 7,
+   "stats": {
+    "3": {
+     "attack": 98,
+     "element": 49,
+     "affinity": 4
+    },
+    "4": {
+     "attack": 140,
+     "element": 70,
+     "affinity": 4
+    },
+    "5": {
+     "attack": 195,
+     "element": 98,
+     "affinity": 4
+    },
+    "6": {
+     "attack": 261,
+     "element": 131,
+     "affinity": 5
+    },
+    "7": {
+     "attack": 339,
+     "element": 170,
+     "affinity": 5
+    }
+   },
+   "affinity": 5,
+   "monsters": [
+    "融光種リオレイア"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584002"
+  },
+  {
+   "name": "ダークショテル",
+   "type": "太刀",
+   "element": "麻痺",
+   "baseRarity": 4,
+   "maxRarity": 7,
+   "stats": {
+    "4": {
+     "attack": 149,
+     "element": null,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 206,
+     "element": 103,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 277,
+     "element": 139,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 360,
+     "element": 180,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "カンタロス"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584018"
+  },
+  {
+   "name": "龍骨刀",
+   "type": "太刀",
+   "element": "龍",
+   "baseRarity": 4,
+   "maxRarity": 14,
+   "stats": {
+    "4": {
+     "attack": 113,
+     "element": 57,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 157,
+     "element": 78,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 210,
+     "element": 105,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 274,
+     "element": 137,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 334,
+     "element": 167,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 407,
+     "element": 203,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 495,
+     "element": 248,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 603,
+     "element": 302,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 735,
+     "element": 368,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 852,
+     "element": 426,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 988,
+     "element": 494,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584019"
+  },
+  {
+   "name": "パルサーショテル",
+   "type": "太刀",
+   "element": "雷",
+   "baseRarity": 5,
+   "maxRarity": 6,
+   "stats": {
+    "5": {
+     "attack": 144,
+     "element": 72,
+     "affinity": 4
+    },
+    "6": {
+     "attack": 193,
+     "element": 97,
+     "affinity": 5
+    }
+   },
+   "affinity": 5,
+   "monsters": [
+    "トビカガチ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584036"
+  },
+  {
+   "name": "融光種ブレイズショテル",
+   "type": "太刀",
+   "element": "火",
+   "baseRarity": 5,
+   "maxRarity": 7,
+   "stats": {
+    "5": {
+     "attack": 157,
+     "element": 79,
+     "affinity": -4
+    },
+    "6": {
+     "attack": 211,
+     "element": 105,
+     "affinity": -4
+    },
+    "7": {
+     "attack": 274,
+     "element": 137,
+     "affinity": -4
+    }
+   },
+   "affinity": -4,
+   "monsters": [
+    "融光種アンジャナフ"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584037"
+  },
+  {
+   "name": "融光種アルリーシャ",
+   "type": "太刀",
+   "element": "睡眠",
+   "baseRarity": 5,
+   "maxRarity": 6,
+   "stats": {
+    "5": {
+     "attack": 202,
+     "element": null,
+     "affinity": 2
+    },
+    "6": {
+     "attack": 271,
+     "element": 136,
+     "affinity": 2
+    }
+   },
+   "affinity": 2,
+   "monsters": [
+    "融光種クルルヤック"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584038"
+  },
+  {
+   "name": "黒鋼の太刀",
+   "type": "太刀",
+   "element": "龍",
+   "baseRarity": 6,
+   "maxRarity": 14,
+   "stats": {
+    "6": {
+     "attack": 217,
+     "element": 109,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 282,
+     "element": 141,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 344,
+     "element": 172,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 419,
+     "element": 209,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 511,
+     "element": 255,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 623,
+     "element": 311,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 759,
+     "element": 379,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 879,
+     "element": 440,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 1019,
+     "element": 510,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584058"
+  },
+  {
+   "name": "融光種シュラムショテル",
+   "type": "太刀",
+   "element": "水",
+   "baseRarity": 6,
+   "maxRarity": 7,
+   "stats": {
+    "6": {
+     "attack": 217,
+     "element": 109,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 282,
+     "element": 141,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "融光種ジュラトドス"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584059"
+  },
+  {
+   "name": "飛竜刀【青葉】",
+   "type": "太刀",
+   "element": "毒",
+   "baseRarity": 6,
+   "maxRarity": 7,
+   "stats": {
+    "6": {
+     "attack": 261,
+     "element": 131,
+     "affinity": 5
+    },
+    "7": {
+     "attack": 339,
+     "element": 170,
+     "affinity": 5
+    }
+   },
+   "affinity": 5,
+   "monsters": [
+    "リオレイア"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584060"
+  },
+  {
+   "name": "飛竜刀【紅葉】",
+   "type": "太刀",
+   "element": "火",
+   "baseRarity": 6,
+   "maxRarity": 7,
+   "stats": {
+    "6": {
+     "attack": 201,
+     "element": 100,
+     "affinity": 4
+    },
+    "7": {
+     "attack": 261,
+     "element": 131,
+     "affinity": 4
+    }
+   },
+   "affinity": 4,
+   "monsters": [
+    "リオレウス"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584061"
+  },
+  {
+   "name": "ジャナフシミター",
+   "type": "太刀",
+   "element": "火",
+   "baseRarity": 8,
+   "maxRarity": 8,
+   "stats": {
+    "8": {
+     "attack": 347,
+     "element": 173,
+     "affinity": -3.9
+    }
+   },
+   "affinity": -3.9,
+   "monsters": [
+    "アンジャナフ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": true,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586541"
+  },
+  {
+   "name": "融光種飛竜刀【翠】",
+   "type": "太刀",
+   "element": "毒",
+   "baseRarity": 8,
+   "maxRarity": 8,
+   "stats": {
+    "8": {
+     "attack": 430,
+     "element": 215,
+     "affinity": 5.6
+    }
+   },
+   "affinity": 5.6,
+   "monsters": [
+    "融光種リオレイア"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": true,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586615"
+  },
+  {
+   "name": "融光種ジャナフシミター",
+   "type": "太刀",
+   "element": "火",
+   "baseRarity": 8,
+   "maxRarity": 8,
+   "stats": {
+    "8": {
+     "attack": 347,
+     "element": 173,
+     "affinity": -3.9
+    }
+   },
+   "affinity": -3.9,
+   "monsters": [
+    "融光種アンジャナフ"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": true,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586614"
+  },
+  {
+   "name": "融光種ディプテルス",
+   "type": "太刀",
+   "element": "水",
+   "baseRarity": 8,
+   "maxRarity": 8,
+   "stats": {
+    "8": {
+     "attack": 357,
+     "element": 179,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "融光種ジュラトドス"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": true,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586505"
+  },
+  {
+   "name": "飛竜刀【朱】",
+   "type": "太刀",
+   "element": "火",
+   "baseRarity": 8,
+   "maxRarity": 9,
+   "stats": {
+    "8": {
+     "attack": 331,
+     "element": 165,
+     "affinity": 4.2
+    },
+    "9": {
+     "attack": 410,
+     "element": 205,
+     "affinity": 5,
+     "src": "list"
+    }
+   },
+   "affinity": 5,
+   "monsters": [
+    "リオレウス"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": true,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586616"
+  },
+  {
+   "name": "眩刀【揺】",
+   "type": "太刀",
+   "element": "無",
+   "baseRarity": 8,
+   "maxRarity": 8,
+   "stats": {
+    "8": {
+     "attack": 346,
+     "element": null,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "ツィツィヤック"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": true,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586491"
+  },
+  {
+   "name": "グレイスショテル",
+   "type": "太刀",
+   "element": "氷",
+   "baseRarity": 8,
+   "maxRarity": 8,
+   "stats": {
+    "8": {
+     "attack": 346,
+     "element": 173,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "レイギエナ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586605"
+  },
+  {
+   "name": "ビークダガー",
+   "type": "双剣",
+   "element": "睡眠",
+   "baseRarity": 1,
+   "maxRarity": 6,
+   "stats": {
+    "1": {
+     "attack": 43,
+     "element": null,
+     "affinity": 2
+    },
+    "2": {
+     "attack": 67,
+     "element": 34,
+     "affinity": 2
+    },
+    "3": {
+     "attack": 96,
+     "element": 48,
+     "affinity": 3
+    },
+    "4": {
+     "attack": 138,
+     "element": 69,
+     "affinity": 3
+    },
+    "5": {
+     "attack": 191,
+     "element": 96,
+     "affinity": 3
+    },
+    "6": {
+     "attack": 256,
+     "element": 128,
+     "affinity": 4
+    }
+   },
+   "affinity": 4,
+   "monsters": [
+    "クルルヤック"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583932"
+  },
+  {
+   "name": "双剣",
+   "type": "双剣",
+   "element": "毒",
+   "baseRarity": 1,
+   "maxRarity": 4,
+   "stats": {
+    "1": {
+     "attack": 52,
+     "element": null,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 73,
+     "element": 37,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 105,
+     "element": 53,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 150,
+     "element": 75,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583933"
+  },
+  {
+   "name": "アカハネ冒険団双剣",
+   "type": "双剣",
+   "element": "無",
+   "baseRarity": 1,
+   "maxRarity": 14,
+   "stats": {
+    "1": {
+     "attack": 40,
+     "element": null,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 78,
+     "element": null,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 113,
+     "element": null,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 161,
+     "element": null,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 223,
+     "element": null,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 299,
+     "element": null,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 389,
+     "element": null,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 474,
+     "element": null,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 578,
+     "element": null,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 704,
+     "element": null,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 858,
+     "element": null,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 1045,
+     "element": null,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 1211,
+     "element": null,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 1404,
+     "element": null,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": true,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583934"
+  },
+  {
+   "name": "アカハネ冒険団双剣・水",
+   "type": "双剣",
+   "element": "水",
+   "baseRarity": 1,
+   "maxRarity": 14,
+   "stats": {
+    "1": {
+     "attack": 24,
+     "element": 17,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 52,
+     "element": 26,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 75,
+     "element": 38,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 107,
+     "element": 54,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 149,
+     "element": 74,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 199,
+     "element": 100,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 259,
+     "element": 130,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 316,
+     "element": 158,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 385,
+     "element": 193,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 469,
+     "element": 235,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 572,
+     "element": 286,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 697,
+     "element": 348,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 808,
+     "element": 404,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 936,
+     "element": 468,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": true,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583935"
+  },
+  {
+   "name": "アカハネ冒険団双剣・火",
+   "type": "双剣",
+   "element": "火",
+   "baseRarity": 1,
+   "maxRarity": 14,
+   "stats": {
+    "1": {
+     "attack": 24,
+     "element": 17,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 52,
+     "element": 26,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 75,
+     "element": 38,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 107,
+     "element": 54,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 149,
+     "element": 74,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 199,
+     "element": 100,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 259,
+     "element": 130,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 316,
+     "element": 158,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 385,
+     "element": 193,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 469,
+     "element": 235,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 572,
+     "element": 286,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 697,
+     "element": 348,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 808,
+     "element": 404,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 936,
+     "element": 468,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": true,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583936"
+  },
+  {
+   "name": "アカハネ冒険団双剣・氷",
+   "type": "双剣",
+   "element": "氷",
+   "baseRarity": 1,
+   "maxRarity": 14,
+   "stats": {
+    "1": {
+     "attack": 24,
+     "element": 17,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 52,
+     "element": 26,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 75,
+     "element": 38,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 107,
+     "element": 54,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 149,
+     "element": 74,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 199,
+     "element": 100,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 259,
+     "element": 130,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 316,
+     "element": 158,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 385,
+     "element": 193,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 469,
+     "element": 235,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 572,
+     "element": 286,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 697,
+     "element": 348,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 808,
+     "element": 404,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 936,
+     "element": 468,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": true,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583937"
+  },
+  {
+   "name": "アカハネ冒険団双剣・雷",
+   "type": "双剣",
+   "element": "雷",
+   "baseRarity": 1,
+   "maxRarity": 14,
+   "stats": {
+    "1": {
+     "attack": 24,
+     "element": 17,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 52,
+     "element": 26,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 75,
+     "element": 38,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 107,
+     "element": 54,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 149,
+     "element": 74,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 199,
+     "element": 100,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 259,
+     "element": 130,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 316,
+     "element": 158,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 385,
+     "element": 193,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 469,
+     "element": 235,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 572,
+     "element": 286,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 697,
+     "element": 348,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 808,
+     "element": 404,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 936,
+     "element": 468,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": true,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583938"
+  },
+  {
+   "name": "アカハネ冒険団双剣・龍",
+   "type": "双剣",
+   "element": "龍",
+   "baseRarity": 1,
+   "maxRarity": 14,
+   "stats": {
+    "1": {
+     "attack": 24,
+     "element": 17,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 52,
+     "element": 26,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 75,
+     "element": 38,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 107,
+     "element": 54,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 149,
+     "element": 74,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 199,
+     "element": 100,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 259,
+     "element": 130,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 316,
+     "element": 158,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 385,
+     "element": 193,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 469,
+     "element": 235,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 572,
+     "element": 286,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 697,
+     "element": 348,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 808,
+     "element": 404,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 936,
+     "element": 468,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": true,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583939"
+  },
+  {
+   "name": "マッドバンガー",
+   "type": "双剣",
+   "element": "水",
+   "baseRarity": 2,
+   "maxRarity": 6,
+   "stats": {
+    "2": {
+     "attack": 54,
+     "element": 27,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 78,
+     "element": 39,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 111,
+     "element": 55,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 154,
+     "element": 77,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 206,
+     "element": 103,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "ジュラトドス"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583988"
+  },
+  {
+   "name": "ボーンハチェット",
+   "type": "双剣",
+   "element": "爆破",
+   "baseRarity": 3,
+   "maxRarity": 5,
+   "stats": {
+    "3": {
+     "attack": 113,
+     "element": null,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 161,
+     "element": 81,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 224,
+     "element": 112,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584003"
+  },
+  {
+   "name": "ブレイズハチェット",
+   "type": "双剣",
+   "element": "火",
+   "baseRarity": 3,
+   "maxRarity": 7,
+   "stats": {
+    "3": {
+     "attack": 79,
+     "element": 40,
+     "affinity": -5
+    },
+    "4": {
+     "attack": 113,
+     "element": 57,
+     "affinity": -5
+    },
+    "5": {
+     "attack": 157,
+     "element": 79,
+     "affinity": -4
+    },
+    "6": {
+     "attack": 211,
+     "element": 105,
+     "affinity": -4
+    },
+    "7": {
+     "attack": 274,
+     "element": 137,
+     "affinity": -4
+    }
+   },
+   "affinity": -4,
+   "monsters": [
+    "アンジャナフ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584004"
+  },
+  {
+   "name": "タロスバンガー",
+   "type": "双剣",
+   "element": "麻痺",
+   "baseRarity": 4,
+   "maxRarity": 7,
+   "stats": {
+    "4": {
+     "attack": 149,
+     "element": null,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 206,
+     "element": 103,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 277,
+     "element": 139,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 360,
+     "element": 180,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "カンタロス"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584020"
+  },
+  {
+   "name": "龍骨双刃",
+   "type": "双剣",
+   "element": "龍",
+   "baseRarity": 4,
+   "maxRarity": 14,
+   "stats": {
+    "4": {
+     "attack": 111,
+     "element": 55,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 154,
+     "element": 77,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 206,
+     "element": 103,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 268,
+     "element": 134,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 327,
+     "element": 163,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 398,
+     "element": 199,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 485,
+     "element": 242,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 591,
+     "element": 295,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 720,
+     "element": 360,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 834,
+     "element": 417,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 967,
+     "element": 484,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584021"
+  },
+  {
+   "name": "パルサーハチェット",
+   "type": "双剣",
+   "element": "雷",
+   "baseRarity": 5,
+   "maxRarity": 6,
+   "stats": {
+    "5": {
+     "attack": 144,
+     "element": 72,
+     "affinity": 4
+    },
+    "6": {
+     "attack": 193,
+     "element": 97,
+     "affinity": 5
+    }
+   },
+   "affinity": 5,
+   "monsters": [
+    "トビカガチ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584039"
+  },
+  {
+   "name": "融光種ブレイズハチェット",
+   "type": "双剣",
+   "element": "火",
+   "baseRarity": 5,
+   "maxRarity": 7,
+   "stats": {
+    "5": {
+     "attack": 157,
+     "element": 79,
+     "affinity": -4
+    },
+    "6": {
+     "attack": 211,
+     "element": 105,
+     "affinity": -4
+    },
+    "7": {
+     "attack": 274,
+     "element": 137,
+     "affinity": -4
+    }
+   },
+   "affinity": -4,
+   "monsters": [
+    "融光種アンジャナフ"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584040"
+  },
+  {
+   "name": "融光種ビークダガー",
+   "type": "双剣",
+   "element": "睡眠",
+   "baseRarity": 5,
+   "maxRarity": 6,
+   "stats": {
+    "5": {
+     "attack": 202,
+     "element": null,
+     "affinity": 2
+    },
+    "6": {
+     "attack": 271,
+     "element": 136,
+     "affinity": 2
+    }
+   },
+   "affinity": 2,
+   "monsters": [
+    "融光種クルルヤック"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584041"
+  },
+  {
+   "name": "黒鋼の双剣",
+   "type": "双剣",
+   "element": "龍",
+   "baseRarity": 6,
+   "maxRarity": 14,
+   "stats": {
+    "6": {
+     "attack": 206,
+     "element": 103,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 268,
+     "element": 134,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 327,
+     "element": 163,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 398,
+     "element": 199,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 485,
+     "element": 242,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 591,
+     "element": 295,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 720,
+     "element": 360,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 834,
+     "element": 417,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 967,
+     "element": 484,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584062"
+  },
+  {
+   "name": "融光種マッドバンガー",
+   "type": "双剣",
+   "element": "水",
+   "baseRarity": 6,
+   "maxRarity": 7,
+   "stats": {
+    "6": {
+     "attack": 210,
+     "element": 105,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 274,
+     "element": 137,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "融光種ジュラトドス"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584063"
+  },
+  {
+   "name": "融光種カガチノツメ",
+   "type": "双剣",
+   "element": "雷",
+   "baseRarity": 7,
+   "maxRarity": 7,
+   "stats": {
+    "7": {
+     "attack": 251,
+     "element": 126,
+     "affinity": 5
+    }
+   },
+   "affinity": 5,
+   "monsters": [
+    "融光種トビカガチ"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/585735"
+  },
+  {
+   "name": "ジャナフサイクロン",
+   "type": "双剣",
+   "element": "火",
+   "baseRarity": 8,
+   "maxRarity": 8,
+   "stats": {
+    "8": {
+     "attack": 347,
+     "element": 173,
+     "affinity": -3.9
+    }
+   },
+   "affinity": -3.9,
+   "monsters": [
+    "アンジャナフ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": true,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586494"
+  },
+  {
+   "name": "融光種ジャナフサイクロン",
+   "type": "双剣",
+   "element": "火",
+   "baseRarity": 8,
+   "maxRarity": 8,
+   "stats": {
+    "8": {
+     "attack": 347,
+     "element": 173,
+     "affinity": -3.9
+    }
+   },
+   "affinity": -3.9,
+   "monsters": [
+    "融光種アンジャナフ"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": true,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586617"
+  },
+  {
+   "name": "融光種シュラムハチェット",
+   "type": "双剣",
+   "element": "水",
+   "baseRarity": 8,
+   "maxRarity": 8,
+   "stats": {
+    "8": {
+     "attack": 346,
+     "element": 173,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "融光種ジュラトドス"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": true,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586504"
+  },
+  {
+   "name": "イルミナルダガー",
+   "type": "双剣",
+   "element": "無",
+   "baseRarity": 8,
+   "maxRarity": 8,
+   "stats": {
+    "8": {
+     "attack": 346,
+     "element": null,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "ツィツィヤック"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586490"
+  },
+  {
+   "name": "フリーズダガー",
+   "type": "双剣",
+   "element": "氷",
+   "baseRarity": 8,
+   "maxRarity": 8,
+   "stats": {
+    "8": {
+     "attack": 339,
+     "element": 170,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "レイギエナ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586606"
+  },
+  {
+   "name": "クルルランス",
+   "type": "ランス",
+   "element": "睡眠",
+   "baseRarity": 1,
+   "maxRarity": 6,
+   "stats": {
+    "1": {
+     "attack": 43,
+     "element": null,
+     "affinity": 2
+    },
+    "2": {
+     "attack": 67,
+     "element": 34,
+     "affinity": 2
+    },
+    "3": {
+     "attack": 96,
+     "element": 48,
+     "affinity": 3
+    },
+    "4": {
+     "attack": 138,
+     "element": 69,
+     "affinity": 3
+    },
+    "5": {
+     "attack": 191,
+     "element": 96,
+     "affinity": 3
+    },
+    "6": {
+     "attack": 256,
+     "element": 128,
+     "affinity": 4
+    }
+   },
+   "affinity": 4,
+   "monsters": [
+    "クルルヤック"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583940"
+  },
+  {
+   "name": "ブルームランス",
+   "type": "ランス",
+   "element": "毒",
+   "baseRarity": 1,
+   "maxRarity": 6,
+   "stats": {
+    "1": {
+     "attack": 48,
+     "element": 24,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 74,
+     "element": 37,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 107,
+     "element": 54,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 153,
+     "element": 77,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 212,
+     "element": 106,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 284,
+     "element": 142,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "プケプケ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583941"
+  },
+  {
+   "name": "アイアンランス",
+   "type": "ランス",
+   "element": "麻痺",
+   "baseRarity": 1,
+   "maxRarity": 4,
+   "stats": {
+    "1": {
+     "attack": 52,
+     "element": null,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 69,
+     "element": 35,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 99,
+     "element": 50,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 141,
+     "element": 71,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583942"
+  },
+  {
+   "name": "アカハネ冒険団ランス",
+   "type": "ランス",
+   "element": "無",
+   "baseRarity": 1,
+   "maxRarity": 14,
+   "stats": {
+    "1": {
+     "attack": 40,
+     "element": null,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 78,
+     "element": null,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 113,
+     "element": null,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 161,
+     "element": null,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 223,
+     "element": null,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 299,
+     "element": null,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 389,
+     "element": null,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 474,
+     "element": null,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 578,
+     "element": null,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 704,
+     "element": null,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 858,
+     "element": null,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 1045,
+     "element": null,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 1211,
+     "element": null,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 1404,
+     "element": null,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": true,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583943"
+  },
+  {
+   "name": "アカハネ冒険団ランス・水",
+   "type": "ランス",
+   "element": "水",
+   "baseRarity": 1,
+   "maxRarity": 14,
+   "stats": {
+    "1": {
+     "attack": 24,
+     "element": 17,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 52,
+     "element": 26,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 75,
+     "element": 38,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 107,
+     "element": 54,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 149,
+     "element": 74,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 199,
+     "element": 100,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 259,
+     "element": 130,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 316,
+     "element": 158,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 385,
+     "element": 193,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 469,
+     "element": 235,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 572,
+     "element": 286,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 697,
+     "element": 348,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 808,
+     "element": 404,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 936,
+     "element": 468,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": true,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583944"
+  },
+  {
+   "name": "アカハネ冒険団ランス・火",
+   "type": "ランス",
+   "element": "火",
+   "baseRarity": 1,
+   "maxRarity": 14,
+   "stats": {
+    "1": {
+     "attack": 24,
+     "element": 17,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 52,
+     "element": 26,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 75,
+     "element": 38,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 107,
+     "element": 54,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 149,
+     "element": 74,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 199,
+     "element": 100,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 259,
+     "element": 130,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 316,
+     "element": 158,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 385,
+     "element": 193,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 469,
+     "element": 235,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 572,
+     "element": 286,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 697,
+     "element": 348,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 808,
+     "element": 404,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 936,
+     "element": 468,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": true,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583945"
+  },
+  {
+   "name": "アカハネ冒険団ランス・氷",
+   "type": "ランス",
+   "element": "氷",
+   "baseRarity": 1,
+   "maxRarity": 14,
+   "stats": {
+    "1": {
+     "attack": 24,
+     "element": 17,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 52,
+     "element": 26,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 75,
+     "element": 38,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 107,
+     "element": 54,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 149,
+     "element": 74,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 199,
+     "element": 100,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 259,
+     "element": 130,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 316,
+     "element": 158,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 385,
+     "element": 193,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 469,
+     "element": 235,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 572,
+     "element": 286,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 697,
+     "element": 348,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 808,
+     "element": 404,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 936,
+     "element": 468,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": true,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583946"
+  },
+  {
+   "name": "アカハネ冒険団ランス・雷",
+   "type": "ランス",
+   "element": "雷",
+   "baseRarity": 1,
+   "maxRarity": 14,
+   "stats": {
+    "1": {
+     "attack": 24,
+     "element": 17,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 52,
+     "element": 26,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 75,
+     "element": 38,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 107,
+     "element": 54,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 149,
+     "element": 74,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 199,
+     "element": 100,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 259,
+     "element": 130,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 316,
+     "element": 158,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 385,
+     "element": 193,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 469,
+     "element": 235,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 572,
+     "element": 286,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 697,
+     "element": 348,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 808,
+     "element": 404,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 936,
+     "element": 468,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": true,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583947"
+  },
+  {
+   "name": "アカハネ冒険団ランス・龍",
+   "type": "ランス",
+   "element": "龍",
+   "baseRarity": 1,
+   "maxRarity": 14,
+   "stats": {
+    "1": {
+     "attack": 24,
+     "element": 17,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 52,
+     "element": 26,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 75,
+     "element": 38,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 107,
+     "element": 54,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 149,
+     "element": 74,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 199,
+     "element": 100,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 259,
+     "element": 130,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 316,
+     "element": 158,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 385,
+     "element": 193,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 469,
+     "element": 235,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 572,
+     "element": 286,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 697,
+     "element": 348,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 808,
+     "element": 404,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 936,
+     "element": 468,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": true,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583948"
+  },
+  {
+   "name": "ドラグロランス",
+   "type": "ランス",
+   "element": "麻痺",
+   "baseRarity": 2,
+   "maxRarity": 6,
+   "stats": {
+    "2": {
+     "attack": 73,
+     "element": null,
+     "affinity": -10
+    },
+    "3": {
+     "attack": 106,
+     "element": 53,
+     "affinity": -9
+    },
+    "4": {
+     "attack": 151,
+     "element": 76,
+     "affinity": -9
+    },
+    "5": {
+     "attack": 209,
+     "element": 105,
+     "affinity": -9
+    },
+    "6": {
+     "attack": 280,
+     "element": 140,
+     "affinity": -8
+    }
+   },
+   "affinity": -8,
+   "monsters": [
+    "ボルボロス"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583989"
+  },
+  {
+   "name": "アクアホーン",
+   "type": "ランス",
+   "element": "水",
+   "baseRarity": 2,
+   "maxRarity": 6,
+   "stats": {
+    "2": {
+     "attack": 55,
+     "element": 27,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 79,
+     "element": 40,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 113,
+     "element": 57,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 157,
+     "element": 78,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 210,
+     "element": 105,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "ジュラトドス"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583990"
+  },
+  {
+   "name": "ボーンランス",
+   "type": "ランス",
+   "element": "毒",
+   "baseRarity": 3,
+   "maxRarity": 5,
+   "stats": {
+    "3": {
+     "attack": 105,
+     "element": null,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 150,
+     "element": 75,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 207,
+     "element": 104,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584005"
+  },
+  {
+   "name": "タロスランス",
+   "type": "ランス",
+   "element": "爆破",
+   "baseRarity": 4,
+   "maxRarity": 7,
+   "stats": {
+    "4": {
+     "attack": 166,
+     "element": null,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 231,
+     "element": 116,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 309,
+     "element": 155,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 402,
+     "element": 201,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "カンタロス"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584022"
+  },
+  {
+   "name": "龍骨槍",
+   "type": "ランス",
+   "element": "龍",
+   "baseRarity": 4,
+   "maxRarity": 14,
+   "stats": {
+    "4": {
+     "attack": 111,
+     "element": 55,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 154,
+     "element": 77,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 206,
+     "element": 103,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 268,
+     "element": 134,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 327,
+     "element": 163,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 398,
+     "element": 199,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 485,
+     "element": 242,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 591,
+     "element": 295,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 720,
+     "element": 360,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 834,
+     "element": 417,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 967,
+     "element": 484,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584023"
+  },
+  {
+   "name": "融光種ブルームランス",
+   "type": "ランス",
+   "element": "毒",
+   "baseRarity": 4,
+   "maxRarity": 6,
+   "stats": {
+    "4": {
+     "attack": 158,
+     "element": 79,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 219,
+     "element": 110,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 293,
+     "element": 147,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "融光種プケプケ"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584024"
+  },
+  {
+   "name": "サンダーランス",
+   "type": "ランス",
+   "element": "雷",
+   "baseRarity": 5,
+   "maxRarity": 6,
+   "stats": {
+    "5": {
+     "attack": 157,
+     "element": 78,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 210,
+     "element": 105,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "トビカガチ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584042"
+  },
+  {
+   "name": "融光種クルルランス",
+   "type": "ランス",
+   "element": "睡眠",
+   "baseRarity": 5,
+   "maxRarity": 6,
+   "stats": {
+    "5": {
+     "attack": 202,
+     "element": null,
+     "affinity": 2
+    },
+    "6": {
+     "attack": 271,
+     "element": 136,
+     "affinity": 2
+    }
+   },
+   "affinity": 2,
+   "monsters": [
+    "融光種クルルヤック"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584043"
+  },
+  {
+   "name": "融光種ドラグロランス",
+   "type": "ランス",
+   "element": "麻痺",
+   "baseRarity": 5,
+   "maxRarity": 7,
+   "stats": {
+    "5": {
+     "attack": 218,
+     "element": null,
+     "affinity": -12
+    },
+    "6": {
+     "attack": 293,
+     "element": 147,
+     "affinity": -11
+    },
+    "7": {
+     "attack": 381,
+     "element": 191,
+     "affinity": -11
+    }
+   },
+   "affinity": -11,
+   "monsters": [
+    "融光種ボルボロス"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584044"
+  },
+  {
+   "name": "黒鋼の槍",
+   "type": "ランス",
+   "element": "龍",
+   "baseRarity": 6,
+   "maxRarity": 14,
+   "stats": {
+    "6": {
+     "attack": 210,
+     "element": 105,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 274,
+     "element": 137,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 334,
+     "element": 167,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 407,
+     "element": 203,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 495,
+     "element": 248,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 603,
+     "element": 302,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 735,
+     "element": 368,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 852,
+     "element": 426,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 988,
+     "element": 494,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584064"
+  },
+  {
+   "name": "融光種アクアホーン",
+   "type": "ランス",
+   "element": "水",
+   "baseRarity": 6,
+   "maxRarity": 7,
+   "stats": {
+    "6": {
+     "attack": 217,
+     "element": 109,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 282,
+     "element": 141,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "融光種ジュラトドス"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584065"
+  },
+  {
+   "name": "フレイムランス",
+   "type": "ランス",
+   "element": "火",
+   "baseRarity": 6,
+   "maxRarity": 7,
+   "stats": {
+    "6": {
+     "attack": 193,
+     "element": 97,
+     "affinity": 5
+    },
+    "7": {
+     "attack": 251,
+     "element": 126,
+     "affinity": 5
+    }
+   },
+   "affinity": 5,
+   "monsters": [
+    "リオレウス"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584066"
+  },
+  {
+   "name": "融光種ライトニングパイル",
+   "type": "ランス",
+   "element": "雷",
+   "baseRarity": 7,
+   "maxRarity": 7,
+   "stats": {
+    "7": {
+     "attack": 282,
+     "element": 141,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "融光種トビカガチ"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/585736"
+  },
+  {
+   "name": "融光種ボロススティンガー",
+   "type": "ランス",
+   "element": "麻痺",
+   "baseRarity": 8,
+   "maxRarity": 8,
+   "stats": {
+    "8": {
+     "attack": 482,
+     "element": 241,
+     "affinity": -10.4
+    }
+   },
+   "affinity": -10.4,
+   "monsters": [
+    "融光種ボルボロス"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": true,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586497"
+  },
+  {
+   "name": "融光種ウォータースパイク",
+   "type": "ランス",
+   "element": "水",
+   "baseRarity": 8,
+   "maxRarity": 8,
+   "stats": {
+    "8": {
+     "attack": 357,
+     "element": 179,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "融光種ジュラトドス"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": true,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586502"
+  },
+  {
+   "name": "レッドテイル",
+   "type": "ランス",
+   "element": "火",
+   "baseRarity": 8,
+   "maxRarity": 8,
+   "stats": {
+    "8": {
+     "attack": 318,
+     "element": 159,
+     "affinity": 5.6
+    }
+   },
+   "affinity": 5.6,
+   "monsters": [
+    "リオレウス"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": true,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586619"
+  },
+  {
+   "name": "グレイスランサー",
+   "type": "ランス",
+   "element": "氷",
+   "baseRarity": 8,
+   "maxRarity": 8,
+   "stats": {
+    "8": {
+     "attack": 346,
+     "element": 173,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "レイギエナ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586607"
+  },
+  {
+   "name": "クルルハスター",
+   "type": "ランス",
+   "element": "睡眠",
+   "baseRarity": 9,
+   "maxRarity": 9,
+   "stats": {
+    "9": {
+     "attack": 552,
+     "element": 276,
+     "affinity": 2.2
+    }
+   },
+   "affinity": 2.2,
+   "monsters": [
+    "融光種クルルヤック"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": true,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586852"
+  },
+  {
+   "name": "ライトニングバッシュ",
+   "type": "ハンマー",
+   "element": "雷",
+   "baseRarity": 9,
+   "maxRarity": 9,
+   "stats": {
+    "9": {
+     "attack": 429,
+     "element": 215,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": null
+  },
+  {
+   "name": "クルルビーク",
+   "type": "ハンマー",
+   "element": "睡眠",
+   "baseRarity": 1,
+   "maxRarity": 6,
+   "stats": {
+    "1": {
+     "attack": 42,
+     "element": null,
+     "affinity": 3
+    },
+    "2": {
+     "attack": 64,
+     "element": 32,
+     "affinity": 3
+    },
+    "3": {
+     "attack": 93,
+     "element": 47,
+     "affinity": 4
+    },
+    "4": {
+     "attack": 133,
+     "element": 67,
+     "affinity": 4
+    },
+    "5": {
+     "attack": 184,
+     "element": 92,
+     "affinity": 4
+    },
+    "6": {
+     "attack": 247,
+     "element": 124,
+     "affinity": 5
+    }
+   },
+   "affinity": 5,
+   "monsters": [
+    "クルルヤック"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583949"
+  },
+  {
+   "name": "ブルームハンマー",
+   "type": "ハンマー",
+   "element": "毒",
+   "baseRarity": 1,
+   "maxRarity": 6,
+   "stats": {
+    "1": {
+     "attack": 48,
+     "element": 24,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 74,
+     "element": 37,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 107,
+     "element": 54,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 153,
+     "element": 77,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 212,
+     "element": 106,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 284,
+     "element": 142,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "プケプケ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583950"
+  },
+  {
+   "name": "アイアンハンマー",
+   "type": "ハンマー",
+   "element": "爆破",
+   "baseRarity": 1,
+   "maxRarity": 4,
+   "stats": {
+    "1": {
+     "attack": 52,
+     "element": null,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 78,
+     "element": 39,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 113,
+     "element": 57,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 161,
+     "element": 81,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583951"
+  },
+  {
+   "name": "アカハネ冒険団ハンマー",
+   "type": "ハンマー",
+   "element": "無",
+   "baseRarity": 1,
+   "maxRarity": 14,
+   "stats": {
+    "1": {
+     "attack": 40,
+     "element": null,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 78,
+     "element": null,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 113,
+     "element": null,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 161,
+     "element": null,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 223,
+     "element": null,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 299,
+     "element": null,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 389,
+     "element": null,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 474,
+     "element": null,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 578,
+     "element": null,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 704,
+     "element": null,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 858,
+     "element": null,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 1045,
+     "element": null,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 1211,
+     "element": null,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 1404,
+     "element": null,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": true,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583952"
+  },
+  {
+   "name": "アカハネ冒険団ハンマー・水",
+   "type": "ハンマー",
+   "element": "水",
+   "baseRarity": 1,
+   "maxRarity": 14,
+   "stats": {
+    "1": {
+     "attack": 24,
+     "element": 17,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 52,
+     "element": 26,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 75,
+     "element": 38,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 107,
+     "element": 54,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 149,
+     "element": 74,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 199,
+     "element": 100,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 259,
+     "element": 130,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 316,
+     "element": 158,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 385,
+     "element": 193,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 469,
+     "element": 235,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 572,
+     "element": 286,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 697,
+     "element": 348,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 808,
+     "element": 404,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 936,
+     "element": 468,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": true,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583953"
+  },
+  {
+   "name": "アカハネ冒険団ハンマー・火",
+   "type": "ハンマー",
+   "element": "火",
+   "baseRarity": 1,
+   "maxRarity": 14,
+   "stats": {
+    "1": {
+     "attack": 24,
+     "element": 17,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 52,
+     "element": 26,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 75,
+     "element": 38,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 107,
+     "element": 54,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 149,
+     "element": 74,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 199,
+     "element": 100,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 259,
+     "element": 130,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 316,
+     "element": 158,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 385,
+     "element": 193,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 469,
+     "element": 235,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 572,
+     "element": 286,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 697,
+     "element": 348,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 808,
+     "element": 404,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 936,
+     "element": 468,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": true,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583954"
+  },
+  {
+   "name": "アカハネ冒険団ハンマー・氷",
+   "type": "ハンマー",
+   "element": "氷",
+   "baseRarity": 1,
+   "maxRarity": 14,
+   "stats": {
+    "1": {
+     "attack": 24,
+     "element": 17,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 52,
+     "element": 26,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 75,
+     "element": 38,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 107,
+     "element": 54,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 149,
+     "element": 74,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 199,
+     "element": 100,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 259,
+     "element": 130,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 316,
+     "element": 158,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 385,
+     "element": 193,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 469,
+     "element": 235,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 572,
+     "element": 286,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 697,
+     "element": 348,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 808,
+     "element": 404,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 936,
+     "element": 468,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": true,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583955"
+  },
+  {
+   "name": "アカハネ冒険団ハンマー・雷",
+   "type": "ハンマー",
+   "element": "雷",
+   "baseRarity": 1,
+   "maxRarity": 14,
+   "stats": {
+    "1": {
+     "attack": 24,
+     "element": 17,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 52,
+     "element": 26,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 75,
+     "element": 38,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 107,
+     "element": 54,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 149,
+     "element": 74,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 199,
+     "element": 100,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 259,
+     "element": 130,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 316,
+     "element": 158,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 385,
+     "element": 193,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 469,
+     "element": 235,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 572,
+     "element": 286,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 697,
+     "element": 348,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 808,
+     "element": 404,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 936,
+     "element": 468,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": true,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583956"
+  },
+  {
+   "name": "アカハネ冒険団ハンマー・龍",
+   "type": "ハンマー",
+   "element": "龍",
+   "baseRarity": 1,
+   "maxRarity": 14,
+   "stats": {
+    "1": {
+     "attack": 24,
+     "element": 17,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 52,
+     "element": 26,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 75,
+     "element": 38,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 107,
+     "element": 54,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 149,
+     "element": 74,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 199,
+     "element": 100,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 259,
+     "element": 130,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 316,
+     "element": 158,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 385,
+     "element": 193,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 469,
+     "element": 235,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 572,
+     "element": 286,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 697,
+     "element": 348,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 808,
+     "element": 404,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 936,
+     "element": 468,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": true,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583957"
+  },
+  {
+   "name": "ギルオスハンマー",
+   "type": "ハンマー",
+   "element": "麻痺",
+   "baseRarity": 2,
+   "maxRarity": 6,
+   "stats": {
+    "2": {
+     "attack": 64,
+     "element": 32,
+     "affinity": 3
+    },
+    "3": {
+     "attack": 93,
+     "element": 47,
+     "affinity": 4
+    },
+    "4": {
+     "attack": 133,
+     "element": 67,
+     "affinity": 4
+    },
+    "5": {
+     "attack": 184,
+     "element": 92,
+     "affinity": 4
+    },
+    "6": {
+     "attack": 247,
+     "element": 124,
+     "affinity": 5
+    }
+   },
+   "affinity": 5,
+   "monsters": [
+    "ドスギルオス"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583991"
+  },
+  {
+   "name": "ドラグロフレーム",
+   "type": "ハンマー",
+   "element": "麻痺",
+   "baseRarity": 2,
+   "maxRarity": 6,
+   "stats": {
+    "2": {
+     "attack": 70,
+     "element": null,
+     "affinity": -5
+    },
+    "3": {
+     "attack": 101,
+     "element": 51,
+     "affinity": -5
+    },
+    "4": {
+     "attack": 145,
+     "element": 73,
+     "affinity": -5
+    },
+    "5": {
+     "attack": 200,
+     "element": 100,
+     "affinity": -4
+    },
+    "6": {
+     "attack": 269,
+     "element": 135,
+     "affinity": -4
+    }
+   },
+   "affinity": -4,
+   "monsters": [
+    "ボルボロス"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583992"
+  },
+  {
+   "name": "アクアハンマー",
+   "type": "ハンマー",
+   "element": "水",
+   "baseRarity": 2,
+   "maxRarity": 6,
+   "stats": {
+    "2": {
+     "attack": 54,
+     "element": 27,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 78,
+     "element": 39,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 111,
+     "element": 55,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 154,
+     "element": 77,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 206,
+     "element": 103,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "ジュラトドス"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583993"
+  },
+  {
+   "name": "ロックボーン",
+   "type": "ハンマー",
+   "element": "雷",
+   "baseRarity": 3,
+   "maxRarity": 5,
+   "stats": {
+    "3": {
+     "attack": 78,
+     "element": null,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 111,
+     "element": 55,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 154,
+     "element": 77,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584006"
+  },
+  {
+   "name": "ブレイズハンマー",
+   "type": "ハンマー",
+   "element": "火",
+   "baseRarity": 3,
+   "maxRarity": 7,
+   "stats": {
+    "3": {
+     "attack": 79,
+     "element": 40,
+     "affinity": -5
+    },
+    "4": {
+     "attack": 113,
+     "element": 57,
+     "affinity": -5
+    },
+    "5": {
+     "attack": 157,
+     "element": 79,
+     "affinity": -4
+    },
+    "6": {
+     "attack": 211,
+     "element": 105,
+     "affinity": -4
+    },
+    "7": {
+     "attack": 274,
+     "element": 137,
+     "affinity": -4
+    }
+   },
+   "affinity": -4,
+   "monsters": [
+    "アンジャナフ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584007"
+  },
+  {
+   "name": "龍骨大槌",
+   "type": "ハンマー",
+   "element": "龍",
+   "baseRarity": 4,
+   "maxRarity": 14,
+   "stats": {
+    "4": {
+     "attack": 111,
+     "element": 55,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 154,
+     "element": 77,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 206,
+     "element": 103,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 268,
+     "element": 134,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 327,
+     "element": 163,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 398,
+     "element": 199,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 485,
+     "element": 242,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 591,
+     "element": 295,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 720,
+     "element": 360,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 834,
+     "element": 417,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 967,
+     "element": 484,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584025"
+  },
+  {
+   "name": "融光種クルルビーク",
+   "type": "ハンマー",
+   "element": "睡眠",
+   "baseRarity": 5,
+   "maxRarity": 6,
+   "stats": {
+    "5": {
+     "attack": 191,
+     "element": null,
+     "affinity": 3
+    },
+    "6": {
+     "attack": 256,
+     "element": 128,
+     "affinity": 4
+    }
+   },
+   "affinity": 4,
+   "monsters": [
+    "融光種クルルヤック"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584045"
+  },
+  {
+   "name": "サンダーハンマー",
+   "type": "ハンマー",
+   "element": "雷",
+   "baseRarity": 5,
+   "maxRarity": 6,
+   "stats": {
+    "5": {
+     "attack": 157,
+     "element": 78,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 210,
+     "element": 105,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "トビカガチ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584046"
+  },
+  {
+   "name": "融光種ブレイズハンマー",
+   "type": "ハンマー",
+   "element": "火",
+   "baseRarity": 5,
+   "maxRarity": 7,
+   "stats": {
+    "5": {
+     "attack": 157,
+     "element": 79,
+     "affinity": -4
+    },
+    "6": {
+     "attack": 211,
+     "element": 105,
+     "affinity": -4
+    },
+    "7": {
+     "attack": 274,
+     "element": 137,
+     "affinity": -4
+    }
+   },
+   "affinity": -4,
+   "monsters": [
+    "融光種アンジャナフ"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584047"
+  },
+  {
+   "name": "融光種ドラグロフレーム",
+   "type": "ハンマー",
+   "element": "麻痺",
+   "baseRarity": 5,
+   "maxRarity": 7,
+   "stats": {
+    "5": {
+     "attack": 209,
+     "element": null,
+     "affinity": -9
+    },
+    "6": {
+     "attack": 280,
+     "element": 140,
+     "affinity": -8
+    },
+    "7": {
+     "attack": 365,
+     "element": 183,
+     "affinity": -8
+    }
+   },
+   "affinity": -8,
+   "monsters": [
+    "融光種ボルボロス"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584048"
+  },
+  {
+   "name": "黒鋼の鎚",
+   "type": "ハンマー",
+   "element": "龍",
+   "baseRarity": 6,
+   "maxRarity": 14,
+   "stats": {
+    "6": {
+     "attack": 206,
+     "element": 103,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 268,
+     "element": 134,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 327,
+     "element": 163,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 398,
+     "element": 199,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 485,
+     "element": 242,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 591,
+     "element": 295,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 720,
+     "element": 360,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 834,
+     "element": 417,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 967,
+     "element": 484,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584067"
+  },
+  {
+   "name": "融光種アクアハンマー",
+   "type": "ハンマー",
+   "element": "水",
+   "baseRarity": 6,
+   "maxRarity": 7,
+   "stats": {
+    "6": {
+     "attack": 210,
+     "element": 105,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 274,
+     "element": 137,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "融光種ジュラトドス"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584068"
+  },
+  {
+   "name": "融光種ライトニングバッシュ",
+   "type": "ハンマー",
+   "element": "雷",
+   "baseRarity": 7,
+   "maxRarity": 7,
+   "stats": {
+    "7": {
+     "attack": 282,
+     "element": 141,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "融光種トビカガチ"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/585737"
+  },
+  {
+   "name": "ジャナフストライク",
+   "type": "ハンマー",
+   "element": "火",
+   "baseRarity": 8,
+   "maxRarity": 8,
+   "stats": {
+    "8": {
+     "attack": 347,
+     "element": 173,
+     "affinity": -3.9
+    }
+   },
+   "affinity": -3.9,
+   "monsters": [
+    "アンジャナフ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": true,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586495"
+  },
+  {
+   "name": "融光種ジャナフストライク",
+   "type": "ハンマー",
+   "element": "火",
+   "baseRarity": 8,
+   "maxRarity": 8,
+   "stats": {
+    "8": {
+     "attack": 347,
+     "element": 173,
+     "affinity": -3.9
+    }
+   },
+   "affinity": -3.9,
+   "monsters": [
+    "融光種アンジャナフ"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": true,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586618"
+  },
+  {
+   "name": "融光種ボルボブレイカー",
+   "type": "ハンマー",
+   "element": "麻痺",
+   "baseRarity": 8,
+   "maxRarity": 8,
+   "stats": {
+    "8": {
+     "attack": 462,
+     "element": 231,
+     "affinity": -7.8
+    }
+   },
+   "affinity": -7.8,
+   "monsters": [
+    "融光種ボルボロス"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": true,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586498"
+  },
+  {
+   "name": "融光種ウォーターバッシュ",
+   "type": "ハンマー",
+   "element": "水",
+   "baseRarity": 8,
+   "maxRarity": 8,
+   "stats": {
+    "8": {
+     "attack": 346,
+     "element": 173,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "融光種ジュラトドス"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": true,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586503"
+  },
+  {
+   "name": "ジャグラスアームズ",
+   "type": "チャージアックス",
+   "element": "睡眠",
+   "baseRarity": 1,
+   "maxRarity": 6,
+   "stats": {
+    "1": {
+     "attack": 45,
+     "element": null,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 70,
+     "element": 35,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 101,
+     "element": 51,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 144,
+     "element": 72,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 200,
+     "element": 100,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 268,
+     "element": 134,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "ドスジャグラス"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583958"
+  },
+  {
+   "name": "試作盾斧",
+   "type": "チャージアックス",
+   "element": "雷",
+   "baseRarity": 1,
+   "maxRarity": 6,
+   "stats": {
+    "1": {
+     "attack": 52,
+     "element": null,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 54,
+     "element": 27,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 78,
+     "element": 39,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 111,
+     "element": 55,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 154,
+     "element": 77,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 206,
+     "element": 103,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583959"
+  },
+  {
+   "name": "アカハネ冒険団チャージアックス",
+   "type": "チャージアックス",
+   "element": "無",
+   "baseRarity": 1,
+   "maxRarity": 14,
+   "stats": {
+    "1": {
+     "attack": 40,
+     "element": null,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 78,
+     "element": null,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 113,
+     "element": null,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 161,
+     "element": null,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 223,
+     "element": null,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 299,
+     "element": null,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 389,
+     "element": null,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 474,
+     "element": null,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 578,
+     "element": null,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 704,
+     "element": null,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 858,
+     "element": null,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 1045,
+     "element": null,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 1211,
+     "element": null,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 1404,
+     "element": null,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": true,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583960"
+  },
+  {
+   "name": "アカハネ冒険団チャージアックス・水",
+   "type": "チャージアックス",
+   "element": "水",
+   "baseRarity": 1,
+   "maxRarity": 14,
+   "stats": {
+    "1": {
+     "attack": 24,
+     "element": 17,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 52,
+     "element": 26,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 75,
+     "element": 38,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 107,
+     "element": 54,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 149,
+     "element": 74,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 199,
+     "element": 100,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 259,
+     "element": 130,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 316,
+     "element": 158,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 385,
+     "element": 193,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 469,
+     "element": 235,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 572,
+     "element": 286,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 697,
+     "element": 348,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 808,
+     "element": 404,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 936,
+     "element": 468,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": true,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583961"
+  },
+  {
+   "name": "アカハネ冒険団チャージアックス・火",
+   "type": "チャージアックス",
+   "element": "火",
+   "baseRarity": 1,
+   "maxRarity": 14,
+   "stats": {
+    "1": {
+     "attack": 24,
+     "element": 17,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 52,
+     "element": 26,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 75,
+     "element": 38,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 107,
+     "element": 54,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 149,
+     "element": 74,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 199,
+     "element": 100,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 259,
+     "element": 130,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 316,
+     "element": 158,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 385,
+     "element": 193,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 469,
+     "element": 235,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 572,
+     "element": 286,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 697,
+     "element": 348,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 808,
+     "element": 404,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 936,
+     "element": 468,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": true,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583962"
+  },
+  {
+   "name": "アカハネ冒険団チャージアックス・氷",
+   "type": "チャージアックス",
+   "element": "氷",
+   "baseRarity": 1,
+   "maxRarity": 14,
+   "stats": {
+    "1": {
+     "attack": 24,
+     "element": 17,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 52,
+     "element": 26,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 75,
+     "element": 38,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 107,
+     "element": 54,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 149,
+     "element": 74,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 199,
+     "element": 100,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 259,
+     "element": 130,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 316,
+     "element": 158,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 385,
+     "element": 193,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 469,
+     "element": 235,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 572,
+     "element": 286,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 697,
+     "element": 348,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 808,
+     "element": 404,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 936,
+     "element": 468,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": true,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583963"
+  },
+  {
+   "name": "アカハネ冒険団チャージアックス・雷",
+   "type": "チャージアックス",
+   "element": "雷",
+   "baseRarity": 1,
+   "maxRarity": 14,
+   "stats": {
+    "1": {
+     "attack": 24,
+     "element": 17,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 52,
+     "element": 26,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 75,
+     "element": 38,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 107,
+     "element": 54,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 149,
+     "element": 74,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 199,
+     "element": 100,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 259,
+     "element": 130,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 316,
+     "element": 158,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 385,
+     "element": 193,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 469,
+     "element": 235,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 572,
+     "element": 286,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 697,
+     "element": 348,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 808,
+     "element": 404,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 936,
+     "element": 468,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": true,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583964"
+  },
+  {
+   "name": "アカハネ冒険団チャージアックス・龍",
+   "type": "チャージアックス",
+   "element": "龍",
+   "baseRarity": 1,
+   "maxRarity": 14,
+   "stats": {
+    "1": {
+     "attack": 24,
+     "element": 17,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 52,
+     "element": 26,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 75,
+     "element": 38,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 107,
+     "element": 54,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 149,
+     "element": 74,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 199,
+     "element": 100,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 259,
+     "element": 130,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 316,
+     "element": 158,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 385,
+     "element": 193,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 469,
+     "element": 235,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 572,
+     "element": 286,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 697,
+     "element": 348,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 808,
+     "element": 404,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 936,
+     "element": 468,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": true,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583965"
+  },
+  {
+   "name": "ギルオスアームズ",
+   "type": "チャージアックス",
+   "element": "麻痺",
+   "baseRarity": 2,
+   "maxRarity": 6,
+   "stats": {
+    "2": {
+     "attack": 67,
+     "element": 34,
+     "affinity": 2
+    },
+    "3": {
+     "attack": 96,
+     "element": 48,
+     "affinity": 3
+    },
+    "4": {
+     "attack": 138,
+     "element": 69,
+     "affinity": 3
+    },
+    "5": {
+     "attack": 191,
+     "element": 96,
+     "affinity": 3
+    },
+    "6": {
+     "attack": 256,
+     "element": 128,
+     "affinity": 4
+    }
+   },
+   "affinity": 4,
+   "monsters": [
+    "ドスギルオス"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583994"
+  },
+  {
+   "name": "泥流の盾斧",
+   "type": "チャージアックス",
+   "element": "水",
+   "baseRarity": 2,
+   "maxRarity": 6,
+   "stats": {
+    "2": {
+     "attack": 54,
+     "element": 27,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 78,
+     "element": 39,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 111,
+     "element": 55,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 154,
+     "element": 77,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 206,
+     "element": 103,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "ジュラトドス"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583995"
+  },
+  {
+   "name": "ボーンアームズ",
+   "type": "チャージアックス",
+   "element": "爆破",
+   "baseRarity": 3,
+   "maxRarity": 7,
+   "stats": {
+    "3": {
+     "attack": 113,
+     "element": null,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 161,
+     "element": 81,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 224,
+     "element": 112,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 300,
+     "element": 150,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 390,
+     "element": 195,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584008"
+  },
+  {
+   "name": "融光種ディア＝ルテミス",
+   "type": "チャージアックス",
+   "element": "毒",
+   "baseRarity": 3,
+   "maxRarity": 7,
+   "stats": {
+    "3": {
+     "attack": 105,
+     "element": 53,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 150,
+     "element": 75,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 207,
+     "element": 104,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 278,
+     "element": 139,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 362,
+     "element": 181,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "融光種リオレイア"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584009"
+  },
+  {
+   "name": "龍骨盾斧",
+   "type": "チャージアックス",
+   "element": "龍",
+   "baseRarity": 4,
+   "maxRarity": 14,
+   "stats": {
+    "4": {
+     "attack": 111,
+     "element": 55,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 154,
+     "element": 77,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 206,
+     "element": 103,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 268,
+     "element": 134,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 327,
+     "element": 163,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 398,
+     "element": 199,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 485,
+     "element": 242,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 591,
+     "element": 295,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 720,
+     "element": 360,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 834,
+     "element": 417,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 967,
+     "element": 484,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584026"
+  },
+  {
+   "name": "融光種ジャグラスアームズ",
+   "type": "チャージアックス",
+   "element": "睡眠",
+   "baseRarity": 4,
+   "maxRarity": 6,
+   "stats": {
+    "4": {
+     "attack": 149,
+     "element": null,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 206,
+     "element": 103,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 277,
+     "element": 139,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "融光種ドスジャグラス"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584027"
+  },
+  {
+   "name": "パルサーアームズ",
+   "type": "チャージアックス",
+   "element": "雷",
+   "baseRarity": 5,
+   "maxRarity": 6,
+   "stats": {
+    "5": {
+     "attack": 150,
+     "element": 75,
+     "affinity": 3
+    },
+    "6": {
+     "attack": 201,
+     "element": 100,
+     "affinity": 4
+    }
+   },
+   "affinity": 4,
+   "monsters": [
+    "トビカガチ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584049"
+  },
+  {
+   "name": "黒鋼の盾斧",
+   "type": "チャージアックス",
+   "element": "龍",
+   "baseRarity": 6,
+   "maxRarity": 14,
+   "stats": {
+    "6": {
+     "attack": 206,
+     "element": 103,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 268,
+     "element": 134,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 327,
+     "element": 163,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 398,
+     "element": 199,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 485,
+     "element": 242,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 591,
+     "element": 295,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 720,
+     "element": 360,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 834,
+     "element": 417,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 967,
+     "element": 484,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584069"
+  },
+  {
+   "name": "融光種泥流の盾斧",
+   "type": "チャージアックス",
+   "element": "水",
+   "baseRarity": 6,
+   "maxRarity": 7,
+   "stats": {
+    "6": {
+     "attack": 210,
+     "element": 105,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 274,
+     "element": 137,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "融光種ジュラトドス"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584070"
+  },
+  {
+   "name": "ディア＝ルテミス",
+   "type": "チャージアックス",
+   "element": "毒",
+   "baseRarity": 6,
+   "maxRarity": 7,
+   "stats": {
+    "6": {
+     "attack": 278,
+     "element": 139,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 362,
+     "element": 181,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "リオレイア"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584071"
+  },
+  {
+   "name": "火竜の盾斧",
+   "type": "チャージアックス",
+   "element": "火",
+   "baseRarity": 6,
+   "maxRarity": 7,
+   "stats": {
+    "6": {
+     "attack": 193,
+     "element": 97,
+     "affinity": 5
+    },
+    "7": {
+     "attack": 251,
+     "element": 126,
+     "affinity": 5
+    }
+   },
+   "affinity": 5,
+   "monsters": [
+    "リオレウス"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584072"
+  },
+  {
+   "name": "融光種カガチノカイナ",
+   "type": "チャージアックス",
+   "element": "雷",
+   "baseRarity": 7,
+   "maxRarity": 7,
+   "stats": {
+    "7": {
+     "attack": 276,
+     "element": 138,
+     "affinity": 2
+    }
+   },
+   "affinity": 2,
+   "monsters": [
+    "融光種トビカガチ"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/585738"
+  },
+  {
+   "name": "融光種ディア＝ルテミア",
+   "type": "チャージアックス",
+   "element": "毒",
+   "baseRarity": 8,
+   "maxRarity": 8,
+   "stats": {
+    "8": {
+     "attack": 458,
+     "element": 229,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "融光種リオレイア"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": true,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586604"
+  },
+  {
+   "name": "融光種ディープシュラム",
+   "type": "チャージアックス",
+   "element": "水",
+   "baseRarity": 8,
+   "maxRarity": 8,
+   "stats": {
+    "8": {
+     "attack": 346,
+     "element": 173,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "融光種ジュラトドス"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": true,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586501"
+  },
+  {
+   "name": "ディア＝ルテミア",
+   "type": "チャージアックス",
+   "element": "毒",
+   "baseRarity": 8,
+   "maxRarity": 8,
+   "stats": {
+    "8": {
+     "attack": 458,
+     "element": 229,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "リオレイア"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": true,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586620"
+  },
+  {
+   "name": "氷結の盾斧",
+   "type": "チャージアックス",
+   "element": "氷",
+   "baseRarity": 8,
+   "maxRarity": 8,
+   "stats": {
+    "8": {
+     "attack": 339,
+     "element": 170,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "レイギエナ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586608"
+  },
+  {
+   "name": "ジャグラスエスクード",
+   "type": "チャージアックス",
+   "element": "睡眠",
+   "baseRarity": 9,
+   "maxRarity": 9,
+   "stats": {
+    "9": {
+     "attack": 547,
+     "element": 274,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "ドスジャグラス"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": true,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586848"
+  },
+  {
+   "name": "融光種ジャグラスエスクード",
+   "type": "チャージアックス",
+   "element": "睡眠",
+   "baseRarity": 9,
+   "maxRarity": 9,
+   "stats": {
+    "9": {
+     "attack": 564,
+     "element": 282,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "融光種ドスジャグラス"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": true,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586851"
+  },
+  {
+   "name": "ディア＝ヘカテル",
+   "type": "チャージアックス",
+   "element": "毒",
+   "baseRarity": 9,
+   "maxRarity": 9,
+   "stats": {
+    "9": {
+     "attack": 553,
+     "element": 277,
+     "affinity": 4.5
+    }
+   },
+   "affinity": 4.5,
+   "monsters": [
+    "リオレイア亜種"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586845"
+  },
+  {
+   "name": "ジャグラスアサルト",
+   "type": "ヘビィボウガン",
+   "element": "水",
+   "baseRarity": 1,
+   "maxRarity": 6,
+   "stats": {
+    "1": {
+     "attack": 35,
+     "element": 17,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 54,
+     "element": 27,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 78,
+     "element": 39,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 111,
+     "element": 55,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 154,
+     "element": 77,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 206,
+     "element": 103,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "ドスジャグラス"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583966"
+  },
+  {
+   "name": "ブルームシューター",
+   "type": "ヘビィボウガン",
+   "element": "毒",
+   "baseRarity": 1,
+   "maxRarity": 6,
+   "stats": {
+    "1": {
+     "attack": 47,
+     "element": 24,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 73,
+     "element": 37,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 105,
+     "element": 53,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 150,
+     "element": 75,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 207,
+     "element": 104,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 278,
+     "element": 139,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "プケプケ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583967"
+  },
+  {
+   "name": "アイアンアサルト",
+   "type": "ヘビィボウガン",
+   "element": "麻痺",
+   "baseRarity": 1,
+   "maxRarity": 4,
+   "stats": {
+    "1": {
+     "attack": 44,
+     "element": 22,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 69,
+     "element": 35,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 99,
+     "element": 50,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 141,
+     "element": 71,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583968"
+  },
+  {
+   "name": "アカハネ冒険団ヘビィボウガン",
+   "type": "ヘビィボウガン",
+   "element": "無",
+   "baseRarity": 1,
+   "maxRarity": 14,
+   "stats": {
+    "1": {
+     "attack": 40,
+     "element": null,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 78,
+     "element": null,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 113,
+     "element": null,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 161,
+     "element": null,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 223,
+     "element": null,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 299,
+     "element": null,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 389,
+     "element": null,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 474,
+     "element": null,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 578,
+     "element": null,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 704,
+     "element": null,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 858,
+     "element": null,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 1045,
+     "element": null,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 1211,
+     "element": null,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 1404,
+     "element": null,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": true,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583974"
+  },
+  {
+   "name": "アカハネ冒険団ヘビィボウガン・水",
+   "type": "ヘビィボウガン",
+   "element": "水",
+   "baseRarity": 1,
+   "maxRarity": 14,
+   "stats": {
+    "1": {
+     "attack": 24,
+     "element": 17,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 52,
+     "element": 26,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 75,
+     "element": 38,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 107,
+     "element": 54,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 149,
+     "element": 74,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 199,
+     "element": 100,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 259,
+     "element": 130,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 316,
+     "element": 158,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 385,
+     "element": 193,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 469,
+     "element": 235,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 572,
+     "element": 286,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 697,
+     "element": 348,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 808,
+     "element": 404,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 936,
+     "element": 468,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": true,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583973"
+  },
+  {
+   "name": "アカハネ冒険団ヘビィボウガン・火",
+   "type": "ヘビィボウガン",
+   "element": "火",
+   "baseRarity": 1,
+   "maxRarity": 14,
+   "stats": {
+    "1": {
+     "attack": 24,
+     "element": 17,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 52,
+     "element": 26,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 75,
+     "element": 38,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 107,
+     "element": 54,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 149,
+     "element": 74,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 199,
+     "element": 100,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 259,
+     "element": 130,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 316,
+     "element": 158,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 385,
+     "element": 193,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 469,
+     "element": 235,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 572,
+     "element": 286,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 697,
+     "element": 348,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 808,
+     "element": 404,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 936,
+     "element": 468,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": true,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583972"
+  },
+  {
+   "name": "アカハネ冒険団ヘビィボウガン・氷",
+   "type": "ヘビィボウガン",
+   "element": "氷",
+   "baseRarity": 1,
+   "maxRarity": 14,
+   "stats": {
+    "1": {
+     "attack": 24,
+     "element": 17,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 52,
+     "element": 26,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 75,
+     "element": 38,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 107,
+     "element": 54,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 149,
+     "element": 74,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 199,
+     "element": 100,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 259,
+     "element": 130,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 316,
+     "element": 158,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 385,
+     "element": 193,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 469,
+     "element": 235,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 572,
+     "element": 286,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 697,
+     "element": 348,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 808,
+     "element": 404,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 936,
+     "element": 468,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": true,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583971"
+  },
+  {
+   "name": "アカハネ冒険団ヘビィボウガン・雷",
+   "type": "ヘビィボウガン",
+   "element": "雷",
+   "baseRarity": 1,
+   "maxRarity": 14,
+   "stats": {
+    "1": {
+     "attack": 24,
+     "element": 17,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 52,
+     "element": 26,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 75,
+     "element": 38,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 107,
+     "element": 54,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 149,
+     "element": 74,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 199,
+     "element": 100,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 259,
+     "element": 130,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 316,
+     "element": 158,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 385,
+     "element": 193,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 469,
+     "element": 235,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 572,
+     "element": 286,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 697,
+     "element": 348,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 808,
+     "element": 404,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 936,
+     "element": 468,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": true,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583970"
+  },
+  {
+   "name": "アカハネ冒険団ヘビィボウガン・龍",
+   "type": "ヘビィボウガン",
+   "element": "龍",
+   "baseRarity": 1,
+   "maxRarity": 14,
+   "stats": {
+    "1": {
+     "attack": 24,
+     "element": 17,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 52,
+     "element": 26,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 75,
+     "element": 38,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 107,
+     "element": 54,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 149,
+     "element": 74,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 199,
+     "element": 100,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 259,
+     "element": 130,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 316,
+     "element": 158,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 385,
+     "element": 193,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 469,
+     "element": 235,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 572,
+     "element": 286,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 697,
+     "element": 348,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 808,
+     "element": 404,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 936,
+     "element": 468,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": true,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583969"
+  },
+  {
+   "name": "アクアアサルト",
+   "type": "ヘビィボウガン",
+   "element": "水",
+   "baseRarity": 2,
+   "maxRarity": 6,
+   "stats": {
+    "2": {
+     "attack": 54,
+     "element": 27,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 78,
+     "element": 39,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 111,
+     "element": 55,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 154,
+     "element": 77,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 206,
+     "element": 103,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "ジュラトドス"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583996"
+  },
+  {
+   "name": "ボーンシューター",
+   "type": "ヘビィボウガン",
+   "element": "火",
+   "baseRarity": 3,
+   "maxRarity": 5,
+   "stats": {
+    "3": {
+     "attack": 78,
+     "element": 39,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 111,
+     "element": 55,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 154,
+     "element": 77,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584010"
+  },
+  {
+   "name": "ブレイズアサルト",
+   "type": "ヘビィボウガン",
+   "element": "火",
+   "baseRarity": 3,
+   "maxRarity": 7,
+   "stats": {
+    "3": {
+     "attack": 79,
+     "element": 40,
+     "affinity": -5
+    },
+    "4": {
+     "attack": 113,
+     "element": 57,
+     "affinity": -5
+    },
+    "5": {
+     "attack": 157,
+     "element": 79,
+     "affinity": -4
+    },
+    "6": {
+     "attack": 211,
+     "element": 105,
+     "affinity": -4
+    },
+    "7": {
+     "attack": 274,
+     "element": 137,
+     "affinity": -4
+    }
+   },
+   "affinity": -4,
+   "monsters": [
+    "アンジャナフ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584011"
+  },
+  {
+   "name": "龍骨砲",
+   "type": "ヘビィボウガン",
+   "element": "龍",
+   "baseRarity": 4,
+   "maxRarity": 14,
+   "stats": {
+    "4": {
+     "attack": 111,
+     "element": 55,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 154,
+     "element": 77,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 206,
+     "element": 103,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 268,
+     "element": 134,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 327,
+     "element": 163,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 398,
+     "element": 199,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 485,
+     "element": 242,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 591,
+     "element": 295,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 720,
+     "element": 360,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 834,
+     "element": 417,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 967,
+     "element": 484,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584029"
+  },
+  {
+   "name": "融光種ジャグラスアサルト",
+   "type": "ヘビィボウガン",
+   "element": "水",
+   "baseRarity": 4,
+   "maxRarity": 6,
+   "stats": {
+    "4": {
+     "attack": 111,
+     "element": 55,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 154,
+     "element": 77,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 206,
+     "element": 103,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "融光種ドスジャグラス"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584028"
+  },
+  {
+   "name": "融光種ブルームシューター",
+   "type": "ヘビィボウガン",
+   "element": "爆破",
+   "baseRarity": 4,
+   "maxRarity": 6,
+   "stats": {
+    "4": {
+     "attack": 158,
+     "element": 79,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 219,
+     "element": 110,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 294,
+     "element": 147,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "融光種プケプケ"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584030"
+  },
+  {
+   "name": "パルサーシューター",
+   "type": "ヘビィボウガン",
+   "element": "雷",
+   "baseRarity": 5,
+   "maxRarity": 6,
+   "stats": {
+    "5": {
+     "attack": 144,
+     "element": 72,
+     "affinity": 4
+    },
+    "6": {
+     "attack": 193,
+     "element": 97,
+     "affinity": 5
+    }
+   },
+   "affinity": 5,
+   "monsters": [
+    "トビカガチ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584050"
+  },
+  {
+   "name": "融光種ブレイズアサルト",
+   "type": "ヘビィボウガン",
+   "element": "火",
+   "baseRarity": 5,
+   "maxRarity": 7,
+   "stats": {
+    "5": {
+     "attack": 157,
+     "element": 79,
+     "affinity": -4
+    },
+    "6": {
+     "attack": 211,
+     "element": 105,
+     "affinity": -4
+    },
+    "7": {
+     "attack": 274,
+     "element": 137,
+     "affinity": -4
+    }
+   },
+   "affinity": -4,
+   "monsters": [
+    "融光種アンジャナフ"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584051"
+  },
+  {
+   "name": "ヘビィシューター",
+   "type": "ヘビィボウガン",
+   "element": "火",
+   "baseRarity": 6,
+   "maxRarity": 7,
+   "stats": {
+    "6": {
+     "attack": 206,
+     "element": 103,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 268,
+     "element": 134,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": false,
+   "yuko": false,
+   "derived": true,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586857"
+  },
+  {
+   "name": "黒鋼の砲筒",
+   "type": "ヘビィボウガン",
+   "element": "龍",
+   "baseRarity": 6,
+   "maxRarity": 14,
+   "stats": {
+    "6": {
+     "attack": 206,
+     "element": 103,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 268,
+     "element": 134,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 327,
+     "element": 163,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 398,
+     "element": 199,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 485,
+     "element": 242,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 591,
+     "element": 295,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 720,
+     "element": 360,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 834,
+     "element": 417,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 967,
+     "element": 484,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584073"
+  },
+  {
+   "name": "融光種アクアアサルト",
+   "type": "ヘビィボウガン",
+   "element": "水",
+   "baseRarity": 6,
+   "maxRarity": 7,
+   "stats": {
+    "6": {
+     "attack": 210,
+     "element": 105,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 274,
+     "element": 137,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "融光種ジュラトドス"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584074"
+  },
+  {
+   "name": "融光種ジャグラスキャノン",
+   "type": "ヘビィボウガン",
+   "element": "水",
+   "baseRarity": 7,
+   "maxRarity": 9,
+   "stats": {
+    "7": {
+     "attack": 268,
+     "element": 134,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 339,
+     "element": 170,
+     "affinity": 0
+    },
+    "9": {
+     "attack": 420,
+     "element": 210,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "融光種ドスジャグラス"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": true,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586492"
+  },
+  {
+   "name": "融光種ダチュラブラスター",
+   "type": "ヘビィボウガン",
+   "element": "爆破",
+   "baseRarity": 7,
+   "maxRarity": 7,
+   "stats": {
+    "7": {
+     "attack": 382,
+     "element": 191,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "融光種プケプケ"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": true,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586858"
+  },
+  {
+   "name": "融光種カガチノシシ",
+   "type": "ヘビィボウガン",
+   "element": "雷",
+   "baseRarity": 7,
+   "maxRarity": 7,
+   "stats": {
+    "7": {
+     "attack": 251,
+     "element": 126,
+     "affinity": 5
+    }
+   },
+   "affinity": 5,
+   "monsters": [
+    "融光種トビカガチ"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/585739"
+  },
+  {
+   "name": "フラムエルテルマ",
+   "type": "ヘビィボウガン",
+   "element": "火",
+   "baseRarity": 8,
+   "maxRarity": 8,
+   "stats": {
+    "8": {
+     "attack": 347,
+     "element": 173,
+     "affinity": -3.9
+    }
+   },
+   "affinity": -3.9,
+   "monsters": [
+    "アンジャナフ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": true,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586496"
+  },
+  {
+   "name": "融光種フラムエルテルマ",
+   "type": "ヘビィボウガン",
+   "element": "火",
+   "baseRarity": 8,
+   "maxRarity": 8,
+   "stats": {
+    "8": {
+     "attack": 347,
+     "element": 173,
+     "affinity": -3.9
+    }
+   },
+   "affinity": -3.9,
+   "monsters": [
+    "融光種アンジャナフ"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": true,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586621"
+  },
+  {
+   "name": "融光種ウォーターキャノン",
+   "type": "ヘビィボウガン",
+   "element": "水",
+   "baseRarity": 8,
+   "maxRarity": 9,
+   "stats": {
+    "8": {
+     "attack": 346,
+     "element": 173,
+     "affinity": 0
+    },
+    "9": {
+     "attack": 429,
+     "element": 215,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "融光種ジュラトドス"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": true,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586500"
+  },
+  {
+   "name": "イルミナルアサルト",
+   "type": "ヘビィボウガン",
+   "element": "雷",
+   "baseRarity": 8,
+   "maxRarity": 8,
+   "stats": {
+    "8": {
+     "attack": 346,
+     "element": 173,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "ツィツィヤック"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586489"
+  },
+  {
+   "name": "ロゼッテス",
+   "type": "ヘビィボウガン",
+   "element": "氷",
+   "baseRarity": 8,
+   "maxRarity": 9,
+   "stats": {
+    "8": {
+     "attack": 346,
+     "element": 173,
+     "affinity": 0
+    },
+    "9": {
+     "attack": 429,
+     "element": 215,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "レイギエナ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586609"
+  },
+  {
+   "name": "ジャグラスキャノン",
+   "type": "ヘビィボウガン",
+   "element": "水",
+   "baseRarity": 9,
+   "maxRarity": 9,
+   "stats": {
+    "9": {
+     "attack": 420,
+     "element": 210,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "ドスジャグラス"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": true,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586849"
+  },
+  {
+   "name": "クルルアロー",
+   "type": "弓",
+   "element": "睡眠",
+   "baseRarity": 1,
+   "maxRarity": 6,
+   "stats": {
+    "1": {
+     "attack": 46,
+     "element": null,
+     "affinity": 1
+    },
+    "2": {
+     "attack": 71,
+     "element": 36,
+     "affinity": 1
+    },
+    "3": {
+     "attack": 102,
+     "element": 51,
+     "affinity": 1
+    },
+    "4": {
+     "attack": 146,
+     "element": 73,
+     "affinity": 2
+    },
+    "5": {
+     "attack": 202,
+     "element": 101,
+     "affinity": 2
+    },
+    "6": {
+     "attack": 271,
+     "element": 136,
+     "affinity": 2
+    }
+   },
+   "affinity": 2,
+   "monsters": [
+    "クルルヤック"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583975"
+  },
+  {
+   "name": "ブルームアーチ",
+   "type": "弓",
+   "element": "爆破",
+   "baseRarity": 1,
+   "maxRarity": 6,
+   "stats": {
+    "1": {
+     "attack": 51,
+     "element": null,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 78,
+     "element": 39,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 113,
+     "element": 57,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 161,
+     "element": 81,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 224,
+     "element": 112,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 300,
+     "element": 150,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "プケプケ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583976"
+  },
+  {
+   "name": "鉄弓",
+   "type": "弓",
+   "element": "麻痺",
+   "baseRarity": 1,
+   "maxRarity": 4,
+   "stats": {
+    "1": {
+     "attack": 52,
+     "element": null,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 70,
+     "element": 35,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 101,
+     "element": 51,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 144,
+     "element": 72,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583977"
+  },
+  {
+   "name": "アカハネ冒険団弓",
+   "type": "弓",
+   "element": "無",
+   "baseRarity": 1,
+   "maxRarity": 14,
+   "stats": {
+    "1": {
+     "attack": 40,
+     "element": null,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 78,
+     "element": null,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 113,
+     "element": null,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 161,
+     "element": null,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 223,
+     "element": null,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 299,
+     "element": null,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 389,
+     "element": null,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 474,
+     "element": null,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 578,
+     "element": null,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 704,
+     "element": null,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 858,
+     "element": null,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 1045,
+     "element": null,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 1211,
+     "element": null,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 1404,
+     "element": null,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": true,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583978"
+  },
+  {
+   "name": "アカハネ冒険団弓・水",
+   "type": "弓",
+   "element": "水",
+   "baseRarity": 1,
+   "maxRarity": 14,
+   "stats": {
+    "1": {
+     "attack": 24,
+     "element": 17,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 52,
+     "element": 26,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 75,
+     "element": 38,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 107,
+     "element": 54,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 149,
+     "element": 74,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 199,
+     "element": 100,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 259,
+     "element": 130,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 316,
+     "element": 158,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 385,
+     "element": 193,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 469,
+     "element": 235,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 572,
+     "element": 286,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 697,
+     "element": 348,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 808,
+     "element": 404,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 936,
+     "element": 468,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": true,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583979"
+  },
+  {
+   "name": "アカハネ冒険団弓・火",
+   "type": "弓",
+   "element": "火",
+   "baseRarity": 1,
+   "maxRarity": 14,
+   "stats": {
+    "1": {
+     "attack": 24,
+     "element": 17,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 52,
+     "element": 26,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 75,
+     "element": 38,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 107,
+     "element": 54,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 149,
+     "element": 74,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 199,
+     "element": 100,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 259,
+     "element": 130,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 316,
+     "element": 158,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 385,
+     "element": 193,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 469,
+     "element": 235,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 572,
+     "element": 286,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 697,
+     "element": 348,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 808,
+     "element": 404,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 936,
+     "element": 468,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": true,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583980"
+  },
+  {
+   "name": "アカハネ冒険団弓・氷",
+   "type": "弓",
+   "element": "氷",
+   "baseRarity": 1,
+   "maxRarity": 14,
+   "stats": {
+    "1": {
+     "attack": 24,
+     "element": 17,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 52,
+     "element": 26,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 75,
+     "element": 38,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 107,
+     "element": 54,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 149,
+     "element": 74,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 199,
+     "element": 100,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 259,
+     "element": 130,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 316,
+     "element": 158,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 385,
+     "element": 193,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 469,
+     "element": 235,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 572,
+     "element": 286,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 697,
+     "element": 348,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 808,
+     "element": 404,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 936,
+     "element": 468,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": true,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583981"
+  },
+  {
+   "name": "アカハネ冒険団弓・雷",
+   "type": "弓",
+   "element": "雷",
+   "baseRarity": 1,
+   "maxRarity": 14,
+   "stats": {
+    "1": {
+     "attack": 24,
+     "element": 17,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 52,
+     "element": 26,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 75,
+     "element": 38,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 107,
+     "element": 54,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 149,
+     "element": 74,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 199,
+     "element": 100,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 259,
+     "element": 130,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 316,
+     "element": 158,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 385,
+     "element": 193,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 469,
+     "element": 235,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 572,
+     "element": 286,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 697,
+     "element": 348,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 808,
+     "element": 404,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 936,
+     "element": 468,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": true,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583982"
+  },
+  {
+   "name": "アカハネ冒険団弓・龍",
+   "type": "弓",
+   "element": "龍",
+   "baseRarity": 1,
+   "maxRarity": 14,
+   "stats": {
+    "1": {
+     "attack": 24,
+     "element": 17,
+     "affinity": 0
+    },
+    "2": {
+     "attack": 52,
+     "element": 26,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 75,
+     "element": 38,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 107,
+     "element": 54,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 149,
+     "element": 74,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 199,
+     "element": 100,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 259,
+     "element": 130,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 316,
+     "element": 158,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 385,
+     "element": 193,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 469,
+     "element": 235,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 572,
+     "element": 286,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 697,
+     "element": 348,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 808,
+     "element": 404,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 936,
+     "element": 468,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": true,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583983"
+  },
+  {
+   "name": "アクアアロー",
+   "type": "弓",
+   "element": "水",
+   "baseRarity": 2,
+   "maxRarity": 6,
+   "stats": {
+    "2": {
+     "attack": 54,
+     "element": 27,
+     "affinity": 0
+    },
+    "3": {
+     "attack": 78,
+     "element": 39,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 111,
+     "element": 55,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 154,
+     "element": 77,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 206,
+     "element": 103,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "ジュラトドス"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583997"
+  },
+  {
+   "name": "ハンターボウ",
+   "type": "弓",
+   "element": "水",
+   "baseRarity": 3,
+   "maxRarity": 5,
+   "stats": {
+    "3": {
+     "attack": 78,
+     "element": null,
+     "affinity": 0
+    },
+    "4": {
+     "attack": 111,
+     "element": 55,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 154,
+     "element": 77,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584012"
+  },
+  {
+   "name": "ブレイズボウ",
+   "type": "弓",
+   "element": "火",
+   "baseRarity": 3,
+   "maxRarity": 7,
+   "stats": {
+    "3": {
+     "attack": 79,
+     "element": 40,
+     "affinity": -5
+    },
+    "4": {
+     "attack": 113,
+     "element": 57,
+     "affinity": -5
+    },
+    "5": {
+     "attack": 157,
+     "element": 79,
+     "affinity": -4
+    },
+    "6": {
+     "attack": 211,
+     "element": 105,
+     "affinity": -4
+    },
+    "7": {
+     "attack": 274,
+     "element": 137,
+     "affinity": -4
+    }
+   },
+   "affinity": -4,
+   "monsters": [
+    "アンジャナフ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584013"
+  },
+  {
+   "name": "融光種プリンセスアロー",
+   "type": "弓",
+   "element": "龍",
+   "baseRarity": 3,
+   "maxRarity": 14,
+   "stats": {
+    "3": {
+     "attack": 73,
+     "element": null,
+     "affinity": 4
+    },
+    "4": {
+     "attack": 104,
+     "element": 52,
+     "affinity": 4
+    },
+    "5": {
+     "attack": 144,
+     "element": 72,
+     "affinity": 4
+    },
+    "6": {
+     "attack": 193,
+     "element": 97,
+     "affinity": 5
+    },
+    "7": {
+     "attack": 251,
+     "element": 126,
+     "affinity": 5
+    },
+    "8": {
+     "attack": 306,
+     "element": 153,
+     "affinity": 8,
+     "est": true
+    },
+    "9": {
+     "attack": 373,
+     "element": 187,
+     "affinity": 8,
+     "est": true
+    },
+    "10": {
+     "attack": 455,
+     "element": 228,
+     "affinity": 8,
+     "est": true
+    },
+    "11": {
+     "attack": 554,
+     "element": 277,
+     "affinity": 8,
+     "est": true
+    },
+    "12": {
+     "attack": 676,
+     "element": 338,
+     "affinity": 7.2,
+     "src": "list"
+    },
+    "13": {
+     "attack": 783,
+     "element": 392,
+     "affinity": 8,
+     "est": true
+    },
+    "14": {
+     "attack": 908,
+     "element": 454,
+     "affinity": 8,
+     "src": "list"
+    }
+   },
+   "affinity": 8,
+   "monsters": [
+    "融光種リオレイア"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584014"
+  },
+  {
+   "name": "龍骨弓",
+   "type": "弓",
+   "element": "龍",
+   "baseRarity": 4,
+   "maxRarity": 14,
+   "stats": {
+    "4": {
+     "attack": 111,
+     "element": 55,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 154,
+     "element": 77,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 206,
+     "element": 103,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 268,
+     "element": 134,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 327,
+     "element": 163,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 398,
+     "element": 199,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 485,
+     "element": 242,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 591,
+     "element": 295,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 720,
+     "element": 360,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 834,
+     "element": 417,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 967,
+     "element": 484,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584031"
+  },
+  {
+   "name": "融光種ブルームアーチ",
+   "type": "弓",
+   "element": "毒",
+   "baseRarity": 4,
+   "maxRarity": 6,
+   "stats": {
+    "4": {
+     "attack": 158,
+     "element": null,
+     "affinity": 0
+    },
+    "5": {
+     "attack": 219,
+     "element": 110,
+     "affinity": 0
+    },
+    "6": {
+     "attack": 293,
+     "element": 147,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "融光種プケプケ"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584032"
+  },
+  {
+   "name": "パルサーボウ",
+   "type": "弓",
+   "element": "雷",
+   "baseRarity": 5,
+   "maxRarity": 6,
+   "stats": {
+    "5": {
+     "attack": 150,
+     "element": 75,
+     "affinity": 3
+    },
+    "6": {
+     "attack": 201,
+     "element": 100,
+     "affinity": 4
+    }
+   },
+   "affinity": 4,
+   "monsters": [
+    "トビカガチ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584052"
+  },
+  {
+   "name": "融光種ブレイズボウ",
+   "type": "弓",
+   "element": "火",
+   "baseRarity": 5,
+   "maxRarity": 7,
+   "stats": {
+    "5": {
+     "attack": 157,
+     "element": 79,
+     "affinity": -4
+    },
+    "6": {
+     "attack": 211,
+     "element": 105,
+     "affinity": -4
+    },
+    "7": {
+     "attack": 274,
+     "element": 137,
+     "affinity": -4
+    }
+   },
+   "affinity": -4,
+   "monsters": [
+    "融光種アンジャナフ"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584053"
+  },
+  {
+   "name": "融光種クルルアロー",
+   "type": "弓",
+   "element": "爆破",
+   "baseRarity": 5,
+   "maxRarity": 6,
+   "stats": {
+    "5": {
+     "attack": 226,
+     "element": null,
+     "affinity": 2
+    },
+    "6": {
+     "attack": 303,
+     "element": 152,
+     "affinity": 2
+    }
+   },
+   "affinity": 2,
+   "monsters": [
+    "融光種クルルヤック"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584054"
+  },
+  {
+   "name": "黒鋼の弓",
+   "type": "弓",
+   "element": "龍",
+   "baseRarity": 6,
+   "maxRarity": 14,
+   "stats": {
+    "6": {
+     "attack": 210,
+     "element": 105,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 274,
+     "element": 137,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 334,
+     "element": 167,
+     "affinity": 0,
+     "est": true
+    },
+    "9": {
+     "attack": 407,
+     "element": 203,
+     "affinity": 0,
+     "est": true
+    },
+    "10": {
+     "attack": 495,
+     "element": 248,
+     "affinity": 0,
+     "est": true
+    },
+    "11": {
+     "attack": 603,
+     "element": 302,
+     "affinity": 0,
+     "est": true
+    },
+    "12": {
+     "attack": 735,
+     "element": 368,
+     "affinity": 0,
+     "src": "list"
+    },
+    "13": {
+     "attack": 852,
+     "element": 426,
+     "affinity": 0,
+     "est": true
+    },
+    "14": {
+     "attack": 988,
+     "element": 494,
+     "affinity": 0,
+     "src": "list"
+    }
+   },
+   "affinity": 0,
+   "monsters": [],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584075"
+  },
+  {
+   "name": "融光種アクアアロー",
+   "type": "弓",
+   "element": "水",
+   "baseRarity": 6,
+   "maxRarity": 7,
+   "stats": {
+    "6": {
+     "attack": 210,
+     "element": 105,
+     "affinity": 0
+    },
+    "7": {
+     "attack": 274,
+     "element": 137,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "融光種ジュラトドス"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584076"
+  },
+  {
+   "name": "プリンセスアロー",
+   "type": "弓",
+   "element": "龍",
+   "baseRarity": 6,
+   "maxRarity": 14,
+   "stats": {
+    "6": {
+     "attack": 193,
+     "element": null,
+     "affinity": 5
+    },
+    "7": {
+     "attack": 251,
+     "element": 126,
+     "affinity": 5
+    },
+    "8": {
+     "attack": 306,
+     "element": 153,
+     "affinity": 8,
+     "est": true
+    },
+    "9": {
+     "attack": 373,
+     "element": 187,
+     "affinity": 8,
+     "est": true
+    },
+    "10": {
+     "attack": 455,
+     "element": 228,
+     "affinity": 8,
+     "est": true
+    },
+    "11": {
+     "attack": 554,
+     "element": 277,
+     "affinity": 8,
+     "est": true
+    },
+    "12": {
+     "attack": 676,
+     "element": 338,
+     "affinity": 7.2,
+     "src": "list"
+    },
+    "13": {
+     "attack": 783,
+     "element": 392,
+     "affinity": 8,
+     "est": true
+    },
+    "14": {
+     "attack": 908,
+     "element": 454,
+     "affinity": 8,
+     "src": "list"
+    }
+   },
+   "affinity": 8,
+   "monsters": [
+    "リオレイア"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584077"
+  },
+  {
+   "name": "火竜の強弓",
+   "type": "弓",
+   "element": "火",
+   "baseRarity": 6,
+   "maxRarity": 14,
+   "stats": {
+    "6": {
+     "attack": 201,
+     "element": 100,
+     "affinity": 4
+    },
+    "7": {
+     "attack": 261,
+     "element": 131,
+     "affinity": 4
+    },
+    "8": {
+     "attack": 318,
+     "element": 160,
+     "affinity": 6,
+     "est": true
+    },
+    "9": {
+     "attack": 388,
+     "element": 194,
+     "affinity": 6,
+     "est": true
+    },
+    "10": {
+     "attack": 473,
+     "element": 237,
+     "affinity": 6,
+     "est": true
+    },
+    "11": {
+     "attack": 576,
+     "element": 288,
+     "affinity": 6,
+     "est": true
+    },
+    "12": {
+     "attack": 702,
+     "element": 351,
+     "affinity": 5.4,
+     "src": "list"
+    },
+    "13": {
+     "attack": 814,
+     "element": 407,
+     "affinity": 6,
+     "est": true
+    },
+    "14": {
+     "attack": 944,
+     "element": 472,
+     "affinity": 6,
+     "src": "list"
+    }
+   },
+   "affinity": 6,
+   "monsters": [
+    "リオレウス"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584078"
+  },
+  {
+   "name": "融光種飛雷弓イテカガチ",
+   "type": "弓",
+   "element": "雷",
+   "baseRarity": 7,
+   "maxRarity": 9,
+   "stats": {
+    "7": {
+     "attack": 276,
+     "element": 138,
+     "affinity": 2
+    },
+    "8": {
+     "attack": 346,
+     "element": 173,
+     "affinity": 2,
+     "est": true
+    },
+    "9": {
+     "attack": 433,
+     "element": 217,
+     "affinity": 2,
+     "src": "list"
+    }
+   },
+   "affinity": 2,
+   "monsters": [
+    "融光種トビカガチ"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/585740"
+  },
+  {
+   "name": "ジャナフアルカウス",
+   "type": "弓",
+   "element": "火",
+   "baseRarity": 8,
+   "maxRarity": 8,
+   "stats": {
+    "8": {
+     "attack": 347,
+     "element": 173,
+     "affinity": -3.9
+    }
+   },
+   "affinity": -3.9,
+   "monsters": [
+    "アンジャナフ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": true,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586622"
+  },
+  {
+   "name": "融光種ジャナフアルカウス",
+   "type": "弓",
+   "element": "火",
+   "baseRarity": 8,
+   "maxRarity": 8,
+   "stats": {
+    "8": {
+     "attack": 347,
+     "element": 173,
+     "affinity": -3.9
+    }
+   },
+   "affinity": -3.9,
+   "monsters": [
+    "融光種アンジャナフ"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": true,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586623"
+  },
+  {
+   "name": "融光種ウォーターシュート",
+   "type": "弓",
+   "element": "水",
+   "baseRarity": 8,
+   "maxRarity": 8,
+   "stats": {
+    "8": {
+     "attack": 346,
+     "element": 173,
+     "affinity": 0
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "融光種ジュラトドス"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": true,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586610"
+  },
+  {
+   "name": "ローゼスアロー",
+   "type": "弓",
+   "element": "無",
+   "baseRarity": 9,
+   "maxRarity": 9,
+   "stats": {
+    "9": {
+     "attack": 410,
+     "element": null,
+     "affinity": 4.5
+    }
+   },
+   "affinity": 4.5,
+   "monsters": [
+    "リオレイア亜種"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586846"
+  }
+ ]
+}
