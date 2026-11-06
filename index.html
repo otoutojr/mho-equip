@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>装備おすすめ ― アウトランダーズ</title>
-<meta name="description" content="冒険ランクと倒したモンスターから、いま作れる最強の防具構成を計算するモンハンアウトランダーズ用ツール">
+<meta name="description" content="冒険ランクを入れるだけで、そのランクで作れる最強装備を計算するモンハンアウトランダーズ用ツール">
 <meta name="theme-color" content="#22201c">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -30,34 +30,28 @@
 <div class="menuBack" id="menuBack" hidden></div>
 <nav class="menu" id="menu" hidden aria-label="メニュー">
   <p class="menuTitle">移動</p>
-  <a href="#charPanel" class="menuItem">キャラを選ぶ</a>
-  <a href="#progressPanel" class="menuItem">進行度・倒したモンスター</a>
-  <a href="#resultPanel" class="menuItem">最強セット</a>
-  <a href="#nextPanel" class="menuItem">次に狩ると強くなる相手</a>
-  <a href="#goalPanel" class="menuItem">最終目標（全部解放したとき）</a>
+  <a href="#charPanel" class="menuItem">キャラ・ランクを選ぶ</a>
+  <a href="#resultPanel" class="menuItem">このランクの最強装備</a>
   <a href="#comparePanel" class="menuItem">火力比較（どの構成が一番ダメージが出るか）</a>
+  <a href="#nextPanel" class="menuItem">ランクが上がるとどうなるか</a>
+  <a href="#goalPanel" class="menuItem">最終目標</a>
   <a href="#prioPanel" class="menuItem">スキル別の火力と根拠</a>
-  <p class="menuTitle">操作</p>
-  <button type="button" class="menuItem" id="menuAuto">ランクから討伐済みを自動設定</button>
-  <button type="button" class="menuItem" id="menuAllDone">全モンスターを討伐済みにする</button>
-  <button type="button" class="menuItem" id="menuReset">入力をリセット</button>
   <p class="menuTitle">その他</p>
   <button type="button" class="menuItem" id="menuHelp">使い方</button>
+  <button type="button" class="menuItem" id="menuReset">入力をリセット</button>
 </nav>
 
 <main id="app" aria-live="polite">
   <section class="panel" id="charPanel">
     <h2>キャラ</h2>
-    <div class="chips" id="charChips" role="tablist" aria-label="キャラを選ぶ"></div>
-    <div class="elements" id="elementRow" hidden>
-      <span class="hint">武器の属性</span>
-      <div class="tabs" id="elementTabs" role="tablist"></div>
+    <div class="ctabs" id="charTabs" role="tablist" aria-label="キャラを選ぶ"></div>
+    <div class="subsel" id="heroSel" hidden>
+      <p class="subLbl">武器</p>
+      <div class="ctabs weapons" id="weaponTabs" role="tablist" aria-label="武器種を選ぶ"></div>
+      <p class="subLbl">属性</p>
+      <div class="ctabs elems" id="elementTabs" role="tablist" aria-label="属性を選ぶ"></div>
     </div>
     <p class="charNote" id="charNote"></p>
-  </section>
-
-  <section class="panel" id="progressPanel">
-    <h2>進行度</h2>
     <div class="rankBox">
       <div class="rankHead"><span>冒険ランク</span><span class="rankVal" id="rankVal">1</span></div>
       <div class="rankSlide">
@@ -65,20 +59,8 @@
         <input id="rank" type="range" min="1" max="60" step="1" value="1" aria-label="冒険ランク">
         <button type="button" class="nudge" data-nudge="1" aria-label="ランクを1上げる">＋</button>
       </div>
+      <p class="capNote" id="capNote"></p>
     </div>
-    <p class="capNote" id="capNote"></p>
-    <details class="fold" id="monsterFold">
-      <summary><span>倒したモンスター</span><span class="foldMeta" id="monsterCount"></span></summary>
-      <p class="hint">タップで討伐済みに。討伐済みのモンスターの素材で作れる防具だけを候補にします。</p>
-      <div class="row boardTools">
-        <button type="button" class="ghost small" id="autoFromRank">ランクから自動設定</button>
-        <button type="button" class="ghost small" id="markAllMap">このマップを全部討伐済み</button>
-        <button type="button" class="ghost small" id="clearAllMap">このマップを全部未討伐</button>
-      </div>
-      <div id="mapTabs" class="tabs" role="tablist"></div>
-      <div id="monsterBoard" class="board"></div>
-      <div class="oreNote" id="oreNote"></div>
-    </details>
   </section>
 
   <section class="panel result" id="resultPanel">
@@ -91,6 +73,7 @@
       <button type="button" class="tab" role="tab" data-target="yuko">融光種向け</button>
     </div>
     <p class="hint" id="resultHint"></p>
+    <div id="weaponSlot"></div>
     <ol class="rack" id="rack"></ol>
     <div class="skillTotals" id="skillTotals"></div>
     <details class="alts" id="alts">
@@ -106,14 +89,14 @@
   </section>
 
   <section class="panel" id="nextPanel">
-    <h2>次に狩ると強くなる相手</h2>
-    <p class="hint">まだ倒していないモンスターを1体倒した場合に、セットがどれだけ強くなるか。</p>
+    <h2>ランクが上がると</h2>
+    <p class="hint">この先のランクで新しく作れる防具や強化上限が増えたとき、火力がどれだけ上がるか。</p>
     <ol id="nextList" class="nextList"></ol>
   </section>
 
   <section class="panel" id="goalPanel">
     <h2>最終目標</h2>
-    <p class="hint">全モンスター・全強化を解放したときの最強スキル構成。いま作れるかは関係なく、このキャラの到達点。</p>
+    <p class="hint">全部の防具が作れて、全部最大まで強化できたときの最強構成。このキャラの到達点。</p>
     <div id="goalBody"></div>
   </section>
 
@@ -129,11 +112,10 @@
 <section class="sheet" id="helpSheet" hidden aria-label="使い方">
   <h2>使い方</h2>
   <ol>
-    <li>キャラを選ぶ（主人公は武器種ごと、属性も選べる）</li>
-    <li>冒険ランクをスライダーで合わせる → 強化できる上限レアが自動で決まる</li>
-    <li>倒したモンスターにチェック（「ランクから自動設定」でまとめて可）</li>
-    <li>最強セットに、各部位を何レアまで強化すればいいかが出る</li>
-    <li>「次に狩ると強くなる相手」で、次の目標が分かる</li>
+    <li>キャラを選ぶ（主人公は武器と属性も選ぶ）</li>
+    <li>冒険ランクをスライダーで合わせる</li>
+    <li>そのランクで作れる防具の中から、一番火力が出る5部位と、何レアまで強化すればいいかが出る</li>
+    <li>「ランクが上がると」で、次にどこで強くなれるかが分かる</li>
   </ol>
   <p>火力の数字は、各スキルの効果値に「そのキャラの攻撃にどれだけ乗るか」（効果が続く時間・弾種・属性の割合）を掛けて掛け合わせた目安です。根拠は「スキル別の火力」に書いてあります。</p>
   <details>

@@ -1,6 +1,6 @@
 /* 装備おすすめ ― UI */
 'use strict';
-const APP_VERSION = '2026.11.06-5';
+const APP_VERSION = '2026.11.06-6';
 const STORE_KEY = 'mho-equip:v1';
 const PART_JP = { head: '頭', body: '胴', arm: '腕', waist: '腰', leg: '脚' };
 const ROMAN = { 1: 'Ⅰ', 2: 'Ⅱ', 3: 'Ⅲ', 4: 'Ⅳ', 5: 'Ⅴ', 6: 'Ⅵ' };
@@ -20,11 +20,18 @@ const state = loadState();
 let DATA = null;
 let worker = null;
 let reqId = 0;
-let currentMap = null;
 
 function loadState() {
-  const def = { charId: null, rank: 1, heroElement: '火', target: 'normal', tune: {}, defeated: {}, map: null };
-  try { return Object.assign(def, JSON.parse(localStorage.getItem(STORE_KEY) || '{}')); } catch { return def; }
+  const def = { char: 'hero', heroWeapon: 'hbg', heroElement: '火', rank: 1, target: 'normal' };
+  let st;
+  try { st = Object.assign(def, JSON.parse(localStorage.getItem(STORE_KEY) || '{}')); } catch { st = def; }
+  // 旧バージョンの charId（hero_hbg など）を引き継ぐ
+  if (st.charId) {
+    if (st.charId.startsWith('hero_')) { st.char = 'hero'; st.heroWeapon = st.charId.slice(5); } else st.char = st.charId;
+    delete st.charId;
+  }
+  delete st.defeated; delete st.tune; delete st.map; delete st.orbTier; delete st.guildLv;
+  return st;
 }
 function saveState() { try { localStorage.setItem(STORE_KEY, JSON.stringify(state)); } catch {} }
 
@@ -33,23 +40,21 @@ async function loadData() {
   const [armor, skills, monsters, characters] = await Promise.all(
     ['armor', 'skills', 'monsters', 'characters'].map(n => fetch(`data/${n}.json${q}`).then(r => { if (!r.ok) throw new Error(n); return r.json(); }))
   );
-  return { armor, skills, monsters, characters };
+  const weapons = await fetch(`data/weapons.json${q}`).then(r => (r.ok ? r.json() : null)).catch(() => null);
+  return { armor, skills, monsters, characters, weapons };
 }
 
 function init() {
   loadData().then((d) => {
     DATA = d;
     $('#dataDate').textContent = `データ更新日 ${d.armor.updated || ''}`;
-    if (!state.charId || !d.characters.characters.some(c => c.id === state.charId)) state.charId = d.characters.characters[0].id;
-    currentMap = state.map || d.monsters.maps[0].name;
+    if (!currentChar()) { state.char = 'hero'; state.heroWeapon = 'hbg'; }
     worker = new Worker('solver.js?v=' + APP_VERSION);
     worker.onmessage = onWorkerMessage;
     worker.postMessage({ type: 'init', armor: d.armor, skills: d.skills });
     renderChars();
     renderFields();
     renderMenu();
-    renderMapTabs();
-    renderBoard();
     renderPriorities();
     $('#resultHint').textContent = '計算中…';
     solve();
@@ -70,61 +75,53 @@ function setHelp(open) { $('#helpSheet').hidden = !open; $('#helpBack').hidden =
 function renderMenu() {
   $('#menuBtn').addEventListener('click', () => setMenu($('#menu').hidden));
   $('#menuBack').addEventListener('click', () => setMenu(false));
-  document.querySelectorAll('#menu a.menuItem').forEach(a => a.addEventListener('click', () => {
-    setMenu(false);
-    if (a.getAttribute('href') === '#progressPanel') $('#monsterFold').open = true;
-  }));
-  $('#menuAuto').addEventListener('click', () => { setMenu(false); autoFromRank(); });
-  $('#menuAllDone').addEventListener('click', () => { setMenu(false); for (const m of DATA.monsters.monsters) state.defeated[m.name] = true; saveState(); renderMapTabs(); renderBoard(); solve(); });
+  document.querySelectorAll('#menu a.menuItem').forEach(a => a.addEventListener('click', () => setMenu(false)));
   $('#menuReset').addEventListener('click', () => {
     setMenu(false);
-    if (!confirm('ランク・討伐チェックなどの入力を全部消します。いい？')) return;
-    const keep = { charId: state.charId };
+    if (!confirm('キャラ・ランクの選択を初期状態に戻します。いい？')) return;
     for (const k of Object.keys(state)) delete state[k];
-    Object.assign(state, { charId: keep.charId, rank: 1, heroElement: '火', target: 'normal', defeated: {}, map: null });
-    saveState(); renderFields(true); renderTargetTabs(); renderMapTabs(); renderBoard(); renderChars(); solve();
+    Object.assign(state, { char: 'hero', heroWeapon: 'hbg', heroElement: '火', rank: 1, target: 'normal' });
+    saveState(); renderFields(true); renderTargetTabs(); renderChars(); renderPriorities(); solve();
   });
   $('#menuHelp').addEventListener('click', () => { setMenu(false); setHelp(true); });
   $('#helpBack').addEventListener('click', () => setHelp(false));
   $('#helpClose').addEventListener('click', () => setHelp(false));
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape') { setMenu(false); setHelp(false); } });
 }
-function autoFromRank() {
-  for (const m of DATA.monsters.monsters) {
-    if (m.unlockRank != null && m.unlockRank <= state.rank) state.defeated[m.name] = true;
-  }
-  saveState(); renderMapTabs(); renderBoard(); solve();
-}
 
 /* ---------- characters ---------- */
-function currentChar() { return DATA.characters.characters.find(c => c.id === state.charId); }
+const HERO_WEAPONS = [['gs', '大剣'], ['ls', '太刀'], ['db', '双剣'], ['lance', 'ランス'], ['hammer', 'ハンマー'], ['cb', 'チャアク'], ['hbg', 'ヘビィ'], ['bow', '弓']];
+const HERO_ELEMENTS = ['火', '水', '雷', '氷', '龍'];
+function heroElement() { return HERO_ELEMENTS.includes(state.heroElement) ? state.heroElement : '火'; }
+function charId() { return state.char === 'hero' ? `hero_${state.heroWeapon}` : state.char; }
+function currentChar() { return DATA.characters.characters.find(c => c.id === charId()); }
+function charElement(c) { return c.elementSelectable ? heroElement() : (c.element || '無'); }
+const CHAR_ORDER = ['pepe', 'midori', 'luca', 'cless', 'ensho', 'akenia', 'lord', 'haze', 'raya', 'madre', 'folio', 'brix', 'ryunosuke'];
+function uniqueChars() {
+  const pos = (id) => { const i = CHAR_ORDER.indexOf(id); return i < 0 ? 99 : i; };
+  return DATA.characters.characters.filter(c => !c.id.startsWith('hero_')).sort((a, b) => pos(a.id) - pos(b.id));
+}
 
+function selectChar(next) { Object.assign(state, next); saveState(); renderChars(); renderPriorities(); solve(); }
+function tabBtn(label, selected, onclick, dotElem, sub) {
+  return el('button', { type: 'button', class: 'ctab', role: 'tab', 'aria-selected': String(selected), onclick },
+    el('span', { class: 'ctabName' }, dotElem ? el('span', { class: 'el', style: `background: var(--el-${EL_CLASS[dotElem] || 'none'})` }) : null, label),
+    sub ? el('span', { class: 'ctabSub', text: sub }) : null);
+}
 function renderChars() {
-  const box = $('#charChips'); box.innerHTML = '';
-  for (const c of DATA.characters.characters) {
-    const elem = c.elementSelectable ? heroElement() : c.element;
-    const chip = el('button', { type: 'button', class: 'chip', role: 'tab', 'aria-selected': String(c.id === state.charId), onclick: () => { state.charId = c.id; saveState(); renderChars(); renderPriorities(); solve(); } },
-      el('span', { class: 'name' }, el('span', { class: 'el', style: `background: var(--el-${EL_CLASS[elem] || 'none'})` }), c.name),
-      el('span', { class: 'meta', text: `${c.weapon || ''}${elem && elem !== '無' ? '・' + elem : ''}${c.type ? '・' + c.type : ''}` }));
-    box.append(chip);
+  const box = $('#charTabs'); box.innerHTML = '';
+  box.append(tabBtn('主人公', state.char === 'hero', () => selectChar({ char: 'hero' }), heroElement(), `${(HERO_WEAPONS.find(w => w[0] === state.heroWeapon) || [, ''])[1]}・${heroElement()}`));
+  for (const c of uniqueChars()) box.append(tabBtn(c.name, state.char === c.id, () => selectChar({ char: c.id }), c.element, c.weapon === 'チャージアックス' ? 'チャアク' : (c.weapon === 'ヘビィボウガン' ? 'ヘビィ' : c.weapon)));
+  const heroSel = $('#heroSel');
+  heroSel.hidden = state.char !== 'hero';
+  if (state.char === 'hero') {
+    const wt = $('#weaponTabs'); wt.innerHTML = '';
+    for (const [id, label] of HERO_WEAPONS) wt.append(tabBtn(label, state.heroWeapon === id, () => selectChar({ heroWeapon: id })));
+    const et = $('#elementTabs'); et.innerHTML = '';
+    for (const e of HERO_ELEMENTS) et.append(tabBtn(e, heroElement() === e, () => selectChar({ heroElement: e }), e));
   }
   const c = currentChar();
   $('#charNote').textContent = c.note || (c.mechanics || []).join('。');
-  $('#resultTitle').textContent = `${c.name} の最強セット`;
-  renderElementRow(c);
-}
-
-const HERO_ELEMENTS = ['火', '水', '雷', '氷', '龍'];
-function heroElement() { return HERO_ELEMENTS.includes(state.heroElement) ? state.heroElement : '火'; }
-function renderElementRow(c) {
-  const row = $('#elementRow');
-  if (!c.elementSelectable) { row.hidden = true; return; }
-  row.hidden = false;
-  const tabs = $('#elementTabs'); tabs.innerHTML = '';
-  for (const e of HERO_ELEMENTS) {
-    tabs.append(el('button', { type: 'button', class: 'tab', role: 'tab', 'aria-selected': String(e === heroElement()), onclick: () => { state.heroElement = e; saveState(); renderChars(); solve(); } },
-      el('span', { class: 'el', style: `background: var(--el-${EL_CLASS[e]})` }), e));
-  }
 }
 // 主人公は属性を選べるので、重みの「{属性}」を選択中の属性に置き換える
 /* ---------- ダメージモデル（ブラウザ側で再計算。発動率の調整を反映） ---------- */
@@ -168,21 +165,6 @@ function effectiveWeights(c) {
   for (const [k, v] of Object.entries(w)) out[k.replace('{属性}', heroElement())] = v;
   return out;
 }
-let tuneTimer = null;
-function setTune(c, key, val) {
-  if (!state.tune) state.tune = {};
-  const t = Object.assign({}, state.tune[c.id] || {});
-  t[key] = val; state.tune[c.id] = t; saveState();
-  clearTimeout(tuneTimer); tuneTimer = setTimeout(solve, 250);
-}
-function slider(label, value, onInput, isDefault) {
-  const out = el('span', { class: 'tuneVal', text: `${Math.round(value * 100)}%` });
-  const input = el('input', { type: 'range', min: '0', max: '100', step: '5', value: String(Math.round(value * 100)), 'aria-label': label });
-  input.addEventListener('input', () => { out.textContent = `${input.value}%`; wrap.classList.remove('isDefault'); onInput(+input.value / 100); });
-  const wrap = el('label', { class: 'tune' + (isDefault ? ' isDefault' : '') }, el('span', { class: 'tuneLbl', text: label }), input, out);
-  return wrap;
-}
-
 function renderPriorities() {
   const c = currentChar();
   const list = $('#prioList'); list.innerHTML = '';
@@ -190,7 +172,7 @@ function renderPriorities() {
     ? `そのスキルを最大まで積んだときに、${state.target === 'yuko' ? '融光種相手の' : ''}火力が何%上がるか。上ほど火力が出るスキルです。`
     : '攻略サイトの推奨をもとにした優先度です。';
   const W = effectiveWeights(c);
-  const elemName = c.elementSelectable ? heroElement() : (c.element || '');
+  const elemName = charElement(c);
   const items = (c.priorities || []).map((p) => {
     const key = p.skill.replace('{属性}', elemName);
     const arr = W[key] || [];
@@ -214,7 +196,7 @@ function renderPriorities() {
   }
 }
 
-/* ---------- progression fields ---------- */
+/* ---------- rank ---------- */
 function renderFields(valuesOnly) {
   $('#rank').value = state.rank; $('#rankVal').textContent = state.rank;
   if (valuesOnly) return;
@@ -223,7 +205,7 @@ function renderFields(valuesOnly) {
     state.rank = Math.min(60, Math.max(1, v)); $('#rank').value = state.rank; $('#rankVal').textContent = state.rank;
     renderCapNote();
     clearTimeout(rankTimer);
-    rankTimer = setTimeout(() => { saveState(); renderBoard(); solve(); }, live ? 350 : 0);
+    rankTimer = setTimeout(() => { saveState(); solve(); }, live ? 300 : 0);
   };
   $('#rank').addEventListener('input', (e) => applyRank(+e.target.value, true));
   document.querySelectorAll('.nudge').forEach(b => b.addEventListener('click', () => applyRank(state.rank + (+b.dataset.nudge), false)));
@@ -231,53 +213,12 @@ function renderFields(valuesOnly) {
     b.addEventListener('click', () => { state.target = b.dataset.target; saveState(); renderTargetTabs(); renderPriorities(); solve(); });
   });
   renderTargetTabs();
-  $('#markAllMap').addEventListener('click', () => { setMapDefeated(true); });
-  $('#clearAllMap').addEventListener('click', () => { setMapDefeated(false); });
-  $('#autoFromRank').addEventListener('click', autoFromRank);
 }
 function renderTargetTabs() {
   document.querySelectorAll('#targetTabs .tab').forEach((b) => b.setAttribute('aria-selected', String((state.target || 'normal') === b.dataset.target)));
 }
-function setMapDefeated(flag) {
-  for (const m of DATA.monsters.monsters) if (m.maps.includes(currentMap)) { if (flag) state.defeated[m.name] = true; else delete state.defeated[m.name]; }
-  saveState(); renderMapTabs(); renderBoard(); solve();
-}
-function clamp(input, lo, hi) { const v = Math.min(hi, Math.max(lo, +input.value || lo)); input.value = v; return v; }
 
-/* ---------- monster board ---------- */
-function renderMapTabs() {
-  const all = DATA.monsters.monsters.length, done = DATA.monsters.monsters.filter(x => state.defeated[x.name]).length;
-  $('#monsterCount').textContent = `${done}/${all} 討伐済み`;
-  const tabs = $('#mapTabs'); tabs.innerHTML = '';
-  for (const m of DATA.monsters.maps) {
-    const total = DATA.monsters.monsters.filter(x => x.maps.includes(m.name)).length;
-    const done = DATA.monsters.monsters.filter(x => x.maps.includes(m.name) && state.defeated[x.name]).length;
-    tabs.append(el('button', { type: 'button', class: 'tab', role: 'tab', 'aria-selected': String(m.name === currentMap), onclick: () => { currentMap = m.name; state.map = m.name; saveState(); renderMapTabs(); renderBoard(); } },
-      m.name, el('span', { class: 'count', text: `${done}/${total}` })));
-  }
-}
-
-function renderBoard() {
-  const board = $('#monsterBoard'); board.innerHTML = '';
-  const list = DATA.monsters.monsters.filter(m => m.maps.includes(currentMap));
-  const order = (m) => (m.variant === 'yuko' ? 1 : 0);
-  list.sort((a, b) => order(a) - order(b) || (a.unlockRank ?? 999) - (b.unlockRank ?? 999));
-  for (const m of list) {
-    const done = !!state.defeated[m.name];
-    const tile = el('button', { type: 'button', class: 'mon', 'aria-pressed': String(done), onclick: () => { state.defeated[m.name] = !done; saveState(); renderMapTabs(); renderBoard(); solve(); } },
-      el('span', { class: 'mname', text: m.name }),
-      el('span', { class: 'mmeta' },
-        el('span', { class: 'el', style: `background: var(--el-${EL_CLASS[m.element] || 'none'})`, title: m.element || '' }),
-        el('span', { text: m.armorSeries && m.armorSeries.length ? m.armorSeries.join('・') + '装備' : '防具なし' })));
-    if (done) tile.append(el('span', { class: 'stamp', text: '討伐' }));
-    else if (m.unlockRank != null && m.unlockRank > state.rank) tile.append(el('span', { class: 'locked', text: `R${m.unlockRank}〜` }));
-    board.append(tile);
-  }
-  const ore = (DATA.armor.series || []).filter(s => s.gate && (s.gate.type === 'basic' || s.gate.type === 'map')).map(s => s.name);
-  $('#oreNote').textContent = ore.length ? `素材が鉱石・骨などの防具（${ore.join('・')}）は、そのマップに行けていれば候補に入れています。` : '';
-}
-
-/* ---------- 強化上限（冒険ランクと狩魂玉のランクから） ---------- */
+/* ---------- ランクで決まること ---------- */
 function rankCap(rank = state.rank) {
   let cap = 2;
   for (const [r, c] of (DATA.monsters.rankCap || [])) if (rank >= r) cap = c;
@@ -289,34 +230,41 @@ function orbTierFor(cap) {
   for (let i = 1; i <= 6; i++) if ((t[i] || t[String(i)] || 0) >= cap) return i;
   return 6;
 }
-function rarityCap() { return rankCap(); }
-function whatIfRank() { const n = nextRankStep(); return n ? [{ label: `rank:${n.rank}:${n.cap}`, rarityCap: n.cap, orbTier: orbTierFor(n.cap) }] : []; }
-function nextRankStep() {
-  for (const [r, c] of (DATA.monsters.rankCap || [])) if (r > state.rank) return { rank: r, cap: c };
-  return null;
+function monsterOpen(name, rank) {
+  const m = DATA.monsters.monsters.find(x => x.name === name);
+  return !m || m.unlockRank == null || m.unlockRank <= rank;
+}
+function mapOpen(name, rank) {
+  const m = DATA.monsters.maps.find(x => x.name === name);
+  return !m || m.unlockRank == null || m.unlockRank <= rank;
+}
+function availableSeries(rank = state.rank) {
+  return DATA.armor.series.filter((s) => {
+    const g = s.gate || { type: 'basic' };
+    if (g.type === 'monster') return (g.monsters || [g.monster]).some(n => monsterOpen(n, rank));
+    if (g.type === 'map') return mapOpen(g.map, rank);
+    return true;
+  }).map(s => s.name);
 }
 function renderCapNote() {
-  const n = nextRankStep();
-  $('#capNote').textContent = `レア${rankCap()}まで強化できます` + (n ? `（ランク${n.rank}でレア${n.cap}）` : '');
+  const step = (DATA.monsters.rankCap || []).find(([r]) => r > state.rank);
+  $('#capNote').textContent = `ランク${state.rank}：レア${rankCap()}まで強化できる` + (step ? `（ランク${step[0]}でレア${step[1]}）` : '');
 }
-
-/* ---------- availability ---------- */
-function mapUnlocked(mapName) {
-  const m = DATA.monsters.maps.find(x => x.name === mapName);
-  if (m && m.unlockRank != null && state.rank >= m.unlockRank) return true;
-  return DATA.monsters.monsters.some(x => x.maps.includes(mapName) && state.defeated[x.name]);
-}
-function availableSeries() {
-  const out = [];
-  for (const s of DATA.armor.series) {
-    const g = s.gate || { type: 'basic' };
-    let ok = false;
-    if (g.type === 'basic') ok = true;
-    else if (g.type === 'monster') ok = (g.monsters || [g.monster]).some(n => state.defeated[n]);
-    else if (g.type === 'map') ok = mapUnlocked(g.map);
-    if (ok) out.push(s.name);
-  }
-  return out;
+// この先のランクの節目（強化上限が上がる・新しいモンスターが解放される）
+function milestones() {
+  const now = new Set(availableSeries());
+  const ranks = new Set();
+  for (const [r] of (DATA.monsters.rankCap || [])) if (r > state.rank) ranks.add(r);
+  for (const m of DATA.monsters.monsters) if (m.unlockRank != null && m.unlockRank > state.rank && m.armorSeries.length) ranks.add(m.unlockRank);
+  return [...ranks].sort((a, b) => a - b).slice(0, 6).map((r) => {
+    const series = availableSeries(r);
+    const cap = rankCap(r);
+    const newMon = DATA.monsters.monsters.filter(m => m.unlockRank === r && m.armorSeries.some(sn => !now.has(sn))).map(m => m.name);
+    const why = [];
+    if (cap > rankCap(r - 1)) why.push(`レア${cap}まで強化`);
+    if (newMon.length) why.push(newMon.join('・') + 'の装備');
+    return { label: `ランク${r}`, why: why.join('／'), series, rarityCap: cap, orbTier: orbTierFor(cap) };
+  });
 }
 
 /* ---------- solving ---------- */
@@ -324,16 +272,61 @@ function solve() {
   if (!worker || !DATA) return;
   const c = currentChar();
   const avail = availableSeries();
-  const next = DATA.monsters.monsters.filter(m => !state.defeated[m.name] && m.armorSeries && m.armorSeries.length)
-    .map(m => ({ monster: m.name, series: m.armorSeries.filter(sn => !avail.includes(sn)) }))
-    .filter(n => n.series.length);
   reqId++;
   renderCapNote();
+  $('#resultTitle').textContent = `ランク${state.rank}の最強装備`;
   $('#resultHint').textContent = '計算中…';
   $('#compareList').innerHTML = ''; $('#compareList').append(el('li', { class: 'empty', text: '計算中…' }));
+  $('#nextList').innerHTML = ''; $('#nextList').append(el('li', { class: 'empty', text: '計算中…' }));
   $('#comparePanel').hidden = c.scoreMode !== 'log';
-  worker.postMessage({ type: 'solve', reqId, weights: effectiveWeights(c), availableSeries: avail, rarityCap: rarityCap(), orbTier: orbTierFor(rarityCap()), next, axes: compareAxes(c), whatIf: whatIfRank(), K: 12, topN: 6 });
-  worker.postMessage({ type: 'solve', reqId, goal: true, weights: effectiveWeights(c), availableSeries: DATA.armor.series.map(s => s.name), rarityCap: 12, orbTier: 6, next: [], K: 12, topN: 3 });
+  renderWeapon(c);
+  const W = effectiveWeights(c);
+  worker.postMessage({ type: 'solve', reqId, weights: W, availableSeries: avail, rarityCap: rankCap(), orbTier: orbTierFor(rankCap()), milestones: milestones(), axes: compareAxes(c), K: 12, topN: 6 });
+  worker.postMessage({ type: 'solve', reqId, goal: true, weights: W, availableSeries: DATA.armor.series.map(s => s.name), rarityCap: 12, orbTier: 6, K: 12, topN: 3 });
+}
+
+/* ---------- 武器（データがあれば） ---------- */
+const WEAPON_TYPE = { hbg: 'ヘビィボウガン', ls: '太刀', gs: '大剣', db: '双剣', lance: 'ランス', hammer: 'ハンマー', cb: 'チャージアックス', bow: '弓' };
+function weaponStatsAt(w, r) {
+  const st = w.stats || {};
+  if (st[r]) return st[r];
+  const keys = Object.keys(st).map(Number).filter(k => k <= r).sort((a, b) => b - a);
+  return keys.length ? st[keys[0]] : null;
+}
+function bestWeapon(c, rank = state.rank) {
+  const list = (DATA.weapons && DATA.weapons.weapons) || [];
+  if (!list.length) return null;
+  const type = c.weapon || WEAPON_TYPE[state.heroWeapon];
+  const elem = charElement(c);
+  const cap = rankCap(rank);
+  const e = (c.model && c.model.elementShare) || 0.35;
+  const cands = [];
+  for (const w of list) {
+    if (w.type !== type || w.element !== elem) continue;
+    if ((w.baseRarity || 1) > cap) continue;
+    if ((w.monsters || []).length && !(w.monsters || []).every(m => monsterOpen(m, rank))) continue;
+    const r = Math.min(w.maxRarity || cap, cap);
+    const st = weaponStatsAt(w, r);
+    if (!st) continue;
+    const score = (st.attack || 0) * (1 + ((w.affinity || 0) / 100) * 0.25) * (1 - e) * 2 + (st.element || 0) * e * 2;
+    cands.push({ w, r, st, score });
+  }
+  cands.sort((a, b) => b.score - a.score);
+  return cands[0] || null;
+}
+function renderWeapon(c) {
+  const box = $('#weaponSlot'); box.innerHTML = '';
+  if (!DATA.weapons) return;
+  const b = bestWeapon(c);
+  if (!b) { box.append(el('div', { class: 'slot weapon' }, el('div', { class: 'part', text: '武' }), el('div', { class: 'empty', text: `${charElement(c)}属性の${c.weapon || WEAPON_TYPE[state.heroWeapon]}はまだ作れません。` }))); return; }
+  const { w, r, st } = b;
+  const need = r > (w.baseRarity || 1);
+  box.append(el('div', { class: 'slot weapon' },
+    el('div', { class: 'part', text: '武' }),
+    el('div', {},
+      el('div', { class: 'pname' }, w.name, el('span', { class: 'series', text: `${w.type}・${w.element}属性` })),
+      el('div', { class: 'rar' }, el('span', { class: 'lbl' }, need ? el('b', { class: 'need', text: `レア${r}まで強化` }) : el('b', { text: `レア${r}` }), `　攻撃力${st.attack}・${w.element}${st.element || '―'}${w.affinity ? `・会心${w.affinity}%` : ''}`)),
+      w.skill ? el('div', { class: 'tags' }, el('span', { class: 'tag', text: w.skill })) : null)));
 }
 
 let lastBase = 0;
@@ -341,14 +334,14 @@ function onWorkerMessage(e) {
   const msg = e.data;
   if (msg.reqId !== reqId) return;
   if (msg.goal) { if (msg.type === 'result') renderGoal(msg); return; }
-  if (msg.type === 'result') { renderResult(msg); $('#nextList').innerHTML = ''; $('#nextList').append(el('li', { class: 'empty', text: '伸びしろを計算中…' })); }
+  if (msg.type === 'result') renderResult(msg);
   if (msg.type === 'next') renderNext(msg.next);
   if (msg.type === 'compare') renderCompare(msg.rows);
 }
 
 function compareAxes(c) {
   if (c.scoreMode !== 'log' || !c.modelSkills) return [];
-  const elemName = c.elementSelectable ? heroElement() : (c.element || '');
+  const elemName = charElement(c);
   const W = effectiveWeights(c);
   return (c.priorities || [])
     .filter(p => { const sp = c.modelSkills[p.skill]; return sp && (sp.kind === 'dmg' || sp.kind === 'element'); })
@@ -389,8 +382,8 @@ function renderResult(res) {
   const c = currentChar();
   if (!res.best) {
     $('#scoreValue').textContent = '―';
-    $('#resultHint').textContent = 'まだ作れる防具がありません。倒したモンスターにチェックを入れてください。';
-    $('#skillTotals').innerHTML = ''; $('#altList').innerHTML = ''; $('#nextList').innerHTML = '';
+    $('#resultHint').textContent = 'このランクで作れる防具が見つかりませんでした。';
+    $('#skillTotals').innerHTML = ''; $('#altList').innerHTML = '';
     return;
   }
   const b = res.best;
@@ -448,24 +441,20 @@ function renderResult(res) {
 
 function renderNext(res) {
   const nl = $('#nextList'); nl.innerHTML = '';
-  const nexts = (res.monsters || []).slice(0, 8);
-  for (const x of (res.extras || [])) {
-    if (x.delta < 0.05) continue;
-    const [, r, cap] = x.label.split(':');
-    const label = `ランク${r}になったら（レア${cap}まで強化）`;
-    nl.append(el('li', { class: 'next' },
-      el('span', { class: 'nname', text: label }),
-      el('span', { class: 'delta', text: fmtDelta(x.delta) }),
-      el('span', { class: 'why', text: `セット：${x.changed.join('・')}` })));
-  }
-  for (const n of nexts) {
-    const flat = n.delta < 0.05;
+  // 前の節目より強くならない節目は省く
+  const rows = [];
+  let last = lastBase;
+  for (const x of (res.milestones || [])) { if (x.score > last + 0.05 || (!rows.length && x === res.milestones[res.milestones.length - 1])) { rows.push(x); last = Math.max(last, x.score); } }
+  let shown = 0;
+  for (const x of rows) {
+    const flat = x.delta < 0.05;
     nl.append(el('li', { class: 'next' + (flat ? ' flat' : '') },
-      el('span', { class: 'nname', text: n.monster }),
-      el('span', { class: 'delta', text: flat ? '変化なし' : fmtDelta(n.delta) }),
-      el('span', { class: 'why', text: flat ? 'いまのセットは変わりません' : `入れ替わる部位：${n.changed.join('・') || '―'}` })));
+      el('span', { class: 'nname' }, x.label, el('span', { class: 'nwhy', text: x.why ? `　${x.why}` : '' })),
+      el('span', { class: 'delta', text: flat ? '変化なし' : fmtDelta(x.delta) }),
+      el('span', { class: 'why', text: flat ? 'いまの装備のままでOK' : `${x.skills}　／　入れ替え：${x.changed.join('・') || '―'}` })));
+    shown++;
   }
-  if (!nexts.length) nl.append(el('li', { class: 'empty', text: '未討伐のモンスターがありません。' }));
+  if (!shown) nl.append(el('li', { class: 'empty', text: 'これ以上ランクを上げても装備は変わりません。' }));
 }
 
 function renderGoal(res) {

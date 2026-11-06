@@ -20,7 +20,7 @@ self.onmessage = (e) => {
     if (res.best && !msg.goal) {
       if (msg.axes && msg.axes.length) self.postMessage({ type: 'compare', reqId: msg.reqId, rows: solveCompare(msg, res.best) });
       const t1 = Date.now();
-      const next = solveNext(msg, res.best.score);
+      const next = solveNext(msg, res.best.score, new Set(res.best.pieces.map(p => p.id)));
       self.postMessage({ type: 'next', reqId: msg.reqId, next, ms: Date.now() - t1 });
     }
   }
@@ -231,32 +231,17 @@ function solve(msg) {
   return { best: top.length ? describe(top[0], W) : null, alts: top.slice(1).map(t => describe(t, W)), counts: PARTS.map(p => byPart[p].length) };
 }
 
-function solveNext(msg, base) {
+function solveNext(msg, base, baseIds) {
   const W = makeWeightTable(msg.weights);
   const K = Math.max(8, (msg.K || 12) - 2);
-  const avail = new Set(msg.availableSeries);
-  const next = [];
-  for (const n of (msg.next || [])) {
-    const avail2 = new Set([...avail, ...n.series]);
-    const prep2 = preparePieces(W, avail2, msg.rarityCap, msg.owned, msg.orbTier);
-    const by2 = pickCandidates(prep2, W, K);
-    const top2 = search(by2, W, 1);
-    if (!top2.length) continue;
-    const d = describe(top2[0], W);
-    const changed = d.pieces.filter(p => n.series.includes(p.series)).map(p => p.name);
-    next.push({ monster: n.monster, delta: top2[0].score - base, score: top2[0].score, changed });
+  const out = [];
+  for (const m of (msg.milestones || [])) {
+    const prep = preparePieces(W, new Set(m.series), m.rarityCap, msg.owned, m.orbTier);
+    const top = search(pickCandidates(prep, W, K), W, 1);
+    if (!top.length) continue;
+    const d = describe(top[0], W);
+    out.push({ label: m.label, why: m.why, delta: top[0].score - base, score: top[0].score,
+      changed: d.pieces.filter(p => !baseIds.has(p.id)).map(p => p.name), skills: d.totals.filter(t => t.value > 0.3).map(t => `${t.skill}${t.lv}`).join('・') });
   }
-  next.sort((a, b) => b.delta - a.delta);
-  // 狩魂玉のランクが1つ上がった場合 / 強化上限が1つ上がった場合
-  const extras = [];
-  const tryWith = (label, rarityCap, orbTier) => {
-    const prep2 = preparePieces(W, avail, rarityCap, msg.owned, orbTier);
-    const by2 = pickCandidates(prep2, W, K);
-    const top2 = search(by2, W, 1);
-    if (!top2.length) return;
-    const d = describe(top2[0], W);
-    extras.push({ label, delta: top2[0].score - base, score: top2[0].score, changed: d.pieces.map(p => p.name) });
-  };
-  for (const w of (msg.whatIf || [])) tryWith(w.label, w.rarityCap, w.orbTier);
-  return { monsters: next, extras };
+  return { milestones: out };
 }
