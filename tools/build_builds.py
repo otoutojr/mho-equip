@@ -62,6 +62,12 @@ def main():
             piece_by[(norm(p['name']), p['part'])] = p
             piece_by.setdefault((norm(p['name']), None), p)
     weapon_by = {norm(w['name']): w for w in weapons}
+    # 英語名 → 日本語名（weapons_full.json の nameEn）
+    full_p = RAW / 'weapons_full.json'
+    if full_p.exists():
+        for w in json.loads(full_p.read_text(encoding='utf-8'))['weapons']:
+            if w.get('nameEn') and norm(w['name']) in weapon_by:
+                weapon_by.setdefault(norm(w['nameEn']), weapon_by[norm(w['name'])])
 
     def find_piece(name, part):
         n = norm(name)
@@ -84,6 +90,7 @@ def main():
 
     merged = collections.OrderedDict()
     unresolved = collections.Counter()
+    skipped = collections.Counter()
     n_in = 0
     for fname in ['builds_game8.json', 'builds_gamewith.json', 'builds_other.json']:
         d = load(fname)
@@ -97,7 +104,12 @@ def main():
             if not b.get('charId') and b.get('weaponType') in HERO_BY_TYPE:  # 武器種別の序盤装備ページ＝主人公向け
                 b = dict(b, charId=HERO_BY_TYPE[b['weaponType']])
             src = b.get('source') or d.get('source') or fname
-            arm = b.get('armor') or {}
+            if b.get('partial'):  # game8.co の「Progression Options」は一部の部位だけの行なので構成としては入れない
+                skipped['部位がそろっていない'] += 1
+                continue
+            # 英語サイトは日本語名に読み替えたもの（armorJa / weaponJa、なければ Norm）を使う
+            arm = b.get('armorJa') or b.get('armorNorm') or b.get('armor') or {}
+            b = dict(b, weapon=b.get('weaponJa') or b.get('weaponNorm') or b.get('weapon'))
             pieces = {}
             for part in PARTS:
                 raw = arm.get(part)
@@ -116,30 +128,43 @@ def main():
             if b.get('weapon') and not w:
                 unresolved[f'武器 {b.get("weapon")}（{src}）'] += 1
             el = b.get('element') or (w.get('element') if w and w.get('element') not in (None, '無') else None)
-            key = '|'.join([b.get('charId') or '?', el or '-', (w['name'] if w else norm(b.get('weapon')) or '-')] +
+            # 防具5部位が同じなら武器が違っても1構成にまとめる（武器はサイトごとに並べる）
+            key = '|'.join([b.get('charId') or '?', el or '-'] +
                            [(pieces[x] or {}).get('id') or (pieces[x] or {}).get('raw') or '-' for x in PARTS])
+            wname = w['name'] if w else (b.get('weapon') or None)
             ref = {'source': src, 'label': b.get('label'), 'stage': b.get('stage'), 'rarityRange': b.get('rarityRange'),
                    'url': b.get('sourceUrl'), 'updated': b.get('pageUpdated'), 'comment': (b.get('comment') or '')[:200],
-                   'skills': [{'skill': skill_name(k.get('skill')), 'lv': k.get('lv')} for k in b.get('skills') or [] if k.get('skill')]}
+                   'skills': [{'skill': skill_name(k.get('skill')), 'lv': k.get('lv')} for k in b.get('skills') or [] if k.get('skill')],
+                   'weapon': wname}
             if key in merged:
-                if not any(r['source'] == ref['source'] and r['label'] == ref['label'] and r['url'] == ref['url'] for r in merged[key]['refs']):
-                    merged[key]['refs'].append(ref)
+                m = merged[key]
+                if not any(r['source'] == ref['source'] and r['label'] == ref['label'] and r['url'] == ref['url'] for r in m['refs']):
+                    m['refs'].append(ref)
+                if wname and not any(x['name'] == wname for x in m['weapons']):
+                    m['weapons'].append({'name': wname, 'known': bool(w)})
+                if not m['weapon'] or 'raw' in m['weapon']:
+                    if w: m['weapon'] = {'name': w['name']}
                 continue
             merged[key] = {
                 'id': f'b{len(merged) + 1:03d}', 'charId': b.get('charId'), 'charName': b.get('charName'),
                 'weaponType': b.get('weaponType') or (w or {}).get('type'), 'element': el,
                 'weapon': {'name': w['name']} if w else ({'raw': b.get('weapon')} if b.get('weapon') else None),
                 'pieces': pieces, 'refs': [ref],
+                'weapons': [{'name': wname, 'known': bool(w)}] if wname else [],
             }
     builds = list(merged.values())
+    # 同じ会社のサイト（Game8 と英語版 game8.co、GameWith と gamewith.ai）は1つと数える
+    family = {'game8.co': 'Game8', 'gamewith.ai': 'GameWith'}
     for b in builds:
-        b['sourceCount'] = len({r['source'] for r in b['refs']})
+        b['sourceCount'] = len({family.get(r['source'], r['source']) for r in b['refs']})
     out = {'updated': datetime.date.today().isoformat(), 'builds': builds,
            'unresolved': [{'name': k, 'count': v} for k, v in unresolved.most_common()]}
     OUT.write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding='utf-8')
     by_char = collections.Counter(b['charId'] for b in builds)
     print(f'構成DB: 入力 {n_in} 件 → {len(builds)} 構成（複数サイト一致 {sum(1 for b in builds if b["sourceCount"] > 1)}）')
     print('  キャラ別', dict(by_char))
+    print('  除外', dict(skipped))
+    print('  サイト別', dict(collections.Counter(r['source'] for b in builds for r in b['refs'])))
     if unresolved:
         print('  突き合わせられなかった名前:')
         for k, v in unresolved.most_common(40):

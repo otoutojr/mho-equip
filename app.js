@@ -1,6 +1,6 @@
 /* 融光工房 ― UI */
 'use strict';
-const APP_VERSION = '2026.11.06-13';
+const APP_VERSION = '2026.11.06-14';
 const STORE_KEY = 'mho-equip:v1';
 const PART_JP = { head: '頭', body: '胴', arm: '腕', waist: '腰', leg: '脚' };
 const EL_CLASS = { '火': 'fire', '水': 'water', '雷': 'thunder', '氷': 'ice', '龍': 'dragon', '毒': 'poison', '麻痺': 'para', '睡眠': 'sleep', '爆破': 'blast', '無': 'none' };
@@ -349,10 +349,11 @@ function refLabel(r) {
 // 同じサイトの同じ見出し（キャラページとまとめページの再掲など）は1つにまとめる
 function uniqRefs(refs) {
   const seen = new Set();
-  return refs.filter(r => { const k = r.source + '|' + refLabel(r); if (seen.has(k)) return false; seen.add(k); return true; });
+  return refs.filter(r => { const k = r.source + '|' + (r.label || refLabel(r)); if (seen.has(k)) return false; seen.add(k); return true; });
 }
 function renderBuilds(rows) {
   const box = $('#dbList'); box.innerHTML = '';
+  const oldMore = document.getElementById('dbMore'); if (oldMore) oldMore.remove();
   const c = currentChar();
   const list = cur.dbList || [];
   const hint = $('#dbHint');
@@ -368,12 +369,22 @@ function renderBuilds(rows) {
     if (wdef) { const r = Math.min(wdef.maxRarity || cap, cap); const st = weaponStatsAt(wdef, Math.max(r, wdef.baseRarity || 1)); if (st) wc = { w: wdef, r: Math.max(r, wdef.baseRarity || 1), st, power: weaponPower(c, wdef, st) }; }
     // 武器の高レアの数値はサイトにそろっていないので、DPS目安は武器を「今作れる一番強い武器」にそろえて防具だけで比べる
     const dps = row ? dpsOf(cur.weapon, row.score) : 0;
-    return { b, row, openAt, wc, dps, now: openAt != null && openAt <= state.rank };
+    const cost = ((row && row.set && row.set.pieces) || []).reduce((t, p) => t + (p.rarity - p.baseRarity), 0);
+    return { b, row, openAt, wc, dps, cost, now: openAt != null && openAt <= state.rank };
   });
-  items.sort((a, b) => (b.now - a.now) || (a.now ? b.dps - a.dps : (a.openAt || 99) - (b.openAt || 99)));
+  // DPS目安が同じなら、複数サイトに載っている構成 → 強化の少ない構成の順
+  items.sort((a, b) => (b.now - a.now) || (a.now ? (Math.round(b.dps) - Math.round(a.dps)) || (b.b.sourceCount - a.b.sourceCount) || (a.cost - b.cost)
+    : (a.openAt || 99) - (b.openAt || 99)));
   const nNow = items.filter(x => x.now).length;
-  hint.textContent = `Game8・GameWith などに載っている${c.elementSelectable ? `${charElement(c)}属性の` : ''}${c.name}の構成 ${items.length}件。今のランクで作れる ${nNow}件を、防具をレア${cap}まで強化したときのDPS目安の順に並べています（スキルは今の強化上限で付く分。武器はどの構成も${cur.weapon ? cur.weapon.w.name : '同じ武器'}でそろえて比較）。`;
-  for (const x of items) {
+  hint.textContent = `Game8・GameWith・アルテマ・Gamerch などに載っている${c.elementSelectable ? `${charElement(c)}属性の` : ''}${c.name}の構成 ${items.length}件。今のランクで作れる ${nNow}件を、防具をレア${cap}まで強化したときのDPS目安の順に並べています（スキルは今の強化上限で付く分。武器はどの構成も${cur.weapon ? cur.weapon.w.name : '同じ武器'}でそろえて比較）。`;
+  const SHOW = 5;
+  let more = null;
+  items.forEach((x, idx) => {
+    if (idx === SHOW) {
+      more = el('ol', { class: 'dbList' });
+      box.after(el('details', { class: 'dbMore', id: 'dbMore' }, el('summary', { text: `ほかの構成 ${items.length - SHOW}件（今は作れないものを含む）` }), more));
+    }
+    const target = more || box;
     const { b, row } = x;
     const head = el('div', { class: 'dbHead' },
       el('div', { class: 'dbRefs' }, ...uniqRefs(b.refs).map(r => el('span', { class: 'dbSrc' }, el('b', { text: r.source }), refLabel(r) ? ` ${refLabel(r)}` : '')),
@@ -383,6 +394,11 @@ function renderBuilds(rows) {
     const wline = el('div', { class: 'dbWeapon' }, el('span', { class: 'dbPart', text: '武器' }), el('span', { class: 'dbName', text: wname }),
       x.wc ? el('span', { class: 'dbRar' + (x.wc.r > (x.wc.w.baseRarity || 1) ? ' need' : ''), text: (x.wc.r > (x.wc.w.baseRarity || 1) ? `レア${x.wc.w.baseRarity}→${x.wc.r}` : `レア${x.wc.r}`) + (x.wc.r < cap && (x.wc.w.maxRarity || 0) < cap ? '（以降のデータなし）' : '') })
         : el('span', { class: 'dbRar warn', text: '数値データなし' }));
+    // 防具が同じでサイトによって武器が違うとき
+    const wname0 = b.weapon ? (b.weapon.name || b.weapon.raw) : null;
+    const otherW = new Map();
+    for (const r of b.refs) if (r.weapon && r.weapon !== wname0) { const k = r.weapon; otherW.set(k, [...new Set([...(otherW.get(k) || []), r.source])]); }
+    const wAlt = otherW.size ? el('p', { class: 'dbWalt', text: 'ほかのサイトの武器：' + [...otherW].map(([n, srcs]) => `${n}（${srcs.join('・')}）`).join('、') }) : null;
     const pieceInfo = new Map(((row && row.set && row.set.pieces) || []).map(p => [p.id, p]));
     const avail = new Set(availableSeries());
     const plist = el('ul', { class: 'dbPieces' });
@@ -409,12 +425,13 @@ function renderBuilds(rows) {
     const gapLine = x.now && row && gap.length ? el('p', { class: 'dbGap', text: `攻略サイトの想定（${b.refs[0].rarityRange ? `レア${b.refs[0].rarityRange}` : '最大強化'}）まであと：${gap.join('・')}。強化上限が上がると揃う` }) : null;
     const det = el('details', { class: 'dbDet' }, el('summary', { text: '攻略サイトの解説・スキル' }),
       ...uniqRefs(b.refs).map(r => el('div', { class: 'dbRef' },
-        el('p', { class: 'dbRefHead' }, el('b', { text: r.source }), ` ${refLabel(r)}`, r.updated ? el('span', { class: 'muted', text: `（${r.updated}）` }) : null),
+        el('p', { class: 'dbRefHead' }, el('b', { text: r.source }), ` ${refLabel(r)}`, r.updated ? el('span', { class: 'muted', text: `（${String(r.updated).slice(0, 10)}）` }) : null),
+        r.weapon ? el('p', { class: 'dbRefSk', text: `武器：${r.weapon}` }) : null,
         r.skills && r.skills.length ? el('p', { class: 'dbRefSk', text: '掲載スキル：' + r.skills.map(k => `${k.skill}${k.lv ?? ''}`).join('・') }) : null,
         r.comment ? el('p', { class: 'dbRefCm', text: r.comment }) : null,
         r.url ? el('a', { href: r.url, target: '_blank', rel: 'noopener', text: '出典ページを開く' }) : null)));
-    box.append(el('li', { class: 'dbCard' + (x.now ? '' : ' future') }, head, wline, plist, x.now ? tags : null, gapLine, det));
-  }
+    target.append(el('li', { class: 'dbCard' + (x.now ? '' : ' future') }, head, wline, wAlt, plist, x.now ? tags : null, gapLine, det));
+  });
 }
 
 function onWorkerMessage(e) {

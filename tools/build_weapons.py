@@ -27,7 +27,52 @@ def pct(v):
         return None
 
 
+def from_full(full):
+    """weapons_full.json（gamewith.ai・GameWith・game8.co を突き合わせたレア別表）から作る。補間はレアの抜けの間だけ"""
+    out = []
+    for w in full['weapons']:
+        known = {}
+        for r, st in (w.get('stats') or {}).items():
+            if st.get('attack'):
+                known[int(r)] = {'attack': st['attack'], 'element': st.get('element') or 0, 'affinity': st.get('affinity') or 0,
+                                 'src': '・'.join(st.get('sources') or [])}
+        if not known:
+            continue
+        base = min(known)
+        mx = max(known)
+        stats = {}
+        for r in range(base, mx + 1):
+            if r in known:
+                stats[r] = known[r]
+            else:
+                atk = interp(known, r, 'attack')
+                if atk is None:
+                    continue
+                stats[r] = {'attack': atk, 'element': interp(known, r, 'element') or 0, 'affinity': known[max(k for k in known if k < r)]['affinity'], 'est': True}
+        urls = w.get('sourceUrls') or []
+        gw = next((u for u in urls if 'gamewith.jp' in u), None)
+        out.append({
+            'name': w['name'], 'type': w['type'], 'element': w.get('element') or '無',
+            'baseRarity': base, 'maxRarity': mx, 'stats': stats,
+            'affinity': known[mx]['affinity'],
+            'monsters': w.get('monsters') or [],
+            'guild': '冒険団' in w['name'],
+            'yuko': w['name'].startswith('融光種') or any(str(m).startswith('融光種') for m in w.get('monsters') or []),
+            'derived': w.get('craftable') is False,
+            'derivesFrom': w.get('derivesFrom') or w.get('treeInferred'),
+            'sourceUrl': gw or (urls[0] if urls else None),
+        })
+    return out
+
+
 def main():
+    full_p = RAW.parent / 'weapons_full.json'
+    if full_p.exists():
+        out = from_full(json.loads(full_p.read_text(encoding='utf-8')))
+        OUT.write_text(json.dumps({'updated': datetime.date.today().isoformat(), 'source': 'weapons_full.json（gamewith.ai・GameWith・game8.co）', 'weapons': out}, ensure_ascii=False, indent=1), encoding='utf-8')
+        print('weapons', len(out), 'estimated rarities', sum(1 for w in out for s in w['stats'].values() if s.get('est')),
+              'max rarity', dict(sorted(__import__('collections').Counter(w['maxRarity'] for w in out).items())))
+        return
     d = json.loads(RAW.read_text(encoding='utf-8'))
     rules = RAW.parent / 'rarity_rules.json'
     high = {x['name']: x for x in json.loads(rules.read_text(encoding='utf-8')).get('weaponHighRarity', [])} if rules.exists() else {}

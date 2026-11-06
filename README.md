@@ -16,6 +16,7 @@
 - `tools/build_data.py` … 収集した生データから `data/` を作る
 - `tools/merge_rarity.py` … 防具のレア別スキルを Game8・GameWith・gamewith.ai の多数決でまとめ、Gamerch の最大強化時スキルと照合する
 - `tools/make_models.py` … キャラごとのダメージモデル（スキルがどれだけ火力に乗るか）
+- `tools/build_builds.py` … 攻略サイトのおすすめ構成を集めた構成DB（data/builds.json）を作る
 - `tools/build_weapons.py` … 武器データ（レアごとの攻撃力・属性値。レア8〜12は gamewith.ai、どこにも無いレア13だけ補間して推定値扱い）
 
 ## データについて
