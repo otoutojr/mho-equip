@@ -1,0 +1,252 @@
+{
+ "name": "融光工房 構成DB（モンハンアウトランダーズ）",
+ "site": "https://otoutojr.github.io/mho-equip/",
+ "updated": "2026-11-06",
+ "rankCap": {
+  "説明": "冒険ランク → 武器・防具を強化できる上限レア（このランク以上でこのレアまで）",
+  "表": [
+   {
+    "rank": 16,
+    "maxRarity": 3
+   },
+   {
+    "rank": 18,
+    "maxRarity": 4
+   },
+   {
+    "rank": 21,
+    "maxRarity": 5
+   },
+   {
+    "rank": 26,
+    "maxRarity": 6
+   },
+   {
+    "rank": 31,
+    "maxRarity": 7
+   },
+   {
+    "rank": 34,
+    "maxRarity": 8
+   },
+   {
+    "rank": 41,
+    "maxRarity": 9
+   },
+   {
+    "rank": 44,
+    "maxRarity": 10
+   },
+   {
+    "rank": 47,
+    "maxRarity": 11
+   }
+  ],
+  "ランク16未満": 2,
+  "ランク48以上": "不明（どのサイトにも無い）"
+ },
+ "orbForRarity": {
+  "1〜4": "狩魂玉Ⅰ",
+  "5〜6": "狩魂玉Ⅱ",
+  "7〜8": "狩魂玉Ⅲ",
+  "9〜10": "狩魂玉Ⅳ",
+  "11〜12": "狩魂玉Ⅴ"
+ },
+ "notes": [
+  "防具は冒険ランクの強化上限まで強化できる。スキルが載っているのはレア10まで（レア11以降は防御力のみ扱い）",
+  "赤羽（アカハネ冒険団）武器は数値上は強く見えるが、攻略サイトの終盤装備では採用されていない",
+  "弾導強化（弓・ボウガン）は数値が無いが、積むと強いという実戦評価がある",
+  "属性ダメージUP は融光種相手だと効果が大きく上がる（Lv7: +28% → +70%）"
+ ],
+ "characters": [
+  {
+   "charId": "hero_hbg",
+   "name": "主人公（ヘビィ）",
+   "weaponType": "ヘビィボウガン",
+   "element": "主人公は火・水・雷・氷・龍を選べる",
+   "builds": 29,
+   "url": "https://otoutojr.github.io/mho-equip/api/builds/hero_hbg.json",
+   "bytes": 66933
+  },
+  {
+   "charId": "pepe",
+   "name": "ペペ",
+   "weaponType": "ヘビィボウガン",
+   "element": "水",
+   "builds": 11,
+   "url": "https://otoutojr.github.io/mho-equip/api/builds/pepe.json",
+   "bytes": 25689
+  },
+  {
+   "charId": "raya",
+   "name": "ラヤ",
+   "weaponType": "双剣",
+   "element": "火",
+   "builds": 11,
+   "url": "https://otoutojr.github.io/mho-equip/api/builds/raya.json",
+   "bytes": 25407
+  },
+  {
+   "charId": "brix",
+   "name": "ブリックス",
+   "weaponType": "大剣",
+   "element": "雷",
+   "builds": 9,
+   "url": "https://otoutojr.github.io/mho-equip/api/builds/brix.json",
+   "bytes": 25426
+  },
+  {
+   "charId": "akenia",
+   "name": "アケニア",
+   "weaponType": "ランス",
+   "element": "龍",
+   "builds": 7,
+   "url": "https://otoutojr.github.io/mho-equip/api/builds/akenia.json",
+   "bytes": 18195
+  },
+  {
+   "charId": "madre",
+   "name": "マドレ",
+   "weaponType": "弓",
+   "element": "水",
+   "builds": 10,
+   "url": "https://otoutojr.github.io/mho-equip/api/builds/madre.json",
+   "bytes": 23167
+  },
+  {
+   "charId": "folio",
+   "name": "フォリオ",
+   "weaponType": "ランス",
+   "element": "水",
+   "builds": 9,
+   "url": "https://otoutojr.github.io/mho-equip/api/builds/folio.json",
+   "bytes": 24193
+  },
+  {
+   "charId": "midori",
+   "name": "ミドリ",
+   "weaponType": "太刀",
+   "element": "火",
+   "builds": 13,
+   "url": "https://otoutojr.github.io/mho-equip/api/builds/midori.json",
+   "bytes": 25905
+  },
+  {
+   "charId": "luca",
+   "name": "ルカ",
+   "weaponType": "弓",
+   "element": "雷",
+   "builds": 10,
+   "url": "https://otoutojr.github.io/mho-equip/api/builds/luca.json",
+   "bytes": 21115
+  },
+  {
+   "charId": "cless",
+   "name": "クレス",
+   "weaponType": "双剣",
+   "element": "龍",
+   "builds": 9,
+   "url": "https://otoutojr.github.io/mho-equip/api/builds/cless.json",
+   "bytes": 22803
+  },
+  {
+   "charId": "ensho",
+   "name": "エンショウ",
+   "weaponType": "大剣",
+   "element": "龍",
+   "builds": 9,
+   "url": "https://otoutojr.github.io/mho-equip/api/builds/ensho.json",
+   "bytes": 24501
+  },
+  {
+   "charId": "lord",
+   "name": "ロード",
+   "weaponType": "ハンマー",
+   "element": "氷",
+   "builds": 7,
+   "url": "https://otoutojr.github.io/mho-equip/api/builds/lord.json",
+   "bytes": 17633
+  },
+  {
+   "charId": "haze",
+   "name": "ヘイズ",
+   "weaponType": "双剣",
+   "element": "雷",
+   "builds": 2,
+   "url": "https://otoutojr.github.io/mho-equip/api/builds/haze.json",
+   "bytes": 8178
+  },
+  {
+   "charId": "ryunosuke",
+   "name": "リュウノスケ",
+   "weaponType": "太刀",
+   "element": "火",
+   "builds": 8,
+   "url": "https://otoutojr.github.io/mho-equip/api/builds/ryunosuke.json",
+   "bytes": 18223
+  },
+  {
+   "charId": "hero_ls",
+   "name": "主人公（太刀）",
+   "weaponType": "太刀",
+   "element": "主人公は火・水・雷・氷・龍を選べる",
+   "builds": 30,
+   "url": "https://otoutojr.github.io/mho-equip/api/builds/hero_ls.json",
+   "bytes": 63502
+  },
+  {
+   "charId": "hero_gs",
+   "name": "主人公（大剣）",
+   "weaponType": "大剣",
+   "element": "主人公は火・水・雷・氷・龍を選べる",
+   "builds": 30,
+   "url": "https://otoutojr.github.io/mho-equip/api/builds/hero_gs.json",
+   "bytes": 65464
+  },
+  {
+   "charId": "hero_db",
+   "name": "主人公（双剣）",
+   "weaponType": "双剣",
+   "element": "主人公は火・水・雷・氷・龍を選べる",
+   "builds": 25,
+   "url": "https://otoutojr.github.io/mho-equip/api/builds/hero_db.json",
+   "bytes": 54640
+  },
+  {
+   "charId": "hero_lance",
+   "name": "主人公（ランス）",
+   "weaponType": "ランス",
+   "element": "主人公は火・水・雷・氷・龍を選べる",
+   "builds": 27,
+   "url": "https://otoutojr.github.io/mho-equip/api/builds/hero_lance.json",
+   "bytes": 57403
+  },
+  {
+   "charId": "hero_bow",
+   "name": "主人公（弓）",
+   "weaponType": "弓",
+   "element": "主人公は火・水・雷・氷・龍を選べる",
+   "builds": 25,
+   "url": "https://otoutojr.github.io/mho-equip/api/builds/hero_bow.json",
+   "bytes": 55983
+  },
+  {
+   "charId": "hero_hammer",
+   "name": "主人公（ハンマー）",
+   "weaponType": "ハンマー",
+   "element": "主人公は火・水・雷・氷・龍を選べる",
+   "builds": 28,
+   "url": "https://otoutojr.github.io/mho-equip/api/builds/hero_hammer.json",
+   "bytes": 60970
+  },
+  {
+   "charId": "hero_cb",
+   "name": "主人公（チャアク）",
+   "weaponType": "チャージアックス",
+   "element": "主人公は火・水・雷・氷・龍を選べる",
+   "builds": 26,
+   "url": "https://otoutojr.github.io/mho-equip/api/builds/hero_cb.json",
+   "bytes": 58894
+  }
+ ]
+}
