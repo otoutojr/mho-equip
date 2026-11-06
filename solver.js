@@ -75,7 +75,7 @@ function buildDb(armor, skills) {
       if (setName && !setIndex.has(setName)) { setIndex.set(setName, sets.length); sets.push({ name: setName, bonuses: [] }); }
       pieces.push({
         id: p.id, name: p.name, part: p.part, series: s.name, seti: setName ? setIndex.get(setName) : -1,
-        baseRarity: p.baseRarity || 1, maxRarity: p.maxRarity || 9, orbTier: p.orbTier || null,
+        baseRarity: p.baseRarity || 1, maxRarity: p.maxRarity || 9, docMax: p.docMax || p.maxRarity || 9, orbTier: p.orbTier || null,
         skills: p.skills.map(k => ({ s: idx(k.name), name: k.name, lv: k.lv, rarity: k.rarity == null ? (p.baseRarity || 1) : k.rarity })),
       });
     }
@@ -213,7 +213,7 @@ function describe(entry, W) {
     score: entry.score,
     pieces: entry.combo.map(c => ({
       id: c.ref.id, name: c.ref.name, part: c.ref.part, series: c.ref.series,
-      baseRarity: c.ref.baseRarity, maxRarity: c.ref.maxRarity, rarity: c.rarity, orbTier: c.ref.orbTier,
+      baseRarity: c.ref.baseRarity, maxRarity: c.ref.maxRarity, docMax: c.ref.docMax, rarity: c.rarity, orbTier: c.ref.orbTier,
       skills: c.sk.map(k => ({ name: k.name, lv: k.lv, value: wval(W, k.s, k.lv) })),
       value: c.value,
     })),

@@ -405,7 +405,8 @@ def main():
             if pset and pset not in sets: register_set({'name': pset, 'bonuses': []})
             last_unlock = max([k.get('rarity') or 0 for k in p['skills']] + [p.get('baseRarity') or 1])
             pieces.append({'id': f"{slug(name)}_{p['part']}", 'name': norm(p['name']), 'part': p['part'], 'baseRarity': p.get('baseRarity') or 1,
-                           'maxRarity': p.get('maxRarity') or max(max_rar.get(name, 0), last_unlock, 7), 'set': pset, 'orbTier': orb_tier(p.get('materials')),
+                           # 攻略サイトに載っているのはレアdocMaxまで。ゲーム内はランクの強化上限まで育つので、上限は全防具共通で12にする
+                           'maxRarity': 12, 'docMax': max(max_rar.get(name, 0), last_unlock), 'set': pset, 'orbTier': orb_tier(p.get('materials')),
                            'skills': [{'name': norm(k['name']), 'lv': k['lv'], 'rarity': k.get('rarity') if k.get('rarity') is not None else (p.get('baseRarity') or 1)} for k in p['skills']],
                            'materials': p.get('materials'), 'sourceUrl': p.get('sourceUrl')})
         series_out.append({'name': name, 'gate': series_gate(name, monsters_by_series), 'set': main_set, 'pieces': pieces})

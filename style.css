@@ -287,3 +287,5 @@ main { max-width: 640px; margin: 0 auto; padding: 0 10px; }
   body { font-size: 14px; }
   .ctabs { grid-template-columns: repeat(5, 1fr); }
 }
+
+.rar .more { font-size: 10px; color: var(--muted); }
