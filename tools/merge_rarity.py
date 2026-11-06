@@ -70,6 +70,9 @@ def merge_piece(piece, sources):
         known = [u for u in e['unlocks'] if u[0] is not None]
         if not known: continue
         top = max([u[0] for u in known] + [e['max'] or 0])
+        if top < piece['baseRarity']:  # 生産レアより下までしか載っていない（Game8 の冒険団など）は使わない
+            piece.setdefault('conflicts', []).append({'type': 'ignored', 'source': LABEL[src], 'why': f'レア{top}までしか載っていない（生産レア{piece["baseRarity"]}）'})
+            continue
         per[src] = (known, top)
     base = piece['baseRarity']
     for src, (ul, _) in per.items():
@@ -78,6 +81,7 @@ def merge_piece(piece, sources):
         if b and b != base:
             piece.setdefault('conflicts', []).append({'type': 'baseRarity', 'values': {LABEL[src]: b, 'GameWith': base}})
     top = max(m for _, m in per.values())
+    piece['maxSeen'] = max([top] + [sources[s][k]['max'] or 0 for s in per if s != 'gamewith'])
     merged, conflicts = [], []
     prev = {}
     for r in range(base, top + 1):

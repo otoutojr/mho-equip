@@ -495,7 +495,7 @@
      "name": "冒険団ヘルム",
      "part": "head",
      "baseRarity": 5,
-     "maxRarity": 12,
+     "maxRarity": 6,
      "docMax": 6,
      "set": "冒険団の逆襲",
      "orbTier": null,
@@ -522,14 +522,24 @@
       }
      ],
      "materials": null,
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584300"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584300",
+     "conflicts": [
+      {
+       "type": "ignored",
+       "source": "Game8",
+       "why": "レア1までしか載っていない（生産レア5）"
+      }
+     ],
+     "sources": [
+      "GameWith"
+     ]
     },
     {
      "id": "u5192_u967a_u56e3_body",
      "name": "冒険団メイル",
      "part": "body",
      "baseRarity": 5,
-     "maxRarity": 12,
+     "maxRarity": 6,
      "docMax": 6,
      "set": "冒険団の逆襲",
      "orbTier": null,
@@ -556,14 +566,24 @@
       }
      ],
      "materials": null,
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584300"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584300",
+     "conflicts": [
+      {
+       "type": "ignored",
+       "source": "Game8",
+       "why": "レア1までしか載っていない（生産レア5）"
+      }
+     ],
+     "sources": [
+      "GameWith"
+     ]
     },
     {
      "id": "u5192_u967a_u56e3_arm",
      "name": "冒険団アーム",
      "part": "arm",
      "baseRarity": 5,
-     "maxRarity": 12,
+     "maxRarity": 6,
      "docMax": 6,
      "set": "冒険団の逆襲",
      "orbTier": null,
@@ -590,14 +610,17 @@
       }
      ],
      "materials": null,
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584300"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584300",
+     "sources": [
+      "GameWith"
+     ]
     },
     {
      "id": "u5192_u967a_u56e3_waist",
      "name": "冒険団コイル",
      "part": "waist",
      "baseRarity": 5,
-     "maxRarity": 12,
+     "maxRarity": 6,
      "docMax": 6,
      "set": "冒険団の逆襲",
      "orbTier": null,
@@ -624,14 +647,24 @@
       }
      ],
      "materials": null,
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584300"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584300",
+     "conflicts": [
+      {
+       "type": "ignored",
+       "source": "Game8",
+       "why": "レア1までしか載っていない（生産レア5）"
+      }
+     ],
+     "sources": [
+      "GameWith"
+     ]
     },
     {
      "id": "u5192_u967a_u56e3_leg",
      "name": "冒険団グリーブ",
      "part": "leg",
      "baseRarity": 5,
-     "maxRarity": 12,
+     "maxRarity": 6,
      "docMax": 6,
      "set": "冒険団の逆襲",
      "orbTier": null,
@@ -658,7 +691,17 @@
       }
      ],
      "materials": null,
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584300"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584300",
+     "conflicts": [
+      {
+       "type": "ignored",
+       "source": "Game8",
+       "why": "レア1までしか載っていない（生産レア5）"
+      }
+     ],
+     "sources": [
+      "GameWith"
+     ]
     }
    ]
   },
@@ -677,8 +720,8 @@
      "name": "ジャグラスヘルム",
      "part": "head",
      "baseRarity": 1,
-     "maxRarity": 12,
-     "docMax": 9,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "ドスジャグラスの抵抗",
      "orbTier": 1,
      "skills": [
@@ -717,15 +760,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584299"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584299",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30b8_u30e3_u30b0_u30e9_u30b9_body",
      "name": "ジャグラスメイル",
      "part": "body",
      "baseRarity": 1,
-     "maxRarity": 12,
-     "docMax": 9,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "ドスジャグラスの抵抗",
      "orbTier": 1,
      "skills": [
@@ -759,15 +806,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584299"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584299",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30b8_u30e3_u30b0_u30e9_u30b9_arm",
      "name": "ジャグラスアーム",
      "part": "arm",
      "baseRarity": 1,
-     "maxRarity": 12,
-     "docMax": 9,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "ドスジャグラスの抵抗",
      "orbTier": 1,
      "skills": [
@@ -806,15 +857,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584299"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584299",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30b8_u30e3_u30b0_u30e9_u30b9_waist",
      "name": "ジャグラスコイル",
      "part": "waist",
      "baseRarity": 1,
-     "maxRarity": 12,
-     "docMax": 9,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "ドスジャグラスの抵抗",
      "orbTier": 1,
      "skills": [
@@ -839,15 +894,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584299"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584299",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30b8_u30e3_u30b0_u30e9_u30b9_leg",
      "name": "ジャグラスグリーヴ",
      "part": "leg",
      "baseRarity": 1,
-     "maxRarity": 12,
-     "docMax": 9,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "ドスジャグラスの抵抗",
      "orbTier": 1,
      "skills": [
@@ -877,7 +936,11 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584299"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584299",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     }
    ]
   },
@@ -896,8 +959,8 @@
      "name": "クルルヘルム",
      "part": "head",
      "baseRarity": 1,
-     "maxRarity": 12,
-     "docMax": 9,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "クルルヤックの閃撃",
      "orbTier": 1,
      "skills": [
@@ -931,15 +994,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584298"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584298",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30af_u30eb_u30eb_body",
      "name": "クルルメイル",
      "part": "body",
      "baseRarity": 1,
-     "maxRarity": 12,
-     "docMax": 9,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "クルルヤックの閃撃",
      "orbTier": 1,
      "skills": [
@@ -973,15 +1040,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584298"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584298",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30af_u30eb_u30eb_arm",
      "name": "クルルアーム",
      "part": "arm",
      "baseRarity": 1,
-     "maxRarity": 12,
-     "docMax": 9,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "クルルヤックの閃撃",
      "orbTier": 1,
      "skills": [
@@ -1015,15 +1086,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584298"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584298",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30af_u30eb_u30eb_waist",
      "name": "クルルコイル",
      "part": "waist",
      "baseRarity": 1,
-     "maxRarity": 12,
-     "docMax": 9,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "クルルヤックの閃撃",
      "orbTier": 1,
      "skills": [
@@ -1038,13 +1113,13 @@
        "rarity": 5
       },
       {
-       "name": "連撃強化",
-       "lv": 2,
-       "rarity": 9
-      },
-      {
        "name": "弱点攻撃",
        "lv": 1,
+       "rarity": 7
+      },
+      {
+       "name": "連撃強化",
+       "lv": 2,
        "rarity": 9
       }
      ],
@@ -1058,15 +1133,39 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584298"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584298",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ],
+     "conflicts": [
+      {
+       "rarity": 7,
+       "skill": "弱点攻撃",
+       "chosen": 1,
+       "values": {
+        "Game8": 1,
+        "GameWith": 0
+       }
+      },
+      {
+       "rarity": 8,
+       "skill": "弱点攻撃",
+       "chosen": 1,
+       "values": {
+        "Game8": 1,
+        "GameWith": 0
+       }
+      }
+     ]
     },
     {
      "id": "u30af_u30eb_u30eb_leg",
      "name": "クルルグリーヴ",
      "part": "leg",
      "baseRarity": 1,
-     "maxRarity": 12,
-     "docMax": 9,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "クルルヤックの閃撃",
      "orbTier": 1,
      "skills": [
@@ -1101,7 +1200,11 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584298"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584298",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     }
    ]
   },
@@ -1120,8 +1223,8 @@
      "name": "プケプケヘルム",
      "part": "head",
      "baseRarity": 1,
-     "maxRarity": 12,
-     "docMax": 9,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "プケプケの尻尾振り",
      "orbTier": 1,
      "skills": [
@@ -1160,15 +1263,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584297"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584297",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30d7_u30b1_u30d7_u30b1_body",
      "name": "プケプケメイル",
      "part": "body",
      "baseRarity": 1,
-     "maxRarity": 12,
-     "docMax": 9,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "プケプケの尻尾振り",
      "orbTier": 1,
      "skills": [
@@ -1202,15 +1309,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584297"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584297",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30d7_u30b1_u30d7_u30b1_arm",
      "name": "プケプケアーム",
      "part": "arm",
      "baseRarity": 1,
-     "maxRarity": 12,
-     "docMax": 9,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "プケプケの尻尾振り",
      "orbTier": 1,
      "skills": [
@@ -1244,15 +1355,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584297"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584297",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30d7_u30b1_u30d7_u30b1_waist",
      "name": "プケプケコイル",
      "part": "waist",
      "baseRarity": 1,
-     "maxRarity": 12,
-     "docMax": 9,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "プケプケの尻尾振り",
      "orbTier": 1,
      "skills": [
@@ -1291,15 +1406,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584297"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584297",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30d7_u30b1_u30d7_u30b1_leg",
      "name": "プケプケグリーヴ",
      "part": "leg",
      "baseRarity": 1,
-     "maxRarity": 12,
-     "docMax": 9,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "プケプケの尻尾振り",
      "orbTier": 1,
      "skills": [
@@ -1317,16 +1436,6 @@
        "name": "環境の活用",
        "lv": 1,
        "rarity": 7
-      },
-      {
-       "name": "環境の活用",
-       "lv": 1,
-       "rarity": 9
-      },
-      {
-       "name": "植物専門家",
-       "lv": 1,
-       "rarity": 9
       }
      ],
      "materials": [
@@ -1339,7 +1448,11 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584297"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584297",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     }
    ]
   },
@@ -1355,8 +1468,8 @@
      "name": "アロイヘルム",
      "part": "head",
      "baseRarity": 3,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "合金の風障",
      "orbTier": 1,
      "skills": [
@@ -1369,6 +1482,16 @@
        "name": "防御反撃",
        "lv": 1,
        "rarity": 6
+      },
+      {
+       "name": "破壊王",
+       "lv": 1,
+       "rarity": 8
+      },
+      {
+       "name": "防御反撃",
+       "lv": 2,
+       "rarity": 10
       }
      ],
      "materials": [
@@ -1381,15 +1504,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584296"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584296",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30a2_u30ed_u30a4_body",
      "name": "アロイメイル",
      "part": "body",
      "baseRarity": 3,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "合金の風障",
      "orbTier": 1,
      "skills": [
@@ -1402,6 +1529,11 @@
        "name": "破壊王",
        "lv": 1,
        "rarity": 6
+      },
+      {
+       "name": "毒耐性",
+       "lv": 1,
+       "rarity": 8
       }
      ],
      "materials": [
@@ -1418,15 +1550,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584296"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584296",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30a2_u30ed_u30a4_arm",
      "name": "アロイアーム",
      "part": "arm",
      "baseRarity": 3,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "合金の風障",
      "orbTier": 1,
      "skills": [
@@ -1451,15 +1587,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584296"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584296",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30a2_u30ed_u30a4_waist",
      "name": "アロイコイル",
      "part": "waist",
      "baseRarity": 3,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "合金の風障",
      "orbTier": 1,
      "skills": [
@@ -1472,6 +1612,11 @@
        "name": "剛勢",
        "lv": 1,
        "rarity": 6
+      },
+      {
+       "name": "水耐性強化",
+       "lv": 1,
+       "rarity": 8
       }
      ],
      "materials": [
@@ -1488,15 +1633,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584296"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584296",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30a2_u30ed_u30a4_leg",
      "name": "アロイグリーヴ",
      "part": "leg",
      "baseRarity": 3,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "合金の風障",
      "orbTier": 1,
      "skills": [
@@ -1509,6 +1658,11 @@
        "name": "防護",
        "lv": 1,
        "rarity": 6
+      },
+      {
+       "name": "毒耐性",
+       "lv": 1,
+       "rarity": 8
       }
      ],
      "materials": [
@@ -1525,7 +1679,11 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584296"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584296",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     }
    ]
   },
@@ -1544,8 +1702,8 @@
      "name": "ギルオスヘルム",
      "part": "head",
      "baseRarity": 2,
-     "maxRarity": 12,
-     "docMax": 9,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "痺賊竜の不意打ち",
      "orbTier": 1,
      "skills": [
@@ -1583,15 +1741,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584295"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584295",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30ae_u30eb_u30aa_u30b9_body",
      "name": "ギルオスメイル",
      "part": "body",
      "baseRarity": 2,
-     "maxRarity": 12,
-     "docMax": 9,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "痺賊竜の不意打ち",
      "orbTier": 1,
      "skills": [
@@ -1625,15 +1787,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584295"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584295",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30ae_u30eb_u30aa_u30b9_arm",
      "name": "ギルオスアーム",
      "part": "arm",
      "baseRarity": 2,
-     "maxRarity": 12,
-     "docMax": 9,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "痺賊竜の不意打ち",
      "orbTier": 1,
      "skills": [
@@ -1672,15 +1838,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584295"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584295",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30ae_u30eb_u30aa_u30b9_waist",
      "name": "ギルオスコイル",
      "part": "waist",
      "baseRarity": 2,
-     "maxRarity": 12,
-     "docMax": 9,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "痺賊竜の不意打ち",
      "orbTier": 1,
      "skills": [
@@ -1722,15 +1892,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584295"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584295",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30ae_u30eb_u30aa_u30b9_leg",
      "name": "ギルオスグリーヴ",
      "part": "leg",
      "baseRarity": 2,
-     "maxRarity": 12,
-     "docMax": 9,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "痺賊竜の不意打ち",
      "orbTier": 1,
      "skills": [
@@ -1764,7 +1938,11 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584295"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584295",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     }
    ]
   },
@@ -1783,8 +1961,8 @@
      "name": "ジュラヘルム",
      "part": "head",
      "baseRarity": 2,
-     "maxRarity": 12,
-     "docMax": 9,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "泥魚竜の水御",
      "orbTier": 1,
      "skills": [
@@ -1823,15 +2001,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584294"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584294",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30b8_u30e5_u30e9_body",
      "name": "ジュラメイル",
      "part": "body",
      "baseRarity": 2,
-     "maxRarity": 12,
-     "docMax": 9,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "泥魚竜の水御",
      "orbTier": 1,
      "skills": [
@@ -1865,15 +2047,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584294"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584294",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30b8_u30e5_u30e9_arm",
      "name": "ジュラアーム",
      "part": "arm",
      "baseRarity": 2,
-     "maxRarity": 12,
-     "docMax": 9,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "泥魚竜の水御",
      "orbTier": 1,
      "skills": [
@@ -1908,15 +2094,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584294"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584294",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30b8_u30e5_u30e9_waist",
      "name": "ジュラコイル",
      "part": "waist",
      "baseRarity": 2,
-     "maxRarity": 12,
-     "docMax": 9,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "泥魚竜の水御",
      "orbTier": 1,
      "skills": [
@@ -1946,15 +2136,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584294"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584294",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30b8_u30e5_u30e9_leg",
      "name": "ジュラグリーヴ",
      "part": "leg",
      "baseRarity": 2,
-     "maxRarity": 12,
-     "docMax": 9,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "泥魚竜の水御",
      "orbTier": 1,
      "skills": [
@@ -1988,7 +2182,11 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584294"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584294",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     }
    ]
   },
@@ -2007,8 +2205,8 @@
      "name": "ボロスヘルム",
      "part": "head",
      "baseRarity": 2,
-     "maxRarity": 12,
-     "docMax": 9,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "土砂竜の泥障",
      "orbTier": 1,
      "skills": [
@@ -2051,15 +2249,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584293"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584293",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30dc_u30ed_u30b9_body",
      "name": "ボロスメイル",
      "part": "body",
      "baseRarity": 2,
-     "maxRarity": 12,
-     "docMax": 9,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "土砂竜の泥障",
      "orbTier": 1,
      "skills": [
@@ -2098,15 +2300,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584293"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584293",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30dc_u30ed_u30b9_arm",
      "name": "ボロスアーム",
      "part": "arm",
      "baseRarity": 2,
-     "maxRarity": 12,
-     "docMax": 9,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "土砂竜の泥障",
      "orbTier": 1,
      "skills": [
@@ -2139,15 +2345,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584293"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584293",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30dc_u30ed_u30b9_waist",
      "name": "ボロスコイル",
      "part": "waist",
      "baseRarity": 2,
-     "maxRarity": 12,
-     "docMax": 9,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "土砂竜の泥障",
      "orbTier": 1,
      "skills": [
@@ -2185,15 +2395,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584293"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584293",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30dc_u30ed_u30b9_leg",
      "name": "ボロスグリーヴ",
      "part": "leg",
      "baseRarity": 2,
-     "maxRarity": 12,
-     "docMax": 9,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "土砂竜の泥障",
      "orbTier": 1,
      "skills": [
@@ -2227,7 +2441,11 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584293"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584293",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     }
    ]
   },
@@ -2243,8 +2461,8 @@
      "name": "チェーンヘッド",
      "part": "head",
      "baseRarity": 1,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "寒鉄錬成",
      "orbTier": 1,
      "skills": [
@@ -2270,15 +2488,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584292"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584292",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30c1_u30a7_u30fc_u30f3_body",
      "name": "チェーンベスト",
      "part": "body",
      "baseRarity": 1,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "寒鉄錬成",
      "orbTier": 1,
      "skills": [
@@ -2303,15 +2525,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584292"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584292",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30c1_u30a7_u30fc_u30f3_arm",
      "name": "チェーングラブ",
      "part": "arm",
      "baseRarity": 1,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "寒鉄錬成",
      "orbTier": 1,
      "skills": [
@@ -2337,15 +2563,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584292"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584292",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30c1_u30a7_u30fc_u30f3_waist",
      "name": "チェーンベルト",
      "part": "waist",
      "baseRarity": 1,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "寒鉄錬成",
      "orbTier": 1,
      "skills": [
@@ -2363,6 +2593,11 @@
        "name": "氷属性ダメージUP",
        "lv": 2,
        "rarity": 7
+      },
+      {
+       "name": "体力回復",
+       "lv": 1,
+       "rarity": 9
       }
      ],
      "materials": [
@@ -2375,15 +2610,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584292"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584292",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30c1_u30a7_u30fc_u30f3_leg",
      "name": "チェーンパンツ",
      "part": "leg",
      "baseRarity": 1,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "寒鉄錬成",
      "orbTier": 1,
      "skills": [
@@ -2401,6 +2640,11 @@
        "name": "威震",
        "lv": 2,
        "rarity": 7
+      },
+      {
+       "name": "ポテンシャル解放",
+       "lv": 1,
+       "rarity": 9
       }
      ],
      "materials": [
@@ -2413,7 +2657,11 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584292"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584292",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     }
    ]
   },
@@ -2429,8 +2677,8 @@
      "name": "ボーンヘルム",
      "part": "head",
      "baseRarity": 2,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "竜塚の神秘",
      "orbTier": 1,
      "skills": [
@@ -2448,6 +2696,11 @@
        "name": "変形強化",
        "lv": 2,
        "rarity": 7
+      },
+      {
+       "name": "破壊王",
+       "lv": 1,
+       "rarity": 9
       }
      ],
      "materials": [
@@ -2460,15 +2713,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584291"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584291",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30dc_u30fc_u30f3_body",
      "name": "ボーンメイル",
      "part": "body",
      "baseRarity": 2,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "竜塚の神秘",
      "orbTier": 1,
      "skills": [
@@ -2498,15 +2755,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584291"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584291",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30dc_u30fc_u30f3_arm",
      "name": "ボーンアーム",
      "part": "arm",
      "baseRarity": 2,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "竜塚の神秘",
      "orbTier": 1,
      "skills": [
@@ -2536,15 +2797,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584291"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584291",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30dc_u30fc_u30f3_waist",
      "name": "ボーンコイル",
      "part": "waist",
      "baseRarity": 2,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "竜塚の神秘",
      "orbTier": 1,
      "skills": [
@@ -2569,15 +2834,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584291"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584291",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30dc_u30fc_u30f3_leg",
      "name": "ボーングリーヴ",
      "part": "leg",
      "baseRarity": 2,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "竜塚の神秘",
      "orbTier": 1,
      "skills": [
@@ -2595,6 +2864,11 @@
        "name": "龍属性ダメージUP",
        "lv": 2,
        "rarity": 7
+      },
+      {
+       "name": "破壊王",
+       "lv": 1,
+       "rarity": 9
       }
      ],
      "materials": [
@@ -2607,7 +2881,11 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584291"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584291",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     }
    ]
   },
@@ -2623,8 +2901,8 @@
      "name": "ランゴヘルム",
      "part": "head",
      "baseRarity": 2,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "巨峰の絶縁",
      "orbTier": 1,
      "skills": [
@@ -2653,15 +2931,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584290"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584290",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30e9_u30f3_u30b4_body",
      "name": "ランゴメイル",
      "part": "body",
      "baseRarity": 2,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "巨峰の絶縁",
      "orbTier": 1,
      "skills": [
@@ -2690,15 +2972,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584290"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584290",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30e9_u30f3_u30b4_arm",
      "name": "ランゴアーム",
      "part": "arm",
      "baseRarity": 2,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "巨峰の絶縁",
      "orbTier": 1,
      "skills": [
@@ -2716,6 +3002,11 @@
        "name": "洞察",
        "lv": 1,
        "rarity": 7
+      },
+      {
+       "name": "回避強化",
+       "lv": 2,
+       "rarity": 9
       }
      ],
      "materials": [
@@ -2732,15 +3023,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584290"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584290",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30e9_u30f3_u30b4_waist",
      "name": "ランゴコイル",
      "part": "waist",
      "baseRarity": 2,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "巨峰の絶縁",
      "orbTier": 1,
      "skills": [
@@ -2778,15 +3073,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584290"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584290",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30e9_u30f3_u30b4_leg",
      "name": "ランゴグリーヴ",
      "part": "leg",
      "baseRarity": 2,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "巨峰の絶縁",
      "orbTier": 1,
      "skills": [
@@ -2824,7 +3123,11 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584290"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584290",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     }
    ]
   },
@@ -2843,8 +3146,8 @@
      "name": "ジャナフヘルム",
      "part": "head",
      "baseRarity": 3,
-     "maxRarity": 12,
-     "docMax": 8,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "蛮顎竜の灼炎",
      "orbTier": 1,
      "skills": [
@@ -2862,6 +3165,11 @@
        "name": "早食い術",
        "lv": 1,
        "rarity": 8
+      },
+      {
+       "name": "破砕",
+       "lv": 2,
+       "rarity": 10
       }
      ],
      "materials": [
@@ -2886,15 +3194,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584289"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584289",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30b8_u30e3_u30ca_u30d5_body",
      "name": "ジャナフメイル",
      "part": "body",
      "baseRarity": 3,
-     "maxRarity": 12,
-     "docMax": 8,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "蛮顎竜の灼炎",
      "orbTier": 1,
      "skills": [
@@ -2912,6 +3224,11 @@
        "name": "弱点追撃",
        "lv": 1,
        "rarity": 8
+      },
+      {
+       "name": "溜め強化",
+       "lv": 2,
+       "rarity": 10
       }
      ],
      "materials": [
@@ -2928,15 +3245,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584289"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584289",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30b8_u30e3_u30ca_u30d5_arm",
      "name": "ジャナフアーム",
      "part": "arm",
      "baseRarity": 3,
-     "maxRarity": 12,
-     "docMax": 8,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "蛮顎竜の灼炎",
      "orbTier": 1,
      "skills": [
@@ -2970,15 +3291,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584289"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584289",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30b8_u30e3_u30ca_u30d5_waist",
      "name": "ジャナフコイル",
      "part": "waist",
      "baseRarity": 3,
-     "maxRarity": 12,
-     "docMax": 8,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "蛮顎竜の灼炎",
      "orbTier": 1,
      "skills": [
@@ -2996,6 +3321,11 @@
        "name": "火属性ダメージUP",
        "lv": 2,
        "rarity": 8
+      },
+      {
+       "name": "早食い術",
+       "lv": 1,
+       "rarity": 10
       }
      ],
      "materials": [
@@ -3020,15 +3350,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584289"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584289",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30b8_u30e3_u30ca_u30d5_leg",
      "name": "ジャナフグリーヴ",
      "part": "leg",
      "baseRarity": 3,
-     "maxRarity": 12,
-     "docMax": 8,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "蛮顎竜の灼炎",
      "orbTier": 1,
      "skills": [
@@ -3062,7 +3396,11 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584289"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584289",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     }
    ]
   },
@@ -3081,8 +3419,8 @@
      "name": "融光種レイアヘルム",
      "part": "head",
      "baseRarity": 3,
-     "maxRarity": 12,
-     "docMax": 8,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "雌火竜の感応",
      "orbTier": 1,
      "skills": [
@@ -3100,6 +3438,11 @@
        "name": "抜刀一閃",
        "lv": 2,
        "rarity": 8
+      },
+      {
+       "name": "抜刀一閃",
+       "lv": 3,
+       "rarity": 10
       }
      ],
      "materials": [
@@ -3112,15 +3455,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584288"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584288",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u878d_u5149_u7a2e_u30ec_u30a4_u30a2_body",
      "name": "融光種レイアメイル",
      "part": "body",
      "baseRarity": 3,
-     "maxRarity": 12,
-     "docMax": 8,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "雌火竜の感応",
      "orbTier": 1,
      "skills": [
@@ -3138,6 +3485,11 @@
        "name": "復活",
        "lv": 1,
        "rarity": 8
+      },
+      {
+       "name": "練気をまといし刃",
+       "lv": 2,
+       "rarity": 10
       }
      ],
      "materials": [
@@ -3154,15 +3506,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584288"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584288",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u878d_u5149_u7a2e_u30ec_u30a4_u30a2_arm",
      "name": "融光種レイアアーム",
      "part": "arm",
      "baseRarity": 3,
-     "maxRarity": 12,
-     "docMax": 8,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "雌火竜の感応",
      "orbTier": 1,
      "skills": [
@@ -3200,15 +3556,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584288"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584288",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u878d_u5149_u7a2e_u30ec_u30a4_u30a2_waist",
      "name": "融光種レイアコイル",
      "part": "waist",
      "baseRarity": 3,
-     "maxRarity": 12,
-     "docMax": 8,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "雌火竜の感応",
      "orbTier": 1,
      "skills": [
@@ -3246,15 +3606,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584288"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584288",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u878d_u5149_u7a2e_u30ec_u30a4_u30a2_leg",
      "name": "融光種レイアグリーヴ",
      "part": "leg",
      "baseRarity": 3,
-     "maxRarity": 12,
-     "docMax": 8,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "雌火竜の感応",
      "orbTier": 1,
      "skills": [
@@ -3272,6 +3636,11 @@
        "name": "植物専門家",
        "lv": 1,
        "rarity": 8
+      },
+      {
+       "name": "抜刀一閃",
+       "lv": 2,
+       "rarity": 10
       }
      ],
      "materials": [
@@ -3284,7 +3653,11 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584288"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584288",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     }
    ]
   },
@@ -3303,8 +3676,8 @@
      "name": "融光種ジャグラスヘルム",
      "part": "head",
      "baseRarity": 4,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "賊竜の回避",
      "orbTier": 1,
      "skills": [
@@ -3317,6 +3690,11 @@
        "name": "破壊王",
        "lv": 1,
        "rarity": 5
+      },
+      {
+       "name": "洞察",
+       "lv": 1,
+       "rarity": 7
       }
      ],
      "materials": [
@@ -3333,15 +3711,30 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584287"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584287",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ],
+     "conflicts": [
+      {
+       "rarity": 7,
+       "skill": "洞察",
+       "chosen": 1,
+       "values": {
+        "Game8": 1,
+        "GameWith": 0
+       }
+      }
+     ]
     },
     {
      "id": "u878d_u5149_u7a2e_u30b8_u30e3_u30b0_u30e_body",
      "name": "融光種ジャグラスメイル",
      "part": "body",
      "baseRarity": 4,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "賊竜の回避",
      "orbTier": 1,
      "skills": [
@@ -3359,6 +3752,11 @@
        "name": "チャージ準備",
        "lv": 2,
        "rarity": 7
+      },
+      {
+       "name": "ポテンシャル解放",
+       "lv": 1,
+       "rarity": 9
       }
      ],
      "materials": [
@@ -3375,15 +3773,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584287"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584287",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u878d_u5149_u7a2e_u30b8_u30e3_u30b0_u30e_arm",
      "name": "融光種ジャグラスアーム",
      "part": "arm",
      "baseRarity": 4,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "賊竜の回避",
      "orbTier": 1,
      "skills": [
@@ -3417,15 +3819,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584287"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584287",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u878d_u5149_u7a2e_u30b8_u30e3_u30b0_u30e_waist",
      "name": "融光種ジャグラスコイル",
      "part": "waist",
      "baseRarity": 4,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "賊竜の回避",
      "orbTier": 1,
      "skills": [
@@ -3443,6 +3849,11 @@
        "name": "弁当好き",
        "lv": 2,
        "rarity": 7
+      },
+      {
+       "name": "ポテンシャル解放",
+       "lv": 1,
+       "rarity": 9
       }
      ],
      "materials": [
@@ -3455,15 +3866,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584287"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584287",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u878d_u5149_u7a2e_u30b8_u30e3_u30b0_u30e_leg",
      "name": "融光種ジャグラスグリーヴ",
      "part": "leg",
      "baseRarity": 4,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "賊竜の回避",
      "orbTier": 1,
      "skills": [
@@ -3493,7 +3908,11 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584287"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584287",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     }
    ]
   },
@@ -3512,8 +3931,8 @@
      "name": "融光種プケプケヘルム",
      "part": "head",
      "baseRarity": 4,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "毒妖鳥の縄張り",
      "orbTier": 1,
      "skills": [
@@ -3531,6 +3950,11 @@
        "name": "溜め強射",
        "lv": 2,
        "rarity": 7
+      },
+      {
+       "name": "無垢",
+       "lv": 1,
+       "rarity": 9
       }
      ],
      "materials": [
@@ -3547,15 +3971,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584286"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584286",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u878d_u5149_u7a2e_u30d7_u30b1_u30d7_u30b_body",
      "name": "融光種プケプケメイル",
      "part": "body",
      "baseRarity": 4,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "毒妖鳥の縄張り",
      "orbTier": 1,
      "skills": [
@@ -3573,6 +4001,11 @@
        "name": "狩人の第六感",
        "lv": 1,
        "rarity": 7
+      },
+      {
+       "name": "弓スキル強化",
+       "lv": 2,
+       "rarity": 9
       }
      ],
      "materials": [
@@ -3589,15 +4022,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584286"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584286",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u878d_u5149_u7a2e_u30d7_u30b1_u30d7_u30b_arm",
      "name": "融光種プケプケアーム",
      "part": "arm",
      "baseRarity": 4,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "毒妖鳥の縄張り",
      "orbTier": 1,
      "skills": [
@@ -3631,15 +4068,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584286"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584286",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u878d_u5149_u7a2e_u30d7_u30b1_u30d7_u30b_waist",
      "name": "融光種プケプケコイル",
      "part": "waist",
      "baseRarity": 4,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "毒妖鳥の縄張り",
      "orbTier": 1,
      "skills": [
@@ -3673,15 +4114,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584286"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584286",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u878d_u5149_u7a2e_u30d7_u30b1_u30d7_u30b_leg",
      "name": "融光種プケプケグリーヴ",
      "part": "leg",
      "baseRarity": 4,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "毒妖鳥の縄張り",
      "orbTier": 1,
      "skills": [
@@ -3699,6 +4144,11 @@
        "name": "無垢",
        "lv": 1,
        "rarity": 7
+      },
+      {
+       "name": "弓スキル強化",
+       "lv": 2,
+       "rarity": 9
       }
      ],
      "materials": [
@@ -3711,7 +4161,11 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584286"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584286",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     }
    ]
   },
@@ -3727,8 +4181,8 @@
      "name": "パピメルテスタ",
      "part": "head",
      "baseRarity": 4,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "花蝶の親和",
      "orbTier": 1,
      "skills": [
@@ -3741,6 +4195,16 @@
        "name": "洞察",
        "lv": 1,
        "rarity": 6
+      },
+      {
+       "name": "環境の活用",
+       "lv": 1,
+       "rarity": 8
+      },
+      {
+       "name": "滞空",
+       "lv": 2,
+       "rarity": 10
       }
      ],
      "materials": [
@@ -3753,15 +4217,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/582574"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/582574",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30d1_u30d4_u30e1_u30eb_body",
      "name": "パピメルペット",
      "part": "body",
      "baseRarity": 4,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "花蝶の親和",
      "orbTier": 1,
      "skills": [
@@ -3774,6 +4242,11 @@
        "name": "洞察",
        "lv": 1,
        "rarity": 6
+      },
+      {
+       "name": "環境の活用",
+       "lv": 1,
+       "rarity": 8
       }
      ],
      "materials": [
@@ -3790,15 +4263,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/582574"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/582574",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30d1_u30d4_u30e1_u30eb_arm",
      "name": "パピメルマーノ",
      "part": "arm",
      "baseRarity": 4,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "花蝶の親和",
      "orbTier": 1,
      "skills": [
@@ -3811,6 +4288,11 @@
        "name": "回避強化",
        "lv": 1,
        "rarity": 6
+      },
+      {
+       "name": "植物専門家",
+       "lv": 1,
+       "rarity": 8
       }
      ],
      "materials": [
@@ -3823,15 +4305,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/582574"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/582574",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30d1_u30d4_u30e1_u30eb_waist",
      "name": "パピメルアンカ",
      "part": "waist",
      "baseRarity": 4,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "花蝶の親和",
      "orbTier": 1,
      "skills": [
@@ -3860,15 +4346,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/582574"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/582574",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30d1_u30d4_u30e1_u30eb_leg",
      "name": "パピメルガンバ",
      "part": "leg",
      "baseRarity": 4,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "花蝶の親和",
      "orbTier": 1,
      "skills": [
@@ -3881,6 +4371,11 @@
        "name": "弾導強化",
        "lv": 1,
        "rarity": 6
+      },
+      {
+       "name": "植物専門家",
+       "lv": 1,
+       "rarity": 8
       }
      ],
      "materials": [
@@ -3897,7 +4392,11 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/582574"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/582574",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     }
    ]
   },
@@ -3913,8 +4412,8 @@
      "name": "レザーヘッド",
      "part": "head",
      "baseRarity": 1,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "複合ファイバー",
      "orbTier": 1,
      "skills": [
@@ -3939,15 +4438,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584285"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584285",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30ec_u30b6_u30fc_body",
      "name": "レザーベスト",
      "part": "body",
      "baseRarity": 1,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "複合ファイバー",
      "orbTier": 1,
      "skills": [
@@ -3977,15 +4480,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584285"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584285",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30ec_u30b6_u30fc_arm",
      "name": "レザーグラブ",
      "part": "arm",
      "baseRarity": 1,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "複合ファイバー",
      "orbTier": 1,
      "skills": [
@@ -4015,15 +4522,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584285"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584285",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30ec_u30b6_u30fc_waist",
      "name": "レザーベルト",
      "part": "waist",
      "baseRarity": 1,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "複合ファイバー",
      "orbTier": 1,
      "skills": [
@@ -4048,15 +4559,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584285"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584285",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30ec_u30b6_u30fc_leg",
      "name": "レザーパンツ",
      "part": "leg",
      "baseRarity": 1,
-     "maxRarity": 12,
-     "docMax": 9,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "複合ファイバー",
      "orbTier": 1,
      "skills": [
@@ -4091,7 +4606,11 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584285"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584285",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     }
    ]
   },
@@ -4110,8 +4629,8 @@
      "name": "カガチヘルム",
      "part": "head",
      "baseRarity": 5,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "飛雷竜の雷鎧",
      "orbTier": 2,
      "skills": [
@@ -4129,6 +4648,11 @@
        "name": "雷属性ダメージUP",
        "lv": 2,
        "rarity": 7
+      },
+      {
+       "name": "雷属性ダメージUP",
+       "lv": 3,
+       "rarity": 9
       }
      ],
      "materials": [
@@ -4149,15 +4673,19 @@
        "qty": 2
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584284"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584284",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30ab_u30ac_u30c1_body",
      "name": "カガチメイル",
      "part": "body",
      "baseRarity": 5,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "飛雷竜の雷鎧",
      "orbTier": 2,
      "skills": [
@@ -4175,6 +4703,11 @@
        "name": "気力変換",
        "lv": 2,
        "rarity": 7
+      },
+      {
+       "name": "気力変換",
+       "lv": 3,
+       "rarity": 9
       }
      ],
      "materials": [
@@ -4191,15 +4724,19 @@
        "qty": 2
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584284"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584284",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30ab_u30ac_u30c1_arm",
      "name": "カガチアーム",
      "part": "arm",
      "baseRarity": 5,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "飛雷竜の雷鎧",
      "orbTier": 2,
      "skills": [
@@ -4237,15 +4774,19 @@
        "qty": 2
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584284"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584284",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30ab_u30ac_u30c1_waist",
      "name": "カガチコイル",
      "part": "waist",
      "baseRarity": 5,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "飛雷竜の雷鎧",
      "orbTier": 2,
      "skills": [
@@ -4279,15 +4820,19 @@
        "qty": 2
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584284"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584284",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30ab_u30ac_u30c1_leg",
      "name": "カガチグリーヴ",
      "part": "leg",
      "baseRarity": 5,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "飛雷竜の雷鎧",
      "orbTier": 2,
      "skills": [
@@ -4321,7 +4866,11 @@
        "qty": 2
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584284"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584284",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     }
    ]
   },
@@ -4340,8 +4889,8 @@
      "name": "融光種ジャナフヘルム",
      "part": "head",
      "baseRarity": 5,
-     "maxRarity": 12,
-     "docMax": 8,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "蛮顎竜の怒り",
      "orbTier": 2,
      "skills": [
@@ -4383,15 +4932,19 @@
        "qty": 2
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584283"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584283",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u878d_u5149_u7a2e_u30b8_u30e3_u30ca_u30d_body",
      "name": "融光種ジャナフメイル",
      "part": "body",
      "baseRarity": 5,
-     "maxRarity": 12,
-     "docMax": 8,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "蛮顎竜の怒り",
      "orbTier": 2,
      "skills": [
@@ -4425,15 +4978,19 @@
        "qty": 2
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584283"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584283",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u878d_u5149_u7a2e_u30b8_u30e3_u30ca_u30d_arm",
      "name": "融光種ジャナフアーム",
      "part": "arm",
      "baseRarity": 5,
-     "maxRarity": 12,
-     "docMax": 8,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "蛮顎竜の怒り",
      "orbTier": 2,
      "skills": [
@@ -4451,6 +5008,11 @@
        "name": "破砕",
        "lv": 2,
        "rarity": 8
+      },
+      {
+       "name": "破壊王",
+       "lv": 1,
+       "rarity": 10
       }
      ],
      "materials": [
@@ -4467,15 +5029,19 @@
        "qty": 2
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584283"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584283",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u878d_u5149_u7a2e_u30b8_u30e3_u30ca_u30d_waist",
      "name": "融光種ジャナフコイル",
      "part": "waist",
      "baseRarity": 5,
-     "maxRarity": 12,
-     "docMax": 8,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "蛮顎竜の怒り",
      "orbTier": 2,
      "skills": [
@@ -4517,15 +5083,19 @@
        "qty": 2
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584283"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584283",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u878d_u5149_u7a2e_u30b8_u30e3_u30ca_u30d_leg",
      "name": "融光種ジャナフグリーヴ",
      "part": "leg",
      "baseRarity": 5,
-     "maxRarity": 12,
-     "docMax": 8,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "蛮顎竜の怒り",
      "orbTier": 2,
      "skills": [
@@ -4543,6 +5113,11 @@
        "name": "溜め強化",
        "lv": 2,
        "rarity": 8
+      },
+      {
+       "name": "狩人の第六感",
+       "lv": 1,
+       "rarity": 10
       }
      ],
      "materials": [
@@ -4559,7 +5134,11 @@
        "qty": 2
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584283"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584283",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     }
    ]
   },
@@ -4575,8 +5154,8 @@
      "name": "タロスヘルム",
      "part": "head",
      "baseRarity": 4,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "巨甲の力",
      "orbTier": 1,
      "skills": [
@@ -4605,15 +5184,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584282"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584282",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30bf_u30ed_u30b9_body",
      "name": "タロスメイル",
      "part": "body",
      "baseRarity": 4,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "巨甲の力",
      "orbTier": 1,
      "skills": [
@@ -4626,6 +5209,11 @@
        "name": "弱点追撃",
        "lv": 1,
        "rarity": 6
+      },
+      {
+       "name": "節約術",
+       "lv": 1,
+       "rarity": 8
       }
      ],
      "materials": [
@@ -4642,15 +5230,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584282"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584282",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30bf_u30ed_u30b9_arm",
      "name": "タロスアーム",
      "part": "arm",
      "baseRarity": 4,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "巨甲の力",
      "orbTier": 1,
      "skills": [
@@ -4663,6 +5255,16 @@
        "name": "龍属性ダメージUP",
        "lv": 1,
        "rarity": 6
+      },
+      {
+       "name": "龍属性ダメージUP",
+       "lv": 2,
+       "rarity": 8
+      },
+      {
+       "name": "体力強化",
+       "lv": 1,
+       "rarity": 10
       }
      ],
      "materials": [
@@ -4679,15 +5281,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584282"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584282",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30bf_u30ed_u30b9_waist",
      "name": "タロスコイル",
      "part": "waist",
      "baseRarity": 4,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "巨甲の力",
      "orbTier": 1,
      "skills": [
@@ -4700,6 +5306,11 @@
        "name": "弱点追撃",
        "lv": 1,
        "rarity": 6
+      },
+      {
+       "name": "節約術",
+       "lv": 1,
+       "rarity": 8
       }
      ],
      "materials": [
@@ -4720,15 +5331,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584282"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584282",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30bf_u30ed_u30b9_leg",
      "name": "タロスグリーヴ",
      "part": "leg",
      "baseRarity": 4,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "巨甲の力",
      "orbTier": 1,
      "skills": [
@@ -4761,7 +5376,11 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584282"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584282",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     }
    ]
   },
@@ -4780,8 +5399,8 @@
      "name": "融光種クルルヘルム",
      "part": "head",
      "baseRarity": 5,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "掻鳥の巧技",
      "orbTier": 2,
      "skills": [
@@ -4794,6 +5413,11 @@
        "name": "アイテム専門家",
        "lv": 1,
        "rarity": 7
+      },
+      {
+       "name": "弱点攻撃",
+       "lv": 1,
+       "rarity": 9
       }
      ],
      "materials": [
@@ -4810,15 +5434,19 @@
        "qty": 2
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584281"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584281",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u878d_u5149_u7a2e_u30af_u30eb_u30eb_body",
      "name": "融光種クルルメイル",
      "part": "body",
      "baseRarity": 5,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "掻鳥の巧技",
      "orbTier": 2,
      "skills": [
@@ -4852,15 +5480,19 @@
        "qty": 2
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584281"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584281",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u878d_u5149_u7a2e_u30af_u30eb_u30eb_arm",
      "name": "融光種クルルアーム",
      "part": "arm",
      "baseRarity": 5,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "掻鳥の巧技",
      "orbTier": 2,
      "skills": [
@@ -4894,15 +5526,19 @@
        "qty": 2
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584281"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584281",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u878d_u5149_u7a2e_u30af_u30eb_u30eb_waist",
      "name": "融光種クルルコイル",
      "part": "waist",
      "baseRarity": 5,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "掻鳥の巧技",
      "orbTier": 2,
      "skills": [
@@ -4920,6 +5556,11 @@
        "name": "回避強化",
        "lv": 2,
        "rarity": 7
+      },
+      {
+       "name": "洞察",
+       "lv": 1,
+       "rarity": 9
       }
      ],
      "materials": [
@@ -4932,15 +5573,19 @@
        "qty": 2
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584281"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584281",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u878d_u5149_u7a2e_u30af_u30eb_u30eb_leg",
      "name": "融光種クルルグリーヴ",
      "part": "leg",
      "baseRarity": 5,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "掻鳥の巧技",
      "orbTier": 2,
      "skills": [
@@ -4955,14 +5600,14 @@
        "rarity": 5
       },
       {
-       "name": "火耐性強化",
-       "lv": 1,
-       "rarity": 7
-      },
-      {
        "name": "連撃強化",
        "lv": 2,
        "rarity": 7
+      },
+      {
+       "name": "弱点攻撃",
+       "lv": 1,
+       "rarity": 9
       }
      ],
      "materials": [
@@ -4975,7 +5620,11 @@
        "qty": 2
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584281"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584281",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     }
    ]
   },
@@ -4994,8 +5643,8 @@
      "name": "融光種ボロスヘルム",
      "part": "head",
      "baseRarity": 5,
-     "maxRarity": 12,
-     "docMax": 8,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "土砂竜の堅守",
      "orbTier": 2,
      "skills": [
@@ -5013,6 +5662,11 @@
        "name": "リロード強化",
        "lv": 2,
        "rarity": 8
+      },
+      {
+       "name": "融光感知",
+       "lv": 1,
+       "rarity": 10
       }
      ],
      "materials": [
@@ -5033,15 +5687,19 @@
        "qty": 2
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584280"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584280",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u878d_u5149_u7a2e_u30dc_u30ed_u30b9_body",
      "name": "融光種ボロスメイル",
      "part": "body",
      "baseRarity": 5,
-     "maxRarity": 12,
-     "docMax": 8,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "土砂竜の堅守",
      "orbTier": 2,
      "skills": [
@@ -5070,15 +5728,19 @@
        "qty": 2
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584280"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584280",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u878d_u5149_u7a2e_u30dc_u30ed_u30b9_arm",
      "name": "融光種ボロスアーム",
      "part": "arm",
      "baseRarity": 5,
-     "maxRarity": 12,
-     "docMax": 8,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "土砂竜の堅守",
      "orbTier": 2,
      "skills": [
@@ -5096,6 +5758,11 @@
        "name": "剛勢",
        "lv": 2,
        "rarity": 8
+      },
+      {
+       "name": "闘志",
+       "lv": 1,
+       "rarity": 10
       }
      ],
      "materials": [
@@ -5116,15 +5783,19 @@
        "qty": 2
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584280"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584280",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u878d_u5149_u7a2e_u30dc_u30ed_u30b9_waist",
      "name": "融光種ボロスコイル",
      "part": "waist",
      "baseRarity": 5,
-     "maxRarity": 12,
-     "docMax": 8,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "土砂竜の堅守",
      "orbTier": 2,
      "skills": [
@@ -5162,15 +5833,19 @@
        "qty": 2
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584280"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584280",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u878d_u5149_u7a2e_u30dc_u30ed_u30b9_leg",
      "name": "融光種ボロスグリーヴ",
      "part": "leg",
      "baseRarity": 5,
-     "maxRarity": 12,
-     "docMax": 8,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "土砂竜の堅守",
      "orbTier": 2,
      "skills": [
@@ -5183,6 +5858,11 @@
        "name": "ガードテクニック",
        "lv": 1,
        "rarity": 8
+      },
+      {
+       "name": "弱点追撃",
+       "lv": 1,
+       "rarity": 10
       }
      ],
      "materials": [
@@ -5199,7 +5879,11 @@
        "qty": 2
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584280"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584280",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     }
    ]
   },
@@ -5218,8 +5902,8 @@
      "name": "融光種ジュラヘルム",
      "part": "head",
      "baseRarity": 6,
-     "maxRarity": 12,
-     "docMax": 8,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "泥魚竜の癒流",
      "orbTier": 2,
      "skills": [
@@ -5253,15 +5937,19 @@
        "qty": 2
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584279"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584279",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u878d_u5149_u7a2e_u30b8_u30e5_u30e9_body",
      "name": "融光種ジュラメイル",
      "part": "body",
      "baseRarity": 6,
-     "maxRarity": 12,
-     "docMax": 8,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "泥魚竜の癒流",
      "orbTier": 2,
      "skills": [
@@ -5279,6 +5967,11 @@
        "name": "一撃貫通",
        "lv": 2,
        "rarity": 8
+      },
+      {
+       "name": "融光感知",
+       "lv": 1,
+       "rarity": 10
       }
      ],
      "materials": [
@@ -5295,15 +5988,19 @@
        "qty": 2
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584279"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584279",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u878d_u5149_u7a2e_u30b8_u30e5_u30e9_arm",
      "name": "融光種ジュラアーム",
      "part": "arm",
      "baseRarity": 6,
-     "maxRarity": 12,
-     "docMax": 8,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "泥魚竜の癒流",
      "orbTier": 2,
      "skills": [
@@ -5321,6 +6018,11 @@
        "name": "水属性ダメージUP",
        "lv": 2,
        "rarity": 8
+      },
+      {
+       "name": "狩人の第六感",
+       "lv": 1,
+       "rarity": 10
       }
      ],
      "materials": [
@@ -5333,15 +6035,19 @@
        "qty": 2
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584279"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584279",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u878d_u5149_u7a2e_u30b8_u30e5_u30e9_waist",
      "name": "融光種ジュラコイル",
      "part": "waist",
      "baseRarity": 6,
-     "maxRarity": 12,
-     "docMax": 8,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "泥魚竜の癒流",
      "orbTier": 2,
      "skills": [
@@ -5371,15 +6077,19 @@
        "qty": 2
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584279"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584279",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u878d_u5149_u7a2e_u30b8_u30e5_u30e9_leg",
      "name": "融光種ジュラグリーヴ",
      "part": "leg",
      "baseRarity": 6,
-     "maxRarity": 12,
-     "docMax": 8,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "泥魚竜の癒流",
      "orbTier": 2,
      "skills": [
@@ -5413,7 +6123,11 @@
        "qty": 2
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584279"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584279",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     }
    ]
   },
@@ -5432,8 +6146,8 @@
      "name": "レイアヘルム",
      "part": "head",
      "baseRarity": 6,
-     "maxRarity": 12,
-     "docMax": 8,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "雌火竜の強躯",
      "orbTier": 2,
      "skills": [
@@ -5451,6 +6165,11 @@
        "name": "練気をまといし刃",
        "lv": 2,
        "rarity": 8
+      },
+      {
+       "name": "植物専門家",
+       "lv": 1,
+       "rarity": 10
       }
      ],
      "materials": [
@@ -5463,15 +6182,19 @@
        "qty": 2
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584278"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584278",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30ec_u30a4_u30a2_body",
      "name": "レイアメイル",
      "part": "body",
      "baseRarity": 6,
-     "maxRarity": 12,
-     "docMax": 8,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "雌火竜の強躯",
      "orbTier": 2,
      "skills": [
@@ -5489,6 +6212,11 @@
        "name": "滞空",
        "lv": 2,
        "rarity": 8
+      },
+      {
+       "name": "徹底追撃",
+       "lv": 1,
+       "rarity": 10
       }
      ],
      "materials": [
@@ -5505,15 +6233,19 @@
        "qty": 2
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584278"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584278",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30ec_u30a4_u30a2_arm",
      "name": "レイアアーム",
      "part": "arm",
      "baseRarity": 6,
-     "maxRarity": 12,
-     "docMax": 8,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "雌火竜の強躯",
      "orbTier": 2,
      "skills": [
@@ -5531,6 +6263,11 @@
        "name": "抜刀一閃",
        "lv": 2,
        "rarity": 8
+      },
+      {
+       "name": "徹底追撃",
+       "lv": 1,
+       "rarity": 10
       }
      ],
      "materials": [
@@ -5551,15 +6288,19 @@
        "qty": 2
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584278"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584278",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30ec_u30a4_u30a2_waist",
      "name": "レイアコイル",
      "part": "waist",
      "baseRarity": 6,
-     "maxRarity": 12,
-     "docMax": 8,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "雌火竜の強躯",
      "orbTier": 2,
      "skills": [
@@ -5577,6 +6318,11 @@
        "name": "練気をまといし刃",
        "lv": 1,
        "rarity": 8
+      },
+      {
+       "name": "練気をまといし刃",
+       "lv": 2,
+       "rarity": 10
       }
      ],
      "materials": [
@@ -5597,15 +6343,19 @@
        "qty": 2
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584278"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584278",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30ec_u30a4_u30a2_leg",
      "name": "レイアグリーヴ",
      "part": "leg",
      "baseRarity": 6,
-     "maxRarity": 12,
-     "docMax": 8,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "雌火竜の強躯",
      "orbTier": 2,
      "skills": [
@@ -5635,7 +6385,11 @@
        "qty": 2
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584278"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584278",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     }
    ]
   },
@@ -5654,8 +6408,8 @@
      "name": "レウスヘルム",
      "part": "head",
      "baseRarity": 6,
-     "maxRarity": 12,
-     "docMax": 8,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "火竜の弱点撃破",
      "orbTier": 2,
      "skills": [
@@ -5685,15 +6439,19 @@
        "qty": 2
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584277"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584277",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30ec_u30a6_u30b9_body",
      "name": "レウスメイル",
      "part": "body",
      "baseRarity": 6,
-     "maxRarity": 12,
-     "docMax": 8,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "火竜の弱点撃破",
      "orbTier": 2,
      "skills": [
@@ -5706,6 +6464,11 @@
        "name": "体力ループ",
        "lv": 1,
        "rarity": 8
+      },
+      {
+       "name": "火属性ダメージUP",
+       "lv": 3,
+       "rarity": 10
       }
      ],
      "materials": [
@@ -5722,15 +6485,19 @@
        "qty": 2
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584277"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584277",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30ec_u30a6_u30b9_arm",
      "name": "レウスアーム",
      "part": "arm",
      "baseRarity": 6,
-     "maxRarity": 12,
-     "docMax": 8,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "火竜の弱点撃破",
      "orbTier": 2,
      "skills": [
@@ -5768,15 +6535,19 @@
        "qty": 2
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584277"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584277",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30ec_u30a6_u30b9_waist",
      "name": "レウスコイル",
      "part": "waist",
      "baseRarity": 6,
-     "maxRarity": 12,
-     "docMax": 8,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "火竜の弱点撃破",
      "orbTier": 2,
      "skills": [
@@ -5794,6 +6565,11 @@
        "name": "火耐性強化",
        "lv": 1,
        "rarity": 8
+      },
+      {
+       "name": "破砕",
+       "lv": 2,
+       "rarity": 10
       }
      ],
      "materials": [
@@ -5814,15 +6590,19 @@
        "qty": 2
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584277"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584277",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30ec_u30a6_u30b9_leg",
      "name": "レウスグリーヴ",
      "part": "leg",
      "baseRarity": 6,
-     "maxRarity": 12,
-     "docMax": 8,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "火竜の弱点撃破",
      "orbTier": 2,
      "skills": [
@@ -5840,6 +6620,11 @@
        "name": "破砕",
        "lv": 2,
        "rarity": 8
+      },
+      {
+       "name": "破壊王",
+       "lv": 1,
+       "rarity": 10
       }
      ],
      "materials": [
@@ -5852,7 +6637,11 @@
        "qty": 2
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584277"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584277",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     }
    ]
   },
@@ -5868,8 +6657,8 @@
      "name": "ハイメタヘルム",
      "part": "head",
      "baseRarity": 4,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "鉱脈の静寂",
      "orbTier": 1,
      "skills": [
@@ -5894,15 +6683,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584276"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584276",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30cf_u30a4_u30e1_u30bf_body",
      "name": "ハイメタメイル",
      "part": "body",
      "baseRarity": 4,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "鉱脈の静寂",
      "orbTier": 1,
      "skills": [
@@ -5915,6 +6708,16 @@
        "name": "防護",
        "lv": 1,
        "rarity": 6
+      },
+      {
+       "name": "氷属性ダメージUP",
+       "lv": 2,
+       "rarity": 8
+      },
+      {
+       "name": "氷属性ダメージUP",
+       "lv": 3,
+       "rarity": 10
       }
      ],
      "materials": [
@@ -5923,15 +6726,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584276"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584276",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30cf_u30a4_u30e1_u30bf_arm",
      "name": "ハイメタアーム",
      "part": "arm",
      "baseRarity": 4,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "鉱脈の静寂",
      "orbTier": 1,
      "skills": [
@@ -5944,6 +6751,16 @@
        "name": "変形強化",
        "lv": 1,
        "rarity": 6
+      },
+      {
+       "name": "変形強化",
+       "lv": 2,
+       "rarity": 8
+      },
+      {
+       "name": "徹底追撃",
+       "lv": 1,
+       "rarity": 10
       }
      ],
      "materials": [
@@ -5956,15 +6773,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584276"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584276",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30cf_u30a4_u30e1_u30bf_waist",
      "name": "ハイメタコイル",
      "part": "waist",
      "baseRarity": 4,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "鉱脈の静寂",
      "orbTier": 1,
      "skills": [
@@ -5977,6 +6798,16 @@
        "name": "徹底追撃",
        "lv": 1,
        "rarity": 6
+      },
+      {
+       "name": "防護",
+       "lv": 1,
+       "rarity": 8
+      },
+      {
+       "name": "変形強化",
+       "lv": 2,
+       "rarity": 10
       }
      ],
      "materials": [
@@ -5993,15 +6824,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584276"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584276",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30cf_u30a4_u30e1_u30bf_leg",
      "name": "ハイメタグリーヴ",
      "part": "leg",
      "baseRarity": 4,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "鉱脈の静寂",
      "orbTier": 1,
      "skills": [
@@ -6014,6 +6849,16 @@
        "name": "氷属性ダメージUP",
        "lv": 1,
        "rarity": 6
+      },
+      {
+       "name": "徹底追撃",
+       "lv": 1,
+       "rarity": 8
+      },
+      {
+       "name": "氷属性ダメージUP",
+       "lv": 2,
+       "rarity": 10
       }
      ],
      "materials": [
@@ -6030,7 +6875,11 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584276"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584276",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     }
    ]
   },
@@ -6046,8 +6895,8 @@
      "name": "オウビートテスタ",
      "part": "head",
      "baseRarity": 4,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "一角の神秘",
      "orbTier": 1,
      "skills": [
@@ -6060,6 +6909,11 @@
        "name": "ハニーハンター",
        "lv": 1,
        "rarity": 6
+      },
+      {
+       "name": "睡眠耐性",
+       "lv": 1,
+       "rarity": 8
       }
      ],
      "materials": [
@@ -6072,15 +6926,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584275"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584275",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30aa_u30a6_u30d3_u30fc_u30c8_body",
      "name": "オウビートペット",
      "part": "body",
      "baseRarity": 4,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "一角の神秘",
      "orbTier": 1,
      "skills": [
@@ -6093,6 +6951,16 @@
        "name": "リロード強化",
        "lv": 1,
        "rarity": 6
+      },
+      {
+       "name": "リロード強化",
+       "lv": 2,
+       "rarity": 8
+      },
+      {
+       "name": "リロード強化",
+       "lv": 3,
+       "rarity": 10
       }
      ],
      "materials": [
@@ -6109,15 +6977,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584275"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584275",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30aa_u30a6_u30d3_u30fc_u30c8_arm",
      "name": "オウビートマーノ",
      "part": "arm",
      "baseRarity": 4,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "一角の神秘",
      "orbTier": 1,
      "skills": [
@@ -6130,6 +7002,16 @@
        "name": "弩弾強化",
        "lv": 1,
        "rarity": 6
+      },
+      {
+       "name": "加護",
+       "lv": 1,
+       "rarity": 8
+      },
+      {
+       "name": "弩弾強化",
+       "lv": 2,
+       "rarity": 10
       }
      ],
      "materials": [
@@ -6142,15 +7024,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584275"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584275",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30aa_u30a6_u30d3_u30fc_u30c8_waist",
      "name": "オウビートアンカ",
      "part": "waist",
      "baseRarity": 4,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "一角の神秘",
      "orbTier": 1,
      "skills": [
@@ -6158,6 +7044,11 @@
        "name": "地質専門家",
        "lv": 1,
        "rarity": 4
+      },
+      {
+       "name": "睡眠耐性",
+       "lv": 1,
+       "rarity": 6
       }
      ],
      "materials": [
@@ -6174,15 +7065,39 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584275"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584275",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ],
+     "conflicts": [
+      {
+       "rarity": 6,
+       "skill": "睡眠耐性",
+       "chosen": 1,
+       "values": {
+        "Game8": 1,
+        "GameWith": 0
+       }
+      },
+      {
+       "rarity": 7,
+       "skill": "睡眠耐性",
+       "chosen": 1,
+       "values": {
+        "Game8": 1,
+        "GameWith": 0
+       }
+      }
+     ]
     },
     {
      "id": "u30aa_u30a6_u30d3_u30fc_u30c8_leg",
      "name": "オウビートガンバ",
      "part": "leg",
      "baseRarity": 4,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "一角の神秘",
      "orbTier": 1,
      "skills": [
@@ -6195,6 +7110,11 @@
        "name": "地質専門家",
        "lv": 1,
        "rarity": 6
+      },
+      {
+       "name": "加護",
+       "lv": 1,
+       "rarity": 8
       }
      ],
      "materials": [
@@ -6211,7 +7131,11 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584275"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584275",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     }
    ]
   },
@@ -6228,8 +7152,8 @@
      "name": "インゴットヘルム",
      "part": "head",
      "baseRarity": 5,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "インゴットの耐爆",
      "orbTier": 2,
      "skills": [
@@ -6242,6 +7166,11 @@
        "name": "風圧耐性",
        "lv": 1,
        "rarity": 7
+      },
+      {
+       "name": "怖いもの無し",
+       "lv": 1,
+       "rarity": 9
       }
      ],
      "materials": [
@@ -6254,15 +7183,19 @@
        "qty": 2
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584274"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584274",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30a4_u30f3_u30b4_u30c3_u30c8_body",
      "name": "インゴットメイル",
      "part": "body",
      "baseRarity": 5,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "インゴットの耐爆",
      "orbTier": 2,
      "skills": [
@@ -6296,15 +7229,19 @@
        "qty": 2
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584274"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584274",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30a4_u30f3_u30b4_u30c3_u30c8_arm",
      "name": "インゴットアーム",
      "part": "arm",
      "baseRarity": 5,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "インゴットの耐爆",
      "orbTier": 2,
      "skills": [
@@ -6334,15 +7271,19 @@
        "qty": 2
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584274"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584274",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30a4_u30f3_u30b4_u30c3_u30c8_waist",
      "name": "インゴットコイル",
      "part": "waist",
      "baseRarity": 5,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "インゴットの耐爆",
      "orbTier": 2,
      "skills": [
@@ -6360,6 +7301,11 @@
        "name": "防御反撃",
        "lv": 2,
        "rarity": 7
+      },
+      {
+       "name": "怖いもの無し",
+       "lv": 1,
+       "rarity": 9
       }
      ],
      "materials": [
@@ -6372,15 +7318,19 @@
        "qty": 2
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584274"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584274",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30a4_u30f3_u30b4_u30c3_u30c8_leg",
      "name": "インゴットグリーヴ",
      "part": "leg",
      "baseRarity": 5,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "インゴットの耐爆",
      "orbTier": 2,
      "skills": [
@@ -6398,6 +7348,11 @@
        "name": "怖いもの無し",
        "lv": 1,
        "rarity": 7
+      },
+      {
+       "name": "雷属性ダメージUP",
+       "lv": 2,
+       "rarity": 9
       }
      ],
      "materials": [
@@ -6410,7 +7365,11 @@
        "qty": 2
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584274"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584274",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     }
    ]
   },
@@ -6426,8 +7385,8 @@
      "name": "冒険者ヘルム",
      "part": "head",
      "baseRarity": 2,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "荒野マスタリー",
      "orbTier": 1,
      "skills": [
@@ -6461,15 +7420,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584273"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584273",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u5192_u967a_u8005_body",
      "name": "冒険者メイル",
      "part": "body",
      "baseRarity": 2,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "荒野マスタリー",
      "orbTier": 1,
      "skills": [
@@ -6487,6 +7450,11 @@
        "name": "弩弾強化",
        "lv": 2,
        "rarity": 7
+      },
+      {
+       "name": "弱点攻撃",
+       "lv": 1,
+       "rarity": 9
       }
      ],
      "materials": [
@@ -6503,15 +7471,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584273"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584273",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u5192_u967a_u8005_arm",
      "name": "冒険者アーム",
      "part": "arm",
      "baseRarity": 2,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "荒野マスタリー",
      "orbTier": 1,
      "skills": [
@@ -6540,15 +7512,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584273"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584273",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u5192_u967a_u8005_waist",
      "name": "冒険者コイル",
      "part": "waist",
      "baseRarity": 2,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "荒野マスタリー",
      "orbTier": 1,
      "skills": [
@@ -6566,6 +7542,11 @@
        "name": "弩弾強化",
        "lv": 2,
        "rarity": 7
+      },
+      {
+       "name": "弱点攻撃",
+       "lv": 1,
+       "rarity": 9
       }
      ],
      "materials": [
@@ -6586,15 +7567,19 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584273"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584273",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u5192_u967a_u8005_leg",
      "name": "冒険者グリーヴ",
      "part": "leg",
      "baseRarity": 2,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "荒野マスタリー",
      "orbTier": 1,
      "skills": [
@@ -6627,7 +7612,11 @@
        "qty": 1
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/584273"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/584273",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     }
    ]
   },
@@ -6646,8 +7635,8 @@
      "name": "融光種カガチヘルム",
      "part": "head",
      "baseRarity": 7,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "飛雷竜の激昂",
      "orbTier": 3,
      "skills": [
@@ -6665,6 +7654,11 @@
        "name": "回避強化",
        "lv": 1,
        "rarity": 7
+      },
+      {
+       "name": "回避強化",
+       "lv": 2,
+       "rarity": 10
       }
      ],
      "materials": [
@@ -6685,15 +7679,19 @@
        "qty": 3
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/586293"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586293",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u878d_u5149_u7a2e_u30ab_u30ac_u30c1_body",
      "name": "融光種カガチメイル",
      "part": "body",
      "baseRarity": 7,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "飛雷竜の激昂",
      "orbTier": 3,
      "skills": [
@@ -6722,15 +7720,19 @@
        "qty": 3
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/586293"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586293",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u878d_u5149_u7a2e_u30ab_u30ac_u30c1_arm",
      "name": "融光種カガチアーム",
      "part": "arm",
      "baseRarity": 7,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "飛雷竜の激昂",
      "orbTier": 3,
      "skills": [
@@ -6748,6 +7750,11 @@
        "name": "ポテンシャル解放",
        "lv": 1,
        "rarity": 7
+      },
+      {
+       "name": "弓スキル強化",
+       "lv": 2,
+       "rarity": 10
       }
      ],
      "materials": [
@@ -6768,15 +7775,19 @@
        "qty": 3
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/586293"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586293",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u878d_u5149_u7a2e_u30ab_u30ac_u30c1_waist",
      "name": "融光種カガチコイル",
      "part": "waist",
      "baseRarity": 7,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "飛雷竜の雷鎧",
      "orbTier": 3,
      "skills": [
@@ -6789,6 +7800,11 @@
        "name": "雷耐性強化",
        "lv": 1,
        "rarity": 7
+      },
+      {
+       "name": "ポテンシャル解放",
+       "lv": 1,
+       "rarity": 10
       }
      ],
      "materials": [
@@ -6805,15 +7821,19 @@
        "qty": 3
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/586293"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586293",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u878d_u5149_u7a2e_u30ab_u30ac_u30c1_leg",
      "name": "融光種カガチグリーヴ",
      "part": "leg",
      "baseRarity": 7,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "飛雷竜の雷鎧",
      "orbTier": 3,
      "skills": [
@@ -6826,6 +7846,11 @@
        "name": "威嚇",
        "lv": 1,
        "rarity": 7
+      },
+      {
+       "name": "回避強化",
+       "lv": 3,
+       "rarity": 10
       }
      ],
      "materials": [
@@ -6842,7 +7867,11 @@
        "qty": 3
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/586293"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586293",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     }
    ]
   },
@@ -6861,8 +7890,8 @@
      "name": "融光種ギルオスヘルム",
      "part": "head",
      "baseRarity": 7,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "ドスギルオスの統率",
      "orbTier": 3,
      "skills": [
@@ -6880,6 +7909,11 @@
        "name": "連撃強化",
        "lv": 1,
        "rarity": 7
+      },
+      {
+       "name": "連撃強化",
+       "lv": 2,
+       "rarity": 9
       }
      ],
      "materials": [
@@ -6900,15 +7934,19 @@
        "qty": 3
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/585945"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/585945",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u878d_u5149_u7a2e_u30ae_u30eb_u30aa_u30b_body",
      "name": "融光種ギルオスメイル",
      "part": "body",
      "baseRarity": 7,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "ドスギルオスの統率",
      "orbTier": 3,
      "skills": [
@@ -6921,6 +7959,11 @@
        "name": "麻痺耐性",
        "lv": 1,
        "rarity": 7
+      },
+      {
+       "name": "雷属性ダメージUP",
+       "lv": 3,
+       "rarity": 9
       }
      ],
      "materials": [
@@ -6937,15 +7980,19 @@
        "qty": 3
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/585945"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/585945",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u878d_u5149_u7a2e_u30ae_u30eb_u30aa_u30b_arm",
      "name": "融光種ギルオスアーム",
      "part": "arm",
      "baseRarity": 7,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "ドスギルオスの統率",
      "orbTier": 3,
      "skills": [
@@ -6958,6 +8005,11 @@
        "name": "のけぞり軽減",
        "lv": 1,
        "rarity": 7
+      },
+      {
+       "name": "連撃強化",
+       "lv": 3,
+       "rarity": 9
       }
      ],
      "materials": [
@@ -6974,15 +8026,19 @@
        "qty": 3
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/585945"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/585945",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u878d_u5149_u7a2e_u30ae_u30eb_u30aa_u30b_waist",
      "name": "融光種ギルオスコイル",
      "part": "waist",
      "baseRarity": 7,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "ドスギルオスの統率",
      "orbTier": 3,
      "skills": [
@@ -7000,6 +8056,11 @@
        "name": "体力回復",
        "lv": 1,
        "rarity": 7
+      },
+      {
+       "name": "雷属性ダメージUP",
+       "lv": 2,
+       "rarity": 9
       }
      ],
      "materials": [
@@ -7024,15 +8085,19 @@
        "qty": 3
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/585945"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/585945",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u878d_u5149_u7a2e_u30ae_u30eb_u30aa_u30b_leg",
      "name": "融光種ギルオスグリーヴ",
      "part": "leg",
      "baseRarity": 7,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "ドスギルオスの統率",
      "orbTier": 3,
      "skills": [
@@ -7061,7 +8126,11 @@
        "qty": 3
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/585945"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/585945",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     }
    ]
   },
@@ -7080,8 +8149,8 @@
      "name": "ディアブロスヘルム",
      "part": "head",
      "baseRarity": 7,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "角竜の踏み締め",
      "orbTier": 3,
      "skills": [
@@ -7114,15 +8183,19 @@
        "qty": 3
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/586291"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586291",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30c7_u30a3_u30a2_u30d6_u30ed_body",
      "name": "ディアブロメイル",
      "part": "body",
      "baseRarity": 7,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "角竜の踏み締め",
      "orbTier": 3,
      "skills": [
@@ -7135,6 +8208,11 @@
        "name": "防護",
        "lv": 1,
        "rarity": 7
+      },
+      {
+       "name": "龍属性ダメージUP",
+       "lv": 3,
+       "rarity": 10
       }
      ],
      "materials": [
@@ -7151,15 +8229,19 @@
        "qty": 3
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/586291"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586291",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30c7_u30a3_u30a2_u30d6_u30ed_arm",
      "name": "ディアブロアーム",
      "part": "arm",
      "baseRarity": 7,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "角竜の踏み締め",
      "orbTier": 3,
      "skills": [
@@ -7177,6 +8259,11 @@
        "name": "ガードテクニック",
        "lv": 1,
        "rarity": 7
+      },
+      {
+       "name": "弁当好き",
+       "lv": 2,
+       "rarity": 10
       }
      ],
      "materials": [
@@ -7189,15 +8276,19 @@
        "qty": 3
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/586291"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586291",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30c7_u30a3_u30a2_u30d6_u30ed_waist",
      "name": "ディアブロコイル",
      "part": "waist",
      "baseRarity": 7,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "角竜の踏み締め",
      "orbTier": 3,
      "skills": [
@@ -7215,6 +8306,11 @@
        "name": "弱点追撃",
        "lv": 1,
        "rarity": 7
+      },
+      {
+       "name": "貫突",
+       "lv": 2,
+       "rarity": 10
       }
      ],
      "materials": [
@@ -7231,15 +8327,19 @@
        "qty": 3
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/586291"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586291",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30c7_u30a3_u30a2_u30d6_u30ed_leg",
      "name": "ディアブログリーヴ",
      "part": "leg",
      "baseRarity": 7,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "角竜の踏み締め",
      "orbTier": 3,
      "skills": [
@@ -7252,6 +8352,11 @@
        "name": "防護",
        "lv": 1,
        "rarity": 7
+      },
+      {
+       "name": "弁当好き",
+       "lv": 3,
+       "rarity": 10
       }
      ],
      "materials": [
@@ -7268,7 +8373,11 @@
        "qty": 3
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/586291"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586291",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     }
    ]
   },
@@ -7287,8 +8396,8 @@
      "name": "ツィツィヘルム",
      "part": "head",
      "baseRarity": 8,
-     "maxRarity": 12,
-     "docMax": 9,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "眩鳥の追撃",
      "orbTier": 3,
      "skills": [
@@ -7306,6 +8415,11 @@
        "name": "加護",
        "lv": 1,
        "rarity": 8
+      },
+      {
+       "name": "一撃貫通",
+       "lv": 2,
+       "rarity": 9
       }
      ],
      "materials": [
@@ -7326,15 +8440,30 @@
        "qty": 3
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/586645"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586645",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ],
+     "conflicts": [
+      {
+       "rarity": 9,
+       "skill": "一撃貫通",
+       "chosen": 2,
+       "values": {
+        "GameWith": 1,
+        "Game8": 2
+       }
+      }
+     ]
     },
     {
      "id": "u30c4_u30a3_u30c4_u30a3_body",
      "name": "ツィツィメイル",
      "part": "body",
      "baseRarity": 8,
-     "maxRarity": 12,
-     "docMax": 9,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "眩鳥の追撃",
      "orbTier": 3,
      "skills": [
@@ -7368,15 +8497,19 @@
        "qty": 3
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/586645"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586645",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30c4_u30a3_u30c4_u30a3_arm",
      "name": "ツィツィアーム",
      "part": "arm",
      "baseRarity": 8,
-     "maxRarity": 12,
-     "docMax": 9,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "眩鳥の追撃",
      "orbTier": 3,
      "skills": [
@@ -7410,15 +8543,19 @@
        "qty": 3
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/586645"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586645",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30c4_u30a3_u30c4_u30a3_waist",
      "name": "ツィツィコイル",
      "part": "waist",
      "baseRarity": 8,
-     "maxRarity": 12,
-     "docMax": 9,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "眩鳥の追撃",
      "orbTier": 3,
      "skills": [
@@ -7461,15 +8598,19 @@
        "qty": 3
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/586645"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586645",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30c4_u30a3_u30c4_u30a3_leg",
      "name": "ツィツィグリーヴ",
      "part": "leg",
      "baseRarity": 8,
-     "maxRarity": 12,
-     "docMax": 9,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "眩鳥の追撃",
      "orbTier": 3,
      "skills": [
@@ -7503,7 +8644,11 @@
        "qty": 3
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/586645"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586645",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     }
    ]
   },
@@ -7522,8 +8667,8 @@
      "name": "ウルムーヘルム",
      "part": "head",
      "baseRarity": 8,
-     "maxRarity": 12,
-     "docMax": 8,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "浮空竜の気迫",
      "orbTier": 3,
      "skills": [
@@ -7541,6 +8686,11 @@
        "name": "無垢",
        "lv": 1,
        "rarity": 8
+      },
+      {
+       "name": "弩弾強化",
+       "lv": 2,
+       "rarity": 10
       }
      ],
      "materials": [
@@ -7553,15 +8703,19 @@
        "qty": 3
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/586644"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586644",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30a6_u30eb_u30e0_u30fc_body",
      "name": "ウルムーメイル",
      "part": "body",
      "baseRarity": 8,
-     "maxRarity": 12,
-     "docMax": 8,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "浮空竜の気迫",
      "orbTier": 3,
      "skills": [
@@ -7574,6 +8728,11 @@
        "name": "加護",
        "lv": 1,
        "rarity": 8
+      },
+      {
+       "name": "防御反撃",
+       "lv": 3,
+       "rarity": 10
       }
      ],
      "materials": [
@@ -7590,15 +8749,19 @@
        "qty": 3
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/586644"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586644",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30a6_u30eb_u30e0_u30fc_arm",
      "name": "ウルムーアーム",
      "part": "arm",
      "baseRarity": 8,
-     "maxRarity": 12,
-     "docMax": 8,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "浮空竜の気迫",
      "orbTier": 3,
      "skills": [
@@ -7611,6 +8774,11 @@
        "name": "風圧耐性",
        "lv": 1,
        "rarity": 8
+      },
+      {
+       "name": "滞空",
+       "lv": 3,
+       "rarity": 10
       }
      ],
      "materials": [
@@ -7627,15 +8795,19 @@
        "qty": 3
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/586644"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586644",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30a6_u30eb_u30e0_u30fc_waist",
      "name": "ウルムーコイル",
      "part": "waist",
      "baseRarity": 8,
-     "maxRarity": 12,
-     "docMax": 8,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "浮空竜の気迫",
      "orbTier": 3,
      "skills": [
@@ -7660,15 +8832,19 @@
        "qty": 3
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/586644"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586644",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30a6_u30eb_u30e0_u30fc_leg",
      "name": "ウルムーグリーヴ",
      "part": "leg",
      "baseRarity": 8,
-     "maxRarity": 12,
-     "docMax": 8,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "浮空竜の気迫",
      "orbTier": 3,
      "skills": [
@@ -7686,6 +8862,11 @@
        "name": "風圧耐性",
        "lv": 1,
        "rarity": 8
+      },
+      {
+       "name": "防御反撃",
+       "lv": 2,
+       "rarity": 10
       }
      ],
      "materials": [
@@ -7702,7 +8883,11 @@
        "qty": 3
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/586644"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586644",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     }
    ]
   },
@@ -7721,8 +8906,8 @@
      "name": "融光種ウルムーヘルム",
      "part": "head",
      "baseRarity": 9,
-     "maxRarity": 12,
-     "docMax": 9,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "浮空竜の気流",
      "orbTier": 4,
      "skills": [
@@ -7752,15 +8937,19 @@
        "qty": 3
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/586642"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586642",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u878d_u5149_u7a2e_u30a6_u30eb_u30e0_u30f_body",
      "name": "融光種ウルムーメイル",
      "part": "body",
      "baseRarity": 9,
-     "maxRarity": 12,
-     "docMax": 9,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "浮空竜の気流",
      "orbTier": 4,
      "skills": [
@@ -7789,15 +8978,19 @@
        "qty": 3
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/586642"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586642",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u878d_u5149_u7a2e_u30a6_u30eb_u30e0_u30f_arm",
      "name": "融光種ウルムーアーム",
      "part": "arm",
      "baseRarity": 9,
-     "maxRarity": 12,
-     "docMax": 9,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "浮空竜の気流",
      "orbTier": 4,
      "skills": [
@@ -7831,15 +9024,19 @@
        "qty": 3
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/586642"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586642",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u878d_u5149_u7a2e_u30a6_u30eb_u30e0_u30f_waist",
      "name": "融光種ウルムーコイル",
      "part": "waist",
      "baseRarity": 9,
-     "maxRarity": 12,
-     "docMax": 9,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "浮空竜の気流",
      "orbTier": 4,
      "skills": [
@@ -7864,15 +9061,19 @@
        "qty": 3
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/586642"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586642",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u878d_u5149_u7a2e_u30a6_u30eb_u30e0_u30f_leg",
      "name": "融光種ウルムーグリーヴ",
      "part": "leg",
      "baseRarity": 9,
-     "maxRarity": 12,
-     "docMax": 9,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "浮空竜の気流",
      "orbTier": 4,
      "skills": [
@@ -7902,7 +9103,11 @@
        "qty": 3
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/586642"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586642",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     }
    ]
   },
@@ -7921,8 +9126,8 @@
      "name": "バルキンヘルム",
      "part": "head",
      "baseRarity": 7,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "骨鎚竜の鉄壁",
      "orbTier": 3,
      "skills": [
@@ -7940,6 +9145,11 @@
        "name": "溜め強化",
        "lv": 1,
        "rarity": 7
+      },
+      {
+       "name": "溜め強化",
+       "lv": 2,
+       "rarity": 10
       }
      ],
      "materials": [
@@ -7956,15 +9166,19 @@
        "qty": 3
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/586292"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586292",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30d0_u30eb_u30ad_u30f3_body",
      "name": "バルキンメイル",
      "part": "body",
      "baseRarity": 7,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "骨鎚竜の鉄壁",
      "orbTier": 3,
      "skills": [
@@ -7982,6 +9196,11 @@
        "name": "怖いもの無し",
        "lv": 1,
        "rarity": 7
+      },
+      {
+       "name": "威震",
+       "lv": 2,
+       "rarity": 10
       }
      ],
      "materials": [
@@ -7998,15 +9217,19 @@
        "qty": 3
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/586292"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586292",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30d0_u30eb_u30ad_u30f3_arm",
      "name": "バルキンアーム",
      "part": "arm",
      "baseRarity": 7,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "骨鎚竜の鉄壁",
      "orbTier": 3,
      "skills": [
@@ -8014,6 +9237,11 @@
        "name": "溜め強化",
        "lv": 3,
        "rarity": 7
+      },
+      {
+       "name": "睡眠耐性",
+       "lv": 1,
+       "rarity": 10
       }
      ],
      "materials": [
@@ -8030,15 +9258,19 @@
        "qty": 3
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/586292"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586292",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30d0_u30eb_u30ad_u30f3_waist",
      "name": "バルキンコイル",
      "part": "waist",
      "baseRarity": 7,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "骨鎚竜の鉄壁",
      "orbTier": 3,
      "skills": [
@@ -8051,6 +9283,11 @@
        "name": "睡眠耐性",
        "lv": 1,
        "rarity": 7
+      },
+      {
+       "name": "剛勢",
+       "lv": 3,
+       "rarity": 10
       }
      ],
      "materials": [
@@ -8075,15 +9312,19 @@
        "qty": 3
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/586292"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586292",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30d0_u30eb_u30ad_u30f3_leg",
      "name": "バルキングリーヴ",
      "part": "leg",
      "baseRarity": 7,
-     "maxRarity": 12,
-     "docMax": 7,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "骨鎚竜の鉄壁",
      "orbTier": 3,
      "skills": [
@@ -8116,7 +9357,11 @@
        "qty": 3
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/586292"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586292",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     }
    ]
   },
@@ -8135,8 +9380,8 @@
      "name": "ギエナヘルム",
      "part": "head",
      "baseRarity": 8,
-     "maxRarity": 12,
-     "docMax": 8,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "風漂竜の舞",
      "orbTier": 3,
      "skills": [
@@ -8165,15 +9410,19 @@
        "qty": 3
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/586643"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586643",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30ae_u30a8_u30ca_body",
      "name": "ギエナメイル",
      "part": "body",
      "baseRarity": 8,
-     "maxRarity": 12,
-     "docMax": 8,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "風漂竜の舞",
      "orbTier": 3,
      "skills": [
@@ -8186,6 +9435,11 @@
        "name": "弱点攻撃",
        "lv": 1,
        "rarity": 8
+      },
+      {
+       "name": "風圧耐性",
+       "lv": 1,
+       "rarity": 10
       }
      ],
      "materials": [
@@ -8202,15 +9456,19 @@
        "qty": 3
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/586643"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586643",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30ae_u30a8_u30ca_arm",
      "name": "ギエナアーム",
      "part": "arm",
      "baseRarity": 8,
-     "maxRarity": 12,
-     "docMax": 8,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "風漂竜の舞",
      "orbTier": 3,
      "skills": [
@@ -8228,6 +9486,11 @@
        "name": "氷属性ダメージUP",
        "lv": 1,
        "rarity": 8
+      },
+      {
+       "name": "氷属性ダメージUP",
+       "lv": 2,
+       "rarity": 10
       }
      ],
      "materials": [
@@ -8252,15 +9515,19 @@
        "qty": 3
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/586643"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586643",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30ae_u30a8_u30ca_waist",
      "name": "ギエナコイル",
      "part": "waist",
      "baseRarity": 8,
-     "maxRarity": 12,
-     "docMax": 8,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "風漂竜の舞",
      "orbTier": 3,
      "skills": [
@@ -8289,15 +9556,19 @@
        "qty": 3
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/586643"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586643",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30ae_u30a8_u30ca_leg",
      "name": "ギエナグリーヴ",
      "part": "leg",
      "baseRarity": 8,
-     "maxRarity": 12,
-     "docMax": 8,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "風漂竜の舞",
      "orbTier": 3,
      "skills": [
@@ -8310,6 +9581,11 @@
        "name": "制圧回復",
        "lv": 1,
        "rarity": 8
+      },
+      {
+       "name": "会心撃【属性】",
+       "lv": 1,
+       "rarity": 10
       }
      ],
      "materials": [
@@ -8330,7 +9606,11 @@
        "qty": 3
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/586643"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586643",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     }
    ]
   },
@@ -8349,8 +9629,8 @@
      "name": "ガロンヘルム",
      "part": "head",
      "baseRarity": 7,
-     "maxRarity": 12,
-     "docMax": 8,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "惨爪竜の靭性",
      "orbTier": 3,
      "skills": [
@@ -8368,6 +9648,11 @@
        "name": "復活",
        "lv": 1,
        "rarity": 7
+      },
+      {
+       "name": "気力変換",
+       "lv": 2,
+       "rarity": 10
       }
      ],
      "materials": [
@@ -8388,15 +9673,19 @@
        "qty": 3
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/578946"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/578946",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30ac_u30ed_u30f3_body",
      "name": "ガロンメイル",
      "part": "body",
      "baseRarity": 7,
-     "maxRarity": 12,
-     "docMax": 8,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "惨爪竜の靭性",
      "orbTier": 3,
      "skills": [
@@ -8411,14 +9700,9 @@
        "rarity": 7
       },
       {
-       "name": "復活",
+       "name": "狩人の第六感",
        "lv": 1,
-       "rarity": 8
-      },
-      {
-       "name": "鬼人の修羅",
-       "lv": 2,
-       "rarity": 8
+       "rarity": 10
       }
      ],
      "materials": [
@@ -8435,15 +9719,19 @@
        "qty": 3
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/578946"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/578946",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30ac_u30ed_u30f3_arm",
      "name": "ガロンアーム",
      "part": "arm",
      "baseRarity": 7,
-     "maxRarity": 12,
-     "docMax": 8,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "惨爪竜の靭性",
      "orbTier": 3,
      "skills": [
@@ -8472,15 +9760,19 @@
        "qty": 3
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/578946"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/578946",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30ac_u30ed_u30f3_waist",
      "name": "ガロンコイル",
      "part": "waist",
      "baseRarity": 7,
-     "maxRarity": 12,
-     "docMax": 8,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "惨爪竜の靭性",
      "orbTier": 3,
      "skills": [
@@ -8493,6 +9785,11 @@
        "name": "みなぎるエナジー",
        "lv": 1,
        "rarity": 7
+      },
+      {
+       "name": "チャージ準備",
+       "lv": 3,
+       "rarity": 10
       }
      ],
      "materials": [
@@ -8509,15 +9806,19 @@
        "qty": 3
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/578946"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/578946",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30ac_u30ed_u30f3_leg",
      "name": "ガロングリーヴ",
      "part": "leg",
      "baseRarity": 7,
-     "maxRarity": 12,
-     "docMax": 8,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "惨爪竜の靭性",
      "orbTier": 3,
      "skills": [
@@ -8535,6 +9836,11 @@
        "name": "復活",
        "lv": 1,
        "rarity": 7
+      },
+      {
+       "name": "チャージ準備",
+       "lv": 2,
+       "rarity": 10
       }
      ],
      "materials": [
@@ -8547,7 +9853,11 @@
        "qty": 3
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/578946"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/578946",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     }
    ]
   },
@@ -8566,8 +9876,8 @@
      "name": "リオハートヘルム",
      "part": "head",
      "baseRarity": 9,
-     "maxRarity": 12,
-     "docMax": 9,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "桜火竜の鋭敏",
      "orbTier": 4,
      "skills": [
@@ -8605,15 +9915,19 @@
        "qty": 3
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/586641"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586641",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30ea_u30aa_u30cf_u30fc_u30c8_body",
      "name": "リオハートメイル",
      "part": "body",
      "baseRarity": 9,
-     "maxRarity": 12,
-     "docMax": 9,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "桜火竜の鋭敏",
      "orbTier": 4,
      "skills": [
@@ -8642,15 +9956,19 @@
        "qty": 3
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/586641"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586641",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30ea_u30aa_u30cf_u30fc_u30c8_arm",
      "name": "リオハートアーム",
      "part": "arm",
      "baseRarity": 9,
-     "maxRarity": 12,
-     "docMax": 9,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "桜火竜の鋭敏",
      "orbTier": 4,
      "skills": [
@@ -8684,15 +10002,19 @@
        "qty": 3
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/586641"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586641",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30ea_u30aa_u30cf_u30fc_u30c8_waist",
      "name": "リオハートコイル",
      "part": "waist",
      "baseRarity": 9,
-     "maxRarity": 12,
-     "docMax": 9,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "桜火竜の鋭敏",
      "orbTier": 4,
      "skills": [
@@ -8726,15 +10048,19 @@
        "qty": 3
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/586641"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586641",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30ea_u30aa_u30cf_u30fc_u30c8_leg",
      "name": "リオハートグリーヴ",
      "part": "leg",
      "baseRarity": 9,
-     "maxRarity": 12,
-     "docMax": 9,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "桜火竜の鋭敏",
      "orbTier": 4,
      "skills": [
@@ -8764,7 +10090,11 @@
        "qty": 3
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/586641"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586641",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     }
    ]
   },
@@ -8783,8 +10113,8 @@
      "name": "エアルダの誓約",
      "part": "head",
      "baseRarity": 9,
-     "maxRarity": 12,
-     "docMax": 9,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "光稜龍の威嚇",
      "orbTier": 4,
      "skills": [
@@ -8821,15 +10151,19 @@
        "qty": 3
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/586640"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586640",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30a8_u30a2_u30eb_u30c0_body",
      "name": "エアルダの守護",
      "part": "body",
      "baseRarity": 9,
-     "maxRarity": 12,
-     "docMax": 9,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "光稜龍の威嚇",
      "orbTier": 4,
      "skills": [
@@ -8870,15 +10204,19 @@
        "qty": 3
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/586640"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586640",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30a8_u30a2_u30eb_u30c0_arm",
      "name": "エアルダの裁き",
      "part": "arm",
      "baseRarity": 9,
-     "maxRarity": 12,
-     "docMax": 9,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "光稜龍の威嚇",
      "orbTier": 4,
      "skills": [
@@ -8920,15 +10258,19 @@
        "qty": 3
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/586640"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586640",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30a8_u30a2_u30eb_u30c0_waist",
      "name": "エアルダの誠実",
      "part": "waist",
      "baseRarity": 9,
-     "maxRarity": 12,
-     "docMax": 9,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "光稜龍の威嚇",
      "orbTier": 4,
      "skills": [
@@ -8970,15 +10312,19 @@
        "qty": 3
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/586640"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586640",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     },
     {
      "id": "u30a8_u30a2_u30eb_u30c0_leg",
      "name": "エアルダの信念",
      "part": "leg",
      "baseRarity": 9,
-     "maxRarity": 12,
-     "docMax": 9,
+     "maxRarity": 10,
+     "docMax": 10,
      "set": "光稜龍の威嚇",
      "orbTier": 4,
      "skills": [
@@ -9020,7 +10366,11 @@
        "qty": 3
       }
      ],
-     "sourceUrl": "https://gamewith.jp/mhoutlanders/586640"
+     "sourceUrl": "https://gamewith.jp/mhoutlanders/586640",
+     "sources": [
+      "Game8",
+      "GameWith"
+     ]
     }
    ]
   }

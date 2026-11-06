@@ -13,6 +13,9 @@
 出力: data/armor.json, data/skills.json, data/monsters.json, data/characters.json
 """
 import json, re, sys, datetime, pathlib, collections
+import merge_rarity
+
+ARMOR_MAX_DEFAULT = 10  # どのサイトにも最大レアが無い部位の上限（Game8 の全防具が レア10 まで）
 
 RAW = pathlib.Path(sys.argv[1]) if len(sys.argv) > 1 else pathlib.Path('/tmp/claude-0/-home-claude/094b7c7b-727a-5a9e-9d7d-7a958be863c9/scratchpad/data')
 OUT = pathlib.Path(__file__).resolve().parent.parent / 'data'
@@ -410,6 +413,17 @@ def main():
                            'skills': [{'name': norm(k['name']), 'lv': k['lv'], 'rarity': k.get('rarity') if k.get('rarity') is not None else (p.get('baseRarity') or 1)} for k in p['skills']],
                            'materials': p.get('materials'), 'sourceUrl': p.get('sourceUrl')})
         series_out.append({'name': name, 'gate': series_gate(name, monsters_by_series), 'set': main_set, 'pieces': pieces})
+
+    # レア別スキルを Game8 / Gamerch / gamewith.ai と突き合わせる（GameWith はレア7前後までしか載っていない）
+    rsrc = merge_rarity.load_sources(RAW)
+    n_conf = 0
+    for s in series_out:
+        for p in s['pieces']:
+            merge_rarity.merge_piece(p, rsrc)
+            p['maxRarity'] = max(p['docMax'], p.get('maxSeen') or 0) if p.get('maxSeen') else ARMOR_MAX_DEFAULT
+            p.pop('maxSeen', None)
+            n_conf += len([c for c in p.get('conflicts', []) if 'skill' in c])
+    print(f'  レア別スキルの食い違い: {n_conf} 件')
     armor_out = {'updated': TODAY, 'sets': list(sets.values()), 'series': series_out}
 
     chars = build_characters(load('characters.json'), skills, overrides)
