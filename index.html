@@ -3,24 +3,30 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>装備おすすめ ― アウトランダーズ</title>
-<meta name="description" content="冒険ランクを入れるだけで、そのランクで作れる最強装備を計算するモンハンアウトランダーズ用ツール">
-<meta name="theme-color" content="#22201c">
+<title>融光工房 ― アウトランダーズ最強装備</title>
+<meta name="description" content="冒険ランクを入れるだけで、そのランクで作れるDPS最大の武器・防具を計算するモンハンアウトランダーズ用ツール">
+<meta name="theme-color" content="#11131b">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="装備おすすめ">
+<meta name="apple-mobile-web-app-title" content="融光工房">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="icons/icon-180.png">
 <link rel="icon" href="icons/icon-192.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="masthead">
   <div class="mastInner">
-    <h1>装備おすすめ</h1>
+    <div class="brand">
+      <svg class="brandMark" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2 27 11 22 30H10L5 11Z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M16 2v28M5 11h22M10 30l6-19 6 19" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" opacity=".55"/></svg>
+      <div>
+        <h1>融光工房</h1>
+        <p class="tagline">ランクで作れる最強装備</p>
+      </div>
+    </div>
     <button type="button" class="menuBtn" id="menuBtn" aria-label="メニュー" aria-expanded="false" aria-controls="menu">
       <span></span><span></span><span></span>
     </button>
@@ -29,79 +35,85 @@
 
 <div class="menuBack" id="menuBack" hidden></div>
 <nav class="menu" id="menu" hidden aria-label="メニュー">
-  <p class="menuTitle">移動</p>
-  <a href="#charPanel" class="menuItem">キャラ・ランクを選ぶ</a>
-  <a href="#resultPanel" class="menuItem">このランクの最強装備</a>
-  <a href="#comparePanel" class="menuItem">火力比較（どの構成が一番ダメージが出るか）</a>
-  <a href="#nextPanel" class="menuItem">ランクが上がるとどうなるか</a>
-  <a href="#goalPanel" class="menuItem">最終目標</a>
-  <a href="#prioPanel" class="menuItem">スキル別の火力と根拠</a>
-  <p class="menuTitle">その他</p>
-  <button type="button" class="menuItem" id="menuHelp">使い方</button>
+  <a href="#pickPanel" class="menuItem">キャラ・ランク</a>
+  <a href="#meterPanel" class="menuItem">DPS</a>
+  <a href="#loadoutPanel" class="menuItem">最強装備</a>
+  <a href="#comparePanel" class="menuItem">構成ごとのDPS比較</a>
+  <a href="#nextPanel" class="menuItem">ランクが上がると</a>
+  <a href="#goalPanel" class="menuItem">到達点</a>
+  <a href="#prioPanel" class="menuItem">スキル別のDPS効果</a>
+  <hr>
+  <button type="button" class="menuItem" id="menuHelp">使い方・計算のしかた</button>
   <button type="button" class="menuItem" id="menuReset">入力をリセット</button>
 </nav>
 
-<main id="app" aria-live="polite">
-  <section class="panel" id="charPanel">
-    <h2>キャラ</h2>
-    <div class="ctabs" id="charTabs" role="tablist" aria-label="キャラを選ぶ"></div>
+<main id="app">
+  <section class="pick" id="pickPanel">
+    <div class="ctabs" id="charTabs" role="tablist" aria-label="キャラ"></div>
     <div class="subsel" id="heroSel" hidden>
-      <p class="subLbl">武器</p>
-      <div class="ctabs weapons" id="weaponTabs" role="tablist" aria-label="武器種を選ぶ"></div>
-      <p class="subLbl">属性</p>
-      <div class="ctabs elems" id="elementTabs" role="tablist" aria-label="属性を選ぶ"></div>
+      <div class="subRow"><span class="subLbl">武器</span><div class="ctabs weapons" id="weaponTabs" role="tablist" aria-label="武器種"></div></div>
+      <div class="subRow"><span class="subLbl">属性</span><div class="ctabs elems" id="elementTabs" role="tablist" aria-label="属性"></div></div>
     </div>
-    <p class="charNote" id="charNote"></p>
     <div class="rankBox">
-      <div class="rankHead"><span>冒険ランク</span><span class="rankVal" id="rankVal">1</span></div>
+      <div class="rankHead">
+        <span class="rankLbl">冒険ランク</span>
+        <span class="rankVal" id="rankVal">1</span>
+      </div>
       <div class="rankSlide">
         <button type="button" class="nudge" data-nudge="-1" aria-label="ランクを1下げる">−</button>
-        <input id="rank" type="range" min="1" max="60" step="1" value="1" aria-label="冒険ランク">
+        <div class="rankTrack">
+          <input id="rank" type="range" min="1" max="60" step="1" value="1" aria-label="冒険ランク">
+          <div class="ticks" id="rankTicks" aria-hidden="true"></div>
+        </div>
         <button type="button" class="nudge" data-nudge="1" aria-label="ランクを1上げる">＋</button>
       </div>
       <p class="capNote" id="capNote"></p>
     </div>
   </section>
 
-  <section class="panel result" id="resultPanel">
-    <div class="resultHead">
-      <h2 id="resultTitle">最強セット</h2>
-      <div class="score"><span id="scoreValue">―</span><span class="scoreLabel" id="scoreLabel">火力（スキルなし比）</span></div>
-    </div>
-    <div class="tabs targetTabs" id="targetTabs" role="tablist" aria-label="想定する相手">
-      <button type="button" class="tab" role="tab" data-target="normal">通常モンスター向け</button>
-      <button type="button" class="tab" role="tab" data-target="yuko">融光種向け</button>
-    </div>
+  <section class="meter" id="meterPanel" aria-live="polite">
+    <div class="meterTop"><span id="meterWho"></span><span class="targetSwitch" id="targetTabs" role="tablist" aria-label="相手">
+      <button type="button" class="tsw" role="tab" data-target="normal">通常</button><button type="button" class="tsw" role="tab" data-target="yuko">融光種</button>
+    </span></div>
+    <div class="dps"><span class="dpsNum" id="dpsNum">―</span><span class="dpsUnit">DPS</span></div>
+    <p class="dpsCalc" id="dpsCalc"></p>
+    <div class="gauge" aria-hidden="true"><div class="gaugeFill" id="gaugeFill"></div></div>
+    <p class="gaugeNote" id="gaugeNote"></p>
+  </section>
+
+  <section class="panel loadout" id="loadoutPanel">
+    <h2>最強装備</h2>
     <p class="hint" id="resultHint"></p>
     <div id="weaponSlot"></div>
     <ol class="rack" id="rack"></ol>
+    <h3 class="subHead">発動スキル</h3>
     <div class="skillTotals" id="skillTotals"></div>
     <details class="alts" id="alts">
-      <summary>ほかの候補セット</summary>
+      <summary>ほかの候補</summary>
       <div id="altList"></div>
     </details>
   </section>
 
   <section class="panel" id="comparePanel">
-    <h2>火力比較</h2>
-    <p class="hint">いま作れる防具で「どのスキルを軸にすると一番火力が出るか」。それぞれのスキルを最優先で積んだセットを組んで、火力を比べています。</p>
+    <h2>構成ごとのDPS比較</h2>
+    <p class="hint">どのスキルを軸に組むと一番DPSが出るか。それぞれのスキルを最優先で積んだ装備を組んで比べています。</p>
     <ol id="compareList" class="cmpList"></ol>
   </section>
 
   <section class="panel" id="nextPanel">
     <h2>ランクが上がると</h2>
-    <p class="hint">この先のランクで新しく作れる防具や強化上限が増えたとき、火力がどれだけ上がるか。</p>
-    <ol id="nextList" class="nextList"></ol>
+    <p class="hint">この先のランクで武器・防具の強化上限や作れる防具が増えたときのDPS。</p>
+    <ol id="nextList" class="timeline"></ol>
   </section>
 
   <section class="panel" id="goalPanel">
-    <h2>最終目標</h2>
-    <p class="hint">全部の武器・防具が作れて、最大まで強化できたときの最強構成。このキャラの到達点。</p>
+    <h2>到達点</h2>
+    <p class="hint">全部の武器・防具が作れて、最大まで強化できたときの最強構成。</p>
     <div id="goalBody"></div>
   </section>
 
   <section class="panel" id="prioPanel">
-    <h2>スキル別の火力</h2>
+    <h2>スキル別のDPS効果</h2>
     <p class="hint" id="prioHint"></p>
     <ul id="prioList" class="prioList"></ul>
     <div class="sourceList" id="sourceList"></div>
@@ -113,26 +125,27 @@
   <h2>使い方</h2>
   <ol>
     <li>キャラを選ぶ（主人公は武器と属性も選ぶ）</li>
-    <li>冒険ランクをスライダーで合わせる</li>
-    <li>そのランクで作れる武器と防具の中から、一番火力が出る組み合わせと、何レアまで強化すればいいかが出る</li>
-    <li>「ランクが上がると」で、次にどこで強くなれるかが分かる</li>
+    <li>冒険ランクをスライダーで合わせる（目盛りは強化上限が上がる・新しい防具が作れるランク）</li>
+    <li>そのランクで作れる武器・防具から、DPSが一番出る組み合わせと、何レアまで強化すればいいかが出る</li>
   </ol>
-  <p>火力の数字は、各スキルの効果値に「そのキャラの攻撃にどれだけ乗るか」（効果が続く時間・弾種・属性の割合）を掛けて掛け合わせた目安です。根拠は「スキル別の火力」に書いてあります。</p>
+  <h3>DPSの計算</h3>
+  <p>DPS ＝ 武器の実効攻撃力 × 防具スキルの火力倍率。攻撃モーションの速さはキャラごとに同じとして、同じキャラ・武器種どうしで比べるための数字です（キャラ同士の比較には使えません）。</p>
   <details>
-    <summary>計算の前提（攻略サイトで確認できたこと／仮定）</summary>
+    <summary>前提（攻略サイトで確認できたこと／仮定）</summary>
     <ul>
+      <li>武器の実効攻撃力＝攻撃力×物理の割合×会心補正＋属性値×属性の割合（属性ダメージの割合はキャラごとに3〜4割と仮定）</li>
       <li>会心は+25%ダメージ（Game8英語版に明記）。主人公・ミドリは会心率1%ごとに与ダメ+0.25%（上限22.5%）</li>
-      <li>属性ダメージUPは属性部分だけに乗る。ルカ・エンショウ・フォリオ・ロードは属性ダメージ1%→与ダメ+0.2%のコアパッシブ分も加算</li>
-      <li>「属性攻撃力+25/+50」はキャラの属性攻撃力（武器の属性値＋基礎値。コアパッシブⅣの閾値が1500なので、ランク40台は約600と仮定）への加算として換算</li>
-      <li>与ダメ系スキルの重なり方（加算か乗算か）はどのサイトにも記載なし → ここでは乗算で近似</li>
-      <li>発動率・属性ダメージの割合は攻略サイトの立ち回り記述からの推定。各スキルの「想定：」に書いてあります</li>
+      <li>属性ダメージUPは属性部分だけに乗る。ルカ・エンショウ・フォリオ・ロードはコアパッシブ分も加算</li>
+      <li>与ダメ系スキルの重なり方はどのサイトにも記載がないため乗算で近似</li>
+      <li>条件付きスキルは、攻略サイトの立ち回り記述から「効果が続いている時間」を見積もって評価</li>
+      <li>冒険団武器のレア8〜13の数値はどのサイトにも無いため、前後のレアから補間した推定値</li>
     </ul>
   </details>
-  <button type="button" class="ghost" id="helpClose">閉じる</button>
+  <button type="button" class="btn" id="helpClose">閉じる</button>
 </section>
 
 <footer class="foot">
-  <p>データは攻略サイト（GameWith・Game8・アルテマ・Gamerch 等）の掲載情報をもとに手作業でまとめたものです。数値はゲーム内表記と異なる場合があります。</p>
+  <p>武器・防具・スキルの数値は GameWith・Game8・アルテマ・Gamerch 等の攻略サイトの掲載情報をまとめたものです。ゲーム内の表記と異なる場合があります。</p>
   <p id="dataDate"></p>
 </footer>
 

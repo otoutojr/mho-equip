@@ -1,15 +1,23 @@
 {
-  "name": "装備おすすめ ― アウトランダーズ",
-  "short_name": "装備おすすめ",
-  "description": "冒険ランクと倒したモンスターから、いま作れる最強の防具構成を計算するモンハンアウトランダーズ用ツール",
+  "name": "融光工房 ― アウトランダーズ最強装備",
+  "short_name": "融光工房",
+  "description": "冒険ランクを入れるだけで、そのランクで作れるDPS最大の武器・防具を計算",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#22201c",
-  "theme_color": "#22201c",
+  "background_color": "#11131b",
+  "theme_color": "#11131b",
   "lang": "ja",
   "icons": [
-    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
-    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
   ]
 }

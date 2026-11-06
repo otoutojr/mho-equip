@@ -16,8 +16,9 @@ self.onmessage = (e) => {
     res.ms = Date.now() - t0;
     res.reqId = msg.reqId;
     res.goal = !!msg.goal;
+    res.elem = msg.elem || null;
     self.postMessage({ type: 'result', ...res });
-    if (res.best && !msg.goal) {
+    if (res.best && !msg.goal && !msg.elem) {
       if (msg.axes && msg.axes.length) self.postMessage({ type: 'compare', reqId: msg.reqId, rows: solveCompare(msg, res.best) });
       const t1 = Date.now();
       const next = solveNext(msg, res.best.score, new Set(res.best.pieces.map(p => p.id)));
@@ -240,7 +241,7 @@ function solveNext(msg, base, baseIds) {
     const top = search(pickCandidates(prep, W, K), W, 1);
     if (!top.length) continue;
     const d = describe(top[0], W);
-    out.push({ label: m.label, why: m.why, delta: top[0].score - base, score: top[0].score,
+    out.push({ rank: m.rank, label: m.label, why: m.why, delta: top[0].score - base, score: top[0].score,
       changed: d.pieces.filter(p => !baseIds.has(p.id)).map(p => p.name), skills: d.totals.filter(t => t.value > 0.3).map(t => `${t.skill}${t.lv}`).join('・') });
   }
   return { milestones: out };
