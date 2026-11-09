@@ -11231,14 +11231,14 @@
    "sourceUrl": "https://gamewith.jp/mhoutlanders/584031"
   },
   {
-   "name": "鋭精大剣・火",
+   "name": "光稜・デュランダル（火）",
    "nameEn": "Luminous Durandal",
    "type": "大剣",
    "element": "火",
-   "baseRarity": 9,
-   "maxRarity": 9,
+   "baseRarity": 10,
+   "maxRarity": 10,
    "stats": {
-    "9": {
+    "10": {
      "attack": 452,
      "element": 226,
      "affinity": 0,
@@ -11254,18 +11254,18 @@
    "derived": false,
    "apex": true,
    "yukoBonus": 0.08,
-   "note": "ルガ・エアルダ（鋭精チャレンジ シーズン0）の素材で作る鋭精武器。日本語名は仮。融光種へのダメージ+8%（必殺技後10秒+12%）",
+   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
    "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637082"
   },
   {
-   "name": "鋭精大剣・水",
+   "name": "光稜・デュランダル（水）",
    "nameEn": "Luminous Durandal",
    "type": "大剣",
    "element": "水",
-   "baseRarity": 9,
-   "maxRarity": 9,
+   "baseRarity": 10,
+   "maxRarity": 10,
    "stats": {
-    "9": {
+    "10": {
      "attack": 452,
      "element": 226,
      "affinity": 0,
@@ -11281,18 +11281,18 @@
    "derived": false,
    "apex": true,
    "yukoBonus": 0.08,
-   "note": "ルガ・エアルダ（鋭精チャレンジ シーズン0）の素材で作る鋭精武器。日本語名は仮。融光種へのダメージ+8%（必殺技後10秒+12%）",
+   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
    "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637082"
   },
   {
-   "name": "鋭精大剣・雷",
+   "name": "光稜・デュランダル（雷）",
    "nameEn": "Luminous Durandal",
    "type": "大剣",
    "element": "雷",
-   "baseRarity": 9,
-   "maxRarity": 9,
+   "baseRarity": 10,
+   "maxRarity": 10,
    "stats": {
-    "9": {
+    "10": {
      "attack": 452,
      "element": 226,
      "affinity": 0,
@@ -11308,18 +11308,18 @@
    "derived": false,
    "apex": true,
    "yukoBonus": 0.08,
-   "note": "ルガ・エアルダ（鋭精チャレンジ シーズン0）の素材で作る鋭精武器。日本語名は仮。融光種へのダメージ+8%（必殺技後10秒+12%）",
+   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
    "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637082"
   },
   {
-   "name": "鋭精大剣・氷",
+   "name": "光稜・デュランダル（氷）",
    "nameEn": "Luminous Durandal",
    "type": "大剣",
    "element": "氷",
-   "baseRarity": 9,
-   "maxRarity": 9,
+   "baseRarity": 10,
+   "maxRarity": 10,
    "stats": {
-    "9": {
+    "10": {
      "attack": 452,
      "element": 226,
      "affinity": 0,
@@ -11335,18 +11335,18 @@
    "derived": false,
    "apex": true,
    "yukoBonus": 0.08,
-   "note": "ルガ・エアルダ（鋭精チャレンジ シーズン0）の素材で作る鋭精武器。日本語名は仮。融光種へのダメージ+8%（必殺技後10秒+12%）",
+   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
    "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637082"
   },
   {
-   "name": "鋭精大剣・龍",
+   "name": "光稜・デュランダル（龍）",
    "nameEn": "Luminous Durandal",
    "type": "大剣",
    "element": "龍",
-   "baseRarity": 9,
-   "maxRarity": 9,
+   "baseRarity": 10,
+   "maxRarity": 10,
    "stats": {
-    "9": {
+    "10": {
      "attack": 452,
      "element": 226,
      "affinity": 0,
@@ -11362,18 +11362,18 @@
    "derived": false,
    "apex": true,
    "yukoBonus": 0.08,
-   "note": "ルガ・エアルダ（鋭精チャレンジ シーズン0）の素材で作る鋭精武器。日本語名は仮。融光種へのダメージ+8%（必殺技後10秒+12%）",
+   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
    "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637082"
   },
   {
-   "name": "鋭精太刀・火",
+   "name": "光耀・ジョワユーズ（火）",
    "nameEn": "Dawnlit Joyeuse",
    "type": "太刀",
    "element": "火",
-   "baseRarity": 9,
-   "maxRarity": 9,
+   "baseRarity": 10,
+   "maxRarity": 10,
    "stats": {
-    "9": {
+    "10": {
      "attack": 452,
      "element": 226,
      "affinity": 0,
@@ -11389,18 +11389,18 @@
    "derived": false,
    "apex": true,
    "yukoBonus": 0.08,
-   "note": "ルガ・エアルダ（鋭精チャレンジ シーズン0）の素材で作る鋭精武器。日本語名は仮。融光種へのダメージ+8%（必殺技後10秒+12%）",
+   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
    "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637150"
   },
   {
-   "name": "鋭精太刀・水",
+   "name": "光耀・ジョワユーズ（水）",
    "nameEn": "Dawnlit Joyeuse",
    "type": "太刀",
    "element": "水",
-   "baseRarity": 9,
-   "maxRarity": 9,
+   "baseRarity": 10,
+   "maxRarity": 10,
    "stats": {
-    "9": {
+    "10": {
      "attack": 452,
      "element": 226,
      "affinity": 0,
@@ -11416,18 +11416,18 @@
    "derived": false,
    "apex": true,
    "yukoBonus": 0.08,
-   "note": "ルガ・エアルダ（鋭精チャレンジ シーズン0）の素材で作る鋭精武器。日本語名は仮。融光種へのダメージ+8%（必殺技後10秒+12%）",
+   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
    "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637150"
   },
   {
-   "name": "鋭精太刀・雷",
+   "name": "光耀・ジョワユーズ（雷）",
    "nameEn": "Dawnlit Joyeuse",
    "type": "太刀",
    "element": "雷",
-   "baseRarity": 9,
-   "maxRarity": 9,
+   "baseRarity": 10,
+   "maxRarity": 10,
    "stats": {
-    "9": {
+    "10": {
      "attack": 452,
      "element": 226,
      "affinity": 0,
@@ -11443,18 +11443,18 @@
    "derived": false,
    "apex": true,
    "yukoBonus": 0.08,
-   "note": "ルガ・エアルダ（鋭精チャレンジ シーズン0）の素材で作る鋭精武器。日本語名は仮。融光種へのダメージ+8%（必殺技後10秒+12%）",
+   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
    "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637150"
   },
   {
-   "name": "鋭精太刀・氷",
+   "name": "光耀・ジョワユーズ（氷）",
    "nameEn": "Dawnlit Joyeuse",
    "type": "太刀",
    "element": "氷",
-   "baseRarity": 9,
-   "maxRarity": 9,
+   "baseRarity": 10,
+   "maxRarity": 10,
    "stats": {
-    "9": {
+    "10": {
      "attack": 452,
      "element": 226,
      "affinity": 0,
@@ -11470,18 +11470,18 @@
    "derived": false,
    "apex": true,
    "yukoBonus": 0.08,
-   "note": "ルガ・エアルダ（鋭精チャレンジ シーズン0）の素材で作る鋭精武器。日本語名は仮。融光種へのダメージ+8%（必殺技後10秒+12%）",
+   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
    "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637150"
   },
   {
-   "name": "鋭精太刀・龍",
+   "name": "光耀・ジョワユーズ（龍）",
    "nameEn": "Dawnlit Joyeuse",
    "type": "太刀",
    "element": "龍",
-   "baseRarity": 9,
-   "maxRarity": 9,
+   "baseRarity": 10,
+   "maxRarity": 10,
    "stats": {
-    "9": {
+    "10": {
      "attack": 452,
      "element": 226,
      "affinity": 0,
@@ -11497,18 +11497,18 @@
    "derived": false,
    "apex": true,
    "yukoBonus": 0.08,
-   "note": "ルガ・エアルダ（鋭精チャレンジ シーズン0）の素材で作る鋭精武器。日本語名は仮。融光種へのダメージ+8%（必殺技後10秒+12%）",
+   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
    "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637150"
   },
   {
-   "name": "鋭精双剣・火",
+   "name": "光影・オートクレール（火）",
    "nameEn": "Lucent Hauteclaire",
    "type": "双剣",
    "element": "火",
-   "baseRarity": 9,
-   "maxRarity": 9,
+   "baseRarity": 10,
+   "maxRarity": 10,
    "stats": {
-    "9": {
+    "10": {
      "attack": 452,
      "element": 226,
      "affinity": 0,
@@ -11524,18 +11524,18 @@
    "derived": false,
    "apex": true,
    "yukoBonus": 0.08,
-   "note": "ルガ・エアルダ（鋭精チャレンジ シーズン0）の素材で作る鋭精武器。日本語名は仮。融光種へのダメージ+8%（必殺技後10秒+12%）",
+   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
    "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637152"
   },
   {
-   "name": "鋭精双剣・水",
+   "name": "光影・オートクレール（水）",
    "nameEn": "Lucent Hauteclaire",
    "type": "双剣",
    "element": "水",
-   "baseRarity": 9,
-   "maxRarity": 9,
+   "baseRarity": 10,
+   "maxRarity": 10,
    "stats": {
-    "9": {
+    "10": {
      "attack": 452,
      "element": 226,
      "affinity": 0,
@@ -11551,18 +11551,18 @@
    "derived": false,
    "apex": true,
    "yukoBonus": 0.08,
-   "note": "ルガ・エアルダ（鋭精チャレンジ シーズン0）の素材で作る鋭精武器。日本語名は仮。融光種へのダメージ+8%（必殺技後10秒+12%）",
+   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
    "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637152"
   },
   {
-   "name": "鋭精双剣・雷",
+   "name": "光影・オートクレール（雷）",
    "nameEn": "Lucent Hauteclaire",
    "type": "双剣",
    "element": "雷",
-   "baseRarity": 9,
-   "maxRarity": 9,
+   "baseRarity": 10,
+   "maxRarity": 10,
    "stats": {
-    "9": {
+    "10": {
      "attack": 452,
      "element": 226,
      "affinity": 0,
@@ -11578,18 +11578,18 @@
    "derived": false,
    "apex": true,
    "yukoBonus": 0.08,
-   "note": "ルガ・エアルダ（鋭精チャレンジ シーズン0）の素材で作る鋭精武器。日本語名は仮。融光種へのダメージ+8%（必殺技後10秒+12%）",
+   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
    "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637152"
   },
   {
-   "name": "鋭精双剣・氷",
+   "name": "光影・オートクレール（氷）",
    "nameEn": "Lucent Hauteclaire",
    "type": "双剣",
    "element": "氷",
-   "baseRarity": 9,
-   "maxRarity": 9,
+   "baseRarity": 10,
+   "maxRarity": 10,
    "stats": {
-    "9": {
+    "10": {
      "attack": 452,
      "element": 226,
      "affinity": 0,
@@ -11605,18 +11605,18 @@
    "derived": false,
    "apex": true,
    "yukoBonus": 0.08,
-   "note": "ルガ・エアルダ（鋭精チャレンジ シーズン0）の素材で作る鋭精武器。日本語名は仮。融光種へのダメージ+8%（必殺技後10秒+12%）",
+   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
    "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637152"
   },
   {
-   "name": "鋭精双剣・龍",
+   "name": "光影・オートクレール（龍）",
    "nameEn": "Lucent Hauteclaire",
    "type": "双剣",
    "element": "龍",
-   "baseRarity": 9,
-   "maxRarity": 9,
+   "baseRarity": 10,
+   "maxRarity": 10,
    "stats": {
-    "9": {
+    "10": {
      "attack": 452,
      "element": 226,
      "affinity": 0,
@@ -11632,18 +11632,18 @@
    "derived": false,
    "apex": true,
    "yukoBonus": 0.08,
-   "note": "ルガ・エアルダ（鋭精チャレンジ シーズン0）の素材で作る鋭精武器。日本語名は仮。融光種へのダメージ+8%（必殺技後10秒+12%）",
+   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
    "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637152"
   },
   {
-   "name": "鋭精ハンマー・火",
+   "name": "光響・オリファント（火）",
    "nameEn": "Sonorous Olifant",
    "type": "ハンマー",
    "element": "火",
-   "baseRarity": 9,
-   "maxRarity": 9,
+   "baseRarity": 10,
+   "maxRarity": 10,
    "stats": {
-    "9": {
+    "10": {
      "attack": 452,
      "element": 226,
      "affinity": 0,
@@ -11659,18 +11659,18 @@
    "derived": false,
    "apex": true,
    "yukoBonus": 0.08,
-   "note": "ルガ・エアルダ（鋭精チャレンジ シーズン0）の素材で作る鋭精武器。日本語名は仮。融光種へのダメージ+8%（必殺技後10秒+12%）",
+   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
    "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637155"
   },
   {
-   "name": "鋭精ハンマー・水",
+   "name": "光響・オリファント（水）",
    "nameEn": "Sonorous Olifant",
    "type": "ハンマー",
    "element": "水",
-   "baseRarity": 9,
-   "maxRarity": 9,
+   "baseRarity": 10,
+   "maxRarity": 10,
    "stats": {
-    "9": {
+    "10": {
      "attack": 452,
      "element": 226,
      "affinity": 0,
@@ -11686,18 +11686,18 @@
    "derived": false,
    "apex": true,
    "yukoBonus": 0.08,
-   "note": "ルガ・エアルダ（鋭精チャレンジ シーズン0）の素材で作る鋭精武器。日本語名は仮。融光種へのダメージ+8%（必殺技後10秒+12%）",
+   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
    "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637155"
   },
   {
-   "name": "鋭精ハンマー・雷",
+   "name": "光響・オリファント（雷）",
    "nameEn": "Sonorous Olifant",
    "type": "ハンマー",
    "element": "雷",
-   "baseRarity": 9,
-   "maxRarity": 9,
+   "baseRarity": 10,
+   "maxRarity": 10,
    "stats": {
-    "9": {
+    "10": {
      "attack": 452,
      "element": 226,
      "affinity": 0,
@@ -11713,18 +11713,18 @@
    "derived": false,
    "apex": true,
    "yukoBonus": 0.08,
-   "note": "ルガ・エアルダ（鋭精チャレンジ シーズン0）の素材で作る鋭精武器。日本語名は仮。融光種へのダメージ+8%（必殺技後10秒+12%）",
+   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
    "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637155"
   },
   {
-   "name": "鋭精ハンマー・氷",
+   "name": "光響・オリファント（氷）",
    "nameEn": "Sonorous Olifant",
    "type": "ハンマー",
    "element": "氷",
-   "baseRarity": 9,
-   "maxRarity": 9,
+   "baseRarity": 10,
+   "maxRarity": 10,
    "stats": {
-    "9": {
+    "10": {
      "attack": 452,
      "element": 226,
      "affinity": 0,
@@ -11740,18 +11740,18 @@
    "derived": false,
    "apex": true,
    "yukoBonus": 0.08,
-   "note": "ルガ・エアルダ（鋭精チャレンジ シーズン0）の素材で作る鋭精武器。日本語名は仮。融光種へのダメージ+8%（必殺技後10秒+12%）",
+   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
    "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637155"
   },
   {
-   "name": "鋭精ハンマー・龍",
+   "name": "光響・オリファント（龍）",
    "nameEn": "Sonorous Olifant",
    "type": "ハンマー",
    "element": "龍",
-   "baseRarity": 9,
-   "maxRarity": 9,
+   "baseRarity": 10,
+   "maxRarity": 10,
    "stats": {
-    "9": {
+    "10": {
      "attack": 452,
      "element": 226,
      "affinity": 0,
@@ -11767,18 +11767,18 @@
    "derived": false,
    "apex": true,
    "yukoBonus": 0.08,
-   "note": "ルガ・エアルダ（鋭精チャレンジ シーズン0）の素材で作る鋭精武器。日本語名は仮。融光種へのダメージ+8%（必殺技後10秒+12%）",
+   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
    "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637155"
   },
   {
-   "name": "鋭精ランス・火",
+   "name": "光芒・クルタナ（火）",
    "nameEn": "Gleaming Curtana",
    "type": "ランス",
    "element": "火",
-   "baseRarity": 9,
-   "maxRarity": 9,
+   "baseRarity": 10,
+   "maxRarity": 10,
    "stats": {
-    "9": {
+    "10": {
      "attack": 452,
      "element": 226,
      "affinity": 0,
@@ -11794,18 +11794,18 @@
    "derived": false,
    "apex": true,
    "yukoBonus": 0.08,
-   "note": "ルガ・エアルダ（鋭精チャレンジ シーズン0）の素材で作る鋭精武器。日本語名は仮。融光種へのダメージ+8%（必殺技後10秒+12%）",
+   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
    "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637156"
   },
   {
-   "name": "鋭精ランス・水",
+   "name": "光芒・クルタナ（水）",
    "nameEn": "Gleaming Curtana",
    "type": "ランス",
    "element": "水",
-   "baseRarity": 9,
-   "maxRarity": 9,
+   "baseRarity": 10,
+   "maxRarity": 10,
    "stats": {
-    "9": {
+    "10": {
      "attack": 452,
      "element": 226,
      "affinity": 0,
@@ -11821,18 +11821,18 @@
    "derived": false,
    "apex": true,
    "yukoBonus": 0.08,
-   "note": "ルガ・エアルダ（鋭精チャレンジ シーズン0）の素材で作る鋭精武器。日本語名は仮。融光種へのダメージ+8%（必殺技後10秒+12%）",
+   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
    "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637156"
   },
   {
-   "name": "鋭精ランス・雷",
+   "name": "光芒・クルタナ（雷）",
    "nameEn": "Gleaming Curtana",
    "type": "ランス",
    "element": "雷",
-   "baseRarity": 9,
-   "maxRarity": 9,
+   "baseRarity": 10,
+   "maxRarity": 10,
    "stats": {
-    "9": {
+    "10": {
      "attack": 452,
      "element": 226,
      "affinity": 0,
@@ -11848,18 +11848,18 @@
    "derived": false,
    "apex": true,
    "yukoBonus": 0.08,
-   "note": "ルガ・エアルダ（鋭精チャレンジ シーズン0）の素材で作る鋭精武器。日本語名は仮。融光種へのダメージ+8%（必殺技後10秒+12%）",
+   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
    "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637156"
   },
   {
-   "name": "鋭精ランス・氷",
+   "name": "光芒・クルタナ（氷）",
    "nameEn": "Gleaming Curtana",
    "type": "ランス",
    "element": "氷",
-   "baseRarity": 9,
-   "maxRarity": 9,
+   "baseRarity": 10,
+   "maxRarity": 10,
    "stats": {
-    "9": {
+    "10": {
      "attack": 452,
      "element": 226,
      "affinity": 0,
@@ -11875,18 +11875,18 @@
    "derived": false,
    "apex": true,
    "yukoBonus": 0.08,
-   "note": "ルガ・エアルダ（鋭精チャレンジ シーズン0）の素材で作る鋭精武器。日本語名は仮。融光種へのダメージ+8%（必殺技後10秒+12%）",
+   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
    "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637156"
   },
   {
-   "name": "鋭精ランス・龍",
+   "name": "光芒・クルタナ（龍）",
    "nameEn": "Gleaming Curtana",
    "type": "ランス",
    "element": "龍",
-   "baseRarity": 9,
-   "maxRarity": 9,
+   "baseRarity": 10,
+   "maxRarity": 10,
    "stats": {
-    "9": {
+    "10": {
      "attack": 452,
      "element": 226,
      "affinity": 0,
@@ -11902,18 +11902,18 @@
    "derived": false,
    "apex": true,
    "yukoBonus": 0.08,
-   "note": "ルガ・エアルダ（鋭精チャレンジ シーズン0）の素材で作る鋭精武器。日本語名は仮。融光種へのダメージ+8%（必殺技後10秒+12%）",
+   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
    "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637156"
   },
   {
-   "name": "鋭精チャージアックス・火",
+   "name": "光輝・モントーバン（火）",
    "nameEn": "Resplendent Montauban",
    "type": "チャージアックス",
    "element": "火",
-   "baseRarity": 9,
-   "maxRarity": 9,
+   "baseRarity": 10,
+   "maxRarity": 10,
    "stats": {
-    "9": {
+    "10": {
      "attack": 452,
      "element": 226,
      "affinity": 0,
@@ -11929,18 +11929,18 @@
    "derived": false,
    "apex": true,
    "yukoBonus": 0.08,
-   "note": "ルガ・エアルダ（鋭精チャレンジ シーズン0）の素材で作る鋭精武器。日本語名は仮。融光種へのダメージ+8%（必殺技後10秒+12%）",
+   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
    "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637157"
   },
   {
-   "name": "鋭精チャージアックス・水",
+   "name": "光輝・モントーバン（水）",
    "nameEn": "Resplendent Montauban",
    "type": "チャージアックス",
    "element": "水",
-   "baseRarity": 9,
-   "maxRarity": 9,
+   "baseRarity": 10,
+   "maxRarity": 10,
    "stats": {
-    "9": {
+    "10": {
      "attack": 452,
      "element": 226,
      "affinity": 0,
@@ -11956,18 +11956,18 @@
    "derived": false,
    "apex": true,
    "yukoBonus": 0.08,
-   "note": "ルガ・エアルダ（鋭精チャレンジ シーズン0）の素材で作る鋭精武器。日本語名は仮。融光種へのダメージ+8%（必殺技後10秒+12%）",
+   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
    "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637157"
   },
   {
-   "name": "鋭精チャージアックス・雷",
+   "name": "光輝・モントーバン（雷）",
    "nameEn": "Resplendent Montauban",
    "type": "チャージアックス",
    "element": "雷",
-   "baseRarity": 9,
-   "maxRarity": 9,
+   "baseRarity": 10,
+   "maxRarity": 10,
    "stats": {
-    "9": {
+    "10": {
      "attack": 452,
      "element": 226,
      "affinity": 0,
@@ -11983,18 +11983,18 @@
    "derived": false,
    "apex": true,
    "yukoBonus": 0.08,
-   "note": "ルガ・エアルダ（鋭精チャレンジ シーズン0）の素材で作る鋭精武器。日本語名は仮。融光種へのダメージ+8%（必殺技後10秒+12%）",
+   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
    "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637157"
   },
   {
-   "name": "鋭精チャージアックス・氷",
+   "name": "光輝・モントーバン（氷）",
    "nameEn": "Resplendent Montauban",
    "type": "チャージアックス",
    "element": "氷",
-   "baseRarity": 9,
-   "maxRarity": 9,
+   "baseRarity": 10,
+   "maxRarity": 10,
    "stats": {
-    "9": {
+    "10": {
      "attack": 452,
      "element": 226,
      "affinity": 0,
@@ -12010,18 +12010,18 @@
    "derived": false,
    "apex": true,
    "yukoBonus": 0.08,
-   "note": "ルガ・エアルダ（鋭精チャレンジ シーズン0）の素材で作る鋭精武器。日本語名は仮。融光種へのダメージ+8%（必殺技後10秒+12%）",
+   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
    "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637157"
   },
   {
-   "name": "鋭精チャージアックス・龍",
+   "name": "光輝・モントーバン（龍）",
    "nameEn": "Resplendent Montauban",
    "type": "チャージアックス",
    "element": "龍",
-   "baseRarity": 9,
-   "maxRarity": 9,
+   "baseRarity": 10,
+   "maxRarity": 10,
    "stats": {
-    "9": {
+    "10": {
      "attack": 452,
      "element": 226,
      "affinity": 0,
@@ -12037,18 +12037,18 @@
    "derived": false,
    "apex": true,
    "yukoBonus": 0.08,
-   "note": "ルガ・エアルダ（鋭精チャレンジ シーズン0）の素材で作る鋭精武器。日本語名は仮。融光種へのダメージ+8%（必殺技後10秒+12%）",
+   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
    "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637157"
   },
   {
-   "name": "鋭精ヘビィボウガン・火",
+   "name": "光罰・バヤール（火）",
    "nameEn": "Scintillant Bayard",
    "type": "ヘビィボウガン",
    "element": "火",
-   "baseRarity": 9,
-   "maxRarity": 9,
+   "baseRarity": 10,
+   "maxRarity": 10,
    "stats": {
-    "9": {
+    "10": {
      "attack": 452,
      "element": 226,
      "affinity": 0,
@@ -12064,18 +12064,18 @@
    "derived": false,
    "apex": true,
    "yukoBonus": 0.08,
-   "note": "ルガ・エアルダ（鋭精チャレンジ シーズン0）の素材で作る鋭精武器。日本語名は仮。融光種へのダメージ+8%（必殺技後10秒+12%）",
+   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
    "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637160"
   },
   {
-   "name": "鋭精ヘビィボウガン・水",
+   "name": "光罰・バヤール（水）",
    "nameEn": "Scintillant Bayard",
    "type": "ヘビィボウガン",
    "element": "水",
-   "baseRarity": 9,
-   "maxRarity": 9,
+   "baseRarity": 10,
+   "maxRarity": 10,
    "stats": {
-    "9": {
+    "10": {
      "attack": 452,
      "element": 226,
      "affinity": 0,
@@ -12091,18 +12091,18 @@
    "derived": false,
    "apex": true,
    "yukoBonus": 0.08,
-   "note": "ルガ・エアルダ（鋭精チャレンジ シーズン0）の素材で作る鋭精武器。日本語名は仮。融光種へのダメージ+8%（必殺技後10秒+12%）",
+   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
    "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637160"
   },
   {
-   "name": "鋭精ヘビィボウガン・雷",
+   "name": "光罰・バヤール（雷）",
    "nameEn": "Scintillant Bayard",
    "type": "ヘビィボウガン",
    "element": "雷",
-   "baseRarity": 9,
-   "maxRarity": 9,
+   "baseRarity": 10,
+   "maxRarity": 10,
    "stats": {
-    "9": {
+    "10": {
      "attack": 452,
      "element": 226,
      "affinity": 0,
@@ -12118,18 +12118,18 @@
    "derived": false,
    "apex": true,
    "yukoBonus": 0.08,
-   "note": "ルガ・エアルダ（鋭精チャレンジ シーズン0）の素材で作る鋭精武器。日本語名は仮。融光種へのダメージ+8%（必殺技後10秒+12%）",
+   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
    "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637160"
   },
   {
-   "name": "鋭精ヘビィボウガン・氷",
+   "name": "光罰・バヤール（氷）",
    "nameEn": "Scintillant Bayard",
    "type": "ヘビィボウガン",
    "element": "氷",
-   "baseRarity": 9,
-   "maxRarity": 9,
+   "baseRarity": 10,
+   "maxRarity": 10,
    "stats": {
-    "9": {
+    "10": {
      "attack": 452,
      "element": 226,
      "affinity": 0,
@@ -12145,18 +12145,18 @@
    "derived": false,
    "apex": true,
    "yukoBonus": 0.08,
-   "note": "ルガ・エアルダ（鋭精チャレンジ シーズン0）の素材で作る鋭精武器。日本語名は仮。融光種へのダメージ+8%（必殺技後10秒+12%）",
+   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
    "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637160"
   },
   {
-   "name": "鋭精ヘビィボウガン・龍",
+   "name": "光罰・バヤール（龍）",
    "nameEn": "Scintillant Bayard",
    "type": "ヘビィボウガン",
    "element": "龍",
-   "baseRarity": 9,
-   "maxRarity": 9,
+   "baseRarity": 10,
+   "maxRarity": 10,
    "stats": {
-    "9": {
+    "10": {
      "attack": 452,
      "element": 226,
      "affinity": 0,
@@ -12172,18 +12172,18 @@
    "derived": false,
    "apex": true,
    "yukoBonus": 0.08,
-   "note": "ルガ・エアルダ（鋭精チャレンジ シーズン0）の素材で作る鋭精武器。日本語名は仮。融光種へのダメージ+8%（必殺技後10秒+12%）",
+   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
    "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637160"
   },
   {
-   "name": "鋭精弓・火",
+   "name": "光翼・ヒッポグリフ（火）",
    "nameEn": "Brilliant Hippogriff",
    "type": "弓",
    "element": "火",
-   "baseRarity": 9,
-   "maxRarity": 9,
+   "baseRarity": 10,
+   "maxRarity": 10,
    "stats": {
-    "9": {
+    "10": {
      "attack": 452,
      "element": 226,
      "affinity": 0,
@@ -12199,18 +12199,18 @@
    "derived": false,
    "apex": true,
    "yukoBonus": 0.08,
-   "note": "ルガ・エアルダ（鋭精チャレンジ シーズン0）の素材で作る鋭精武器。日本語名は仮。融光種へのダメージ+8%（必殺技後10秒+12%）",
+   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
    "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637162"
   },
   {
-   "name": "鋭精弓・水",
+   "name": "光翼・ヒッポグリフ（水）",
    "nameEn": "Brilliant Hippogriff",
    "type": "弓",
    "element": "水",
-   "baseRarity": 9,
-   "maxRarity": 9,
+   "baseRarity": 10,
+   "maxRarity": 10,
    "stats": {
-    "9": {
+    "10": {
      "attack": 452,
      "element": 226,
      "affinity": 0,
@@ -12226,18 +12226,18 @@
    "derived": false,
    "apex": true,
    "yukoBonus": 0.08,
-   "note": "ルガ・エアルダ（鋭精チャレンジ シーズン0）の素材で作る鋭精武器。日本語名は仮。融光種へのダメージ+8%（必殺技後10秒+12%）",
+   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
    "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637162"
   },
   {
-   "name": "鋭精弓・雷",
+   "name": "光翼・ヒッポグリフ（雷）",
    "nameEn": "Brilliant Hippogriff",
    "type": "弓",
    "element": "雷",
-   "baseRarity": 9,
-   "maxRarity": 9,
+   "baseRarity": 10,
+   "maxRarity": 10,
    "stats": {
-    "9": {
+    "10": {
      "attack": 452,
      "element": 226,
      "affinity": 0,
@@ -12253,18 +12253,18 @@
    "derived": false,
    "apex": true,
    "yukoBonus": 0.08,
-   "note": "ルガ・エアルダ（鋭精チャレンジ シーズン0）の素材で作る鋭精武器。日本語名は仮。融光種へのダメージ+8%（必殺技後10秒+12%）",
+   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
    "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637162"
   },
   {
-   "name": "鋭精弓・氷",
+   "name": "光翼・ヒッポグリフ（氷）",
    "nameEn": "Brilliant Hippogriff",
    "type": "弓",
    "element": "氷",
-   "baseRarity": 9,
-   "maxRarity": 9,
+   "baseRarity": 10,
+   "maxRarity": 10,
    "stats": {
-    "9": {
+    "10": {
      "attack": 452,
      "element": 226,
      "affinity": 0,
@@ -12280,18 +12280,18 @@
    "derived": false,
    "apex": true,
    "yukoBonus": 0.08,
-   "note": "ルガ・エアルダ（鋭精チャレンジ シーズン0）の素材で作る鋭精武器。日本語名は仮。融光種へのダメージ+8%（必殺技後10秒+12%）",
+   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
    "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637162"
   },
   {
-   "name": "鋭精弓・龍",
+   "name": "光翼・ヒッポグリフ（龍）",
    "nameEn": "Brilliant Hippogriff",
    "type": "弓",
    "element": "龍",
-   "baseRarity": 9,
-   "maxRarity": 9,
+   "baseRarity": 10,
+   "maxRarity": 10,
    "stats": {
-    "9": {
+    "10": {
      "attack": 452,
      "element": 226,
      "affinity": 0,
@@ -12307,7 +12307,7 @@
    "derived": false,
    "apex": true,
    "yukoBonus": 0.08,
-   "note": "ルガ・エアルダ（鋭精チャレンジ シーズン0）の素材で作る鋭精武器。日本語名は仮。融光種へのダメージ+8%（必殺技後10秒+12%）",
+   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
    "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637162"
   }
  ]

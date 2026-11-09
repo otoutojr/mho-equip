@@ -92,21 +92,27 @@ def extend_to_10(out):
     return n
 
 
+APEX_JA = {'弓': '光翼・ヒッポグリフ', 'ヘビィボウガン': '光罰・バヤール', 'チャージアックス': '光輝・モントーバン', 'ランス': '光芒・クルタナ',
+           'ハンマー': '光響・オリファント', '双剣': '光影・オートクレール', '太刀': '光耀・ジョワユーズ', '大剣': '光稜・デュランダル'}  # Game8 ルガ・エアルダの「作れる装備」
+
+
 def apex_weapons(full):
     """鋭精武器（ルガ・エアルダの素材で作る。game8.co の Apex Weapons）。作るときに火・水・雷・氷・龍から属性を選ぶ。
-    日本語名はどのサイトにも無いので仮の名前。数値は game8.co（攻撃452・属性226、レア9）。
-    武器スキル「融光種へのダメージ+8%（必殺技の後10秒は+12%）」はシーズン0だけ"""
+    名前は Game8（ルガ・エアルダのページ）、数値は game8.co（攻撃452・属性226）。gamewith.ai によると生産した時点でレア10、
+    嵐の結晶で強化してレアが上がる（レア11・13で鋭精チャレンジの難易度が解放）。分解すると覚醒以外の素材は全部戻るので、
+    武器種・属性を作り直せる。極意（ヘビィ: 与ダメ+8%、奥義後+12%）は game8.co では「融光種へのダメージ」（シーズン0）、
+    gamewith.ai では「鋭精チャレンジ・群竜チャレンジ・期間限定の現地チャレンジでのみ」"""
     out = []
     for a in full.get('apexWeapons') or []:
         for el in ['火', '水', '雷', '氷', '龍']:
-            r = a.get('initialRarity') or 9
+            r = 10  # gamewith.ai「鋭精武器は生産した時点でレア度が10」（game8.co の initialRarity は 9）
             out.append({
-                'name': f"鋭精{a['type']}・{el}", 'nameEn': a.get('nameEn'), 'type': a['type'], 'element': el,
+                'name': f"{APEX_JA.get(a['type'], '鋭精' + a['type'])}（{el}）", 'nameEn': a.get('nameEn'), 'type': a['type'], 'element': el,
                 'baseRarity': r, 'maxRarity': r,
                 'stats': {r: {'attack': a['attack'], 'element': a.get('elementValue') or 0, 'affinity': 0, 'src': 'game8.co'}},
                 'affinity': 0, 'monsters': ['ルガ・エアルダ'], 'guild': False, 'yuko': False, 'derived': False,
                 'apex': True, 'yukoBonus': 0.08,
-                'note': 'ルガ・エアルダ（鋭精チャレンジ シーズン0）の素材で作る鋭精武器。日本語名は仮。融光種へのダメージ+8%（必殺技後10秒+12%）',
+                'note': '鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）',
                 'sourceUrl': a.get('url'),
             })
     return out
