@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06",
+ "updated": "2026-11-09",
  "source": "weapons_full.json（gamewith.ai・GameWith・game8.co）",
  "weapons": [
   {
@@ -661,13 +661,20 @@
    "type": "大剣",
    "element": "水",
    "baseRarity": 9,
-   "maxRarity": 9,
+   "maxRarity": 10,
    "stats": {
     "9": {
      "attack": 420,
      "element": 210,
      "affinity": 0,
      "src": "gamewith.jp・gamewith.jp list card"
+    },
+    "10": {
+     "attack": 510,
+     "element": 256,
+     "affinity": 0,
+     "est": true,
+     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
     }
    },
    "affinity": 0,
@@ -1143,13 +1150,20 @@
    "type": "大剣",
    "element": "水",
    "baseRarity": 9,
-   "maxRarity": 9,
+   "maxRarity": 10,
    "stats": {
     "9": {
      "attack": 429,
      "element": 215,
      "affinity": 0,
      "src": "gamewith.jp・gamewith.jp list card"
+    },
+    "10": {
+     "attack": 521,
+     "element": 262,
+     "affinity": 0,
+     "est": true,
+     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
     }
    },
    "affinity": 0,
@@ -2701,7 +2715,7 @@
    "type": "太刀",
    "element": "火",
    "baseRarity": 8,
-   "maxRarity": 9,
+   "maxRarity": 10,
    "stats": {
     "8": {
      "attack": 331,
@@ -2714,6 +2728,13 @@
      "element": 205,
      "affinity": 4.5,
      "src": "gamewith.ai・gamewith.jp list card"
+    },
+    "10": {
+     "attack": 498,
+     "element": 249,
+     "affinity": 4.5,
+     "est": true,
+     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
     }
    },
    "affinity": 4.5,
@@ -4769,13 +4790,20 @@
    "type": "ランス",
    "element": "睡眠",
    "baseRarity": 9,
-   "maxRarity": 9,
+   "maxRarity": 10,
    "stats": {
     "9": {
      "attack": 552,
      "element": 276,
      "affinity": 2.2,
      "src": "gamewith.jp・gamewith.jp list card"
+    },
+    "10": {
+     "attack": 670,
+     "element": 336,
+     "affinity": 2.2,
+     "est": true,
+     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
     }
    },
    "affinity": 2.2,
@@ -6435,13 +6463,20 @@
    "type": "ハンマー",
    "element": "雷",
    "baseRarity": 9,
-   "maxRarity": 9,
+   "maxRarity": 10,
    "stats": {
     "9": {
      "attack": 429,
      "element": 215,
      "affinity": 0,
      "src": "gamewith.jp list card"
+    },
+    "10": {
+     "attack": 521,
+     "element": 262,
+     "affinity": 0,
+     "est": true,
+     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
     }
    },
    "affinity": 0,
@@ -7501,13 +7536,20 @@
    "type": "チャージアックス",
    "element": "睡眠",
    "baseRarity": 9,
-   "maxRarity": 9,
+   "maxRarity": 10,
    "stats": {
     "9": {
      "attack": 547,
      "element": 274,
      "affinity": 0,
      "src": "gamewith.jp・gamewith.jp list card"
+    },
+    "10": {
+     "attack": 664,
+     "element": 333,
+     "affinity": 0,
+     "est": true,
+     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
     }
    },
    "affinity": 0,
@@ -7525,13 +7567,20 @@
    "type": "チャージアックス",
    "element": "毒",
    "baseRarity": 9,
-   "maxRarity": 9,
+   "maxRarity": 10,
    "stats": {
     "9": {
      "attack": 553,
      "element": 277,
      "affinity": 4.5,
      "src": "gamewith.jp・gamewith.jp list card・game8.co"
+    },
+    "10": {
+     "attack": 671,
+     "element": 337,
+     "affinity": 4.5,
+     "est": true,
+     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
     }
    },
    "affinity": 4.5,
@@ -7914,13 +7963,20 @@
    "type": "チャージアックス",
    "element": "睡眠",
    "baseRarity": 9,
-   "maxRarity": 9,
+   "maxRarity": 10,
    "stats": {
     "9": {
      "attack": 564,
      "element": 282,
      "affinity": 0,
      "src": "gamewith.jp・gamewith.jp list card"
+    },
+    "10": {
+     "attack": 685,
+     "element": 343,
+     "affinity": 0,
+     "est": true,
+     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
     }
    },
    "affinity": 0,
@@ -8938,13 +8994,20 @@
    "type": "ヘビィボウガン",
    "element": "水",
    "baseRarity": 9,
-   "maxRarity": 9,
+   "maxRarity": 10,
    "stats": {
     "9": {
      "attack": 420,
      "element": 210,
      "affinity": 0,
      "src": "gamewith.jp・gamewith.jp list card"
+    },
+    "10": {
+     "attack": 510,
+     "element": 256,
+     "affinity": 0,
+     "est": true,
+     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
     }
    },
    "affinity": 0,
@@ -9228,7 +9291,7 @@
    "type": "ヘビィボウガン",
    "element": "氷",
    "baseRarity": 8,
-   "maxRarity": 9,
+   "maxRarity": 10,
    "stats": {
     "8": {
      "attack": 346,
@@ -9241,6 +9304,13 @@
      "element": 215,
      "affinity": 0,
      "src": "gamewith.ai・gamewith.jp list card"
+    },
+    "10": {
+     "attack": 521,
+     "element": 262,
+     "affinity": 0,
+     "est": true,
+     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
     }
    },
    "affinity": 0,
@@ -9288,7 +9358,7 @@
    "type": "ヘビィボウガン",
    "element": "水",
    "baseRarity": 8,
-   "maxRarity": 9,
+   "maxRarity": 10,
    "stats": {
     "8": {
      "attack": 346,
@@ -9301,6 +9371,13 @@
      "element": 215,
      "affinity": 0,
      "src": "gamewith.ai・gamewith.jp list card"
+    },
+    "10": {
+     "attack": 521,
+     "element": 262,
+     "affinity": 0,
+     "est": true,
+     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
     }
    },
    "affinity": 0,
@@ -9378,7 +9455,7 @@
    "type": "ヘビィボウガン",
    "element": "水",
    "baseRarity": 7,
-   "maxRarity": 9,
+   "maxRarity": 10,
    "stats": {
     "7": {
      "attack": 268,
@@ -9397,6 +9474,13 @@
      "element": 210,
      "affinity": 0,
      "src": "gamewith.jp list card"
+    },
+    "10": {
+     "attack": 510,
+     "element": 256,
+     "affinity": 0,
+     "est": true,
+     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
     }
    },
    "affinity": 0,
@@ -10590,13 +10674,20 @@
    "type": "弓",
    "element": "龍",
    "baseRarity": 9,
-   "maxRarity": 9,
+   "maxRarity": 10,
    "stats": {
     "9": {
      "attack": 410,
      "element": 0,
      "affinity": 4.5,
      "src": "gamewith.jp・gamewith.jp list card・game8.co"
+    },
+    "10": {
+     "attack": 498,
+     "element": 0,
+     "affinity": 4.5,
+     "est": true,
+     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
     }
    },
    "affinity": 4.5,
@@ -10933,7 +11024,7 @@
    "type": "弓",
    "element": "雷",
    "baseRarity": 7,
-   "maxRarity": 9,
+   "maxRarity": 10,
    "stats": {
     "7": {
      "attack": 276,
@@ -10952,6 +11043,13 @@
      "element": 217,
      "affinity": 2.2,
      "src": "gamewith.ai・gamewith.jp list card"
+    },
+    "10": {
+     "attack": 526,
+     "element": 264,
+     "affinity": 2.2,
+     "est": true,
+     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
     }
    },
    "affinity": 2.2,

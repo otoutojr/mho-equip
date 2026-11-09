@@ -1,6 +1,6 @@
 /* 融光工房 ― UI */
 'use strict';
-const APP_VERSION = '2026.11.09-1';
+const APP_VERSION = '2026.11.09-2';
 const STORE_KEY = 'mho-equip:v1';
 const PART_JP = { head: '頭', body: '胴', arm: '腕', waist: '腰', leg: '脚' };
 const EL_CLASS = { '火': 'fire', '水': 'water', '雷': 'thunder', '氷': 'ice', '龍': 'dragon', '毒': 'poison', '麻痺': 'para', '睡眠': 'sleep', '爆破': 'blast', '無': 'none' };
@@ -364,13 +364,20 @@ function renderBuilds(rows) {
   const items = list.map((b) => {
     const row = byKey.get(b.id);
     const openAt = buildOpenRank(b);
-    const wdef = b.weapon && b.weapon.name ? DATA.weapons.weapons.find(w => w.name === b.weapon.name) : null;
+    let wdef = b.weapon && b.weapon.name ? DATA.weapons.weapons.find(w => w.name === b.weapon.name) : null;
+    // サイトが派生前の名前で載せている武器（融光種アクアアサルト → 融光種ウォーターキャノンなど）は、強化先までたどる
+    const wbase = wdef;
+    for (let i = 0; wdef && i < 4 && (wdef.maxRarity || 0) < cap; i++) {
+      const next = DATA.weapons.weapons.find(w => w.derivesFrom === wdef.name);
+      if (!next) break;
+      wdef = next;
+    }
     let wc = null;
     if (wdef) { const r = Math.min(wdef.maxRarity || cap, cap); const st = weaponStatsAt(wdef, Math.max(r, wdef.baseRarity || 1)); if (st) wc = { w: wdef, r: Math.max(r, wdef.baseRarity || 1), st, power: weaponPower(c, wdef, st) }; }
     // 武器の高レアの数値はサイトにそろっていないので、DPS目安は武器を「今作れる一番強い武器」にそろえて防具だけで比べる
     const dps = row ? dpsOf(cur.weapon, row.score) : 0;
     const cost = ((row && row.set && row.set.pieces) || []).reduce((t, p) => t + (p.rarity - p.baseRarity), 0);
-    return { b, row, openAt, wc, dps, cost, now: openAt != null && openAt <= state.rank };
+    return { b, row, openAt, wc, wbase, dps, cost, now: openAt != null && openAt <= state.rank };
   });
   // DPS目安が同じなら、複数サイトに載っている構成 → 強化の少ない構成の順
   items.sort((a, b) => (b.now - a.now) || (a.now ? (Math.round(b.dps) - Math.round(a.dps)) || (b.b.sourceCount - a.b.sourceCount) || (a.cost - b.cost)
@@ -390,9 +397,9 @@ function renderBuilds(rows) {
       el('div', { class: 'dbRefs' }, ...uniqRefs(b.refs).map(r => el('span', { class: 'dbSrc' }, el('b', { text: r.source }), refLabel(r) ? ` ${refLabel(r)}` : '')),
         b.sourceCount > 1 ? el('span', { class: 'badge agree', text: `${b.sourceCount}サイト一致` }) : null),
       x.now && row ? el('span', { class: 'dbDps' }, fmtInt(x.dps), el('small', { text: 'DPS目安' })) : el('span', { class: 'dbLock', text: x.openAt ? `ランク${x.openAt}から` : '作れる条件不明' }));
-    const wname = b.weapon ? (b.weapon.name || b.weapon.raw) : '―';
+    const wname = b.weapon ? (x.wc && x.wbase && x.wc.w !== x.wbase ? `${x.wbase.name} → ${x.wc.w.name}` : (b.weapon.name || b.weapon.raw)) : '―';
     const wline = el('div', { class: 'dbWeapon' }, el('span', { class: 'dbPart', text: '武器' }), el('span', { class: 'dbName', text: wname }),
-      x.wc ? el('span', { class: 'dbRar' + (x.wc.r > (x.wc.w.baseRarity || 1) ? ' need' : ''), text: (x.wc.r > (x.wc.w.baseRarity || 1) ? `レア${x.wc.w.baseRarity}→${x.wc.r}` : `レア${x.wc.r}`) + (x.wc.r < cap && (x.wc.w.maxRarity || 0) < cap ? '（以降のデータなし）' : '') })
+      x.wc ? el('span', { class: 'dbRar' + (x.wc.r > (x.wc.w.baseRarity || 1) ? ' need' : ''), text: (x.wc.r > (x.wc.w.baseRarity || 1) ? `レア${x.wc.w.baseRarity}→${x.wc.r}` : `レア${x.wc.r}`) + (x.wc.st.est ? '（数値は推定）' : x.wc.r < cap && (x.wc.w.maxRarity || 0) < cap ? '（ここまで）' : '') })
         : el('span', { class: 'dbRar warn', text: '数値データなし' }));
     // 防具が同じでサイトによって武器が違うとき
     const wname0 = b.weapon ? (b.weapon.name || b.weapon.raw) : null;

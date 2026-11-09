@@ -65,10 +65,38 @@ def from_full(full):
     return out
 
 
+def extend_to_10(out):
+    """攻略サイトの数値がレア9で止まっている武器を、レア10まで伸ばす（推定値）。
+    ペペの融光種ウォーターキャノンがゲーム内でレア10まで強化できることを確認（2026-11-09、ランク49）。
+    サイトの数値がレア9までなのは、レア10の解放（ランク45）まで届いた人がまだ少なかったためとみて、
+    レア9止まりの武器はどれもレア10まで上がる扱いにする。レア10の数値は、レア12まであるサイトの67本が
+    どれもレア9→10で攻撃×1.214・属性×1.217 なので、その比で出す"""
+    ra, re_ = [], []
+    for w in out:
+        s9, s10 = w['stats'].get(9), w['stats'].get(10)
+        if s9 and s10 and not s9.get('est') and not s10.get('est'):
+            ra.append(s10['attack'] / s9['attack'])
+            if s9.get('element'):
+                re_.append(s10['element'] / s9['element'])
+    if not ra:
+        return 0
+    ka, ke = sorted(ra)[len(ra) // 2], (sorted(re_)[len(re_) // 2] if re_ else sorted(ra)[len(ra) // 2])
+    n = 0
+    for w in out:
+        if w['maxRarity'] == 9 and 9 in w['stats']:
+            s9 = w['stats'][9]
+            w['stats'][10] = {'attack': round(s9['attack'] * ka), 'element': round((s9.get('element') or 0) * ke), 'affinity': s9.get('affinity') or 0,
+                              'est': True, 'src': f'推定（レア9×{ka:.3f}）。レア10まで強化できるのはゲーム内で確認'}
+            w['maxRarity'] = 10
+            n += 1
+    return n
+
+
 def main():
     full_p = RAW.parent / 'weapons_full.json'
     if full_p.exists():
         out = from_full(json.loads(full_p.read_text(encoding='utf-8')))
+        print('レア9止まり → レア10まで伸ばした武器', extend_to_10(out))
         OUT.write_text(json.dumps({'updated': datetime.date.today().isoformat(), 'source': 'weapons_full.json（gamewith.ai・GameWith・game8.co）', 'weapons': out}, ensure_ascii=False, indent=1), encoding='utf-8')
         print('weapons', len(out), 'estimated rarities', sum(1 for w in out for s in w['stats'].values() if s.get('est')),
               'max rarity', dict(sorted(__import__('collections').Counter(w['maxRarity'] for w in out).items())))

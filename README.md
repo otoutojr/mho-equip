@@ -18,7 +18,7 @@
 - `tools/make_models.py` … キャラごとのダメージモデル（スキルがどれだけ火力に乗るか）
 - `tools/build_builds.py` … 攻略サイトのおすすめ構成を集めた構成DB（data/builds.json）を作る
 - `tools/build_api.py` … 外部のAI（Claude Desktop など）向けに、キャラごとの小さなJSON（api/index.json, api/builds/<charId>.json）を作る。使い方のプロンプトは docs/claude-desktop-prompt.md
-- `tools/build_weapons.py` … 武器データ（レアごとの攻撃力・属性値。レア8〜12は gamewith.ai、どこにも無いレア13だけ補間して推定値扱い）
+- `tools/build_weapons.py` … 武器データ（レアごとの攻撃力・属性値。サイトでレア9止まりの武器はレア10まで推定値で伸ばす）
 
 ## データについて
 防具・スキル・モンスターの情報は攻略サイト（GameWith・Game8・gamewith.ai・Gamerch）の掲載内容をもとにまとめたもので、ゲーム内の表記と異なる場合があります。キャラごとの重みは攻略サイトの推奨とゲーム内の効果値を参考にした目安です。
