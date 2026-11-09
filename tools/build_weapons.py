@@ -92,28 +92,38 @@ def extend_to_10(out):
     return n
 
 
-APEX_JA = {'弓': '光翼・ヒッポグリフ', 'ヘビィボウガン': '光罰・バヤール', 'チャージアックス': '光輝・モントーバン', 'ランス': '光芒・クルタナ',
-           'ハンマー': '光響・オリファント', '双剣': '光影・オートクレール', '太刀': '光耀・ジョワユーズ', '大剣': '光稜・デュランダル'}  # Game8 ルガ・エアルダの「作れる装備」
+APEX_TYPE = {'光翼・ヒッポグリフ': '弓', '光罰・バヤール': 'ヘビィボウガン', '光輝・モントーバン': 'チャージアックス', '光芒・クルタナ': 'ランス',
+             '光響・オリファント': 'ハンマー', '光影・オートクレール': '双剣', '光耀・ジョワユーズ': '太刀', '光稜・デュランダル': '大剣'}
 
 
-def apex_weapons(full):
-    """鋭精武器（ルガ・エアルダの素材で作る。game8.co の Apex Weapons）。作るときに火・水・雷・氷・龍から属性を選ぶ。
-    名前は Game8（ルガ・エアルダのページ）、数値は game8.co（攻撃452・属性226）。gamewith.ai によると生産した時点でレア10、
-    嵐の結晶で強化してレアが上がる（レア11・13で鋭精チャレンジの難易度が解放）。分解すると覚醒以外の素材は全部戻るので、
-    武器種・属性を作り直せる。極意（ヘビィ: 与ダメ+8%、奥義後+12%）は game8.co では「融光種へのダメージ」（シーズン0）、
-    gamewith.ai では「鋭精チャレンジ・群竜チャレンジ・期間限定の現地チャレンジでのみ」"""
+def apex_weapons(raw_dir):
+    """鋭精武器（シーズン0。ルガ・エアルダの鋭精チャレンジの素材で作る）。
+    出典: Game8 の各武器ページ（840821〜840828、2026-11-07 更新）。8武器種とも
+      レア9 攻撃452・属性226 / レア10 549・274 / レア11 656・328
+    作るときに火・水・雷・氷・龍から属性を選ぶ（作った後は変えられない）。生産は 重光の玉×1＋輝光の結晶×12。
+    重光の玉は鋭精チャレンジ「普通」「鋭精」の初回クリアで1個ずつなので、シーズン0で作れるのは今のところ2本まで。
+    極意: 双剣以外は「融光種モンスターへのダメージ+8%」（S0限定）。双剣は融光種相手に連撃で会心率が最大+20%。
+    覚醒の表はレア14まであるが、数値が載っているのはレア11まで。
+    （gamewith.ai の鋭精武器の記事は CBT 情報で、素材名・生産時レア・分解の扱いが Game8 と違うので使わない）"""
+    p = raw_dir / 'apex_g8.json'
+    if not p.exists():
+        return []
     out = []
-    for a in full.get('apexWeapons') or []:
+    for a in json.loads(p.read_text(encoding='utf-8')):
+        typ = APEX_TYPE.get(a['name'])
+        if not typ or not a.get('stats'):
+            continue
+        stats = {int(r): {'attack': st['attack'], 'element': st['element'], 'affinity': 0, 'src': 'Game8'} for r, st in a['stats'].items()}
+        lo, hi = min(stats), max(stats)
         for el in ['火', '水', '雷', '氷', '龍']:
-            r = 10  # gamewith.ai「鋭精武器は生産した時点でレア度が10」（game8.co の initialRarity は 9）
             out.append({
-                'name': f"{APEX_JA.get(a['type'], '鋭精' + a['type'])}（{el}）", 'nameEn': a.get('nameEn'), 'type': a['type'], 'element': el,
-                'baseRarity': r, 'maxRarity': r,
-                'stats': {r: {'attack': a['attack'], 'element': a.get('elementValue') or 0, 'affinity': 0, 'src': 'game8.co'}},
-                'affinity': 0, 'monsters': ['ルガ・エアルダ'], 'guild': False, 'yuko': False, 'derived': False,
-                'apex': True, 'yukoBonus': 0.08,
-                'note': '鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）',
-                'sourceUrl': a.get('url'),
+                'name': f"{a['name']}（{el}）", 'type': typ, 'element': el,
+                'baseRarity': lo, 'maxRarity': hi, 'stats': stats, 'affinity': 0,
+                'monsters': ['ルガ・エアルダ'], 'guild': False, 'yuko': False, 'derived': False,
+                'apex': True, 'yukoBonus': 0.0 if typ == '双剣' else 0.08, 'minRank': 40,
+                'effect': a.get('effect'), 'material': a.get('material'),
+                'note': '鋭精武器（シーズン0）。作るときに属性を選ぶ（後から変更不可）。重光の玉が初回クリア報酬だけなので今は2本まで',
+                'sourceUrl': f"https://game8.jp/mhoutlanders/{a['id']}",
             })
     return out
 
@@ -123,7 +133,9 @@ def main():
     if full_p.exists():
         out = from_full(json.loads(full_p.read_text(encoding='utf-8')))
         print('レア9止まり → レア10まで伸ばした武器', extend_to_10(out))
-        out += apex_weapons(json.loads(full_p.read_text(encoding='utf-8')))
+        apex = apex_weapons(RAW.parent)
+        print('鋭精武器', len(apex))
+        out += apex
         OUT.write_text(json.dumps({'updated': datetime.date.today().isoformat(), 'source': 'weapons_full.json（gamewith.ai・GameWith・game8.co）', 'weapons': out}, ensure_ascii=False, indent=1), encoding='utf-8')
         print('weapons', len(out), 'estimated rarities', sum(1 for w in out for s in w['stats'].values() if s.get('est')),
               'max rarity', dict(sorted(__import__('collections').Counter(w['maxRarity'] for w in out).items())))

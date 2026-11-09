@@ -11231,963 +11231,29 @@
    "sourceUrl": "https://gamewith.jp/mhoutlanders/584031"
   },
   {
-   "name": "光稜・デュランダル（火）",
-   "nameEn": "Luminous Durandal",
-   "type": "大剣",
-   "element": "火",
-   "baseRarity": 10,
-   "maxRarity": 10,
-   "stats": {
-    "10": {
-     "attack": 452,
-     "element": 226,
-     "affinity": 0,
-     "src": "game8.co"
-    }
-   },
-   "affinity": 0,
-   "monsters": [
-    "ルガ・エアルダ"
-   ],
-   "guild": false,
-   "yuko": false,
-   "derived": false,
-   "apex": true,
-   "yukoBonus": 0.08,
-   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
-   "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637082"
-  },
-  {
-   "name": "光稜・デュランダル（水）",
-   "nameEn": "Luminous Durandal",
-   "type": "大剣",
-   "element": "水",
-   "baseRarity": 10,
-   "maxRarity": 10,
-   "stats": {
-    "10": {
-     "attack": 452,
-     "element": 226,
-     "affinity": 0,
-     "src": "game8.co"
-    }
-   },
-   "affinity": 0,
-   "monsters": [
-    "ルガ・エアルダ"
-   ],
-   "guild": false,
-   "yuko": false,
-   "derived": false,
-   "apex": true,
-   "yukoBonus": 0.08,
-   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
-   "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637082"
-  },
-  {
-   "name": "光稜・デュランダル（雷）",
-   "nameEn": "Luminous Durandal",
-   "type": "大剣",
-   "element": "雷",
-   "baseRarity": 10,
-   "maxRarity": 10,
-   "stats": {
-    "10": {
-     "attack": 452,
-     "element": 226,
-     "affinity": 0,
-     "src": "game8.co"
-    }
-   },
-   "affinity": 0,
-   "monsters": [
-    "ルガ・エアルダ"
-   ],
-   "guild": false,
-   "yuko": false,
-   "derived": false,
-   "apex": true,
-   "yukoBonus": 0.08,
-   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
-   "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637082"
-  },
-  {
-   "name": "光稜・デュランダル（氷）",
-   "nameEn": "Luminous Durandal",
-   "type": "大剣",
-   "element": "氷",
-   "baseRarity": 10,
-   "maxRarity": 10,
-   "stats": {
-    "10": {
-     "attack": 452,
-     "element": 226,
-     "affinity": 0,
-     "src": "game8.co"
-    }
-   },
-   "affinity": 0,
-   "monsters": [
-    "ルガ・エアルダ"
-   ],
-   "guild": false,
-   "yuko": false,
-   "derived": false,
-   "apex": true,
-   "yukoBonus": 0.08,
-   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
-   "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637082"
-  },
-  {
-   "name": "光稜・デュランダル（龍）",
-   "nameEn": "Luminous Durandal",
-   "type": "大剣",
-   "element": "龍",
-   "baseRarity": 10,
-   "maxRarity": 10,
-   "stats": {
-    "10": {
-     "attack": 452,
-     "element": 226,
-     "affinity": 0,
-     "src": "game8.co"
-    }
-   },
-   "affinity": 0,
-   "monsters": [
-    "ルガ・エアルダ"
-   ],
-   "guild": false,
-   "yuko": false,
-   "derived": false,
-   "apex": true,
-   "yukoBonus": 0.08,
-   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
-   "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637082"
-  },
-  {
-   "name": "光耀・ジョワユーズ（火）",
-   "nameEn": "Dawnlit Joyeuse",
-   "type": "太刀",
-   "element": "火",
-   "baseRarity": 10,
-   "maxRarity": 10,
-   "stats": {
-    "10": {
-     "attack": 452,
-     "element": 226,
-     "affinity": 0,
-     "src": "game8.co"
-    }
-   },
-   "affinity": 0,
-   "monsters": [
-    "ルガ・エアルダ"
-   ],
-   "guild": false,
-   "yuko": false,
-   "derived": false,
-   "apex": true,
-   "yukoBonus": 0.08,
-   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
-   "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637150"
-  },
-  {
-   "name": "光耀・ジョワユーズ（水）",
-   "nameEn": "Dawnlit Joyeuse",
-   "type": "太刀",
-   "element": "水",
-   "baseRarity": 10,
-   "maxRarity": 10,
-   "stats": {
-    "10": {
-     "attack": 452,
-     "element": 226,
-     "affinity": 0,
-     "src": "game8.co"
-    }
-   },
-   "affinity": 0,
-   "monsters": [
-    "ルガ・エアルダ"
-   ],
-   "guild": false,
-   "yuko": false,
-   "derived": false,
-   "apex": true,
-   "yukoBonus": 0.08,
-   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
-   "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637150"
-  },
-  {
-   "name": "光耀・ジョワユーズ（雷）",
-   "nameEn": "Dawnlit Joyeuse",
-   "type": "太刀",
-   "element": "雷",
-   "baseRarity": 10,
-   "maxRarity": 10,
-   "stats": {
-    "10": {
-     "attack": 452,
-     "element": 226,
-     "affinity": 0,
-     "src": "game8.co"
-    }
-   },
-   "affinity": 0,
-   "monsters": [
-    "ルガ・エアルダ"
-   ],
-   "guild": false,
-   "yuko": false,
-   "derived": false,
-   "apex": true,
-   "yukoBonus": 0.08,
-   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
-   "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637150"
-  },
-  {
-   "name": "光耀・ジョワユーズ（氷）",
-   "nameEn": "Dawnlit Joyeuse",
-   "type": "太刀",
-   "element": "氷",
-   "baseRarity": 10,
-   "maxRarity": 10,
-   "stats": {
-    "10": {
-     "attack": 452,
-     "element": 226,
-     "affinity": 0,
-     "src": "game8.co"
-    }
-   },
-   "affinity": 0,
-   "monsters": [
-    "ルガ・エアルダ"
-   ],
-   "guild": false,
-   "yuko": false,
-   "derived": false,
-   "apex": true,
-   "yukoBonus": 0.08,
-   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
-   "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637150"
-  },
-  {
-   "name": "光耀・ジョワユーズ（龍）",
-   "nameEn": "Dawnlit Joyeuse",
-   "type": "太刀",
-   "element": "龍",
-   "baseRarity": 10,
-   "maxRarity": 10,
-   "stats": {
-    "10": {
-     "attack": 452,
-     "element": 226,
-     "affinity": 0,
-     "src": "game8.co"
-    }
-   },
-   "affinity": 0,
-   "monsters": [
-    "ルガ・エアルダ"
-   ],
-   "guild": false,
-   "yuko": false,
-   "derived": false,
-   "apex": true,
-   "yukoBonus": 0.08,
-   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
-   "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637150"
-  },
-  {
-   "name": "光影・オートクレール（火）",
-   "nameEn": "Lucent Hauteclaire",
-   "type": "双剣",
-   "element": "火",
-   "baseRarity": 10,
-   "maxRarity": 10,
-   "stats": {
-    "10": {
-     "attack": 452,
-     "element": 226,
-     "affinity": 0,
-     "src": "game8.co"
-    }
-   },
-   "affinity": 0,
-   "monsters": [
-    "ルガ・エアルダ"
-   ],
-   "guild": false,
-   "yuko": false,
-   "derived": false,
-   "apex": true,
-   "yukoBonus": 0.08,
-   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
-   "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637152"
-  },
-  {
-   "name": "光影・オートクレール（水）",
-   "nameEn": "Lucent Hauteclaire",
-   "type": "双剣",
-   "element": "水",
-   "baseRarity": 10,
-   "maxRarity": 10,
-   "stats": {
-    "10": {
-     "attack": 452,
-     "element": 226,
-     "affinity": 0,
-     "src": "game8.co"
-    }
-   },
-   "affinity": 0,
-   "monsters": [
-    "ルガ・エアルダ"
-   ],
-   "guild": false,
-   "yuko": false,
-   "derived": false,
-   "apex": true,
-   "yukoBonus": 0.08,
-   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
-   "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637152"
-  },
-  {
-   "name": "光影・オートクレール（雷）",
-   "nameEn": "Lucent Hauteclaire",
-   "type": "双剣",
-   "element": "雷",
-   "baseRarity": 10,
-   "maxRarity": 10,
-   "stats": {
-    "10": {
-     "attack": 452,
-     "element": 226,
-     "affinity": 0,
-     "src": "game8.co"
-    }
-   },
-   "affinity": 0,
-   "monsters": [
-    "ルガ・エアルダ"
-   ],
-   "guild": false,
-   "yuko": false,
-   "derived": false,
-   "apex": true,
-   "yukoBonus": 0.08,
-   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
-   "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637152"
-  },
-  {
-   "name": "光影・オートクレール（氷）",
-   "nameEn": "Lucent Hauteclaire",
-   "type": "双剣",
-   "element": "氷",
-   "baseRarity": 10,
-   "maxRarity": 10,
-   "stats": {
-    "10": {
-     "attack": 452,
-     "element": 226,
-     "affinity": 0,
-     "src": "game8.co"
-    }
-   },
-   "affinity": 0,
-   "monsters": [
-    "ルガ・エアルダ"
-   ],
-   "guild": false,
-   "yuko": false,
-   "derived": false,
-   "apex": true,
-   "yukoBonus": 0.08,
-   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
-   "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637152"
-  },
-  {
-   "name": "光影・オートクレール（龍）",
-   "nameEn": "Lucent Hauteclaire",
-   "type": "双剣",
-   "element": "龍",
-   "baseRarity": 10,
-   "maxRarity": 10,
-   "stats": {
-    "10": {
-     "attack": 452,
-     "element": 226,
-     "affinity": 0,
-     "src": "game8.co"
-    }
-   },
-   "affinity": 0,
-   "monsters": [
-    "ルガ・エアルダ"
-   ],
-   "guild": false,
-   "yuko": false,
-   "derived": false,
-   "apex": true,
-   "yukoBonus": 0.08,
-   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
-   "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637152"
-  },
-  {
-   "name": "光響・オリファント（火）",
-   "nameEn": "Sonorous Olifant",
-   "type": "ハンマー",
-   "element": "火",
-   "baseRarity": 10,
-   "maxRarity": 10,
-   "stats": {
-    "10": {
-     "attack": 452,
-     "element": 226,
-     "affinity": 0,
-     "src": "game8.co"
-    }
-   },
-   "affinity": 0,
-   "monsters": [
-    "ルガ・エアルダ"
-   ],
-   "guild": false,
-   "yuko": false,
-   "derived": false,
-   "apex": true,
-   "yukoBonus": 0.08,
-   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
-   "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637155"
-  },
-  {
-   "name": "光響・オリファント（水）",
-   "nameEn": "Sonorous Olifant",
-   "type": "ハンマー",
-   "element": "水",
-   "baseRarity": 10,
-   "maxRarity": 10,
-   "stats": {
-    "10": {
-     "attack": 452,
-     "element": 226,
-     "affinity": 0,
-     "src": "game8.co"
-    }
-   },
-   "affinity": 0,
-   "monsters": [
-    "ルガ・エアルダ"
-   ],
-   "guild": false,
-   "yuko": false,
-   "derived": false,
-   "apex": true,
-   "yukoBonus": 0.08,
-   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
-   "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637155"
-  },
-  {
-   "name": "光響・オリファント（雷）",
-   "nameEn": "Sonorous Olifant",
-   "type": "ハンマー",
-   "element": "雷",
-   "baseRarity": 10,
-   "maxRarity": 10,
-   "stats": {
-    "10": {
-     "attack": 452,
-     "element": 226,
-     "affinity": 0,
-     "src": "game8.co"
-    }
-   },
-   "affinity": 0,
-   "monsters": [
-    "ルガ・エアルダ"
-   ],
-   "guild": false,
-   "yuko": false,
-   "derived": false,
-   "apex": true,
-   "yukoBonus": 0.08,
-   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
-   "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637155"
-  },
-  {
-   "name": "光響・オリファント（氷）",
-   "nameEn": "Sonorous Olifant",
-   "type": "ハンマー",
-   "element": "氷",
-   "baseRarity": 10,
-   "maxRarity": 10,
-   "stats": {
-    "10": {
-     "attack": 452,
-     "element": 226,
-     "affinity": 0,
-     "src": "game8.co"
-    }
-   },
-   "affinity": 0,
-   "monsters": [
-    "ルガ・エアルダ"
-   ],
-   "guild": false,
-   "yuko": false,
-   "derived": false,
-   "apex": true,
-   "yukoBonus": 0.08,
-   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
-   "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637155"
-  },
-  {
-   "name": "光響・オリファント（龍）",
-   "nameEn": "Sonorous Olifant",
-   "type": "ハンマー",
-   "element": "龍",
-   "baseRarity": 10,
-   "maxRarity": 10,
-   "stats": {
-    "10": {
-     "attack": 452,
-     "element": 226,
-     "affinity": 0,
-     "src": "game8.co"
-    }
-   },
-   "affinity": 0,
-   "monsters": [
-    "ルガ・エアルダ"
-   ],
-   "guild": false,
-   "yuko": false,
-   "derived": false,
-   "apex": true,
-   "yukoBonus": 0.08,
-   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
-   "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637155"
-  },
-  {
-   "name": "光芒・クルタナ（火）",
-   "nameEn": "Gleaming Curtana",
-   "type": "ランス",
-   "element": "火",
-   "baseRarity": 10,
-   "maxRarity": 10,
-   "stats": {
-    "10": {
-     "attack": 452,
-     "element": 226,
-     "affinity": 0,
-     "src": "game8.co"
-    }
-   },
-   "affinity": 0,
-   "monsters": [
-    "ルガ・エアルダ"
-   ],
-   "guild": false,
-   "yuko": false,
-   "derived": false,
-   "apex": true,
-   "yukoBonus": 0.08,
-   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
-   "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637156"
-  },
-  {
-   "name": "光芒・クルタナ（水）",
-   "nameEn": "Gleaming Curtana",
-   "type": "ランス",
-   "element": "水",
-   "baseRarity": 10,
-   "maxRarity": 10,
-   "stats": {
-    "10": {
-     "attack": 452,
-     "element": 226,
-     "affinity": 0,
-     "src": "game8.co"
-    }
-   },
-   "affinity": 0,
-   "monsters": [
-    "ルガ・エアルダ"
-   ],
-   "guild": false,
-   "yuko": false,
-   "derived": false,
-   "apex": true,
-   "yukoBonus": 0.08,
-   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
-   "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637156"
-  },
-  {
-   "name": "光芒・クルタナ（雷）",
-   "nameEn": "Gleaming Curtana",
-   "type": "ランス",
-   "element": "雷",
-   "baseRarity": 10,
-   "maxRarity": 10,
-   "stats": {
-    "10": {
-     "attack": 452,
-     "element": 226,
-     "affinity": 0,
-     "src": "game8.co"
-    }
-   },
-   "affinity": 0,
-   "monsters": [
-    "ルガ・エアルダ"
-   ],
-   "guild": false,
-   "yuko": false,
-   "derived": false,
-   "apex": true,
-   "yukoBonus": 0.08,
-   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
-   "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637156"
-  },
-  {
-   "name": "光芒・クルタナ（氷）",
-   "nameEn": "Gleaming Curtana",
-   "type": "ランス",
-   "element": "氷",
-   "baseRarity": 10,
-   "maxRarity": 10,
-   "stats": {
-    "10": {
-     "attack": 452,
-     "element": 226,
-     "affinity": 0,
-     "src": "game8.co"
-    }
-   },
-   "affinity": 0,
-   "monsters": [
-    "ルガ・エアルダ"
-   ],
-   "guild": false,
-   "yuko": false,
-   "derived": false,
-   "apex": true,
-   "yukoBonus": 0.08,
-   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
-   "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637156"
-  },
-  {
-   "name": "光芒・クルタナ（龍）",
-   "nameEn": "Gleaming Curtana",
-   "type": "ランス",
-   "element": "龍",
-   "baseRarity": 10,
-   "maxRarity": 10,
-   "stats": {
-    "10": {
-     "attack": 452,
-     "element": 226,
-     "affinity": 0,
-     "src": "game8.co"
-    }
-   },
-   "affinity": 0,
-   "monsters": [
-    "ルガ・エアルダ"
-   ],
-   "guild": false,
-   "yuko": false,
-   "derived": false,
-   "apex": true,
-   "yukoBonus": 0.08,
-   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
-   "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637156"
-  },
-  {
-   "name": "光輝・モントーバン（火）",
-   "nameEn": "Resplendent Montauban",
-   "type": "チャージアックス",
-   "element": "火",
-   "baseRarity": 10,
-   "maxRarity": 10,
-   "stats": {
-    "10": {
-     "attack": 452,
-     "element": 226,
-     "affinity": 0,
-     "src": "game8.co"
-    }
-   },
-   "affinity": 0,
-   "monsters": [
-    "ルガ・エアルダ"
-   ],
-   "guild": false,
-   "yuko": false,
-   "derived": false,
-   "apex": true,
-   "yukoBonus": 0.08,
-   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
-   "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637157"
-  },
-  {
-   "name": "光輝・モントーバン（水）",
-   "nameEn": "Resplendent Montauban",
-   "type": "チャージアックス",
-   "element": "水",
-   "baseRarity": 10,
-   "maxRarity": 10,
-   "stats": {
-    "10": {
-     "attack": 452,
-     "element": 226,
-     "affinity": 0,
-     "src": "game8.co"
-    }
-   },
-   "affinity": 0,
-   "monsters": [
-    "ルガ・エアルダ"
-   ],
-   "guild": false,
-   "yuko": false,
-   "derived": false,
-   "apex": true,
-   "yukoBonus": 0.08,
-   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
-   "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637157"
-  },
-  {
-   "name": "光輝・モントーバン（雷）",
-   "nameEn": "Resplendent Montauban",
-   "type": "チャージアックス",
-   "element": "雷",
-   "baseRarity": 10,
-   "maxRarity": 10,
-   "stats": {
-    "10": {
-     "attack": 452,
-     "element": 226,
-     "affinity": 0,
-     "src": "game8.co"
-    }
-   },
-   "affinity": 0,
-   "monsters": [
-    "ルガ・エアルダ"
-   ],
-   "guild": false,
-   "yuko": false,
-   "derived": false,
-   "apex": true,
-   "yukoBonus": 0.08,
-   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
-   "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637157"
-  },
-  {
-   "name": "光輝・モントーバン（氷）",
-   "nameEn": "Resplendent Montauban",
-   "type": "チャージアックス",
-   "element": "氷",
-   "baseRarity": 10,
-   "maxRarity": 10,
-   "stats": {
-    "10": {
-     "attack": 452,
-     "element": 226,
-     "affinity": 0,
-     "src": "game8.co"
-    }
-   },
-   "affinity": 0,
-   "monsters": [
-    "ルガ・エアルダ"
-   ],
-   "guild": false,
-   "yuko": false,
-   "derived": false,
-   "apex": true,
-   "yukoBonus": 0.08,
-   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
-   "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637157"
-  },
-  {
-   "name": "光輝・モントーバン（龍）",
-   "nameEn": "Resplendent Montauban",
-   "type": "チャージアックス",
-   "element": "龍",
-   "baseRarity": 10,
-   "maxRarity": 10,
-   "stats": {
-    "10": {
-     "attack": 452,
-     "element": 226,
-     "affinity": 0,
-     "src": "game8.co"
-    }
-   },
-   "affinity": 0,
-   "monsters": [
-    "ルガ・エアルダ"
-   ],
-   "guild": false,
-   "yuko": false,
-   "derived": false,
-   "apex": true,
-   "yukoBonus": 0.08,
-   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
-   "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637157"
-  },
-  {
-   "name": "光罰・バヤール（火）",
-   "nameEn": "Scintillant Bayard",
-   "type": "ヘビィボウガン",
-   "element": "火",
-   "baseRarity": 10,
-   "maxRarity": 10,
-   "stats": {
-    "10": {
-     "attack": 452,
-     "element": 226,
-     "affinity": 0,
-     "src": "game8.co"
-    }
-   },
-   "affinity": 0,
-   "monsters": [
-    "ルガ・エアルダ"
-   ],
-   "guild": false,
-   "yuko": false,
-   "derived": false,
-   "apex": true,
-   "yukoBonus": 0.08,
-   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
-   "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637160"
-  },
-  {
-   "name": "光罰・バヤール（水）",
-   "nameEn": "Scintillant Bayard",
-   "type": "ヘビィボウガン",
-   "element": "水",
-   "baseRarity": 10,
-   "maxRarity": 10,
-   "stats": {
-    "10": {
-     "attack": 452,
-     "element": 226,
-     "affinity": 0,
-     "src": "game8.co"
-    }
-   },
-   "affinity": 0,
-   "monsters": [
-    "ルガ・エアルダ"
-   ],
-   "guild": false,
-   "yuko": false,
-   "derived": false,
-   "apex": true,
-   "yukoBonus": 0.08,
-   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
-   "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637160"
-  },
-  {
-   "name": "光罰・バヤール（雷）",
-   "nameEn": "Scintillant Bayard",
-   "type": "ヘビィボウガン",
-   "element": "雷",
-   "baseRarity": 10,
-   "maxRarity": 10,
-   "stats": {
-    "10": {
-     "attack": 452,
-     "element": 226,
-     "affinity": 0,
-     "src": "game8.co"
-    }
-   },
-   "affinity": 0,
-   "monsters": [
-    "ルガ・エアルダ"
-   ],
-   "guild": false,
-   "yuko": false,
-   "derived": false,
-   "apex": true,
-   "yukoBonus": 0.08,
-   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
-   "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637160"
-  },
-  {
-   "name": "光罰・バヤール（氷）",
-   "nameEn": "Scintillant Bayard",
-   "type": "ヘビィボウガン",
-   "element": "氷",
-   "baseRarity": 10,
-   "maxRarity": 10,
-   "stats": {
-    "10": {
-     "attack": 452,
-     "element": 226,
-     "affinity": 0,
-     "src": "game8.co"
-    }
-   },
-   "affinity": 0,
-   "monsters": [
-    "ルガ・エアルダ"
-   ],
-   "guild": false,
-   "yuko": false,
-   "derived": false,
-   "apex": true,
-   "yukoBonus": 0.08,
-   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
-   "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637160"
-  },
-  {
-   "name": "光罰・バヤール（龍）",
-   "nameEn": "Scintillant Bayard",
-   "type": "ヘビィボウガン",
-   "element": "龍",
-   "baseRarity": 10,
-   "maxRarity": 10,
-   "stats": {
-    "10": {
-     "attack": 452,
-     "element": 226,
-     "affinity": 0,
-     "src": "game8.co"
-    }
-   },
-   "affinity": 0,
-   "monsters": [
-    "ルガ・エアルダ"
-   ],
-   "guild": false,
-   "yuko": false,
-   "derived": false,
-   "apex": true,
-   "yukoBonus": 0.08,
-   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
-   "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637160"
-  },
-  {
    "name": "光翼・ヒッポグリフ（火）",
-   "nameEn": "Brilliant Hippogriff",
    "type": "弓",
    "element": "火",
-   "baseRarity": 10,
-   "maxRarity": 10,
+   "baseRarity": 9,
+   "maxRarity": 11,
    "stats": {
+    "11": {
+     "attack": 656,
+     "element": 328,
+     "affinity": 0,
+     "src": "Game8"
+    },
     "10": {
+     "attack": 549,
+     "element": 274,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "9": {
      "attack": 452,
      "element": 226,
      "affinity": 0,
-     "src": "game8.co"
+     "src": "Game8"
     }
    },
    "affinity": 0,
@@ -12199,22 +11265,36 @@
    "derived": false,
    "apex": true,
    "yukoBonus": 0.08,
-   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
-   "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637162"
+   "minRank": 40,
+   "effect": "【 弓の極意 】 この武器を装備している時、融光種モンスターへのダメージ+8%。エネルギーを消費するごとに、融光種モンスターへのダメージがさらに+1%。最大3スタックまで可能。狩猟終了まで持続する。（S0シーズン限定）",
+   "material": "重光の玉×1、輝光の結晶×12",
+   "note": "鋭精武器（シーズン0）。作るときに属性を選ぶ（後から変更不可）。重光の玉が初回クリア報酬だけなので今は2本まで",
+   "sourceUrl": "https://game8.jp/mhoutlanders/840828"
   },
   {
    "name": "光翼・ヒッポグリフ（水）",
-   "nameEn": "Brilliant Hippogriff",
    "type": "弓",
    "element": "水",
-   "baseRarity": 10,
-   "maxRarity": 10,
+   "baseRarity": 9,
+   "maxRarity": 11,
    "stats": {
+    "11": {
+     "attack": 656,
+     "element": 328,
+     "affinity": 0,
+     "src": "Game8"
+    },
     "10": {
+     "attack": 549,
+     "element": 274,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "9": {
      "attack": 452,
      "element": 226,
      "affinity": 0,
-     "src": "game8.co"
+     "src": "Game8"
     }
    },
    "affinity": 0,
@@ -12226,22 +11306,36 @@
    "derived": false,
    "apex": true,
    "yukoBonus": 0.08,
-   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
-   "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637162"
+   "minRank": 40,
+   "effect": "【 弓の極意 】 この武器を装備している時、融光種モンスターへのダメージ+8%。エネルギーを消費するごとに、融光種モンスターへのダメージがさらに+1%。最大3スタックまで可能。狩猟終了まで持続する。（S0シーズン限定）",
+   "material": "重光の玉×1、輝光の結晶×12",
+   "note": "鋭精武器（シーズン0）。作るときに属性を選ぶ（後から変更不可）。重光の玉が初回クリア報酬だけなので今は2本まで",
+   "sourceUrl": "https://game8.jp/mhoutlanders/840828"
   },
   {
    "name": "光翼・ヒッポグリフ（雷）",
-   "nameEn": "Brilliant Hippogriff",
    "type": "弓",
    "element": "雷",
-   "baseRarity": 10,
-   "maxRarity": 10,
+   "baseRarity": 9,
+   "maxRarity": 11,
    "stats": {
+    "11": {
+     "attack": 656,
+     "element": 328,
+     "affinity": 0,
+     "src": "Game8"
+    },
     "10": {
+     "attack": 549,
+     "element": 274,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "9": {
      "attack": 452,
      "element": 226,
      "affinity": 0,
-     "src": "game8.co"
+     "src": "Game8"
     }
    },
    "affinity": 0,
@@ -12253,22 +11347,36 @@
    "derived": false,
    "apex": true,
    "yukoBonus": 0.08,
-   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
-   "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637162"
+   "minRank": 40,
+   "effect": "【 弓の極意 】 この武器を装備している時、融光種モンスターへのダメージ+8%。エネルギーを消費するごとに、融光種モンスターへのダメージがさらに+1%。最大3スタックまで可能。狩猟終了まで持続する。（S0シーズン限定）",
+   "material": "重光の玉×1、輝光の結晶×12",
+   "note": "鋭精武器（シーズン0）。作るときに属性を選ぶ（後から変更不可）。重光の玉が初回クリア報酬だけなので今は2本まで",
+   "sourceUrl": "https://game8.jp/mhoutlanders/840828"
   },
   {
    "name": "光翼・ヒッポグリフ（氷）",
-   "nameEn": "Brilliant Hippogriff",
    "type": "弓",
    "element": "氷",
-   "baseRarity": 10,
-   "maxRarity": 10,
+   "baseRarity": 9,
+   "maxRarity": 11,
    "stats": {
+    "11": {
+     "attack": 656,
+     "element": 328,
+     "affinity": 0,
+     "src": "Game8"
+    },
     "10": {
+     "attack": 549,
+     "element": 274,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "9": {
      "attack": 452,
      "element": 226,
      "affinity": 0,
-     "src": "game8.co"
+     "src": "Game8"
     }
    },
    "affinity": 0,
@@ -12280,22 +11388,36 @@
    "derived": false,
    "apex": true,
    "yukoBonus": 0.08,
-   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
-   "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637162"
+   "minRank": 40,
+   "effect": "【 弓の極意 】 この武器を装備している時、融光種モンスターへのダメージ+8%。エネルギーを消費するごとに、融光種モンスターへのダメージがさらに+1%。最大3スタックまで可能。狩猟終了まで持続する。（S0シーズン限定）",
+   "material": "重光の玉×1、輝光の結晶×12",
+   "note": "鋭精武器（シーズン0）。作るときに属性を選ぶ（後から変更不可）。重光の玉が初回クリア報酬だけなので今は2本まで",
+   "sourceUrl": "https://game8.jp/mhoutlanders/840828"
   },
   {
    "name": "光翼・ヒッポグリフ（龍）",
-   "nameEn": "Brilliant Hippogriff",
    "type": "弓",
    "element": "龍",
-   "baseRarity": 10,
-   "maxRarity": 10,
+   "baseRarity": 9,
+   "maxRarity": 11,
    "stats": {
+    "11": {
+     "attack": 656,
+     "element": 328,
+     "affinity": 0,
+     "src": "Game8"
+    },
     "10": {
+     "attack": 549,
+     "element": 274,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "9": {
      "attack": 452,
      "element": 226,
      "affinity": 0,
-     "src": "game8.co"
+     "src": "Game8"
     }
    },
    "affinity": 0,
@@ -12307,8 +11429,1446 @@
    "derived": false,
    "apex": true,
    "yukoBonus": 0.08,
-   "note": "鋭精武器（鋭精チャレンジの素材で生産。生産時レア10、嵐の結晶で強化）。分解で素材が戻るので属性・武器種を作り直せる。極意の+8%は融光種相手（game8.co）または鋭精・群竜チャレンジのみ（gamewith.ai）",
-   "sourceUrl": "https://game8.co/games/Monster-Hunter-Outlanders/archives/637162"
+   "minRank": 40,
+   "effect": "【 弓の極意 】 この武器を装備している時、融光種モンスターへのダメージ+8%。エネルギーを消費するごとに、融光種モンスターへのダメージがさらに+1%。最大3スタックまで可能。狩猟終了まで持続する。（S0シーズン限定）",
+   "material": "重光の玉×1、輝光の結晶×12",
+   "note": "鋭精武器（シーズン0）。作るときに属性を選ぶ（後から変更不可）。重光の玉が初回クリア報酬だけなので今は2本まで",
+   "sourceUrl": "https://game8.jp/mhoutlanders/840828"
+  },
+  {
+   "name": "光罰・バヤール（火）",
+   "type": "ヘビィボウガン",
+   "element": "火",
+   "baseRarity": 9,
+   "maxRarity": 11,
+   "stats": {
+    "11": {
+     "attack": 656,
+     "element": 328,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "10": {
+     "attack": 549,
+     "element": 274,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "9": {
+     "attack": 452,
+     "element": 226,
+     "affinity": 0,
+     "src": "Game8"
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "ルガ・エアルダ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "apex": true,
+   "yukoBonus": 0.08,
+   "minRank": 40,
+   "effect": "【 ヘビィボウガンの極意 】 この武器を装備している時、融光種モンスターへのダメージ+8%。奥義発動後、ダメージの増加量が+12%になる。10秒持続。（S0シーズン限定）",
+   "material": "重光の玉×1、輝光の結晶×12",
+   "note": "鋭精武器（シーズン0）。作るときに属性を選ぶ（後から変更不可）。重光の玉が初回クリア報酬だけなので今は2本まで",
+   "sourceUrl": "https://game8.jp/mhoutlanders/840827"
+  },
+  {
+   "name": "光罰・バヤール（水）",
+   "type": "ヘビィボウガン",
+   "element": "水",
+   "baseRarity": 9,
+   "maxRarity": 11,
+   "stats": {
+    "11": {
+     "attack": 656,
+     "element": 328,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "10": {
+     "attack": 549,
+     "element": 274,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "9": {
+     "attack": 452,
+     "element": 226,
+     "affinity": 0,
+     "src": "Game8"
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "ルガ・エアルダ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "apex": true,
+   "yukoBonus": 0.08,
+   "minRank": 40,
+   "effect": "【 ヘビィボウガンの極意 】 この武器を装備している時、融光種モンスターへのダメージ+8%。奥義発動後、ダメージの増加量が+12%になる。10秒持続。（S0シーズン限定）",
+   "material": "重光の玉×1、輝光の結晶×12",
+   "note": "鋭精武器（シーズン0）。作るときに属性を選ぶ（後から変更不可）。重光の玉が初回クリア報酬だけなので今は2本まで",
+   "sourceUrl": "https://game8.jp/mhoutlanders/840827"
+  },
+  {
+   "name": "光罰・バヤール（雷）",
+   "type": "ヘビィボウガン",
+   "element": "雷",
+   "baseRarity": 9,
+   "maxRarity": 11,
+   "stats": {
+    "11": {
+     "attack": 656,
+     "element": 328,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "10": {
+     "attack": 549,
+     "element": 274,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "9": {
+     "attack": 452,
+     "element": 226,
+     "affinity": 0,
+     "src": "Game8"
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "ルガ・エアルダ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "apex": true,
+   "yukoBonus": 0.08,
+   "minRank": 40,
+   "effect": "【 ヘビィボウガンの極意 】 この武器を装備している時、融光種モンスターへのダメージ+8%。奥義発動後、ダメージの増加量が+12%になる。10秒持続。（S0シーズン限定）",
+   "material": "重光の玉×1、輝光の結晶×12",
+   "note": "鋭精武器（シーズン0）。作るときに属性を選ぶ（後から変更不可）。重光の玉が初回クリア報酬だけなので今は2本まで",
+   "sourceUrl": "https://game8.jp/mhoutlanders/840827"
+  },
+  {
+   "name": "光罰・バヤール（氷）",
+   "type": "ヘビィボウガン",
+   "element": "氷",
+   "baseRarity": 9,
+   "maxRarity": 11,
+   "stats": {
+    "11": {
+     "attack": 656,
+     "element": 328,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "10": {
+     "attack": 549,
+     "element": 274,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "9": {
+     "attack": 452,
+     "element": 226,
+     "affinity": 0,
+     "src": "Game8"
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "ルガ・エアルダ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "apex": true,
+   "yukoBonus": 0.08,
+   "minRank": 40,
+   "effect": "【 ヘビィボウガンの極意 】 この武器を装備している時、融光種モンスターへのダメージ+8%。奥義発動後、ダメージの増加量が+12%になる。10秒持続。（S0シーズン限定）",
+   "material": "重光の玉×1、輝光の結晶×12",
+   "note": "鋭精武器（シーズン0）。作るときに属性を選ぶ（後から変更不可）。重光の玉が初回クリア報酬だけなので今は2本まで",
+   "sourceUrl": "https://game8.jp/mhoutlanders/840827"
+  },
+  {
+   "name": "光罰・バヤール（龍）",
+   "type": "ヘビィボウガン",
+   "element": "龍",
+   "baseRarity": 9,
+   "maxRarity": 11,
+   "stats": {
+    "11": {
+     "attack": 656,
+     "element": 328,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "10": {
+     "attack": 549,
+     "element": 274,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "9": {
+     "attack": 452,
+     "element": 226,
+     "affinity": 0,
+     "src": "Game8"
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "ルガ・エアルダ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "apex": true,
+   "yukoBonus": 0.08,
+   "minRank": 40,
+   "effect": "【 ヘビィボウガンの極意 】 この武器を装備している時、融光種モンスターへのダメージ+8%。奥義発動後、ダメージの増加量が+12%になる。10秒持続。（S0シーズン限定）",
+   "material": "重光の玉×1、輝光の結晶×12",
+   "note": "鋭精武器（シーズン0）。作るときに属性を選ぶ（後から変更不可）。重光の玉が初回クリア報酬だけなので今は2本まで",
+   "sourceUrl": "https://game8.jp/mhoutlanders/840827"
+  },
+  {
+   "name": "光輝・モントーバン（火）",
+   "type": "チャージアックス",
+   "element": "火",
+   "baseRarity": 9,
+   "maxRarity": 11,
+   "stats": {
+    "11": {
+     "attack": 656,
+     "element": 328,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "10": {
+     "attack": 549,
+     "element": 274,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "9": {
+     "attack": 452,
+     "element": 226,
+     "affinity": 0,
+     "src": "Game8"
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "ルガ・エアルダ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "apex": true,
+   "yukoBonus": 0.08,
+   "minRank": 40,
+   "effect": "【 チャージアックスの極意 】 この武器を装備している時、融光種モンスターへのダメージ+8%。ビンのエネルギーをチャージした後、融光種モンスターへのダメージがさらに+12%。8秒持続。（S0シーズン限定）",
+   "material": "重光の玉×1、輝光の結晶×12",
+   "note": "鋭精武器（シーズン0）。作るときに属性を選ぶ（後から変更不可）。重光の玉が初回クリア報酬だけなので今は2本まで",
+   "sourceUrl": "https://game8.jp/mhoutlanders/840826"
+  },
+  {
+   "name": "光輝・モントーバン（水）",
+   "type": "チャージアックス",
+   "element": "水",
+   "baseRarity": 9,
+   "maxRarity": 11,
+   "stats": {
+    "11": {
+     "attack": 656,
+     "element": 328,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "10": {
+     "attack": 549,
+     "element": 274,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "9": {
+     "attack": 452,
+     "element": 226,
+     "affinity": 0,
+     "src": "Game8"
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "ルガ・エアルダ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "apex": true,
+   "yukoBonus": 0.08,
+   "minRank": 40,
+   "effect": "【 チャージアックスの極意 】 この武器を装備している時、融光種モンスターへのダメージ+8%。ビンのエネルギーをチャージした後、融光種モンスターへのダメージがさらに+12%。8秒持続。（S0シーズン限定）",
+   "material": "重光の玉×1、輝光の結晶×12",
+   "note": "鋭精武器（シーズン0）。作るときに属性を選ぶ（後から変更不可）。重光の玉が初回クリア報酬だけなので今は2本まで",
+   "sourceUrl": "https://game8.jp/mhoutlanders/840826"
+  },
+  {
+   "name": "光輝・モントーバン（雷）",
+   "type": "チャージアックス",
+   "element": "雷",
+   "baseRarity": 9,
+   "maxRarity": 11,
+   "stats": {
+    "11": {
+     "attack": 656,
+     "element": 328,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "10": {
+     "attack": 549,
+     "element": 274,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "9": {
+     "attack": 452,
+     "element": 226,
+     "affinity": 0,
+     "src": "Game8"
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "ルガ・エアルダ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "apex": true,
+   "yukoBonus": 0.08,
+   "minRank": 40,
+   "effect": "【 チャージアックスの極意 】 この武器を装備している時、融光種モンスターへのダメージ+8%。ビンのエネルギーをチャージした後、融光種モンスターへのダメージがさらに+12%。8秒持続。（S0シーズン限定）",
+   "material": "重光の玉×1、輝光の結晶×12",
+   "note": "鋭精武器（シーズン0）。作るときに属性を選ぶ（後から変更不可）。重光の玉が初回クリア報酬だけなので今は2本まで",
+   "sourceUrl": "https://game8.jp/mhoutlanders/840826"
+  },
+  {
+   "name": "光輝・モントーバン（氷）",
+   "type": "チャージアックス",
+   "element": "氷",
+   "baseRarity": 9,
+   "maxRarity": 11,
+   "stats": {
+    "11": {
+     "attack": 656,
+     "element": 328,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "10": {
+     "attack": 549,
+     "element": 274,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "9": {
+     "attack": 452,
+     "element": 226,
+     "affinity": 0,
+     "src": "Game8"
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "ルガ・エアルダ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "apex": true,
+   "yukoBonus": 0.08,
+   "minRank": 40,
+   "effect": "【 チャージアックスの極意 】 この武器を装備している時、融光種モンスターへのダメージ+8%。ビンのエネルギーをチャージした後、融光種モンスターへのダメージがさらに+12%。8秒持続。（S0シーズン限定）",
+   "material": "重光の玉×1、輝光の結晶×12",
+   "note": "鋭精武器（シーズン0）。作るときに属性を選ぶ（後から変更不可）。重光の玉が初回クリア報酬だけなので今は2本まで",
+   "sourceUrl": "https://game8.jp/mhoutlanders/840826"
+  },
+  {
+   "name": "光輝・モントーバン（龍）",
+   "type": "チャージアックス",
+   "element": "龍",
+   "baseRarity": 9,
+   "maxRarity": 11,
+   "stats": {
+    "11": {
+     "attack": 656,
+     "element": 328,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "10": {
+     "attack": 549,
+     "element": 274,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "9": {
+     "attack": 452,
+     "element": 226,
+     "affinity": 0,
+     "src": "Game8"
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "ルガ・エアルダ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "apex": true,
+   "yukoBonus": 0.08,
+   "minRank": 40,
+   "effect": "【 チャージアックスの極意 】 この武器を装備している時、融光種モンスターへのダメージ+8%。ビンのエネルギーをチャージした後、融光種モンスターへのダメージがさらに+12%。8秒持続。（S0シーズン限定）",
+   "material": "重光の玉×1、輝光の結晶×12",
+   "note": "鋭精武器（シーズン0）。作るときに属性を選ぶ（後から変更不可）。重光の玉が初回クリア報酬だけなので今は2本まで",
+   "sourceUrl": "https://game8.jp/mhoutlanders/840826"
+  },
+  {
+   "name": "光芒・クルタナ（火）",
+   "type": "ランス",
+   "element": "火",
+   "baseRarity": 9,
+   "maxRarity": 11,
+   "stats": {
+    "11": {
+     "attack": 656,
+     "element": 328,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "10": {
+     "attack": 549,
+     "element": 274,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "9": {
+     "attack": 452,
+     "element": 226,
+     "affinity": 0,
+     "src": "Game8"
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "ルガ・エアルダ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "apex": true,
+   "yukoBonus": 0.08,
+   "minRank": 40,
+   "effect": "【 ランスの極意 】 この武器を装備している時、スタミナ消費が追加で-5%、融光種モンスターへのダメージが追加で+8%。奥義の影響を受けているメンバーの奥義チャージ効率+6%。（S0シーズン限定）",
+   "material": "重光の玉×1、輝光の結晶×12",
+   "note": "鋭精武器（シーズン0）。作るときに属性を選ぶ（後から変更不可）。重光の玉が初回クリア報酬だけなので今は2本まで",
+   "sourceUrl": "https://game8.jp/mhoutlanders/840825"
+  },
+  {
+   "name": "光芒・クルタナ（水）",
+   "type": "ランス",
+   "element": "水",
+   "baseRarity": 9,
+   "maxRarity": 11,
+   "stats": {
+    "11": {
+     "attack": 656,
+     "element": 328,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "10": {
+     "attack": 549,
+     "element": 274,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "9": {
+     "attack": 452,
+     "element": 226,
+     "affinity": 0,
+     "src": "Game8"
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "ルガ・エアルダ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "apex": true,
+   "yukoBonus": 0.08,
+   "minRank": 40,
+   "effect": "【 ランスの極意 】 この武器を装備している時、スタミナ消費が追加で-5%、融光種モンスターへのダメージが追加で+8%。奥義の影響を受けているメンバーの奥義チャージ効率+6%。（S0シーズン限定）",
+   "material": "重光の玉×1、輝光の結晶×12",
+   "note": "鋭精武器（シーズン0）。作るときに属性を選ぶ（後から変更不可）。重光の玉が初回クリア報酬だけなので今は2本まで",
+   "sourceUrl": "https://game8.jp/mhoutlanders/840825"
+  },
+  {
+   "name": "光芒・クルタナ（雷）",
+   "type": "ランス",
+   "element": "雷",
+   "baseRarity": 9,
+   "maxRarity": 11,
+   "stats": {
+    "11": {
+     "attack": 656,
+     "element": 328,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "10": {
+     "attack": 549,
+     "element": 274,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "9": {
+     "attack": 452,
+     "element": 226,
+     "affinity": 0,
+     "src": "Game8"
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "ルガ・エアルダ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "apex": true,
+   "yukoBonus": 0.08,
+   "minRank": 40,
+   "effect": "【 ランスの極意 】 この武器を装備している時、スタミナ消費が追加で-5%、融光種モンスターへのダメージが追加で+8%。奥義の影響を受けているメンバーの奥義チャージ効率+6%。（S0シーズン限定）",
+   "material": "重光の玉×1、輝光の結晶×12",
+   "note": "鋭精武器（シーズン0）。作るときに属性を選ぶ（後から変更不可）。重光の玉が初回クリア報酬だけなので今は2本まで",
+   "sourceUrl": "https://game8.jp/mhoutlanders/840825"
+  },
+  {
+   "name": "光芒・クルタナ（氷）",
+   "type": "ランス",
+   "element": "氷",
+   "baseRarity": 9,
+   "maxRarity": 11,
+   "stats": {
+    "11": {
+     "attack": 656,
+     "element": 328,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "10": {
+     "attack": 549,
+     "element": 274,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "9": {
+     "attack": 452,
+     "element": 226,
+     "affinity": 0,
+     "src": "Game8"
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "ルガ・エアルダ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "apex": true,
+   "yukoBonus": 0.08,
+   "minRank": 40,
+   "effect": "【 ランスの極意 】 この武器を装備している時、スタミナ消費が追加で-5%、融光種モンスターへのダメージが追加で+8%。奥義の影響を受けているメンバーの奥義チャージ効率+6%。（S0シーズン限定）",
+   "material": "重光の玉×1、輝光の結晶×12",
+   "note": "鋭精武器（シーズン0）。作るときに属性を選ぶ（後から変更不可）。重光の玉が初回クリア報酬だけなので今は2本まで",
+   "sourceUrl": "https://game8.jp/mhoutlanders/840825"
+  },
+  {
+   "name": "光芒・クルタナ（龍）",
+   "type": "ランス",
+   "element": "龍",
+   "baseRarity": 9,
+   "maxRarity": 11,
+   "stats": {
+    "11": {
+     "attack": 656,
+     "element": 328,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "10": {
+     "attack": 549,
+     "element": 274,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "9": {
+     "attack": 452,
+     "element": 226,
+     "affinity": 0,
+     "src": "Game8"
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "ルガ・エアルダ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "apex": true,
+   "yukoBonus": 0.08,
+   "minRank": 40,
+   "effect": "【 ランスの極意 】 この武器を装備している時、スタミナ消費が追加で-5%、融光種モンスターへのダメージが追加で+8%。奥義の影響を受けているメンバーの奥義チャージ効率+6%。（S0シーズン限定）",
+   "material": "重光の玉×1、輝光の結晶×12",
+   "note": "鋭精武器（シーズン0）。作るときに属性を選ぶ（後から変更不可）。重光の玉が初回クリア報酬だけなので今は2本まで",
+   "sourceUrl": "https://game8.jp/mhoutlanders/840825"
+  },
+  {
+   "name": "光響・オリファント（火）",
+   "type": "ハンマー",
+   "element": "火",
+   "baseRarity": 9,
+   "maxRarity": 11,
+   "stats": {
+    "11": {
+     "attack": 656,
+     "element": 328,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "10": {
+     "attack": 549,
+     "element": 274,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "9": {
+     "attack": 452,
+     "element": 226,
+     "affinity": 0,
+     "src": "Game8"
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "ルガ・エアルダ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "apex": true,
+   "yukoBonus": 0.08,
+   "minRank": 40,
+   "effect": "【 ハンマーの極意 】 この武器を装備している時、融光種モンスターへのダメージが追加で+8%。融光種モンスターの頭に命中すると、ダメージが追加で+3%し、与えるスタン値も増加する。（S0シーズン限定）",
+   "material": "重光の玉×1、輝光の結晶×12",
+   "note": "鋭精武器（シーズン0）。作るときに属性を選ぶ（後から変更不可）。重光の玉が初回クリア報酬だけなので今は2本まで",
+   "sourceUrl": "https://game8.jp/mhoutlanders/840824"
+  },
+  {
+   "name": "光響・オリファント（水）",
+   "type": "ハンマー",
+   "element": "水",
+   "baseRarity": 9,
+   "maxRarity": 11,
+   "stats": {
+    "11": {
+     "attack": 656,
+     "element": 328,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "10": {
+     "attack": 549,
+     "element": 274,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "9": {
+     "attack": 452,
+     "element": 226,
+     "affinity": 0,
+     "src": "Game8"
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "ルガ・エアルダ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "apex": true,
+   "yukoBonus": 0.08,
+   "minRank": 40,
+   "effect": "【 ハンマーの極意 】 この武器を装備している時、融光種モンスターへのダメージが追加で+8%。融光種モンスターの頭に命中すると、ダメージが追加で+3%し、与えるスタン値も増加する。（S0シーズン限定）",
+   "material": "重光の玉×1、輝光の結晶×12",
+   "note": "鋭精武器（シーズン0）。作るときに属性を選ぶ（後から変更不可）。重光の玉が初回クリア報酬だけなので今は2本まで",
+   "sourceUrl": "https://game8.jp/mhoutlanders/840824"
+  },
+  {
+   "name": "光響・オリファント（雷）",
+   "type": "ハンマー",
+   "element": "雷",
+   "baseRarity": 9,
+   "maxRarity": 11,
+   "stats": {
+    "11": {
+     "attack": 656,
+     "element": 328,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "10": {
+     "attack": 549,
+     "element": 274,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "9": {
+     "attack": 452,
+     "element": 226,
+     "affinity": 0,
+     "src": "Game8"
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "ルガ・エアルダ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "apex": true,
+   "yukoBonus": 0.08,
+   "minRank": 40,
+   "effect": "【 ハンマーの極意 】 この武器を装備している時、融光種モンスターへのダメージが追加で+8%。融光種モンスターの頭に命中すると、ダメージが追加で+3%し、与えるスタン値も増加する。（S0シーズン限定）",
+   "material": "重光の玉×1、輝光の結晶×12",
+   "note": "鋭精武器（シーズン0）。作るときに属性を選ぶ（後から変更不可）。重光の玉が初回クリア報酬だけなので今は2本まで",
+   "sourceUrl": "https://game8.jp/mhoutlanders/840824"
+  },
+  {
+   "name": "光響・オリファント（氷）",
+   "type": "ハンマー",
+   "element": "氷",
+   "baseRarity": 9,
+   "maxRarity": 11,
+   "stats": {
+    "11": {
+     "attack": 656,
+     "element": 328,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "10": {
+     "attack": 549,
+     "element": 274,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "9": {
+     "attack": 452,
+     "element": 226,
+     "affinity": 0,
+     "src": "Game8"
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "ルガ・エアルダ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "apex": true,
+   "yukoBonus": 0.08,
+   "minRank": 40,
+   "effect": "【 ハンマーの極意 】 この武器を装備している時、融光種モンスターへのダメージが追加で+8%。融光種モンスターの頭に命中すると、ダメージが追加で+3%し、与えるスタン値も増加する。（S0シーズン限定）",
+   "material": "重光の玉×1、輝光の結晶×12",
+   "note": "鋭精武器（シーズン0）。作るときに属性を選ぶ（後から変更不可）。重光の玉が初回クリア報酬だけなので今は2本まで",
+   "sourceUrl": "https://game8.jp/mhoutlanders/840824"
+  },
+  {
+   "name": "光響・オリファント（龍）",
+   "type": "ハンマー",
+   "element": "龍",
+   "baseRarity": 9,
+   "maxRarity": 11,
+   "stats": {
+    "11": {
+     "attack": 656,
+     "element": 328,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "10": {
+     "attack": 549,
+     "element": 274,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "9": {
+     "attack": 452,
+     "element": 226,
+     "affinity": 0,
+     "src": "Game8"
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "ルガ・エアルダ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "apex": true,
+   "yukoBonus": 0.08,
+   "minRank": 40,
+   "effect": "【 ハンマーの極意 】 この武器を装備している時、融光種モンスターへのダメージが追加で+8%。融光種モンスターの頭に命中すると、ダメージが追加で+3%し、与えるスタン値も増加する。（S0シーズン限定）",
+   "material": "重光の玉×1、輝光の結晶×12",
+   "note": "鋭精武器（シーズン0）。作るときに属性を選ぶ（後から変更不可）。重光の玉が初回クリア報酬だけなので今は2本まで",
+   "sourceUrl": "https://game8.jp/mhoutlanders/840824"
+  },
+  {
+   "name": "光影・オートクレール（火）",
+   "type": "双剣",
+   "element": "火",
+   "baseRarity": 9,
+   "maxRarity": 11,
+   "stats": {
+    "11": {
+     "attack": 656,
+     "element": 328,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "10": {
+     "attack": 549,
+     "element": 274,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "9": {
+     "attack": 452,
+     "element": 226,
+     "affinity": 0,
+     "src": "Game8"
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "ルガ・エアルダ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "apex": true,
+   "yukoBonus": 0.0,
+   "minRank": 40,
+   "effect": "【 双剣の極意 】 融光種モンスターの狩猟中、連撃ダメージを与えた時に会心率+1%。1秒につき最大1スタック獲得可能。最大20スタックまで可能、狩猟終了まで持続する。（S0シーズン限定）",
+   "material": "重光の玉×1、輝光の結晶×12",
+   "note": "鋭精武器（シーズン0）。作るときに属性を選ぶ（後から変更不可）。重光の玉が初回クリア報酬だけなので今は2本まで",
+   "sourceUrl": "https://game8.jp/mhoutlanders/840823"
+  },
+  {
+   "name": "光影・オートクレール（水）",
+   "type": "双剣",
+   "element": "水",
+   "baseRarity": 9,
+   "maxRarity": 11,
+   "stats": {
+    "11": {
+     "attack": 656,
+     "element": 328,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "10": {
+     "attack": 549,
+     "element": 274,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "9": {
+     "attack": 452,
+     "element": 226,
+     "affinity": 0,
+     "src": "Game8"
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "ルガ・エアルダ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "apex": true,
+   "yukoBonus": 0.0,
+   "minRank": 40,
+   "effect": "【 双剣の極意 】 融光種モンスターの狩猟中、連撃ダメージを与えた時に会心率+1%。1秒につき最大1スタック獲得可能。最大20スタックまで可能、狩猟終了まで持続する。（S0シーズン限定）",
+   "material": "重光の玉×1、輝光の結晶×12",
+   "note": "鋭精武器（シーズン0）。作るときに属性を選ぶ（後から変更不可）。重光の玉が初回クリア報酬だけなので今は2本まで",
+   "sourceUrl": "https://game8.jp/mhoutlanders/840823"
+  },
+  {
+   "name": "光影・オートクレール（雷）",
+   "type": "双剣",
+   "element": "雷",
+   "baseRarity": 9,
+   "maxRarity": 11,
+   "stats": {
+    "11": {
+     "attack": 656,
+     "element": 328,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "10": {
+     "attack": 549,
+     "element": 274,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "9": {
+     "attack": 452,
+     "element": 226,
+     "affinity": 0,
+     "src": "Game8"
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "ルガ・エアルダ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "apex": true,
+   "yukoBonus": 0.0,
+   "minRank": 40,
+   "effect": "【 双剣の極意 】 融光種モンスターの狩猟中、連撃ダメージを与えた時に会心率+1%。1秒につき最大1スタック獲得可能。最大20スタックまで可能、狩猟終了まで持続する。（S0シーズン限定）",
+   "material": "重光の玉×1、輝光の結晶×12",
+   "note": "鋭精武器（シーズン0）。作るときに属性を選ぶ（後から変更不可）。重光の玉が初回クリア報酬だけなので今は2本まで",
+   "sourceUrl": "https://game8.jp/mhoutlanders/840823"
+  },
+  {
+   "name": "光影・オートクレール（氷）",
+   "type": "双剣",
+   "element": "氷",
+   "baseRarity": 9,
+   "maxRarity": 11,
+   "stats": {
+    "11": {
+     "attack": 656,
+     "element": 328,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "10": {
+     "attack": 549,
+     "element": 274,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "9": {
+     "attack": 452,
+     "element": 226,
+     "affinity": 0,
+     "src": "Game8"
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "ルガ・エアルダ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "apex": true,
+   "yukoBonus": 0.0,
+   "minRank": 40,
+   "effect": "【 双剣の極意 】 融光種モンスターの狩猟中、連撃ダメージを与えた時に会心率+1%。1秒につき最大1スタック獲得可能。最大20スタックまで可能、狩猟終了まで持続する。（S0シーズン限定）",
+   "material": "重光の玉×1、輝光の結晶×12",
+   "note": "鋭精武器（シーズン0）。作るときに属性を選ぶ（後から変更不可）。重光の玉が初回クリア報酬だけなので今は2本まで",
+   "sourceUrl": "https://game8.jp/mhoutlanders/840823"
+  },
+  {
+   "name": "光影・オートクレール（龍）",
+   "type": "双剣",
+   "element": "龍",
+   "baseRarity": 9,
+   "maxRarity": 11,
+   "stats": {
+    "11": {
+     "attack": 656,
+     "element": 328,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "10": {
+     "attack": 549,
+     "element": 274,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "9": {
+     "attack": 452,
+     "element": 226,
+     "affinity": 0,
+     "src": "Game8"
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "ルガ・エアルダ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "apex": true,
+   "yukoBonus": 0.0,
+   "minRank": 40,
+   "effect": "【 双剣の極意 】 融光種モンスターの狩猟中、連撃ダメージを与えた時に会心率+1%。1秒につき最大1スタック獲得可能。最大20スタックまで可能、狩猟終了まで持続する。（S0シーズン限定）",
+   "material": "重光の玉×1、輝光の結晶×12",
+   "note": "鋭精武器（シーズン0）。作るときに属性を選ぶ（後から変更不可）。重光の玉が初回クリア報酬だけなので今は2本まで",
+   "sourceUrl": "https://game8.jp/mhoutlanders/840823"
+  },
+  {
+   "name": "光耀・ジョワユーズ（火）",
+   "type": "太刀",
+   "element": "火",
+   "baseRarity": 9,
+   "maxRarity": 11,
+   "stats": {
+    "11": {
+     "attack": 656,
+     "element": 328,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "10": {
+     "attack": 549,
+     "element": 274,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "9": {
+     "attack": 452,
+     "element": 226,
+     "affinity": 0,
+     "src": "Game8"
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "ルガ・エアルダ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "apex": true,
+   "yukoBonus": 0.08,
+   "minRank": 40,
+   "effect": "【 太刀の極意 】 この武器を装備している時、融光種モンスターへのダメージ+8%。練気ゲージ段階が1上がるごとに、融光種モンスターへのダメージがさらに+1.4%。最大3スタックまで可能。狩猟終了まで持続する。（S0シーズン限定）",
+   "material": "重光の玉×1、輝光の結晶×12",
+   "note": "鋭精武器（シーズン0）。作るときに属性を選ぶ（後から変更不可）。重光の玉が初回クリア報酬だけなので今は2本まで",
+   "sourceUrl": "https://game8.jp/mhoutlanders/840822"
+  },
+  {
+   "name": "光耀・ジョワユーズ（水）",
+   "type": "太刀",
+   "element": "水",
+   "baseRarity": 9,
+   "maxRarity": 11,
+   "stats": {
+    "11": {
+     "attack": 656,
+     "element": 328,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "10": {
+     "attack": 549,
+     "element": 274,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "9": {
+     "attack": 452,
+     "element": 226,
+     "affinity": 0,
+     "src": "Game8"
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "ルガ・エアルダ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "apex": true,
+   "yukoBonus": 0.08,
+   "minRank": 40,
+   "effect": "【 太刀の極意 】 この武器を装備している時、融光種モンスターへのダメージ+8%。練気ゲージ段階が1上がるごとに、融光種モンスターへのダメージがさらに+1.4%。最大3スタックまで可能。狩猟終了まで持続する。（S0シーズン限定）",
+   "material": "重光の玉×1、輝光の結晶×12",
+   "note": "鋭精武器（シーズン0）。作るときに属性を選ぶ（後から変更不可）。重光の玉が初回クリア報酬だけなので今は2本まで",
+   "sourceUrl": "https://game8.jp/mhoutlanders/840822"
+  },
+  {
+   "name": "光耀・ジョワユーズ（雷）",
+   "type": "太刀",
+   "element": "雷",
+   "baseRarity": 9,
+   "maxRarity": 11,
+   "stats": {
+    "11": {
+     "attack": 656,
+     "element": 328,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "10": {
+     "attack": 549,
+     "element": 274,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "9": {
+     "attack": 452,
+     "element": 226,
+     "affinity": 0,
+     "src": "Game8"
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "ルガ・エアルダ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "apex": true,
+   "yukoBonus": 0.08,
+   "minRank": 40,
+   "effect": "【 太刀の極意 】 この武器を装備している時、融光種モンスターへのダメージ+8%。練気ゲージ段階が1上がるごとに、融光種モンスターへのダメージがさらに+1.4%。最大3スタックまで可能。狩猟終了まで持続する。（S0シーズン限定）",
+   "material": "重光の玉×1、輝光の結晶×12",
+   "note": "鋭精武器（シーズン0）。作るときに属性を選ぶ（後から変更不可）。重光の玉が初回クリア報酬だけなので今は2本まで",
+   "sourceUrl": "https://game8.jp/mhoutlanders/840822"
+  },
+  {
+   "name": "光耀・ジョワユーズ（氷）",
+   "type": "太刀",
+   "element": "氷",
+   "baseRarity": 9,
+   "maxRarity": 11,
+   "stats": {
+    "11": {
+     "attack": 656,
+     "element": 328,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "10": {
+     "attack": 549,
+     "element": 274,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "9": {
+     "attack": 452,
+     "element": 226,
+     "affinity": 0,
+     "src": "Game8"
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "ルガ・エアルダ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "apex": true,
+   "yukoBonus": 0.08,
+   "minRank": 40,
+   "effect": "【 太刀の極意 】 この武器を装備している時、融光種モンスターへのダメージ+8%。練気ゲージ段階が1上がるごとに、融光種モンスターへのダメージがさらに+1.4%。最大3スタックまで可能。狩猟終了まで持続する。（S0シーズン限定）",
+   "material": "重光の玉×1、輝光の結晶×12",
+   "note": "鋭精武器（シーズン0）。作るときに属性を選ぶ（後から変更不可）。重光の玉が初回クリア報酬だけなので今は2本まで",
+   "sourceUrl": "https://game8.jp/mhoutlanders/840822"
+  },
+  {
+   "name": "光耀・ジョワユーズ（龍）",
+   "type": "太刀",
+   "element": "龍",
+   "baseRarity": 9,
+   "maxRarity": 11,
+   "stats": {
+    "11": {
+     "attack": 656,
+     "element": 328,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "10": {
+     "attack": 549,
+     "element": 274,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "9": {
+     "attack": 452,
+     "element": 226,
+     "affinity": 0,
+     "src": "Game8"
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "ルガ・エアルダ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "apex": true,
+   "yukoBonus": 0.08,
+   "minRank": 40,
+   "effect": "【 太刀の極意 】 この武器を装備している時、融光種モンスターへのダメージ+8%。練気ゲージ段階が1上がるごとに、融光種モンスターへのダメージがさらに+1.4%。最大3スタックまで可能。狩猟終了まで持続する。（S0シーズン限定）",
+   "material": "重光の玉×1、輝光の結晶×12",
+   "note": "鋭精武器（シーズン0）。作るときに属性を選ぶ（後から変更不可）。重光の玉が初回クリア報酬だけなので今は2本まで",
+   "sourceUrl": "https://game8.jp/mhoutlanders/840822"
+  },
+  {
+   "name": "光稜・デュランダル（火）",
+   "type": "大剣",
+   "element": "火",
+   "baseRarity": 9,
+   "maxRarity": 11,
+   "stats": {
+    "11": {
+     "attack": 656,
+     "element": 328,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "10": {
+     "attack": 549,
+     "element": 274,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "9": {
+     "attack": 452,
+     "element": 226,
+     "affinity": 0,
+     "src": "Game8"
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "ルガ・エアルダ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "apex": true,
+   "yukoBonus": 0.08,
+   "minRank": 40,
+   "effect": "【 大剣の極意 】 この武器を装備している時、融光種モンスターへのダメージ+8%。スキルを最適なタイミングまで溜めた時、抜刀攻撃の融光種モンスターへの会心率+12%。（S0シーズン限定）",
+   "material": "重光の玉×1、輝光の結晶×12",
+   "note": "鋭精武器（シーズン0）。作るときに属性を選ぶ（後から変更不可）。重光の玉が初回クリア報酬だけなので今は2本まで",
+   "sourceUrl": "https://game8.jp/mhoutlanders/840821"
+  },
+  {
+   "name": "光稜・デュランダル（水）",
+   "type": "大剣",
+   "element": "水",
+   "baseRarity": 9,
+   "maxRarity": 11,
+   "stats": {
+    "11": {
+     "attack": 656,
+     "element": 328,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "10": {
+     "attack": 549,
+     "element": 274,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "9": {
+     "attack": 452,
+     "element": 226,
+     "affinity": 0,
+     "src": "Game8"
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "ルガ・エアルダ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "apex": true,
+   "yukoBonus": 0.08,
+   "minRank": 40,
+   "effect": "【 大剣の極意 】 この武器を装備している時、融光種モンスターへのダメージ+8%。スキルを最適なタイミングまで溜めた時、抜刀攻撃の融光種モンスターへの会心率+12%。（S0シーズン限定）",
+   "material": "重光の玉×1、輝光の結晶×12",
+   "note": "鋭精武器（シーズン0）。作るときに属性を選ぶ（後から変更不可）。重光の玉が初回クリア報酬だけなので今は2本まで",
+   "sourceUrl": "https://game8.jp/mhoutlanders/840821"
+  },
+  {
+   "name": "光稜・デュランダル（雷）",
+   "type": "大剣",
+   "element": "雷",
+   "baseRarity": 9,
+   "maxRarity": 11,
+   "stats": {
+    "11": {
+     "attack": 656,
+     "element": 328,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "10": {
+     "attack": 549,
+     "element": 274,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "9": {
+     "attack": 452,
+     "element": 226,
+     "affinity": 0,
+     "src": "Game8"
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "ルガ・エアルダ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "apex": true,
+   "yukoBonus": 0.08,
+   "minRank": 40,
+   "effect": "【 大剣の極意 】 この武器を装備している時、融光種モンスターへのダメージ+8%。スキルを最適なタイミングまで溜めた時、抜刀攻撃の融光種モンスターへの会心率+12%。（S0シーズン限定）",
+   "material": "重光の玉×1、輝光の結晶×12",
+   "note": "鋭精武器（シーズン0）。作るときに属性を選ぶ（後から変更不可）。重光の玉が初回クリア報酬だけなので今は2本まで",
+   "sourceUrl": "https://game8.jp/mhoutlanders/840821"
+  },
+  {
+   "name": "光稜・デュランダル（氷）",
+   "type": "大剣",
+   "element": "氷",
+   "baseRarity": 9,
+   "maxRarity": 11,
+   "stats": {
+    "11": {
+     "attack": 656,
+     "element": 328,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "10": {
+     "attack": 549,
+     "element": 274,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "9": {
+     "attack": 452,
+     "element": 226,
+     "affinity": 0,
+     "src": "Game8"
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "ルガ・エアルダ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "apex": true,
+   "yukoBonus": 0.08,
+   "minRank": 40,
+   "effect": "【 大剣の極意 】 この武器を装備している時、融光種モンスターへのダメージ+8%。スキルを最適なタイミングまで溜めた時、抜刀攻撃の融光種モンスターへの会心率+12%。（S0シーズン限定）",
+   "material": "重光の玉×1、輝光の結晶×12",
+   "note": "鋭精武器（シーズン0）。作るときに属性を選ぶ（後から変更不可）。重光の玉が初回クリア報酬だけなので今は2本まで",
+   "sourceUrl": "https://game8.jp/mhoutlanders/840821"
+  },
+  {
+   "name": "光稜・デュランダル（龍）",
+   "type": "大剣",
+   "element": "龍",
+   "baseRarity": 9,
+   "maxRarity": 11,
+   "stats": {
+    "11": {
+     "attack": 656,
+     "element": 328,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "10": {
+     "attack": 549,
+     "element": 274,
+     "affinity": 0,
+     "src": "Game8"
+    },
+    "9": {
+     "attack": 452,
+     "element": 226,
+     "affinity": 0,
+     "src": "Game8"
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "ルガ・エアルダ"
+   ],
+   "guild": false,
+   "yuko": false,
+   "derived": false,
+   "apex": true,
+   "yukoBonus": 0.08,
+   "minRank": 40,
+   "effect": "【 大剣の極意 】 この武器を装備している時、融光種モンスターへのダメージ+8%。スキルを最適なタイミングまで溜めた時、抜刀攻撃の融光種モンスターへの会心率+12%。（S0シーズン限定）",
+   "material": "重光の玉×1、輝光の結晶×12",
+   "note": "鋭精武器（シーズン0）。作るときに属性を選ぶ（後から変更不可）。重光の玉が初回クリア報酬だけなので今は2本まで",
+   "sourceUrl": "https://game8.jp/mhoutlanders/840821"
   }
  ]
 }

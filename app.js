@@ -1,6 +1,6 @@
 /* 融光工房 ― UI */
 'use strict';
-const APP_VERSION = '2026.11.09-4';
+const APP_VERSION = '2026.11.09-5';
 const STORE_KEY = 'mho-equip:v1';
 const PART_JP = { head: '頭', body: '胴', arm: '腕', waist: '腰', leg: '脚' };
 const EL_CLASS = { '火': 'fire', '水': 'water', '雷': 'thunder', '氷': 'ice', '龍': 'dragon', '毒': 'poison', '麻痺': 'para', '睡眠': 'sleep', '爆破': 'blast', '無': 'none' };
@@ -239,6 +239,7 @@ function weaponCands(c, { rank = state.rank, cap = null, elem = charElement(c) }
   for (const w of list) {
     if (w.type !== type || w.element !== elem) continue;
     if ((w.baseRarity || 1) > rc) continue;
+    if (w.minRank && rank < w.minRank) continue; // 鋭精武器は冒険ランク40＋6章クリアの鋭精チャレンジから
     if (!(w.monsters || []).every(m => monsterOpen(m, rank))) continue;
     const r = Math.min(w.maxRarity || rc, rc);
     const st = weaponStatsAt(w, r);
@@ -331,7 +332,7 @@ const seriesOfPiece = (() => { let m = null; return (id) => {
   return m.get(id);
 }; })();
 function weaponOpen(w, rank) {
-  return (w.baseRarity || 1) <= rankCap(rank) && (w.monsters || []).every(m => monsterOpen(m, rank));
+  return (w.baseRarity || 1) <= rankCap(rank) && (!w.minRank || rank >= w.minRank) && (w.monsters || []).every(m => monsterOpen(m, rank));
 }
 // その構成の防具・武器が全部作れるようになるランク
 function buildOpenRank(b) {
@@ -526,6 +527,10 @@ function renderWeapon(c) {
         aff ? el('span', {}, '会心', el('b', { text: `${aff}%` })) : null,
         el('span', {}, '実効', el('b', { text: fmtInt(b.power) }))))));
   if (w.guild) box.append(el('p', { class: 'walt', text: 'このランクで作れるほかの武器が無いので冒険団武器。モンスター武器が作れるようになったら乗り換え推奨' }));
+  if (w.apex) {
+    const alt = weaponCands(c).find(x => !x.w.apex && !x.w.guild);
+    box.append(el('p', { class: 'walt', text: `鋭精武器（鋭精チャレンジの素材で作る。属性は作るときに選び、シーズン0で作れるのは今のところ2本まで）。${w.effect ? w.effect.replace(/【\s*|\s*】/g, '') + '。' : ''}${alt ? `この属性で作っていなければ ${alt.w.name}（レア${alt.r}・実効${fmtInt(alt.power)}）` : ''}` }));
+  }
 }
 function renderResult(res) {
   const rack = $('#rack'); rack.innerHTML = '';
