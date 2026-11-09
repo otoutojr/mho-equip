@@ -1,6 +1,6 @@
 /* 融光工房 ― UI */
 'use strict';
-const APP_VERSION = '2026.11.09-2';
+const APP_VERSION = '2026.11.09-3';
 const STORE_KEY = 'mho-equip:v1';
 const PART_JP = { head: '頭', body: '胴', arm: '腕', waist: '腰', leg: '脚' };
 const EL_CLASS = { '火': 'fire', '水': 'water', '雷': 'thunder', '氷': 'ice', '龍': 'dragon', '毒': 'poison', '麻痺': 'para', '睡眠': 'sleep', '爆破': 'blast', '無': 'none' };
@@ -228,7 +228,8 @@ function weaponStatsAt(w, r) {
 function weaponPower(c, w, st) {
   const e = (c.model && c.model.elementShare) || 0.35;
   const aff = (st.affinity ?? w.affinity ?? 0) / 100;
-  return (st.attack || 0) * (1 + aff * 0.25) * (1 - e) + (st.element || 0) * 2 * e;
+  const yuko = state.target === 'yuko' && w.yukoBonus ? 1 + w.yukoBonus : 1; // 鋭精武器の「融光種へのダメージ+8%」
+  return ((st.attack || 0) * (1 + aff * 0.25) * (1 - e) + (st.element || 0) * 2 * e) * yuko;
 }
 function weaponCands(c, { rank = state.rank, cap = null, elem = charElement(c) } = {}) {
   const list = (DATA.weapons && DATA.weapons.weapons) || [];

@@ -92,11 +92,32 @@ def extend_to_10(out):
     return n
 
 
+def apex_weapons(full):
+    """鋭精武器（ルガ・エアルダの素材で作る。game8.co の Apex Weapons）。作るときに火・水・雷・氷・龍から属性を選ぶ。
+    日本語名はどのサイトにも無いので仮の名前。数値は game8.co（攻撃452・属性226、レア9）。
+    武器スキル「融光種へのダメージ+8%（必殺技の後10秒は+12%）」はシーズン0だけ"""
+    out = []
+    for a in full.get('apexWeapons') or []:
+        for el in ['火', '水', '雷', '氷', '龍']:
+            r = a.get('initialRarity') or 9
+            out.append({
+                'name': f"鋭精{a['type']}・{el}", 'nameEn': a.get('nameEn'), 'type': a['type'], 'element': el,
+                'baseRarity': r, 'maxRarity': r,
+                'stats': {r: {'attack': a['attack'], 'element': a.get('elementValue') or 0, 'affinity': 0, 'src': 'game8.co'}},
+                'affinity': 0, 'monsters': ['ルガ・エアルダ'], 'guild': False, 'yuko': False, 'derived': False,
+                'apex': True, 'yukoBonus': 0.08,
+                'note': 'ルガ・エアルダ（鋭精チャレンジ シーズン0）の素材で作る鋭精武器。日本語名は仮。融光種へのダメージ+8%（必殺技後10秒+12%）',
+                'sourceUrl': a.get('url'),
+            })
+    return out
+
+
 def main():
     full_p = RAW.parent / 'weapons_full.json'
     if full_p.exists():
         out = from_full(json.loads(full_p.read_text(encoding='utf-8')))
         print('レア9止まり → レア10まで伸ばした武器', extend_to_10(out))
+        out += apex_weapons(json.loads(full_p.read_text(encoding='utf-8')))
         OUT.write_text(json.dumps({'updated': datetime.date.today().isoformat(), 'source': 'weapons_full.json（gamewith.ai・GameWith・game8.co）', 'weapons': out}, ensure_ascii=False, indent=1), encoding='utf-8')
         print('weapons', len(out), 'estimated rarities', sum(1 for w in out for s in w['stats'].values() if s.get('est')),
               'max rarity', dict(sorted(__import__('collections').Counter(w['maxRarity'] for w in out).items())))
