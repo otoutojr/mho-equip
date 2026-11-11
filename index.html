@@ -5,16 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>融光工房 ― アウトランダーズ最強装備</title>
 <meta name="description" content="冒険ランクを入れるだけで、そのランクで作れるDPS最大の武器・防具を計算するモンハンアウトランダーズ用ツール">
-<meta name="theme-color" content="#101219">
+<meta name="theme-color" content="#f2f2f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="融光工房">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="icons/icon-180.png">
 <link rel="icon" href="icons/icon-192.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -48,39 +47,40 @@
     <button type="button" class="pill solid" id="pickDone">決定</button>
   </section>
 
-  <section class="dpsRow" aria-live="polite">
-    <div>
+  <section class="dps" aria-live="polite">
+    <div class="dpsHead">
       <p class="lbl">DPS目安</p>
-      <p class="dpsNum" id="dpsNum">―</p>
+      <div class="seg" id="targetTabs" role="group" aria-label="相手">
+        <button type="button" data-target="normal" aria-pressed="true">通常</button><button type="button" data-target="yuko" aria-pressed="false">融光種</button>
+      </div>
     </div>
-    <div class="seg" id="targetTabs" role="group" aria-label="相手">
-      <button type="button" data-target="normal" aria-pressed="true">通常</button><button type="button" data-target="yuko" aria-pressed="false">融光種</button>
-    </div>
+    <p class="dpsNum" id="dpsNum">―</p>
   </section>
 
-  <div class="tabs" role="tablist" aria-label="構成の出し方">
+  <div class="seg wide" role="tablist" aria-label="構成の出し方">
     <button type="button" role="tab" id="tabCalc" aria-selected="true" aria-controls="viewCalc">計算の最強</button>
     <button type="button" role="tab" id="tabDb" aria-selected="false" aria-controls="viewDb">攻略サイトの構成 <span id="dbCount"></span></button>
   </div>
 
   <section class="view" id="viewCalc" role="tabpanel" aria-labelledby="tabCalc">
     <div class="block">
-      <p class="note" id="resultHint">計算中…</p>
-      <div class="rows" id="gear"></div>
+      <h2 class="lbl">装備</h2>
+      <div class="rows card" id="gear"></div>
+      <p class="note foot" id="resultHint">計算中…</p>
     </div>
     <div class="block">
       <h2 class="lbl">付くスキル</h2>
-      <div class="rows" id="skillTotals"></div>
-      <p class="note" id="setNote" hidden></p>
+      <div class="rows card" id="skillTotals"></div>
+      <p class="note foot" id="setNote" hidden></p>
     </div>
   </section>
 
   <section class="view" id="viewDb" role="tabpanel" aria-labelledby="tabDb" hidden>
-    <p class="note" id="dbHint">読み込み中…</p>
+    <p class="note foot" id="dbHint">読み込み中…</p>
     <ol id="dbList"></ol>
   </section>
 
-  <section class="folds">
+  <section class="folds card">
     <details class="fold" id="foldElem" hidden>
       <summary>ほかの属性と比べる</summary>
       <div class="foldBody"><div class="rows" id="elemList"></div></div>

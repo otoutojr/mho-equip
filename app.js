@@ -1,6 +1,6 @@
 /* 融光工房 ― UI */
 'use strict';
-const APP_VERSION = '2026.11.11-1';
+const APP_VERSION = '2026.11.11-2';
 const STORE_KEY = 'mho-equip:v1';
 const PART_JP = { head: '頭', body: '胴', arm: '腕', waist: '腰', leg: '脚' };
 const $ = (sel) => document.querySelector(sel);
@@ -405,7 +405,7 @@ function renderBuilds(rows) {
     if (b.sourceCount > 1) src.append(`（${b.sourceCount}サイト一致）`);
     const head = el('div', { class: 'bHead' }, src,
       x.now && row ? el('span', { class: 'bDps', text: fmtInt(x.dps) }) : el('span', { class: 'rowSide', text: x.openAt ? `ランク${x.openAt}から` : '条件不明' }));
-    const rowsBox = el('div', { class: 'rows' });
+    const rowsBox = el('div', { class: 'rows card' });
     const wname = b.weapon ? (x.wc && x.wbase && x.wc.w !== x.wbase ? `${x.wbase.name} → ${x.wc.w.name}` : (b.weapon.name || b.weapon.raw)) : '―';
     rowsBox.append(staticRow('武器', wname, x.wc ? rarText(x.wc.w.baseRarity || 1, x.wc.r) + (x.wc.st.est ? '（推定）' : '') : 'データなし', !!x.wc && x.wc.r > (x.wc.w.baseRarity || 1)));
     const pieceInfo = new Map(((row && row.set && row.set.pieces) || []).map(p => [p.id, p]));
