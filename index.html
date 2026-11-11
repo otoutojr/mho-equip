@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>融光工房 ― アウトランダーズ最強装備</title>
 <meta name="description" content="冒険ランクを入れるだけで、そのランクで作れるDPS最大の武器・防具を計算するモンハンアウトランダーズ用ツール">
-<meta name="theme-color" content="#11131b">
+<meta name="theme-color" content="#101219">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="融光工房">
@@ -18,158 +18,124 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="masthead">
-  <div class="mastInner">
-    <div class="brand">
-      <svg class="brandMark" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2 27 11 22 30H10L5 11Z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M16 2v28M5 11h22M10 30l6-19 6 19" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" opacity=".55"/></svg>
-      <div>
-        <h1>融光工房</h1>
-        <p class="tagline">ランクで作れる最強装備</p>
-      </div>
-    </div>
-    <button type="button" class="menuBtn" id="menuBtn" aria-label="メニュー" aria-expanded="false" aria-controls="menu">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</header>
-
-<div class="menuBack" id="menuBack" hidden></div>
-<nav class="menu" id="menu" hidden aria-label="メニュー">
-  <a href="#pickPanel" class="menuItem">キャラ・ランク</a>
-  <a href="#dbPanel" class="menuItem">攻略サイトのおすすめ構成</a>
-  <a href="#meterPanel" class="menuItem">DPS</a>
-  <a href="#loadoutPanel" class="menuItem">計算で組んだ最強装備</a>
-  <a href="#comparePanel" class="menuItem">構成ごとのDPS比較</a>
-  <a href="#nextPanel" class="menuItem">ランクが上がると</a>
-  <a href="#goalPanel" class="menuItem">到達点</a>
-  <a href="#prioPanel" class="menuItem">スキル別のDPS効果</a>
-  <hr>
-  <button type="button" class="menuItem" id="menuHelp">使い方・計算のしかた</button>
-  <button type="button" class="menuItem" id="menuReset">入力をリセット</button>
-</nav>
-
 <main id="app">
-  <section class="pick" id="pickPanel">
-    <div class="ctabs" id="charTabs" role="tablist" aria-label="キャラ"></div>
-    <div class="subsel" id="heroSel" hidden>
-      <div class="subRow"><span class="subLbl">武器</span><div class="ctabs weapons" id="weaponTabs" role="tablist" aria-label="武器種"></div></div>
-      <div class="subRow"><span class="subLbl">属性</span><div class="ctabs elems" id="elementTabs" role="tablist" aria-label="属性"></div></div>
+  <header class="top">
+    <div>
+      <p class="brand">融光工房</p>
+      <h1 id="whoName">読み込み中…</h1>
+      <p class="note" id="whoSub"></p>
     </div>
-    <div class="rankBox">
-      <div class="rankHead">
-        <span class="rankLbl">冒険ランク</span>
-        <span class="rankVal" id="rankVal">1</span>
-      </div>
-      <div class="rankSlide">
-        <button type="button" class="nudge" data-nudge="-1" aria-label="ランクを1下げる">−</button>
-        <div class="rankTrack">
-          <input id="rank" type="range" min="1" max="60" step="1" value="1" aria-label="冒険ランク">
-          <div class="ticks" id="rankTicks" aria-hidden="true"></div>
+    <button type="button" class="pill" id="editBtn" aria-expanded="false" aria-controls="picker">変更</button>
+  </header>
+
+  <section id="picker" hidden aria-label="キャラとランクを選ぶ">
+    <h2 class="lbl">キャラ</h2>
+    <div class="chips" id="charTabs"></div>
+    <div class="pickSub" id="heroSel" hidden>
+      <h2 class="lbl">武器</h2>
+      <div class="chips" id="weaponTabs"></div>
+      <h2 class="lbl">属性</h2>
+      <div class="chips" id="elementTabs"></div>
+    </div>
+    <h2 class="lbl">冒険ランク</h2>
+    <div class="rankRow">
+      <button type="button" class="nudge" data-nudge="-1" aria-label="ランクを1下げる">−</button>
+      <input id="rank" type="range" min="1" max="60" step="1" value="1" aria-label="冒険ランク">
+      <button type="button" class="nudge" data-nudge="1" aria-label="ランクを1上げる">＋</button>
+      <span class="rankVal" id="rankVal">1</span>
+    </div>
+    <p class="note" id="capNote"></p>
+    <button type="button" class="pill solid" id="pickDone">決定</button>
+  </section>
+
+  <section class="dpsRow" aria-live="polite">
+    <div>
+      <p class="lbl">DPS目安</p>
+      <p class="dpsNum" id="dpsNum">―</p>
+    </div>
+    <div class="seg" id="targetTabs" role="group" aria-label="相手">
+      <button type="button" data-target="normal" aria-pressed="true">通常</button><button type="button" data-target="yuko" aria-pressed="false">融光種</button>
+    </div>
+  </section>
+
+  <div class="tabs" role="tablist" aria-label="構成の出し方">
+    <button type="button" role="tab" id="tabCalc" aria-selected="true" aria-controls="viewCalc">計算の最強</button>
+    <button type="button" role="tab" id="tabDb" aria-selected="false" aria-controls="viewDb">攻略サイトの構成 <span id="dbCount"></span></button>
+  </div>
+
+  <section class="view" id="viewCalc" role="tabpanel" aria-labelledby="tabCalc">
+    <div class="block">
+      <p class="note" id="resultHint">計算中…</p>
+      <div class="rows" id="gear"></div>
+    </div>
+    <div class="block">
+      <h2 class="lbl">付くスキル</h2>
+      <div class="rows" id="skillTotals"></div>
+      <p class="note" id="setNote" hidden></p>
+    </div>
+  </section>
+
+  <section class="view" id="viewDb" role="tabpanel" aria-labelledby="tabDb" hidden>
+    <p class="note" id="dbHint">読み込み中…</p>
+    <ol id="dbList"></ol>
+  </section>
+
+  <section class="folds">
+    <details class="fold" id="foldElem" hidden>
+      <summary>ほかの属性と比べる</summary>
+      <div class="foldBody"><div class="rows" id="elemList"></div></div>
+    </details>
+    <details class="fold" id="foldCompare">
+      <summary>ほかの組み方と比べる</summary>
+      <div class="foldBody">
+        <div class="block" id="cmpBlock">
+          <p class="note">どのスキルを軸にすると一番DPSが出るか。押すと防具が出ます。</p>
+          <div class="rows" id="compareList"></div>
         </div>
-        <button type="button" class="nudge" data-nudge="1" aria-label="ランクを1上げる">＋</button>
+        <div class="block">
+          <p class="note">計算で2番目以降だった組み合わせ。</p>
+          <div class="rows" id="altList"></div>
+        </div>
       </div>
-      <p class="capNote" id="capNote"></p>
-    </div>
-  </section>
-
-  <section class="panel dbPanel" id="dbPanel">
-    <h2>攻略サイトのおすすめ構成</h2>
-    <p class="hint" id="dbHint">読み込み中…</p>
-    <ol class="dbList" id="dbList"></ol>
-  </section>
-
-  <section class="meter" id="meterPanel" aria-live="polite">
-    <div class="meterTop"><span id="meterWho"></span><span class="targetSwitch" id="targetTabs" role="tablist" aria-label="相手">
-      <button type="button" class="tsw" role="tab" data-target="normal">通常</button><button type="button" class="tsw" role="tab" data-target="yuko">融光種</button>
-    </span></div>
-    <div class="dps"><span class="dpsNum" id="dpsNum">―</span><span class="dpsUnit">DPS</span></div>
-    <p class="dpsCalc" id="dpsCalc"></p>
-    <div class="gauge" aria-hidden="true"><div class="gaugeFill" id="gaugeFill"></div></div>
-    <p class="gaugeNote" id="gaugeNote"></p>
-  </section>
-
-  <section class="panel loadout" id="loadoutPanel">
-    <h2>計算で組んだ最強装備</h2>
-    <p class="hint">攻略サイトに載っていない組み合わせも含めて、全防具から計算で一番DPSが出る5部位を探したもの。</p>
-    <p class="hint" id="resultHint"></p>
-    <div id="weaponSlot"></div>
-    <ol class="rack" id="rack"></ol>
-    <h3 class="subHead">発動スキル</h3>
-    <div class="skillTotals" id="skillTotals"></div>
-    <details class="alts" id="alts">
-      <summary>ほかの候補</summary>
-      <div id="altList"></div>
+    </details>
+    <details class="fold" id="foldNext">
+      <summary>次のランクで変わること</summary>
+      <div class="foldBody">
+        <div class="rows" id="nextList"></div>
+        <div class="block" id="goalBody"></div>
+      </div>
+    </details>
+    <details class="fold" id="foldPrio">
+      <summary>スキルごとのDPS効果</summary>
+      <div class="foldBody">
+        <p class="note" id="prioHint"></p>
+        <div class="rows" id="prioList"></div>
+        <div class="prose" id="sourceList"></div>
+      </div>
+    </details>
+    <details class="fold" id="foldHelp">
+      <summary>計算の前提とデータの出どころ</summary>
+      <div class="foldBody prose">
+        <p id="calcLine"></p>
+        <p>DPS目安 ＝ 武器の実効攻撃力 × 防具スキルの火力倍率。同じキャラ・武器種どうしで装備を比べるための数字で、キャラ同士の強さ比べには使えません。</p>
+        <p>「攻略サイトの構成」は、Game8・GameWith・アルテマ・Gamerch・gamewith.ai・game8.co（英語版）のおすすめ装備を集めたもの（約340構成）。防具5部位が同じものは1つにまとめ、別の会社のサイトにも載っている構成に「2サイト一致」を付けています。DPS目安は、武器をそろえて防具だけで比べています。</p>
+        <ul>
+          <li>武器の実効攻撃力＝攻撃力×物理の割合×会心補正＋属性値×属性の割合（属性の割合はキャラごとに3〜4割と仮定）</li>
+          <li>会心は+25%ダメージ。与ダメ系スキルの重なり方はどのサイトにも記載がないため乗算で近似</li>
+          <li>属性ダメージUPは、攻略サイトの終盤装備（どの武器種もLv7）を再現できる重みに合わせてある</li>
+          <li>条件付きスキルは、攻略サイトの立ち回り記述から「効果が続いている時間」を見積もって評価</li>
+          <li>武器の数値は gamewith.ai・GameWith・game8.co のレア別表。攻略サイトでレア9止まりの武器はゲーム内でレア10まで上がるのを確認したので、レア10はレア9×1.214で推定</li>
+          <li>鋭精武器（光罰・バヤールなど8種）は Game8 の各武器ページの数値。冒険ランク40＋6章クリアの鋭精チャレンジから。融光種相手は極意の+8%を足す</li>
+          <li>防具のレアごとのスキルは Game8・GameWith・gamewith.ai の多数決（全200部位、レア10まで）。最大強化時のスキルは Gamerch とも一致</li>
+          <li>強化上限: ランク20→レア4、22→5、27→6、30→7、35→8、38→9、45→10（GameWith 11/6の表）、49→レア11（ゲーム内で確認）。レア12は不明</li>
+          <li>防具のレア11以降で付くスキルは、どのサイトにもまだ無いので防御力だけ上がる扱い</li>
+        </ul>
+        <p id="dataDate"></p>
+        <button type="button" class="pill" id="resetBtn">選択をリセット</button>
+      </div>
     </details>
   </section>
-
-  <section class="panel" id="comparePanel">
-    <h2>構成ごとのDPS比較</h2>
-    <p class="hint">どのスキルを軸に組むと一番DPSが出るか。それぞれのスキルを最優先で積んだ装備を組んで比べています。</p>
-    <ol id="compareList" class="cmpList"></ol>
-  </section>
-
-  <section class="panel" id="nextPanel">
-    <h2>ランクが上がると</h2>
-    <p class="hint">この先のランクで武器・防具の強化上限や作れる防具が増えたときのDPS。</p>
-    <ol id="nextList" class="timeline"></ol>
-  </section>
-
-  <section class="panel" id="goalPanel">
-    <h2>到達点</h2>
-    <p class="hint">全部の武器・防具が作れて、最大まで強化できたときの最強構成。</p>
-    <div id="goalBody"></div>
-  </section>
-
-  <section class="panel" id="prioPanel">
-    <h2>スキル別のDPS効果</h2>
-    <p class="hint" id="prioHint"></p>
-    <ul id="prioList" class="prioList"></ul>
-    <div class="sourceList" id="sourceList"></div>
-  </section>
 </main>
-
-<div class="menuBack" id="helpBack" hidden></div>
-<section class="sheet" id="helpSheet" hidden aria-label="使い方">
-  <h2>使い方</h2>
-  <h3>攻略サイトのおすすめ構成（構成DB）</h3>
-  <p>Game8・GameWith・アルテマ・Gamerch・gamewith.ai・game8.co（英語版）に載っているおすすめ装備を集めたDBです（約340構成）。防具5部位が同じものは1つにまとめ、別の会社のサイトにも載っている構成には「2サイト一致」を付けています（Game8 と game8.co、GameWith と gamewith.ai は同じ会社なので1つと数えます）。今のランクで作れる構成を、防具をランクの強化上限まで上げたときのDPS目安の順に並べ、各防具を何レアまで上げればいいかと、今の上限で付くスキルを出します。</p>
-  <ol>
-    <li>キャラを選ぶ（主人公は武器と属性も選ぶ）</li>
-    <li>冒険ランクをスライダーで合わせる（目盛りは強化上限が上がる・新しい防具が作れるランク）</li>
-    <li>そのランクで作れる武器・防具から、DPSが一番出る組み合わせと、何レアまで強化すればいいかが出る</li>
-  </ol>
-  <h3>DPSの計算</h3>
-  <p>DPS ＝ 武器の実効攻撃力 × 防具スキルの火力倍率。攻撃モーションの速さはキャラごとに同じとして、同じキャラ・武器種どうしで比べるための数字です（キャラ同士の比較には使えません）。</p>
-  <details>
-    <summary>前提（攻略サイトで確認できたこと／仮定）</summary>
-    <ul>
-      <li>武器の実効攻撃力＝攻撃力×物理の割合×会心補正＋属性値×属性の割合（属性ダメージの割合はキャラごとに3〜4割と仮定）</li>
-      <li>会心は+25%ダメージ（Game8英語版に明記）。主人公・ミドリは会心率1%ごとに与ダメ+0.25%（上限22.5%）</li>
-      <li>属性ダメージUPは属性部分だけに乗る。ルカ・エンショウ・フォリオ・ロードはコアパッシブ分も加算</li>
-      <li>与ダメ系スキルの重なり方はどのサイトにも記載がないため乗算で近似</li>
-      <li>条件付きスキルは、攻略サイトの立ち回り記述から「効果が続いている時間」を見積もって評価</li>
-      <li>武器の数値は gamewith.ai・GameWith・game8.co のレア別表の実測値。攻略サイトでレア9止まりの武器（融光種ウォーターキャノンなど14本）は、ゲーム内でレア10まで上がることを確認したので、レア10の数値をレア9×1.214（レア12まである武器のレア9→10の伸び）で推定</li>
-      <li>鋭精武器（光罰・バヤールなど8種。作るときに属性を選ぶ）は Game8 の各武器ページの数値（レア9: 攻撃452・属性226、レア10: 549・274、レア11: 656・328）。冒険ランク40＋6章クリアの鋭精チャレンジから。融光種相手は極意の+8%を足す（双剣は会心率アップなので足さない）</li>
-    </ul>
-  </details>
-  <details>
-    <summary>防具データの出どころ</summary>
-    <ul>
-      <li>防具のレアごとのスキルは Game8・GameWith・gamewith.ai の3サイトの多数決（全200部位、レア10まで）</li>
-      <li>最大まで強化したときのスキルは Gamerch とも照合済み（全200部位一致）</li>
-      <li>サイトで解放レアが割れている部位は、装備の下に各サイトの値を表示</li>
-      <li>強化上限: ランク20→レア4、22→5、27→6、30→7、35→8、38→9、45→10（GameWith 11/6更新の表）、49→レア11（ゲーム内で確認。どのサイトの表とも1〜2ずれていた）。レア12は不明</li>
-      <li>狩魂玉の段階（Ⅰ:〜4、Ⅱ:5〜6、Ⅲ:7〜8、Ⅳ:9〜10、Ⅴ:11〜12）は3サイトで一致</li>
-      <li>防具はレア12まで強化できるが、レア11以降のスキルはどのサイトにもまだ無いので防御力だけ上がる扱い</li>
-    </ul>
-  </details>
-  <button type="button" class="btn" id="helpClose">閉じる</button>
-</section>
-
-<footer class="foot">
-  <p>武器・防具・スキルの数値は GameWith・Game8・アルテマ・Gamerch 等の攻略サイトの掲載情報をまとめたものです。ゲーム内の表記と異なる場合があります。</p>
-  <p id="dataDate"></p>
-</footer>
 
 <script src="app.js" defer></script>
 </body>

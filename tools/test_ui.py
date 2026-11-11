@@ -28,12 +28,12 @@ with sync_playwright() as p:
     page.reload(wait_until="networkidle")
     page.wait_for_function("document.querySelector('#dpsNum') && /\\d/.test(document.querySelector('#dpsNum').textContent)", timeout=30000)
     page.wait_for_timeout(2500)
-    print("DPS", page.inner_text("#dpsNum"), "|", page.inner_text("#dpsCalc"))
-    print("WEAPON", " / ".join(t for t in page.inner_text("#weaponSlot").split("\n") if t.strip()))
-    for t in page.inner_text("#rack").split("\n"):
+    print("WHO", page.inner_text("#whoName"), "|", page.inner_text("#whoSub"))
+    print("DPS", page.inner_text("#dpsNum"), "|", page.evaluate("document.querySelector('#calcLine').textContent"))
+    for t in page.inner_text("#gear").split("\n"):
         if t.strip(): print("  ", t)
-    print("TOTALS", [t for t in page.inner_text("#skillTotals").split("\n") if t.strip()][:30])
-    print("NEXT", [t for t in page.inner_text("#nextList").split("\n") if t.strip()][:14])
+    print("SKILLS", [t for t in page.inner_text("#skillTotals").split("\n") if t.strip()][:30])
+    print("DB", page.evaluate("document.querySelector('#dbCount').textContent"), "件")
     page.screenshot(path=str(shots / f"ui_{char}_{weapon if char == 'hero' else ''}.png"), full_page=True)
     for l in logs[:20]: print("LOG", l)
     b.close()
