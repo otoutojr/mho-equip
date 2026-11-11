@@ -7,10 +7,17 @@
 let DB = null; // {pieces, skillIndex, skillMax, seriesIndex, setBonuses}
 const PARTS = ['head', 'body', 'arm', 'waist', 'leg'];
 
+// 1つの依頼に1つの結果を返し、最後に done を返す。画面側は done を受けてから次の依頼を送るので、
+// 途中で条件が変わったら、たまっている古い依頼は送られずに捨てられる
 self.onmessage = (e) => {
   const msg = e.data;
   if (msg.type === 'init') { DB = buildDb(msg.armor, msg.skills); self.postMessage({ type: 'ready' }); return; }
+  try { handle(msg); } finally { self.postMessage({ type: 'done', reqId: msg.reqId }); }
+};
+function handle(msg) {
   if (msg.type === 'evalBuilds') { self.postMessage({ type: 'builds', reqId: msg.reqId, rows: evalBuilds(msg) }); return; }
+  if (msg.type === 'compare') { self.postMessage({ type: 'compare', reqId: msg.reqId, rows: solveCompare(msg, { score: msg.baseScore }) }); return; }
+  if (msg.type === 'next') { self.postMessage({ type: 'next', reqId: msg.reqId, next: solveNext(msg, msg.baseScore, new Set(msg.baseIds)) }); return; }
   if (msg.type === 'solve') {
     const t0 = Date.now();
     const res = solve(msg);
@@ -18,27 +25,23 @@ self.onmessage = (e) => {
     res.reqId = msg.reqId;
     res.goal = !!msg.goal;
     res.elem = msg.elem || null;
+    res.free = !!msg.free;
     self.postMessage({ type: 'result', ...res });
-    if (res.best && !msg.goal && !msg.elem) {
-      if (msg.axes && msg.axes.length) self.postMessage({ type: 'compare', reqId: msg.reqId, rows: solveCompare(msg, res.best) });
-      const t1 = Date.now();
-      const next = solveNext(msg, res.best.score, new Set(res.best.pieces.map(p => p.id)));
-      self.postMessage({ type: 'next', reqId: msg.reqId, next, ms: Date.now() - t1 });
-    }
   }
-};
+}
 
 // 「〇〇軸」で組んだ場合の火力比較：その軸スキルを最優先で積んだセットを探し、本来の火力で採点し直す
 function solveCompare(msg, best) {
   const W = makeWeightTable(msg.weights);
+  const Ww = boostWants(W, msg.wants); // 入れたいスキルの指定は、軸を変えても守る
   const avail = new Set(msg.availableSeries);
   const acc = new Int32Array(DB.skillNames.length), sc = new Int32Array(DB.sets.length + 1), touched = new Int32Array(260);
   const rows = [];
   for (const ax of msg.axes) {
     const si = DB.skillIndex.get(ax.skill);
     if (si == null || !W[si]) continue;
-    const Wb = W.slice();
-    Wb[si] = W[si].map(v => v * 4 + 2);
+    const Wb = Ww.slice();
+    Wb[si] = Ww[si].map((v, i) => v + (W[si][Math.min(i, W[si].length - 1)] || 0) * 3 + 2);
     const prep = preparePieces(Wb, avail, msg.rarityCap, msg.owned, msg.orbTier);
     const top = search(pickCandidates(prep, Wb, msg.K || 12), Wb, 1);
     if (!top.length) continue;
@@ -105,6 +108,37 @@ function makeWeightTable(weights) {
   }
   return W;
 }
+// 「入れたいスキル」：指定Lvまでは1Lvごとに大きな点を足し、指定を満たす組み合わせが必ず上に来るようにする。
+// 指定Lvより上には足さないので、満たしたあとは本来の重み（DPS）で順位が決まる。届かないときは一番近い組み合わせが残る
+const WANT_BONUS = 1000;
+function boostWants(W, wants) {
+  const list = wantList(wants);
+  if (!list.length) return W;
+  const Wb = W.slice();
+  for (const { s, lv } of list) {
+    const base = W[s] || [];
+    const n = Math.max(DB.skillMax[s] || 7, lv, base.length);
+    Wb[s] = Array.from({ length: n }, (_, i) => (base.length ? (base[Math.min(i, base.length - 1)] || 0) : 0) + WANT_BONUS * Math.min(i + 1, lv));
+  }
+  return Wb;
+}
+function wantList(wants) {
+  const out = [];
+  for (const [name, lv] of Object.entries(wants || {})) {
+    const s = DB.skillIndex.get(name);
+    if (s != null && lv > 0) out.push({ s, name, lv: Math.min(lv, DB.skillMax[s] || 7) });
+  }
+  return out;
+}
+// 上乗せした重みで探した結果を、本来の重みで採点し直す
+function rescore(top, W) {
+  const acc = new Int32Array(DB.skillNames.length), sc = new Int32Array(DB.sets.length + 1), touched = new Int32Array(260);
+  return top.map((t) => { const r = evaluate(t.combo, W, acc, sc, touched); return { score: r.score, cost: t.cost, combo: t.combo, setHits: r.setHits }; });
+}
+function wantStatus(d, wants) {
+  const have = new Map(d.totals.map(t => [t.skill, t.lv]));
+  return wantList(wants).map(w => ({ skill: w.name, want: w.lv, lv: have.get(w.name) || 0 }));
+}
 const wval = (W, s, lv) => { const a = W[s]; if (!a || lv <= 0) return 0; return a[Math.min(lv, a.length) - 1] || 0; };
 
 // 強化上限 rarityCap までで一番スキルの価値が高くなる、いちばん低いレア
@@ -144,7 +178,7 @@ function evalBuilds(msg) {
     const have = combo.filter(Boolean);
     const r = evaluate(combo, W, acc, sc, touched);
     const d = describe({ score: r.score, combo: have, setHits: r.setHits }, W);
-    return { key: b.key, score: r.score, missing: combo.length - have.length, set: d };
+    return { key: b.key, score: r.score, missing: combo.length - have.length, set: d, wants: wantStatus(d, msg.wants) };
   });
 }
 
@@ -246,24 +280,29 @@ function describe(entry, W) {
 
 function solve(msg) {
   const W = makeWeightTable(msg.weights);
-  const K = msg.K || 12;
+  const Wb = boostWants(W, msg.wants);
+  const K = (msg.K || 12) + (Wb === W ? 0 : 2);
   const avail = new Set(msg.availableSeries);
-  const prepared = preparePieces(W, avail, msg.rarityCap, msg.owned, msg.orbTier);
-  const byPart = pickCandidates(prepared, W, K);
-  const top = search(byPart, W, msg.topN || 6);
-  return { best: top.length ? describe(top[0], W) : null, alts: top.slice(1).map(t => describe(t, W)), counts: PARTS.map(p => byPart[p].length) };
+  const prepared = preparePieces(Wb, avail, msg.rarityCap, msg.owned, msg.orbTier);
+  const byPart = pickCandidates(prepared, Wb, K);
+  let top = search(byPart, Wb, msg.topN || 6);
+  if (Wb !== W) top = rescore(top, W);
+  const out = top.map((t) => { const d = describe(t, W); d.wants = wantStatus(d, msg.wants); return d; });
+  return { best: out[0] || null, alts: out.slice(1), counts: PARTS.map(p => byPart[p].length) };
 }
 
 function solveNext(msg, base, baseIds) {
   const W = makeWeightTable(msg.weights);
+  const Wb = boostWants(W, msg.wants);
   const K = Math.max(8, (msg.K || 12) - 2);
   const out = [];
   for (const m of (msg.milestones || [])) {
-    const prep = preparePieces(W, new Set(m.series), m.rarityCap, msg.owned, m.orbTier);
-    const top = search(pickCandidates(prep, W, K), W, 1);
+    const prep = preparePieces(Wb, new Set(m.series), m.rarityCap, msg.owned, m.orbTier);
+    let top = search(pickCandidates(prep, Wb, K), Wb, 1);
     if (!top.length) continue;
+    if (Wb !== W) top = rescore(top, W);
     const d = describe(top[0], W);
-    out.push({ rank: m.rank, label: m.label, why: m.why, delta: top[0].score - base, score: top[0].score,
+    out.push({ rank: m.rank, label: m.label, why: m.why, delta: top[0].score - base, score: top[0].score, wants: wantStatus(d, msg.wants),
       changed: d.pieces.filter(p => !baseIds.has(p.id)).map(p => p.name), skills: d.totals.filter(t => t.value > 0.3).map(t => `${t.skill}${t.lv}`).join('・') });
   }
   return { milestones: out };

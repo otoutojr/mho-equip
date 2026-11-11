@@ -1,6 +1,6 @@
 /* 融光工房 ― UI */
 'use strict';
-const APP_VERSION = '2026.11.11-2';
+const APP_VERSION = '2026.11.11-3';
 const STORE_KEY = 'mho-equip:v1';
 const PART_JP = { head: '頭', body: '胴', arm: '腕', waist: '腰', leg: '脚' };
 const $ = (sel) => document.querySelector(sel);
@@ -14,14 +14,42 @@ const el = (tag, attrs = {}, ...children) => {
 };
 const fmtInt = (v) => Math.round(v).toLocaleString('ja-JP');
 
+// 武器種アイコン（自作のシルエット。24×24、塗りは currentColor）
+const WICON = {
+  '大剣': '<g transform="rotate(45 12 12)"><path d="M8.2 4.2 12 .8l3.8 3.4V15H8.2z"/><path d="M5.6 15h12.8v2.2H5.6z"/><path d="M10.9 17.2h2.2v4.4h-2.2z"/><circle cx="12" cy="22.3" r="1.5"/></g>',
+  '太刀': '<g transform="rotate(45 12 12)"><path d="M11.1-1.2c2.3 4.6 2.7 10.6 2.2 16.6h-2.4c.6-5.6.7-11.2.2-16.6z"/><path d="M9.4 15.4h5.2v1.7H9.4z"/><path d="M11 17.1h2.1v6.6H11z"/></g>',
+  '双剣': '<g transform="translate(12 12) scale(.92) translate(-12 -12)"><g transform="rotate(38 12 12)"><path d="M10.6 3.4 12 1.8l1.4 1.600v10h-2.800z"/><path d="M8.800 13.400h6.400v1.700H8.800z"/><path d="M11 15.100h2v4.900h-2z"/></g><g transform="rotate(-38 12 12)"><path d="M10.6 3.4 12 1.8l1.4 1.600v10h-2.800z"/><path d="M8.800 13.400h6.400v1.700H8.800z"/><path d="M11 15.100h2v4.900h-2z"/></g></g>',
+  'ランス': '<g transform="rotate(45 12 12)"><path d="M12-1.5 14.6 13H9.4z"/><path d="M8 13h8l-1.3 2.6H9.3z"/><path d="M11 15.6h2v7h-2z"/></g><path d="M3.2 12.6c2.2.5 4.3.5 6.4-.4.6 3.6-.6 6.6-3.4 8.6-2.6-1.9-3.7-4.6-3-8.2z"/>',
+  'ハンマー': '<g transform="translate(12 12) rotate(35) scale(.82) translate(-12 -12)"><path d="M3.800 1.600h16.400c.8 0 1.400.6 1.400 1.400v7c0 .8-.6 1.400-1.400 1.400H3.800c-.8 0-1.400-.6-1.400-1.400V3c0-.8.6-1.400 1.400-1.400z"/><path d="M10.700 11.400h2.600V23h-2.600z"/><path d="M9.800 22.400h4.400v2.200H9.800z"/></g>',
+  'チャージアックス': '<g transform="rotate(35 12 12)"><path d="M10.9 1h2.2v22h-2.2z"/><path d="M13.1 2.4c5.4.6 8 3.4 8 6.6s-2.6 6-8 6.6z"/><path d="M10.9 4.6 6 6.2v5.6l4.9 1.6z"/></g>',
+  'ヘビィボウガン': '<path d="M1 9h13.600V7.200h4.600V9h3.800v4h-3.600l-1 2.200h-3.800L13 20H9.200l1.600-4.800H6.200V13H1z"/><path d="M6.600 4.800h7v1.600h-7z"/>',
+  '弓': '<path d="M6.400 1.600C15.800 4.400 19.600 8 19.600 12s-3.800 7.600-13.200 10.400l-.5-1.700C13.600 18.200 17.400 15.200 17.400 12S13.600 5.800 5.900 3.300z"/><path d="M5.700 2.400h1v19.200h-1z"/><path d="M2 11.300h15v1.400H2z"/><path d="M16.400 9.200 21.600 12l-5.200 2.800z"/>',
+};
+function wicon(type) {
+  const span = document.createElement('span');
+  span.innerHTML = `<svg class="wicon" viewBox="0 0 24 24" aria-hidden="true">${WICON[type] || ''}</svg>`;
+  return span.firstChild;
+}
+// 行の左の札：武器は武器種アイコン（属性の色）、防具は部位の字
+function plate(part, weaponType) {
+  if (part === '武器') return el('span', { class: 'plate weapon', role: 'img', 'aria-label': '武器' }, wicon(weaponType || charWeaponType(currentChar())));
+  return el('span', { class: 'plate', text: part });
+}
+// スキルの段位：on個を塗り、指定Lv（want）に届いていない分は朱の斜線で示す
+function pips(on, max, want = 0) {
+  const box = el('span', { class: 'pips', 'aria-hidden': 'true' });
+  for (let i = 0; i < max; i++) box.append(el('i', { class: i < on ? 'on' : (i < want ? 'miss' : '') }));
+  return box;
+}
+
 const state = loadState();
 let DATA = null;
 let worker = null;
 let reqId = 0;
-const cur = { armor: null, goal: null, weapon: null, goalWeapon: null, elemDps: {} };
+const cur = { armor: null, goal: null, weapon: null, goalWeapon: null, elemDps: {}, free: null };
 
 function loadState() {
-  const def = { char: 'hero', heroWeapon: 'hbg', heroElement: '火', rank: 1, target: 'normal', view: 'calc', seen: false };
+  const def = { char: 'hero', heroWeapon: 'hbg', heroElement: '火', rank: 1, target: 'normal', view: 'calc', seen: false, wants: {} };
   let had = false;
   try { had = !!localStorage.getItem(STORE_KEY); } catch {}
   let st;
@@ -54,6 +82,7 @@ function init() {
     renderRank(true);
     bindControls();
     renderPriorities();
+    renderWants();
     solve();
   }).catch((err) => {
     $('#resultHint').textContent = `データを読み込めませんでした（${err.message}）。通信状態を確認して開き直してください。`;
@@ -76,14 +105,20 @@ function uniqueChars() {
   const pos = (id) => { const i = CHAR_ORDER.indexOf(id); return i < 0 ? 99 : i; };
   return DATA.characters.characters.filter(c => !c.id.startsWith('hero_')).sort((a, b) => pos(a.id) - pos(b.id));
 }
-function selectChar(next) { Object.assign(state, next); saveState(); cur.elemDps = {}; renderPicker(); renderPriorities(); solve(); }
-function chip(label, selected, onclick) { return el('button', { type: 'button', class: 'chip', 'aria-pressed': String(selected), onclick, text: label }); }
+function selectChar(next) { Object.assign(state, next); saveState(); cur.elemDps = {}; wantOpen = false; renderPicker(); renderPriorities(); solve(); }
+function chip(label, selected, onclick, lead = null, cls = 'chip') { return el('button', { type: 'button', class: cls, 'aria-pressed': String(selected), onclick }, lead, label); }
+const eldot = (e) => el('span', { class: 'eldot', 'data-el': e, 'aria-hidden': 'true', text: e });
 // 一番上の1行：いま何を見ているか
 function renderWho() {
   const c = currentChar();
   const wt = SHORT_WEAPON[charWeaponType(c)] || charWeaponType(c);
   $('#whoName').textContent = `${c.elementSelectable ? '主人公' : c.name}・${wt}・${charElement(c)}`;
-  $('#whoSub').textContent = `冒険ランク${state.rank}・レア${rankCap()}まで強化できる`;
+  $('#whoSub').textContent = `ランク${state.rank}・レア${rankCap()}まで強化できる`;
+  // 属性の色をページ全体の差し色にする（武器の札・判子・見出しの◆・DPSの帯）
+  const e = charElement(c);
+  document.documentElement.dataset.el = HERO_ELEMENTS.includes(e) ? e : '無';
+  const crest = $('#crest'); crest.innerHTML = ''; crest.append(wicon(charWeaponType(c)));
+  $('#elStamp').textContent = HERO_ELEMENTS.includes(e) ? e : '';
 }
 function setPicker(open) {
   $('#picker').hidden = !open;
@@ -95,9 +130,9 @@ function renderPicker() {
   for (const c of uniqueChars()) box.append(chip(c.name, state.char === c.id, () => selectChar({ char: c.id })));
   $('#heroSel').hidden = state.char !== 'hero';
   const wt = $('#weaponTabs'); wt.innerHTML = '';
-  for (const [id, label] of HERO_WEAPONS) wt.append(chip(label, state.heroWeapon === id, () => selectChar({ heroWeapon: id })));
+  for (const [id, label] of HERO_WEAPONS) wt.append(chip(label, state.heroWeapon === id, () => selectChar({ heroWeapon: id }), wicon(WEAPON_TYPE[id])));
   const et = $('#elementTabs'); et.innerHTML = '';
-  for (const e of HERO_ELEMENTS) et.append(chip(e, heroElement() === e, () => selectChar({ heroElement: e })));
+  for (const e of HERO_ELEMENTS) { const b = chip(`${e}属性`, heroElement() === e, () => selectChar({ heroElement: e }), eldot(e), 'chip el'); b.dataset.el = e; et.append(b); }
 }
 // 主人公だけ：属性ごとのDPS目安（押すとその属性に切り替え）
 function renderElemFold() {
@@ -109,9 +144,93 @@ function renderElemFold() {
   for (const { e, v } of rows) {
     const on = heroElement() === e;
     box.append(el('button', { type: 'button', class: 'rowBtn', 'aria-pressed': String(on), onclick: () => { if (!on) selectChar({ heroElement: e }); } },
-      el('span', { class: 'rowMain', text: `${e}属性${on ? '（今の選択）' : ''}` }),
+      el('span', { class: 'rowMain elRow' }, eldot(e), `${e}属性${on ? '（今の選択）' : ''}`),
       el('span', { class: 'rowSide', text: v != null ? (v ? fmtInt(v) : '―') : '計算中' })));
   }
+}
+
+/* ---------- 入れたいスキル（スキルごとに「Lvいくつ以上」を指定） ---------- */
+// 主人公の「火属性ダメージUP」は、属性を変えても付いてくるように {属性} で持つ
+function wantKey(c, name) { return c.elementSelectable && name === `${charElement(c)}属性ダメージUP` ? '{属性}属性ダメージUP' : name; }
+function wantsFor(c, elem = charElement(c)) {
+  const out = {};
+  for (const [k, lv] of Object.entries((state.wants || {})[c.id] || {})) out[k.replace('{属性}', elem)] = lv;
+  return out;
+}
+const skillMaxLv = (name) => { const sk = DATA.skills.skills.find(x => x.name === name); return Math.min(8, (sk && sk.maxLv) || 7); };
+let wantOpen = false, wantCat = '効く順', wantTimer = null;
+function setWant(name, lv) {
+  const c = currentChar();
+  state.wants = state.wants || {};
+  const raw = (state.wants[c.id] = state.wants[c.id] || {});
+  const k = wantKey(c, name);
+  if (lv <= 0) delete raw[k]; else raw[k] = Math.min(lv, skillMaxLv(name));
+  saveState();
+  cur.armor = null; cur.free = null;
+  renderWants();
+  clearTimeout(wantTimer); wantTimer = setTimeout(() => { cur.elemDps = {}; solve(); }, 250);
+}
+// 防具かセットスキルで付けられるスキルの名前
+const armorSkillNames = (() => { let set = null; return () => {
+  if (!set) {
+    set = new Set();
+    for (const sr of DATA.armor.series) for (const p of sr.pieces) for (const k of p.skills) set.add(k.name);
+    for (const st of (DATA.armor.sets || [])) for (const b of (st.bonuses || [])) if (b.skill) set.add(b.skill);
+    for (const n of [...set]) if (n.startsWith('冒険団の力')) set.delete(n);
+  }
+  return set;
+}; })();
+const WANT_CATS = ['効く順', '火力', '会心', '弾・矢', '生存', 'その他'];
+function renderWants() {
+  const c = currentChar();
+  const box = $('#wantList'); box.innerHTML = '';
+  const wants = wantsFor(c);
+  const names = Object.keys(wants);
+  const got = new Map(((cur.armor && cur.armor.wants) || []).map(w => [w.skill, w.lv]));
+  let short = 0;
+  for (const name of names) {
+    const lv = wants[name], max = skillMaxLv(name);
+    const have = cur.armor ? Math.min(got.get(name) || 0, lv) : lv; // 計算中は指定どおりに描く
+    const miss = have < lv; if (miss) short++;
+    const plus = el('button', { type: 'button', class: 'step', 'aria-label': `${name}の指定を1上げる`, onclick: () => setWant(name, lv + 1), text: '＋' });
+    if (lv >= max) plus.disabled = true;
+    box.append(el('div', { class: 'want' },
+      el('div', { class: 'wantName' }, name, miss ? el('span', { class: 'note need', text: (names.length > 1 ? 'ほかの指定と合わせると' : '今のランクでは') + (have ? `Lv${have}まで` : '付けられない') }) : null),
+      el('button', { type: 'button', class: 'step', 'aria-label': lv > 1 ? `${name}の指定を1下げる` : `${name}の指定を外す`, onclick: () => setWant(name, lv - 1), text: lv > 1 ? '−' : '×' }),
+      el('div', { class: 'wantLv' }, pips(have, max, lv), el('span', { class: 'lv', text: `Lv${lv}以上` })),
+      plus));
+  }
+  box.append(el('button', { type: 'button', class: 'addBtn', 'aria-expanded': String(wantOpen), 'aria-controls': 'wantPicker',
+    onclick: () => { wantOpen = !wantOpen; renderWants(); }, text: 'スキルを追加' }));
+  renderWantPicker(c, wants);
+  // 下の1行：指定が効いているか、指定なしの最強とどれだけ違うか
+  const note = $('#wantNote');
+  if (!names.length) { note.textContent = '「回避強化をLv3以上」のように指定すると、それを満たす中でDPSが一番高い装備を出します。'; return; }
+  if (!cur.armor) { note.textContent = '計算中…'; return; }
+  if (short) { note.innerHTML = ''; note.append(el('span', { class: 'need', text: '届かない指定があります。' }), '今のランクで一番近い装備を出しています。'); return; }
+  if (cur.free) {
+    const a = dpsOf(cur.weapon, cur.armor.score), f = dpsOf(cur.weapon, cur.free.score);
+    note.textContent = f - a > 0.5 ? `指定を満たす中でDPSが一番高い装備です。指定なしの最強（${fmtInt(f)}）より ${fmtPct((a / f - 1) * 100)}。` : '指定なしの最強と同じDPSで、指定も満たしています。';
+  } else note.textContent = '指定を満たす中でDPSが一番高い装備です。';
+}
+function renderWantPicker(c, wants) {
+  const pk = $('#wantPicker'); pk.hidden = !wantOpen;
+  if (!wantOpen) return;
+  const cats = $('#wantCats'); cats.innerHTML = '';
+  for (const k of WANT_CATS) cats.append(chip(k, wantCat === k, () => { wantCat = k; renderWants(); }));
+  const W = effectiveWeights(c);
+  const maxGain = (n) => { const a = W[n]; return a && a.length ? a[a.length - 1] : 0; };
+  let list = [...armorSkillNames()].filter(n => !(n in wants));
+  if (wantCat === '効く順') list = list.filter(n => maxGain(n) > 0.3).sort((a, b) => maxGain(b) - maxGain(a));
+  else list = list.filter(n => { const sk = DATA.skills.skills.find(x => x.name === n); return ((sk && sk.category) || 'その他') === wantCat; }).sort((a, b) => a.localeCompare(b, 'ja'));
+  const box = $('#wantChoices'); box.innerHTML = '';
+  for (const n of list) {
+    const g = maxGain(n);
+    box.append(el('button', { type: 'button', class: 'rowBtn', onclick: () => { wantOpen = false; setWant(n, 1); } },
+      el('span', { class: 'rowMain', text: n }),
+      el('span', { class: 'rowSide', text: (g > 0.3 && c.scoreMode === 'log' ? `最大で${fmtGain(g)}・` : '') + `Lv${skillMaxLv(n)}まで` })));
+  }
+  if (!list.length) box.append(el('p', { class: 'note', text: wantCat === '効く順' ? 'このキャラのDPSに効くスキルは、もう全部指定しています。' : 'この種類のスキルはありません。' }));
 }
 
 /* ---------- ダメージモデル ---------- */
@@ -270,7 +389,8 @@ function bindControls() {
   $('#resetBtn').addEventListener('click', () => {
     if (!confirm('キャラ・ランクの選択を初期状態に戻します。いい？')) return;
     for (const k of Object.keys(state)) delete state[k];
-    Object.assign(state, { char: 'hero', heroWeapon: 'hbg', heroElement: '火', rank: 1, target: 'normal', view: 'calc', seen: false });
+    Object.assign(state, { char: 'hero', heroWeapon: 'hbg', heroElement: '火', rank: 1, target: 'normal', view: 'calc', seen: false, wants: {} });
+    wantOpen = false;
     saveState(); cur.elemDps = {};
     renderRank(true); renderTarget(); renderPicker(); setView('calc'); renderPriorities(); solve();
     setPicker(true); window.scrollTo(0, 0);
@@ -296,13 +416,34 @@ function solve() {
   $('#goalBody').innerHTML = ''; $('#setNote').hidden = true;
   $('#cmpBlock').hidden = c.scoreMode !== 'log';
   const W = effectiveWeights(c);
-  worker.postMessage({ type: 'solve', reqId, weights: W, availableSeries: availableSeries(), rarityCap: rankCap(), orbTier: orbTierFor(rankCap()), milestones: milestones(), axes: compareAxes(c), topN: 6, K: 12 });
-  worker.postMessage({ type: 'solve', reqId, goal: true, weights: W, availableSeries: DATA.armor.series.map(s => s.name), rarityCap: 12, orbTier: 6, topN: 1, K: 12 });
-  postBuilds(c, W);
-  if (c.elementSelectable) {
-    for (const e of HERO_ELEMENTS) {
-      worker.postMessage({ type: 'solve', reqId, elem: e, weights: weightsFor(c, e), availableSeries: availableSeries(), rarityCap: rankCap(), orbTier: orbTierFor(rankCap()), topN: 1, K: 10 });
-    }
+  const wants = wantsFor(c);
+  cur.free = null;
+  renderWants();
+  const now = { reqId, weights: W, availableSeries: availableSeries(), rarityCap: rankCap(), orbTier: orbTierFor(rankCap()) };
+  const jobs = [];
+  // 指定があるときは、指定なしの最強も先に出して差を見せる
+  if (Object.keys(wants).length) jobs.push({ ...now, type: 'solve', free: true, topN: 1, K: 12 });
+  jobs.push({ ...now, type: 'solve', wants, topN: 6, K: 12 });
+  jobs.push(() => buildsJob(c, W, wants));
+  // ここから下は折りたたみの中身。いまの答えが出てから順に計算する
+  jobs.push(() => { if (!cur.armor) { renderNext({ milestones: [] }); return null; }
+    return { ...now, type: 'next', wants, milestones: milestones(), K: 12, baseScore: cur.armor.score, baseIds: cur.armor.pieces.map(p => p.id) }; });
+  jobs.push(() => { const axes = compareAxes(c); if (!cur.armor || !axes.length) { renderCompare([]); return null; }
+    return { ...now, type: 'compare', wants, axes, K: 12, baseScore: cur.armor.score }; });
+  if (c.elementSelectable) for (const e of HERO_ELEMENTS) jobs.push({ ...now, type: 'solve', elem: e, weights: weightsFor(c, e), wants: wantsFor(c, e), topN: 1, K: 10 });
+  jobs.push({ reqId, type: 'solve', goal: true, weights: W, wants, availableSeries: DATA.armor.series.map(s => s.name), rarityCap: 12, orbTier: 6, topN: 1, K: 12 });
+  runJobs(jobs);
+}
+// 計算の依頼は1つずつ送る。条件が変わったら残りは捨てて、新しい依頼に入れ替える
+let jobQueue = [], jobBusy = false;
+function runJobs(list) { jobQueue = list; pumpJobs(); }
+function pumpJobs() {
+  while (!jobBusy && jobQueue.length) {
+    const j = jobQueue.shift();
+    const msg = typeof j === 'function' ? j() : j;
+    if (!msg) continue;
+    jobBusy = true;
+    worker.postMessage(msg);
   }
 }
 
@@ -312,12 +453,12 @@ function dbBuildsFor(c) {
   const elem = charElement(c);
   return all.filter(b => b.charId === c.id && (!c.elementSelectable || !b.element || b.element === elem));
 }
-function postBuilds(c, W) {
+function buildsJob(c, W, wants) {
   const list = dbBuildsFor(c);
   cur.dbList = list;
-  if (!list.length) { renderBuilds([]); return; }
-  worker.postMessage({ type: 'evalBuilds', reqId, weights: W, rarityCap: rankCap(),
-    builds: list.map(b => ({ key: b.id, pieces: PARTS.map(part => (b.pieces[part] && b.pieces[part].id) || null) })) });
+  if (!list.length) { renderBuilds([]); return null; }
+  return { type: 'evalBuilds', reqId, weights: W, wants, rarityCap: rankCap(),
+    builds: list.map(b => ({ key: b.id, pieces: PARTS.map(part => (b.pieces[part] && b.pieces[part].id) || null) })) };
 }
 const PARTS = ['head', 'body', 'arm', 'waist', 'leg'];
 const seriesOfPiece = (() => { let m = null; return (id) => {
@@ -349,7 +490,7 @@ function uniqRefs(refs) {
 // 行の部品。rarText は「強化が要るときだけ 元→先」を返す
 const rarText = (base, r) => (r > base ? `レア${base} → ${r}` : `レア${r}`);
 const staticRow = (part, name, side, need) => el('div', { class: 'rowStatic' },
-  el('span', { class: 'rowPart', text: part }), el('span', { class: 'rowMain', text: name }), el('span', { class: 'rowSide' + (need ? ' need' : ''), text: side }));
+  plate(part), el('span', { class: 'rowMain', text: name }), el('span', { class: 'rowSide' + (need ? ' need' : ''), text: side }));
 const pieceLine = (p) => el('p', { text: `${PART_JP[p.part]}　${p.name}　${rarText(p.baseRarity, p.rarity)}` });
 const skillLine = (totals) => totals.filter(t => t.value > 0.3 || t.skill === '弾導強化').map(t => `${t.skill}${t.lv}`).join('・');
 
@@ -380,14 +521,16 @@ function renderBuilds(rows) {
     // 武器の高レアの数値はサイトにそろっていないので、DPS目安は武器を「今作れる一番強い武器」にそろえて防具だけで比べる
     const dps = row ? dpsOf(cur.weapon, row.score) : 0;
     const cost = ((row && row.set && row.set.pieces) || []).reduce((t, p) => t + (p.rarity - p.baseRarity), 0);
-    return { b, row, openAt, wc, wbase, dps, cost, now: openAt != null && openAt <= state.rank };
+    const ws = (row && row.wants) || [];
+    return { b, row, openAt, wc, wbase, dps, cost, now: openAt != null && openAt <= state.rank, ws, meets: ws.every(w => w.lv >= w.want) };
   });
   // DPS目安が同じなら、複数サイトに載っている構成 → 強化の少ない構成の順
-  items.sort((a, b) => (b.now - a.now) || (a.now ? (Math.round(b.dps) - Math.round(a.dps)) || (b.b.sourceCount - a.b.sourceCount) || (a.cost - b.cost)
+  items.sort((a, b) => (b.now - a.now) || (a.now ? (b.meets - a.meets) || (Math.round(b.dps) - Math.round(a.dps)) || (b.b.sourceCount - a.b.sourceCount) || (a.cost - b.cost)
     : (a.openAt || 99) - (b.openAt || 99)));
   const nNow = items.filter(x => x.now).length;
   $('#dbCount').textContent = String(nNow);
-  hint.textContent = `今のランクで作れるのは${nNow}件。防具をレア${cap}まで強化したときのDPS目安が高い順です。`;
+  const hasWants = items.some(x => x.ws.length);
+  hint.textContent = `今のランクで作れるのは${nNow}件。防具をレア${cap}まで強化したときのDPS目安が高い順です。` + (hasWants ? '入れたいスキルを満たす構成を先に並べています。' : '');
   const SHOW = 3;
   let more = null;
   const avail = new Set(availableSeries());
@@ -437,17 +580,21 @@ function renderBuilds(rows) {
           r.skills && r.skills.length ? el('p', { text: '掲載スキル：' + r.skills.map(k => `${k.skill}${k.lv ?? ''}`).join('・') }) : null,
           r.comment ? el('p', { text: r.comment }) : null,
           r.url ? el('p', {}, el('a', { href: r.url, target: '_blank', rel: 'noopener', text: '出典ページを開く' })) : null))));
-    (more || box).append(el('li', { class: 'build' + (x.now ? '' : ' future') }, head, rowsBox, skills, gapLine, det));
+    const wantLine = x.now && x.ws.length ? (x.meets ? el('p', { class: 'note', text: '入れたいスキルを満たしています。' })
+      : el('p', { class: 'note need', text: '入れたいスキルに届かない：' + x.ws.filter(w => w.lv < w.want).map(w => `${w.skill} ${w.lv}/${w.want}`).join('・') })) : null;
+    (more || box).append(el('li', { class: 'build' + (x.now ? '' : ' future') }, head, rowsBox, skills, wantLine, gapLine, det));
   });
 }
 
 function onWorkerMessage(e) {
   const msg = e.data;
+  if (msg.type === 'done') { jobBusy = false; pumpJobs(); return; }
   if (msg.reqId !== reqId) return;
+  if (msg.free) { if (msg.type === 'result') { cur.free = msg.best; renderWants(); } return; }
   if (msg.elem) { if (msg.type === 'result') onElemResult(msg); return; }
   if (msg.goal) { if (msg.type === 'result') { cur.goal = msg.best; renderGoal(); } return; }
   if (msg.type === 'builds') { renderBuilds(msg.rows); return; }
-  if (msg.type === 'result') { cur.armor = msg.best; cur.alts = msg.alts || []; renderResult(); renderMeter(); }
+  if (msg.type === 'result') { cur.armor = msg.best; cur.alts = msg.alts || []; renderResult(); renderMeter(); renderWants(); }
   if (msg.type === 'next') renderNext(msg.next);
   if (msg.type === 'compare') renderCompare(msg.rows);
 }
@@ -476,9 +623,10 @@ function animateNumber(target) {
   animFrame = requestAnimationFrame(step);
 }
 function renderMeter() {
-  if (!cur.armor) { cancelAnimationFrame(animFrame); shownDps = 0; $('#dpsNum').textContent = '―'; $('#calcLine').textContent = ''; return; }
+  if (!cur.armor) { cancelAnimationFrame(animFrame); shownDps = 0; $('#dpsNum').textContent = '―'; $('#calcLine').textContent = ''; $('#dpsSub').textContent = ''; return; }
   const dps = dpsOf(cur.weapon, cur.armor.score);
   animateNumber(dps);
+  $('#dpsSub').textContent = `武器 ${cur.weapon ? fmtInt(cur.weapon.power) : '―'} × スキル ${mult(cur.armor.score).toFixed(2)}倍`;
   $('#calcLine').textContent = `今の計算：武器 ${cur.weapon ? fmtInt(cur.weapon.power) : '―'} × スキル ×${mult(cur.armor.score).toFixed(2)} ＝ ${fmtInt(dps)}${state.target === 'yuko' ? '（融光種相手）' : ''}`;
   renderGoal();
 }
@@ -498,7 +646,7 @@ function conflictText(p) {
 }
 function gearRow(part, name, side, need, body) {
   return el('details', { class: 'row' },
-    el('summary', {}, el('span', { class: 'rowPart', text: part }), el('span', { class: 'rowMain', text: name }), el('span', { class: 'rowSide' + (need ? ' need' : ''), text: side })),
+    el('summary', {}, plate(part), el('span', { class: 'rowMain', text: name }), el('span', { class: 'rowSide' + (need ? ' need' : ''), text: side })),
     el('div', { class: 'rowBody' }, ...body));
 }
 // 戻り値：強化が要る行の数
@@ -547,14 +695,16 @@ function renderResult() {
     for (const box of [tot, alts]) box.append(el('p', { class: 'note', text: '―' }));
     return;
   }
-  if (nNeed) hint.append('強化するのは', el('span', { class: 'need', text: `オレンジの${nNeed}か所` }), 'だけ。行を押すとスキルが出ます。');
+  if (nNeed) hint.append('強化するのは', el('span', { class: 'need', text: `朱色の${nNeed}か所` }), 'だけ。行を押すとスキルが出ます。');
   else hint.textContent = '強化なしで、作ったまま使えます。行を押すとスキルが出ます。';
-  const shown = b.totals.filter(t => t.value > 0.3);
+  const wanted = wantsFor(currentChar());
+  const shown = b.totals.filter(t => t.value > 0.3 || (t.skill in wanted));
   for (const t of shown) {
     const info = DATA.skills.skills.find(s => s.name === t.skill);
     const eff = info && info.levels && info.levels[t.lv - 1] ? info.levels[t.lv - 1].effect : '';
     tot.append(el('details', { class: 'row two' },
-      el('summary', {}, el('span', { class: 'rowMain' }, `${t.skill} `, el('b', { text: `Lv${t.lv}` })), el('span', { class: 'rowSide', text: fmtGain(t.value) })),
+      el('summary', {}, el('span', { class: 'rowMain skillName' }, t.skill, el('span', { class: 'pips-wrap' }, pips(t.lv, Math.min(8, t.max)), el('b', { class: 'lv', text: `Lv${t.lv}` }))),
+        el('span', { class: 'rowSide', text: t.value > 0.05 ? fmtGain(t.value) : '指定' })),
       el('div', { class: 'rowBody' }, eff ? el('p', { text: eff }) : null, el('p', { text: t.lv >= t.max ? 'これが最大Lv。' : `最大はLv${t.max}。` }))));
   }
   if (!shown.length) tot.append(el('p', { class: 'note', text: 'DPSに効くスキルが付く防具がまだありません。' }));

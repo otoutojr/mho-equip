@@ -100,7 +100,8 @@ def apex_weapons(raw_dir):
     """鋭精武器（シーズン0。ルガ・エアルダの鋭精チャレンジの素材で作る）。
     出典: Game8 の各武器ページ（840821〜840828、2026-11-07 更新）。8武器種とも
       レア9 攻撃452・属性226 / レア10 549・274 / レア11 656・328
-    作るときに火・水・雷・氷・龍から属性を選ぶ（作った後は変えられない）。生産は 重光の玉×1＋輝光の結晶×12。
+    作るときに火・水・雷・氷・龍から属性を選ぶ。生産は 重光の玉×1＋輝光の結晶×12。
+    分解すると重光の玉と輝光の結晶が戻り、別の武器種・属性で作り直せる（覚醒素材の光彩の原晶は戻らない。Game8 814949、11-10更新）。
     重光の玉は鋭精チャレンジ「普通」「鋭精」の初回クリアで1個ずつなので、シーズン0で作れるのは今のところ2本まで。
     極意: 双剣以外は「融光種モンスターへのダメージ+8%」（S0限定）。双剣は融光種相手に連撃で会心率が最大+20%。
     覚醒の表はレア14まであるが、数値が載っているのはレア11まで。
@@ -122,10 +123,41 @@ def apex_weapons(raw_dir):
                 'monsters': ['ルガ・エアルダ'], 'guild': False, 'yuko': False, 'derived': False,
                 'apex': True, 'yukoBonus': 0.0 if typ == '双剣' else 0.08, 'minRank': 40,
                 'effect': a.get('effect'), 'material': a.get('material'),
-                'note': '鋭精武器（シーズン0）。作るときに属性を選ぶ（後から変更不可）。重光の玉が初回クリア報酬だけなので今は2本まで',
+                'note': '鋭精武器（シーズン0）。作るときに属性を選ぶ。分解すれば別の武器種・属性で作り直せる（覚醒素材は戻らない）。重光の玉が初回クリア報酬だけなので今は2本まで',
                 'sourceUrl': f"https://game8.jp/mhoutlanders/{a['id']}",
             })
     return out
+
+
+def game8_extra(out, raw_dir):
+    """Game8 の武器ページで後から確認した分（weapons_g8_extra.json）。
+    new: ほかのサイトにまだ無い武器。属性値が空欄のページは 攻撃力÷2 で補って est を付ける（Game8 のほかの武器はどれも属性≒攻撃÷2）
+    confirm: 推定で入れていたレアの実数値"""
+    p = raw_dir / 'weapons_g8_extra.json'
+    if not p.exists():
+        return 0, 0
+    d = json.loads(p.read_text(encoding='utf-8'))
+    have = {w['name'] for w in out}
+    n_new = n_conf = 0
+    for w in d.get('new', []):
+        if w['name'] in have:
+            continue
+        stats = {}
+        for r, st in w['stats'].items():
+            e = st.get('element')
+            stats[int(r)] = {'attack': st['attack'], 'element': e if e is not None else round(st['attack'] / 2), 'affinity': 0, 'src': 'Game8'}
+            if e is None:
+                stats[int(r)].update({'est': True, 'src': 'Game8（属性値は空欄のため 攻撃÷2 で推定）'})
+        out.append({'name': w['name'], 'type': w['type'], 'element': w['element'], 'baseRarity': w['baseRarity'], 'maxRarity': max(stats),
+                    'stats': stats, 'affinity': 0, 'monsters': w.get('monsters') or [], 'guild': False, 'yuko': True, 'derived': False,
+                    'derivesFrom': None, 'sourceUrl': w.get('sourceUrl')})
+        n_new += 1
+    for c in d.get('confirm', []):
+        for w in out:
+            if w['name'] == c['name'] and c['rarity'] in w['stats']:
+                w['stats'][c['rarity']] = {'attack': c['attack'], 'element': c['element'], 'affinity': w['stats'][c['rarity']].get('affinity') or 0, 'src': c['src']}
+                n_conf += 1
+    return n_new, n_conf
 
 
 def main():
@@ -133,6 +165,7 @@ def main():
     if full_p.exists():
         out = from_full(json.loads(full_p.read_text(encoding='utf-8')))
         print('レア9止まり → レア10まで伸ばした武器', extend_to_10(out))
+        print('Game8 で追加・確認', game8_extra(out, RAW.parent))
         apex = apex_weapons(RAW.parent)
         print('鋭精武器', len(apex))
         out += apex
