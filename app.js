@@ -1,6 +1,6 @@
 /* 融光工房 ― UI */
 'use strict';
-const APP_VERSION = '2026.11.11-3';
+const APP_VERSION = '2026.11.11-4';
 const STORE_KEY = 'mho-equip:v1';
 const PART_JP = { head: '頭', body: '胴', arm: '腕', waist: '腰', leg: '脚' };
 const $ = (sel) => document.querySelector(sel);
@@ -49,7 +49,7 @@ let reqId = 0;
 const cur = { armor: null, goal: null, weapon: null, goalWeapon: null, elemDps: {}, free: null };
 
 function loadState() {
-  const def = { char: 'hero', heroWeapon: 'hbg', heroElement: '火', rank: 1, target: 'normal', view: 'calc', seen: false, wants: {} };
+  const def = { char: 'hero', heroWeapon: 'hbg', heroElement: '火', rank: 1, target: 'normal', view: 'calc', seen: false, wants: {}, fix: { weapons: {}, armor: {}, rankCap: null } };
   let had = false;
   try { had = !!localStorage.getItem(STORE_KEY); } catch {}
   let st;
@@ -73,6 +73,8 @@ async function loadData() {
 function init() {
   loadData().then((d) => {
     DATA = d;
+    BASE = { weapons: d.weapons ? JSON.stringify(d.weapons) : null, armor: JSON.stringify(d.armor) };
+    applyFixes(false);
     $('#dataDate').textContent = `データ更新日 ${d.armor.updated || ''}`;
     if (!currentChar()) { state.char = 'hero'; state.heroWeapon = 'hbg'; }
     worker = new Worker('solver.js?v=' + APP_VERSION);
@@ -83,6 +85,7 @@ function init() {
     bindControls();
     renderPriorities();
     renderWants();
+    renderFixList();
     solve();
   }).catch((err) => {
     $('#resultHint').textContent = `データを読み込めませんでした（${err.message}）。通信状態を確認して開き直してください。`;
@@ -171,15 +174,17 @@ function setWant(name, lv) {
   clearTimeout(wantTimer); wantTimer = setTimeout(() => { cur.elemDps = {}; solve(); }, 250);
 }
 // 防具かセットスキルで付けられるスキルの名前
-const armorSkillNames = (() => { let set = null; return () => {
-  if (!set) {
-    set = new Set();
+let armorSkillSet = null;
+function armorSkillNames() {
+  if (!armorSkillSet) {
+    const set = new Set();
     for (const sr of DATA.armor.series) for (const p of sr.pieces) for (const k of p.skills) set.add(k.name);
     for (const st of (DATA.armor.sets || [])) for (const b of (st.bonuses || [])) if (b.skill) set.add(b.skill);
     for (const n of [...set]) if (n.startsWith('冒険団の力')) set.delete(n);
+    armorSkillSet = set;
   }
-  return set;
-}; })();
+  return armorSkillSet;
+}
 const WANT_CATS = ['効く順', '火力', '会心', '弾・矢', '生存', 'その他'];
 function renderWants() {
   const c = currentChar();
@@ -279,10 +284,193 @@ const gainPct = (w) => (mult(w) - 1) * 100;
 const fmtGain = (w) => { const v = gainPct(w); return (v >= 0 ? '+' : '') + (v < 10 ? v.toFixed(1) : Math.round(v)) + '%'; };
 const fmtPct = (v) => (v >= 0 ? '+' : '') + (Math.abs(v) < 10 ? v.toFixed(1) : Math.round(v)) + '%';
 
+/* ---------- 自分で直した数値（この端末に保存。攻略サイトより先にゲーム内で分かった数値を入れる） ---------- */
+// state.fix = { weapons: {武器名: {レア: {attack, element}}}, armor: {防具id: {レア: {スキル名: Lv}}}, rankCap: [[ランク, レア], …] | null }
+let BASE = null; // 配信データそのまま（直す前）
+function fixes() {
+  const f = (state.fix = state.fix || {});
+  f.weapons = f.weapons || {}; f.armor = f.armor || {}; if (!('rankCap' in f)) f.rankCap = null;
+  return f;
+}
+function applyFixes(reinit = true) {
+  const fx = fixes();
+  DATA.weapons = BASE.weapons ? JSON.parse(BASE.weapons) : null;
+  DATA.armor = JSON.parse(BASE.armor);
+  armorSkillSet = null;
+  for (const [name, byR] of Object.entries(fx.weapons)) {
+    const w = DATA.weapons && DATA.weapons.weapons.find(x => x.name === name);
+    if (!w) continue;
+    for (const [r, v] of Object.entries(byR)) {
+      const prev = weaponStatsAt(w, +r) || {};
+      w.stats[r] = { attack: v.attack, element: v.element, affinity: prev.affinity ?? w.affinity ?? 0, src: '自分で入力', user: true };
+      w.maxRarity = Math.max(w.maxRarity || 0, +r);
+    }
+  }
+  const pieces = new Map(DATA.armor.series.flatMap(sr => sr.pieces).map(p => [p.id, p]));
+  for (const [id, byR] of Object.entries(fx.armor)) {
+    const p = pieces.get(id);
+    if (!p) continue;
+    for (const [r, lvs] of Object.entries(byR)) {
+      for (const [name, lv] of Object.entries(lvs)) {
+        p.skills = p.skills.filter(k => !(k.name === name && (k.rarity ?? p.baseRarity) === +r));
+        p.skills.push({ name, lv, rarity: +r, user: true });
+      }
+      p.docMax = Math.max(p.docMax || 0, +r);
+      p.user = true;
+    }
+  }
+  if (reinit && worker) worker.postMessage({ type: 'init', armor: DATA.armor, skills: DATA.skills });
+}
+function saveFixes() { saveState(); applyFixes(); renderFixList(); cur.elemDps = {}; renderRank(false); solve(); }
+function capTable() { return (state.fix && state.fix.rankCap) || DATA.monsters.rankCap || []; }
+// 「ランクRではレアCまで」と分かったときに、表全体をそれに合わせる
+function setCapFix(rank, cap) {
+  const at = {};
+  for (const [r, c] of capTable()) at[c] = r;
+  for (let c = 3; c <= 12; c++) {
+    if (c <= cap) { if (at[c] == null || at[c] > rank) at[c] = rank; }
+    else if (at[c] != null && at[c] <= rank) at[c] = rank + 1;
+  }
+  fixes().rankCap = Object.keys(at).map(Number).sort((a, b) => a - b).map(c => [at[c], c]);
+}
+const stepBtn = (text, label, onclick) => el('button', { type: 'button', class: 'step', 'aria-label': label, onclick, text });
+function fixToggle(make) {
+  const wrap = el('div', { class: 'fixWrap' });
+  const btn = el('button', { type: 'button', class: 'btn small', 'aria-expanded': 'false', text: '数値を直す' });
+  btn.addEventListener('click', () => {
+    const open = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', String(!open)); btn.textContent = open ? '数値を直す' : '閉じる';
+    if (open) wrap.lastChild.remove(); else wrap.append(make());
+  });
+  wrap.append(btn);
+  return wrap;
+}
+function rarityStepper(get, set, lo, hi) {
+  const val = el('span', { class: 'fixVal', text: `レア${get()}` });
+  const go = (d) => { const v = Math.min(hi, Math.max(lo, get() + d)); if (v !== get()) { set(v); val.textContent = `レア${v}`; } };
+  return el('div', { class: 'fixLine' }, el('span', { class: 'fixLbl', text: '直すレア' }), stepBtn('−', 'レアを1下げる', () => go(-1)), val, stepBtn('＋', 'レアを1上げる', () => go(1)));
+}
+// 武器：レアごとの攻撃力・属性値
+function weaponEditor(name0, r0) {
+  const c = currentChar();
+  const list = DATA.weapons.weapons.filter(w => w.type === charWeaponType(c) && w.element === charElement(c)).sort((a, b) => a.name.localeCompare(b.name, 'ja'));
+  let w = list.find(x => x.name === name0) || list[0], r = r0;
+  const box = el('div', { class: 'fix' });
+  const draw = () => {
+    box.innerHTML = '';
+    const lo = w.baseRarity || 1;
+    r = Math.min(12, Math.max(lo, r));
+    const st = weaponStatsAt(w, r);
+    const exact = st && w.stats[r] === st;
+    const sel = el('select', { 'aria-label': '直す武器' }, ...list.map(x => { const o = el('option', { value: x.name, text: x.name }); if (x === w) o.selected = true; return o; }));
+    sel.addEventListener('change', () => { w = list.find(x => x.name === sel.value); r = Math.min(w.maxRarity || 12, rankCap()); draw(); });
+    const atk = el('input', { type: 'number', inputmode: 'numeric', min: '1', max: '9999', value: exact ? st.attack : '', 'aria-label': '攻撃力' });
+    const elv = el('input', { type: 'number', inputmode: 'numeric', min: '0', max: '9999', value: exact ? (st.element || 0) : '', 'aria-label': '属性値' });
+    const info = exact ? `今のデータ：攻撃${st.attack}・属性${st.element || 0}${st.user ? '（自分で入力）' : st.est ? '（推定）' : ''}` : `レア${r}の数値はまだありません。`;
+    const msg = el('p', { class: 'note need' });
+    const save = el('button', { type: 'button', class: 'btn solid small', text: '保存', onclick: () => {
+      const a = Math.round(+atk.value), e = Math.round(+elv.value);
+      if (!(a > 0) || !(e >= 0) || elv.value === '') { msg.textContent = '攻撃力と属性値を数字で入れてください（属性が無い武器は0）。'; return; }
+      const fx = fixes(); (fx.weapons[w.name] = fx.weapons[w.name] || {})[r] = { attack: a, element: e };
+      saveFixes();
+    } });
+    const undo = (fixes().weapons[w.name] || {})[r] ? el('button', { type: 'button', class: 'btn small', text: 'このレアの修正を消す', onclick: () => {
+      const fx = fixes(); delete fx.weapons[w.name][r]; if (!Object.keys(fx.weapons[w.name]).length) delete fx.weapons[w.name]; saveFixes();
+    } }) : null;
+    box.append(sel, rarityStepper(() => r, (v) => { r = v; draw(); }, lo, 12),
+      el('div', { class: 'fixLine' }, el('label', { class: 'field' }, el('span', { text: '攻撃力' }), atk), el('label', { class: 'field' }, el('span', { text: '属性値' }), elv)),
+      el('p', { class: 'note', text: info }), msg, el('div', { class: 'fixBtns' }, save, undo));
+  };
+  draw();
+  return box;
+}
+// 防具：そのレアで付いているスキルとLv
+function armorEditor(part, id0, r0) {
+  const all = DATA.armor.series.flatMap(sr => sr.pieces).filter(p => p.part === part).sort((a, b) => a.name.localeCompare(b.name, 'ja'));
+  let p = all.find(x => x.id === id0) || all[0], r = r0, lv = null;
+  // レアrの時点のLv（r以下で一番上のレアの値を採る。solver と同じ読み方）
+  const levelsAt = () => {
+    const m = new Map();
+    for (const k of p.skills) { const kr = k.rarity ?? p.baseRarity; if (kr > r) continue; const cur0 = m.get(k.name); if (!cur0 || kr > cur0.r || (kr === cur0.r && k.lv > cur0.lv)) m.set(k.name, { lv: k.lv, r: kr }); }
+    return new Map([...m].map(([n, v]) => [n, v.lv]));
+  };
+  const box = el('div', { class: 'fix' });
+  const draw = () => {
+    box.innerHTML = '';
+    r = Math.min(12, Math.max(p.baseRarity, r));
+    if (!lv) lv = levelsAt();
+    const sel = el('select', { 'aria-label': '直す防具' }, ...all.map(x => { const o = el('option', { value: x.id, text: x.name }); if (x === p) o.selected = true; return o; }));
+    sel.addEventListener('change', () => { p = all.find(x => x.id === sel.value); r = Math.max(p.baseRarity, Math.min(rankCap(), 12)); lv = null; draw(); });
+    const rows = el('div', { class: 'fixSkills' });
+    for (const [name, v] of lv) {
+      const max = skillMaxLv(name);
+      rows.append(el('div', { class: 'fixLine' }, el('span', { class: 'fixLbl', text: name }),
+        stepBtn('−', `${name}を1下げる`, () => { lv.set(name, Math.max(0, v - 1)); draw(); }),
+        el('span', { class: 'fixVal', text: v ? `Lv${v}` : '無し' }),
+        stepBtn('＋', `${name}を1上げる`, () => { lv.set(name, Math.min(max, v + 1)); draw(); })));
+    }
+    const add = el('select', { 'aria-label': 'スキルを追加' }, el('option', { value: '', text: '＋ スキルを追加' }),
+      ...[...armorSkillNames()].filter(n => !lv.has(n)).sort((a, b) => a.localeCompare(b, 'ja')).map(n => el('option', { value: n, text: n })));
+    add.addEventListener('change', () => { if (add.value) { lv.set(add.value, 1); draw(); } });
+    const save = el('button', { type: 'button', class: 'btn solid small', text: '保存', onclick: () => {
+      const fx = fixes(); (fx.armor[p.id] = fx.armor[p.id] || {})[r] = Object.fromEntries(lv);
+      saveFixes();
+    } });
+    const undo = (fixes().armor[p.id] || {})[r] ? el('button', { type: 'button', class: 'btn small', text: 'このレアの修正を消す', onclick: () => {
+      const fx = fixes(); delete fx.armor[p.id][r]; if (!Object.keys(fx.armor[p.id]).length) delete fx.armor[p.id]; saveFixes();
+    } }) : null;
+    box.append(sel, rarityStepper(() => r, (v) => { r = v; lv = null; draw(); }, p.baseRarity, 12),
+      el('p', { class: 'note', text: `レア${r}まで強化したときに付いているスキルを、ゲームの表示どおりに合わせてください。` }), rows, add, el('div', { class: 'fixBtns' }, save, undo));
+  };
+  draw();
+  return box;
+}
+// 強化上限（選択欄のランクの下）
+let capFixOpen = false, capFixVal = null;
+function renderCapFix() {
+  const box = $('#capFix'); if (!box) return;
+  box.innerHTML = '';
+  const fixed = !!(state.fix && state.fix.rankCap);
+  if (!capFixOpen) {
+    box.append(el('button', { type: 'button', class: 'linkBtn', text: 'ゲームと違うときは直す', onclick: () => { capFixOpen = true; capFixVal = rankCap(); renderCapFix(); } }));
+    return;
+  }
+  if (capFixVal == null) capFixVal = rankCap();
+  const set = (v) => { capFixVal = Math.min(12, Math.max(2, v)); renderCapFix(); };
+  box.append(el('div', { class: 'fix' },
+    el('div', { class: 'fixLine' }, el('span', { class: 'fixLbl', text: `ランク${state.rank}の強化上限` }), stepBtn('−', '上限を1下げる', () => set(capFixVal - 1)),
+      el('span', { class: 'fixVal', text: `レア${capFixVal}` }), stepBtn('＋', '上限を1上げる', () => set(capFixVal + 1))),
+    el('div', { class: 'fixBtns' },
+      el('button', { type: 'button', class: 'btn solid small', text: '保存', onclick: () => { setCapFix(state.rank, capFixVal); capFixOpen = false; saveFixes(); } }),
+      fixed ? el('button', { type: 'button', class: 'btn small', text: '元の表に戻す', onclick: () => { fixes().rankCap = null; capFixOpen = false; saveFixes(); } }) : null,
+      el('button', { type: 'button', class: 'btn small', text: 'やめる', onclick: () => { capFixOpen = false; renderCapFix(); } }))));
+}
+// 直した数値の一覧（下の折りたたみ）
+function renderFixList() {
+  const box = $('#fixList'); box.innerHTML = '';
+  const fx = fixes();
+  const rows = [];
+  const del = (label, fn) => el('button', { type: 'button', class: 'step', 'aria-label': `${label}の修正を消す`, text: '×', onclick: () => { fn(); saveFixes(); } });
+  for (const [name, byR] of Object.entries(fx.weapons)) for (const [r, v] of Object.entries(byR)) {
+    rows.push(el('div', { class: 'fixItem' }, el('span', { class: 'rowMain', text: `${name}　レア${r}：攻撃${v.attack}・属性${v.element}` }),
+      del(name, () => { delete fx.weapons[name][r]; if (!Object.keys(fx.weapons[name]).length) delete fx.weapons[name]; })));
+  }
+  const pname = new Map(JSON.parse(BASE.armor).series.flatMap(sr => sr.pieces).map(p => [p.id, p.name]));
+  for (const [id, byR] of Object.entries(fx.armor)) for (const [r, lvs] of Object.entries(byR)) {
+    rows.push(el('div', { class: 'fixItem' }, el('span', { class: 'rowMain', text: `${pname.get(id) || id}　レア${r}：${Object.entries(lvs).map(([n, l]) => (l ? `${n}${l}` : `${n}無し`)).join('・')}` }),
+      del(pname.get(id) || id, () => { delete fx.armor[id][r]; if (!Object.keys(fx.armor[id]).length) delete fx.armor[id]; })));
+  }
+  if (fx.rankCap) rows.push(el('div', { class: 'fixItem' }, el('span', { class: 'rowMain', text: '強化上限：' + fx.rankCap.map(([r, c]) => `ランク${r}→レア${c}`).join('、') }), del('強化上限', () => { fx.rankCap = null; })));
+  $('#fixCount').textContent = rows.length ? ` ${rows.length}` : '';
+  if (!rows.length) { box.append(el('p', { class: 'note', text: 'まだありません。装備の行を開いて「数値を直す」を押すと、ゲーム内の数値を入れられます。入れた数値はこの端末にだけ保存されます。' })); $('#fixTools').hidden = true; return; }
+  box.append(...rows);
+  $('#fixTools').hidden = false;
+}
+
 /* ---------- ランクで決まること ---------- */
 function rankCap(rank = state.rank) {
   let cap = 2;
-  for (const [r, c] of (DATA.monsters.rankCap || [])) if (rank >= r) cap = c;
+  for (const [r, c] of capTable()) if (rank >= r) cap = c;
   return cap;
 }
 function orbTierFor(cap) {
@@ -303,7 +491,7 @@ function availableSeries(rank = state.rank) {
 function milestones() {
   const now = new Set(availableSeries());
   const ranks = new Set();
-  for (const [r] of (DATA.monsters.rankCap || [])) if (r > state.rank) ranks.add(r);
+  for (const [r] of capTable()) if (r > state.rank) ranks.add(r);
   for (const m of DATA.monsters.monsters) if (m.unlockRank != null && m.unlockRank > state.rank && m.armorSeries.length) ranks.add(m.unlockRank);
   return [...ranks].sort((a, b) => a - b).slice(0, 7).map((r) => {
     const cap = rankCap(r);
@@ -356,8 +544,9 @@ function renderRank(syncInput) {
   if (syncInput) r.value = state.rank;
   $('#rankVal').textContent = state.rank;
   r.style.setProperty('--p', `${((state.rank - 1) / 59) * 100}%`);
-  const step = (DATA.monsters.rankCap || []).find(([rr]) => rr > state.rank);
-  $('#capNote').textContent = `レア${rankCap()}まで強化できる` + (step ? `。次はランク${step[0]}でレア${step[1]}` : '');
+  const step = capTable().find(([rr]) => rr > state.rank);
+  $('#capNote').textContent = `レア${rankCap()}まで強化できる` + (step ? `。次はランク${step[0]}でレア${step[1]}` : '') + (state.fix && state.fix.rankCap ? '（自分で直した値）' : '');
+  renderCapFix();
   renderWho();
 }
 function renderTarget() {
@@ -374,6 +563,7 @@ function bindControls() {
   let t = null;
   const apply = (v, live) => {
     state.rank = Math.min(60, Math.max(1, v));
+    capFixVal = null;
     renderRank(!live);
     clearTimeout(t); t = setTimeout(() => { saveState(); cur.elemDps = {}; solve(); }, live ? 280 : 0);
   };
@@ -388,12 +578,24 @@ function bindControls() {
   $('#tabDb').addEventListener('click', () => { setView('db'); saveState(); });
   $('#resetBtn').addEventListener('click', () => {
     if (!confirm('キャラ・ランクの選択を初期状態に戻します。いい？')) return;
+    const keep = state.fix; // 自分で直した数値は残す
     for (const k of Object.keys(state)) delete state[k];
-    Object.assign(state, { char: 'hero', heroWeapon: 'hbg', heroElement: '火', rank: 1, target: 'normal', view: 'calc', seen: false, wants: {} });
+    Object.assign(state, { char: 'hero', heroWeapon: 'hbg', heroElement: '火', rank: 1, target: 'normal', view: 'calc', seen: false, wants: {}, fix: keep });
     wantOpen = false;
     saveState(); cur.elemDps = {};
     renderRank(true); renderTarget(); renderPicker(); setView('calc'); renderPriorities(); solve();
     setPicker(true); window.scrollTo(0, 0);
+  });
+  $('#fixCopy').addEventListener('click', async () => {
+    const text = JSON.stringify({ app: 'mho-equip', version: APP_VERSION, fix: fixes() });
+    const b = $('#fixCopy');
+    try { await navigator.clipboard.writeText(text); b.textContent = 'コピーしました'; }
+    catch { const ta = $('#fixText'); ta.hidden = false; ta.value = text; ta.focus(); ta.select(); b.textContent = '下の文字を選んでコピー'; }
+    setTimeout(() => { b.textContent = '直した内容をコピー'; }, 2500);
+  });
+  $('#fixClear').addEventListener('click', () => {
+    if (!confirm('自分で直した数値を全部消して、配信データに戻します。いい？')) return;
+    state.fix = { weapons: {}, armor: {}, rankCap: null }; saveFixes();
   });
   renderTarget();
   setView(state.view);
@@ -659,13 +861,14 @@ function renderGear() {
     const { w, r, st } = wb;
     const need = r > (w.baseRarity || 1); if (need) nNeed++;
     const aff = st.affinity ?? w.affinity;
-    const body = [el('p', { text: `${w.type}　攻撃${st.attack}・${w.element}${st.element || '―'}${aff ? `・会心${aff}%` : ''}${st.est ? '（数値は推定）' : ''}` })];
+    const body = [el('p', { text: `${w.type}　攻撃${st.attack}・${w.element}${st.element || '―'}${aff ? `・会心${aff}%` : ''}${st.user ? '（自分で入力した数値）' : st.est ? '（数値は推定）' : ''}` })];
     if (w.guild) body.push(el('p', { text: 'このランクで作れるほかの武器が無いので冒険団武器。モンスター武器が作れるようになったら乗り換え推奨。' }));
     if (w.apex) {
       const alt = weaponCands(c).find(x => !x.w.apex && !x.w.guild);
-      body.push(el('p', { text: `鋭精武器。属性は作るときに選び、シーズン0で作れるのは今のところ2本まで。${w.effect ? w.effect.replace(/【\s*|\s*】/g, '') : ''}` }));
+      body.push(el('p', { text: `鋭精武器。属性は作るときに選ぶ（分解すれば作り直せる）。シーズン0で作れるのは今のところ2本まで。${w.effect ? w.effect.replace(/【\s*|\s*】/g, '') : ''}` }));
       if (alt) body.push(el('p', { text: `この属性で作っていなければ：${alt.w.name}（レア${alt.r}・実効${fmtInt(alt.power)}）` }));
     }
+    body.push(fixToggle(() => weaponEditor(w.name, r)));
     box.append(gearRow('武器', w.name, rarText(w.baseRarity || 1, r), need, body));
   } else if (DATA.weapons) {
     box.append(el('p', { class: 'note', text: `このランクで作れる${charElement(c)}属性の${charWeaponType(c)}が見つかりません。` }));
@@ -677,8 +880,10 @@ function renderGear() {
     const need = p.rarity > p.baseRarity; if (need) nNeed++;
     const body = [el('p', { text: p.skills.map(k => `${k.name}${k.lv}`).join('・') || 'スキルなし' })];
     // スキルはレアp.rarityで揃う。それより上は、攻略サイトにスキルが載っているレア（docMax）までは増えないと分かっている
-    if (capNow > p.rarity) body.push(el('p', { text: p.docMax < capNow ? `レア${p.docMax + 1}以降で付くスキルは、どの攻略サイトにもまだ載っていません。` : 'これ以上強化しても、DPSに効くスキルは増えません。' }));
+    if (capNow > p.rarity) body.push(el('p', { text: p.docMax < capNow ? `レア${p.docMax + 1}以降で付くスキルは、どの攻略サイトにもまだ載っていません。ゲーム内で分かったら下の「数値を直す」で入れられます。` : 'これ以上強化しても、DPSに効くスキルは増えません。' }));
+    if ((fixes().armor[p.id])) body.push(el('p', { text: 'この防具は、自分で直した数値を使っています。' }));
     const ct = conflictText(p); if (ct) body.push(el('p', { text: ct }));
+    body.push(fixToggle(() => armorEditor(p.part, p.id, Math.max(p.rarity, Math.min(capNow, 12)))));
     box.append(gearRow(PART_JP[p.part], p.name, rarText(p.baseRarity, p.rarity), need, body));
   }
   return nNeed;

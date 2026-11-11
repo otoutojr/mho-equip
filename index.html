@@ -44,6 +44,7 @@
       <span class="rankVal" id="rankVal">1</span>
     </div>
     <p class="note" id="capNote"></p>
+    <div id="capFix"></div>
     <button type="button" class="btn solid" id="pickDone">決定</button>
   </section>
 
@@ -126,12 +127,27 @@
         <div class="prose" id="sourceList"></div>
       </div>
     </details>
+    <details class="fold" id="foldFix">
+      <summary><span>自分で直した数値<span id="fixCount"></span></span></summary>
+      <div class="foldBody">
+        <div class="rows" id="fixList"></div>
+        <div id="fixTools" hidden>
+          <p class="note">この端末にだけ保存されています。コピーして Claude に渡すと、配信データに反映できます。</p>
+          <div class="fixBtns">
+            <button type="button" class="btn small" id="fixCopy">直した内容をコピー</button>
+            <button type="button" class="btn small" id="fixClear">全部消す</button>
+          </div>
+          <textarea id="fixText" hidden readonly rows="4" aria-label="直した内容"></textarea>
+        </div>
+      </div>
+    </details>
     <details class="fold" id="foldHelp">
       <summary>計算の前提とデータの出どころ</summary>
       <div class="foldBody prose">
         <p id="calcLine"></p>
         <p>DPS目安 ＝ 武器の実効攻撃力 × 防具スキルの火力倍率。同じキャラ・武器種どうしで装備を比べるための数字で、キャラ同士の強さ比べには使えません。</p>
         <p>「入れたいスキル」を指定すると、そのLv以上を満たす組み合わせの中でDPS目安が一番高い装備を出します。今のランクで届かないときは、一番近い組み合わせを出します。</p>
+        <p>攻略サイトより先にゲーム内で分かった数値は、装備の行を開いて「数値を直す」から入れられます（武器のレアごとの攻撃力・属性値、防具のレアごとのスキル、冒険ランクごとの強化上限）。入れた数値はこの端末にだけ保存され、計算にすぐ反映されます。</p>
         <p>「攻略サイトの構成」は、Game8・GameWith・アルテマ・Gamerch・gamewith.ai・game8.co（英語版）のおすすめ装備を集めたもの（約340構成）。防具5部位が同じものは1つにまとめ、別の会社のサイトにも載っている構成に「2サイト一致」を付けています。DPS目安は、武器をそろえて防具だけで比べています。</p>
         <ul>
           <li>武器の実効攻撃力＝攻撃力×物理の割合×会心補正＋属性値×属性の割合（属性の割合はキャラごとに3〜4割と仮定）</li>

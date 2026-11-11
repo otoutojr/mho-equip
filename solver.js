@@ -95,7 +95,7 @@ function skillsAtRarity(piece, r) {
     const cur = best.get(k.s);
     if (!cur || k.rarity > cur.rarity || (k.rarity === cur.rarity && k.lv > cur.lv)) best.set(k.s, k);
   }
-  return [...best.values()].map(k => ({ s: k.s, name: k.name, lv: k.lv }));
+  return [...best.values()].filter(k => k.lv > 0).map(k => ({ s: k.s, name: k.name, lv: k.lv })); // Lv0 は「自分で直した数値」でスキルを外した印
 }
 
 function makeWeightTable(weights) {

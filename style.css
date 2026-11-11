@@ -168,7 +168,7 @@ input[type="range"]::-moz-range-thumb { width: 22px; height: 22px; border-radius
 .wantName .note { display: block; }
 .wantName .note.need { font-weight: 700; }
 .wantLv { display: flex; flex-direction: column; align-items: center; gap: 4px; min-width: 64px; }
-.step { width: 44px; height: 44px; border: 1px solid var(--rule); border-radius: 3px; background: var(--card); font-size: var(--f-t); line-height: 1; }
+.step { flex: none; width: 44px; height: 44px; color: var(--ink); border: 1px solid var(--rule); border-radius: 3px; background: var(--card); font-size: var(--f-t); line-height: 1; }
 .addBtn { display: flex; align-items: center; gap: 8px; width: calc(100% - 24px); min-height: 50px; font: 700 var(--f-m)/1 var(--serif); letter-spacing: .06em; text-align: left; }
 .addBtn::before { content: '＋'; font-weight: 400; }
 .addBtn[aria-expanded="true"]::before { content: '－'; }
@@ -177,6 +177,26 @@ input[type="range"]::-moz-range-thumb { width: 22px; height: 22px; border-radius
 #wantChoices { max-height: 330px; overflow-y: auto; overscroll-behavior: contain; border-top: 1px solid var(--rule); }
 #wantChoices .rowBtn { min-height: 46px; }
 #wantChoices .rowMain { font-size: var(--f-m); }
+
+/* 自分で数値を直す */
+.btn.small { min-height: 44px; font-size: var(--f-s); padding: 0 12px; }
+.btn.solid.small { font-size: var(--f-m); min-height: 44px; }
+.fixWrap { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; margin-top: 6px; }
+.row:not(.two) .fixWrap { margin-left: -38px; }
+.fix { align-self: stretch; display: flex; flex-direction: column; gap: 10px; padding: 12px; border: 1px solid var(--rule); border-radius: 3px; background: var(--paper); color: var(--ink); }
+.fix select, .fix input, #fixText { width: 100%; min-height: 44px; padding: 0 10px; border: 1px solid var(--muted); border-radius: 3px; background: var(--card); color: var(--ink); font: 400 16px/1.3 var(--sans); }
+#fixText { padding: 8px 10px; margin-top: 10px; }
+.fixLine { display: flex; align-items: center; gap: 8px; }
+.fixLbl { flex: 1; min-width: 0; font-size: var(--f-m); overflow-wrap: anywhere; }
+.fixVal { min-width: 56px; text-align: center; font: 700 var(--f-m)/1 var(--serif); font-variant-numeric: tabular-nums; }
+.field { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 4px; font-size: var(--f-s); color: var(--muted); }
+.fixSkills { display: flex; flex-direction: column; gap: 6px; }
+.fixBtns { display: flex; flex-wrap: wrap; gap: 8px; }
+.fixItem { display: grid; grid-template-columns: minmax(0, 1fr) 44px; align-items: center; gap: 8px; min-height: 56px; }
+.fixItem .rowMain { font-size: var(--f-m); }
+.linkBtn { min-height: 44px; font-size: var(--f-s); color: var(--muted); text-decoration: underline; text-underline-offset: 3px; }
+#capFix { display: flex; flex-direction: column; }
+#capFix .fix { background: var(--card); }
 
 /* 攻略サイトの構成 */
 #dbList { display: flex; flex-direction: column; gap: 24px; }
