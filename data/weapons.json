@@ -88,7 +88,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583919"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583919",
+   "g8Url": "https://game8.jp/mhoutlanders/838636"
   },
   {
    "name": "アカハネ冒険団大剣・水",
@@ -176,7 +177,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583918"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583918",
+   "g8Url": "https://game8.jp/mhoutlanders/838637"
   },
   {
    "name": "アカハネ冒険団大剣・氷",
@@ -264,7 +266,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583921"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583921",
+   "g8Url": "https://game8.jp/mhoutlanders/838831"
   },
   {
    "name": "アカハネ冒険団大剣・火",
@@ -352,7 +355,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583920"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583920",
+   "g8Url": "https://game8.jp/mhoutlanders/838830"
   },
   {
    "name": "アカハネ冒険団大剣・雷",
@@ -440,7 +444,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583922"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583922",
+   "g8Url": "https://game8.jp/mhoutlanders/838832"
   },
   {
    "name": "アカハネ冒険団大剣・龍",
@@ -528,14 +533,15 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583923"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583923",
+   "g8Url": "https://game8.jp/mhoutlanders/838833"
   },
   {
    "name": "アクアスラッシャー",
    "type": "大剣",
    "element": "水",
    "baseRarity": 2,
-   "maxRarity": 6,
+   "maxRarity": 10,
    "stats": {
     "2": {
      "attack": 54,
@@ -566,6 +572,30 @@
      "element": 103,
      "affinity": 0,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "7": {
+     "attack": 268,
+     "element": 134,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 339,
+     "element": 170,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 420,
+     "element": 210,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 510,
+     "element": 255,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -576,14 +606,15 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583986"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583986",
+   "g8Url": "https://game8.jp/mhoutlanders/838839"
   },
   {
    "name": "ギルオスブレイド",
    "type": "大剣",
    "element": "麻痺",
    "baseRarity": 2,
-   "maxRarity": 6,
+   "maxRarity": 10,
    "stats": {
     "2": {
      "attack": 64,
@@ -614,6 +645,30 @@
      "element": 124,
      "affinity": 4.8,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "7": {
+     "attack": 321,
+     "element": 161,
+     "affinity": 4.8,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 406,
+     "element": 203,
+     "affinity": 4.8,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 503,
+     "element": 252,
+     "affinity": 4.8,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 611,
+     "element": 306,
+     "affinity": 4.8,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 4.8,
@@ -624,14 +679,15 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583984"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583984",
+   "g8Url": "https://game8.jp/mhoutlanders/838838"
   },
   {
    "name": "サンダーブレイド",
    "type": "大剣",
    "element": "雷",
    "baseRarity": 5,
-   "maxRarity": 6,
+   "maxRarity": 10,
    "stats": {
     "5": {
      "attack": 157,
@@ -644,6 +700,30 @@
      "element": 105,
      "affinity": 0,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "7": {
+     "attack": 274,
+     "element": 137,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 346,
+     "element": 173,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 429,
+     "element": 215,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 521,
+     "element": 261,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -654,7 +734,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584033"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584033",
+   "g8Url": "https://game8.jp/mhoutlanders/838847"
   },
   {
    "name": "ジャグラスハッカー",
@@ -671,7 +752,7 @@
     },
     "10": {
      "attack": 510,
-     "element": 256,
+     "element": 255,
      "affinity": 0,
      "est": true,
      "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
@@ -692,13 +773,14 @@
    "type": "大剣",
    "element": "水",
    "baseRarity": 1,
-   "maxRarity": 6,
+   "maxRarity": 10,
    "stats": {
     "1": {
      "attack": 35,
-     "element": 0,
+     "element": 18,
      "affinity": 0,
-     "src": "gamewith.ai・gamewith.jp・game8.co"
+     "src": "Game8（2026-11-10）。属性値は空欄のため同じ武器のほかのレアの比で推定",
+     "est": true
     },
     "2": {
      "attack": 54,
@@ -729,6 +811,30 @@
      "element": 103,
      "affinity": 0,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "7": {
+     "attack": 268,
+     "element": 134,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 339,
+     "element": 170,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 420,
+     "element": 210,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 510,
+     "element": 255,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -739,20 +845,22 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/561697"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/561697",
+   "g8Url": "https://game8.jp/mhoutlanders/838834"
   },
   {
    "name": "ドラグロバスター",
    "type": "大剣",
    "element": "麻痺",
    "baseRarity": 2,
-   "maxRarity": 6,
+   "maxRarity": 10,
    "stats": {
     "2": {
      "attack": 70,
-     "element": 0,
+     "element": 35,
      "affinity": -4.8,
-     "src": "gamewith.ai・gamewith.jp・game8.co"
+     "src": "Game8（2026-11-10）。属性値は空欄のため同じ武器のほかのレアの比で推定",
+     "est": true
     },
     "3": {
      "attack": 101,
@@ -777,6 +885,30 @@
      "element": 135,
      "affinity": -4.2,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "7": {
+     "attack": 349,
+     "element": 175,
+     "affinity": -4.2,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 442,
+     "element": 221,
+     "affinity": -4.2,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 548,
+     "element": 274,
+     "affinity": -4.2,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 666,
+     "element": 333,
+     "affinity": -4.2,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": -4.2,
@@ -787,20 +919,22 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583985"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583985",
+   "g8Url": "https://game8.jp/mhoutlanders/838837"
   },
   {
    "name": "バスターソード",
    "type": "大剣",
    "element": "毒",
    "baseRarity": 1,
-   "maxRarity": 4,
+   "maxRarity": 10,
    "stats": {
     "1": {
      "attack": 52,
-     "element": 0,
+     "element": 26,
      "affinity": 0,
-     "src": "gamewith.ai・gamewith.jp・game8.co"
+     "src": "Game8（2026-11-10）。属性値は空欄のため同じ武器のほかのレアの比で推定",
+     "est": true
     },
     "2": {
      "attack": 73,
@@ -819,6 +953,42 @@
      "element": 75,
      "affinity": 0,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "5": {
+     "attack": 207,
+     "element": 104,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "6": {
+     "attack": 278,
+     "element": 139,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "7": {
+     "attack": 362,
+     "element": 181,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 458,
+     "element": 229,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 567,
+     "element": 284,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 689,
+     "element": 345,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -827,7 +997,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583917"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583917",
+   "g8Url": "https://game8.jp/mhoutlanders/838835"
   },
   {
    "name": "フラムエルヘレヴ",
@@ -875,20 +1046,37 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583999"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583999",
+   "g8Url": "https://game8.jp/mhoutlanders/838841",
+   "renamedTo": {
+    "name": "フラムエルヘレヴ改",
+    "rarity": 8
+   }
   },
   {
    "name": "フラムエルヘレヴ改",
    "type": "大剣",
    "element": "火",
    "baseRarity": 8,
-   "maxRarity": 8,
+   "maxRarity": 10,
    "stats": {
     "8": {
      "attack": 347,
      "element": 173,
-     "affinity": -3.9,
-     "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+     "affinity": -4,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 430,
+     "element": 215,
+     "affinity": -4,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 522,
+     "element": 261,
+     "affinity": -4,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": -3.9,
@@ -906,13 +1094,26 @@
    "type": "大剣",
    "element": "氷",
    "baseRarity": 8,
-   "maxRarity": 8,
+   "maxRarity": 10,
    "stats": {
     "8": {
      "attack": 346,
      "element": 173,
      "affinity": 0,
      "src": "gamewith.ai・game8.co"
+    },
+    "9": {
+     "attack": 429,
+     "element": 215,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 521,
+     "element": 261,
+     "affinity": 0,
+     "est": true,
+     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
     }
    },
    "affinity": 0,
@@ -923,7 +1124,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.ai/monster-hunter-outlanders/ja/weapons/freeze-blade"
+   "sourceUrl": "https://gamewith.ai/monster-hunter-outlanders/ja/weapons/freeze-blade",
+   "g8Url": "https://game8.jp/mhoutlanders/838643"
   },
   {
    "name": "フレイムブレイド",
@@ -953,20 +1155,38 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584057"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584057",
+   "g8Url": "https://game8.jp/mhoutlanders/838780",
+   "renamedTo": {
+    "name": "レッドウィング",
+    "rarity": 8
+   }
   },
   {
    "name": "レッドウィング",
    "type": "大剣",
    "element": "火",
    "baseRarity": 8,
-   "maxRarity": 8,
+   "maxRarity": 10,
    "stats": {
     "8": {
      "attack": 331,
      "element": 165,
-     "affinity": 4.2,
-     "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+     "affinity": 3.9,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 410,
+     "element": 205,
+     "affinity": 3.9,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 498,
+     "element": 249,
+     "affinity": 3.9,
+     "est": true,
+     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
     }
    },
    "affinity": 4.2,
@@ -984,7 +1204,7 @@
    "type": "大剣",
    "element": "毒",
    "baseRarity": 1,
-   "maxRarity": 6,
+   "maxRarity": 10,
    "stats": {
     "1": {
      "attack": 48,
@@ -1021,6 +1241,30 @@
      "element": 142,
      "affinity": 0,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "7": {
+     "attack": 369,
+     "element": 185,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 468,
+     "element": 234,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 579,
+     "element": 290,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 704,
+     "element": 352,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -1031,20 +1275,22 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583916"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583916",
+   "g8Url": "https://game8.jp/mhoutlanders/838836"
   },
   {
    "name": "ボーンブレイド",
    "type": "大剣",
    "element": "氷",
    "baseRarity": 3,
-   "maxRarity": 5,
+   "maxRarity": 10,
    "stats": {
     "3": {
      "attack": 78,
-     "element": 0,
+     "element": 39,
      "affinity": 0,
-     "src": "gamewith.ai・gamewith.jp・game8.co"
+     "src": "Game8（2026-11-10）。属性値は空欄のため同じ武器のほかのレアの比で推定",
+     "est": true
     },
     "4": {
      "attack": 111,
@@ -1057,6 +1303,36 @@
      "element": 77,
      "affinity": 0,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "6": {
+     "attack": 206,
+     "element": 103,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "7": {
+     "attack": 268,
+     "element": 134,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 339,
+     "element": 170,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 420,
+     "element": 210,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 510,
+     "element": 255,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -1065,20 +1341,39 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583998"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583998",
+   "g8Url": "https://game8.jp/mhoutlanders/838840"
   },
   {
    "name": "塊剣ラドバルク",
    "type": "大剣",
    "element": "睡眠",
    "baseRarity": 7,
-   "maxRarity": 7,
+   "maxRarity": 10,
    "stats": {
     "7": {
      "attack": 360,
      "element": 180,
      "affinity": 0,
      "src": "game8.co"
+    },
+    "8": {
+     "attack": 456,
+     "element": 228,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 564,
+     "element": 282,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 686,
+     "element": 343,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -1089,7 +1384,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://game8.jp/mhoutlanders/838641"
+   "sourceUrl": "https://game8.jp/mhoutlanders/838641",
+   "g8Url": "https://game8.jp/mhoutlanders/838641"
   },
   {
    "name": "融光種アクアスラッシャー",
@@ -1119,20 +1415,37 @@
    "yuko": true,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584056"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584056",
+   "g8Url": "https://game8.jp/mhoutlanders/838639",
+   "renamedTo": {
+    "name": "融光種ウォーターゴーレム",
+    "rarity": 8
+   }
   },
   {
    "name": "融光種ウォーターゴーレム",
    "type": "大剣",
    "element": "水",
    "baseRarity": 8,
-   "maxRarity": 8,
+   "maxRarity": 10,
    "stats": {
     "8": {
      "attack": 357,
      "element": 179,
      "affinity": 0,
-     "src": "gamewith.ai・gamewith.jp・gamewith.jp list card・game8.co"
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 443,
+     "element": 221,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 538,
+     "element": 269,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -1160,7 +1473,7 @@
     },
     "10": {
      "attack": 521,
-     "element": 262,
+     "element": 261,
      "affinity": 0,
      "est": true,
      "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
@@ -1181,13 +1494,14 @@
    "type": "大剣",
    "element": "水",
    "baseRarity": 4,
-   "maxRarity": 6,
+   "maxRarity": 10,
    "stats": {
     "4": {
      "attack": 113,
-     "element": 0,
+     "element": 56,
      "affinity": 0,
-     "src": "gamewith.ai・gamewith.jp・game8.co"
+     "src": "Game8（2026-11-10）。属性値は空欄のため同じ武器のほかのレアの比で推定",
+     "est": true
     },
     "5": {
      "attack": 157,
@@ -1200,6 +1514,30 @@
      "element": 105,
      "affinity": 0,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "7": {
+     "attack": 274,
+     "element": 137,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 346,
+     "element": 173,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 429,
+     "element": 215,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 521,
+     "element": 261,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -1210,7 +1548,8 @@
    "yuko": true,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584016"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584016",
+   "g8Url": "https://game8.jp/mhoutlanders/838842"
   },
   {
    "name": "融光種ドラグロバスター",
@@ -1221,9 +1560,10 @@
    "stats": {
     "5": {
      "attack": 209,
-     "element": 0,
+     "element": 104,
      "affinity": -8.7,
-     "src": "gamewith.ai・gamewith.jp・game8.co"
+     "src": "Game8（2026-11-10）。属性値は空欄のため同じ武器のほかのレアの比で推定",
+     "est": true
     },
     "6": {
      "attack": 280,
@@ -1246,7 +1586,12 @@
    "yuko": true,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584035"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584035",
+   "g8Url": "https://game8.jp/mhoutlanders/838845",
+   "renamedTo": {
+    "name": "融光種ボルボシュレッダー",
+    "rarity": 8
+   }
   },
   {
    "name": "融光種フラムエルヘレヴ",
@@ -1282,20 +1627,38 @@
    "yuko": true,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584034"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584034",
+   "g8Url": "https://game8.jp/mhoutlanders/838846",
+   "renamedTo": {
+    "name": "融光種フラムエルヘレヴ改",
+    "rarity": 8
+   }
   },
   {
    "name": "融光種フラムエルヘレヴ改",
    "type": "大剣",
    "element": "火",
    "baseRarity": 8,
-   "maxRarity": 8,
+   "maxRarity": 10,
    "stats": {
     "8": {
      "attack": 347,
      "element": 173,
-     "affinity": -3.9,
-     "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+     "affinity": -4,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 430,
+     "element": 215,
+     "affinity": -4,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 522,
+     "element": 261,
+     "affinity": -4,
+     "est": true,
+     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
     }
    },
    "affinity": -3.9,
@@ -1313,7 +1676,7 @@
    "type": "大剣",
    "element": "毒",
    "baseRarity": 4,
-   "maxRarity": 6,
+   "maxRarity": 10,
    "stats": {
     "4": {
      "attack": 158,
@@ -1332,6 +1695,30 @@
      "element": 147,
      "affinity": 0,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "7": {
+     "attack": 381,
+     "element": 191,
+     "affinity": 0,
+     "src": "Game8（2026-11-11）"
+    },
+    "8": {
+     "attack": 483,
+     "element": 242,
+     "affinity": 0,
+     "src": "Game8（2026-11-11）"
+    },
+    "9": {
+     "attack": 598,
+     "element": 299,
+     "affinity": 0,
+     "src": "Game8（2026-11-11）"
+    },
+    "10": {
+     "attack": 726,
+     "element": 363,
+     "affinity": 0,
+     "src": "Game8（2026-11-11）"
     }
    },
    "affinity": 0,
@@ -1342,20 +1729,33 @@
    "yuko": true,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584017"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584017",
+   "g8Url": "https://game8.jp/mhoutlanders/838844"
   },
   {
    "name": "融光種ボルボシュレッダー",
    "type": "大剣",
    "element": "麻痺",
    "baseRarity": 8,
-   "maxRarity": 8,
+   "maxRarity": 10,
    "stats": {
     "8": {
      "attack": 462,
      "element": 231,
-     "affinity": -7.8,
-     "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+     "affinity": -8.1,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 572,
+     "element": 286,
+     "affinity": -8.1,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 695,
+     "element": 348,
+     "affinity": -8.1,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": -7.8,
@@ -1373,13 +1773,31 @@
    "type": "大剣",
    "element": "麻痺",
    "baseRarity": 7,
-   "maxRarity": 7,
+   "maxRarity": 10,
    "stats": {
     "7": {
      "attack": 352,
      "element": 176,
      "affinity": 1.9,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card・game8.co"
+    },
+    "8": {
+     "attack": 446,
+     "element": 223,
+     "affinity": 1.9,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 552,
+     "element": 276,
+     "affinity": 1.9,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 671,
+     "element": 336,
+     "affinity": 1.9,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 1.9,
@@ -1390,20 +1808,39 @@
    "yuko": true,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/585733"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/585733",
+   "g8Url": "https://game8.jp/mhoutlanders/838640"
   },
   {
    "name": "融光種ライトニングパニッシュ",
    "type": "大剣",
    "element": "雷",
    "baseRarity": 7,
-   "maxRarity": 7,
+   "maxRarity": 10,
    "stats": {
     "7": {
      "attack": 282,
      "element": 141,
      "affinity": 0,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card・game8.co"
+    },
+    "8": {
+     "attack": 357,
+     "element": 179,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 443,
+     "element": 221,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 538,
+     "element": 269,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -1414,7 +1851,8 @@
    "yuko": true,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/585734"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/585734",
+   "g8Url": "https://game8.jp/mhoutlanders/838642"
   },
   {
    "name": "黒鋼の大剣",
@@ -1472,7 +1910,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584055"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584055",
+   "g8Url": "https://game8.jp/mhoutlanders/838638"
   },
   {
    "name": "龍骨大剣",
@@ -1542,7 +1981,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584015"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584015",
+   "g8Url": "https://game8.jp/mhoutlanders/838843"
   },
   {
    "name": "アカハネ冒険団太刀",
@@ -1630,7 +2070,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583926"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583926",
+   "g8Url": "https://game8.jp/mhoutlanders/838772"
   },
   {
    "name": "アカハネ冒険団太刀・水",
@@ -1718,7 +2159,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583931"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583931",
+   "g8Url": "https://game8.jp/mhoutlanders/838774"
   },
   {
    "name": "アカハネ冒険団太刀・氷",
@@ -1806,7 +2248,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583929"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583929",
+   "g8Url": "https://game8.jp/mhoutlanders/838776"
   },
   {
    "name": "アカハネ冒険団太刀・火",
@@ -1894,7 +2337,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583930"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583930",
+   "g8Url": "https://game8.jp/mhoutlanders/838775"
   },
   {
    "name": "アカハネ冒険団太刀・雷",
@@ -1982,7 +2426,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583928"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583928",
+   "g8Url": "https://game8.jp/mhoutlanders/838779"
   },
   {
    "name": "アカハネ冒険団太刀・龍",
@@ -2070,20 +2515,22 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583927"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583927",
+   "g8Url": "https://game8.jp/mhoutlanders/838829"
   },
   {
    "name": "アルリーシャ",
    "type": "太刀",
    "element": "睡眠",
    "baseRarity": 1,
-   "maxRarity": 6,
+   "maxRarity": 10,
    "stats": {
     "1": {
      "attack": 42,
-     "element": 0,
+     "element": 21,
      "affinity": 2.8,
-     "src": "gamewith.ai・gamewith.jp・game8.co"
+     "src": "Game8（2026-11-10）。属性値は空欄のため同じ武器のほかのレアの比で推定",
+     "est": true
     },
     "2": {
      "attack": 64,
@@ -2114,6 +2561,30 @@
      "element": 124,
      "affinity": 4.8,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "7": {
+     "attack": 321,
+     "element": 161,
+     "affinity": 4.8,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 406,
+     "element": 203,
+     "affinity": 4.8,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 503,
+     "element": 252,
+     "affinity": 4.8,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 611,
+     "element": 306,
+     "affinity": 4.8,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 4.8,
@@ -2124,20 +2595,34 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583925"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583925",
+   "g8Url": "https://game8.jp/mhoutlanders/838619"
   },
   {
    "name": "グレイスショテル",
    "type": "太刀",
    "element": "氷",
    "baseRarity": 8,
-   "maxRarity": 8,
+   "maxRarity": 10,
    "stats": {
     "8": {
      "attack": 346,
      "element": 173,
      "affinity": 0,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "9": {
+     "attack": 429,
+     "element": 215,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 521,
+     "element": 261,
+     "affinity": 0,
+     "est": true,
+     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
     }
    },
    "affinity": 0,
@@ -2148,14 +2633,15 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/586605"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586605",
+   "g8Url": "https://game8.jp/mhoutlanders/838635"
   },
   {
    "name": "シュラムショテル",
    "type": "太刀",
    "element": "水",
    "baseRarity": 2,
-   "maxRarity": 6,
+   "maxRarity": 10,
    "stats": {
     "2": {
      "attack": 55,
@@ -2186,6 +2672,30 @@
      "element": 105,
      "affinity": 0,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "7": {
+     "attack": 274,
+     "element": 137,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 346,
+     "element": 173,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 429,
+     "element": 215,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 521,
+     "element": 261,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -2196,20 +2706,33 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583987"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583987",
+   "g8Url": "https://game8.jp/mhoutlanders/838620"
   },
   {
    "name": "ジャナフシミター",
    "type": "太刀",
    "element": "火",
    "baseRarity": 8,
-   "maxRarity": 8,
+   "maxRarity": 10,
    "stats": {
     "8": {
      "attack": 347,
      "element": 173,
-     "affinity": -3.9,
-     "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+     "affinity": -4,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 430,
+     "element": 215,
+     "affinity": -4,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 522,
+     "element": 261,
+     "affinity": -4,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": -3.9,
@@ -2227,13 +2750,14 @@
    "type": "太刀",
    "element": "麻痺",
    "baseRarity": 4,
-   "maxRarity": 7,
+   "maxRarity": 10,
    "stats": {
     "4": {
      "attack": 149,
-     "element": 0,
+     "element": 74,
      "affinity": 0,
-     "src": "gamewith.ai・gamewith.jp・game8.co"
+     "src": "Game8（2026-11-10）。属性値は空欄のため同じ武器のほかのレアの比で推定",
+     "est": true
     },
     "5": {
      "attack": 206,
@@ -2252,6 +2776,24 @@
      "element": 180,
      "affinity": 0,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "8": {
+     "attack": 456,
+     "element": 228,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 564,
+     "element": 282,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 686,
+     "element": 343,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -2262,14 +2804,15 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584018"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584018",
+   "g8Url": "https://game8.jp/mhoutlanders/838624"
   },
   {
    "name": "パルサーショテル",
    "type": "太刀",
    "element": "雷",
    "baseRarity": 5,
-   "maxRarity": 6,
+   "maxRarity": 10,
    "stats": {
     "5": {
      "attack": 144,
@@ -2282,6 +2825,30 @@
      "element": 97,
      "affinity": 4.8,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "7": {
+     "attack": 251,
+     "element": 126,
+     "affinity": 4.8,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 318,
+     "element": 159,
+     "affinity": 4.8,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 394,
+     "element": 197,
+     "affinity": 4.8,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 479,
+     "element": 240,
+     "affinity": 4.8,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 4.8,
@@ -2292,7 +2859,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584036"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584036",
+   "g8Url": "https://game8.jp/mhoutlanders/838627"
   },
   {
    "name": "ブレイズショテル",
@@ -2340,20 +2908,26 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584001"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584001",
+   "g8Url": "https://game8.jp/mhoutlanders/838623",
+   "renamedTo": {
+    "name": "ジャナフシミター",
+    "rarity": 8
+   }
   },
   {
    "name": "ボーンショテル",
    "type": "太刀",
    "element": "睡眠",
    "baseRarity": 3,
-   "maxRarity": 5,
+   "maxRarity": 10,
    "stats": {
     "3": {
      "attack": 101,
-     "element": 0,
+     "element": 50,
      "affinity": 0,
-     "src": "gamewith.ai・gamewith.jp・game8.co"
+     "src": "Game8（2026-11-10）。属性値は空欄のため同じ武器のほかのレアの比で推定",
+     "est": true
     },
     "4": {
      "attack": 144,
@@ -2366,6 +2940,36 @@
      "element": 100,
      "affinity": 0,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "6": {
+     "attack": 268,
+     "element": 134,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "7": {
+     "attack": 349,
+     "element": 175,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 442,
+     "element": 221,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 547,
+     "element": 274,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 665,
+     "element": 333,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -2374,20 +2978,34 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584000"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584000",
+   "g8Url": "https://game8.jp/mhoutlanders/838621"
   },
   {
    "name": "眩刀【揺】",
    "type": "太刀",
    "element": "雷",
    "baseRarity": 8,
-   "maxRarity": 8,
+   "maxRarity": 10,
    "stats": {
     "8": {
      "attack": 346,
-     "element": 0,
+     "element": 173,
      "affinity": 0,
-     "src": "gamewith.ai・gamewith.jp・gamewith.jp list card・game8.co"
+     "src": "Game8（2026-11-10）。属性値は空欄のため同じ武器のほかのレアの比で推定",
+     "est": true
+    },
+    "9": {
+     "attack": 429,
+     "element": 215,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 521,
+     "element": 261,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -2398,26 +3016,52 @@
    "yuko": false,
    "derived": true,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/586491"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586491",
+   "g8Url": "https://game8.jp/mhoutlanders/838634"
   },
   {
    "name": "融光種アルリーシャ",
    "type": "太刀",
    "element": "睡眠",
    "baseRarity": 5,
-   "maxRarity": 6,
+   "maxRarity": 10,
    "stats": {
     "5": {
      "attack": 202,
-     "element": 0,
+     "element": 101,
      "affinity": 1.6,
-     "src": "gamewith.ai・gamewith.jp・game8.co"
+     "src": "Game8（2026-11-10）。属性値は空欄のため同じ武器のほかのレアの比で推定",
+     "est": true
     },
     "6": {
      "attack": 271,
      "element": 136,
      "affinity": 1.8,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "7": {
+     "attack": 352,
+     "element": 176,
+     "affinity": 1.8,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 446,
+     "element": 223,
+     "affinity": 1.8,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 552,
+     "element": 276,
+     "affinity": 1.8,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 671,
+     "element": 336,
+     "affinity": 1.8,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 1.8,
@@ -2428,20 +3072,39 @@
    "yuko": true,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584038"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584038",
+   "g8Url": "https://game8.jp/mhoutlanders/838626"
   },
   {
    "name": "融光種カガチノキバ",
    "type": "太刀",
    "element": "雷",
    "baseRarity": 7,
-   "maxRarity": 7,
+   "maxRarity": 10,
    "stats": {
     "7": {
      "attack": 251,
-     "element": 125,
+     "element": 126,
      "affinity": 5.2,
-     "src": "game8.co"
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 318,
+     "element": 159,
+     "affinity": 5.2,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 394,
+     "element": 197,
+     "affinity": 5.2,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 479,
+     "element": 240,
+     "affinity": 5.2,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 5.2,
@@ -2452,7 +3115,8 @@
    "yuko": true,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://game8.jp/mhoutlanders/838633"
+   "sourceUrl": "https://game8.jp/mhoutlanders/838633",
+   "g8Url": "https://game8.jp/mhoutlanders/838633"
   },
   {
    "name": "融光種シュラムショテル",
@@ -2482,20 +3146,38 @@
    "yuko": true,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584059"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584059",
+   "g8Url": "https://game8.jp/mhoutlanders/838631",
+   "renamedTo": {
+    "name": "融光種ディプテルス",
+    "rarity": 8
+   }
   },
   {
    "name": "融光種ジャナフシミター",
    "type": "太刀",
    "element": "火",
    "baseRarity": 8,
-   "maxRarity": 8,
+   "maxRarity": 10,
    "stats": {
     "8": {
      "attack": 347,
      "element": 173,
-     "affinity": -3.9,
-     "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+     "affinity": -4,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 430,
+     "element": 215,
+     "affinity": -4,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 522,
+     "element": 261,
+     "affinity": -4,
+     "est": true,
+     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
     }
    },
    "affinity": -3.9,
@@ -2513,13 +3195,25 @@
    "type": "太刀",
    "element": "水",
    "baseRarity": 8,
-   "maxRarity": 8,
+   "maxRarity": 10,
    "stats": {
     "8": {
      "attack": 357,
      "element": 179,
      "affinity": 0,
-     "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 443,
+     "element": 221,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 538,
+     "element": 269,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -2566,20 +3260,38 @@
    "yuko": true,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584037"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584037",
+   "g8Url": "https://game8.jp/mhoutlanders/838628",
+   "renamedTo": {
+    "name": "融光種ジャナフシミター",
+    "rarity": 8
+   }
   },
   {
    "name": "融光種飛竜刀【翠】",
    "type": "太刀",
    "element": "毒",
    "baseRarity": 8,
-   "maxRarity": 8,
+   "maxRarity": 10,
    "stats": {
     "8": {
      "attack": 430,
      "element": 215,
-     "affinity": 5.6,
-     "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+     "affinity": 5.2,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 532,
+     "element": 266,
+     "affinity": 5.2,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 646,
+     "element": 323,
+     "affinity": 5.2,
+     "est": true,
+     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
     }
    },
    "affinity": 5.6,
@@ -2638,20 +3350,26 @@
    "yuko": true,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584002"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584002",
+   "g8Url": "https://game8.jp/mhoutlanders/838622",
+   "renamedTo": {
+    "name": "融光種飛竜刀【翠】",
+    "rarity": 8
+   }
   },
   {
    "name": "鉄刀",
    "type": "太刀",
    "element": "水",
    "baseRarity": 1,
-   "maxRarity": 4,
+   "maxRarity": 10,
    "stats": {
     "1": {
      "attack": 52,
-     "element": 0,
+     "element": 26,
      "affinity": 0,
-     "src": "gamewith.ai・gamewith.jp・game8.co"
+     "src": "Game8（2026-11-10）。属性値は空欄のため同じ武器のほかのレアの比で推定",
+     "est": true
     },
     "2": {
      "attack": 54,
@@ -2670,6 +3388,42 @@
      "element": 55,
      "affinity": 0,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "5": {
+     "attack": 154,
+     "element": 77,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "6": {
+     "attack": 206,
+     "element": 103,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "7": {
+     "attack": 268,
+     "element": 134,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 339,
+     "element": 170,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 420,
+     "element": 210,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 510,
+     "element": 255,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -2678,7 +3432,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583924"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583924",
+   "g8Url": "https://game8.jp/mhoutlanders/838851"
   },
   {
    "name": "飛竜刀【紅葉】",
@@ -2708,7 +3463,12 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584061"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584061",
+   "g8Url": "https://game8.jp/mhoutlanders/838630",
+   "renamedTo": {
+    "name": "飛竜刀【朱】",
+    "rarity": 8
+   }
   },
   {
    "name": "飛竜刀【朱】",
@@ -2720,19 +3480,19 @@
     "8": {
      "attack": 331,
      "element": 165,
-     "affinity": 4.2,
-     "src": "gamewith.ai・gamewith.jp・game8.co"
+     "affinity": 3.9,
+     "src": "Game8（2026-11-10）"
     },
     "9": {
      "attack": 410,
      "element": 205,
-     "affinity": 4.5,
-     "src": "gamewith.ai・gamewith.jp list card"
+     "affinity": 3.9,
+     "src": "Game8（2026-11-10）"
     },
     "10": {
      "attack": 498,
      "element": 249,
-     "affinity": 4.5,
+     "affinity": 3.9,
      "est": true,
      "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
     }
@@ -2752,7 +3512,7 @@
    "type": "太刀",
    "element": "毒",
    "baseRarity": 6,
-   "maxRarity": 7,
+   "maxRarity": 10,
    "stats": {
     "6": {
      "attack": 261,
@@ -2765,6 +3525,24 @@
      "element": 170,
      "affinity": 5.2,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "8": {
+     "attack": 430,
+     "element": 215,
+     "affinity": 5.2,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 532,
+     "element": 266,
+     "affinity": 5.2,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 647,
+     "element": 324,
+     "affinity": 5.2,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 5.2,
@@ -2775,7 +3553,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584060"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584060",
+   "g8Url": "https://game8.jp/mhoutlanders/838629"
   },
   {
    "name": "黒鋼の太刀",
@@ -2833,7 +3612,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584058"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584058",
+   "g8Url": "https://game8.jp/mhoutlanders/838632"
   },
   {
    "name": "龍骨刀",
@@ -2903,7 +3683,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584019"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584019",
+   "g8Url": "https://game8.jp/mhoutlanders/838625"
   },
   {
    "name": "アカハネ冒険団双剣",
@@ -2991,7 +3772,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583934"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583934",
+   "g8Url": "https://game8.jp/mhoutlanders/838610"
   },
   {
    "name": "アカハネ冒険団双剣・水",
@@ -3079,7 +3861,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583935"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583935",
+   "g8Url": "https://game8.jp/mhoutlanders/838611"
   },
   {
    "name": "アカハネ冒険団双剣・氷",
@@ -3167,7 +3950,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583937"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583937",
+   "g8Url": "https://game8.jp/mhoutlanders/838613"
   },
   {
    "name": "アカハネ冒険団双剣・火",
@@ -3255,7 +4039,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583936"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583936",
+   "g8Url": "https://game8.jp/mhoutlanders/838612"
   },
   {
    "name": "アカハネ冒険団双剣・雷",
@@ -3343,7 +4128,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583938"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583938",
+   "g8Url": "https://game8.jp/mhoutlanders/838614"
   },
   {
    "name": "アカハネ冒険団双剣・龍",
@@ -3431,20 +4217,34 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583939"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583939",
+   "g8Url": "https://game8.jp/mhoutlanders/838615"
   },
   {
    "name": "イルミナルダガー",
    "type": "双剣",
    "element": "雷",
    "baseRarity": 8,
-   "maxRarity": 8,
+   "maxRarity": 10,
    "stats": {
     "8": {
      "attack": 346,
-     "element": 0,
+     "element": 173,
      "affinity": 0,
-     "src": "gamewith.ai・gamewith.jp・gamewith.jp list card・game8.co"
+     "src": "Game8（2026-11-10）。属性値は空欄のため同じ武器のほかのレアの比で推定",
+     "est": true
+    },
+    "9": {
+     "attack": 429,
+     "element": 215,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 521,
+     "element": 261,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -3455,20 +4255,33 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/586490"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586490",
+   "g8Url": "https://game8.jp/mhoutlanders/838769"
   },
   {
    "name": "ジャナフサイクロン",
    "type": "双剣",
    "element": "火",
    "baseRarity": 8,
-   "maxRarity": 8,
+   "maxRarity": 10,
    "stats": {
     "8": {
      "attack": 347,
      "element": 173,
-     "affinity": -3.9,
-     "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+     "affinity": -4,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 430,
+     "element": 215,
+     "affinity": -4,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 522,
+     "element": 261,
+     "affinity": -4,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": -3.9,
@@ -3486,13 +4299,14 @@
    "type": "双剣",
    "element": "麻痺",
    "baseRarity": 4,
-   "maxRarity": 7,
+   "maxRarity": 10,
    "stats": {
     "4": {
      "attack": 149,
-     "element": 0,
+     "element": 74,
      "affinity": 0,
-     "src": "gamewith.ai・gamewith.jp・game8.co"
+     "src": "Game8（2026-11-10）。属性値は空欄のため同じ武器のほかのレアの比で推定",
+     "est": true
     },
     "5": {
      "attack": 206,
@@ -3511,6 +4325,24 @@
      "element": 180,
      "affinity": 0,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "8": {
+     "attack": 456,
+     "element": 228,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 564,
+     "element": 282,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 686,
+     "element": 343,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -3521,7 +4353,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584020"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584020",
+   "g8Url": "https://game8.jp/mhoutlanders/838758"
   },
   {
    "name": "パルサーハチェット",
@@ -3558,13 +4391,14 @@
    "type": "双剣",
    "element": "睡眠",
    "baseRarity": 1,
-   "maxRarity": 6,
+   "maxRarity": 10,
    "stats": {
     "1": {
      "attack": 43,
-     "element": 0,
+     "element": 22,
      "affinity": 2.1,
-     "src": "gamewith.ai・gamewith.jp・game8.co"
+     "src": "Game8（2026-11-10）。属性値は空欄のため同じ武器のほかのレアの比で推定",
+     "est": true
     },
     "2": {
      "attack": 67,
@@ -3595,6 +4429,30 @@
      "element": 128,
      "affinity": 3.6,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "7": {
+     "attack": 333,
+     "element": 167,
+     "affinity": 3.6,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 422,
+     "element": 211,
+     "affinity": 3.6,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 523,
+     "element": 262,
+     "affinity": 3.6,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 635,
+     "element": 318,
+     "affinity": 3.6,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 3.6,
@@ -3605,20 +4463,34 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583932"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583932",
+   "g8Url": "https://game8.jp/mhoutlanders/838616"
   },
   {
    "name": "フリーズダガー",
    "type": "双剣",
    "element": "氷",
    "baseRarity": 8,
-   "maxRarity": 8,
+   "maxRarity": 10,
    "stats": {
     "8": {
      "attack": 339,
      "element": 170,
      "affinity": 0,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card・game8.co"
+    },
+    "9": {
+     "attack": 420,
+     "element": 210,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 510,
+     "element": 255,
+     "affinity": 0,
+     "est": true,
+     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
     }
    },
    "affinity": 0,
@@ -3629,7 +4501,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/586606"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586606",
+   "g8Url": "https://game8.jp/mhoutlanders/838770"
   },
   {
    "name": "ブレイズハチェット",
@@ -3677,20 +4550,45 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584004"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584004",
+   "g8Url": "https://game8.jp/mhoutlanders/838757",
+   "renamedTo": {
+    "name": "ジャナフサイクロン",
+    "rarity": 8
+   }
   },
   {
    "name": "ブロスハチェット",
    "type": "双剣",
    "element": "氷",
    "baseRarity": 7,
-   "maxRarity": 7,
+   "maxRarity": 10,
    "stats": {
     "7": {
      "attack": 274,
-     "element": 0,
+     "element": 137,
      "affinity": -4,
-     "src": "game8.co"
+     "src": "Game8（2026-11-10）。属性値は空欄のため同じ武器のほかのレアの比で推定",
+     "est": true
+    },
+    "8": {
+     "attack": 347,
+     "element": 173,
+     "affinity": -4,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 430,
+     "element": 215,
+     "affinity": -4,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 522,
+     "element": 261,
+     "affinity": -4,
+     "est": true,
+     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
     }
    },
    "affinity": -4,
@@ -3701,20 +4599,22 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://game8.jp/mhoutlanders/838766"
+   "sourceUrl": "https://game8.jp/mhoutlanders/838766",
+   "g8Url": "https://game8.jp/mhoutlanders/838766"
   },
   {
    "name": "ボーンハチェット",
    "type": "双剣",
    "element": "爆破",
    "baseRarity": 3,
-   "maxRarity": 5,
+   "maxRarity": 10,
    "stats": {
     "3": {
      "attack": 113,
-     "element": 0,
+     "element": 56,
      "affinity": 0,
-     "src": "gamewith.ai・gamewith.jp・game8.co"
+     "src": "Game8（2026-11-10）。属性値は空欄のため同じ武器のほかのレアの比で推定",
+     "est": true
     },
     "4": {
      "attack": 161,
@@ -3727,6 +4627,36 @@
      "element": 112,
      "affinity": 0,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "6": {
+     "attack": 300,
+     "element": 150,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "7": {
+     "attack": 390,
+     "element": 195,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 494,
+     "element": 247,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 611,
+     "element": 306,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 743,
+     "element": 372,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -3735,14 +4665,15 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584003"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584003",
+   "g8Url": "https://game8.jp/mhoutlanders/838756"
   },
   {
    "name": "マッドバンガー",
    "type": "双剣",
    "element": "水",
    "baseRarity": 2,
-   "maxRarity": 6,
+   "maxRarity": 10,
    "stats": {
     "2": {
      "attack": 54,
@@ -3773,6 +4704,30 @@
      "element": 103,
      "affinity": 0,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "7": {
+     "attack": 268,
+     "element": 134,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 339,
+     "element": 170,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 420,
+     "element": 210,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 510,
+     "element": 255,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -3783,20 +4738,22 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583988"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583988",
+   "g8Url": "https://game8.jp/mhoutlanders/838618"
   },
   {
    "name": "双剣",
    "type": "双剣",
    "element": "毒",
    "baseRarity": 1,
-   "maxRarity": 4,
+   "maxRarity": 10,
    "stats": {
     "1": {
      "attack": 52,
-     "element": 0,
+     "element": 26,
      "affinity": 0,
-     "src": "gamewith.ai・gamewith.jp・game8.co"
+     "src": "Game8（2026-11-10）。属性値は空欄のため同じ武器のほかのレアの比で推定",
+     "est": true
     },
     "2": {
      "attack": 73,
@@ -3815,6 +4772,42 @@
      "element": 75,
      "affinity": 0,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "5": {
+     "attack": 207,
+     "element": 104,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "6": {
+     "attack": 278,
+     "element": 139,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "7": {
+     "attack": 362,
+     "element": 181,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 458,
+     "element": 229,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 567,
+     "element": 284,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 689,
+     "element": 345,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -3823,20 +4816,39 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583933"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583933",
+   "g8Url": "https://game8.jp/mhoutlanders/838617"
   },
   {
    "name": "融光種カガチノツメ",
    "type": "双剣",
    "element": "雷",
    "baseRarity": 7,
-   "maxRarity": 7,
+   "maxRarity": 10,
    "stats": {
     "7": {
      "attack": 251,
      "element": 126,
      "affinity": 5.2,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card・game8.co"
+    },
+    "8": {
+     "attack": 318,
+     "element": 159,
+     "affinity": 5.2,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 394,
+     "element": 197,
+     "affinity": 5.2,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 479,
+     "element": 240,
+     "affinity": 5.2,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 5.2,
@@ -3847,7 +4859,8 @@
    "yuko": true,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/585735"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/585735",
+   "g8Url": "https://game8.jp/mhoutlanders/838768"
   },
   {
    "name": "融光種ジャナフサイクロン",
@@ -3967,20 +4980,37 @@
    "yuko": true,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584063"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584063",
+   "g8Url": "https://game8.jp/mhoutlanders/838765",
+   "renamedTo": {
+    "name": "融光種シュラムハチェット",
+    "rarity": 8
+   }
   },
   {
    "name": "融光種シュラムハチェット",
    "type": "双剣",
    "element": "水",
    "baseRarity": 8,
-   "maxRarity": 8,
+   "maxRarity": 10,
    "stats": {
     "8": {
      "attack": 346,
      "element": 173,
      "affinity": 0,
-     "src": "gamewith.ai・gamewith.jp・gamewith.jp list card・game8.co"
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 429,
+     "element": 215,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 521,
+     "element": 261,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -3998,13 +5028,33 @@
    "type": "双剣",
    "element": "火",
    "baseRarity": 7,
-   "maxRarity": 7,
+   "maxRarity": 10,
    "stats": {
     "7": {
      "attack": 261,
-     "element": 0,
+     "element": 130,
      "affinity": 3.9,
-     "src": "game8.co"
+     "src": "Game8（2026-11-10）。属性値は空欄のため同じ武器のほかのレアの比で推定",
+     "est": true
+    },
+    "8": {
+     "attack": 331,
+     "element": 165,
+     "affinity": 3.9,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 410,
+     "element": 205,
+     "affinity": 3.9,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 498,
+     "element": 249,
+     "affinity": 3.9,
+     "est": true,
+     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
     }
    },
    "affinity": 3.9,
@@ -4015,7 +5065,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://game8.jp/mhoutlanders/838767"
+   "sourceUrl": "https://game8.jp/mhoutlanders/838767",
+   "g8Url": "https://game8.jp/mhoutlanders/838767"
   },
   {
    "name": "黒鋼の双剣",
@@ -4073,7 +5124,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584062"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584062",
+   "g8Url": "https://game8.jp/mhoutlanders/838764"
   },
   {
    "name": "龍骨双刃",
@@ -4143,20 +5195,22 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584021"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584021",
+   "g8Url": "https://game8.jp/mhoutlanders/838759"
   },
   {
    "name": "アイアンランス",
    "type": "ランス",
    "element": "麻痺",
    "baseRarity": 1,
-   "maxRarity": 4,
+   "maxRarity": 10,
    "stats": {
     "1": {
      "attack": 52,
-     "element": 0,
+     "element": 26,
      "affinity": 0,
-     "src": "gamewith.ai・gamewith.jp・game8.co"
+     "src": "Game8（2026-11-10）。属性値は空欄のため同じ武器のほかのレアの比で推定",
+     "est": true
     },
     "2": {
      "attack": 69,
@@ -4175,6 +5229,42 @@
      "element": 71,
      "affinity": 0,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "5": {
+     "attack": 196,
+     "element": 98,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "6": {
+     "attack": 263,
+     "element": 132,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "7": {
+     "attack": 341,
+     "element": 171,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 432,
+     "element": 216,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 536,
+     "element": 268,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 651,
+     "element": 326,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -4183,7 +5273,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583942"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583942",
+   "g8Url": "https://game8.jp/mhoutlanders/838824"
   },
   {
    "name": "アカハネ冒険団ランス",
@@ -4271,7 +5362,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583943"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583943",
+   "g8Url": "https://game8.jp/mhoutlanders/838800"
   },
   {
    "name": "アカハネ冒険団ランス・水",
@@ -4359,7 +5451,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583944"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583944",
+   "g8Url": "https://game8.jp/mhoutlanders/838802"
   },
   {
    "name": "アカハネ冒険団ランス・氷",
@@ -4447,7 +5540,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583946"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583946",
+   "g8Url": "https://game8.jp/mhoutlanders/838806"
   },
   {
    "name": "アカハネ冒険団ランス・火",
@@ -4535,7 +5629,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583945"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583945",
+   "g8Url": "https://game8.jp/mhoutlanders/838805"
   },
   {
    "name": "アカハネ冒険団ランス・雷",
@@ -4623,7 +5718,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583947"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583947",
+   "g8Url": "https://game8.jp/mhoutlanders/838809"
   },
   {
    "name": "アカハネ冒険団ランス・龍",
@@ -4711,14 +5807,15 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583948"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583948",
+   "g8Url": "https://game8.jp/mhoutlanders/838812"
   },
   {
    "name": "アクアホーン",
    "type": "ランス",
    "element": "水",
    "baseRarity": 2,
-   "maxRarity": 6,
+   "maxRarity": 10,
    "stats": {
     "2": {
      "attack": 55,
@@ -4749,6 +5846,30 @@
      "element": 105,
      "affinity": 0,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "7": {
+     "attack": 274,
+     "element": 137,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 346,
+     "element": 173,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 429,
+     "element": 215,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 521,
+     "element": 261,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -4759,20 +5880,41 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583990"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583990",
+   "g8Url": "https://game8.jp/mhoutlanders/838827"
   },
   {
    "name": "ガロンダーラ",
    "type": "ランス",
    "element": "火",
    "baseRarity": 7,
-   "maxRarity": 7,
+   "maxRarity": 10,
    "stats": {
     "7": {
      "attack": 261,
-     "element": 0,
+     "element": 130,
      "affinity": 3.9,
-     "src": "game8.co"
+     "src": "Game8（2026-11-10）。属性値は空欄のため同じ武器のほかのレアの比で推定",
+     "est": true
+    },
+    "8": {
+     "attack": 331,
+     "element": 165,
+     "affinity": 3.9,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 410,
+     "element": 205,
+     "affinity": 3.9,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 498,
+     "element": 249,
+     "affinity": 3.9,
+     "est": true,
+     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
     }
    },
    "affinity": 3.9,
@@ -4783,7 +5925,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://game8.jp/mhoutlanders/838593"
+   "sourceUrl": "https://game8.jp/mhoutlanders/838593",
+   "g8Url": "https://game8.jp/mhoutlanders/838593"
   },
   {
    "name": "クルルハスター",
@@ -4800,7 +5943,7 @@
     },
     "10": {
      "attack": 670,
-     "element": 336,
+     "element": 335,
      "affinity": 2.2,
      "est": true,
      "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
@@ -4821,13 +5964,14 @@
    "type": "ランス",
    "element": "睡眠",
    "baseRarity": 1,
-   "maxRarity": 6,
+   "maxRarity": 10,
    "stats": {
     "1": {
      "attack": 43,
-     "element": 0,
+     "element": 22,
      "affinity": 2.1,
-     "src": "gamewith.ai・gamewith.jp・game8.co"
+     "src": "Game8（2026-11-10）。属性値は空欄のため同じ武器のほかのレアの比で推定",
+     "est": true
     },
     "2": {
      "attack": 67,
@@ -4858,6 +6002,30 @@
      "element": 128,
      "affinity": 3.6,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "7": {
+     "attack": 333,
+     "element": 167,
+     "affinity": 3.6,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 422,
+     "element": 211,
+     "affinity": 3.6,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 523,
+     "element": 262,
+     "affinity": 3.6,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 635,
+     "element": 318,
+     "affinity": 3.6,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 3.6,
@@ -4868,20 +6036,34 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583940"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583940",
+   "g8Url": "https://game8.jp/mhoutlanders/838823"
   },
   {
    "name": "グレイスランサー",
    "type": "ランス",
    "element": "氷",
    "baseRarity": 8,
-   "maxRarity": 8,
+   "maxRarity": 10,
    "stats": {
     "8": {
      "attack": 346,
      "element": 173,
      "affinity": 0,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card・game8.co"
+    },
+    "9": {
+     "attack": 429,
+     "element": 215,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 521,
+     "element": 261,
+     "affinity": 0,
+     "est": true,
+     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
     }
    },
    "affinity": 0,
@@ -4892,14 +6074,15 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/586607"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586607",
+   "g8Url": "https://game8.jp/mhoutlanders/838598"
   },
   {
    "name": "サンダーランス",
    "type": "ランス",
    "element": "雷",
    "baseRarity": 5,
-   "maxRarity": 6,
+   "maxRarity": 10,
    "stats": {
     "5": {
      "attack": 157,
@@ -4912,6 +6095,30 @@
      "element": 105,
      "affinity": 0,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "7": {
+     "attack": 274,
+     "element": 137,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 346,
+     "element": 173,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 429,
+     "element": 215,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 521,
+     "element": 261,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -4922,20 +6129,22 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584042"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584042",
+   "g8Url": "https://game8.jp/mhoutlanders/838584"
   },
   {
    "name": "タロスランス",
    "type": "ランス",
    "element": "爆破",
    "baseRarity": 4,
-   "maxRarity": 7,
+   "maxRarity": 10,
    "stats": {
     "4": {
      "attack": 166,
-     "element": 0,
+     "element": 83,
      "affinity": 0,
-     "src": "gamewith.ai・gamewith.jp・game8.co"
+     "src": "Game8（2026-11-10）。属性値は空欄のため同じ武器のほかのレアの比で推定",
+     "est": true
     },
     "5": {
      "attack": 231,
@@ -4954,6 +6163,24 @@
      "element": 201,
      "affinity": 0,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "8": {
+     "attack": 509,
+     "element": 255,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 631,
+     "element": 316,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 767,
+     "element": 384,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -4964,20 +6191,22 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584022"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584022",
+   "g8Url": "https://game8.jp/mhoutlanders/838755"
   },
   {
    "name": "ドラグロランス",
    "type": "ランス",
    "element": "麻痺",
    "baseRarity": 2,
-   "maxRarity": 6,
+   "maxRarity": 10,
    "stats": {
     "2": {
      "attack": 73,
-     "element": 0,
+     "element": 37,
      "affinity": -9.6,
-     "src": "gamewith.ai・gamewith.jp・game8.co"
+     "src": "Game8（2026-11-10）。属性値は空欄のため同じ武器のほかのレアの比で推定",
+     "est": true
     },
     "3": {
      "attack": 106,
@@ -5002,6 +6231,30 @@
      "element": 140,
      "affinity": -8.4,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "7": {
+     "attack": 365,
+     "element": 183,
+     "affinity": -8.4,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 462,
+     "element": 231,
+     "affinity": -8.4,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 572,
+     "element": 286,
+     "affinity": -8.4,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 695,
+     "element": 348,
+     "affinity": -8.4,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": -8.4,
@@ -5012,7 +6265,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583989"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583989",
+   "g8Url": "https://game8.jp/mhoutlanders/838826"
   },
   {
    "name": "フレイムランス",
@@ -5042,14 +6296,19 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584066"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584066",
+   "g8Url": "https://game8.jp/mhoutlanders/838586",
+   "renamedTo": {
+    "name": "レッドテイル",
+    "rarity": 8
+   }
   },
   {
    "name": "ブルームランス",
    "type": "ランス",
    "element": "毒",
    "baseRarity": 1,
-   "maxRarity": 6,
+   "maxRarity": 10,
    "stats": {
     "1": {
      "attack": 48,
@@ -5086,6 +6345,30 @@
      "element": 142,
      "affinity": 0,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "7": {
+     "attack": 369,
+     "element": 185,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 468,
+     "element": 234,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 579,
+     "element": 290,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 704,
+     "element": 352,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -5096,20 +6379,22 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583941"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583941",
+   "g8Url": "https://game8.jp/mhoutlanders/838825"
   },
   {
    "name": "ボーンランス",
    "type": "ランス",
    "element": "毒",
    "baseRarity": 3,
-   "maxRarity": 5,
+   "maxRarity": 10,
    "stats": {
     "3": {
      "attack": 105,
-     "element": 0,
+     "element": 52,
      "affinity": 0,
-     "src": "gamewith.ai・gamewith.jp・game8.co"
+     "src": "Game8（2026-11-10）。属性値は空欄のため同じ武器のほかのレアの比で推定",
+     "est": true
     },
     "4": {
      "attack": 150,
@@ -5122,6 +6407,36 @@
      "element": 104,
      "affinity": 0,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "6": {
+     "attack": 278,
+     "element": 139,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "7": {
+     "attack": 362,
+     "element": 181,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 458,
+     "element": 229,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 567,
+     "element": 284,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 689,
+     "element": 345,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -5130,20 +6445,34 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584005"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584005",
+   "g8Url": "https://game8.jp/mhoutlanders/838828"
   },
   {
    "name": "レッドテイル",
    "type": "ランス",
    "element": "火",
    "baseRarity": 8,
-   "maxRarity": 8,
+   "maxRarity": 10,
    "stats": {
     "8": {
      "attack": 318,
      "element": 159,
-     "affinity": 5.6,
-     "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+     "affinity": 5.2,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 394,
+     "element": 197,
+     "affinity": 5.2,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 478,
+     "element": 239,
+     "affinity": 5.2,
+     "est": true,
+     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
     }
    },
    "affinity": 5.6,
@@ -5184,20 +6513,37 @@
    "yuko": true,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584065"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584065",
+   "g8Url": "https://game8.jp/mhoutlanders/838590",
+   "renamedTo": {
+    "name": "融光種ウォータースパイク",
+    "rarity": 8
+   }
   },
   {
    "name": "融光種ウォータースパイク",
    "type": "ランス",
    "element": "水",
    "baseRarity": 8,
-   "maxRarity": 8,
+   "maxRarity": 10,
    "stats": {
     "8": {
      "attack": 357,
      "element": 179,
      "affinity": 0,
-     "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 443,
+     "element": 221,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 538,
+     "element": 269,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -5215,19 +6561,44 @@
    "type": "ランス",
    "element": "睡眠",
    "baseRarity": 5,
-   "maxRarity": 6,
+   "maxRarity": 10,
    "stats": {
     "5": {
      "attack": 202,
-     "element": 0,
+     "element": 101,
      "affinity": 1.6,
-     "src": "gamewith.ai・gamewith.jp・game8.co"
+     "src": "Game8（2026-11-10）。属性値は空欄のため同じ武器のほかのレアの比で推定",
+     "est": true
     },
     "6": {
      "attack": 271,
      "element": 136,
      "affinity": 1.8,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "7": {
+     "attack": 352,
+     "element": 176,
+     "affinity": 1.8,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 446,
+     "element": 223,
+     "affinity": 1.8,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 552,
+     "element": 276,
+     "affinity": 1.8,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 671,
+     "element": 336,
+     "affinity": 1.8,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 1.8,
@@ -5238,7 +6609,8 @@
    "yuko": true,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584043"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584043",
+   "g8Url": "https://game8.jp/mhoutlanders/838582"
   },
   {
    "name": "融光種ドラグロランス",
@@ -5249,9 +6621,10 @@
    "stats": {
     "5": {
      "attack": 218,
-     "element": 0,
+     "element": 109,
      "affinity": -11.6,
-     "src": "gamewith.ai・gamewith.jp・game8.co"
+     "src": "Game8（2026-11-10）。属性値は空欄のため同じ武器のほかのレアの比で推定",
+     "est": true
     },
     "6": {
      "attack": 293,
@@ -5274,14 +6647,19 @@
    "yuko": true,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584044"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584044",
+   "g8Url": "https://game8.jp/mhoutlanders/838583",
+   "renamedTo": {
+    "name": "融光種ボロススティンガー",
+    "rarity": 8
+   }
   },
   {
    "name": "融光種ブルームランス",
    "type": "ランス",
    "element": "毒",
    "baseRarity": 4,
-   "maxRarity": 6,
+   "maxRarity": 10,
    "stats": {
     "4": {
      "attack": 158,
@@ -5300,6 +6678,30 @@
      "element": 147,
      "affinity": 0,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "7": {
+     "attack": 381,
+     "element": 191,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 483,
+     "element": 242,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 598,
+     "element": 299,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 726,
+     "element": 363,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -5310,20 +6712,33 @@
    "yuko": true,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584024"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584024",
+   "g8Url": "https://game8.jp/mhoutlanders/838581"
   },
   {
    "name": "融光種ボロススティンガー",
    "type": "ランス",
    "element": "麻痺",
    "baseRarity": 8,
-   "maxRarity": 8,
+   "maxRarity": 10,
    "stats": {
     "8": {
      "attack": 482,
      "element": 241,
-     "affinity": -10.4,
-     "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+     "affinity": -10.8,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 597,
+     "element": 299,
+     "affinity": -10.8,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 726,
+     "element": 363,
+     "affinity": -10.8,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": -10.4,
@@ -5341,13 +6756,31 @@
    "type": "ランス",
    "element": "雷",
    "baseRarity": 7,
-   "maxRarity": 7,
+   "maxRarity": 10,
    "stats": {
     "7": {
      "attack": 282,
      "element": 141,
      "affinity": 0,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card・game8.co"
+    },
+    "8": {
+     "attack": 357,
+     "element": 179,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 443,
+     "element": 221,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 538,
+     "element": 269,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -5358,7 +6791,8 @@
    "yuko": true,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/585736"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/585736",
+   "g8Url": "https://game8.jp/mhoutlanders/838595"
   },
   {
    "name": "黒鋼の槍",
@@ -5416,7 +6850,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584064"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584064",
+   "g8Url": "https://game8.jp/mhoutlanders/838588"
   },
   {
    "name": "龍骨槍",
@@ -5486,20 +6921,22 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584023"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584023",
+   "g8Url": "https://game8.jp/mhoutlanders/838580"
   },
   {
    "name": "アイアンハンマー",
    "type": "ハンマー",
    "element": "爆破",
    "baseRarity": 1,
-   "maxRarity": 4,
+   "maxRarity": 10,
    "stats": {
     "1": {
      "attack": 52,
-     "element": 0,
+     "element": 26,
      "affinity": 0,
-     "src": "gamewith.ai・gamewith.jp・game8.co"
+     "src": "Game8（2026-11-10）。属性値は空欄のため同じ武器のほかのレアの比で推定",
+     "est": true
     },
     "2": {
      "attack": 78,
@@ -5518,6 +6955,42 @@
      "element": 81,
      "affinity": 0,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "5": {
+     "attack": 224,
+     "element": 112,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "6": {
+     "attack": 300,
+     "element": 150,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "7": {
+     "attack": 390,
+     "element": 195,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 494,
+     "element": 247,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 611,
+     "element": 306,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 743,
+     "element": 372,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -5526,7 +6999,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583951"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583951",
+   "g8Url": "https://game8.jp/mhoutlanders/838421"
   },
   {
    "name": "アカハネ冒険団ハンマー",
@@ -5614,7 +7088,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583952"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583952",
+   "g8Url": "https://game8.jp/mhoutlanders/838414"
   },
   {
    "name": "アカハネ冒険団ハンマー・水",
@@ -5702,7 +7177,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583953"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583953",
+   "g8Url": "https://game8.jp/mhoutlanders/838415"
   },
   {
    "name": "アカハネ冒険団ハンマー・氷",
@@ -5790,7 +7266,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583955"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583955",
+   "g8Url": "https://game8.jp/mhoutlanders/838417"
   },
   {
    "name": "アカハネ冒険団ハンマー・火",
@@ -5878,7 +7355,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583954"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583954",
+   "g8Url": "https://game8.jp/mhoutlanders/838416"
   },
   {
    "name": "アカハネ冒険団ハンマー・雷",
@@ -5966,7 +7444,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583956"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583956",
+   "g8Url": "https://game8.jp/mhoutlanders/838418"
   },
   {
    "name": "アカハネ冒険団ハンマー・龍",
@@ -6054,14 +7533,15 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583957"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583957",
+   "g8Url": "https://game8.jp/mhoutlanders/838419"
   },
   {
    "name": "アクアハンマー",
    "type": "ハンマー",
    "element": "水",
    "baseRarity": 2,
-   "maxRarity": 6,
+   "maxRarity": 10,
    "stats": {
     "2": {
      "attack": 54,
@@ -6092,6 +7572,30 @@
      "element": 103,
      "affinity": 0,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "7": {
+     "attack": 268,
+     "element": 134,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 339,
+     "element": 170,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 420,
+     "element": 210,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 510,
+     "element": 255,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -6102,14 +7606,15 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583993"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583993",
+   "g8Url": "https://game8.jp/mhoutlanders/838482"
   },
   {
    "name": "ギルオスハンマー",
    "type": "ハンマー",
    "element": "麻痺",
    "baseRarity": 2,
-   "maxRarity": 6,
+   "maxRarity": 10,
    "stats": {
     "2": {
      "attack": 64,
@@ -6140,6 +7645,30 @@
      "element": 124,
      "affinity": 4.8,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "7": {
+     "attack": 321,
+     "element": 161,
+     "affinity": 4.8,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 406,
+     "element": 203,
+     "affinity": 4.8,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 503,
+     "element": 252,
+     "affinity": 4.8,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 611,
+     "element": 306,
+     "affinity": 4.8,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 4.8,
@@ -6150,20 +7679,22 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583991"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583991",
+   "g8Url": "https://game8.jp/mhoutlanders/838481"
   },
   {
    "name": "クルルビーク",
    "type": "ハンマー",
    "element": "睡眠",
    "baseRarity": 1,
-   "maxRarity": 6,
+   "maxRarity": 10,
    "stats": {
     "1": {
      "attack": 42,
-     "element": 0,
+     "element": 21,
      "affinity": 2.8,
-     "src": "gamewith.ai・gamewith.jp・game8.co"
+     "src": "Game8（2026-11-10）。属性値は空欄のため同じ武器のほかのレアの比で推定",
+     "est": true
     },
     "2": {
      "attack": 64,
@@ -6194,6 +7725,30 @@
      "element": 124,
      "affinity": 4.8,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "7": {
+     "attack": 321,
+     "element": 161,
+     "affinity": 4.8,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 406,
+     "element": 203,
+     "affinity": 4.8,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 503,
+     "element": 252,
+     "affinity": 4.8,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 611,
+     "element": 306,
+     "affinity": 4.8,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 4.8,
@@ -6204,14 +7759,15 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583949"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583949",
+   "g8Url": "https://game8.jp/mhoutlanders/838420"
   },
   {
    "name": "サンダーハンマー",
    "type": "ハンマー",
    "element": "雷",
    "baseRarity": 5,
-   "maxRarity": 6,
+   "maxRarity": 10,
    "stats": {
     "5": {
      "attack": 157,
@@ -6224,6 +7780,30 @@
      "element": 105,
      "affinity": 0,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "7": {
+     "attack": 274,
+     "element": 137,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 346,
+     "element": 173,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 429,
+     "element": 215,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 521,
+     "element": 261,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -6234,20 +7814,33 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584046"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584046",
+   "g8Url": "https://game8.jp/mhoutlanders/838489"
   },
   {
    "name": "ジャナフストライク",
    "type": "ハンマー",
    "element": "火",
    "baseRarity": 8,
-   "maxRarity": 8,
+   "maxRarity": 10,
    "stats": {
     "8": {
      "attack": 347,
      "element": 173,
-     "affinity": -3.9,
-     "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+     "affinity": -4,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 430,
+     "element": 215,
+     "affinity": -4,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 522,
+     "element": 261,
+     "affinity": -4,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": -3.9,
@@ -6265,13 +7858,14 @@
    "type": "ハンマー",
    "element": "麻痺",
    "baseRarity": 2,
-   "maxRarity": 6,
+   "maxRarity": 10,
    "stats": {
     "2": {
      "attack": 70,
-     "element": 0,
+     "element": 35,
      "affinity": -4.8,
-     "src": "gamewith.ai・gamewith.jp・game8.co"
+     "src": "Game8（2026-11-10）。属性値は空欄のため同じ武器のほかのレアの比で推定",
+     "est": true
     },
     "3": {
      "attack": 101,
@@ -6296,6 +7890,30 @@
      "element": 135,
      "affinity": -4.2,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "7": {
+     "attack": 349,
+     "element": 175,
+     "affinity": -4.2,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 442,
+     "element": 221,
+     "affinity": -4.2,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 548,
+     "element": 274,
+     "affinity": -4.2,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 666,
+     "element": 333,
+     "affinity": -4.2,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": -4.2,
@@ -6306,20 +7924,39 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583992"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583992",
+   "g8Url": "https://game8.jp/mhoutlanders/838426"
   },
   {
    "name": "バルキンストライク",
    "type": "ハンマー",
    "element": "睡眠",
    "baseRarity": 7,
-   "maxRarity": 7,
+   "maxRarity": 10,
    "stats": {
     "7": {
      "attack": 360,
      "element": 180,
      "affinity": 0,
      "src": "game8.co"
+    },
+    "8": {
+     "attack": 456,
+     "element": 228,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 564,
+     "element": 282,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 686,
+     "element": 343,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -6330,14 +7967,15 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://game8.jp/mhoutlanders/838494"
+   "sourceUrl": "https://game8.jp/mhoutlanders/838494",
+   "g8Url": "https://game8.jp/mhoutlanders/838494"
   },
   {
    "name": "ブルームハンマー",
    "type": "ハンマー",
    "element": "毒",
    "baseRarity": 1,
-   "maxRarity": 6,
+   "maxRarity": 10,
    "stats": {
     "1": {
      "attack": 48,
@@ -6374,6 +8012,30 @@
      "element": 142,
      "affinity": 0,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "7": {
+     "attack": 369,
+     "element": 185,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 468,
+     "element": 234,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 579,
+     "element": 290,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 704,
+     "element": 352,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -6384,7 +8046,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583950"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583950",
+   "g8Url": "https://game8.jp/mhoutlanders/838850"
   },
   {
    "name": "ブレイズハンマー",
@@ -6432,20 +8095,45 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584007"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584007",
+   "g8Url": "https://game8.jp/mhoutlanders/838484",
+   "renamedTo": {
+    "name": "ジャナフストライク",
+    "rarity": 8
+   }
   },
   {
    "name": "ブロスヘッド",
    "type": "ハンマー",
    "element": "氷",
    "baseRarity": 7,
-   "maxRarity": 7,
+   "maxRarity": 10,
    "stats": {
     "7": {
      "attack": 286,
-     "element": 0,
+     "element": 143,
      "affinity": -8.1,
-     "src": "game8.co"
+     "src": "Game8（2026-11-10）。属性値は空欄のため同じ武器のほかのレアの比で推定",
+     "est": true
+    },
+    "8": {
+     "attack": 362,
+     "element": 181,
+     "affinity": -8.1,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 448,
+     "element": 224,
+     "affinity": -8.1,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 544,
+     "element": 272,
+     "affinity": -8.1,
+     "est": true,
+     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
     }
    },
    "affinity": -8.1,
@@ -6456,7 +8144,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://game8.jp/mhoutlanders/838492"
+   "sourceUrl": "https://game8.jp/mhoutlanders/838492",
+   "g8Url": "https://game8.jp/mhoutlanders/838492"
   },
   {
    "name": "ライトニングバッシュ",
@@ -6473,7 +8162,7 @@
     },
     "10": {
      "attack": 521,
-     "element": 262,
+     "element": 261,
      "affinity": 0,
      "est": true,
      "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
@@ -6492,13 +8181,14 @@
    "type": "ハンマー",
    "element": "雷",
    "baseRarity": 3,
-   "maxRarity": 5,
+   "maxRarity": 10,
    "stats": {
     "3": {
      "attack": 78,
-     "element": 0,
+     "element": 39,
      "affinity": 0,
-     "src": "gamewith.ai・gamewith.jp・game8.co"
+     "src": "Game8（2026-11-10）。属性値は空欄のため同じ武器のほかのレアの比で推定",
+     "est": true
     },
     "4": {
      "attack": 111,
@@ -6511,6 +8201,36 @@
      "element": 77,
      "affinity": 0,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "6": {
+     "attack": 206,
+     "element": 103,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "7": {
+     "attack": 268,
+     "element": 134,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 339,
+     "element": 170,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 420,
+     "element": 210,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 510,
+     "element": 255,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -6519,7 +8239,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584006"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584006",
+   "g8Url": "https://game8.jp/mhoutlanders/838483"
   },
   {
    "name": "融光種アクアハンマー",
@@ -6549,20 +8270,37 @@
    "yuko": true,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584068"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584068",
+   "g8Url": "https://game8.jp/mhoutlanders/838491",
+   "renamedTo": {
+    "name": "融光種ウォーターバッシュ",
+    "rarity": 8
+   }
   },
   {
    "name": "融光種ウォーターバッシュ",
    "type": "ハンマー",
    "element": "水",
    "baseRarity": 8,
-   "maxRarity": 8,
+   "maxRarity": 10,
    "stats": {
     "8": {
      "attack": 346,
      "element": 173,
      "affinity": 0,
-     "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 429,
+     "element": 215,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 521,
+     "element": 261,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -6580,19 +8318,44 @@
    "type": "ハンマー",
    "element": "睡眠",
    "baseRarity": 5,
-   "maxRarity": 6,
+   "maxRarity": 10,
    "stats": {
     "5": {
      "attack": 191,
-     "element": 0,
+     "element": 96,
      "affinity": 3.3,
-     "src": "gamewith.ai・gamewith.jp・game8.co"
+     "src": "Game8（2026-11-10）。属性値は空欄のため同じ武器のほかのレアの比で推定",
+     "est": true
     },
     "6": {
      "attack": 256,
      "element": 128,
      "affinity": 3.6,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "7": {
+     "attack": 333,
+     "element": 167,
+     "affinity": 3.6,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 422,
+     "element": 211,
+     "affinity": 3.6,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 523,
+     "element": 262,
+     "affinity": 3.6,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 635,
+     "element": 318,
+     "affinity": 3.6,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 3.6,
@@ -6603,20 +8366,34 @@
    "yuko": true,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584045"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584045",
+   "g8Url": "https://game8.jp/mhoutlanders/838486"
   },
   {
    "name": "融光種ジャナフストライク",
    "type": "ハンマー",
    "element": "火",
    "baseRarity": 8,
-   "maxRarity": 8,
+   "maxRarity": 10,
    "stats": {
     "8": {
      "attack": 347,
      "element": 173,
-     "affinity": -3.9,
-     "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+     "affinity": -4,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 430,
+     "element": 215,
+     "affinity": -4,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 522,
+     "element": 261,
+     "affinity": -4,
+     "est": true,
+     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
     }
    },
    "affinity": -3.9,
@@ -6638,9 +8415,10 @@
    "stats": {
     "5": {
      "attack": 209,
-     "element": 0,
+     "element": 104,
      "affinity": -8.7,
-     "src": "gamewith.ai・gamewith.jp・game8.co"
+     "src": "Game8（2026-11-10）。属性値は空欄のため同じ武器のほかのレアの比で推定",
+     "est": true
     },
     "6": {
      "attack": 280,
@@ -6663,7 +8441,12 @@
    "yuko": true,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584048"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584048",
+   "g8Url": "https://game8.jp/mhoutlanders/838487",
+   "renamedTo": {
+    "name": "融光種ボルボブレイカー",
+    "rarity": 8
+   }
   },
   {
    "name": "融光種ブレイズハンマー",
@@ -6699,20 +8482,37 @@
    "yuko": true,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584047"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584047",
+   "g8Url": "https://game8.jp/mhoutlanders/838488",
+   "renamedTo": {
+    "name": "融光種ジャナフストライク",
+    "rarity": 8
+   }
   },
   {
    "name": "融光種ボルボブレイカー",
    "type": "ハンマー",
    "element": "麻痺",
    "baseRarity": 8,
-   "maxRarity": 8,
+   "maxRarity": 10,
    "stats": {
     "8": {
      "attack": 462,
      "element": 231,
-     "affinity": -7.8,
-     "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+     "affinity": -8.1,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 572,
+     "element": 286,
+     "affinity": -8.1,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 695,
+     "element": 348,
+     "affinity": -8.1,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": -7.8,
@@ -6730,13 +8530,31 @@
    "type": "ハンマー",
    "element": "麻痺",
    "baseRarity": 7,
-   "maxRarity": 7,
+   "maxRarity": 10,
    "stats": {
     "7": {
      "attack": 352,
-     "element": 156,
+     "element": 176,
      "affinity": 1.6,
-     "src": "game8.co"
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 446,
+     "element": 223,
+     "affinity": 1.6,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 552,
+     "element": 276,
+     "affinity": 1.6,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 671,
+     "element": 336,
+     "affinity": 1.6,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 1.6,
@@ -6747,20 +8565,39 @@
    "yuko": true,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://game8.jp/mhoutlanders/838493"
+   "sourceUrl": "https://game8.jp/mhoutlanders/838493",
+   "g8Url": "https://game8.jp/mhoutlanders/838493"
   },
   {
    "name": "融光種ライトニングバッシュ",
    "type": "ハンマー",
    "element": "雷",
    "baseRarity": 7,
-   "maxRarity": 7,
+   "maxRarity": 10,
    "stats": {
     "7": {
      "attack": 282,
      "element": 141,
      "affinity": 0,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card・game8.co"
+    },
+    "8": {
+     "attack": 357,
+     "element": 179,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 443,
+     "element": 221,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 538,
+     "element": 269,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -6771,7 +8608,8 @@
    "yuko": true,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/585737"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/585737",
+   "g8Url": "https://game8.jp/mhoutlanders/838495"
   },
   {
    "name": "黒鋼の鎚",
@@ -6829,7 +8667,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584067"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584067",
+   "g8Url": "https://game8.jp/mhoutlanders/838490"
   },
   {
    "name": "龍骨大槌",
@@ -6899,7 +8738,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584025"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584025",
+   "g8Url": "https://game8.jp/mhoutlanders/838485"
   },
   {
    "name": "アカハネ冒険団チャージアックス",
@@ -6987,7 +8827,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583960"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583960",
+   "g8Url": "https://game8.jp/mhoutlanders/838389"
   },
   {
    "name": "アカハネ冒険団チャージアックス・水",
@@ -7075,7 +8916,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583961"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583961",
+   "g8Url": "https://game8.jp/mhoutlanders/838390"
   },
   {
    "name": "アカハネ冒険団チャージアックス・氷",
@@ -7163,7 +9005,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583963"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583963",
+   "g8Url": "https://game8.jp/mhoutlanders/838392"
   },
   {
    "name": "アカハネ冒険団チャージアックス・火",
@@ -7251,7 +9094,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583962"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583962",
+   "g8Url": "https://game8.jp/mhoutlanders/838391"
   },
   {
    "name": "アカハネ冒険団チャージアックス・雷",
@@ -7339,7 +9183,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583964"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583964",
+   "g8Url": "https://game8.jp/mhoutlanders/838393"
   },
   {
    "name": "アカハネ冒険団チャージアックス・龍",
@@ -7427,14 +9272,15 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583965"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583965",
+   "g8Url": "https://game8.jp/mhoutlanders/838394"
   },
   {
    "name": "ギルオスアームズ",
    "type": "チャージアックス",
    "element": "麻痺",
    "baseRarity": 2,
-   "maxRarity": 6,
+   "maxRarity": 10,
    "stats": {
     "2": {
      "attack": 67,
@@ -7465,6 +9311,30 @@
      "element": 128,
      "affinity": 3.6,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "7": {
+     "attack": 333,
+     "element": 167,
+     "affinity": 3.6,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 422,
+     "element": 211,
+     "affinity": 3.6,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 523,
+     "element": 262,
+     "affinity": 3.6,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 635,
+     "element": 318,
+     "affinity": 3.6,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 3.6,
@@ -7475,20 +9345,22 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583994"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583994",
+   "g8Url": "https://game8.jp/mhoutlanders/838398"
   },
   {
    "name": "ジャグラスアームズ",
    "type": "チャージアックス",
    "element": "睡眠",
    "baseRarity": 1,
-   "maxRarity": 6,
+   "maxRarity": 10,
    "stats": {
     "1": {
      "attack": 45,
-     "element": 0,
+     "element": 22,
      "affinity": 0,
-     "src": "gamewith.ai・gamewith.jp・game8.co"
+     "src": "Game8（2026-11-10）。属性値は空欄のため同じ武器のほかのレアの比で推定",
+     "est": true
     },
     "2": {
      "attack": 70,
@@ -7519,6 +9391,30 @@
      "element": 134,
      "affinity": 0,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "7": {
+     "attack": 349,
+     "element": 175,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 442,
+     "element": 221,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 547,
+     "element": 274,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 665,
+     "element": 333,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -7529,7 +9425,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583958"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583958",
+   "g8Url": "https://game8.jp/mhoutlanders/838395"
   },
   {
    "name": "ジャグラスエスクード",
@@ -7576,11 +9473,10 @@
      "src": "gamewith.jp・gamewith.jp list card・game8.co"
     },
     "10": {
-     "attack": 671,
-     "element": 337,
+     "attack": 672,
+     "element": 336,
      "affinity": 4.5,
-     "est": true,
-     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 4.5,
@@ -7592,20 +9488,33 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/586845"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586845",
+   "g8Url": "https://game8.jp/mhoutlanders/838413"
   },
   {
    "name": "ディア＝ルテミア",
    "type": "チャージアックス",
    "element": "毒",
    "baseRarity": 8,
-   "maxRarity": 8,
+   "maxRarity": 10,
    "stats": {
     "8": {
      "attack": 458,
      "element": 229,
      "affinity": 0,
-     "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 567,
+     "element": 284,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 689,
+     "element": 345,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -7646,14 +9555,19 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584071"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584071",
+   "g8Url": "https://game8.jp/mhoutlanders/838405",
+   "renamedTo": {
+    "name": "ディア＝ルテミア",
+    "rarity": 8
+   }
   },
   {
    "name": "パルサーアームズ",
    "type": "チャージアックス",
    "element": "雷",
    "baseRarity": 5,
-   "maxRarity": 6,
+   "maxRarity": 10,
    "stats": {
     "5": {
      "attack": 150,
@@ -7666,6 +9580,30 @@
      "element": 100,
      "affinity": 3.6,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "7": {
+     "attack": 261,
+     "element": 131,
+     "affinity": 3.6,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 331,
+     "element": 165,
+     "affinity": 3.6,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 410,
+     "element": 205,
+     "affinity": 3.6,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 498,
+     "element": 249,
+     "affinity": 3.6,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 3.6,
@@ -7676,20 +9614,41 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584049"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584049",
+   "g8Url": "https://game8.jp/mhoutlanders/838403"
   },
   {
    "name": "ブロスウォール",
    "type": "チャージアックス",
    "element": "氷",
    "baseRarity": 7,
-   "maxRarity": 7,
+   "maxRarity": 10,
    "stats": {
     "7": {
      "attack": 274,
-     "element": 0,
+     "element": 137,
      "affinity": -4,
-     "src": "game8.co"
+     "src": "Game8（2026-11-10）。属性値は空欄のため同じ武器のほかのレアの比で推定",
+     "est": true
+    },
+    "8": {
+     "attack": 347,
+     "element": 173,
+     "affinity": -4,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 430,
+     "element": 215,
+     "affinity": -4,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 522,
+     "element": 261,
+     "affinity": -4,
+     "est": true,
+     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
     }
    },
    "affinity": -4,
@@ -7700,20 +9659,22 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://game8.jp/mhoutlanders/838408"
+   "sourceUrl": "https://game8.jp/mhoutlanders/838408",
+   "g8Url": "https://game8.jp/mhoutlanders/838408"
   },
   {
    "name": "ボーンアームズ",
    "type": "チャージアックス",
    "element": "爆破",
    "baseRarity": 3,
-   "maxRarity": 7,
+   "maxRarity": 10,
    "stats": {
     "3": {
      "attack": 113,
-     "element": 0,
+     "element": 56,
      "affinity": 0,
-     "src": "gamewith.ai・gamewith.jp・game8.co"
+     "src": "Game8（2026-11-10）。属性値は空欄のため同じ武器のほかのレアの比で推定",
+     "est": true
     },
     "4": {
      "attack": 161,
@@ -7738,6 +9699,24 @@
      "element": 195,
      "affinity": 0,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "8": {
+     "attack": 494,
+     "element": 247,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 611,
+     "element": 306,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 743,
+     "element": 372,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -7746,20 +9725,41 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584008"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584008",
+   "g8Url": "https://game8.jp/mhoutlanders/838399"
   },
   {
    "name": "憎しみの炎",
    "type": "チャージアックス",
    "element": "火",
    "baseRarity": 7,
-   "maxRarity": 7,
+   "maxRarity": 10,
    "stats": {
     "7": {
      "attack": 261,
-     "element": 0,
+     "element": 130,
      "affinity": 3.9,
-     "src": "game8.co"
+     "src": "Game8（2026-11-10）。属性値は空欄のため同じ武器のほかのレアの比で推定",
+     "est": true
+    },
+    "8": {
+     "attack": 331,
+     "element": 165,
+     "affinity": 3.9,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 410,
+     "element": 205,
+     "affinity": 3.9,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 498,
+     "element": 249,
+     "affinity": 3.9,
+     "est": true,
+     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
     }
    },
    "affinity": 3.9,
@@ -7770,20 +9770,34 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://game8.jp/mhoutlanders/838409"
+   "sourceUrl": "https://game8.jp/mhoutlanders/838409",
+   "g8Url": "https://game8.jp/mhoutlanders/838409"
   },
   {
    "name": "氷結の盾斧",
    "type": "チャージアックス",
    "element": "氷",
    "baseRarity": 8,
-   "maxRarity": 8,
+   "maxRarity": 10,
    "stats": {
     "8": {
      "attack": 339,
      "element": 170,
      "affinity": 0,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card・game8.co"
+    },
+    "9": {
+     "attack": 420,
+     "element": 210,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 510,
+     "element": 255,
+     "affinity": 0,
+     "est": true,
+     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
     }
    },
    "affinity": 0,
@@ -7794,14 +9808,15 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/586608"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586608",
+   "g8Url": "https://game8.jp/mhoutlanders/838412"
   },
   {
    "name": "泥流の盾斧",
    "type": "チャージアックス",
    "element": "水",
    "baseRarity": 2,
-   "maxRarity": 6,
+   "maxRarity": 10,
    "stats": {
     "2": {
      "attack": 54,
@@ -7832,6 +9847,30 @@
      "element": 103,
      "affinity": 0,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "7": {
+     "attack": 268,
+     "element": 134,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 339,
+     "element": 170,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 420,
+     "element": 210,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 510,
+     "element": 255,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -7842,14 +9881,15 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583995"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583995",
+   "g8Url": "https://game8.jp/mhoutlanders/838397"
   },
   {
    "name": "火竜の盾斧",
    "type": "チャージアックス",
    "element": "火",
    "baseRarity": 6,
-   "maxRarity": 7,
+   "maxRarity": 10,
    "stats": {
     "6": {
      "attack": 193,
@@ -7862,6 +9902,25 @@
      "element": 126,
      "affinity": 5.2,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "8": {
+     "attack": 318,
+     "element": 159,
+     "affinity": 5.2,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 394,
+     "element": 197,
+     "affinity": 5.2,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 478,
+     "element": 239,
+     "affinity": 5.2,
+     "est": true,
+     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
     }
    },
    "affinity": 5.2,
@@ -7872,20 +9931,39 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584072"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584072",
+   "g8Url": "https://game8.jp/mhoutlanders/838406"
   },
   {
    "name": "融光種カガチノカイナ",
    "type": "チャージアックス",
    "element": "雷",
    "baseRarity": 7,
-   "maxRarity": 7,
+   "maxRarity": 10,
    "stats": {
     "7": {
      "attack": 276,
      "element": 138,
      "affinity": 1.9,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card・game8.co"
+    },
+    "8": {
+     "attack": 350,
+     "element": 175,
+     "affinity": 1.9,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 433,
+     "element": 217,
+     "affinity": 1.9,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 526,
+     "element": 263,
+     "affinity": 1.9,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 1.9,
@@ -7896,20 +9974,39 @@
    "yuko": true,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/585738"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/585738",
+   "g8Url": "https://game8.jp/mhoutlanders/838411"
   },
   {
    "name": "融光種ギルオスチャージアックス",
    "type": "チャージアックス",
    "element": "麻痺",
    "baseRarity": 7,
-   "maxRarity": 7,
+   "maxRarity": 10,
    "stats": {
     "7": {
-     "attack": 703,
+     "attack": 352,
      "element": 176,
      "affinity": 1.9,
-     "src": "game8.co"
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 446,
+     "element": 223,
+     "affinity": 1.9,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 552,
+     "element": 276,
+     "affinity": 1.9,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 671,
+     "element": 336,
+     "affinity": 1.9,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 1.9,
@@ -7920,20 +10017,22 @@
    "yuko": true,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://game8.jp/mhoutlanders/838410"
+   "sourceUrl": "https://game8.jp/mhoutlanders/838410",
+   "g8Url": "https://game8.jp/mhoutlanders/838410"
   },
   {
    "name": "融光種ジャグラスアームズ",
    "type": "チャージアックス",
    "element": "睡眠",
    "baseRarity": 4,
-   "maxRarity": 6,
+   "maxRarity": 10,
    "stats": {
     "4": {
      "attack": 149,
-     "element": 0,
+     "element": 74,
      "affinity": 0,
-     "src": "gamewith.ai・gamewith.jp・game8.co"
+     "src": "Game8（2026-11-10）。属性値は空欄のため同じ武器のほかのレアの比で推定",
+     "est": true
     },
     "5": {
      "attack": 206,
@@ -7946,6 +10045,30 @@
      "element": 139,
      "affinity": 0,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "7": {
+     "attack": 360,
+     "element": 180,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 456,
+     "element": 228,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 564,
+     "element": 282,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 686,
+     "element": 343,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -7956,7 +10079,8 @@
    "yuko": true,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584027"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584027",
+   "g8Url": "https://game8.jp/mhoutlanders/838401"
   },
   {
    "name": "融光種ジャグラスエスクード",
@@ -7994,13 +10118,26 @@
    "type": "チャージアックス",
    "element": "毒",
    "baseRarity": 8,
-   "maxRarity": 8,
+   "maxRarity": 10,
    "stats": {
     "8": {
      "attack": 458,
      "element": 229,
      "affinity": 0,
-     "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 567,
+     "element": 284,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 689,
+     "element": 345,
+     "affinity": 0,
+     "est": true,
+     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
     }
    },
    "affinity": 0,
@@ -8059,7 +10196,12 @@
    "yuko": true,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584009"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584009",
+   "g8Url": "https://game8.jp/mhoutlanders/838400",
+   "renamedTo": {
+    "name": "融光種ディア＝ルテミア",
+    "rarity": 8
+   }
   },
   {
    "name": "融光種泥流の盾斧",
@@ -8089,20 +10231,37 @@
    "yuko": true,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584070"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584070",
+   "g8Url": "https://game8.jp/mhoutlanders/838407",
+   "renamedTo": {
+    "name": "融光種ディープシュラム",
+    "rarity": 8
+   }
   },
   {
    "name": "融光種ディープシュラム",
    "type": "チャージアックス",
    "element": "水",
    "baseRarity": 8,
-   "maxRarity": 8,
+   "maxRarity": 10,
    "stats": {
     "8": {
      "attack": 346,
      "element": 173,
      "affinity": 0,
-     "src": "gamewith.ai・gamewith.jp・gamewith.jp list card・game8.co"
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 429,
+     "element": 215,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 521,
+     "element": 261,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -8120,13 +10279,14 @@
    "type": "チャージアックス",
    "element": "雷",
    "baseRarity": 1,
-   "maxRarity": 6,
+   "maxRarity": 10,
    "stats": {
     "1": {
      "attack": 52,
-     "element": 0,
+     "element": 26,
      "affinity": 0,
-     "src": "gamewith.ai・gamewith.jp・game8.co"
+     "src": "Game8（2026-11-10）。属性値は空欄のため同じ武器のほかのレアの比で推定",
+     "est": true
     },
     "2": {
      "attack": 54,
@@ -8157,6 +10317,30 @@
      "element": 103,
      "affinity": 0,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "7": {
+     "attack": 268,
+     "element": 134,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 339,
+     "element": 170,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 420,
+     "element": 210,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 510,
+     "element": 255,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -8165,7 +10349,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583959"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583959",
+   "g8Url": "https://game8.jp/mhoutlanders/838396"
   },
   {
    "name": "黒鋼の盾斧",
@@ -8223,7 +10408,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584069"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584069",
+   "g8Url": "https://game8.jp/mhoutlanders/838404"
   },
   {
    "name": "龍骨盾斧",
@@ -8293,14 +10479,15 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584026"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584026",
+   "g8Url": "https://game8.jp/mhoutlanders/838402"
   },
   {
    "name": "アイアンアサルト",
    "type": "ヘビィボウガン",
    "element": "麻痺",
    "baseRarity": 1,
-   "maxRarity": 4,
+   "maxRarity": 10,
    "stats": {
     "1": {
      "attack": 44,
@@ -8325,6 +10512,42 @@
      "element": 71,
      "affinity": 0,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "5": {
+     "attack": 196,
+     "element": 98,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "6": {
+     "attack": 263,
+     "element": 132,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "7": {
+     "attack": 341,
+     "element": 171,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 432,
+     "element": 216,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 536,
+     "element": 268,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 651,
+     "element": 326,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -8333,7 +10556,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583968"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583968",
+   "g8Url": "https://game8.jp/mhoutlanders/838535"
   },
   {
    "name": "アカハネ冒険団ヘビィボウガン",
@@ -8421,7 +10645,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583974"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583974",
+   "g8Url": "https://game8.jp/mhoutlanders/838523"
   },
   {
    "name": "アカハネ冒険団ヘビィボウガン・水",
@@ -8509,7 +10734,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583973"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583973",
+   "g8Url": "https://game8.jp/mhoutlanders/838524"
   },
   {
    "name": "アカハネ冒険団ヘビィボウガン・氷",
@@ -8597,7 +10823,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583971"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583971",
+   "g8Url": "https://game8.jp/mhoutlanders/838526"
   },
   {
    "name": "アカハネ冒険団ヘビィボウガン・火",
@@ -8685,7 +10912,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583972"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583972",
+   "g8Url": "https://game8.jp/mhoutlanders/838525"
   },
   {
    "name": "アカハネ冒険団ヘビィボウガン・雷",
@@ -8773,7 +11001,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583970"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583970",
+   "g8Url": "https://game8.jp/mhoutlanders/838527"
   },
   {
    "name": "アカハネ冒険団ヘビィボウガン・龍",
@@ -8861,14 +11090,15 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583969"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583969",
+   "g8Url": "https://game8.jp/mhoutlanders/838528"
   },
   {
    "name": "アクアアサルト",
    "type": "ヘビィボウガン",
    "element": "水",
    "baseRarity": 2,
-   "maxRarity": 6,
+   "maxRarity": 10,
    "stats": {
     "2": {
      "attack": 54,
@@ -8899,6 +11129,30 @@
      "element": 103,
      "affinity": 0,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "7": {
+     "attack": 268,
+     "element": 134,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 339,
+     "element": 170,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 420,
+     "element": 210,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 510,
+     "element": 255,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -8909,20 +11163,33 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583996"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583996",
+   "g8Url": "https://game8.jp/mhoutlanders/838552"
   },
   {
    "name": "イルミナルアサルト",
    "type": "ヘビィボウガン",
    "element": "雷",
    "baseRarity": 8,
-   "maxRarity": 8,
+   "maxRarity": 10,
    "stats": {
     "8": {
      "attack": 346,
      "element": 173,
      "affinity": 0,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card・game8.co"
+    },
+    "9": {
+     "attack": 429,
+     "element": 215,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 521,
+     "element": 261,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -8933,14 +11200,15 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/586489"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586489",
+   "g8Url": "https://game8.jp/mhoutlanders/838795"
   },
   {
    "name": "ジャグラスアサルト",
    "type": "ヘビィボウガン",
    "element": "水",
    "baseRarity": 1,
-   "maxRarity": 6,
+   "maxRarity": 10,
    "stats": {
     "1": {
      "attack": 35,
@@ -8977,6 +11245,30 @@
      "element": 103,
      "affinity": 0,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "7": {
+     "attack": 268,
+     "element": 134,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 339,
+     "element": 170,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 420,
+     "element": 210,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 510,
+     "element": 255,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -8987,7 +11279,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583966"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583966",
+   "g8Url": "https://game8.jp/mhoutlanders/838529"
   },
   {
    "name": "ジャグラスキャノン",
@@ -9004,7 +11297,7 @@
     },
     "10": {
      "attack": 510,
-     "element": 256,
+     "element": 255,
      "affinity": 0,
      "est": true,
      "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
@@ -9025,13 +11318,32 @@
    "type": "ヘビィボウガン",
    "element": "氷",
    "baseRarity": 7,
-   "maxRarity": 7,
+   "maxRarity": 10,
    "stats": {
     "7": {
      "attack": 274,
      "element": 137,
      "affinity": 4,
      "src": "game8.co"
+    },
+    "8": {
+     "attack": 347,
+     "element": 173,
+     "affinity": 4,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 430,
+     "element": 215,
+     "affinity": 4,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 522,
+     "element": 261,
+     "affinity": 4,
+     "est": true,
+     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
     }
    },
    "affinity": 4,
@@ -9042,20 +11354,39 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://game8.jp/mhoutlanders/838790"
+   "sourceUrl": "https://game8.jp/mhoutlanders/838790",
+   "g8Url": "https://game8.jp/mhoutlanders/838790"
   },
   {
    "name": "バルキンキャノン",
    "type": "ヘビィボウガン",
    "element": "睡眠",
    "baseRarity": 7,
-   "maxRarity": 7,
+   "maxRarity": 10,
    "stats": {
     "7": {
      "attack": 349,
      "element": 175,
      "affinity": 0,
      "src": "game8.co"
+    },
+    "8": {
+     "attack": 442,
+     "element": 221,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 547,
+     "element": 274,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 665,
+     "element": 333,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -9066,14 +11397,15 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://game8.jp/mhoutlanders/838793"
+   "sourceUrl": "https://game8.jp/mhoutlanders/838793",
+   "g8Url": "https://game8.jp/mhoutlanders/838793"
   },
   {
    "name": "パルサーシューター",
    "type": "ヘビィボウガン",
    "element": "雷",
    "baseRarity": 5,
-   "maxRarity": 6,
+   "maxRarity": 10,
    "stats": {
     "5": {
      "attack": 144,
@@ -9086,6 +11418,30 @@
      "element": 97,
      "affinity": 4.8,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "7": {
+     "attack": 251,
+     "element": 126,
+     "affinity": 4.8,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 318,
+     "element": 159,
+     "affinity": 4.8,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 394,
+     "element": 197,
+     "affinity": 4.8,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 479,
+     "element": 240,
+     "affinity": 4.8,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 4.8,
@@ -9096,20 +11452,33 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584050"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584050",
+   "g8Url": "https://game8.jp/mhoutlanders/838574"
   },
   {
    "name": "フラムエルテルマ",
    "type": "ヘビィボウガン",
    "element": "火",
    "baseRarity": 8,
-   "maxRarity": 8,
+   "maxRarity": 10,
    "stats": {
     "8": {
      "attack": 347,
      "element": 173,
-     "affinity": -3.9,
-     "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+     "affinity": -4,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 430,
+     "element": 215,
+     "affinity": -4,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 522,
+     "element": 261,
+     "affinity": -4,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": -3.9,
@@ -9127,7 +11496,7 @@
    "type": "ヘビィボウガン",
    "element": "毒",
    "baseRarity": 1,
-   "maxRarity": 6,
+   "maxRarity": 10,
    "stats": {
     "1": {
      "attack": 47,
@@ -9164,6 +11533,30 @@
      "element": 139,
      "affinity": 0,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "7": {
+     "attack": 362,
+     "element": 181,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 458,
+     "element": 229,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 567,
+     "element": 284,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 689,
+     "element": 345,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -9174,7 +11567,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583967"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583967",
+   "g8Url": "https://game8.jp/mhoutlanders/838530"
   },
   {
    "name": "ブレイズアサルト",
@@ -9222,26 +11616,49 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584011"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584011",
+   "g8Url": "https://game8.jp/mhoutlanders/838553",
+   "renamedTo": {
+    "name": "フラムエルテルマ",
+    "rarity": 8
+   }
   },
   {
    "name": "ヘビィシューター",
    "type": "ヘビィボウガン",
    "element": "火",
    "baseRarity": 6,
-   "maxRarity": 7,
+   "maxRarity": 10,
    "stats": {
     "6": {
      "attack": 206,
      "element": 103,
      "affinity": 0,
-     "src": "gamewith.jp"
+     "src": "Game8（2026-11-10）"
     },
     "7": {
      "attack": 268,
      "element": 134,
      "affinity": 0,
-     "src": "gamewith.jp・gamewith.jp list card"
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 339,
+     "element": 170,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 420,
+     "element": 210,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 510,
+     "element": 255,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -9284,7 +11701,12 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584010"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584010",
+   "g8Url": "https://game8.jp/mhoutlanders/838554",
+   "renamedTo": {
+    "name": "ヘビィシューター",
+    "rarity": 6
+   }
   },
   {
    "name": "ロゼッテス",
@@ -9307,7 +11729,7 @@
     },
     "10": {
      "attack": 521,
-     "element": 262,
+     "element": 261,
      "affinity": 0,
      "est": true,
      "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
@@ -9321,7 +11743,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/586609"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586609",
+   "g8Url": "https://game8.jp/mhoutlanders/838797"
   },
   {
    "name": "融光種アクアアサルト",
@@ -9351,7 +11774,12 @@
    "yuko": true,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584074"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584074",
+   "g8Url": "https://game8.jp/mhoutlanders/838788",
+   "renamedTo": {
+    "name": "融光種ウォーターキャノン",
+    "rarity": 8
+   }
   },
   {
    "name": "融光種ウォーターキャノン",
@@ -9364,19 +11792,19 @@
      "attack": 346,
      "element": 173,
      "affinity": 0,
-     "src": "gamewith.ai・gamewith.jp"
+     "src": "Game8（2026-11-10）"
     },
     "9": {
      "attack": 429,
      "element": 215,
      "affinity": 0,
-     "src": "gamewith.ai・gamewith.jp list card"
+     "src": "Game8（2026-11-10）"
     },
     "10": {
      "attack": 521,
      "element": 261,
      "affinity": 0,
-     "src": "Game8（融光種アクアアサルトのページ 838788、レア6〜10）"
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -9394,13 +11822,31 @@
    "type": "ヘビィボウガン",
    "element": "雷",
    "baseRarity": 7,
-   "maxRarity": 7,
+   "maxRarity": 10,
    "stats": {
     "7": {
      "attack": 251,
      "element": 126,
      "affinity": 5.2,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card・game8.co"
+    },
+    "8": {
+     "attack": 318,
+     "element": 159,
+     "affinity": 5.2,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 394,
+     "element": 197,
+     "affinity": 5.2,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 479,
+     "element": 240,
+     "affinity": 5.2,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 5.2,
@@ -9411,7 +11857,8 @@
    "yuko": true,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/585739"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/585739",
+   "g8Url": "https://game8.jp/mhoutlanders/838791"
   },
   {
    "name": "融光種ジャグラスアサルト",
@@ -9447,7 +11894,12 @@
    "yuko": true,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584028"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584028",
+   "g8Url": "https://game8.jp/mhoutlanders/838555",
+   "renamedTo": {
+    "name": "融光種ジャグラスキャノン",
+    "rarity": 7
+   }
   },
   {
    "name": "融光種ジャグラスキャノン",
@@ -9460,26 +11912,25 @@
      "attack": 268,
      "element": 134,
      "affinity": 0,
-     "src": "gamewith.jp"
+     "src": "Game8（2026-11-10）"
     },
     "8": {
      "attack": 339,
      "element": 170,
      "affinity": 0,
-     "src": "gamewith.jp"
+     "src": "Game8（2026-11-10）"
     },
     "9": {
      "attack": 420,
      "element": 210,
      "affinity": 0,
-     "src": "gamewith.jp list card"
+     "src": "Game8（2026-11-10）"
     },
     "10": {
      "attack": 510,
-     "element": 256,
+     "element": 255,
      "affinity": 0,
-     "est": true,
-     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -9497,13 +11948,31 @@
    "type": "ヘビィボウガン",
    "element": "爆破",
    "baseRarity": 7,
-   "maxRarity": 7,
+   "maxRarity": 10,
    "stats": {
     "7": {
      "attack": 382,
      "element": 191,
      "affinity": 0,
-     "src": "gamewith.jp・gamewith.jp list card"
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 483,
+     "element": 242,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 599,
+     "element": 300,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 727,
+     "element": 364,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -9521,13 +11990,26 @@
    "type": "ヘビィボウガン",
    "element": "火",
    "baseRarity": 8,
-   "maxRarity": 8,
+   "maxRarity": 10,
    "stats": {
     "8": {
      "attack": 347,
      "element": 173,
-     "affinity": -3.9,
-     "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+     "affinity": -4,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 430,
+     "element": 215,
+     "affinity": -4,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 522,
+     "element": 261,
+     "affinity": -4,
+     "est": true,
+     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
     }
    },
    "affinity": -3.9,
@@ -9574,7 +12056,12 @@
    "yuko": true,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584030"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584030",
+   "g8Url": "https://game8.jp/mhoutlanders/838564",
+   "renamedTo": {
+    "name": "融光種ダチュラブラスター",
+    "rarity": 7
+   }
   },
   {
    "name": "融光種ブレイズアサルト",
@@ -9610,7 +12097,12 @@
    "yuko": true,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584051"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584051",
+   "g8Url": "https://game8.jp/mhoutlanders/838578",
+   "renamedTo": {
+    "name": "融光種フラムエルテルマ",
+    "rarity": 8
+   }
   },
   {
    "name": "黒鋼の砲筒",
@@ -9668,7 +12160,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584073"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584073",
+   "g8Url": "https://game8.jp/mhoutlanders/838786"
   },
   {
    "name": "龍骨砲",
@@ -9738,7 +12231,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584029"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584029",
+   "g8Url": "https://game8.jp/mhoutlanders/838570"
   },
   {
    "name": "アカハネ冒険団弓",
@@ -9826,7 +12320,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583978"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583978",
+   "g8Url": "https://game8.jp/mhoutlanders/838496"
   },
   {
    "name": "アカハネ冒険団弓・水",
@@ -9914,7 +12409,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583979"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583979",
+   "g8Url": "https://game8.jp/mhoutlanders/838497"
   },
   {
    "name": "アカハネ冒険団弓・氷",
@@ -10002,7 +12498,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583981"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583981",
+   "g8Url": "https://game8.jp/mhoutlanders/838499"
   },
   {
    "name": "アカハネ冒険団弓・火",
@@ -10090,7 +12587,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583980"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583980",
+   "g8Url": "https://game8.jp/mhoutlanders/838498"
   },
   {
    "name": "アカハネ冒険団弓・雷",
@@ -10178,7 +12676,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583982"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583982",
+   "g8Url": "https://game8.jp/mhoutlanders/838736"
   },
   {
    "name": "アカハネ冒険団弓・龍",
@@ -10266,14 +12765,15 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583983"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583983",
+   "g8Url": "https://game8.jp/mhoutlanders/838737"
   },
   {
    "name": "アクアアロー",
    "type": "弓",
    "element": "水",
    "baseRarity": 2,
-   "maxRarity": 6,
+   "maxRarity": 10,
    "stats": {
     "2": {
      "attack": 54,
@@ -10304,6 +12804,30 @@
      "element": 103,
      "affinity": 0,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "7": {
+     "attack": 268,
+     "element": 134,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 339,
+     "element": 170,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 420,
+     "element": 210,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 510,
+     "element": 255,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -10314,20 +12838,22 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583997"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583997",
+   "g8Url": "https://game8.jp/mhoutlanders/838741"
   },
   {
    "name": "クルルアロー",
    "type": "弓",
    "element": "睡眠",
    "baseRarity": 1,
-   "maxRarity": 6,
+   "maxRarity": 10,
    "stats": {
     "1": {
      "attack": 46,
-     "element": 0,
+     "element": 23,
      "affinity": 1.1,
-     "src": "gamewith.ai・gamewith.jp・game8.co"
+     "src": "Game8（2026-11-10）。属性値は空欄のため同じ武器のほかのレアの比で推定",
+     "est": true
     },
     "2": {
      "attack": 71,
@@ -10358,6 +12884,30 @@
      "element": 136,
      "affinity": 1.8,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "7": {
+     "attack": 352,
+     "element": 176,
+     "affinity": 1.8,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 446,
+     "element": 223,
+     "affinity": 1.8,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 552,
+     "element": 276,
+     "affinity": 1.8,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 671,
+     "element": 336,
+     "affinity": 1.8,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 1.8,
@@ -10368,20 +12918,34 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583975"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583975",
+   "g8Url": "https://game8.jp/mhoutlanders/838739"
   },
   {
    "name": "グレイスアロー",
    "type": "弓",
    "element": "氷",
    "baseRarity": 8,
-   "maxRarity": 8,
+   "maxRarity": 10,
    "stats": {
     "8": {
      "attack": 339,
      "element": 170,
      "affinity": 0,
      "src": "gamewith.ai・game8.co"
+    },
+    "9": {
+     "attack": 420,
+     "element": 210,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 510,
+     "element": 255,
+     "affinity": 0,
+     "est": true,
+     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
     }
    },
    "affinity": 0,
@@ -10392,20 +12956,33 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.ai/monster-hunter-outlanders/ja/weapons/glacial-arrow"
+   "sourceUrl": "https://gamewith.ai/monster-hunter-outlanders/ja/weapons/glacial-arrow",
+   "g8Url": "https://game8.jp/mhoutlanders/838521"
   },
   {
    "name": "ジャナフアルカウス",
    "type": "弓",
    "element": "火",
    "baseRarity": 8,
-   "maxRarity": 8,
+   "maxRarity": 10,
    "stats": {
     "8": {
      "attack": 347,
      "element": 173,
-     "affinity": -3.9,
-     "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+     "affinity": -4,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 430,
+     "element": 215,
+     "affinity": -4,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 522,
+     "element": 261,
+     "affinity": -4,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": -3.9,
@@ -10423,13 +13000,14 @@
    "type": "弓",
    "element": "水",
    "baseRarity": 3,
-   "maxRarity": 5,
+   "maxRarity": 10,
    "stats": {
     "3": {
      "attack": 78,
-     "element": 0,
+     "element": 39,
      "affinity": 0,
-     "src": "gamewith.ai・gamewith.jp・game8.co"
+     "src": "Game8（2026-11-10）。属性値は空欄のため同じ武器のほかのレアの比で推定",
+     "est": true
     },
     "4": {
      "attack": 111,
@@ -10442,6 +13020,36 @@
      "element": 77,
      "affinity": 0,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "6": {
+     "attack": 206,
+     "element": 103,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "7": {
+     "attack": 268,
+     "element": 134,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 339,
+     "element": 170,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 420,
+     "element": 210,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 510,
+     "element": 255,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -10450,14 +13058,15 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584012"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584012",
+   "g8Url": "https://game8.jp/mhoutlanders/838743"
   },
   {
    "name": "パルサーボウ",
    "type": "弓",
    "element": "雷",
    "baseRarity": 5,
-   "maxRarity": 6,
+   "maxRarity": 10,
    "stats": {
     "5": {
      "attack": 150,
@@ -10470,6 +13079,30 @@
      "element": 100,
      "affinity": 3.6,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "7": {
+     "attack": 261,
+     "element": 131,
+     "affinity": 3.6,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 331,
+     "element": 165,
+     "affinity": 3.6,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 410,
+     "element": 205,
+     "affinity": 3.6,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 498,
+     "element": 249,
+     "affinity": 3.6,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 3.6,
@@ -10480,20 +13113,22 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584052"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584052",
+   "g8Url": "https://game8.jp/mhoutlanders/838749"
   },
   {
    "name": "ブルームアーチ",
    "type": "弓",
    "element": "爆破",
    "baseRarity": 1,
-   "maxRarity": 6,
+   "maxRarity": 10,
    "stats": {
     "1": {
      "attack": 51,
-     "element": 0,
+     "element": 26,
      "affinity": 0,
-     "src": "gamewith.ai・gamewith.jp・game8.co"
+     "src": "Game8（2026-11-10）。属性値は空欄のため同じ武器のほかのレアの比で推定",
+     "est": true
     },
     "2": {
      "attack": 78,
@@ -10524,6 +13159,30 @@
      "element": 150,
      "affinity": 0,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "7": {
+     "attack": 390,
+     "element": 195,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 494,
+     "element": 247,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 611,
+     "element": 306,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 743,
+     "element": 372,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -10534,7 +13193,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583976"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583976",
+   "g8Url": "https://game8.jp/mhoutlanders/838738"
   },
   {
    "name": "ブレイズボウ",
@@ -10582,20 +13242,45 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584013"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584013",
+   "g8Url": "https://game8.jp/mhoutlanders/838744",
+   "renamedTo": {
+    "name": "ジャナフアルカウス",
+    "rarity": 8
+   }
   },
   {
    "name": "ブロスホーンボウ",
    "type": "弓",
    "element": "氷",
    "baseRarity": 7,
-   "maxRarity": 7,
+   "maxRarity": 10,
    "stats": {
     "7": {
      "attack": 274,
-     "element": 0,
+     "element": 137,
      "affinity": -4,
-     "src": "game8.co"
+     "src": "Game8（2026-11-10）。属性値は空欄のため同じ武器のほかのレアの比で推定",
+     "est": true
+    },
+    "8": {
+     "attack": 347,
+     "element": 173,
+     "affinity": -4,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 430,
+     "element": 215,
+     "affinity": -4,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 522,
+     "element": 261,
+     "affinity": -4,
+     "est": true,
+     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
     }
    },
    "affinity": -4,
@@ -10606,7 +13291,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://game8.jp/mhoutlanders/838754"
+   "sourceUrl": "https://game8.jp/mhoutlanders/838754",
+   "g8Url": "https://game8.jp/mhoutlanders/838754"
   },
   {
    "name": "プリンセスアロー",
@@ -10617,9 +13303,10 @@
    "stats": {
     "6": {
      "attack": 193,
-     "element": 0,
+     "element": 96,
      "affinity": 4.8,
-     "src": "gamewith.ai・gamewith.jp・game8.co"
+     "src": "Game8（2026-11-10）。属性値は空欄のため同じ武器のほかのレアの比で推定",
+     "est": true
     },
     "7": {
      "attack": 251,
@@ -10666,7 +13353,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584077"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584077",
+   "g8Url": "https://game8.jp/mhoutlanders/838750"
   },
   {
    "name": "ローゼスアロー",
@@ -10677,16 +13365,16 @@
    "stats": {
     "9": {
      "attack": 410,
-     "element": 0,
+     "element": 205,
      "affinity": 4.5,
-     "src": "gamewith.jp・gamewith.jp list card・game8.co"
+     "src": "Game8（2026-11-10）。属性値は空欄のため同じ武器のほかのレアの比で推定",
+     "est": true
     },
     "10": {
      "attack": 498,
-     "element": 0,
+     "element": 249,
      "affinity": 4.5,
-     "est": true,
-     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 4.5,
@@ -10698,7 +13386,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/586846"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/586846",
+   "g8Url": "https://game8.jp/mhoutlanders/838522"
   },
   {
    "name": "火竜の強弓",
@@ -10758,7 +13447,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584078"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584078",
+   "g8Url": "https://game8.jp/mhoutlanders/838752"
   },
   {
    "name": "融光種アクアアロー",
@@ -10788,20 +13478,37 @@
    "yuko": true,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584076"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584076",
+   "g8Url": "https://game8.jp/mhoutlanders/838751",
+   "renamedTo": {
+    "name": "融光種ウォーターシュート",
+    "rarity": 8
+   }
   },
   {
    "name": "融光種ウォーターシュート",
    "type": "弓",
    "element": "水",
    "baseRarity": 8,
-   "maxRarity": 8,
+   "maxRarity": 10,
    "stats": {
     "8": {
      "attack": 346,
      "element": 173,
      "affinity": 0,
-     "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 429,
+     "element": 215,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 521,
+     "element": 261,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -10819,19 +13526,44 @@
    "type": "弓",
    "element": "爆破",
    "baseRarity": 5,
-   "maxRarity": 6,
+   "maxRarity": 10,
    "stats": {
     "5": {
      "attack": 226,
-     "element": 0,
+     "element": 113,
      "affinity": 1.6,
-     "src": "gamewith.ai・gamewith.jp・game8.co"
+     "src": "Game8（2026-11-10）。属性値は空欄のため同じ武器のほかのレアの比で推定",
+     "est": true
     },
     "6": {
      "attack": 303,
      "element": 152,
      "affinity": 1.8,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "7": {
+     "attack": 393,
+     "element": 197,
+     "affinity": 1.8,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 498,
+     "element": 249,
+     "affinity": 1.8,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 617,
+     "element": 309,
+     "affinity": 1.8,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 750,
+     "element": 375,
+     "affinity": 1.8,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 1.8,
@@ -10842,20 +13574,34 @@
    "yuko": true,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584054"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584054",
+   "g8Url": "https://game8.jp/mhoutlanders/838747"
   },
   {
    "name": "融光種ジャナフアルカウス",
    "type": "弓",
    "element": "火",
    "baseRarity": 8,
-   "maxRarity": 8,
+   "maxRarity": 10,
    "stats": {
     "8": {
      "attack": 347,
      "element": 173,
-     "affinity": -3.9,
-     "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+     "affinity": -4,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 430,
+     "element": 215,
+     "affinity": -4,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 522,
+     "element": 261,
+     "affinity": -4,
+     "est": true,
+     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
     }
    },
    "affinity": -3.9,
@@ -10873,13 +13619,14 @@
    "type": "弓",
    "element": "毒",
    "baseRarity": 4,
-   "maxRarity": 6,
+   "maxRarity": 10,
    "stats": {
     "4": {
      "attack": 158,
-     "element": 0,
+     "element": 79,
      "affinity": 0,
-     "src": "gamewith.ai・gamewith.jp・game8.co"
+     "src": "Game8（2026-11-10）。属性値は空欄のため同じ武器のほかのレアの比で推定",
+     "est": true
     },
     "5": {
      "attack": 219,
@@ -10892,6 +13639,30 @@
      "element": 147,
      "affinity": 0,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "7": {
+     "attack": 381,
+     "element": 191,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 483,
+     "element": 242,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 598,
+     "element": 299,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 726,
+     "element": 363,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -10902,7 +13673,8 @@
    "yuko": true,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584032"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584032",
+   "g8Url": "https://game8.jp/mhoutlanders/838745"
   },
   {
    "name": "融光種ブレイズボウ",
@@ -10938,7 +13710,12 @@
    "yuko": true,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584053"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584053",
+   "g8Url": "https://game8.jp/mhoutlanders/838748",
+   "renamedTo": {
+    "name": "融光種ジャナフアルカウス",
+    "rarity": 8
+   }
   },
   {
    "name": "融光種プリンセスアロー",
@@ -10949,9 +13726,10 @@
    "stats": {
     "3": {
      "attack": 73,
-     "element": 0,
+     "element": 36,
      "affinity": 3.6,
-     "src": "gamewith.ai・gamewith.jp・game8.co"
+     "src": "Game8（2026-11-10）。属性値は空欄のため同じ武器のほかのレアの比で推定",
+     "est": true
     },
     "4": {
      "attack": 104,
@@ -11016,7 +13794,8 @@
    "yuko": true,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584014"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584014",
+   "g8Url": "https://game8.jp/mhoutlanders/838742"
   },
   {
    "name": "融光種飛雷弓イテカガチ",
@@ -11032,10 +13811,10 @@
      "src": "gamewith.ai・gamewith.jp・game8.co"
     },
     "8": {
-     "attack": 346,
-     "element": 173,
+     "attack": 350,
+     "element": 175,
      "affinity": 1.9,
-     "est": true
+     "src": "Game8（2026-11-10）"
     },
     "9": {
      "attack": 433,
@@ -11045,10 +13824,9 @@
     },
     "10": {
      "attack": 526,
-     "element": 264,
+     "element": 263,
      "affinity": 2.2,
-     "est": true,
-     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 2.2,
@@ -11059,20 +13837,22 @@
    "yuko": true,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/585740"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/585740",
+   "g8Url": "https://game8.jp/mhoutlanders/838502"
   },
   {
    "name": "鉄弓",
    "type": "弓",
    "element": "麻痺",
    "baseRarity": 1,
-   "maxRarity": 4,
+   "maxRarity": 10,
    "stats": {
     "1": {
      "attack": 52,
-     "element": 0,
+     "element": 26,
      "affinity": 0,
-     "src": "gamewith.ai・gamewith.jp・game8.co"
+     "src": "Game8（2026-11-10）。属性値は空欄のため同じ武器のほかのレアの比で推定",
+     "est": true
     },
     "2": {
      "attack": 70,
@@ -11091,6 +13871,42 @@
      "element": 72,
      "affinity": 0,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "5": {
+     "attack": 200,
+     "element": 100,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "6": {
+     "attack": 268,
+     "element": 134,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "7": {
+     "attack": 349,
+     "element": 175,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "8": {
+     "attack": 442,
+     "element": 221,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "9": {
+     "attack": 547,
+     "element": 274,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
+    },
+    "10": {
+     "attack": 665,
+     "element": 333,
+     "affinity": 0,
+     "src": "Game8（2026-11-10）"
     }
    },
    "affinity": 0,
@@ -11099,7 +13915,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/583977"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/583977",
+   "g8Url": "https://game8.jp/mhoutlanders/838740"
   },
   {
    "name": "黒鋼の弓",
@@ -11157,7 +13974,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584075"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584075",
+   "g8Url": "https://game8.jp/mhoutlanders/838753"
   },
   {
    "name": "龍骨弓",
@@ -11227,7 +14045,8 @@
    "yuko": false,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://gamewith.jp/mhoutlanders/584031"
+   "sourceUrl": "https://gamewith.jp/mhoutlanders/584031",
+   "g8Url": "https://game8.jp/mhoutlanders/838746"
   },
   {
    "name": "融光種アルマデステリオ",
@@ -11251,7 +14070,8 @@
    "yuko": true,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://game8.jp/mhoutlanders/841221"
+   "sourceUrl": "https://game8.jp/mhoutlanders/841221",
+   "g8Url": "https://game8.jp/mhoutlanders/841221"
   },
   {
    "name": "融光種デュエルデステリオ",
@@ -11264,7 +14084,7 @@
      "attack": 538,
      "element": 269,
      "affinity": 0,
-     "src": "Game8（属性値は空欄のため 攻撃÷2 で推定）",
+     "src": "Game8（2026-11-10）。属性値は空欄のため同じ武器のほかのレアの比で推定",
      "est": true
     }
    },
@@ -11276,7 +14096,8 @@
    "yuko": true,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://game8.jp/mhoutlanders/841220"
+   "sourceUrl": "https://game8.jp/mhoutlanders/841220",
+   "g8Url": "https://game8.jp/mhoutlanders/841220"
   },
   {
    "name": "融光種眩惑刀【閃】",
@@ -11289,7 +14110,7 @@
      "attack": 538,
      "element": 269,
      "affinity": 0,
-     "src": "Game8（属性値は空欄のため 攻撃÷2 で推定）",
+     "src": "Game8（2026-11-10）。属性値は空欄のため同じ武器のほかのレアの比で推定",
      "est": true
     }
    },
@@ -11301,7 +14122,86 @@
    "yuko": true,
    "derived": false,
    "derivesFrom": null,
-   "sourceUrl": "https://game8.jp/mhoutlanders/841219"
+   "sourceUrl": "https://game8.jp/mhoutlanders/841219",
+   "g8Url": "https://game8.jp/mhoutlanders/841219"
+  },
+  {
+   "name": "融光種血吸いの鎖鎌",
+   "type": "双剣",
+   "element": "龍",
+   "baseRarity": 10,
+   "maxRarity": 10,
+   "stats": {
+    "10": {
+     "attack": 498,
+     "element": 249,
+     "affinity": 0,
+     "src": "Game8（2026-11-12）。属性値は空欄のため同じ武器のほかのレアの比で推定",
+     "est": true
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "融光種オドガロン"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": false,
+   "derivesFrom": null,
+   "sourceUrl": "https://game8.jp/mhoutlanders/841579",
+   "g8Url": "https://game8.jp/mhoutlanders/841579"
+  },
+  {
+   "name": "融光種ガロンダーラ",
+   "type": "ランス",
+   "element": "龍",
+   "baseRarity": 10,
+   "maxRarity": 10,
+   "stats": {
+    "10": {
+     "attack": 526,
+     "element": 263,
+     "affinity": 0,
+     "src": "Game8（2026-11-12）。属性値は空欄のため同じ武器のほかのレアの比で推定",
+     "est": true
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "融光種オドガロン"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": false,
+   "derivesFrom": null,
+   "sourceUrl": "https://game8.jp/mhoutlanders/841580",
+   "g8Url": "https://game8.jp/mhoutlanders/841580"
+  },
+  {
+   "name": "融光種憎しみの炎",
+   "type": "チャージアックス",
+   "element": "龍",
+   "baseRarity": 10,
+   "maxRarity": 10,
+   "stats": {
+    "10": {
+     "attack": 498,
+     "element": 249,
+     "affinity": 0,
+     "src": "Game8（2026-11-12）。属性値は空欄のため同じ武器のほかのレアの比で推定",
+     "est": true
+    }
+   },
+   "affinity": 0,
+   "monsters": [
+    "融光種オドガロン"
+   ],
+   "guild": false,
+   "yuko": true,
+   "derived": false,
+   "derivesFrom": null,
+   "sourceUrl": "https://game8.jp/mhoutlanders/841581",
+   "g8Url": "https://game8.jp/mhoutlanders/841581"
   },
   {
    "name": "光翼・ヒッポグリフ（火）",

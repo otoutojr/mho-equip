@@ -174,6 +174,13 @@ def game8_pages(out, raw_dir):
     for w in out:
         by.setdefault(w['name'], []).append(w)
     cnt = {'置き換え': 0, '新レア': 0, '属性補完': 0, '新武器': 0, '照合なし': []}
+    # 武器種ごとの 属性÷攻撃 の中央値（同じ武器にほかのレアの値が無いときの補い）
+    tr = {}
+    for g in pages:
+        for v in g['stats'].values():
+            if v.get('element') and v.get('attack'):
+                tr.setdefault(g['type'], []).append(v['element'] / v['attack'])
+    tr = {k: sorted(v)[len(v) // 2] for k, v in tr.items()}
     for g in pages:
         cands = [w for w in by.get(g['name'], []) if w['type'] == g['type'] and not w.get('apex')]
         if g['name'].startswith('光') and '・' in g['name']:
@@ -190,10 +197,11 @@ def game8_pages(out, raw_dir):
         for w in cands:
             ratios = [v['element'] / v['attack'] for v in st_g.values() if v.get('element') and v.get('attack')]
             ratios += [v['element'] / v['attack'] for v in w['stats'].values() if v.get('element') and v.get('attack') and not v.get('est')]
-            ratio = sorted(ratios)[len(ratios) // 2] if ratios else None
+            ratio = sorted(ratios)[len(ratios) // 2] if ratios else tr.get(g['type'])
             for r, v in st_g.items():
                 old = w['stats'].get(r)
-                if old and not old.get('est') and old.get('attack') == v['attack'] and (v.get('element') in (None, old.get('element'))):
+                if old and not old.get('est') and old.get('attack') == v['attack'] and (v.get('element') in (None, old.get('element'))) \
+                        and (old.get('element') or w['element'] in ('無', '-')):
                     continue
                 e, est, src = v.get('element'), False, f"Game8（{(g.get('modified') or '')[:10]}）"
                 if e is None and w['element'] in ('火', '水', '雷', '氷', '龍', '毒', '麻痺', '睡眠', '爆破'):
@@ -211,13 +219,39 @@ def game8_pages(out, raw_dir):
     return cnt
 
 
+def split_renames(out):
+    """Game8 はシリーズ1ページに、名前が変わった後（例: フラムエルヘレヴ → レア8から フラムエルヘレヴ改）の数値もまとめて載せている。
+    派生名の武器（derivesFrom あり）に、変わった後のレアの数値を移し、元の名前の武器はその手前のレアまでにする"""
+    by = {(w['name'], w['type']): w for w in out}
+    n = 0
+    for w in out:
+        base = by.get((w.get('derivesFrom'), w['type'])) if w.get('derivesFrom') else None
+        if not base or not w['stats']:
+            continue
+        at = min(int(r) for r in w['stats'])
+        moved = {int(r): v for r, v in base['stats'].items() if int(r) >= at}
+        if not moved:
+            continue
+        for r, v in moved.items():
+            cur = w['stats'].get(r)
+            if not cur or cur.get('est') or not v.get('est'):
+                w['stats'][r] = dict(v)
+        w['maxRarity'] = max(int(r) for r in w['stats'])
+        base['stats'] = {r: v for r, v in base['stats'].items() if int(r) < at}
+        base['maxRarity'] = at - 1
+        base['renamedTo'] = {'name': w['name'], 'rarity': at}
+        n += 1
+    return n
+
+
 def main():
     full_p = RAW.parent / 'weapons_full.json'
     if full_p.exists():
         out = from_full(json.loads(full_p.read_text(encoding='utf-8')))
-        print('レア9止まり → レア10まで伸ばした武器', extend_to_10(out))
         print('Game8 で追加・確認', game8_extra(out, RAW.parent))
         print('Game8 の武器ページで更新', game8_pages(out, RAW.parent))
+        print('名前が変わる武器の数値を派生名へ移した', split_renames(out))
+        print('レア9止まり → レア10まで伸ばした武器', extend_to_10(out))
         apex = apex_weapons(RAW.parent)
         print('鋭精武器', len(apex))
         out += apex
