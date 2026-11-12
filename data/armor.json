@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11",
+ "updated": "2026-11-12",
  "sets": [
   {
    "name": "掻鳥の巧技",
@@ -478,6 +478,30 @@
      "lv": 1,
      "effect": "攻撃で昆虫型の小型モンスターを討伐する時、残骸が残る確率が少し上がる。",
      "description": "攻撃で昆虫型の小型モンスターを討伐しても、剥ぎ取れる状態で残りやすい。"
+    }
+   ]
+  },
+  {
+   "name": "惨爪竜の激動",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "みなぎるエナジー",
+     "lv": 1,
+     "effect": "みなぎるエナジーLv1",
+     "description": null
+    }
+   ]
+  },
+  {
+   "name": "眩鳥の精密",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "弾導強化",
+     "lv": 1,
+     "effect": "弾導強化Lv1",
+     "description": null
     }
    ]
   }
@@ -10774,6 +10798,409 @@
       "GameWith",
       "Gamerch",
       "gamewith.ai"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "融光種ガロン",
+   "gate": {
+    "type": "monster",
+    "monsters": [
+     "融光種オドガロン"
+    ]
+   },
+   "set": "惨爪竜の激動",
+   "pieces": [
+    {
+     "id": "u878d_u5149_u7a2e_u30ac_u30ed_u30f3_head",
+     "name": "融光種ガロンヘルム",
+     "part": "head",
+     "baseRarity": 10,
+     "maxRarity": 12,
+     "docMax": 10,
+     "set": "惨爪竜の激動",
+     "orbTier": 4,
+     "skills": [
+      {
+       "name": "チャージ準備",
+       "lv": 3,
+       "rarity": 10
+      },
+      {
+       "name": "みなぎるエナジー",
+       "lv": 1,
+       "rarity": 10
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅳ",
+       "qty": 2
+      },
+      {
+       "name": "融光種惨爪竜の鱗Ⅳ",
+       "qty": 3
+      },
+      {
+       "name": "融光種惨爪竜の牙Ⅳ",
+       "qty": 3
+      },
+      {
+       "name": "融光種惨爪竜の逆鱗Ⅳ",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://game8.jp/mhoutlanders/841582",
+     "sources": [
+      "GameWith"
+     ]
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30ac_u30ed_u30f3_body",
+     "name": "融光種ガロンメイル",
+     "part": "body",
+     "baseRarity": 10,
+     "maxRarity": 12,
+     "docMax": 10,
+     "set": "惨爪竜の激動",
+     "orbTier": 4,
+     "skills": [
+      {
+       "name": "連撃強化",
+       "lv": 3,
+       "rarity": 10
+      },
+      {
+       "name": "みなぎるエナジー",
+       "lv": 1,
+       "rarity": 10
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅳ",
+       "qty": 2
+      },
+      {
+       "name": "融光種惨爪竜の鱗Ⅳ",
+       "qty": 3
+      },
+      {
+       "name": "融光種惨爪竜の硬筋Ⅳ",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://game8.jp/mhoutlanders/841582",
+     "sources": [
+      "GameWith"
+     ]
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30ac_u30ed_u30f3_arm",
+     "name": "融光種ガロンアーム",
+     "part": "arm",
+     "baseRarity": 10,
+     "maxRarity": 12,
+     "docMax": 10,
+     "set": "惨爪竜の激動",
+     "orbTier": 4,
+     "skills": [
+      {
+       "name": "鬼人の修羅",
+       "lv": 2,
+       "rarity": 10
+      },
+      {
+       "name": "体力ループ",
+       "lv": 1,
+       "rarity": 10
+      },
+      {
+       "name": "本気",
+       "lv": 1,
+       "rarity": 10
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅳ",
+       "qty": 2
+      },
+      {
+       "name": "融光種惨爪竜の鱗Ⅳ",
+       "qty": 3
+      },
+      {
+       "name": "融光種惨爪竜の爪Ⅳ",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://game8.jp/mhoutlanders/841582",
+     "sources": [
+      "GameWith"
+     ]
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30ac_u30ed_u30f3_waist",
+     "name": "融光種ガロンコイル",
+     "part": "waist",
+     "baseRarity": 10,
+     "maxRarity": 12,
+     "docMax": 10,
+     "set": "惨爪竜の激動",
+     "orbTier": 4,
+     "skills": [
+      {
+       "name": "鬼人の修羅",
+       "lv": 1,
+       "rarity": 10
+      },
+      {
+       "name": "体力ループ",
+       "lv": 2,
+       "rarity": 10
+      },
+      {
+       "name": "徹底追撃",
+       "lv": 1,
+       "rarity": 10
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅳ",
+       "qty": 2
+      },
+      {
+       "name": "融光種惨爪竜の鱗Ⅳ",
+       "qty": 3
+      },
+      {
+       "name": "融光種惨爪竜の牙Ⅳ",
+       "qty": 3
+      },
+      {
+       "name": "融光種惨爪竜の逆鱗Ⅳ",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://game8.jp/mhoutlanders/841582",
+     "sources": [
+      "GameWith"
+     ]
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30ac_u30ed_u30f3_leg",
+     "name": "融光種ガロングリーヴ",
+     "part": "leg",
+     "baseRarity": 10,
+     "maxRarity": 12,
+     "docMax": 10,
+     "set": "惨爪竜の激動",
+     "orbTier": 4,
+     "skills": [
+      {
+       "name": "みなぎるエナジー",
+       "lv": 1,
+       "rarity": 10
+      },
+      {
+       "name": "体力強化",
+       "lv": 2,
+       "rarity": 10
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅳ",
+       "qty": 2
+      },
+      {
+       "name": "融光種惨爪竜の硬筋Ⅳ",
+       "qty": 3
+      }
+     ],
+     "sourceUrl": "https://game8.jp/mhoutlanders/841582",
+     "sources": [
+      "GameWith"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "融光種ツィツィ",
+   "gate": {
+    "type": "monster",
+    "monsters": [
+     "融光種ツィツィヤック"
+    ]
+   },
+   "set": "眩鳥の精密",
+   "pieces": [
+    {
+     "id": "u878d_u5149_u7a2e_u30c4_u30a3_u30c4_u30a_head",
+     "name": "融光種ツィツィヘルム",
+     "part": "head",
+     "baseRarity": 10,
+     "maxRarity": 12,
+     "docMax": 10,
+     "set": "眩鳥の精密",
+     "orbTier": 4,
+     "skills": [
+      {
+       "name": "水属性ダメージUP",
+       "lv": 1,
+       "rarity": 10
+      },
+      {
+       "name": "体力回復",
+       "lv": 1,
+       "rarity": 10
+      },
+      {
+       "name": "アイテム専門家",
+       "lv": 1,
+       "rarity": 10
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅳ",
+       "qty": 2
+      }
+     ],
+     "sourceUrl": "https://game8.jp/mhoutlanders/841218",
+     "sources": [
+      "GameWith"
+     ]
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30c4_u30a3_u30c4_u30a_body",
+     "name": "融光種ツィツィメイル",
+     "part": "body",
+     "baseRarity": 10,
+     "maxRarity": 12,
+     "docMax": 10,
+     "set": "眩鳥の精密",
+     "orbTier": 4,
+     "skills": [
+      {
+       "name": "アイテム専門家",
+       "lv": 2,
+       "rarity": 10
+      },
+      {
+       "name": "一撃貫通",
+       "lv": 1,
+       "rarity": 10
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅳ",
+       "qty": 2
+      }
+     ],
+     "sourceUrl": "https://game8.jp/mhoutlanders/841218",
+     "sources": [
+      "GameWith"
+     ]
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30c4_u30a3_u30c4_u30a_arm",
+     "name": "融光種ツィツィアーム",
+     "part": "arm",
+     "baseRarity": 10,
+     "maxRarity": 12,
+     "docMax": 10,
+     "set": "眩鳥の精密",
+     "orbTier": 4,
+     "skills": [
+      {
+       "name": "体力回復",
+       "lv": 1,
+       "rarity": 10
+      },
+      {
+       "name": "睡眠耐性",
+       "lv": 2,
+       "rarity": 10
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅳ",
+       "qty": 2
+      }
+     ],
+     "sourceUrl": "https://game8.jp/mhoutlanders/841218",
+     "sources": [
+      "GameWith"
+     ]
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30c4_u30a3_u30c4_u30a_waist",
+     "name": "融光種ツィツィコイル",
+     "part": "waist",
+     "baseRarity": 10,
+     "maxRarity": 12,
+     "docMax": 10,
+     "set": "眩鳥の精密",
+     "orbTier": 4,
+     "skills": [
+      {
+       "name": "体力回復",
+       "lv": 1,
+       "rarity": 10
+      },
+      {
+       "name": "一撃貫通",
+       "lv": 3,
+       "rarity": 10
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅳ",
+       "qty": 2
+      }
+     ],
+     "sourceUrl": "https://game8.jp/mhoutlanders/841218",
+     "sources": [
+      "GameWith"
+     ]
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30c4_u30a3_u30c4_u30a_leg",
+     "name": "融光種ツィツィグリーヴ",
+     "part": "leg",
+     "baseRarity": 10,
+     "maxRarity": 12,
+     "docMax": 10,
+     "set": "眩鳥の精密",
+     "orbTier": 4,
+     "skills": [
+      {
+       "name": "睡眠耐性",
+       "lv": 1,
+       "rarity": 10
+      },
+      {
+       "name": "水属性ダメージUP",
+       "lv": 3,
+       "rarity": 10
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅳ",
+       "qty": 2
+      }
+     ],
+     "sourceUrl": "https://game8.jp/mhoutlanders/841218",
+     "sources": [
+      "GameWith"
      ]
     }
    ]

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11",
+ "updated": "2026-11-12",
  "maps": [
   {
    "name": "巨木の原野",
@@ -565,6 +565,42 @@
    "chapter": "5",
    "note": "5章 step17「融光種トビカガチ（指定された場所で調査）」。冒険ランク32の手順（step19）より前。防具レア7（狩魂玉Ⅲ）。",
    "sourceUrl": "https://game8.jp/mhoutlanders/811085"
+  },
+  {
+   "name": "融光種ツィツィヤック",
+   "variant": "yuko",
+   "maps": [
+    "瑰麗岩礁"
+   ],
+   "element": "無",
+   "weak": [
+    "龍"
+   ],
+   "armorSeries": [
+    "融光種ツィツィ"
+   ],
+   "unlockRank": 40,
+   "chapter": null,
+   "note": "Game8 融光種ツィツィ装備ページ（11/10）「冒険ランク40以降の調査の旅で解放」。出現場所は巣穴で狩猟、弱点 龍◎",
+   "sourceUrl": "https://game8.jp/mhoutlanders/811083"
+  },
+  {
+   "name": "融光種オドガロン",
+   "variant": "yuko",
+   "maps": [
+    "朽ち果ての淵"
+   ],
+   "element": "無",
+   "weak": [
+    "氷"
+   ],
+   "armorSeries": [
+    "融光種ガロン"
+   ],
+   "unlockRank": 40,
+   "chapter": null,
+   "note": "Game8 融光種ガロン装備ページ（11/12）「冒険ランク40以降の調査の旅で解放」。個別ページの出現マップは朽ち果ての淵、弱点 氷◎。Game8 大型一覧に 11/12 追加",
+   "sourceUrl": "https://game8.jp/mhoutlanders/811082"
   }
  ],
  "rankCap": [

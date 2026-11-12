@@ -160,12 +160,64 @@ def game8_extra(out, raw_dir):
     return n_new, n_conf
 
 
+def game8_pages(out, raw_dir):
+    """Game8 の武器ページ（1本ずつ読んだもの、weapons_g8_pages.json）でレア別の数値を上書きする。
+    - 攻撃力は Game8 の値をそのまま使う（推定値を置き換える）
+    - 属性値が空欄のレアは、手持ちの実数値があればそれを、無ければ同じ武器のほかのレアの 属性÷攻撃 の比で補って est を付ける
+    - 会心率は手持ちの値を残す
+    - Game8 にしか無い武器は新しく足す"""
+    p = raw_dir / 'weapons_g8_pages.json'
+    if not p.exists():
+        return {}
+    pages = json.loads(p.read_text(encoding='utf-8'))
+    by = {}
+    for w in out:
+        by.setdefault(w['name'], []).append(w)
+    cnt = {'置き換え': 0, '新レア': 0, '属性補完': 0, '新武器': 0, '照合なし': []}
+    for g in pages:
+        cands = [w for w in by.get(g['name'], []) if w['type'] == g['type'] and not w.get('apex')]
+        if g['name'].startswith('光') and '・' in g['name']:
+            continue  # 鋭精武器は apex_g8.json で別に持つ
+        st_g = {int(r): v for r, v in g['stats'].items()}
+        if not cands:
+            if g.get('baseRarity') is None:
+                cnt['照合なし'].append(g['name']); continue
+            el = g['element'] if g['element'] not in (None, '-', '') else '無'
+            w = {'name': g['name'], 'type': g['type'], 'element': el, 'baseRarity': g['baseRarity'], 'maxRarity': max(st_g), 'stats': {},
+                 'affinity': 0, 'monsters': [g['monster']] if g.get('monster') else [], 'guild': '冒険団' in g['name'], 'yuko': g['name'].startswith('融光種'),
+                 'derived': False, 'derivesFrom': None, 'sourceUrl': g['url']}
+            out.append(w); by.setdefault(w['name'], []).append(w); cands = [w]; cnt['新武器'] += 1
+        for w in cands:
+            ratios = [v['element'] / v['attack'] for v in st_g.values() if v.get('element') and v.get('attack')]
+            ratios += [v['element'] / v['attack'] for v in w['stats'].values() if v.get('element') and v.get('attack') and not v.get('est')]
+            ratio = sorted(ratios)[len(ratios) // 2] if ratios else None
+            for r, v in st_g.items():
+                old = w['stats'].get(r)
+                if old and not old.get('est') and old.get('attack') == v['attack'] and (v.get('element') in (None, old.get('element'))):
+                    continue
+                e, est, src = v.get('element'), False, f"Game8（{(g.get('modified') or '')[:10]}）"
+                if e is None and w['element'] in ('火', '水', '雷', '氷', '龍', '毒', '麻痺', '睡眠', '爆破'):
+                    if old and not old.get('est') and old.get('element'):
+                        e = old['element']
+                    elif ratio:
+                        e, est, src = round(v['attack'] * ratio), True, src + '。属性値は空欄のため同じ武器のほかのレアの比で推定'
+                        cnt['属性補完'] += 1
+                w['stats'][r] = {'attack': v['attack'], 'element': e or 0, 'affinity': (old or {}).get('affinity', w.get('affinity') or 0), 'src': src}
+                if est: w['stats'][r]['est'] = True
+                cnt['新レア' if not old else '置き換え'] += 1
+            w['maxRarity'] = max([w.get('maxRarity') or 0] + list(st_g))
+            w['baseRarity'] = min([w.get('baseRarity') or 99] + list(st_g)) if not w.get('baseRarity') else w['baseRarity']
+            w['g8Url'] = g['url']
+    return cnt
+
+
 def main():
     full_p = RAW.parent / 'weapons_full.json'
     if full_p.exists():
         out = from_full(json.loads(full_p.read_text(encoding='utf-8')))
         print('レア9止まり → レア10まで伸ばした武器', extend_to_10(out))
         print('Game8 で追加・確認', game8_extra(out, RAW.parent))
+        print('Game8 の武器ページで更新', game8_pages(out, RAW.parent))
         apex = apex_weapons(RAW.parent)
         print('鋭精武器', len(apex))
         out += apex
