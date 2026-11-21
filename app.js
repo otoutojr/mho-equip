@@ -1,6 +1,6 @@
 /* 融光工房 ― UI */
 'use strict';
-const APP_VERSION = '2026.11.21-9';
+const APP_VERSION = '2026.11.21-10';
 const STORE_KEY = 'mho-equip:v1';
 const PART_JP = { head: '頭', body: '胴', arm: '腕', waist: '腰', leg: '脚' };
 const $ = (sel) => document.querySelector(sel);
@@ -958,8 +958,9 @@ function renderResult() {
   if (b.setHits.length) { sn.hidden = false; sn.textContent = 'セットスキル：' + b.setHits.map(h => `${h.set}（${h.pieces}部位）で${h.skill}+${h.lv}`).join('、'); }
   renderCandidates(b, cands);
 }
-// 強い装備の候補（1〜3位）。主なスキルの組み合わせが同じものはまとめて、組み方の違う候補だけ並べる
-const mainSig = (d) => d.totals.filter(t => t.value >= 2).map(t => t.skill).sort().join('|');
+// 強い装備の候補（1〜3位）。主なスキル（DPSを5%以上上げているもの）の組み合わせが同じものはまとめて、
+// 組み方の違う候補だけ並べる（弱点攻撃1→洞察1 のような小さな入れ替えだけの構成は出さない）
+const mainSig = (d) => d.totals.filter(t => t.value >= 4.9).map(t => t.skill).sort().join('|');
 function renderCandidates(b, box) {
   const list = [b], seen = new Set([mainSig(b)]);
   const pool = [...(cur.variants || []), ...(cur.alts || [])].sort((x, y) => y.score - x.score);
