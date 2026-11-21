@@ -1,6 +1,6 @@
 /* 融光工房 ― UI */
 'use strict';
-const APP_VERSION = '2026.11.21-10';
+const APP_VERSION = '2026.11.21-11';
 const STORE_KEY = 'mho-equip:v1';
 const PART_JP = { head: '頭', body: '胴', arm: '腕', waist: '腰', leg: '脚' };
 const $ = (sel) => document.querySelector(sel);
@@ -856,6 +856,21 @@ let shownDps = 0, animFrame = null;
 function animateNumber(target) {
   const node = $('#dpsNum');
   cancelAnimationFrame(animFrame);
+  // NumberFlow（vendor/number-flow）：桁ごとに数字が回る。動きを減らす設定では回らない。読み込めなかったときは下の数え上げ
+  if (window.customElements && customElements.get('number-flow')) {
+    let flow = node.querySelector('number-flow');
+    if (!flow) {
+      node.textContent = '';
+      flow = document.createElement('number-flow');
+      flow.locales = 'ja-JP'; flow.format = { maximumFractionDigits: 0 };
+      flow.transformTiming = { duration: 750, easing: 'cubic-bezier(.2, .8, .2, 1)' };
+      flow.opacityTiming = { duration: 350, easing: 'ease-out' };
+      flow.setAttribute('aria-hidden', 'true'); // 読み上げは隣の .vh（回っている途中の桁を読ませない）
+      node.append(flow, el('span', { class: 'vh' }));
+    }
+    shownDps = target; flow.update(Math.round(target)); node.querySelector('.vh').textContent = fmtInt(target);
+    return;
+  }
   const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (reduce || !shownDps) { shownDps = target; node.textContent = fmtInt(target); return; }
   const from = shownDps, t0 = performance.now(), dur = 420;
@@ -893,9 +908,26 @@ function gearRow(part, name, side, need, body) {
     el('summary', {}, plate(part), el('span', { class: 'rowMain', text: name }), el('span', { class: 'rowSide' + (need ? ' need' : ''), text: side })),
     el('div', { class: 'rowBody' }, ...body));
 }
+// 強化が要る所を朱の手書きの丸で囲む（Rough Notation、vendor/rough-notation）。描き直すたびに前の丸は消す
+let needMarks = [], markQueued = false;
+function markNeeds() {
+  markQueued = false;
+  needMarks.forEach(a => a.remove()); needMarks = [];
+  if (!window.RoughNotation) return;
+  const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const color = getComputedStyle(document.documentElement).getPropertyValue('--shu').trim() || '#b3311f';
+  for (const s of document.querySelectorAll('#gear .rowSide.need')) {
+    const a = RoughNotation.annotate(s, { type: 'circle', color, strokeWidth: 1.6, padding: [8, 7, 8, 10], animate: !reduce, animationDuration: 700 });
+    a.show(); needMarks.push(a);
+    const svg = s.nextElementSibling; // Rough Notation は丸の SVG を対象のすぐ後ろに入れる。飾りなので読み上げない
+    if (svg && svg.classList.contains('rough-annotation')) svg.setAttribute('aria-hidden', 'true');
+  }
+}
+const queueMarks = () => { if (!markQueued) { markQueued = true; requestAnimationFrame(markNeeds); } };
 // 戻り値：強化が要る行の数
 function renderGear() {
   const c = currentChar();
+  queueMarks();
   const box = $('#gear'); box.innerHTML = '';
   let nNeed = 0;
   const wb = cur.weapon;

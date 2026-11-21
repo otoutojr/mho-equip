@@ -13,6 +13,7 @@
 ## 構成
 - `index.html` / `style.css` / `app.js` … 画面
 - `phrase.js` + `vendor/budoux/` … 日本語を文節で折り返す（Safari など `word-break: auto-phrase` 未対応の端末だけ。BudouX、Apache-2.0）
+- `vendor/number-flow/`・`vendor/rough-notation/` … DPS目安の数字が桁ごとに回る動き（NumberFlow、MIT）と、強化が要る所を囲む朱の手書きの丸（Rough Notation、MIT）
 - `fonts/` … 見出し・数字の明朝（Shippori Mincho B1 ExtraBold を、使う字だけに絞った woff2。OFL-1.1）
 - `solver.js` … Web Worker。候補の絞り込み → 全組み合わせ探索（同点なら強化段数が少ない方）。組み合わせごとに、アウかる（mhnowcalc.com）の期待値の式（与ダメ系スキルは足し算、会心は+25%・基本会心率15%）でDPS目安を計算する。式の本体は `app.js` の `damageSpec`／`specDps` と `solver.js` の `specDps`（同じ式）
 - `data/*.json` … 武器・防具・スキル・モンスター・キャラの重み
@@ -28,7 +29,7 @@
 - `tools/audit_ui.py` … 画面の点検（押せる大きさ・名前・コントラスト・横はみ出し・フォーカス枠・動きを減らす設定など。Vercel の Web Interface Guidelines のうち機械で確かめられる項目）。`--selftest` でわざと悪い部品を入れて、点検が拾えるかを確かめられる
 
 ## 借りたもの（デザイン）
-フォント・折り返し・紙の質感・影・動きは、GitHub の公開リポジトリ（Shippori Mincho・BudouX・Open Props・Vercel の Web Interface Guidelines）を使っています。出どころとライセンスは [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) にあります。
+フォント・折り返し・紙の質感・影・動き・朱の手書きの丸は、GitHub の公開リポジトリ（Shippori Mincho・BudouX・Open Props・Vercel の Web Interface Guidelines・Rough Notation・NumberFlow）を使っています。出どころとライセンスは [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) にあります。
 
 ## データについて
 防具・スキル・モンスターの情報は攻略サイト（GameWith・Game8・gamewith.ai・Gamerch）の掲載内容をもとにまとめたもので、ゲーム内の表記と異なる場合があります。キャラごとの重みは攻略サイトの推奨とゲーム内の効果値を参考にした目安です。

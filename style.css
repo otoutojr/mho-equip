@@ -138,6 +138,9 @@ input[type="range"]::-moz-range-thumb { width: 22px; height: 22px; border-radius
 .dpsHead .lbl { font-family: var(--serif); font-weight: 700; letter-spacing: .1em; color: var(--ink); }
 .dpsRow { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
 .dpsNum { font: 700 var(--f-xl)/1.15 var(--serif); letter-spacing: -.01em; font-variant-numeric: tabular-nums; }
+/* NumberFlow（数字が回る）：回るときの上下のぼかし分の余白を負のマージンで打ち消して、札の高さを変えない */
+.dpsNum number-flow { --number-flow-mask-height: .25em; vertical-align: top; line-height: inherit; margin-block: -.25em; }
+.vh { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; border: 0; }
 .stamp { display: grid; place-items: center; width: 50px; height: 50px; flex: none; border-radius: 50%; color: var(--el-text); border: 2px solid currentColor; box-shadow: inset 0 0 0 2px var(--card), inset 0 0 0 3px currentColor; font: 700 var(--f-t)/1 var(--serif); transform: rotate(-10deg); opacity: .92; }
 .stamp:empty { visibility: hidden; }
 /* 属性が変わったとき、判子を「ぽん」と押す（app.js が .hit を付け外しする。動きを減らす設定では出さない） */
@@ -160,6 +163,7 @@ input[type="range"]::-moz-range-thumb { width: 22px; height: 22px; border-radius
 .folds > .fold + .fold { border-top: 1px dotted var(--rule); }
 .card.rows > .note { padding-top: 14px; padding-bottom: 14px; }
 .row > summary, .rowBtn, .rowStatic {
+  position: relative; /* 朱の手書きの丸（Rough Notation の SVG）を行と一緒に動かす */
   display: grid; grid-template-columns: 28px minmax(0, 1fr) auto 8px; align-items: center; gap: 10px;
   min-height: 50px; text-align: left; list-style: none; cursor: pointer;
 }
@@ -171,6 +175,7 @@ input[type="range"]::-moz-range-thumb { width: 22px; height: 22px; border-radius
 }
 .row[open] > summary::after, .fold[open] > summary::after { transform: rotate(135deg); }
 .row.two > summary { grid-template-columns: minmax(0, 1fr) auto 8px; }
+#gear .row > summary { grid-template-columns: 28px minmax(0, 1fr) auto 12px; } /* 朱の丸と「›」が重ならないように、装備の行だけ右端を少し広く */
 .rowBtn { grid-template-columns: minmax(0, 1fr) auto; }
 .rowStatic { grid-template-columns: 28px minmax(0, 1fr) auto; min-height: 46px; cursor: default; }
 .rowMain { font-size: var(--f-l); line-height: 1.3; padding: 8px 0; overflow-wrap: anywhere; }

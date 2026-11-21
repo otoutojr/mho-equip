@@ -9,6 +9,8 @@
 | [BudouX](https://github.com/google/budoux) | Google LLC | Apache-2.0 | `parser.js` と日本語モデル `ja.js`（無改変） | `vendor/budoux/`, `phrase.js` |
 | [Open Props](https://github.com/argyleink/open-props) | Adam Argyle | MIT | 影の重ね方・動き方（イージング）・紙の粒（feTurbulence の SVG）の値や作り方 | `style.css` |
 | [Web Interface Guidelines](https://github.com/vercel-labs/web-interface-guidelines) | Vercel Labs | MIT | 点検項目（コードは取り込んでいない） | `tools/audit_ui.py`, `style.css`（hover/active、動きの抑制など） |
+| [Rough Notation](https://github.com/rough-stuff/rough-notation) | Preet Shihn | MIT | `rough-notation.iife.js`（無改変） | `vendor/rough-notation/`, `app.js`（`markNeeds`） |
+| [NumberFlow](https://github.com/barvian/number-flow) | Maxwell Barvian（依存の [esm-env](https://github.com/benmccann/esm-env) は Ben McCann） | MIT | `number-flow` と `esm-env` を1ファイルにまとめたもの（コードは変えていない） | `vendor/number-flow/`, `app.js`（`animateNumber`）, `style.css` |
 
 ---
 
@@ -44,12 +46,28 @@
 - ライセンス: MIT（全文は下）
 - 使い方: コードは取り込んでいない。README の点検項目のうち、ヘッドレスブラウザで確かめられるもの（押せる大きさ、名前、16px の入力欄、コントラスト、フォーカス枠、動きを減らす設定、拡大の禁止など）を `tools/audit_ui.py` にした。点検で見つかった「まだ作れない構成の文字が薄すぎる」を直し、`:hover`・`:active` の変化と `text-wrap`、`prefers-reduced-motion` を足した。
 
+## 5. Rough Notation（2026-11-21 に追加）
+
+- 出どころ: https://github.com/rough-stuff/rough-notation （npm パッケージ `rough-notation@0.5.1` の `lib/rough-notation.iife.js`）
+- 著作権: Copyright (c) 2020 Preet Shihn
+- ライセンス: MIT。全文は [`vendor/rough-notation/LICENSE`](vendor/rough-notation/LICENSE)。取り込んだファイルは**無改変**で、SHA-256 は [`vendor/rough-notation/README.md`](vendor/rough-notation/README.md) に記録。
+- 使い方: 装備の行のうち強化が要る所（朱の「レア◯ → ◯」）を、朱の手書きの丸（`type: 'circle'`）で囲む。描き直すたびに前の丸を消す。動きを減らす設定の端末では、描く動きなしで丸だけ出す。
+
+## 6. NumberFlow（2026-11-21 に追加）
+
+- 出どころ: https://github.com/barvian/number-flow （npm パッケージ `number-flow@0.6.2`）と、その依存の https://github.com/benmccann/esm-env （`esm-env@1.2.2`）
+- 著作権: Copyright (c) 2024 Maxwell Barvian ／ Copyright 2022 Benjamin McCann
+- ライセンス: どちらも MIT。全文は [`vendor/number-flow/LICENSE`](vendor/number-flow/LICENSE) と [`vendor/number-flow/LICENSE-esm-env`](vendor/number-flow/LICENSE-esm-env)。ファイルの先頭にもライセンスの表示を入れている。
+- 加工: esbuild で1つのファイル（IIFE）にまとめて縮めただけで、コードは変えていない。まとめ方と SHA-256 は [`vendor/number-flow/README.md`](vendor/number-flow/README.md)。
+- 使い方: DPS目安の数字を `<number-flow>` で出し、数字が変わるとき桁ごとに回す。回るときの上下のぼかし分の余白は `style.css` で打ち消して、札の高さを変えない。読み上げ用には同じ数字を見えない文字（`.vh`）で並べる。
+
 ---
 
 ## 検討して採用しなかったもの
 
 - [game-icons/icons](https://github.com/game-icons/icons)（CC BY 3.0 / 一部 CC0。使うなら作者名の表示が必要）… 武器種アイコンの候補として、実寸（18px・28px）で今の自作シルエットと並べて比べたが、細部が潰れて読みにくくなったので採用しなかった。
 - Hina Mincho（OFL）… 太さが1つしかなく細いため、見出し・数字には弱いので採用しなかった。
+- [ios-haptics](https://github.com/tijnjh/ios-haptics)（MIT）… 押したときに iPhone を軽く震わせる部品。上の2つと一緒に試作したが、今回は入れないことにした。
 
 ---
 
