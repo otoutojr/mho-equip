@@ -219,16 +219,13 @@ input[type="range"]::-moz-range-thumb { width: 22px; height: 22px; border-radius
 .fixWrap { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; margin-top: 6px; }
 .row:not(.two) .fixWrap { margin-left: -38px; }
 .fix { align-self: stretch; display: flex; flex-direction: column; gap: 10px; padding: 12px; border: 1px solid var(--rule); border-radius: 3px; background: var(--paper); color: var(--ink); }
-.fix select, .fix input, #fixText { width: 100%; min-height: 44px; padding: 0 10px; border: 1px solid var(--muted); border-radius: 3px; background: var(--card); color: var(--ink); font: 400 16px/1.3 var(--sans); }
-#fixText { padding: 8px 10px; margin-top: 10px; }
+.fix select, .fix input { width: 100%; min-height: 44px; padding: 0 10px; border: 1px solid var(--muted); border-radius: 3px; background: var(--card); color: var(--ink); font: 400 16px/1.3 var(--sans); }
 .fixLine { display: flex; align-items: center; gap: 8px; }
 .fixLbl { flex: 1; min-width: 0; font-size: var(--f-m); overflow-wrap: anywhere; }
 .fixVal { min-width: 56px; text-align: center; font: 700 var(--f-m)/1 var(--serif); font-variant-numeric: tabular-nums; }
 .field { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 4px; font-size: var(--f-s); color: var(--muted); }
 .fixSkills { display: flex; flex-direction: column; gap: 6px; }
 .fixBtns { display: flex; flex-wrap: wrap; gap: 8px; }
-.fixItem { display: grid; grid-template-columns: minmax(0, 1fr) 44px; align-items: center; gap: 8px; min-height: 56px; }
-.fixItem .rowMain { font-size: var(--f-m); }
 .linkBtn { min-height: 44px; font-size: var(--f-s); color: var(--muted); text-decoration: underline; text-underline-offset: 3px; }
 #capFix { display: flex; flex-direction: column; }
 #capFix .fix { background: var(--card); }

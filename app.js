@@ -1,6 +1,6 @@
 /* 融光工房 ― UI */
 'use strict';
-const APP_VERSION = '2026.11.21-12';
+const APP_VERSION = '2026.11.21-13';
 const STORE_KEY = 'mho-equip:v1';
 const PART_JP = { head: '頭', body: '胴', arm: '腕', waist: '腰', leg: '脚' };
 const $ = (sel) => document.querySelector(sel);
@@ -75,7 +75,6 @@ function init() {
     DATA = d;
     BASE = { weapons: d.weapons ? JSON.stringify(d.weapons) : null, armor: JSON.stringify(d.armor) };
     applyFixes(false);
-    $('#dataDate').textContent = `データ更新日 ${d.armor.updated || ''}`;
     if (!currentChar()) { state.char = 'hero'; state.heroWeapon = 'hbg'; }
     worker = new Worker('solver.js?v=' + APP_VERSION);
     worker.onmessage = onWorkerMessage;
@@ -85,7 +84,6 @@ function init() {
     bindControls();
     renderPriorities();
     renderWants();
-    renderFixList();
     solve();
   }).catch((err) => {
     $('#resultHint').textContent = `データを読み込めませんでした（${err.message}）。通信状態を確認して開き直してください。`;
@@ -361,7 +359,7 @@ function applyFixes(reinit = true) {
   }
   if (reinit && worker) worker.postMessage({ type: 'init', armor: DATA.armor, skills: DATA.skills });
 }
-function saveFixes() { saveState(); applyFixes(); renderFixList(); cur.elemDps = {}; renderRank(false); solve(); }
+function saveFixes() { saveState(); applyFixes(); cur.elemDps = {}; renderRank(false); solve(); }
 function capTable() { return (state.fix && state.fix.rankCap) || DATA.monsters.rankCap || []; }
 // 「ランクRではレアCまで」と分かったときに、表全体をそれに合わせる
 function setCapFix(rank, cap) {
@@ -488,28 +486,6 @@ function renderCapFix() {
       fixed ? el('button', { type: 'button', class: 'btn small', text: '元の表に戻す', onclick: () => { fixes().rankCap = null; capFixOpen = false; saveFixes(); } }) : null,
       el('button', { type: 'button', class: 'btn small', text: 'やめる', onclick: () => { capFixOpen = false; renderCapFix(); } }))));
 }
-// 直した数値の一覧（下の折りたたみ）
-function renderFixList() {
-  const box = $('#fixList'); box.innerHTML = '';
-  const fx = fixes();
-  const rows = [];
-  const del = (label, fn) => el('button', { type: 'button', class: 'step', 'aria-label': `${label}の修正を消す`, text: '×', onclick: () => { fn(); saveFixes(); } });
-  for (const [name, byR] of Object.entries(fx.weapons)) for (const [r, v] of Object.entries(byR)) {
-    rows.push(el('div', { class: 'fixItem' }, el('span', { class: 'rowMain', text: `${name}　レア${r}：攻撃${v.attack}・属性${v.element}` }),
-      del(name, () => { delete fx.weapons[name][r]; if (!Object.keys(fx.weapons[name]).length) delete fx.weapons[name]; })));
-  }
-  const pname = new Map(JSON.parse(BASE.armor).series.flatMap(sr => sr.pieces).map(p => [p.id, p.name]));
-  for (const [id, byR] of Object.entries(fx.armor)) for (const [r, lvs] of Object.entries(byR)) {
-    rows.push(el('div', { class: 'fixItem' }, el('span', { class: 'rowMain', text: `${pname.get(id) || id}　レア${r}：${Object.entries(lvs).map(([n, l]) => (l ? `${n}${l}` : `${n}無し`)).join('・')}` }),
-      del(pname.get(id) || id, () => { delete fx.armor[id][r]; if (!Object.keys(fx.armor[id]).length) delete fx.armor[id]; })));
-  }
-  if (fx.rankCap) rows.push(el('div', { class: 'fixItem' }, el('span', { class: 'rowMain', text: '強化上限：' + fx.rankCap.map(([r, c]) => `ランク${r}→レア${c}`).join('、') }), del('強化上限', () => { fx.rankCap = null; })));
-  $('#fixCount').textContent = rows.length ? ` ${rows.length}` : '';
-  if (!rows.length) { box.append(el('p', { class: 'note', text: 'まだありません。装備の行を開いて「数値を直す」を押すと、ゲーム内の数値を入れられます。入れた数値はこの端末にだけ保存されます。' })); $('#fixTools').hidden = true; return; }
-  box.append(...rows);
-  $('#fixTools').hidden = false;
-}
-
 /* ---------- ランクで決まること ---------- */
 function rankCap(rank = state.rank) {
   let cap = 2;
@@ -617,27 +593,6 @@ function bindControls() {
   $('#pickDone').addEventListener('click', () => { state.seen = true; saveState(); setPicker(false); window.scrollTo(0, 0); });
   $('#tabCalc').addEventListener('click', () => { setView('calc'); saveState(); });
   $('#tabDb').addEventListener('click', () => { setView('db'); saveState(); });
-  $('#resetBtn').addEventListener('click', () => {
-    if (!confirm('キャラ・ランクの選択を初期状態に戻します。いい？')) return;
-    const keep = state.fix; // 自分で直した数値は残す
-    for (const k of Object.keys(state)) delete state[k];
-    Object.assign(state, { char: 'hero', heroWeapon: 'hbg', heroElement: '火', rank: 1, target: 'normal', view: 'calc', seen: false, wants: {}, fix: keep });
-    wantOpen = false;
-    saveState(); cur.elemDps = {};
-    renderRank(true); renderTarget(); renderPicker(); setView('calc'); renderPriorities(); solve();
-    setPicker(true); window.scrollTo(0, 0);
-  });
-  $('#fixCopy').addEventListener('click', async () => {
-    const text = JSON.stringify({ app: 'mho-equip', version: APP_VERSION, fix: fixes() });
-    const b = $('#fixCopy');
-    try { await navigator.clipboard.writeText(text); b.textContent = 'コピーしました'; }
-    catch { const ta = $('#fixText'); ta.hidden = false; ta.value = text; ta.focus(); ta.select(); b.textContent = '下の文字を選んでコピー'; }
-    setTimeout(() => { b.textContent = '直した内容をコピー'; }, 2500);
-  });
-  $('#fixClear').addEventListener('click', () => {
-    if (!confirm('自分で直した数値を全部消して、配信データに戻します。いい？')) return;
-    state.fix = { weapons: {}, armor: {}, rankCap: null }; saveFixes();
-  });
   renderTarget();
   setView(state.view);
   setPicker(!state.seen); // 初めて開いたときは選択欄を開いておく
@@ -882,11 +837,10 @@ function animateNumber(target) {
   animFrame = requestAnimationFrame(step);
 }
 function renderMeter() {
-  if (!cur.armor) { cancelAnimationFrame(animFrame); shownDps = 0; $('#dpsNum').textContent = '―'; $('#calcLine').textContent = ''; $('#dpsSub').textContent = ''; return; }
+  if (!cur.armor) { cancelAnimationFrame(animFrame); shownDps = 0; $('#dpsNum').textContent = '―'; $('#dpsSub').textContent = ''; return; }
   const dps = dpsOf(cur.weapon, cur.armor.score);
   animateNumber(dps);
   $('#dpsSub').textContent = `武器 ${cur.weapon ? fmtInt(cur.weapon.power) : '―'} × スキル ${mult(cur.armor.score).toFixed(2)}倍`;
-  $('#calcLine').textContent = `今の計算：武器 ${cur.weapon ? fmtInt(cur.weapon.power) : '―'} × スキル ×${mult(cur.armor.score).toFixed(2)} ＝ ${fmtInt(dps)}${state.target === 'yuko' ? '（融光種相手）' : ''}`;
   renderGoal();
 }
 

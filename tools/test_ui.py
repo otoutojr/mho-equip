@@ -29,7 +29,7 @@ with sync_playwright() as p:
     page.wait_for_function("document.querySelector('#dpsNum') && /\\d/.test(document.querySelector('#dpsNum').textContent)", timeout=30000)
     page.wait_for_timeout(2500)
     print("WHO", page.inner_text("#whoName"), "|", page.inner_text("#whoSub"))
-    print("DPS", page.inner_text("#dpsNum"), "|", page.evaluate("document.querySelector('#calcLine').textContent"))
+    print("DPS", page.evaluate("document.querySelector('#dpsNum').textContent"), "|", page.inner_text("#dpsSub"))
     for t in page.inner_text("#gear").split("\n"):
         if t.strip(): print("  ", t)
     print("SKILLS", [t for t in page.inner_text("#skillTotals").split("\n") if t.strip()][:30])
