@@ -1,11 +1,12 @@
 /* 融光工房
    方針: 答え（DPSと装備）だけを見せる。選択は1行にたたみ、比較や説明は下の折りたたみに入れる。
    見た目: 「受注書」。生成りの紙に墨の文字、強い色は朱と属性の色だけ。
-   - 飾りは「枠・見出し・数字」の3か所だけ（二重の罫線、◆の見出し、明朝の数字）
-   - 属性の色（--el）は、武器の札・判子・見出しの◆・DPSの帯に使う。<html data-el="火"> で切り替わる
-   - 朱（--shu）は「強化が要る場所」と「届いていない指定」にだけ使う
+   - 飾りは減らす：枠は1本、見出しは罫線だけ、数字は明朝
+   - 属性の色（--el）は、判子と武器の札（と属性を選ぶ札）だけ。<html data-el="火"> で切り替わる
+   - 朱（--shu）は「強化が要る場所」と「届いていない指定」にだけ使う（火属性の赤と混ざらないように、ほかは墨と紙）
+   - 計算中は前の答えを薄くして残し（.calc）、判子のまわりで点線が回る
    - 文字は5サイズ（56 / 22 / 17 / 15 / 13px）。見出しと数字は明朝（Shippori Mincho B1 ExtraBold を同梱）、本文はゴシック
-   外から借りたもの（出どころとライセンスは THIRD_PARTY_NOTICES.md と、画面下の「デザインの出どころ」）:
+   外から借りたもの（出どころとライセンスは THIRD_PARTY_NOTICES.md）:
    - Shippori Mincho（fontdasu, OFL-1.1）… 見出しと数字の明朝。使う字だけに絞った woff2（tools/subset_font.py）
    - Open Props（Adam Argyle, MIT）… 紙の粒（--grain：--noise と同じ feTurbulence）、重ねた影（--shadow）、動き方（--ease）
    - BudouX（Google, Apache-2.0）… 日本語を文節で折り返す（phrase.js）。Chrome 系は CSS の auto-phrase に任せる
@@ -85,13 +86,12 @@ a { color: var(--ink); }
 .foot { padding: 0 4px; }
 .need { color: var(--shu); font-weight: 700; }
 
-/* 紙の札。frame は二重の罫線 */
+/* 紙の札。frame は墨の枠（1本） */
 .card { position: relative; background: var(--grain) 0 0 / 180px 180px, var(--card); border: 1px solid var(--rule); border-radius: 3px; box-shadow: var(--shadow-2); }
-.card.frame { border-color: var(--ink); box-shadow: inset 0 0 0 3px var(--card), inset 0 0 0 4px var(--rule), var(--shadow-3); }
+.card.frame { border-color: var(--ink); box-shadow: var(--shadow-3); }
 
-/* 見出し：◆ 見出し ―――― */
+/* 見出し：見出し ―――― */
 .hd { display: flex; align-items: center; gap: 8px; font: 700 var(--f-m)/1.4 var(--serif); letter-spacing: .08em; }
-.hd::before { content: ''; width: 8px; height: 8px; background: var(--el); transform: rotate(45deg); flex: none; margin: 0 2px; }
 .hd::after { content: ''; flex: 1; height: 0; border-top: 1px solid var(--rule); box-shadow: 0 2px 0 var(--rule2); }
 
 /* 武器種のアイコンと札 */
@@ -101,7 +101,7 @@ a { color: var(--ink); }
 
 /* 上の1行 */
 .top { display: flex; align-items: center; gap: 14px; padding: 0 2px; }
-.crest { width: 44px; height: 44px; margin: 6px; flex: none; display: grid; place-items: center; background: var(--el); color: var(--el-on); transform: rotate(45deg); box-shadow: 0 0 0 2px var(--paper), 0 0 0 3px var(--el); }
+.crest { width: 44px; height: 44px; margin: 6px; flex: none; display: grid; place-items: center; background: var(--ink); color: var(--card); transform: rotate(45deg); box-shadow: 0 0 0 2px var(--paper), 0 0 0 3px var(--ink); }
 .crest .wicon { width: 28px; height: 28px; transform: rotate(-45deg); }
 .who { flex: 1; min-width: 0; }
 .brand { font-family: var(--serif); font-weight: 700; letter-spacing: .2em; }
@@ -133,7 +133,7 @@ input[type="range"]::-moz-range-thumb { width: 22px; height: 22px; border-radius
 #pickDone { margin-top: 8px; }
 
 /* DPS */
-.dps { display: flex; flex-direction: column; padding: 16px 18px 14px; border-top: 5px solid var(--el) !important; }
+.dps { display: flex; flex-direction: column; padding: 16px 18px 14px; }
 .dpsHead { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
 .dpsHead .lbl { font-family: var(--serif); font-weight: 700; letter-spacing: .1em; color: var(--ink); }
 .dpsRow { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
@@ -141,8 +141,13 @@ input[type="range"]::-moz-range-thumb { width: 22px; height: 22px; border-radius
 /* NumberFlow（数字が回る）：回るときの上下のぼかし分の余白を負のマージンで打ち消して、札の高さを変えない */
 .dpsNum number-flow { --number-flow-mask-height: .25em; vertical-align: top; line-height: inherit; margin-block: -.25em; }
 .vh { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; border: 0; }
-.stamp { display: grid; place-items: center; width: 50px; height: 50px; flex: none; border-radius: 50%; color: var(--el-text); border: 2px solid currentColor; box-shadow: inset 0 0 0 2px var(--card), inset 0 0 0 3px currentColor; font: 700 var(--f-t)/1 var(--serif); transform: rotate(-10deg); opacity: .92; }
+.stamp { position: relative; display: grid; place-items: center; width: 50px; height: 50px; flex: none; border-radius: 50%; color: var(--el-text); border: 2px solid currentColor; box-shadow: inset 0 0 0 2px var(--card), inset 0 0 0 3px currentColor; font: 700 var(--f-t)/1 var(--serif); transform: rotate(-10deg); opacity: .92; }
 .stamp:empty { visibility: hidden; }
+/* 計算中：前の答えを薄くして残す（高さは変えない）。判子のまわりで点線が回る（動きを減らす設定では止まった点線） */
+.dpsNum, #dpsSub, #gear, #skillTotals, #candList { transition: opacity .15s var(--ease-out-3); }
+.calc .dpsNum, .calc #dpsSub, .calc #gear, .calc #skillTotals, .calc #candList { opacity: .35; }
+.calc .stamp::after { content: ''; position: absolute; inset: -8px; border-radius: 50%; border: 2px dashed currentColor; animation: spin 1.4s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
 /* 属性が変わったとき、判子を「ぽん」と押す（app.js が .hit を付け外しする。動きを減らす設定では出さない） */
 @keyframes press { from { transform: rotate(-10deg) scale(1.6); opacity: 0; } to { transform: rotate(-10deg) scale(1); opacity: .92; } }
 .stamp.hit { animation: press .5s ease-out; }
@@ -287,5 +292,15 @@ summary { -webkit-tap-highlight-color: transparent; }
 }
 .wb-poly :is(.note, .prose p, .prose li, .rowBody, .moreBody, .build > p) { word-break: keep-all; overflow-wrap: anywhere; }
 .hd, #whoName { text-wrap: balance; }
+
+/* 融光種の「光」の札（防具名の前） */
+.yk { display: inline-grid; place-items: center; width: 1.5em; height: 1.5em; margin-right: 6px; border-radius: 3px; vertical-align: .05em;
+  font: 700 max(12px, .8em)/1 var(--serif); color: #4a3300; background: linear-gradient(135deg, #fff6d2, #f1cb62); box-shadow: 0 0 0 1px #b88a22, 0 0 7px rgba(241, 203, 98, .75); }
+.rowBody .full { color: var(--muted); }
+/* 中身が無いときの補足の行は場所を取らない */
+.note.foot:empty, #resultHint:empty { display: none; }
+/* 強い装備の候補の1位（上の装備そのものなので開かない行） */
+.candTop { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 10px; min-height: 50px; padding-right: 18px; }
+.candTop .rowMain { font-weight: 700; }
 
 @media (prefers-reduced-motion: reduce) { *, ::before, ::after { transition: none !important; animation: none !important; } }

@@ -1,6 +1,6 @@
 /* 融光工房 ― UI */
 'use strict';
-const APP_VERSION = '2026.11.21-13';
+const APP_VERSION = '2026.11.21-14';
 const STORE_KEY = 'mho-equip:v1';
 const PART_JP = { head: '頭', body: '胴', arm: '腕', waist: '腰', leg: '脚' };
 const $ = (sel) => document.querySelector(sel);
@@ -115,7 +115,7 @@ function renderWho() {
   const wt = SHORT_WEAPON[charWeaponType(c)] || charWeaponType(c);
   $('#whoName').textContent = `${c.elementSelectable ? '主人公' : c.name}・${wt}・${charElement(c)}`;
   $('#whoSub').textContent = `ランク${state.rank}・レア${rankCap()}まで強化できる`;
-  // 属性の色をページ全体の差し色にする（武器の札・判子・見出しの◆・DPSの帯）
+  // 属性の色は判子と武器の札（と属性を選ぶ札）だけに使う。朱（強化が要る所）と混ざらないように、ほかは墨と紙
   const e = charElement(c);
   document.documentElement.dataset.el = HERO_ELEMENTS.includes(e) ? e : '無';
   const crest = $('#crest'); crest.innerHTML = ''; crest.append(wicon(charWeaponType(c)));
@@ -213,7 +213,7 @@ function renderWants() {
   renderWantPicker(c, wants);
   // 下の1行：指定が効いているか、指定なしの最強とどれだけ違うか
   const note = $('#wantNote');
-  if (!names.length) { note.textContent = '「回避強化をLv3以上」のように指定すると、それを満たす中でDPSが一番高い装備を出します。'; return; }
+  if (!names.length) { note.textContent = ''; return; }
   if (!cur.armor) { note.textContent = '計算中…'; return; }
   if (short) { note.innerHTML = ''; note.append(el('span', { class: 'need', text: '届かない指定があります。' }), '今のランクで一番近い装備を出しています。'); return; }
   if (cur.free) {
@@ -599,30 +599,47 @@ function bindControls() {
 }
 
 /* ---------- solving ---------- */
+// 一度計算した答えは、このページを開いている間だけ覚えておく（通常⇄融光種などを行き来したときにすぐ出す）
+const solveCache = new Map();
+const solveKey = (c, wants) => JSON.stringify([c.id, charWeaponType(c), charElement(c), state.rank, state.target, wants, state.fix]);
+// 計算中は、前の答えを薄くして残し、判子のまわりで点線を回す（画面の高さを変えない）
+function setCalc(on) {
+  $('#app').classList.toggle('calc', on);
+  $('section.dps').setAttribute('aria-busy', String(on));
+}
 function solve() {
   if (!worker || !DATA) return;
   const c = currentChar();
   reqId++;
+  const shown = !!cur.armor; // いま画面に前の答えが出ているか
   cur.armor = null; cur.goal = null; cur.alts = [];
   cur.weapon = weaponCands(c)[0] || null;
   cur.goalWeapon = weaponCands(c, { rank: 99, cap: 14 })[0] || null;
   renderWho();
-  $('#resultHint').textContent = '計算中…';
-  renderGear();
-  renderElemFold();
-  for (const id of ['#skillTotals', '#compareList', '#candList', '#nextList']) { $(id).innerHTML = ''; $(id).append(el('p', { class: 'note', text: '計算中…' })); }
-  $('#goalBody').innerHTML = ''; $('#setNote').hidden = true;
-  $('#cmpBlock').hidden = c.scoreMode !== 'log';
   const W = effectiveWeights(c);
   const wants = wantsFor(c);
-  cur.free = null;
+  cur.key = solveKey(c, wants);
+  const hit = solveCache.get(cur.key);
+  $('#resultHint').textContent = '';
+  if (!hit && !shown) { // 最初の1回だけは、出せるものが無いので空の枠
+    renderGear();
+    for (const id of ['#skillTotals', '#candList']) { $(id).innerHTML = ''; $(id).append(el('p', { class: 'note', text: '計算中…' })); }
+    $('#setNote').hidden = true;
+  }
+  setCalc(!hit);
+  renderElemFold();
+  for (const id of ['#compareList', '#nextList']) { $(id).innerHTML = ''; $(id).append(el('p', { class: 'note', text: '計算中…' })); }
+  $('#goalBody').innerHTML = '';
+  $('#cmpBlock').hidden = c.scoreMode !== 'log';
+  cur.free = hit ? hit.free : null;
+  if (hit) { cur.armor = hit.armor; cur.alts = hit.alts; cur.variants = hit.variants; renderResult(); renderMeter(); }
   renderWants();
   const spec = specFor(c, charElement(c), cur.weapon);
   const now = { reqId, weights: W, spec, availableSeries: availableSeries(), rarityCap: rankCap(), orbTier: orbTierFor(rankCap()) };
   const jobs = [];
   // 指定があるときは、指定なしの最強も先に出して差を見せる
-  if (Object.keys(wants).length) jobs.push({ ...now, type: 'solve', free: true, topN: 1, K: 12 });
-  jobs.push({ ...now, type: 'solve', wants, topN: 6, K: 12, variants: true });
+  if (!hit && Object.keys(wants).length) jobs.push({ ...now, type: 'solve', free: true, topN: 1, K: 12 });
+  if (!hit) jobs.push({ ...now, type: 'solve', wants, topN: 6, K: 12, variants: true });
   jobs.push(() => buildsJob(c, W, wants, spec));
   // ここから下は折りたたみの中身。いまの答えが出てから順に計算する
   jobs.push(() => { if (!cur.armor) { renderNext({ milestones: [] }); return null; }
@@ -689,8 +706,8 @@ function uniqRefs(refs) {
 // 行の部品。rarText は「強化が要るときだけ 元→先」を返す
 const rarText = (base, r) => (r > base ? `レア${base} → ${r}` : `レア${r}`);
 const staticRow = (part, name, side, need) => el('div', { class: 'rowStatic' },
-  plate(part), el('span', { class: 'rowMain', text: name }), el('span', { class: 'rowSide' + (need ? ' need' : ''), text: side }));
-const pieceLine = (p) => el('p', { text: `${PART_JP[p.part]}　${p.name}　${rarText(p.baseRarity, p.rarity)}` });
+  plate(part), el('span', { class: 'rowMain' }, ...[].concat(name)), el('span', { class: 'rowSide' + (need ? ' need' : ''), text: side }));
+const pieceLine = (p) => el('p', {}, `${PART_JP[p.part]}　`, ...armorLabel(p), `　${rarText(p.baseRarity, p.rarity)}`);
 const skillLine = (totals) => totals.filter(t => t.value > 0.3 || t.skill === '弾導強化').map(t => `${t.skill}${t.lv}`).join('・');
 
 function renderBuilds(rows) {
@@ -749,13 +766,13 @@ function renderBuilds(rows) {
       x.now && row ? el('span', { class: 'bDps', text: fmtInt(x.dps) }) : el('span', { class: 'rowSide', text: x.openAt ? `ランク${x.openAt}から` : '条件不明' }));
     const rowsBox = el('div', { class: 'rows card' });
     const wname = b.weapon ? (x.wc && x.wbase && x.wc.w !== x.wbase ? `${x.wbase.name} → ${x.wc.w.name}` : (b.weapon.name || b.weapon.raw)) : '―';
-    rowsBox.append(staticRow('武器', wname, x.wc ? rarText(x.wc.w.baseRarity || 1, x.wc.r) + (x.wc.st.est ? '（推定）' : '') : 'データなし', !!x.wc && x.wc.r > (x.wc.w.baseRarity || 1)));
+    rowsBox.append(staticRow('武器', wname, x.wc ? rarText(x.wc.w.baseRarity || 1, x.wc.r) : 'データなし', !!x.wc && x.wc.r > (x.wc.w.baseRarity || 1)));
     const pieceInfo = new Map(((row && row.set && row.set.pieces) || []).map(p => [p.id, p]));
     for (const part of PARTS) {
       const p = b.pieces[part];
       const info = p && p.id ? pieceInfo.get(p.id) : null;
       const locked = p && p.id && !avail.has(seriesOfPiece(p.id));
-      rowsBox.append(staticRow(PART_JP[part], p ? (p.name || p.raw) : '―',
+      rowsBox.append(staticRow(PART_JP[part], p ? (p.id ? armorLabel(p) : (p.name || p.raw)) : '―',
         info && !locked ? rarText(info.baseRarity, info.rarity) : (locked ? 'まだ作れない' : (p && !p.id ? 'データなし' : '')),
         !!info && !locked && info.rarity > info.baseRarity));
     }
@@ -793,7 +810,12 @@ function onWorkerMessage(e) {
   if (msg.elem) { if (msg.type === 'result') onElemResult(msg); return; }
   if (msg.goal) { if (msg.type === 'result') { cur.goal = msg.best; renderGoal(); } return; }
   if (msg.type === 'builds') { renderBuilds(msg.rows); return; }
-  if (msg.type === 'result') { cur.armor = msg.best; cur.alts = msg.alts || []; cur.variants = msg.variants || []; renderResult(); renderMeter(); renderWants(); }
+  if (msg.type === 'result') {
+    cur.armor = msg.best; cur.alts = msg.alts || []; cur.variants = msg.variants || [];
+    solveCache.set(cur.key, { armor: cur.armor, alts: cur.alts, variants: cur.variants, free: cur.free });
+    if (solveCache.size > 60) solveCache.delete(solveCache.keys().next().value);
+    setCalc(false); renderResult(); renderMeter(); renderWants();
+  }
   if (msg.type === 'next') renderNext(msg.next);
   if (msg.type === 'compare') renderCompare(msg.rows);
 }
@@ -845,21 +867,12 @@ function renderMeter() {
 }
 
 /* ---------- 計算の最強：武器＋防具5部位 ---------- */
-// 攻略サイト間で解放レアが割れている部位は、多数決で採った値と各サイトの値を添える
-function conflictText(p) {
-  const src = DATA.armor.series.flatMap(s => s.pieces).find(q => q.id === p.id);
-  const cs = ((src && src.conflicts) || []).filter(x => x.skill && x.rarity === p.rarity); // 採用したレアでサイトの値が割れている時だけ
-  if (!cs.length) return null;
-  const seen = new Set(), parts = [];
-  for (const x of cs) {
-    if (seen.has(x.skill)) continue; seen.add(x.skill);
-    parts.push(`${x.skill}（レア${x.rarity}：${Object.entries(x.values).map(([s, v]) => `${s} Lv${v}`).join('・')} → Lv${x.chosen}を採用）`);
-  }
-  return `サイトで食い違い：${parts.join('、')}`;
-}
+// 防具はシリーズ名（＝モンスター名）だけで出す。融光種は「光」の札。部位は左の札、正式な名前は行を開くと出る
+function armorLabel(p) { return yukoLabel((p.id && seriesOfPiece(p.id)) || p.name || p.raw || '―'); }
+const yukoLabel = (s) => (s.startsWith('融光種') ? [el('span', { class: 'yk', role: 'img', 'aria-label': '融光種' }, '光'), s.slice(3)] : [s]);
 function gearRow(part, name, side, need, body) {
   return el('details', { class: 'row' },
-    el('summary', {}, plate(part), el('span', { class: 'rowMain', text: name }), el('span', { class: 'rowSide' + (need ? ' need' : ''), text: side })),
+    el('summary', {}, plate(part), el('span', { class: 'rowMain' }, ...[].concat(name)), el('span', { class: 'rowSide' + (need ? ' need' : ''), text: side })),
     el('div', { class: 'rowBody' }, ...body));
 }
 // 強化が要る所を朱の手書きの丸で囲む（Rough Notation、vendor/rough-notation）。描き直すたびに前の丸は消す
@@ -889,7 +902,7 @@ function renderGear() {
     const { w, r, st } = wb;
     const need = r > (w.baseRarity || 1); if (need) nNeed++;
     const aff = st.affinity ?? w.affinity;
-    const body = [el('p', { text: `${w.type}　攻撃${st.attack}・${w.element}${st.element || '―'}${aff ? `・会心${aff}%` : ''}${st.user ? '（自分で入力した数値）' : st.est ? '（数値は推定）' : ''}` })];
+    const body = [el('p', { text: `${w.type}　攻撃${st.attack}・${w.element}${st.element || '―'}${aff ? `・会心${aff}%` : ''}${st.user ? '（自分で入力した数値）' : ''}` })];
     if (w.guild) body.push(el('p', { text: 'このランクで作れるほかの武器が無いので冒険団武器。モンスター武器が作れるようになったら乗り換え推奨。' }));
     if (w.apex) {
       const alt = weaponCands(c).find(x => !x.w.apex && !x.w.guild);
@@ -897,7 +910,7 @@ function renderGear() {
       if (alt) body.push(el('p', { text: `この属性で作っていなければ：${alt.w.name}（レア${alt.r}・実効${fmtInt(alt.power)}）` }));
     }
     body.push(fixToggle(() => weaponEditor(w.name, r)));
-    box.append(gearRow('武器', w.name, rarText(w.baseRarity || 1, r), need, body));
+    box.append(gearRow('武器', yukoLabel(w.name), rarText(w.baseRarity || 1, r), need, body));
   } else if (DATA.weapons) {
     box.append(el('p', { class: 'note', text: `このランクで作れる${charElement(c)}属性の${charWeaponType(c)}が見つかりません。` }));
   }
@@ -906,19 +919,18 @@ function renderGear() {
   const capNow = rankCap();
   for (const p of b.pieces) {
     const need = p.rarity > p.baseRarity; if (need) nNeed++;
-    const body = [el('p', { text: p.skills.map(k => `${k.name}${k.lv}`).join('・') || 'スキルなし' })];
+    const body = [el('p', { class: 'full', text: p.name }), el('p', { text: p.skills.map(k => `${k.name}${k.lv}`).join('・') || 'スキルなし' })];
     // スキルはレアp.rarityで揃う。それより上は、攻略サイトにスキルが載っているレア（docMax）までは増えないと分かっている
-    if (capNow > p.rarity) body.push(el('p', { text: p.docMax < capNow ? `レア${p.docMax + 1}以降で付くスキルは、どの攻略サイトにもまだ載っていません。ゲーム内で分かったら下の「数値を直す」で入れられます。` : 'これ以上強化しても、DPSに効くスキルは増えません。' }));
+    if (capNow > p.rarity && p.docMax >= capNow) body.push(el('p', { text: 'これ以上強化しても、DPSに効くスキルは増えません。' }));
     if ((fixes().armor[p.id])) body.push(el('p', { text: 'この防具は、自分で直した数値を使っています。' }));
-    const ct = conflictText(p); if (ct) body.push(el('p', { text: ct }));
     body.push(fixToggle(() => armorEditor(p.part, p.id, Math.max(p.rarity, Math.min(capNow, armorRarMax(p))))));
-    box.append(gearRow(PART_JP[p.part], p.name, rarText(p.baseRarity, p.rarity), need, body));
+    box.append(gearRow(PART_JP[p.part], armorLabel(p), rarText(p.baseRarity, p.rarity), need, body));
   }
   return nNeed;
 }
 function renderResult() {
   const b = cur.armor;
-  const nNeed = renderGear();
+  renderGear();
   const hint = $('#resultHint'); hint.innerHTML = '';
   const tot = $('#skillTotals'); tot.innerHTML = '';
   const cands = $('#candList'); cands.innerHTML = '';
@@ -928,8 +940,6 @@ function renderResult() {
     for (const box of [tot, cands]) box.append(el('p', { class: 'note', text: '―' }));
     return;
   }
-  if (nNeed) hint.append('強化するのは', el('span', { class: 'need', text: `朱色の${nNeed}か所` }), 'だけ。行を押すとスキルが出ます。');
-  else hint.textContent = '強化なしで、作ったまま使えます。行を押すとスキルが出ます。';
   const wanted = wantsFor(currentChar());
   const shown = b.totals.filter(t => t.value > 0.3 || (t.skill in wanted));
   for (const t of shown) {
@@ -960,10 +970,10 @@ function renderCandidates(b, box) {
   list.forEach((d, i) => {
     const dps = dpsOf(cur.weapon, d.score);
     const tag = d.without ? `（${d.without.join('・')}なし）` : '';
-    box.append(el('details', { class: 'row two', ...(i ? {} : { open: '' }) },
-      el('summary', {}, el('span', { class: 'rowMain', text: `${i + 1}位　${skillLine(d.totals) || '―'}${tag}` }),
-        el('span', { class: 'rowSide', text: fmtInt(dps) + (i ? `（${fmtPct((dps / top - 1) * 100)}）` : '') })),
-      el('div', { class: 'rowBody' }, i ? null : el('p', { text: '上の装備と同じです。' }), ...(i ? d.pieces.map(pieceLine) : []))));
+    const main = el('span', { class: 'rowMain', text: `${i + 1}位　${skillLine(d.totals) || '―'}${tag}` });
+    const side = el('span', { class: 'rowSide', text: fmtInt(dps) + (i ? `（${fmtPct((dps / top - 1) * 100)}）` : '') });
+    if (!i) { box.append(el('div', { class: 'candTop' }, main, side)); return; } // 1位は上の装備そのものなので開かない
+    box.append(el('details', { class: 'row two' }, el('summary', {}, main, side), el('div', { class: 'rowBody' }, ...d.pieces.map(pieceLine))));
   });
   if (list.length < 2) box.append(el('p', { class: 'note', text: '組み方の違う候補はありません。' }));
 }
@@ -1023,7 +1033,7 @@ function renderGoal() {
     el('div', { class: 'rows' }, el('details', { class: 'row two' },
       el('summary', {}, el('span', { class: 'rowMain', text: '到達点' }), el('span', { class: 'rowSide', text: `${fmtInt(goal)}${now ? `（今は${Math.round((now / goal) * 100)}%）` : ''}` })),
       el('div', { class: 'rowBody' },
-        gw ? el('p', { text: `武器　${gw.w.name}　レア${gw.r}${gw.st.est ? '（数値は推定）' : ''}` }) : null,
+        gw ? el('p', { text: `武器　${gw.w.name}　レア${gw.r}` }) : null,
         ...b.pieces.map(pieceLine), el('p', { text: skillLine(b.totals) || '―' })))));
 }
 
