@@ -1,6 +1,6 @@
 /* 融光工房 ― UI */
 'use strict';
-const APP_VERSION = '2026.11.21-8';
+const APP_VERSION = '2026.11.21-9';
 const STORE_KEY = 'mho-equip:v1';
 const PART_JP = { head: '頭', body: '胴', arm: '腕', waist: '腰', leg: '脚' };
 const $ = (sel) => document.querySelector(sel);
@@ -655,7 +655,7 @@ function solve() {
   $('#resultHint').textContent = '計算中…';
   renderGear();
   renderElemFold();
-  for (const id of ['#skillTotals', '#compareList', '#altList', '#nextList']) { $(id).innerHTML = ''; $(id).append(el('p', { class: 'note', text: '計算中…' })); }
+  for (const id of ['#skillTotals', '#compareList', '#candList', '#nextList']) { $(id).innerHTML = ''; $(id).append(el('p', { class: 'note', text: '計算中…' })); }
   $('#goalBody').innerHTML = ''; $('#setNote').hidden = true;
   $('#cmpBlock').hidden = c.scoreMode !== 'log';
   const W = effectiveWeights(c);
@@ -667,7 +667,7 @@ function solve() {
   const jobs = [];
   // 指定があるときは、指定なしの最強も先に出して差を見せる
   if (Object.keys(wants).length) jobs.push({ ...now, type: 'solve', free: true, topN: 1, K: 12 });
-  jobs.push({ ...now, type: 'solve', wants, topN: 6, K: 12 });
+  jobs.push({ ...now, type: 'solve', wants, topN: 6, K: 12, variants: true });
   jobs.push(() => buildsJob(c, W, wants, spec));
   // ここから下は折りたたみの中身。いまの答えが出てから順に計算する
   jobs.push(() => { if (!cur.armor) { renderNext({ milestones: [] }); return null; }
@@ -838,7 +838,7 @@ function onWorkerMessage(e) {
   if (msg.elem) { if (msg.type === 'result') onElemResult(msg); return; }
   if (msg.goal) { if (msg.type === 'result') { cur.goal = msg.best; renderGoal(); } return; }
   if (msg.type === 'builds') { renderBuilds(msg.rows); return; }
-  if (msg.type === 'result') { cur.armor = msg.best; cur.alts = msg.alts || []; renderResult(); renderMeter(); renderWants(); }
+  if (msg.type === 'result') { cur.armor = msg.best; cur.alts = msg.alts || []; cur.variants = msg.variants || []; renderResult(); renderMeter(); renderWants(); }
   if (msg.type === 'next') renderNext(msg.next);
   if (msg.type === 'compare') renderCompare(msg.rows);
 }
@@ -935,11 +935,11 @@ function renderResult() {
   const nNeed = renderGear();
   const hint = $('#resultHint'); hint.innerHTML = '';
   const tot = $('#skillTotals'); tot.innerHTML = '';
-  const alts = $('#altList'); alts.innerHTML = '';
+  const cands = $('#candList'); cands.innerHTML = '';
   const sn = $('#setNote'); sn.hidden = true;
   if (!b) {
     hint.textContent = 'このランクで作れる防具が見つかりませんでした。';
-    for (const box of [tot, alts]) box.append(el('p', { class: 'note', text: '―' }));
+    for (const box of [tot, cands]) box.append(el('p', { class: 'note', text: '―' }));
     return;
   }
   if (nNeed) hint.append('強化するのは', el('span', { class: 'need', text: `朱色の${nNeed}か所` }), 'だけ。行を押すとスキルが出ます。');
@@ -956,12 +956,29 @@ function renderResult() {
   }
   if (!shown.length) tot.append(el('p', { class: 'note', text: 'DPSに効くスキルが付く防具がまだありません。' }));
   if (b.setHits.length) { sn.hidden = false; sn.textContent = 'セットスキル：' + b.setHits.map(h => `${h.set}（${h.pieces}部位）で${h.skill}+${h.lv}`).join('、'); }
-  for (const a of cur.alts) {
-    alts.append(el('details', { class: 'row two' },
-      el('summary', {}, el('span', { class: 'rowMain', text: skillLine(a.totals) || '―' }), el('span', { class: 'rowSide', text: fmtInt(dpsOf(cur.weapon, a.score)) })),
-      el('div', { class: 'rowBody' }, ...a.pieces.map(pieceLine))));
+  renderCandidates(b, cands);
+}
+// 強い装備の候補（1〜3位）。主なスキルの組み合わせが同じものはまとめて、組み方の違う候補だけ並べる
+const mainSig = (d) => d.totals.filter(t => t.value >= 2).map(t => t.skill).sort().join('|');
+function renderCandidates(b, box) {
+  const list = [b], seen = new Set([mainSig(b)]);
+  const pool = [...(cur.variants || []), ...(cur.alts || [])].sort((x, y) => y.score - x.score);
+  for (const d of pool) {
+    const k = mainSig(d);
+    if (seen.has(k)) continue;
+    seen.add(k); list.push(d);
+    if (list.length >= 3) break;
   }
-  if (!cur.alts.length) alts.append(el('p', { class: 'note', text: '候補はこの1通りです。' }));
+  const top = dpsOf(cur.weapon, b.score);
+  list.forEach((d, i) => {
+    const dps = dpsOf(cur.weapon, d.score);
+    const tag = d.without ? `（${d.without.join('・')}なし）` : '';
+    box.append(el('details', { class: 'row two', ...(i ? {} : { open: '' }) },
+      el('summary', {}, el('span', { class: 'rowMain', text: `${i + 1}位　${skillLine(d.totals) || '―'}${tag}` }),
+        el('span', { class: 'rowSide', text: fmtInt(dps) + (i ? `（${fmtPct((dps / top - 1) * 100)}）` : '') })),
+      el('div', { class: 'rowBody' }, i ? null : el('p', { text: '上の装備と同じです。' }), ...(i ? d.pieces.map(pieceLine) : []))));
+  });
+  if (list.length < 2) box.append(el('p', { class: 'note', text: '組み方の違う候補はありません。' }));
 }
 
 /* ---------- compare ---------- */

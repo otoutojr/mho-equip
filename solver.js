@@ -10,6 +10,7 @@ const PARTS = ['head', 'body', 'arm', 'waist', 'leg'];
 // 計算の式（app.js の damageSpec と同じもの）。あるときは、組み合わせごとにスキルの合計から期待値を計算する。
 // 与ダメ系スキルは足し算なので、スキルごとの点数を足すだけでは比べられない（アウかるの期待値の式）
 let SPEC = null;
+let EXCL = -1; // 「強い装備の候補」を作るとき、無いものとして探し直すスキル
 function compileSpec(sp) {
   const by = new Array(DB.skillNames.length).fill(null);
   for (const [name, t] of Object.entries(sp.skills || {})) {
@@ -264,6 +265,7 @@ function evaluate(combo, W, acc, setCount, touched) {
     for (let j = 0; j < nt; j++) {
       const s = touched[j]; const raw = acc[s];
       if (!raw) continue;
+      if (s === EXCL) { acc[s] = 0; continue; }
       const lv = raw < DB.skillMax[s] ? raw : DB.skillMax[s];
       const t = SPEC.by[s];
       if (t) { const i = (lv < t.n ? lv : t.n) - 1; D += t.D[i]; U += t.U[i]; A += t.A[i]; C += t.C[i]; E += t.E[i]; }
@@ -276,7 +278,7 @@ function evaluate(combo, W, acc, setCount, touched) {
   }
   for (let j = 0; j < nt; j++) {
     const s = touched[j]; const lv = acc[s];
-    if (lv) { score += wval(W, s, lv < DB.skillMax[s] ? lv : DB.skillMax[s]); acc[s] = 0; }
+    if (lv) { if (s !== EXCL) score += wval(W, s, lv < DB.skillMax[s] ? lv : DB.skillMax[s]); acc[s] = 0; }
   }
   return { score, setHits: setHits || [] };
 }
@@ -344,7 +346,30 @@ function solve(msg) {
   let top = search(byPart, Wb, msg.topN || 6);
   if (Wb !== W) top = rescore(top, W);
   const out = top.map((t) => { const d = describe(t, W); d.wants = wantStatus(d, msg.wants); return d; });
-  return { best: out[0] || null, alts: out.slice(1), counts: PARTS.map(p => byPart[p].length) };
+  const variants = msg.variants && out[0] ? makeVariants(out[0], msg, W, Wb, avail, K) : [];
+  return { best: out[0] || null, alts: out.slice(1), variants, counts: PARTS.map(p => byPart[p].length) };
+}
+
+// 強い装備の候補：1位の主なスキル（DPSを2%以上上げているもの）を1つずつ「無いもの」として探し直す。
+// 「気力変換なし」「溜め強射なし」のような、組み方の違う候補が出る。入れたいスキルに指定したものは外さない
+function makeVariants(best, msg, W, Wb, avail, K) {
+  const wanted = new Set(Object.keys(msg.wants || {}));
+  const mains = best.totals.filter(t => t.value >= 2 && !wanted.has(t.skill)).slice(0, 3);
+  const out = [];
+  for (const m of mains) {
+    const s = DB.skillIndex.get(m.skill);
+    if (s == null) continue;
+    const Wx = Wb.slice(); Wx[s] = null; // 候補の絞り込みでも、そのスキルは見ない
+    let top = [];
+    EXCL = s;
+    try { top = search(pickCandidates(preparePieces(Wx, avail, msg.rarityCap, msg.owned, msg.orbTier), Wx, K), Wx, 1); }
+    finally { EXCL = -1; }
+    if (!top.length) continue;
+    const d = describe(rescore(top, W)[0], W); // 本当の期待値で採点し直す（外したスキルがたまたま付いていればそれも入れる）
+    d.without = [m.skill]; d.wants = wantStatus(d, msg.wants);
+    out.push(d);
+  }
+  return out;
 }
 
 function solveNext(msg, base, baseIds) {
