@@ -34,7 +34,7 @@
 - ライセンス: MIT（全文は下）
 - 使ったもの（`style.css` の `:root`）:
   - `--shadow-2`・`--shadow-3` の影の重ね方（`props.shadows.css`）… 影の色を墨の茶色 `hsl(30 27% 13%)`、基本の濃さを 6% にして、紙に合わせた
-  - `--ease-out-3`・`--ease-spring-3`（`props.easing.css`）… 値はそのまま。`linear()` が使えない端末では標準の動きに戻る
+  - `--ease-out-3`・`--ease-spring-3`（`props.easing.css`）… 値はそのまま。`linear()` が使えない端末（iOS 17.2 より前など）では、判子の動きを ease-out にする（`@supports` で切り替え）
   - `--noise-*`（`props.gradients.css`）の feTurbulence の SVG … 色行列を足して茶色の薄い斑点にし、180px の升に直した（`--grain`）
 
 ## 4. Web Interface Guidelines

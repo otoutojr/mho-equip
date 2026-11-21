@@ -45,7 +45,7 @@
               0 2px 5px -5px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 4%)),
               0 4px 12px -5px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 5%)),
               0 12px 15px -5px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 7%));
-  /* 動き：Open Props の --ease-out-3 と --ease-spring-3（linear() が使えない端末では ease に戻る） */
+  /* 動き：Open Props の --ease-out-3 と --ease-spring-3（linear() が使えない端末では、判子は ease-out の動きにする） */
   --ease-out-3: cubic-bezier(0, 0, .3, 1);
   --ease-spring-3: linear(0, 0.009, 0.035 2.1%, 0.141 4.4%, 0.723 12.9%, 0.938 16.7%, 1.017, 1.077, 1.121, 1.149 24.3%, 1.159, 1.163, 1.161, 1.154 29.9%, 1.129 32.8%, 1.051 39.6%, 1.017 43.1%, 0.991, 0.977 51%, 0.974 53.8%, 0.975 57.1%, 0.997 69.8%, 1.003 76.9%, 1);
   /* 紙の粒：Open Props の --noise-* と同じ feTurbulence の SVG に、茶色の薄い斑点になる色行列を足したもの（180px の升を敷き詰める） */
@@ -142,7 +142,8 @@ input[type="range"]::-moz-range-thumb { width: 22px; height: 22px; border-radius
 .stamp:empty { visibility: hidden; }
 /* 属性が変わったとき、判子を「ぽん」と押す（app.js が .hit を付け外しする。動きを減らす設定では出さない） */
 @keyframes press { from { transform: rotate(-10deg) scale(1.6); opacity: 0; } to { transform: rotate(-10deg) scale(1); opacity: .92; } }
-.stamp.hit { animation: press .5s var(--ease-spring-3); }
+.stamp.hit { animation: press .5s ease-out; }
+@supports (animation-timing-function: linear(0, 1)) { .stamp.hit { animation-timing-function: var(--ease-spring-3); } }
 
 /* 切り替え */
 .seg { display: flex; border: 1px solid var(--ink); border-radius: 3px; background: var(--card); flex: none; overflow: hidden; }

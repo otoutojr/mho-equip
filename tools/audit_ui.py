@@ -16,7 +16,7 @@
   - 「動きを減らす」設定のとき、判子の動きと transition が止まるか
   - 明朝フォントが読み込まれているか、コンソールのエラー
 """
-import sys, json
+import os, sys, json
 from playwright.sync_api import sync_playwright
 
 args = [a for a in sys.argv[1:] if not a.startswith('--')]
@@ -25,7 +25,7 @@ char = args[0] if len(args) > 0 else 'hero'
 rank = int(args[1]) if len(args) > 1 else 55
 weapon = args[2] if len(args) > 2 else 'hbg'
 elem = args[3] if len(args) > 3 else '水'
-BASE = 'http://localhost:8765/'
+BASE = os.environ.get('AUDIT_BASE', 'http://localhost:8765/')  # 公開版を点検するときは AUDIT_BASE=https://otoutojr.github.io/mho-equip/
 STATE = {'char': char, 'heroWeapon': weapon, 'heroElement': elem, 'rank': rank, 'target': 'normal', 'seen': True}
 errors, warns = [], []
 
