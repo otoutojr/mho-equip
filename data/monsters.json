@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12",
+ "updated": "2026-11-21",
  "maps": [
   {
    "name": "巨木の原野",
@@ -583,6 +583,24 @@
    "chapter": null,
    "note": "Game8 融光種ツィツィ装備ページ（11/10）「冒険ランク40以降の調査の旅で解放」。出現場所は巣穴で狩猟、弱点 龍◎",
    "sourceUrl": "https://game8.jp/mhoutlanders/811083"
+  },
+  {
+   "name": "融光種ディアブロス",
+   "variant": "yuko",
+   "maps": [
+    "熱砂の平原"
+   ],
+   "element": "無",
+   "weak": [
+    "龍"
+   ],
+   "armorSeries": [
+    "融光種ディアブロ"
+   ],
+   "unlockRank": 40,
+   "chapter": null,
+   "note": "Game8 融光種ディアブロ装備ページ（11/15）「冒険ランク40以降の調査の旅で解放」。出現マップ 熱砂の平原（Game8 785237）。",
+   "sourceUrl": "https://game8.jp/mhoutlanders/785237"
   },
   {
    "name": "融光種オドガロン",

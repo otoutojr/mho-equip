@@ -145,7 +145,7 @@ def game8_extra(out, raw_dir):
         stats = {}
         for r, st in w['stats'].items():
             e = st.get('element')
-            stats[int(r)] = {'attack': st['attack'], 'element': e if e is not None else round(st['attack'] / 2), 'affinity': 0, 'src': 'Game8'}
+            stats[int(r)] = {'attack': st['attack'], 'element': e if e is not None else round(st['attack'] / 2), 'affinity': st.get('affinity') or 0, 'src': 'Game8'}
             if e is None:
                 stats[int(r)].update({'est': True, 'src': 'Game8（属性値は空欄のため 攻撃÷2 で推定）'})
         out.append({'name': w['name'], 'type': w['type'], 'element': w['element'], 'baseRarity': w['baseRarity'], 'maxRarity': max(stats),

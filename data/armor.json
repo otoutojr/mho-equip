@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12",
+ "updated": "2026-11-21",
  "sets": [
   {
    "name": "掻鳥の巧技",
@@ -501,6 +501,18 @@
      "skill": "弾導強化",
      "lv": 1,
      "effect": "弾導強化Lv1",
+     "description": null
+    }
+   ]
+  },
+  {
+   "name": "角竜のシールド",
+   "bonuses": [
+    {
+     "pieces": 3,
+     "skill": "闘志",
+     "lv": 1,
+     "effect": "闘志Lv1",
      "description": null
     }
    ]
@@ -11199,6 +11211,232 @@
       }
      ],
      "sourceUrl": "https://game8.jp/mhoutlanders/841218",
+     "sources": [
+      "GameWith"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "融光種ディアブロ",
+   "gate": {
+    "type": "monster",
+    "monsters": [
+     "融光種ディアブロス"
+    ]
+   },
+   "set": "角竜のシールド",
+   "pieces": [
+    {
+     "id": "u878d_u5149_u7a2e_u30c7_u30a3_u30a2_u30d_head",
+     "name": "融光種ディアブロヘルム",
+     "part": "head",
+     "baseRarity": 11,
+     "maxRarity": 12,
+     "docMax": 11,
+     "set": "角竜のシールド",
+     "orbTier": 5,
+     "skills": [
+      {
+       "name": "貫突",
+       "lv": 2,
+       "rarity": 11
+      },
+      {
+       "name": "振動耐性",
+       "lv": 1,
+       "rarity": 11
+      },
+      {
+       "name": "闘志",
+       "lv": 1,
+       "rarity": 11
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅴ",
+       "qty": 4
+      },
+      {
+       "name": "融光種ねじれた角Ⅴ",
+       "qty": 4
+      },
+      {
+       "name": "融光種角竜の甲殻Ⅴ",
+       "qty": 4
+      },
+      {
+       "name": "融光種角竜の骨髄Ⅴ",
+       "qty": 4
+      }
+     ],
+     "sourceUrl": "https://game8.jp/mhoutlanders/843009",
+     "sources": [
+      "GameWith"
+     ]
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30c7_u30a3_u30a2_u30d_body",
+     "name": "融光種ディアブロメイル",
+     "part": "body",
+     "baseRarity": 11,
+     "maxRarity": 12,
+     "docMax": 11,
+     "set": "角竜のシールド",
+     "orbTier": 5,
+     "skills": [
+      {
+       "name": "弁当好き",
+       "lv": 3,
+       "rarity": 11
+      },
+      {
+       "name": "防護",
+       "lv": 1,
+       "rarity": 11
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅴ",
+       "qty": 4
+      },
+      {
+       "name": "融光種角竜の甲殻Ⅴ",
+       "qty": 4
+      },
+      {
+       "name": "融光種角竜の背甲Ⅴ",
+       "qty": 4
+      }
+     ],
+     "sourceUrl": "https://game8.jp/mhoutlanders/843009",
+     "sources": [
+      "GameWith"
+     ]
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30c7_u30a3_u30a2_u30d_arm",
+     "name": "融光種ディアブロアーム",
+     "part": "arm",
+     "baseRarity": 11,
+     "maxRarity": 12,
+     "docMax": 11,
+     "set": "角竜のシールド",
+     "orbTier": 5,
+     "skills": [
+      {
+       "name": "貫突",
+       "lv": 2,
+       "rarity": 11
+      },
+      {
+       "name": "防護",
+       "lv": 1,
+       "rarity": 11
+      },
+      {
+       "name": "闘志",
+       "lv": 1,
+       "rarity": 11
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅴ",
+       "qty": 4
+      },
+      {
+       "name": "融光種角竜の牙Ⅴ",
+       "qty": 4
+      }
+     ],
+     "sourceUrl": "https://game8.jp/mhoutlanders/843009",
+     "sources": [
+      "GameWith"
+     ]
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30c7_u30a3_u30a2_u30d_waist",
+     "name": "融光種ディアブロコイル",
+     "part": "waist",
+     "baseRarity": 11,
+     "maxRarity": 12,
+     "docMax": 11,
+     "set": "角竜のシールド",
+     "orbTier": 5,
+     "skills": [
+      {
+       "name": "振動耐性",
+       "lv": 1,
+       "rarity": 11
+      },
+      {
+       "name": "抜刀一閃",
+       "lv": 3,
+       "rarity": 11
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅴ",
+       "qty": 4
+      },
+      {
+       "name": "融光種ねじれた角Ⅴ",
+       "qty": 4
+      },
+      {
+       "name": "融光種角竜の甲殻Ⅴ",
+       "qty": 4
+      },
+      {
+       "name": "融光種角竜の骨髄Ⅴ",
+       "qty": 4
+      }
+     ],
+     "sourceUrl": "https://game8.jp/mhoutlanders/843009",
+     "sources": [
+      "GameWith"
+     ]
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30c7_u30a3_u30a2_u30d_leg",
+     "name": "融光種ディアブログリーヴ",
+     "part": "leg",
+     "baseRarity": 11,
+     "maxRarity": 12,
+     "docMax": 11,
+     "set": "角竜のシールド",
+     "orbTier": 5,
+     "skills": [
+      {
+       "name": "防護",
+       "lv": 2,
+       "rarity": 11
+      },
+      {
+       "name": "振動耐性",
+       "lv": 1,
+       "rarity": 11
+      }
+     ],
+     "materials": [
+      {
+       "name": "狩魂玉Ⅴ",
+       "qty": 4
+      },
+      {
+       "name": "融光種角竜の甲殻Ⅴ",
+       "qty": 4
+      },
+      {
+       "name": "融光種角竜の牙Ⅴ",
+       "qty": 4
+      }
+     ],
+     "sourceUrl": "https://game8.jp/mhoutlanders/843009",
      "sources": [
       "GameWith"
      ]
