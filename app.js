@@ -1,6 +1,6 @@
 /* 融光工房 ― UI */
 'use strict';
-const APP_VERSION = '2026.11.21-1';
+const APP_VERSION = '2026.11.21-2';
 const STORE_KEY = 'mho-equip:v1';
 const PART_JP = { head: '頭', body: '胴', arm: '腕', waist: '腰', leg: '脚' };
 const $ = (sel) => document.querySelector(sel);
@@ -121,7 +121,12 @@ function renderWho() {
   const e = charElement(c);
   document.documentElement.dataset.el = HERO_ELEMENTS.includes(e) ? e : '無';
   const crest = $('#crest'); crest.innerHTML = ''; crest.append(wicon(charWeaponType(c)));
-  $('#elStamp').textContent = HERO_ELEMENTS.includes(e) ? e : '';
+  const stamp = $('#elStamp');
+  const mark = HERO_ELEMENTS.includes(e) ? e : '';
+  if (stamp.textContent !== mark) {
+    stamp.textContent = mark;
+    if (mark) { stamp.classList.remove('hit'); void stamp.offsetWidth; stamp.classList.add('hit'); } // 属性が変わったときだけ「ぽん」と押す（動きは CSS 側）
+  }
 }
 function setPicker(open) {
   $('#picker').hidden = !open;

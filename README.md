@@ -12,6 +12,8 @@
 
 ## 構成
 - `index.html` / `style.css` / `app.js` … 画面
+- `phrase.js` + `vendor/budoux/` … 日本語を文節で折り返す（Safari など `word-break: auto-phrase` 未対応の端末だけ。BudouX、Apache-2.0）
+- `fonts/` … 見出し・数字の明朝（Shippori Mincho B1 ExtraBold を、使う字だけに絞った woff2。OFL-1.1）
 - `solver.js` … Web Worker。候補の絞り込み → 全組み合わせ探索（同点なら強化段数が少ない方）
 - `data/*.json` … 武器・防具・スキル・モンスター・キャラの重み
 - `tools/build_data.py` … 収集した生データから `data/` を作る
@@ -20,6 +22,12 @@
 - `tools/build_builds.py` … 攻略サイトのおすすめ構成を集めた構成DB（data/builds.json）を作る
 - `tools/build_api.py` … 外部のAI（Claude Desktop など）向けに、キャラごとの小さなJSON（api/index.json, api/builds/<charId>.json）を作る。使い方のプロンプトは docs/claude-desktop-prompt.md
 - `tools/build_weapons.py` … 武器データ（レアごとの攻撃力・属性値。サイトでレア9止まりの武器はレア10まで推定値で伸ばす）
+- `tools/subset_font.py` … 明朝フォントを、サイトに出てくる字だけに絞って `fonts/` に出す（index.html・app.js を書き換えたら実行し直す）
+- `tools/test_ui.py` … iPhone 幅で表示と計算結果を確かめる
+- `tools/audit_ui.py` … 画面の点検（押せる大きさ・名前・コントラスト・横はみ出し・フォーカス枠・動きを減らす設定など。Vercel の Web Interface Guidelines のうち機械で確かめられる項目）。`--selftest` でわざと悪い部品を入れて、点検が拾えるかを確かめられる
+
+## 借りたもの（デザイン）
+フォント・折り返し・紙の質感・影・動きは、GitHub の公開リポジトリ（Shippori Mincho・BudouX・Open Props・Vercel の Web Interface Guidelines）を使っています。出どころとライセンスは [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) にあります。
 
 ## データについて
 防具・スキル・モンスターの情報は攻略サイト（GameWith・Game8・gamewith.ai・Gamerch）の掲載内容をもとにまとめたもので、ゲーム内の表記と異なる場合があります。キャラごとの重みは攻略サイトの推奨とゲーム内の効果値を参考にした目安です。

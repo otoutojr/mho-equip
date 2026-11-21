@@ -13,6 +13,7 @@
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="icons/icon-180.png">
 <link rel="icon" href="icons/icon-192.png">
+<link rel="preload" href="fonts/ShipporiMinchoB1-ExtraBold.subset.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -167,9 +168,23 @@
         <button type="button" class="btn" id="resetBtn">選択をリセット</button>
       </div>
     </details>
+    <details class="fold" id="foldCredit">
+      <summary>デザインの出どころ</summary>
+      <div class="foldBody prose">
+        <p>画面の見た目には、GitHub の公開リポジトリから次のものを借りています（11/21 に採用）。</p>
+        <ul>
+          <li><a href="https://github.com/fontdasu/ShipporiMincho" target="_blank" rel="noopener">Shippori Mincho</a>（fontdasu、SIL Open Font License 1.1）… 見出しと数字の明朝。「B1 ExtraBold」から、このサイトで使う字だけを取り出した軽い版（約80KB）を同梱</li>
+          <li><a href="https://github.com/argyleink/open-props" target="_blank" rel="noopener">Open Props</a>（Adam Argyle、MIT）… 紙の粒（feTurbulence の SVG）、重ねたやわらかい影、判子を押す動きの作り方</li>
+          <li><a href="https://github.com/google/budoux" target="_blank" rel="noopener">BudouX</a>（Google、Apache-2.0）… 日本語を文節の切れ目で折り返す。Safari など対応していない端末だけで動かす</li>
+          <li><a href="https://github.com/vercel-labs/web-interface-guidelines" target="_blank" rel="noopener">Web Interface Guidelines</a>（Vercel Labs、MIT）… 押せる大きさ・押したときの変化・動きを減らす設定への対応などの点検項目。コードは借りず、点検の基準にしただけ</li>
+        </ul>
+        <p>ライセンス全文と、どこに使ったかは、リポジトリの <a href="https://github.com/otoutojr/mho-equip/blob/main/THIRD_PARTY_NOTICES.md" target="_blank" rel="noopener">THIRD_PARTY_NOTICES.md</a> にあります。</p>
+      </div>
+    </details>
   </section>
 </main>
 
+<script src="phrase.js" defer></script>
 <script src="app.js" defer></script>
 </body>
 </html>
