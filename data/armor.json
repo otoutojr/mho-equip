@@ -552,6 +552,18 @@
      "description": "体力ゲージにグレーの部分がある間、与ダメージが+3%。"
     }
    ]
+  },
+  {
+   "name": "風漂竜の加護",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "加護",
+     "lv": 1,
+     "effect": "加護+1",
+     "description": "ダメージを受けた際、25%の確率でそのダメージ-15%。"
+    }
+   ]
   }
  ],
  "series": [
@@ -12045,6 +12057,196 @@
        "name": "怖いもの無し",
        "lv": 1,
        "rarity": 12
+      }
+     ],
+     "materials": null,
+     "sourceUrl": null,
+     "sources": [
+      "ゲーム画面（2026-11-21・冒険ランク55）"
+     ],
+     "seen": {
+      "skillTop": false,
+      "skillBottom": false,
+      "setRow": false
+     }
+    }
+   ]
+  },
+  {
+   "name": "融光種ギエナ",
+   "gate": {
+    "type": "rank",
+    "rank": 55,
+    "observed": true,
+    "monsters": [
+     "融光種レイギエナ"
+    ]
+   },
+   "set": "風漂竜の加護",
+   "notes": "ゲームの生産リストでは「融光種ギエナシリーズ」（レア度11・画面は11/13）。防具の説明文は「融光種レイギエナの頭防具…」。画面の表示名は「融光種ギエナヘルムV」のようにローマ数字が付く（ここでは外している）。冒険ランク55の画面ではヘルム・メイル・アーム・コイルは「生産する」が押せる表示、グリーヴは素材不足。解放されるランクの下限・素材名・武器は未確認。",
+   "pieces": [
+    {
+     "id": "u878d_u5149_u7a2e_u30ae_u30a8_u30ca_head",
+     "name": "融光種ギエナヘルム",
+     "gameName": "融光種ギエナヘルムV",
+     "part": "head",
+     "baseRarity": 11,
+     "maxRarity": 13,
+     "docMax": 13,
+     "set": "風漂竜の加護",
+     "orbTier": null,
+     "skills": [
+      {
+       "name": "氷属性ダメージUP",
+       "lv": 3,
+       "rarity": 11
+      },
+      {
+       "name": "加護",
+       "lv": 1,
+       "rarity": 11
+      }
+     ],
+     "materials": null,
+     "sourceUrl": null,
+     "sources": [
+      "ゲーム画面（2026-11-21・冒険ランク55）"
+     ],
+     "seen": {
+      "skillTop": true,
+      "skillBottom": true,
+      "setRow": true
+     }
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30ae_u30a8_u30ca_body",
+     "name": "融光種ギエナメイル",
+     "gameName": "融光種ギエナメイルV",
+     "part": "body",
+     "baseRarity": 11,
+     "maxRarity": 13,
+     "docMax": 13,
+     "set": "風漂竜の加護",
+     "orbTier": null,
+     "skills": [
+      {
+       "name": "溜め強射",
+       "lv": 3,
+       "rarity": 11
+      },
+      {
+       "name": "氷耐性強化",
+       "lv": 1,
+       "rarity": 11
+      }
+     ],
+     "materials": null,
+     "sourceUrl": null,
+     "sources": [
+      "ゲーム画面（2026-11-21・冒険ランク55）"
+     ],
+     "seen": {
+      "skillTop": true,
+      "skillBottom": true,
+      "setRow": false
+     }
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30ae_u30a8_u30ca_arm",
+     "name": "融光種ギエナアーム",
+     "gameName": "融光種ギエナアームV",
+     "part": "arm",
+     "baseRarity": 11,
+     "maxRarity": 13,
+     "docMax": 13,
+     "set": "風漂竜の加護",
+     "orbTier": null,
+     "skills": [
+      {
+       "name": "氷耐性強化",
+       "lv": 1,
+       "rarity": 11
+      },
+      {
+       "name": "風圧耐性",
+       "lv": 1,
+       "rarity": 11
+      },
+      {
+       "name": "氷属性ダメージUP",
+       "lv": 1,
+       "rarity": 11
+      }
+     ],
+     "materials": null,
+     "sourceUrl": null,
+     "sources": [
+      "ゲーム画面（2026-11-21・冒険ランク55）"
+     ],
+     "seen": {
+      "skillTop": false,
+      "skillBottom": false,
+      "setRow": false
+     }
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30ae_u30a8_u30ca_waist",
+     "name": "融光種ギエナコイル",
+     "gameName": "融光種ギエナコイルV",
+     "part": "waist",
+     "baseRarity": 11,
+     "maxRarity": 13,
+     "docMax": 13,
+     "set": "風漂竜の加護",
+     "orbTier": null,
+     "skills": [
+      {
+       "name": "加護",
+       "lv": 2,
+       "rarity": 11
+      },
+      {
+       "name": "氷耐性強化",
+       "lv": 1,
+       "rarity": 11
+      }
+     ],
+     "materials": null,
+     "sourceUrl": null,
+     "sources": [
+      "ゲーム画面（2026-11-21・冒険ランク55）"
+     ],
+     "seen": {
+      "skillTop": true,
+      "skillBottom": true,
+      "setRow": true
+     }
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30ae_u30a8_u30ca_leg",
+     "name": "融光種ギエナグリーヴ",
+     "gameName": "融光種ギエナグリーヴV",
+     "part": "leg",
+     "baseRarity": 11,
+     "maxRarity": 13,
+     "docMax": 13,
+     "set": "風漂竜の加護",
+     "orbTier": null,
+     "skills": [
+      {
+       "name": "溜め強射",
+       "lv": 2,
+       "rarity": 11
+      },
+      {
+       "name": "加護",
+       "lv": 1,
+       "rarity": 11
+      },
+      {
+       "name": "洞察",
+       "lv": 1,
+       "rarity": 11
       }
      ],
      "materials": null,

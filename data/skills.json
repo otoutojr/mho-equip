@@ -5540,6 +5540,38 @@
    "sourceUrl": null,
    "sourceUrls": {},
    "piecesGameWith": null
+  },
+  {
+   "name": "風漂竜の加護",
+   "category": "生存",
+   "series": [
+    "融光種ギエナ"
+   ],
+   "seriesAliases": [
+    "融光種レイギエナ"
+   ],
+   "pieces": 2,
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "加護",
+     "lv": 1,
+     "effect": "加護+1",
+     "effectSource": "ゲーム画面",
+     "skillLevelEffect": "ダメージを受けた際、25%の確率でそのダメージ-15%。",
+     "skillDescription": null
+    }
+   ],
+   "gear": [
+    "融光種ギエナヘルム",
+    "融光種ギエナメイル",
+    "融光種ギエナアーム",
+    "融光種ギエナコイル",
+    "融光種ギエナグリーヴ"
+   ],
+   "sourceUrl": null,
+   "sourceUrls": {},
+   "piecesGameWith": null
   }
  ]
 }
