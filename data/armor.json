@@ -564,6 +564,18 @@
      "description": "ダメージを受けた際、25%の確率でそのダメージ-15%。"
     }
    ]
+  },
+  {
+   "name": "火竜の烈心",
+   "bonuses": [
+    {
+     "pieces": 3,
+     "skill": "会心撃【属性】",
+     "lv": 1,
+     "effect": "会心撃【属性】+1",
+     "description": "攻撃で会心が発生した際に、与える属性ダメージ+5%。"
+    }
+   ]
   }
  ],
  "series": [
@@ -12258,6 +12270,196 @@
       "skillTop": false,
       "skillBottom": false,
       "setRow": false
+     }
+    }
+   ]
+  },
+  {
+   "name": "融光種レウス",
+   "gate": {
+    "type": "rank",
+    "rank": 55,
+    "observed": true,
+    "monsters": [
+     "融光種リオレウス"
+    ]
+   },
+   "set": "火竜の烈心",
+   "notes": "ゲームの生産リストでは「融光種レウスシリーズ」（レア度11・画面は11/13）。防具の説明文は「融光種リオレウスの頭防具…」。画面の表示名は「融光種レウスヘルムV」のようにローマ数字が付く（ここでは外している）。冒険ランク55の画面ではコイル以外は「生産する」が押せる表示、コイルは素材不足。解放されるランクの下限・素材名・武器は未確認。",
+   "pieces": [
+    {
+     "id": "u878d_u5149_u7a2e_u30ec_u30a6_u30b9_head",
+     "name": "融光種レウスヘルム",
+     "gameName": "融光種レウスヘルムV",
+     "part": "head",
+     "baseRarity": 11,
+     "maxRarity": 13,
+     "docMax": 13,
+     "set": "火竜の烈心",
+     "orbTier": null,
+     "skills": [
+      {
+       "name": "威嚇",
+       "lv": 2,
+       "rarity": 11
+      },
+      {
+       "name": "制圧回復",
+       "lv": 1,
+       "rarity": 11
+      }
+     ],
+     "materials": null,
+     "sourceUrl": null,
+     "sources": [
+      "ゲーム画面（2026-11-21・冒険ランク55）"
+     ],
+     "seen": {
+      "skillTop": true,
+      "skillBottom": true,
+      "setRow": true
+     }
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30ec_u30a6_u30b9_body",
+     "name": "融光種レウスメイル",
+     "gameName": "融光種レウスメイルV",
+     "part": "body",
+     "baseRarity": 11,
+     "maxRarity": 13,
+     "docMax": 13,
+     "set": "火竜の烈心",
+     "orbTier": null,
+     "skills": [
+      {
+       "name": "破砕",
+       "lv": 2,
+       "rarity": 11
+      },
+      {
+       "name": "会心撃【属性】",
+       "lv": 1,
+       "rarity": 11
+      },
+      {
+       "name": "制圧回復",
+       "lv": 1,
+       "rarity": 11
+      }
+     ],
+     "materials": null,
+     "sourceUrl": null,
+     "sources": [
+      "ゲーム画面（2026-11-21・冒険ランク55）"
+     ],
+     "seen": {
+      "skillTop": false,
+      "skillBottom": false,
+      "setRow": false
+     }
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30ec_u30a6_u30b9_arm",
+     "name": "融光種レウスアーム",
+     "gameName": "融光種レウスアームV",
+     "part": "arm",
+     "baseRarity": 11,
+     "maxRarity": 13,
+     "docMax": 13,
+     "set": "火竜の烈心",
+     "orbTier": null,
+     "skills": [
+      {
+       "name": "火属性ダメージUP",
+       "lv": 3,
+       "rarity": 11
+      },
+      {
+       "name": "制圧回復",
+       "lv": 1,
+       "rarity": 11
+      }
+     ],
+     "materials": null,
+     "sourceUrl": null,
+     "sources": [
+      "ゲーム画面（2026-11-21・冒険ランク55）"
+     ],
+     "seen": {
+      "skillTop": true,
+      "skillBottom": true,
+      "setRow": false
+     }
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30ec_u30a6_u30b9_waist",
+     "name": "融光種レウスコイル",
+     "gameName": "融光種レウスコイルV",
+     "part": "waist",
+     "baseRarity": 11,
+     "maxRarity": 13,
+     "docMax": 13,
+     "set": "火竜の烈心",
+     "orbTier": null,
+     "skills": [
+      {
+       "name": "溜め強化",
+       "lv": 3,
+       "rarity": 11
+      },
+      {
+       "name": "威嚇",
+       "lv": 1,
+       "rarity": 11
+      }
+     ],
+     "materials": null,
+     "sourceUrl": null,
+     "sources": [
+      "ゲーム画面（2026-11-21・冒険ランク55）"
+     ],
+     "seen": {
+      "skillTop": false,
+      "skillBottom": true,
+      "setRow": false
+     }
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30ec_u30a6_u30b9_leg",
+     "name": "融光種レウスグリーヴ",
+     "gameName": "融光種レウスグリーヴV",
+     "part": "leg",
+     "baseRarity": 11,
+     "maxRarity": 13,
+     "docMax": 13,
+     "set": "火竜の烈心",
+     "orbTier": null,
+     "skills": [
+      {
+       "name": "逆境",
+       "lv": 1,
+       "rarity": 11
+      },
+      {
+       "name": "火属性ダメージUP",
+       "lv": 2,
+       "rarity": 11
+      },
+      {
+       "name": "会心撃【属性】",
+       "lv": 1,
+       "rarity": 11
+      }
+     ],
+     "materials": null,
+     "sourceUrl": null,
+     "sources": [
+      "ゲーム画面（2026-11-21・冒険ランク55）"
+     ],
+     "seen": {
+      "skillTop": false,
+      "skillBottom": true,
+      "setRow": true
      }
     }
    ]

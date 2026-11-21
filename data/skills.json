@@ -5572,6 +5572,38 @@
    "sourceUrl": null,
    "sourceUrls": {},
    "piecesGameWith": null
+  },
+  {
+   "name": "火竜の烈心",
+   "category": "火力",
+   "series": [
+    "融光種レウス"
+   ],
+   "seriesAliases": [
+    "融光種リオレウス"
+   ],
+   "pieces": 3,
+   "bonuses": [
+    {
+     "pieces": 3,
+     "skill": "会心撃【属性】",
+     "lv": 1,
+     "effect": "会心撃【属性】+1",
+     "effectSource": "ゲーム画面",
+     "skillLevelEffect": "攻撃で会心が発生した際に、与える属性ダメージ+5%。",
+     "skillDescription": null
+    }
+   ],
+   "gear": [
+    "融光種レウスヘルム",
+    "融光種レウスメイル",
+    "融光種レウスアーム",
+    "融光種レウスコイル",
+    "融光種レウスグリーヴ"
+   ],
+   "sourceUrl": null,
+   "sourceUrls": {},
+   "piecesGameWith": null
   }
  ]
 }
