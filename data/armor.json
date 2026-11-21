@@ -516,6 +516,42 @@
      "description": null
     }
    ]
+  },
+  {
+   "name": "黒角竜の堅壁",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "鉄壁ガード",
+     "lv": 1,
+     "effect": "鉄壁ガード+1",
+     "description": "通常はガードできない攻撃も、ガードできるようになる。"
+    }
+   ]
+  },
+  {
+   "name": "桜火竜の暴走",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "融光活性",
+     "lv": 1,
+     "effect": "融光活性+1",
+     "description": "融光の影響を受けた冒険者は与ダメージ+10%。30秒持続し、終了後に与ダメージ-10%、スタミナ上限-50。30秒持続（画面では末尾が切れていて、ここまでしか読めない）"
+    }
+   ]
+  },
+  {
+   "name": "骨鎚竜の無畏",
+   "bonuses": [
+    {
+     "pieces": 3,
+     "skill": "怖いもの無し",
+     "lv": 1,
+     "effect": "怖いもの無し+1",
+     "description": "体力ゲージにグレーの部分がある間、与ダメージが+3%。"
+    }
+   ]
   }
  ],
  "series": [
@@ -11440,6 +11476,587 @@
      "sources": [
       "GameWith"
      ]
+    }
+   ]
+  },
+  {
+   "name": "ディアネロ",
+   "gate": {
+    "type": "rank",
+    "rank": 55,
+    "observed": true,
+    "monsters": [
+     "ディアブロス亜種"
+    ]
+   },
+   "set": "黒角竜の堅壁",
+   "notes": "ゲームの生産リストで「ディアネロシリーズ」はレア度13（融光種リオレイア亜種シリーズはレア度12）。防具の説明文は「ディアブロス亜種の頭防具…」。冒険ランク55の画面に並んでいたことしか分かっておらず、解放されるランクの下限・素材名・武器は未確認。画面の表示名は「ディアネロヘルムVI」のようにローマ数字が付く（ここでは他の防具に合わせて外している）。",
+   "pieces": [
+    {
+     "id": "u30c7_u30a3_u30a2_u30cd_u30ed_head",
+     "name": "ディアネロヘルム",
+     "gameName": "ディアネロヘルムVI",
+     "part": "head",
+     "baseRarity": 13,
+     "maxRarity": 13,
+     "docMax": 13,
+     "set": "黒角竜の堅壁",
+     "orbTier": null,
+     "skills": [
+      {
+       "name": "龍属性ダメージUP",
+       "lv": 2,
+       "rarity": 13
+      },
+      {
+       "name": "怖いもの無し",
+       "lv": 1,
+       "rarity": 13
+      },
+      {
+       "name": "ガードテクニック",
+       "lv": 1,
+       "rarity": 13
+      }
+     ],
+     "materials": null,
+     "sourceUrl": null,
+     "sources": [
+      "ゲーム画面（2026-11-21・冒険ランク55）"
+     ],
+     "seen": {
+      "skillTop": true,
+      "skillBottom": true,
+      "setRow": true
+     }
+    },
+    {
+     "id": "u30c7_u30a3_u30a2_u30cd_u30ed_body",
+     "name": "ディアネロメイル",
+     "gameName": "ディアネロメイルVI",
+     "part": "body",
+     "baseRarity": 13,
+     "maxRarity": 13,
+     "docMax": 13,
+     "set": "黒角竜の堅壁",
+     "orbTier": null,
+     "skills": [
+      {
+       "name": "変形強化",
+       "lv": 2,
+       "rarity": 13
+      },
+      {
+       "name": "怖いもの無し",
+       "lv": 1,
+       "rarity": 13
+      },
+      {
+       "name": "ガードテクニック",
+       "lv": 1,
+       "rarity": 13
+      }
+     ],
+     "materials": null,
+     "sourceUrl": null,
+     "sources": [
+      "ゲーム画面（2026-11-21・冒険ランク55）"
+     ],
+     "seen": {
+      "skillTop": false,
+      "skillBottom": false,
+      "setRow": false
+     }
+    },
+    {
+     "id": "u30c7_u30a3_u30a2_u30cd_u30ed_arm",
+     "name": "ディアネロアーム",
+     "gameName": "ディアネロアームVI",
+     "part": "arm",
+     "baseRarity": 13,
+     "maxRarity": 13,
+     "docMax": 13,
+     "set": "黒角竜の堅壁",
+     "orbTier": null,
+     "skills": [
+      {
+       "name": "気絶耐性",
+       "lv": 2,
+       "rarity": 13
+      },
+      {
+       "name": "振動耐性",
+       "lv": 1,
+       "rarity": 13
+      }
+     ],
+     "materials": null,
+     "sourceUrl": null,
+     "sources": [
+      "ゲーム画面（2026-11-21・冒険ランク55）"
+     ],
+     "seen": {
+      "skillTop": true,
+      "skillBottom": true,
+      "setRow": true
+     }
+    },
+    {
+     "id": "u30c7_u30a3_u30a2_u30cd_u30ed_waist",
+     "name": "ディアネロコイル",
+     "gameName": "ディアネロコイルVI",
+     "part": "waist",
+     "baseRarity": 13,
+     "maxRarity": 13,
+     "docMax": 13,
+     "set": "黒角竜の堅壁",
+     "orbTier": null,
+     "skills": [
+      {
+       "name": "龍属性ダメージUP",
+       "lv": 3,
+       "rarity": 13
+      },
+      {
+       "name": "気絶耐性",
+       "lv": 1,
+       "rarity": 13
+      }
+     ],
+     "materials": null,
+     "sourceUrl": null,
+     "sources": [
+      "ゲーム画面（2026-11-21・冒険ランク55）"
+     ],
+     "seen": {
+      "skillTop": false,
+      "skillBottom": true,
+      "setRow": true
+     }
+    },
+    {
+     "id": "u30c7_u30a3_u30a2_u30cd_u30ed_leg",
+     "name": "ディアネログリーヴ",
+     "gameName": "ディアネログリーヴVI",
+     "part": "leg",
+     "baseRarity": 13,
+     "maxRarity": 13,
+     "docMax": 13,
+     "set": "黒角竜の堅壁",
+     "orbTier": null,
+     "skills": [
+      {
+       "name": "気力変換",
+       "lv": 3,
+       "rarity": 13
+      },
+      {
+       "name": "ガードテクニック",
+       "lv": 1,
+       "rarity": 13
+      }
+     ],
+     "materials": null,
+     "sourceUrl": null,
+     "sources": [
+      "ゲーム画面（2026-11-21・冒険ランク55）"
+     ],
+     "seen": {
+      "skillTop": true,
+      "skillBottom": false,
+      "setRow": false
+     }
+    }
+   ]
+  },
+  {
+   "name": "融光種リオハート",
+   "gate": {
+    "type": "rank",
+    "rank": 55,
+    "observed": true,
+    "monsters": [
+     "融光種リオレイア亜種"
+    ]
+   },
+   "set": "桜火竜の暴走",
+   "notes": "ゲームの生産リストでは「融光種リオレイア亜種シリーズ」（レア度12・画面は12/13）。画面の表示名は「融光種リオハートヘルムV」のようにローマ数字が付く（ここでは他の防具に合わせて外している）。冒険ランク55の画面に並んでいたことしか分かっておらず、解放されるランクの下限・素材名・武器は未確認。",
+   "pieces": [
+    {
+     "id": "u878d_u5149_u7a2e_u30ea_u30aa_u30cf_u30f_head",
+     "name": "融光種リオハートヘルム",
+     "gameName": "融光種リオハートヘルムV",
+     "part": "head",
+     "baseRarity": 12,
+     "maxRarity": 13,
+     "docMax": 13,
+     "set": "桜火竜の暴走",
+     "orbTier": null,
+     "skills": [
+      {
+       "name": "会心撃【属性】",
+       "lv": 2,
+       "rarity": 12
+      },
+      {
+       "name": "不屈の意志",
+       "lv": 1,
+       "rarity": 12
+      },
+      {
+       "name": "高圧ガード",
+       "lv": 1,
+       "rarity": 12
+      }
+     ],
+     "materials": null,
+     "sourceUrl": null,
+     "sources": [
+      "ゲーム画面（2026-11-21・冒険ランク55）"
+     ],
+     "seen": {
+      "skillTop": true,
+      "skillBottom": true,
+      "setRow": true
+     }
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30ea_u30aa_u30cf_u30f_body",
+     "name": "融光種リオハートメイル",
+     "gameName": "融光種リオハートメイルV",
+     "part": "body",
+     "baseRarity": 12,
+     "maxRarity": 13,
+     "docMax": 13,
+     "set": "桜火竜の暴走",
+     "orbTier": null,
+     "skills": [
+      {
+       "name": "不屈の意志",
+       "lv": 2,
+       "rarity": 12
+      },
+      {
+       "name": "高圧ガード",
+       "lv": 1,
+       "rarity": 12
+      },
+      {
+       "name": "会心撃【属性】",
+       "lv": 1,
+       "rarity": 12
+      }
+     ],
+     "materials": null,
+     "sourceUrl": null,
+     "sources": [
+      "ゲーム画面（2026-11-21・冒険ランク55）"
+     ],
+     "seen": {
+      "skillTop": true,
+      "skillBottom": true,
+      "setRow": true,
+      "note": "上半分と下半分を別々の画面で見ている。つなぎ目に別のスキルが隠れていないかは未確認"
+     }
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30ea_u30aa_u30cf_u30f_arm",
+     "name": "融光種リオハートアーム",
+     "gameName": "融光種リオハートアームV",
+     "part": "arm",
+     "baseRarity": 12,
+     "maxRarity": 13,
+     "docMax": 13,
+     "set": "桜火竜の暴走",
+     "orbTier": null,
+     "skills": [
+      {
+       "name": "洞察",
+       "lv": 2,
+       "rarity": 12
+      },
+      {
+       "name": "不屈の意志",
+       "lv": 1,
+       "rarity": 12
+      },
+      {
+       "name": "高圧ガード",
+       "lv": 1,
+       "rarity": 12
+      }
+     ],
+     "materials": null,
+     "sourceUrl": null,
+     "sources": [
+      "ゲーム画面（2026-11-21・冒険ランク55）"
+     ],
+     "seen": {
+      "skillTop": false,
+      "skillBottom": false,
+      "setRow": false
+     }
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30ea_u30aa_u30cf_u30f_waist",
+     "name": "融光種リオハートコイル",
+     "gameName": "融光種リオハートコイルV",
+     "part": "waist",
+     "baseRarity": 12,
+     "maxRarity": 13,
+     "docMax": 13,
+     "set": "桜火竜の暴走",
+     "orbTier": null,
+     "skills": [
+      {
+       "name": "毒耐性",
+       "lv": 2,
+       "rarity": 12
+      },
+      {
+       "name": "復活",
+       "lv": 1,
+       "rarity": 12
+      }
+     ],
+     "materials": null,
+     "sourceUrl": null,
+     "sources": [
+      "ゲーム画面（2026-11-21・冒険ランク55）"
+     ],
+     "seen": {
+      "skillTop": true,
+      "skillBottom": true,
+      "setRow": false
+     }
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30ea_u30aa_u30cf_u30f_leg",
+     "name": "融光種リオハートグリーヴ",
+     "gameName": "融光種リオハートグリーヴV",
+     "part": "leg",
+     "baseRarity": 12,
+     "maxRarity": 13,
+     "docMax": 13,
+     "set": "桜火竜の暴走",
+     "orbTier": null,
+     "skills": [
+      {
+       "name": "リロード強化",
+       "lv": 3,
+       "rarity": 12
+      },
+      {
+       "name": "復活",
+       "lv": 1,
+       "rarity": 12
+      }
+     ],
+     "materials": null,
+     "sourceUrl": null,
+     "sources": [
+      "ゲーム画面（2026-11-21・冒険ランク55）"
+     ],
+     "seen": {
+      "skillTop": true,
+      "skillBottom": true,
+      "setRow": false
+     }
+    }
+   ]
+  },
+  {
+   "name": "融光種バルキン",
+   "gate": {
+    "type": "rank",
+    "rank": 55,
+    "observed": true,
+    "monsters": [
+     "融光種ラドバルキン"
+    ]
+   },
+   "set": "骨鎚竜の無畏",
+   "notes": "ゲームの生産リストでは「融光種バルキンシリーズ」（レア度12・画面は12/13）。防具の説明文は「融光種ラドバルキンの頭防具…」。画面の表示名は「融光種バルキンヘルムV」のようにローマ数字が付く（ここでは外している）。冒険ランク55の画面に並んでいたことしか分かっておらず、解放されるランクの下限・素材名・武器は未確認。",
+   "pieces": [
+    {
+     "id": "u878d_u5149_u7a2e_u30d0_u30eb_u30ad_u30f_head",
+     "name": "融光種バルキンヘルム",
+     "gameName": "融光種バルキンヘルムV",
+     "part": "head",
+     "baseRarity": 12,
+     "maxRarity": 13,
+     "docMax": 13,
+     "set": "骨鎚竜の無畏",
+     "orbTier": null,
+     "skills": [
+      {
+       "name": "高圧ガード",
+       "lv": 2,
+       "rarity": 12
+      },
+      {
+       "name": "振動耐性",
+       "lv": 1,
+       "rarity": 12
+      }
+     ],
+     "materials": null,
+     "sourceUrl": null,
+     "sources": [
+      "ゲーム画面（2026-11-21・冒険ランク55）"
+     ],
+     "seen": {
+      "skillTop": true,
+      "skillBottom": true,
+      "setRow": true
+     }
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30d0_u30eb_u30ad_u30f_body",
+     "name": "融光種バルキンメイル",
+     "gameName": "融光種バルキンメイルV",
+     "part": "body",
+     "baseRarity": 12,
+     "maxRarity": 13,
+     "docMax": 13,
+     "set": "骨鎚竜の無畏",
+     "orbTier": null,
+     "skills": [
+      {
+       "name": "剛勢",
+       "lv": 3,
+       "rarity": 12
+      },
+      {
+       "name": "振動耐性",
+       "lv": 1,
+       "rarity": 12
+      }
+     ],
+     "materials": null,
+     "sourceUrl": null,
+     "sources": [
+      "ゲーム画面（2026-11-21・冒険ランク55）"
+     ],
+     "seen": {
+      "skillTop": true,
+      "skillBottom": true,
+      "setRow": true
+     }
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30d0_u30eb_u30ad_u30f_arm",
+     "name": "融光種バルキンアーム",
+     "gameName": "融光種バルキンアームV",
+     "part": "arm",
+     "baseRarity": 12,
+     "maxRarity": 13,
+     "docMax": 13,
+     "set": "骨鎚竜の無畏",
+     "orbTier": null,
+     "skills": [
+      {
+       "name": "威震",
+       "lv": 2,
+       "rarity": 12
+      },
+      {
+       "name": "振動耐性",
+       "lv": 1,
+       "rarity": 12
+      },
+      {
+       "name": "怖いもの無し",
+       "lv": 1,
+       "rarity": 12
+      }
+     ],
+     "materials": null,
+     "sourceUrl": null,
+     "sources": [
+      "ゲーム画面（2026-11-21・冒険ランク55）"
+     ],
+     "seen": {
+      "skillTop": false,
+      "skillBottom": false,
+      "setRow": false
+     }
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30d0_u30eb_u30ad_u30f_waist",
+     "name": "融光種バルキンコイル",
+     "gameName": "融光種バルキンコイルV",
+     "part": "waist",
+     "baseRarity": 12,
+     "maxRarity": 13,
+     "docMax": 13,
+     "set": "骨鎚竜の無畏",
+     "orbTier": null,
+     "skills": [
+      {
+       "name": "威震",
+       "lv": 2,
+       "rarity": 12
+      },
+      {
+       "name": "破壊王",
+       "lv": 1,
+       "rarity": 12
+      },
+      {
+       "name": "睡眠耐性",
+       "lv": 1,
+       "rarity": 12
+      }
+     ],
+     "materials": null,
+     "sourceUrl": null,
+     "sources": [
+      "ゲーム画面（2026-11-21・冒険ランク55）"
+     ],
+     "seen": {
+      "skillTop": false,
+      "skillBottom": false,
+      "setRow": false
+     }
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30d0_u30eb_u30ad_u30f_leg",
+     "name": "融光種バルキングリーヴ",
+     "gameName": "融光種バルキングリーヴV",
+     "part": "leg",
+     "baseRarity": 12,
+     "maxRarity": 13,
+     "docMax": 13,
+     "set": "骨鎚竜の無畏",
+     "orbTier": null,
+     "skills": [
+      {
+       "name": "剛勢",
+       "lv": 2,
+       "rarity": 12
+      },
+      {
+       "name": "睡眠耐性",
+       "lv": 1,
+       "rarity": 12
+      },
+      {
+       "name": "怖いもの無し",
+       "lv": 1,
+       "rarity": 12
+      }
+     ],
+     "materials": null,
+     "sourceUrl": null,
+     "sources": [
+      "ゲーム画面（2026-11-21・冒険ランク55）"
+     ],
+     "seen": {
+      "skillTop": false,
+      "skillBottom": false,
+      "setRow": false
+     }
     }
    ]
   }

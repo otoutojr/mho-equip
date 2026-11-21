@@ -34,6 +34,8 @@ def main():
             return min(mon_rank.get(m, 1) for m in g.get('monsters') or [g.get('monster')])
         if g['type'] == 'map':
             return map_rank.get(g['map'], 1)
+        if g['type'] == 'rank':  # 解放ランクは未確認で、このランクの画面に並んでいたことだけ分かっているもの
+            return g['rank']
         return 1
 
     piece = {}

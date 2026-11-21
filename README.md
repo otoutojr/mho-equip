@@ -17,6 +17,7 @@
 - `solver.js` … Web Worker。候補の絞り込み → 全組み合わせ探索（同点なら強化段数が少ない方）
 - `data/*.json` … 武器・防具・スキル・モンスター・キャラの重み
 - `tools/build_data.py` … 収集した生データから `data/` を作る
+- `tools/apply_observed.py` + `tools/observed/*.json` … ゲーム画面で確かめた防具・スキル・セット効果を `data/` に重ねる（攻略サイトにまだ載っていないもの）。`build_data.py` の最後に自動で走るので、攻略サイトのデータを作り直しても消えない。`--check` で検算（部位が5つそろっているか・スキル名・最大Lv・防具idの重複）だけできる。スクショ画像そのものはリポジトリに入れない（文字に書き写したものだけ）
 - `tools/merge_rarity.py` … 防具のレア別スキルを Game8・GameWith・gamewith.ai の多数決でまとめ、Gamerch の最大強化時スキルと照合する
 - `tools/make_models.py` … キャラごとのダメージモデル（スキルがどれだけ火力に乗るか）
 - `tools/build_builds.py` … 攻略サイトのおすすめ構成を集めた構成DB（data/builds.json）を作る

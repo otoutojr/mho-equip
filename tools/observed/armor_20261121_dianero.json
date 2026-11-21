@@ -1,0 +1,90 @@
+{
+  "observedAt": "2026-11-21",
+  "observedRank": 55,
+  "label": "ゲーム画面（2026-11-21・冒険ランク55）",
+  "how": "ゲームの「生産」タブで、ディアネロシリーズの防具を1部位ずつ開いた画面（スキル欄の「LV 今/最大」とセット効果）を書き写した。画像そのものはリポジトリに入れない（画面の端にゲーム内IDが写っているため）。",
+  "armorSeries": [
+    {
+      "name": "ディアネロ",
+      "gate": { "type": "rank", "rank": 55, "observed": true, "monsters": ["ディアブロス亜種"] },
+      "set": "黒角竜の堅壁",
+      "notes": "ゲームの生産リストで「ディアネロシリーズ」はレア度13（融光種リオレイア亜種シリーズはレア度12）。防具の説明文は「ディアブロス亜種の頭防具…」。冒険ランク55の画面に並んでいたことしか分かっておらず、解放されるランクの下限・素材名・武器は未確認。画面の表示名は「ディアネロヘルムVI」のようにローマ数字が付く（ここでは他の防具に合わせて外している）。",
+      "pieces": [
+        {
+          "part": "head", "name": "ディアネロヘルム", "gameName": "ディアネロヘルムVI",
+          "baseRarity": 13, "maxRarity": 13,
+          "skills": [
+            { "name": "龍属性ダメージUP", "lv": 2, "max": 7 },
+            { "name": "怖いもの無し", "lv": 1, "max": 5 },
+            { "name": "ガードテクニック", "lv": 1, "max": 5 }
+          ],
+          "seen": { "skillTop": true, "skillBottom": true, "setRow": true }
+        },
+        {
+          "part": "body", "name": "ディアネロメイル", "gameName": "ディアネロメイルVI",
+          "baseRarity": 13, "maxRarity": 13,
+          "skills": [
+            { "name": "変形強化", "lv": 2, "max": 4 },
+            { "name": "怖いもの無し", "lv": 1, "max": 5 },
+            { "name": "ガードテクニック", "lv": 1, "max": 5 }
+          ],
+          "seen": { "skillTop": false, "skillBottom": false, "setRow": false }
+        },
+        {
+          "part": "arm", "name": "ディアネロアーム", "gameName": "ディアネロアームVI",
+          "baseRarity": 13, "maxRarity": 13,
+          "skills": [
+            { "name": "気絶耐性", "lv": 2, "max": 3 },
+            { "name": "振動耐性", "lv": 1, "max": 3 }
+          ],
+          "seen": { "skillTop": true, "skillBottom": true, "setRow": true }
+        },
+        {
+          "part": "waist", "name": "ディアネロコイル", "gameName": "ディアネロコイルVI",
+          "baseRarity": 13, "maxRarity": 13,
+          "skills": [
+            { "name": "龍属性ダメージUP", "lv": 3, "max": 7 },
+            { "name": "気絶耐性", "lv": 1, "max": 3 }
+          ],
+          "seen": { "skillTop": false, "skillBottom": true, "setRow": true }
+        },
+        {
+          "part": "leg", "name": "ディアネログリーヴ", "gameName": "ディアネログリーヴVI",
+          "baseRarity": 13, "maxRarity": 13,
+          "skills": [
+            { "name": "気力変換", "lv": 3, "max": 7 },
+            { "name": "ガードテクニック", "lv": 1, "max": 5 }
+          ],
+          "seen": { "skillTop": true, "skillBottom": false, "setRow": false }
+        }
+      ]
+    }
+  ],
+  "sets": [
+    {
+      "name": "黒角竜の堅壁",
+      "bonuses": [
+        { "pieces": 2, "skill": "鉄壁ガード", "lv": 1, "effect": "鉄壁ガード+1", "description": "通常はガードできない攻撃も、ガードできるようになる。" }
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "鉄壁ガード", "category": "生存", "weapon": null, "maxLv": 1,
+      "levels": [
+        { "lv": 1, "effect": "通常はガードできない攻撃も、ガードできるようになる。", "value": null, "valueYuko": null, "pct": 0.0, "pctYuko": 0.0, "flat": 0 }
+      ],
+      "note": "セット効果「黒角竜の堅壁」の表示（鉄壁ガード+1）で見えたLv1の効果だけ。最大Lvは未確認"
+    }
+  ],
+  "setSkills": [
+    {
+      "name": "黒角竜の堅壁", "category": "生存", "series": ["ディアネロ"], "seriesAliases": [], "pieces": 2,
+      "bonuses": [
+        { "pieces": 2, "skill": "鉄壁ガード", "lv": 1, "effect": "鉄壁ガード+1", "effectSource": "ゲーム画面", "skillLevelEffect": "通常はガードできない攻撃も、ガードできるようになる。", "skillDescription": null }
+      ],
+      "gear": ["ディアネロヘルム", "ディアネロメイル", "ディアネロアーム", "ディアネロコイル", "ディアネログリーヴ"],
+      "sourceUrl": null, "sourceUrls": {}, "piecesGameWith": null
+    }
+  ]
+}

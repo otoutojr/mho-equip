@@ -1,6 +1,6 @@
 /* 融光工房 ― UI */
 'use strict';
-const APP_VERSION = '2026.11.21-4';
+const APP_VERSION = '2026.11.21-5';
 const STORE_KEY = 'mho-equip:v1';
 const PART_JP = { head: '頭', body: '胴', arm: '腕', waist: '腰', leg: '脚' };
 const $ = (sel) => document.querySelector(sel);
@@ -389,6 +389,8 @@ function weaponEditor(name0, r0) {
   draw();
   return box;
 }
+// 直せるレアの上限。ふつうは12まで、ゲーム画面で最大レア13と出ていた防具（ディアネロ・融光種リオハート・融光種バルキン）はその防具の最大レアまで
+const armorRarMax = (p) => Math.max(12, p.maxRarity || 12);
 // 防具：そのレアで付いているスキルとLv
 function armorEditor(part, id0, r0) {
   const all = DATA.armor.series.flatMap(sr => sr.pieces).filter(p => p.part === part).sort((a, b) => a.name.localeCompare(b.name, 'ja'));
@@ -402,10 +404,11 @@ function armorEditor(part, id0, r0) {
   const box = el('div', { class: 'fix' });
   const draw = () => {
     box.innerHTML = '';
-    r = Math.min(12, Math.max(p.baseRarity, r));
+    const rMax = armorRarMax(p);
+    r = Math.min(rMax, Math.max(p.baseRarity, r));
     if (!lv) lv = levelsAt();
     const sel = el('select', { 'aria-label': '直す防具' }, ...all.map(x => { const o = el('option', { value: x.id, text: x.name }); if (x === p) o.selected = true; return o; }));
-    sel.addEventListener('change', () => { p = all.find(x => x.id === sel.value); r = Math.max(p.baseRarity, Math.min(rankCap(), 12)); lv = null; draw(); });
+    sel.addEventListener('change', () => { p = all.find(x => x.id === sel.value); r = Math.max(p.baseRarity, Math.min(rankCap(), armorRarMax(p))); lv = null; draw(); });
     const rows = el('div', { class: 'fixSkills' });
     for (const [name, v] of lv) {
       const max = skillMaxLv(name);
@@ -424,7 +427,7 @@ function armorEditor(part, id0, r0) {
     const undo = (fixes().armor[p.id] || {})[r] ? el('button', { type: 'button', class: 'btn small', text: 'このレアの修正を消す', onclick: () => {
       const fx = fixes(); delete fx.armor[p.id][r]; if (!Object.keys(fx.armor[p.id]).length) delete fx.armor[p.id]; saveFixes();
     } }) : null;
-    box.append(sel, rarityStepper(() => r, (v) => { r = v; lv = null; draw(); }, p.baseRarity, 12),
+    box.append(sel, rarityStepper(() => r, (v) => { r = v; lv = null; draw(); }, p.baseRarity, rMax),
       el('p', { class: 'note', text: `レア${r}まで強化したときに付いているスキルを、ゲームの表示どおりに合わせてください。` }), rows, add, el('div', { class: 'fixBtns' }, save, undo));
   };
   draw();
@@ -490,6 +493,7 @@ function availableSeries(rank = state.rank) {
     const g = s.gate || { type: 'basic' };
     if (g.type === 'monster') return (g.monsters || [g.monster]).some(n => monsterOpen(n, rank));
     if (g.type === 'map') return mapOpen(g.map, rank);
+    if (g.type === 'rank') return rank >= g.rank; // 解放ランクが分からず、このランクの画面に並んでいたことだけ確認できたもの
     return true;
   }).map(s => s.name);
 }
@@ -888,7 +892,7 @@ function renderGear() {
     if (capNow > p.rarity) body.push(el('p', { text: p.docMax < capNow ? `レア${p.docMax + 1}以降で付くスキルは、どの攻略サイトにもまだ載っていません。ゲーム内で分かったら下の「数値を直す」で入れられます。` : 'これ以上強化しても、DPSに効くスキルは増えません。' }));
     if ((fixes().armor[p.id])) body.push(el('p', { text: 'この防具は、自分で直した数値を使っています。' }));
     const ct = conflictText(p); if (ct) body.push(el('p', { text: ct }));
-    body.push(fixToggle(() => armorEditor(p.part, p.id, Math.max(p.rarity, Math.min(capNow, 12)))));
+    body.push(fixToggle(() => armorEditor(p.part, p.id, Math.max(p.rarity, Math.min(capNow, armorRarMax(p))))));
     box.append(gearRow(PART_JP[p.part], p.name, rarText(p.baseRarity, p.rarity), need, body));
   }
   return nNeed;

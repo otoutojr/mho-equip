@@ -4033,6 +4033,60 @@
    "maxLv": 7,
    "levels": [],
    "placeholder": true
+  },
+  {
+   "name": "鉄壁ガード",
+   "category": "生存",
+   "weapon": null,
+   "maxLv": 1,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "通常はガードできない攻撃も、ガードできるようになる。",
+     "value": null,
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
+    }
+   ],
+   "note": "セット効果「黒角竜の堅壁」の表示（鉄壁ガード+1）で見えたLv1の効果だけ。最大Lvは未確認"
+  },
+  {
+   "name": "不屈の意志",
+   "category": "火力",
+   "weapon": null,
+   "maxLv": 3,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "冒険者が状態異常または融光活性状態になった時、一定時間与ダメージが増加する。さらに、融光活性による悪影響の持続時間を短縮する。",
+     "value": null,
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
+    }
+   ],
+   "note": "ゲーム画面の説明文だけ。Lvごとの数値は未確認なので、DPSの計算には入れていない。最大Lv3は画面の「LV 今/3」"
+  },
+  {
+   "name": "融光活性",
+   "category": "火力",
+   "weapon": null,
+   "maxLv": 1,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "融光の影響を受けた冒険者は与ダメージ+10%。30秒持続し、終了後に与ダメージ-10%、スタミナ上限-50。30秒持続",
+     "value": null,
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
+    }
+   ],
+   "note": "セット効果「桜火竜の暴走」の表示（融光活性+1）で見えたLv1の効果だけ。最大Lvは未確認。得と損が打ち消し合うのでDPSの計算には入れていない"
   }
  ],
  "setSkills": [
@@ -5394,6 +5448,98 @@
     "gamewith": "https://gamewith.jp/mhoutlanders/584564"
    },
    "piecesGameWith": 2
+  },
+  {
+   "name": "黒角竜の堅壁",
+   "category": "生存",
+   "series": [
+    "ディアネロ"
+   ],
+   "seriesAliases": [],
+   "pieces": 2,
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "鉄壁ガード",
+     "lv": 1,
+     "effect": "鉄壁ガード+1",
+     "effectSource": "ゲーム画面",
+     "skillLevelEffect": "通常はガードできない攻撃も、ガードできるようになる。",
+     "skillDescription": null
+    }
+   ],
+   "gear": [
+    "ディアネロヘルム",
+    "ディアネロメイル",
+    "ディアネロアーム",
+    "ディアネロコイル",
+    "ディアネログリーヴ"
+   ],
+   "sourceUrl": null,
+   "sourceUrls": {},
+   "piecesGameWith": null
+  },
+  {
+   "name": "桜火竜の暴走",
+   "category": "火力",
+   "series": [
+    "融光種リオハート"
+   ],
+   "seriesAliases": [
+    "融光種リオレイア亜種"
+   ],
+   "pieces": 2,
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "融光活性",
+     "lv": 1,
+     "effect": "融光活性+1",
+     "effectSource": "ゲーム画面",
+     "skillLevelEffect": "融光の影響を受けた冒険者は与ダメージ+10%。30秒持続し、終了後に与ダメージ-10%、スタミナ上限-50。30秒持続",
+     "skillDescription": null
+    }
+   ],
+   "gear": [
+    "融光種リオハートヘルム",
+    "融光種リオハートメイル",
+    "融光種リオハートアーム",
+    "融光種リオハートコイル",
+    "融光種リオハートグリーヴ"
+   ],
+   "sourceUrl": null,
+   "sourceUrls": {},
+   "piecesGameWith": null
+  },
+  {
+   "name": "骨鎚竜の無畏",
+   "category": "火力",
+   "series": [
+    "融光種バルキン"
+   ],
+   "seriesAliases": [],
+   "pieces": 3,
+   "bonuses": [
+    {
+     "pieces": 3,
+     "skill": "怖いもの無し",
+     "lv": 1,
+     "effect": "怖いもの無し+1",
+     "effectSource": "ゲーム画面",
+     "skillLevelEffect": "体力ゲージにグレーの部分がある間、与ダメージが+3%。",
+     "skillDescription": null
+    }
+   ],
+   "gear": [
+    "融光種バルキンヘルム",
+    "融光種バルキンメイル",
+    "融光種バルキンアーム",
+    "融光種バルキンコイル",
+    "融光種バルキングリーヴ"
+   ],
+   "sourceUrl": null,
+   "sourceUrls": {},
+   "piecesGameWith": null
   }
  ]
 }

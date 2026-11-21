@@ -14,6 +14,7 @@
 """
 import json, re, sys, datetime, pathlib, collections
 import merge_rarity
+import apply_observed
 
 # 防具の強化上限は部位ごとではなく冒険ランクの表で決まる（GameWith「防具のみレア度9と12で追加強化される」）。
 # 攻略サイトにスキルが載っているのはレア10まで（docMax）。それより上は防御力だけ上がる扱い
@@ -449,6 +450,8 @@ def main():
         g = s['gate']
         if g['type'] == 'monster': print(f"  {s['name']:10} ← {','.join(g['monsters'])}")
         else: print(f"  {s['name']:10} ← {g}")
+    # 攻略サイトのデータを作り直すと消えるので、ゲーム画面から書き写したもの（tools/observed）を最後に重ねる
+    apply_observed.apply()
 
 if __name__ == '__main__':
     main()
