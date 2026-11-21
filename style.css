@@ -54,7 +54,7 @@
 [data-el="火"] { --el: #bf3f1a; --el-on: #ffffff; --el-text: #a93514; }
 [data-el="水"] { --el: #1f62ae; --el-on: #ffffff; --el-text: #1b5799; }
 [data-el="雷"] { --el: #d9a514; --el-on: #2a2018; --el-text: #806000; }
-[data-el="氷"] { --el: #1d8496; --el-on: #ffffff; --el-text: #176f7e; }
+[data-el="氷"] { --el: #1b7f91; --el-on: #ffffff; --el-text: #176f7e; } /* 白い字を載せたとき 4.5:1 を切っていた（#1d8496 → 4.38）ので少しだけ濃く */
 [data-el="龍"] { --el: #6d2b8f; --el-on: #ffffff; --el-text: #6d2b8f; }
 [data-el="無"] { --el: #5f564a; --el-on: #ffffff; --el-text: #5f564a; }
 
