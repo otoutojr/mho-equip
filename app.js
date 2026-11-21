@@ -1,6 +1,6 @@
 /* 融光工房 ― UI */
 'use strict';
-const APP_VERSION = '2026.11.21-7';
+const APP_VERSION = '2026.11.21-8';
 const STORE_KEY = 'mho-equip:v1';
 const PART_JP = { head: '頭', body: '胴', arm: '腕', waist: '腰', leg: '脚' };
 const $ = (sel) => document.querySelector(sel);
@@ -244,46 +244,81 @@ function renderWantPicker(c, wants) {
 }
 
 /* ---------- ダメージモデル ---------- */
+// アウかる（mhnowcalc.com）の期待値の式に合わせる。
+//   物理 = 攻撃力 ×(1 + 与ダメ合計)×(1 + 会心率×0.25)
+//   属性 = (属性値 + 属性攻撃力の加算)×(1 + 与ダメ合計 + 属性ダメージUP)×(1 + 会心率×(0.25 + 会心撃【属性】))
+// 与ダメ系スキルは掛け算ではなく全部足し算。条件付きスキルは「効果が続いている割合」（キャラごとの見積もり）を掛ける。
+// 属性ダメージの割合はキャラごとの見積もり（elementShare）。攻撃力:属性値＝2:1 の武器でその割合になるよう、属性側に倍率 s を掛ける
+const BASE_AFF = 15;   // 基本の会心率（アウかるの既定値）
+const CORE_CAP = 22.5; // 主人公などのコアパッシブ（会心率1%→与ダメ+0.25%）の上限
 function skillDef(name) { return DATA.skills.skills.find(s => s.name === name.replace('{属性}', '火')); }
-function modelWeights(c, yuko) {
-  const m = c.model, e = m.elementShare ?? 0.35;
-  // 属性ダメージUP が乗る割合。攻略サイトの終盤装備がどの武器種も属性ダメージUP Lv7 を最優先しているのに合わせて別に持つ
-  const eUp = m.elemUpShare ?? e;
-  const wE = m.weaponElement || 600, critPer = m.critPerPct ?? 0.004, critRate = m.critRate ?? 0.3;
-  const out = {};
-  for (const [name, sp] of Object.entries(c.modelSkills)) {
-    const sk = skillDef(name); const levels = (sk && sk.levels) || [];
-    const up = sp.uptime ?? 1, share = sp.share ?? 1;
-    let arr = levels.map((l) => {
-      const pct = l.pct || 0, p = ((yuko ? (l.pctYuko ?? pct) : pct) || 0) / 100;
-      let mm;
-      switch (sp.kind) {
-        case 'element': mm = (1 + p * eUp) * (1 + p * (sp.core || 0)); break;
-        case 'crit': mm = 1 + pct * up * critPer; break;
-        case 'elemCrit': mm = 1 + p * critRate * e; break;
-        case 'proc': mm = 1 + (sp.chance ?? 0.75) * p * up; break;
-        case 'flat': mm = 1 + p * (sp.value ?? 0.3); break;
-        case 'fixed': mm = 1 + (sp.value ?? 0.03) * (l.lv || 1); break;
-        default: mm = 1 + p * up * share;
+// キャラ・属性・武器から計算の式を作る。ソルバー（solver.js）にも同じものを送って、組み合わせごとに計算する
+function damageSpec(c, elem, weapon) {
+  const m = c.model || {}, yuko = state.target === 'yuko';
+  const es = m.elementShare ?? 0.35, st = weapon ? weapon.st : null;
+  const sp = {
+    A: st ? (st.attack || 0) : 600, E: st ? (st.element || 0) : 300, s: (es / (1 - es)) / 0.5,
+    aff0: BASE_AFF + (st ? (st.affinity ?? weapon.w.affinity ?? 0) : 0),
+    coreRate: Math.max(0, ((m.critPerPct ?? 0.0025) - 0.0025) * 100), coreCap: CORE_CAP,
+    yuko: weapon && yuko && weapon.w.yukoBonus ? 1 + weapon.w.yukoBonus : 1, // 鋭精武器の「融光種へのダメージ+8%」
+    skills: {},
+  };
+  for (const [name0, def] of Object.entries(c.modelSkills || {})) {
+    const sk = skillDef(name0), levels = (sk && sk.levels) || [];
+    const up = def.uptime ?? 1, share = def.share ?? 1;
+    const t = { D: [], U: [], A: [], C: [], E: [] };
+    const n = levels.length || (sk && sk.maxLv) || 1;
+    for (let i = 0; i < n; i++) {
+      const l = levels[i];
+      let D = 0, U = 0, A = 0, C = 0, E = 0;
+      if (!l) D = (def.fallback ?? 0.5) * (i + 1); // 数値が無いスキルは、Lvごとに少しだけ評価（同点のときの順番づけ）
+      else {
+        const pct = l.pct || 0, p = (yuko ? (l.pctYuko ?? pct) : pct) || 0;
+        switch (def.kind) {
+          case 'element': U = p; D = p * (def.core || 0); break; // core: 属性ダメージ1%が与ダメにもなるキャラ
+          case 'crit': A = pct * up; break;
+          case 'elemCrit': C = p; break;
+          case 'proc': D = (def.chance ?? 0.75) * p * up; break;
+          case 'flat': D = p * (def.value ?? 0.3); break;
+          case 'fixed': D = (def.value ?? 0.03) * 100 * (l.lv || i + 1); break;
+          default: D = p * up * share;
+        }
+        E = l.flat || 0; // Lv7 などの「属性攻撃力+50」
       }
-      if (l.flat) mm *= 1 + (l.flat / wE) * e;
-      return 100 * Math.log(mm);
-    });
-    if (!arr.length) arr = Array.from({ length: (sk && sk.maxLv) || 1 }, (_, i) => (sp.fallback ?? 0.5) * (i + 1));
-    out[name] = arr;
+      t.D.push(D); t.U.push(U); t.A.push(A); t.C.push(C); t.E.push(E);
+    }
+    sp.skills[name0.replace('{属性}', elem || '火')] = t;
+  }
+  return sp;
+}
+// 期待値（DPS目安）。tot はスキルの合計 {D: 与ダメ%, U: 属性ダメUP%, A: 会心率%, C: 会心撃【属性】%, E: 属性攻撃力}
+function specDps(sp, tot) {
+  const aff = sp.aff0 + (tot.A || 0), a = Math.max(-1, Math.min(1, aff / 100));
+  const d = ((tot.D || 0) + Math.min(sp.coreCap, sp.coreRate * Math.max(0, aff))) / 100;
+  const cp = 1 + 0.25 * a, ce = a >= 0 ? 1 + a * (0.25 + (tot.C || 0) / 100) : cp;
+  const E = sp.E ? sp.E + (tot.E || 0) : 0;
+  return (sp.A * (1 + d) * cp + E * sp.s * (1 + d + (tot.U || 0) / 100) * ce) * sp.yuko;
+}
+// スキルを1つだけ積んだときの伸び（候補の絞り込みと「効く順」の表示に使う。足し算なので、重ねたときはこれより少し小さくなる）
+function specWeights(sp) {
+  const base = specDps(sp, {}), out = {};
+  for (const [name, t] of Object.entries(sp.skills)) {
+    out[name] = t.D.map((_, i) => 100 * Math.log(specDps(sp, { D: t.D[i], U: t.U[i], A: t.A[i], C: t.C[i], E: t.E[i] }) / base));
   }
   return out;
 }
+const weaponFor = (c, elem) => weaponCands(c, { elem: c.elementSelectable ? elem : charElement(c) })[0] || null;
+const specFor = (c, elem, weapon = weaponFor(c, elem)) => (c.modelSkills && c.model) ? damageSpec(c, elem, weapon) : null;
 function weightsFor(c, elem) {
   const yuko = state.target === 'yuko';
   const w = Object.assign({}, (yuko && c.weightsYuko) ? c.weightsYuko : (c.weights || {}));
-  if (c.modelSkills && c.model) Object.assign(w, modelWeights(c, yuko));
-  if (!c.elementSelectable) return w;
-  const out = {};
-  for (const [k, v] of Object.entries(w)) out[k.replace('{属性}', elem)] = v;
+  let out = w;
+  if (c.elementSelectable) { out = {}; for (const [k, v] of Object.entries(w)) out[k.replace('{属性}', elem)] = v; }
+  const sp = specFor(c, elem);
+  if (sp) Object.assign(out, specWeights(sp));
   return out;
 }
-const effectiveWeights = (c) => weightsFor(c, heroElement());
+const effectiveWeights = (c) => weightsFor(c, charElement(c));
 const mult = (score) => Math.exp((score || 0) / 100);
 const gainPct = (w) => (mult(w) - 1) * 100;
 const fmtGain = (w) => { const v = gainPct(w); return (v >= 0 ? '+' : '') + (v < 10 ? v.toFixed(1) : Math.round(v)) + '%'; };
@@ -332,7 +367,7 @@ function capTable() { return (state.fix && state.fix.rankCap) || DATA.monsters.r
 function setCapFix(rank, cap) {
   const at = {};
   for (const [r, c] of capTable()) at[c] = r;
-  for (let c = 3; c <= 12; c++) {
+  for (let c = 3; c <= 14; c++) {
     if (c <= cap) { if (at[c] == null || at[c] > rank) at[c] = rank; }
     else if (at[c] != null && at[c] <= rank) at[c] = rank + 1;
   }
@@ -363,8 +398,8 @@ function weaponEditor(name0, r0) {
   const box = el('div', { class: 'fix' });
   const draw = () => {
     box.innerHTML = '';
-    const lo = w.baseRarity || 1;
-    r = Math.min(12, Math.max(lo, r));
+    const lo = w.baseRarity || 1, hi = Math.max(12, w.maxRarity || 12);
+    r = Math.min(hi, Math.max(lo, r));
     const st = weaponStatsAt(w, r);
     const exact = st && w.stats[r] === st;
     const sel = el('select', { 'aria-label': '直す武器' }, ...list.map(x => { const o = el('option', { value: x.name, text: x.name }); if (x === w) o.selected = true; return o; }));
@@ -382,7 +417,7 @@ function weaponEditor(name0, r0) {
     const undo = (fixes().weapons[w.name] || {})[r] ? el('button', { type: 'button', class: 'btn small', text: 'このレアの修正を消す', onclick: () => {
       const fx = fixes(); delete fx.weapons[w.name][r]; if (!Object.keys(fx.weapons[w.name]).length) delete fx.weapons[w.name]; saveFixes();
     } }) : null;
-    box.append(sel, rarityStepper(() => r, (v) => { r = v; draw(); }, lo, 12),
+    box.append(sel, rarityStepper(() => r, (v) => { r = v; draw(); }, lo, hi),
       el('div', { class: 'fixLine' }, el('label', { class: 'field' }, el('span', { text: '攻撃力' }), atk), el('label', { class: 'field' }, el('span', { text: '属性値' }), elv)),
       el('p', { class: 'note', text: info }), msg, el('div', { class: 'fixBtns' }, save, undo));
   };
@@ -444,7 +479,7 @@ function renderCapFix() {
     return;
   }
   if (capFixVal == null) capFixVal = rankCap();
-  const set = (v) => { capFixVal = Math.min(12, Math.max(2, v)); renderCapFix(); };
+  const set = (v) => { capFixVal = Math.min(14, Math.max(2, v)); renderCapFix(); };
   box.append(el('div', { class: 'fix' },
     el('div', { class: 'fixLine' }, el('span', { class: 'fixLbl', text: `ランク${state.rank}の強化上限` }), stepBtn('−', '上限を1下げる', () => set(capFixVal - 1)),
       el('span', { class: 'fixVal', text: `レア${capFixVal}` }), stepBtn('＋', '上限を1上げる', () => set(capFixVal + 1))),
@@ -519,12 +554,9 @@ function weaponStatsAt(w, r) {
   const keys = Object.keys(st).map(Number).filter(k => k <= r).sort((a, b) => b - a);
   return keys.length ? st[keys[0]] : null;
 }
-// 武器の実効攻撃力：攻撃力×物理の割合×会心補正 ＋ 属性値×属性の割合（属性値は攻撃力の約半分なので×2で同じ尺度に）
+// 武器だけの期待値（防具スキルなし）。上のダメージモデルと同じ式なので、DPS目安 ＝ これ × スキルの倍率
 function weaponPower(c, w, st) {
-  const e = (c.model && c.model.elementShare) || 0.35;
-  const aff = (st.affinity ?? w.affinity ?? 0) / 100;
-  const yuko = state.target === 'yuko' && w.yukoBonus ? 1 + w.yukoBonus : 1; // 鋭精武器の「融光種へのダメージ+8%」
-  return ((st.attack || 0) * (1 + aff * 0.25) * (1 - e) + (st.element || 0) * 2 * e) * yuko;
+  return specDps(damageSpec({ model: c.model, modelSkills: {} }, null, { w, st }), {});
 }
 function weaponCands(c, { rank = state.rank, cap = null, elem = charElement(c) } = {}) {
   const list = (DATA.weapons && DATA.weapons.weapons) || [];
@@ -630,19 +662,20 @@ function solve() {
   const wants = wantsFor(c);
   cur.free = null;
   renderWants();
-  const now = { reqId, weights: W, availableSeries: availableSeries(), rarityCap: rankCap(), orbTier: orbTierFor(rankCap()) };
+  const spec = specFor(c, charElement(c), cur.weapon);
+  const now = { reqId, weights: W, spec, availableSeries: availableSeries(), rarityCap: rankCap(), orbTier: orbTierFor(rankCap()) };
   const jobs = [];
   // 指定があるときは、指定なしの最強も先に出して差を見せる
   if (Object.keys(wants).length) jobs.push({ ...now, type: 'solve', free: true, topN: 1, K: 12 });
   jobs.push({ ...now, type: 'solve', wants, topN: 6, K: 12 });
-  jobs.push(() => buildsJob(c, W, wants));
+  jobs.push(() => buildsJob(c, W, wants, spec));
   // ここから下は折りたたみの中身。いまの答えが出てから順に計算する
   jobs.push(() => { if (!cur.armor) { renderNext({ milestones: [] }); return null; }
     return { ...now, type: 'next', wants, milestones: milestones(), K: 12, baseScore: cur.armor.score, baseIds: cur.armor.pieces.map(p => p.id) }; });
   jobs.push(() => { const axes = compareAxes(c); if (!cur.armor || !axes.length) { renderCompare([]); return null; }
     return { ...now, type: 'compare', wants, axes, K: 12, baseScore: cur.armor.score }; });
-  if (c.elementSelectable) for (const e of HERO_ELEMENTS) jobs.push({ ...now, type: 'solve', elem: e, weights: weightsFor(c, e), wants: wantsFor(c, e), topN: 1, K: 10 });
-  jobs.push({ reqId, type: 'solve', goal: true, weights: W, wants, availableSeries: DATA.armor.series.map(s => s.name), rarityCap: 12, orbTier: 6, topN: 1, K: 12 });
+  if (c.elementSelectable) for (const e of HERO_ELEMENTS) jobs.push({ ...now, type: 'solve', elem: e, weights: weightsFor(c, e), spec: specFor(c, e), wants: wantsFor(c, e), topN: 1, K: 10 });
+  jobs.push({ reqId, type: 'solve', goal: true, weights: W, spec: specFor(c, charElement(c), cur.goalWeapon), wants, availableSeries: DATA.armor.series.map(s => s.name), rarityCap: 14, orbTier: 6, topN: 1, K: 12 });
   runJobs(jobs);
 }
 // 計算の依頼は1つずつ送る。条件が変わったら残りは捨てて、新しい依頼に入れ替える
@@ -664,11 +697,11 @@ function dbBuildsFor(c) {
   const elem = charElement(c);
   return all.filter(b => b.charId === c.id && (!c.elementSelectable || !b.element || b.element === elem));
 }
-function buildsJob(c, W, wants) {
+function buildsJob(c, W, wants, spec) {
   const list = dbBuildsFor(c);
   cur.dbList = list;
   if (!list.length) { renderBuilds([]); return null; }
-  return { type: 'evalBuilds', reqId, weights: W, wants, rarityCap: rankCap(),
+  return { type: 'evalBuilds', reqId, weights: W, spec, wants, rarityCap: rankCap(),
     builds: list.map(b => ({ key: b.id, pieces: PARTS.map(part => (b.pieces[part] && b.pieces[part].id) || null) })) };
 }
 const PARTS = ['head', 'body', 'arm', 'waist', 'leg'];

@@ -1235,13 +1235,18 @@
        "rarity": 5
       },
       {
-       "name": "連撃強化",
-       "lv": 2,
-       "rarity": 9
+       "name": "弱点攻撃",
+       "lv": 1,
+       "rarity": 7
       },
       {
        "name": "弱点攻撃",
        "lv": 1,
+       "rarity": 9
+      },
+      {
+       "name": "連撃強化",
+       "lv": 2,
        "rarity": 9
       }
      ],
@@ -1260,7 +1265,8 @@
       "Game8",
       "GameWith",
       "Gamerch",
-      "gamewith.ai"
+      "gamewith.ai",
+      "ゲーム画面とアウかる（mhnowcalc.com）のデータ（2026-11-21）"
      ],
      "conflicts": [
       {
@@ -3922,6 +3928,11 @@
       {
        "name": "洞察",
        "lv": 1,
+       "rarity": 7
+      },
+      {
+       "name": "洞察",
+       "lv": 1,
        "rarity": 8
       }
      ],
@@ -3944,7 +3955,8 @@
       "Game8",
       "GameWith",
       "Gamerch",
-      "gamewith.ai"
+      "gamewith.ai",
+      "ゲーム画面とアウかる（mhnowcalc.com）のデータ（2026-11-21）"
      ],
      "conflicts": [
       {
@@ -8826,14 +8838,19 @@
        "rarity": 8
       },
       {
+       "name": "加護",
+       "lv": 1,
+       "rarity": 8
+      },
+      {
        "name": "徹底追撃",
        "lv": 1,
        "rarity": 8
       },
       {
-       "name": "加護",
-       "lv": 1,
-       "rarity": 8
+       "name": "一撃貫通",
+       "lv": 2,
+       "rarity": 9
       },
       {
        "name": "一撃貫通",
@@ -8864,7 +8881,8 @@
       "Game8",
       "GameWith",
       "Gamerch",
-      "gamewith.ai"
+      "gamewith.ai",
+      "ゲーム画面とアウかる（mhnowcalc.com）のデータ（2026-11-21）"
      ],
      "conflicts": [
       {
@@ -11024,18 +11042,18 @@
      "orbTier": 4,
      "skills": [
       {
-       "name": "鬼人の修羅",
-       "lv": 1,
-       "rarity": 10
-      },
-      {
        "name": "体力ループ",
-       "lv": 2,
+       "lv": 1,
        "rarity": 10
       },
       {
        "name": "徹底追撃",
        "lv": 1,
+       "rarity": 10
+      },
+      {
+       "name": "鬼人の修羅",
+       "lv": 2,
        "rarity": 10
       }
      ],
@@ -11059,7 +11077,8 @@
      ],
      "sourceUrl": "https://game8.jp/mhoutlanders/841582",
      "sources": [
-      "GameWith"
+      "GameWith",
+      "ゲーム画面とアウかる（mhnowcalc.com）のデータ（2026-11-21）"
      ]
     },
     {
@@ -11713,7 +11732,7 @@
      "part": "head",
      "baseRarity": 12,
      "maxRarity": 13,
-     "docMax": 13,
+     "docMax": 12,
      "set": "桜火竜の暴走",
      "orbTier": null,
      "skills": [
@@ -11751,7 +11770,7 @@
      "part": "body",
      "baseRarity": 12,
      "maxRarity": 13,
-     "docMax": 13,
+     "docMax": 12,
      "set": "桜火竜の暴走",
      "orbTier": null,
      "skills": [
@@ -11790,7 +11809,7 @@
      "part": "arm",
      "baseRarity": 12,
      "maxRarity": 13,
-     "docMax": 13,
+     "docMax": 12,
      "set": "桜火竜の暴走",
      "orbTier": null,
      "skills": [
@@ -11828,7 +11847,7 @@
      "part": "waist",
      "baseRarity": 12,
      "maxRarity": 13,
-     "docMax": 13,
+     "docMax": 12,
      "set": "桜火竜の暴走",
      "orbTier": null,
      "skills": [
@@ -11861,7 +11880,7 @@
      "part": "leg",
      "baseRarity": 12,
      "maxRarity": 13,
-     "docMax": 13,
+     "docMax": 12,
      "set": "桜火竜の暴走",
      "orbTier": null,
      "skills": [
@@ -11909,7 +11928,7 @@
      "part": "head",
      "baseRarity": 12,
      "maxRarity": 13,
-     "docMax": 13,
+     "docMax": 12,
      "set": "骨鎚竜の無畏",
      "orbTier": null,
      "skills": [
@@ -11942,7 +11961,7 @@
      "part": "body",
      "baseRarity": 12,
      "maxRarity": 13,
-     "docMax": 13,
+     "docMax": 12,
      "set": "骨鎚竜の無畏",
      "orbTier": null,
      "skills": [
@@ -11975,7 +11994,7 @@
      "part": "arm",
      "baseRarity": 12,
      "maxRarity": 13,
-     "docMax": 13,
+     "docMax": 12,
      "set": "骨鎚竜の無畏",
      "orbTier": null,
      "skills": [
@@ -12013,7 +12032,7 @@
      "part": "waist",
      "baseRarity": 12,
      "maxRarity": 13,
-     "docMax": 13,
+     "docMax": 12,
      "set": "骨鎚竜の無畏",
      "orbTier": null,
      "skills": [
@@ -12051,7 +12070,7 @@
      "part": "leg",
      "baseRarity": 12,
      "maxRarity": 13,
-     "docMax": 13,
+     "docMax": 12,
      "set": "骨鎚竜の無畏",
      "orbTier": null,
      "skills": [
@@ -12104,7 +12123,7 @@
      "part": "head",
      "baseRarity": 11,
      "maxRarity": 13,
-     "docMax": 13,
+     "docMax": 11,
      "set": "風漂竜の加護",
      "orbTier": null,
      "skills": [
@@ -12137,7 +12156,7 @@
      "part": "body",
      "baseRarity": 11,
      "maxRarity": 13,
-     "docMax": 13,
+     "docMax": 11,
      "set": "風漂竜の加護",
      "orbTier": null,
      "skills": [
@@ -12170,7 +12189,7 @@
      "part": "arm",
      "baseRarity": 11,
      "maxRarity": 13,
-     "docMax": 13,
+     "docMax": 11,
      "set": "風漂竜の加護",
      "orbTier": null,
      "skills": [
@@ -12208,7 +12227,7 @@
      "part": "waist",
      "baseRarity": 11,
      "maxRarity": 13,
-     "docMax": 13,
+     "docMax": 11,
      "set": "風漂竜の加護",
      "orbTier": null,
      "skills": [
@@ -12241,7 +12260,7 @@
      "part": "leg",
      "baseRarity": 11,
      "maxRarity": 13,
-     "docMax": 13,
+     "docMax": 11,
      "set": "風漂竜の加護",
      "orbTier": null,
      "skills": [
@@ -12294,7 +12313,7 @@
      "part": "head",
      "baseRarity": 11,
      "maxRarity": 13,
-     "docMax": 13,
+     "docMax": 11,
      "set": "火竜の烈心",
      "orbTier": null,
      "skills": [
@@ -12327,7 +12346,7 @@
      "part": "body",
      "baseRarity": 11,
      "maxRarity": 13,
-     "docMax": 13,
+     "docMax": 11,
      "set": "火竜の烈心",
      "orbTier": null,
      "skills": [
@@ -12365,7 +12384,7 @@
      "part": "arm",
      "baseRarity": 11,
      "maxRarity": 13,
-     "docMax": 13,
+     "docMax": 11,
      "set": "火竜の烈心",
      "orbTier": null,
      "skills": [
@@ -12398,7 +12417,7 @@
      "part": "waist",
      "baseRarity": 11,
      "maxRarity": 13,
-     "docMax": 13,
+     "docMax": 11,
      "set": "火竜の烈心",
      "orbTier": null,
      "skills": [
@@ -12431,7 +12450,7 @@
      "part": "leg",
      "baseRarity": 11,
      "maxRarity": 13,
-     "docMax": 13,
+     "docMax": 11,
      "set": "火竜の烈心",
      "orbTier": null,
      "skills": [

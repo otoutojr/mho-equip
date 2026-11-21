@@ -7,6 +7,38 @@
 let DB = null; // {pieces, skillIndex, skillMax, seriesIndex, setBonuses}
 const PARTS = ['head', 'body', 'arm', 'waist', 'leg'];
 
+// 計算の式（app.js の damageSpec と同じもの）。あるときは、組み合わせごとにスキルの合計から期待値を計算する。
+// 与ダメ系スキルは足し算なので、スキルごとの点数を足すだけでは比べられない（アウかるの期待値の式）
+let SPEC = null;
+function compileSpec(sp) {
+  const by = new Array(DB.skillNames.length).fill(null);
+  for (const [name, t] of Object.entries(sp.skills || {})) {
+    const i = DB.skillIndex.get(name);
+    if (i != null) by[i] = { n: t.D.length, D: t.D, U: t.U, A: t.A, C: t.C, E: t.E };
+  }
+  const out = { ...sp, by, W0: null };
+  out.dps0 = specDps(out, 0, 0, 0, 0, 0);
+  return out;
+}
+function specDps(sp, D, U, A, C, E) {
+  const aff = sp.aff0 + A, a = Math.max(-1, Math.min(1, aff / 100));
+  const d = (D + Math.min(sp.coreCap, sp.coreRate * Math.max(0, aff))) / 100;
+  const cp = 1 + 0.25 * a, ce = a >= 0 ? 1 + a * (0.25 + C / 100) : cp;
+  const el = sp.E ? sp.E + E : 0;
+  return (sp.A * (1 + d) * cp + el * sp.s * (1 + d + U / 100) * ce) * sp.yuko;
+}
+// スキルIndex→Lv の一覧から点数（100×ln(期待値÷スキルなしの期待値)）。skip のスキルは無いものとして計算する
+function specScoreOf(levels, skip = -1) {
+  let D = 0, U = 0, A = 0, C = 0, E = 0, extra = 0;
+  for (const [s, lv] of levels) {
+    if (s === skip || lv <= 0) continue;
+    const t = SPEC.by[s];
+    if (t) { const i = Math.min(lv, t.n) - 1; D += t.D[i]; U += t.U[i]; A += t.A[i]; C += t.C[i]; E += t.E[i]; }
+    else extra += wval(SPEC.W0, s, lv); // モデルに無いスキル（快適スキルなど）は従来どおり重みを足す
+  }
+  return 100 * Math.log(specDps(SPEC, D, U, A, C, E) / SPEC.dps0) + extra;
+}
+
 // 1つの依頼に1つの結果を返し、最後に done を返す。画面側は done を受けてから次の依頼を送るので、
 // 途中で条件が変わったら、たまっている古い依頼は送られずに捨てられる
 self.onmessage = (e) => {
@@ -15,6 +47,7 @@ self.onmessage = (e) => {
   try { handle(msg); } finally { self.postMessage({ type: 'done', reqId: msg.reqId }); }
 };
 function handle(msg) {
+  SPEC = msg.spec ? compileSpec(msg.spec) : null;
   if (msg.type === 'evalBuilds') { self.postMessage({ type: 'builds', reqId: msg.reqId, rows: evalBuilds(msg) }); return; }
   if (msg.type === 'compare') { self.postMessage({ type: 'compare', reqId: msg.reqId, rows: solveCompare(msg, { score: msg.baseScore }) }); return; }
   if (msg.type === 'next') { self.postMessage({ type: 'next', reqId: msg.reqId, next: solveNext(msg, msg.baseScore, new Set(msg.baseIds)) }); return; }
@@ -33,6 +66,7 @@ function handle(msg) {
 // 「〇〇軸」で組んだ場合の火力比較：その軸スキルを最優先で積んだセットを探し、本来の火力で採点し直す
 function solveCompare(msg, best) {
   const W = makeWeightTable(msg.weights);
+  if (SPEC) SPEC.W0 = W;
   const Ww = boostWants(W, msg.wants); // 入れたいスキルの指定は、軸を変えても守る
   const avail = new Set(msg.availableSeries);
   const acc = new Int32Array(DB.skillNames.length), sc = new Int32Array(DB.sets.length + 1), touched = new Int32Array(260);
@@ -171,6 +205,7 @@ function preparePieces(W, availableSeries, rarityCap, ownedMap, orbTier) {
 // 攻略サイトの構成（部位が決まっている）を、今の強化上限で採点する
 function evalBuilds(msg) {
   const W = makeWeightTable(msg.weights);
+  if (SPEC) SPEC.W0 = W;
   const byId = new Map(DB.pieces.map(p => [p.id, p]));
   const acc = new Int32Array(DB.skillNames.length), sc = new Int32Array(DB.sets.length + 1), touched = new Int32Array(260);
   return msg.builds.map((b) => {
@@ -223,6 +258,22 @@ function evaluate(combo, W, acc, setCount, touched) {
     setCount[si] = 0;
   }
   let score = 0;
+  if (SPEC) {
+    let D = 0, U = 0, A = 0, C = 0, E = 0;
+    const boosted = W !== SPEC.W0;
+    for (let j = 0; j < nt; j++) {
+      const s = touched[j]; const raw = acc[s];
+      if (!raw) continue;
+      const lv = raw < DB.skillMax[s] ? raw : DB.skillMax[s];
+      const t = SPEC.by[s];
+      if (t) { const i = (lv < t.n ? lv : t.n) - 1; D += t.D[i]; U += t.U[i]; A += t.A[i]; C += t.C[i]; E += t.E[i]; }
+      else score += wval(SPEC.W0, s, lv);
+      if (boosted) score += wval(W, s, lv) - wval(SPEC.W0, s, lv); // 「入れたいスキル」「〇〇軸」の上乗せ
+      acc[s] = 0;
+    }
+    score += 100 * Math.log(specDps(SPEC, D, U, A, C, E) / SPEC.dps0);
+    return { score, setHits: setHits || [] };
+  }
   for (let j = 0; j < nt; j++) {
     const s = touched[j]; const lv = acc[s];
     if (lv) { score += wval(W, s, lv < DB.skillMax[s] ? lv : DB.skillMax[s]); acc[s] = 0; }
@@ -263,7 +314,11 @@ function describe(entry, W) {
   const acc = new Map();
   for (const c of entry.combo) for (const k of c.sk) acc.set(k.s, (acc.get(k.s) || 0) + k.lv);
   for (const h of entry.setHits) { const s = DB.skillIndex.get(h.skill); acc.set(s, (acc.get(s) || 0) + h.lv); }
-  const totals = [...acc.entries()].map(([s, lv]) => ({ skill: DB.skillNames[s], lv: Math.min(lv, DB.skillMax[s]), raw: lv, max: DB.skillMax[s], value: wval(W, s, Math.min(lv, DB.skillMax[s])), fromSet: entry.setHits.filter(h => h.skill === DB.skillNames[s]).reduce((a, h) => a + h.lv, 0) }))
+  // 期待値の式があるときは「そのスキルを外したらどれだけ下がるか」をそのスキルの値にする
+  const capped = [...acc.entries()].map(([s, lv]) => [s, Math.min(lv, DB.skillMax[s])]);
+  const all = SPEC ? specScoreOf(capped) : 0;
+  const valueOf = (s, lv) => (SPEC ? all - specScoreOf(capped, s) : wval(W, s, lv));
+  const totals = capped.map(([s, lv]) => ({ skill: DB.skillNames[s], lv, raw: acc.get(s), max: DB.skillMax[s], value: valueOf(s, lv), fromSet: entry.setHits.filter(h => h.skill === DB.skillNames[s]).reduce((a, h) => a + h.lv, 0) }))
     .sort((a, b) => b.value - a.value || b.lv - a.lv);
   return {
     score: entry.score,
@@ -280,6 +335,7 @@ function describe(entry, W) {
 
 function solve(msg) {
   const W = makeWeightTable(msg.weights);
+  if (SPEC) SPEC.W0 = W;
   const Wb = boostWants(W, msg.wants);
   const K = (msg.K || 12) + (Wb === W ? 0 : 2);
   const avail = new Set(msg.availableSeries);
@@ -293,6 +349,7 @@ function solve(msg) {
 
 function solveNext(msg, base, baseIds) {
   const W = makeWeightTable(msg.weights);
+  if (SPEC) SPEC.W0 = W;
   const Wb = boostWants(W, msg.wants);
   const K = Math.max(8, (msg.K || 12) - 2);
   const out = [];

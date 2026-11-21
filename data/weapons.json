@@ -742,8 +742,20 @@
    "type": "大剣",
    "element": "水",
    "baseRarity": 9,
-   "maxRarity": 10,
+   "maxRarity": 13,
    "stats": {
+    "7": {
+     "attack": 268,
+     "element": 134,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "8": {
+     "attack": 339,
+     "element": 170,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
     "9": {
      "attack": 420,
      "element": 210,
@@ -754,8 +766,25 @@
      "attack": 510,
      "element": 255,
      "affinity": 0,
-     "est": true,
-     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "11": {
+     "attack": 610,
+     "element": 305,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "12": {
+     "attack": 720,
+     "element": 360,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 839,
+     "element": 419,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -1010,8 +1039,8 @@
     "3": {
      "attack": 79,
      "element": 40,
-     "affinity": -4.7,
-     "src": "gamewith.ai・gamewith.jp・game8.co"
+     "affinity": -4.65,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "4": {
      "attack": 113,
@@ -1022,8 +1051,8 @@
     "5": {
      "attack": 157,
      "element": 79,
-     "affinity": -4.3,
-     "src": "gamewith.ai・gamewith.jp"
+     "affinity": -4.35,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "6": {
      "attack": 211,
@@ -1034,8 +1063,8 @@
     "7": {
      "attack": 274,
      "element": 137,
-     "affinity": -4,
-     "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+     "affinity": -4.05,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": -4,
@@ -1058,25 +1087,43 @@
    "type": "大剣",
    "element": "火",
    "baseRarity": 8,
-   "maxRarity": 10,
+   "maxRarity": 13,
    "stats": {
     "8": {
      "attack": 347,
      "element": 173,
-     "affinity": -4,
-     "src": "Game8（2026-11-10）"
+     "affinity": -3.9,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "9": {
      "attack": 430,
      "element": 215,
-     "affinity": -4,
-     "src": "Game8（2026-11-10）"
+     "affinity": -3.75,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "10": {
      "attack": 522,
      "element": 261,
-     "affinity": -4,
-     "src": "Game8（2026-11-10）"
+     "affinity": -3.6,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "11": {
+     "attack": 624,
+     "element": 312,
+     "affinity": -3.45,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "12": {
+     "attack": 736,
+     "element": 368,
+     "affinity": -3.3,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 858,
+     "element": 429,
+     "affinity": -3.15,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": -3.9,
@@ -1167,26 +1214,43 @@
    "type": "大剣",
    "element": "火",
    "baseRarity": 8,
-   "maxRarity": 10,
+   "maxRarity": 13,
    "stats": {
     "8": {
      "attack": 331,
      "element": 165,
-     "affinity": 3.9,
-     "src": "Game8（2026-11-10）"
+     "affinity": 4.2,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "9": {
      "attack": 410,
      "element": 205,
-     "affinity": 3.9,
-     "src": "Game8（2026-11-10）"
+     "affinity": 4.5,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "10": {
      "attack": 498,
      "element": 249,
-     "affinity": 3.9,
-     "est": true,
-     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
+     "affinity": 4.8,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "11": {
+     "attack": 595,
+     "element": 298,
+     "affinity": 5.1,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "12": {
+     "attack": 702,
+     "element": 351,
+     "affinity": 5.4,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 818,
+     "element": 409,
+     "affinity": 5.7,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 4.2,
@@ -1427,7 +1491,7 @@
    "type": "大剣",
    "element": "水",
    "baseRarity": 8,
-   "maxRarity": 10,
+   "maxRarity": 13,
    "stats": {
     "8": {
      "attack": 357,
@@ -1446,6 +1510,24 @@
      "element": 269,
      "affinity": 0,
      "src": "Game8（2026-11-10）"
+    },
+    "11": {
+     "attack": 643,
+     "element": 322,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "12": {
+     "attack": 759,
+     "element": 379,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 884,
+     "element": 442,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -1463,8 +1545,20 @@
    "type": "大剣",
    "element": "水",
    "baseRarity": 9,
-   "maxRarity": 10,
+   "maxRarity": 12,
    "stats": {
+    "7": {
+     "attack": 274,
+     "element": 137,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "8": {
+     "attack": 346,
+     "element": 173,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
     "9": {
      "attack": 429,
      "element": 215,
@@ -1475,8 +1569,19 @@
      "attack": 521,
      "element": 261,
      "affinity": 0,
-     "est": true,
-     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "11": {
+     "attack": 624,
+     "element": 312,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "12": {
+     "attack": 735,
+     "element": 368,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -1603,8 +1708,8 @@
     "5": {
      "attack": 157,
      "element": 79,
-     "affinity": -4.3,
-     "src": "gamewith.ai・gamewith.jp・game8.co"
+     "affinity": -4.35,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "6": {
      "attack": 211,
@@ -1615,8 +1720,8 @@
     "7": {
      "attack": 274,
      "element": 137,
-     "affinity": -4,
-     "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+     "affinity": -4.05,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": -4,
@@ -1639,26 +1744,43 @@
    "type": "大剣",
    "element": "火",
    "baseRarity": 8,
-   "maxRarity": 10,
+   "maxRarity": 13,
    "stats": {
     "8": {
      "attack": 347,
      "element": 173,
-     "affinity": -4,
-     "src": "Game8（2026-11-10）"
+     "affinity": -3.9,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "9": {
      "attack": 430,
      "element": 215,
-     "affinity": -4,
-     "src": "Game8（2026-11-10）"
+     "affinity": -3.75,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "10": {
      "attack": 522,
      "element": 261,
-     "affinity": -4,
-     "est": true,
-     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
+     "affinity": -3.6,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "11": {
+     "attack": 624,
+     "element": 312,
+     "affinity": -3.45,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "12": {
+     "attack": 736,
+     "element": 368,
+     "affinity": -3.3,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 858,
+     "element": 429,
+     "affinity": -3.15,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": -3.9,
@@ -1816,7 +1938,7 @@
    "type": "大剣",
    "element": "雷",
    "baseRarity": 7,
-   "maxRarity": 10,
+   "maxRarity": 13,
    "stats": {
     "7": {
      "attack": 282,
@@ -1841,6 +1963,24 @@
      "element": 269,
      "affinity": 0,
      "src": "Game8（2026-11-10）"
+    },
+    "11": {
+     "attack": 643,
+     "element": 322,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "12": {
+     "attack": 759,
+     "element": 379,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 884,
+     "element": 442,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -1859,7 +1999,7 @@
    "type": "大剣",
    "element": "龍",
    "baseRarity": 6,
-   "maxRarity": 12,
+   "maxRarity": 13,
    "stats": {
     "6": {
      "attack": 201,
@@ -1902,6 +2042,12 @@
      "element": 351,
      "affinity": 5.4,
      "src": "gamewith.ai"
+    },
+    "13": {
+     "attack": 818,
+     "element": 409,
+     "affinity": 5.7,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 5.4,
@@ -1918,7 +2064,7 @@
    "type": "大剣",
    "element": "龍",
    "baseRarity": 4,
-   "maxRarity": 12,
+   "maxRarity": 13,
    "stats": {
     "4": {
      "attack": 111,
@@ -1973,6 +2119,12 @@
      "element": 360,
      "affinity": 0,
      "src": "gamewith.ai"
+    },
+    "13": {
+     "attack": 839,
+     "element": 419,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -2714,25 +2866,43 @@
    "type": "太刀",
    "element": "火",
    "baseRarity": 8,
-   "maxRarity": 10,
+   "maxRarity": 13,
    "stats": {
     "8": {
      "attack": 347,
      "element": 173,
-     "affinity": -4,
-     "src": "Game8（2026-11-10）"
+     "affinity": -3.9,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "9": {
      "attack": 430,
      "element": 215,
-     "affinity": -4,
-     "src": "Game8（2026-11-10）"
+     "affinity": -3.75,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "10": {
      "attack": 522,
      "element": 261,
-     "affinity": -4,
-     "src": "Game8（2026-11-10）"
+     "affinity": -3.6,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "11": {
+     "attack": 624,
+     "element": 312,
+     "affinity": -3.45,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "12": {
+     "attack": 736,
+     "element": 368,
+     "affinity": -3.3,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 858,
+     "element": 429,
+     "affinity": -3.15,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": -3.9,
@@ -2872,8 +3042,8 @@
     "3": {
      "attack": 79,
      "element": 40,
-     "affinity": -4.7,
-     "src": "gamewith.ai・gamewith.jp・game8.co"
+     "affinity": -4.65,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "4": {
      "attack": 113,
@@ -2884,8 +3054,8 @@
     "5": {
      "attack": 157,
      "element": 79,
-     "affinity": -4.3,
-     "src": "gamewith.ai・gamewith.jp"
+     "affinity": -4.35,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "6": {
      "attack": 211,
@@ -2896,8 +3066,8 @@
     "7": {
      "attack": 274,
      "element": 137,
-     "affinity": -4,
-     "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+     "affinity": -4.05,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": -4,
@@ -3080,7 +3250,7 @@
    "type": "太刀",
    "element": "雷",
    "baseRarity": 7,
-   "maxRarity": 10,
+   "maxRarity": 13,
    "stats": {
     "7": {
      "attack": 251,
@@ -3091,20 +3261,38 @@
     "8": {
      "attack": 318,
      "element": 159,
-     "affinity": 5.2,
-     "src": "Game8（2026-11-10）"
+     "affinity": 5.6,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "9": {
      "attack": 394,
      "element": 197,
-     "affinity": 5.2,
-     "src": "Game8（2026-11-10）"
+     "affinity": 6,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "10": {
      "attack": 479,
      "element": 240,
-     "affinity": 5.2,
-     "src": "Game8（2026-11-10）"
+     "affinity": 6.4,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "11": {
+     "attack": 573,
+     "element": 286,
+     "affinity": 6.8,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "12": {
+     "attack": 676,
+     "element": 338,
+     "affinity": 7.2,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 787,
+     "element": 394,
+     "affinity": 7.6,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 5.2,
@@ -3158,26 +3346,43 @@
    "type": "太刀",
    "element": "火",
    "baseRarity": 8,
-   "maxRarity": 10,
+   "maxRarity": 13,
    "stats": {
     "8": {
      "attack": 347,
      "element": 173,
-     "affinity": -4,
-     "src": "Game8（2026-11-10）"
+     "affinity": -3.9,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "9": {
      "attack": 430,
      "element": 215,
-     "affinity": -4,
-     "src": "Game8（2026-11-10）"
+     "affinity": -3.75,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "10": {
      "attack": 522,
      "element": 261,
-     "affinity": -4,
-     "est": true,
-     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
+     "affinity": -3.6,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "11": {
+     "attack": 624,
+     "element": 312,
+     "affinity": -3.45,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "12": {
+     "attack": 736,
+     "element": 368,
+     "affinity": -3.3,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 858,
+     "element": 429,
+     "affinity": -3.15,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": -3.9,
@@ -3195,7 +3400,7 @@
    "type": "太刀",
    "element": "水",
    "baseRarity": 8,
-   "maxRarity": 10,
+   "maxRarity": 13,
    "stats": {
     "8": {
      "attack": 357,
@@ -3214,6 +3419,24 @@
      "element": 269,
      "affinity": 0,
      "src": "Game8（2026-11-10）"
+    },
+    "11": {
+     "attack": 643,
+     "element": 322,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "12": {
+     "attack": 759,
+     "element": 379,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 884,
+     "element": 442,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -3236,8 +3459,8 @@
     "5": {
      "attack": 157,
      "element": 79,
-     "affinity": -4.3,
-     "src": "gamewith.ai・gamewith.jp・game8.co"
+     "affinity": -4.35,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "6": {
      "attack": 211,
@@ -3248,8 +3471,8 @@
     "7": {
      "attack": 274,
      "element": 137,
-     "affinity": -4,
-     "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+     "affinity": -4.05,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": -4,
@@ -3475,26 +3698,43 @@
    "type": "太刀",
    "element": "火",
    "baseRarity": 8,
-   "maxRarity": 10,
+   "maxRarity": 13,
    "stats": {
     "8": {
      "attack": 331,
      "element": 165,
-     "affinity": 3.9,
-     "src": "Game8（2026-11-10）"
+     "affinity": 4.2,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "9": {
      "attack": 410,
      "element": 205,
-     "affinity": 3.9,
-     "src": "Game8（2026-11-10）"
+     "affinity": 4.5,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "10": {
      "attack": 498,
      "element": 249,
-     "affinity": 3.9,
-     "est": true,
-     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
+     "affinity": 4.8,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "11": {
+     "attack": 595,
+     "element": 298,
+     "affinity": 5.1,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "12": {
+     "attack": 702,
+     "element": 351,
+     "affinity": 5.4,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 818,
+     "element": 409,
+     "affinity": 5.7,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 4.5,
@@ -3561,7 +3801,7 @@
    "type": "太刀",
    "element": "龍",
    "baseRarity": 6,
-   "maxRarity": 12,
+   "maxRarity": 13,
    "stats": {
     "6": {
      "attack": 217,
@@ -3604,6 +3844,12 @@
      "element": 379,
      "affinity": 0,
      "src": "gamewith.ai"
+    },
+    "13": {
+     "attack": 884,
+     "element": 442,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -3620,7 +3866,7 @@
    "type": "太刀",
    "element": "龍",
    "baseRarity": 4,
-   "maxRarity": 12,
+   "maxRarity": 13,
    "stats": {
     "4": {
      "attack": 113,
@@ -3675,6 +3921,12 @@
      "element": 368,
      "affinity": 0,
      "src": "gamewith.ai"
+    },
+    "13": {
+     "attack": 857,
+     "element": 428,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -4263,25 +4515,43 @@
    "type": "双剣",
    "element": "火",
    "baseRarity": 8,
-   "maxRarity": 10,
+   "maxRarity": 13,
    "stats": {
     "8": {
      "attack": 347,
      "element": 173,
-     "affinity": -4,
-     "src": "Game8（2026-11-10）"
+     "affinity": -3.9,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "9": {
      "attack": 430,
      "element": 215,
-     "affinity": -4,
-     "src": "Game8（2026-11-10）"
+     "affinity": -3.75,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "10": {
      "attack": 522,
      "element": 261,
-     "affinity": -4,
-     "src": "Game8（2026-11-10）"
+     "affinity": -3.6,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "11": {
+     "attack": 624,
+     "element": 312,
+     "affinity": -3.45,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "12": {
+     "attack": 736,
+     "element": 368,
+     "affinity": -3.3,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 858,
+     "element": 429,
+     "affinity": -3.15,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": -3.9,
@@ -4514,8 +4784,8 @@
     "3": {
      "attack": 79,
      "element": 40,
-     "affinity": -4.7,
-     "src": "gamewith.ai・gamewith.jp・game8.co"
+     "affinity": -4.65,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "4": {
      "attack": 113,
@@ -4526,8 +4796,8 @@
     "5": {
      "attack": 157,
      "element": 79,
-     "affinity": -4.3,
-     "src": "gamewith.ai・gamewith.jp"
+     "affinity": -4.35,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "6": {
      "attack": 211,
@@ -4538,8 +4808,8 @@
     "7": {
      "attack": 274,
      "element": 137,
-     "affinity": -4,
-     "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+     "affinity": -4.05,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": -4,
@@ -4562,7 +4832,7 @@
    "type": "双剣",
    "element": "氷",
    "baseRarity": 7,
-   "maxRarity": 10,
+   "maxRarity": 13,
    "stats": {
     "7": {
      "attack": 274,
@@ -4574,21 +4844,38 @@
     "8": {
      "attack": 347,
      "element": 173,
-     "affinity": -4,
-     "src": "Game8（2026-11-10）"
+     "affinity": -3.9,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "9": {
      "attack": 430,
      "element": 215,
-     "affinity": -4,
-     "src": "Game8（2026-11-10）"
+     "affinity": -3.75,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "10": {
      "attack": 522,
      "element": 261,
-     "affinity": -4,
-     "est": true,
-     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
+     "affinity": -3.6,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "11": {
+     "attack": 624,
+     "element": 312,
+     "affinity": -3.45,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "12": {
+     "attack": 736,
+     "element": 368,
+     "affinity": -3.3,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 858,
+     "element": 429,
+     "affinity": -3.15,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": -4,
@@ -4824,7 +5111,7 @@
    "type": "双剣",
    "element": "雷",
    "baseRarity": 7,
-   "maxRarity": 10,
+   "maxRarity": 13,
    "stats": {
     "7": {
      "attack": 251,
@@ -4835,20 +5122,38 @@
     "8": {
      "attack": 318,
      "element": 159,
-     "affinity": 5.2,
-     "src": "Game8（2026-11-10）"
+     "affinity": 5.6,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "9": {
      "attack": 394,
      "element": 197,
-     "affinity": 5.2,
-     "src": "Game8（2026-11-10）"
+     "affinity": 6,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "10": {
      "attack": 479,
      "element": 240,
-     "affinity": 5.2,
-     "src": "Game8（2026-11-10）"
+     "affinity": 6.4,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "11": {
+     "attack": 573,
+     "element": 286,
+     "affinity": 6.8,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "12": {
+     "attack": 676,
+     "element": 338,
+     "affinity": 7.2,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 787,
+     "element": 394,
+     "affinity": 7.6,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 5.2,
@@ -4867,13 +5172,43 @@
    "type": "双剣",
    "element": "火",
    "baseRarity": 8,
-   "maxRarity": 8,
+   "maxRarity": 13,
    "stats": {
     "8": {
      "attack": 347,
      "element": 173,
      "affinity": -3.9,
      "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+    },
+    "9": {
+     "attack": 430,
+     "element": 215,
+     "affinity": -3.75,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "10": {
+     "attack": 522,
+     "element": 261,
+     "affinity": -3.6,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "11": {
+     "attack": 624,
+     "element": 312,
+     "affinity": -3.45,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "12": {
+     "attack": 736,
+     "element": 368,
+     "affinity": -3.3,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 858,
+     "element": 429,
+     "affinity": -3.15,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": -3.9,
@@ -4926,8 +5261,8 @@
     "5": {
      "attack": 157,
      "element": 79,
-     "affinity": -4.3,
-     "src": "gamewith.ai・gamewith.jp・game8.co"
+     "affinity": -4.35,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "6": {
      "attack": 211,
@@ -4938,8 +5273,8 @@
     "7": {
      "attack": 274,
      "element": 137,
-     "affinity": -4,
-     "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+     "affinity": -4.05,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": -4,
@@ -4992,7 +5327,7 @@
    "type": "双剣",
    "element": "水",
    "baseRarity": 8,
-   "maxRarity": 10,
+   "maxRarity": 13,
    "stats": {
     "8": {
      "attack": 346,
@@ -5011,6 +5346,24 @@
      "element": 261,
      "affinity": 0,
      "src": "Game8（2026-11-10）"
+    },
+    "11": {
+     "attack": 624,
+     "element": 312,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "12": {
+     "attack": 735,
+     "element": 368,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 857,
+     "element": 428,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -5028,7 +5381,7 @@
    "type": "双剣",
    "element": "火",
    "baseRarity": 7,
-   "maxRarity": 10,
+   "maxRarity": 13,
    "stats": {
     "7": {
      "attack": 261,
@@ -5040,21 +5393,38 @@
     "8": {
      "attack": 331,
      "element": 165,
-     "affinity": 3.9,
-     "src": "Game8（2026-11-10）"
+     "affinity": 4.2,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "9": {
      "attack": 410,
      "element": 205,
-     "affinity": 3.9,
-     "src": "Game8（2026-11-10）"
+     "affinity": 4.5,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "10": {
      "attack": 498,
      "element": 249,
-     "affinity": 3.9,
-     "est": true,
-     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
+     "affinity": 4.8,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "11": {
+     "attack": 595,
+     "element": 298,
+     "affinity": 5.1,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "12": {
+     "attack": 702,
+     "element": 351,
+     "affinity": 5.4,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 818,
+     "element": 409,
+     "affinity": 5.7,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 3.9,
@@ -5073,7 +5443,7 @@
    "type": "双剣",
    "element": "龍",
    "baseRarity": 6,
-   "maxRarity": 12,
+   "maxRarity": 13,
    "stats": {
     "6": {
      "attack": 206,
@@ -5116,6 +5486,12 @@
      "element": 360,
      "affinity": 0,
      "src": "gamewith.ai"
+    },
+    "13": {
+     "attack": 839,
+     "element": 419,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -5132,7 +5508,7 @@
    "type": "双剣",
    "element": "龍",
    "baseRarity": 4,
-   "maxRarity": 12,
+   "maxRarity": 13,
    "stats": {
     "4": {
      "attack": 111,
@@ -5187,6 +5563,12 @@
      "element": 360,
      "affinity": 0,
      "src": "gamewith.ai"
+    },
+    "13": {
+     "attack": 839,
+     "element": 419,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -5888,7 +6270,7 @@
    "type": "ランス",
    "element": "火",
    "baseRarity": 7,
-   "maxRarity": 10,
+   "maxRarity": 13,
    "stats": {
     "7": {
      "attack": 261,
@@ -5900,21 +6282,38 @@
     "8": {
      "attack": 331,
      "element": 165,
-     "affinity": 3.9,
-     "src": "Game8（2026-11-10）"
+     "affinity": 4.2,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "9": {
      "attack": 410,
      "element": 205,
-     "affinity": 3.9,
-     "src": "Game8（2026-11-10）"
+     "affinity": 4.5,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "10": {
      "attack": 498,
      "element": 249,
-     "affinity": 3.9,
-     "est": true,
-     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
+     "affinity": 4.8,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "11": {
+     "attack": 595,
+     "element": 298,
+     "affinity": 5.1,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "12": {
+     "attack": 702,
+     "element": 351,
+     "affinity": 5.4,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 818,
+     "element": 409,
+     "affinity": 5.7,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 3.9,
@@ -6453,26 +6852,43 @@
    "type": "ランス",
    "element": "火",
    "baseRarity": 8,
-   "maxRarity": 10,
+   "maxRarity": 13,
    "stats": {
     "8": {
      "attack": 318,
      "element": 159,
-     "affinity": 5.2,
-     "src": "Game8（2026-11-10）"
+     "affinity": 5.6,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "9": {
      "attack": 394,
      "element": 197,
-     "affinity": 5.2,
-     "src": "Game8（2026-11-10）"
+     "affinity": 6,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "10": {
-     "attack": 478,
-     "element": 239,
-     "affinity": 5.2,
-     "est": true,
-     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
+     "attack": 479,
+     "element": 240,
+     "affinity": 6.4,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "11": {
+     "attack": 573,
+     "element": 286,
+     "affinity": 6.8,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "12": {
+     "attack": 676,
+     "element": 338,
+     "affinity": 7.2,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 787,
+     "element": 394,
+     "affinity": 7.6,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 5.6,
@@ -6525,7 +6941,7 @@
    "type": "ランス",
    "element": "水",
    "baseRarity": 8,
-   "maxRarity": 10,
+   "maxRarity": 13,
    "stats": {
     "8": {
      "attack": 357,
@@ -6544,6 +6960,24 @@
      "element": 269,
      "affinity": 0,
      "src": "Game8（2026-11-10）"
+    },
+    "11": {
+     "attack": 643,
+     "element": 322,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "12": {
+     "attack": 759,
+     "element": 379,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 884,
+     "element": 442,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -6756,7 +7190,7 @@
    "type": "ランス",
    "element": "雷",
    "baseRarity": 7,
-   "maxRarity": 10,
+   "maxRarity": 13,
    "stats": {
     "7": {
      "attack": 282,
@@ -6781,6 +7215,24 @@
      "element": 269,
      "affinity": 0,
      "src": "Game8（2026-11-10）"
+    },
+    "11": {
+     "attack": 643,
+     "element": 322,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "12": {
+     "attack": 759,
+     "element": 379,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 884,
+     "element": 442,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -6799,7 +7251,7 @@
    "type": "ランス",
    "element": "龍",
    "baseRarity": 6,
-   "maxRarity": 12,
+   "maxRarity": 13,
    "stats": {
     "6": {
      "attack": 210,
@@ -6842,6 +7294,12 @@
      "element": 368,
      "affinity": 0,
      "src": "gamewith.ai"
+    },
+    "13": {
+     "attack": 857,
+     "element": 428,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -6858,7 +7316,7 @@
    "type": "ランス",
    "element": "龍",
    "baseRarity": 4,
-   "maxRarity": 12,
+   "maxRarity": 13,
    "stats": {
     "4": {
      "attack": 111,
@@ -6913,6 +7371,12 @@
      "element": 360,
      "affinity": 0,
      "src": "gamewith.ai"
+    },
+    "13": {
+     "attack": 839,
+     "element": 419,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -7822,25 +8286,43 @@
    "type": "ハンマー",
    "element": "火",
    "baseRarity": 8,
-   "maxRarity": 10,
+   "maxRarity": 13,
    "stats": {
     "8": {
      "attack": 347,
      "element": 173,
-     "affinity": -4,
-     "src": "Game8（2026-11-10）"
+     "affinity": -3.9,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "9": {
      "attack": 430,
      "element": 215,
-     "affinity": -4,
-     "src": "Game8（2026-11-10）"
+     "affinity": -3.75,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "10": {
      "attack": 522,
      "element": 261,
-     "affinity": -4,
-     "src": "Game8（2026-11-10）"
+     "affinity": -3.6,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "11": {
+     "attack": 624,
+     "element": 312,
+     "affinity": -3.45,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "12": {
+     "attack": 736,
+     "element": 368,
+     "affinity": -3.3,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 858,
+     "element": 429,
+     "affinity": -3.15,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": -3.9,
@@ -8059,8 +8541,8 @@
     "3": {
      "attack": 79,
      "element": 40,
-     "affinity": -4.7,
-     "src": "gamewith.ai・gamewith.jp・game8.co"
+     "affinity": -4.65,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "4": {
      "attack": 113,
@@ -8071,8 +8553,8 @@
     "5": {
      "attack": 157,
      "element": 79,
-     "affinity": -4.3,
-     "src": "gamewith.ai・gamewith.jp"
+     "affinity": -4.35,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "6": {
      "attack": 211,
@@ -8083,8 +8565,8 @@
     "7": {
      "attack": 274,
      "element": 137,
-     "affinity": -4,
-     "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+     "affinity": -4.05,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": -4,
@@ -8107,7 +8589,7 @@
    "type": "ハンマー",
    "element": "氷",
    "baseRarity": 7,
-   "maxRarity": 10,
+   "maxRarity": 13,
    "stats": {
     "7": {
      "attack": 286,
@@ -8119,21 +8601,38 @@
     "8": {
      "attack": 362,
      "element": 181,
-     "affinity": -8.1,
-     "src": "Game8（2026-11-10）"
+     "affinity": -7.8,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "9": {
      "attack": 448,
      "element": 224,
-     "affinity": -8.1,
-     "src": "Game8（2026-11-10）"
+     "affinity": -7.5,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "10": {
-     "attack": 544,
+     "attack": 545,
      "element": 272,
-     "affinity": -8.1,
-     "est": true,
-     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
+     "affinity": -7.2,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "11": {
+     "attack": 652,
+     "element": 326,
+     "affinity": -6.9,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "12": {
+     "attack": 768,
+     "element": 384,
+     "affinity": -6.6,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 895,
+     "element": 448,
+     "affinity": -6.3,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": -8.1,
@@ -8152,8 +8651,20 @@
    "type": "ハンマー",
    "element": "雷",
    "baseRarity": 9,
-   "maxRarity": 10,
+   "maxRarity": 12,
    "stats": {
+    "7": {
+     "attack": 274,
+     "element": 137,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "8": {
+     "attack": 346,
+     "element": 173,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
     "9": {
      "attack": 429,
      "element": 215,
@@ -8164,8 +8675,19 @@
      "attack": 521,
      "element": 261,
      "affinity": 0,
-     "est": true,
-     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "11": {
+     "attack": 624,
+     "element": 312,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "12": {
+     "attack": 735,
+     "element": 368,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -8282,7 +8804,7 @@
    "type": "ハンマー",
    "element": "水",
    "baseRarity": 8,
-   "maxRarity": 10,
+   "maxRarity": 13,
    "stats": {
     "8": {
      "attack": 346,
@@ -8301,6 +8823,24 @@
      "element": 261,
      "affinity": 0,
      "src": "Game8（2026-11-10）"
+    },
+    "11": {
+     "attack": 624,
+     "element": 312,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "12": {
+     "attack": 735,
+     "element": 368,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 857,
+     "element": 428,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -8374,26 +8914,43 @@
    "type": "ハンマー",
    "element": "火",
    "baseRarity": 8,
-   "maxRarity": 10,
+   "maxRarity": 13,
    "stats": {
     "8": {
      "attack": 347,
      "element": 173,
-     "affinity": -4,
-     "src": "Game8（2026-11-10）"
+     "affinity": -3.9,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "9": {
      "attack": 430,
      "element": 215,
-     "affinity": -4,
-     "src": "Game8（2026-11-10）"
+     "affinity": -3.75,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "10": {
      "attack": 522,
      "element": 261,
-     "affinity": -4,
-     "est": true,
-     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
+     "affinity": -3.6,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "11": {
+     "attack": 624,
+     "element": 312,
+     "affinity": -3.45,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "12": {
+     "attack": 736,
+     "element": 368,
+     "affinity": -3.3,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 858,
+     "element": 429,
+     "affinity": -3.15,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": -3.9,
@@ -8458,8 +9015,8 @@
     "5": {
      "attack": 157,
      "element": 79,
-     "affinity": -4.3,
-     "src": "gamewith.ai・gamewith.jp・game8.co"
+     "affinity": -4.35,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "6": {
      "attack": 211,
@@ -8470,8 +9027,8 @@
     "7": {
      "attack": 274,
      "element": 137,
-     "affinity": -4,
-     "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+     "affinity": -4.05,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": -4,
@@ -8573,7 +9130,7 @@
    "type": "ハンマー",
    "element": "雷",
    "baseRarity": 7,
-   "maxRarity": 10,
+   "maxRarity": 13,
    "stats": {
     "7": {
      "attack": 282,
@@ -8598,6 +9155,24 @@
      "element": 269,
      "affinity": 0,
      "src": "Game8（2026-11-10）"
+    },
+    "11": {
+     "attack": 643,
+     "element": 322,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "12": {
+     "attack": 759,
+     "element": 379,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 884,
+     "element": 442,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -8616,7 +9191,7 @@
    "type": "ハンマー",
    "element": "龍",
    "baseRarity": 6,
-   "maxRarity": 12,
+   "maxRarity": 13,
    "stats": {
     "6": {
      "attack": 206,
@@ -8659,6 +9234,12 @@
      "element": 360,
      "affinity": 0,
      "src": "gamewith.ai"
+    },
+    "13": {
+     "attack": 839,
+     "element": 419,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -8675,7 +9256,7 @@
    "type": "ハンマー",
    "element": "龍",
    "baseRarity": 4,
-   "maxRarity": 12,
+   "maxRarity": 13,
    "stats": {
     "4": {
      "attack": 111,
@@ -8730,6 +9311,12 @@
      "element": 360,
      "affinity": 0,
      "src": "gamewith.ai"
+    },
+    "13": {
+     "attack": 839,
+     "element": 419,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -9622,7 +10209,7 @@
    "type": "チャージアックス",
    "element": "氷",
    "baseRarity": 7,
-   "maxRarity": 10,
+   "maxRarity": 13,
    "stats": {
     "7": {
      "attack": 274,
@@ -9634,21 +10221,38 @@
     "8": {
      "attack": 347,
      "element": 173,
-     "affinity": -4,
-     "src": "Game8（2026-11-10）"
+     "affinity": -3.9,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "9": {
      "attack": 430,
      "element": 215,
-     "affinity": -4,
-     "src": "Game8（2026-11-10）"
+     "affinity": -3.75,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "10": {
      "attack": 522,
      "element": 261,
-     "affinity": -4,
-     "est": true,
-     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
+     "affinity": -3.6,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "11": {
+     "attack": 624,
+     "element": 312,
+     "affinity": -3.45,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "12": {
+     "attack": 736,
+     "element": 368,
+     "affinity": -3.3,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 858,
+     "element": 429,
+     "affinity": -3.15,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": -4,
@@ -9733,7 +10337,7 @@
    "type": "チャージアックス",
    "element": "火",
    "baseRarity": 7,
-   "maxRarity": 10,
+   "maxRarity": 13,
    "stats": {
     "7": {
      "attack": 261,
@@ -9745,21 +10349,38 @@
     "8": {
      "attack": 331,
      "element": 165,
-     "affinity": 3.9,
-     "src": "Game8（2026-11-10）"
+     "affinity": 4.2,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "9": {
      "attack": 410,
      "element": 205,
-     "affinity": 3.9,
-     "src": "Game8（2026-11-10）"
+     "affinity": 4.5,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "10": {
      "attack": 498,
      "element": 249,
-     "affinity": 3.9,
-     "est": true,
-     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
+     "affinity": 4.8,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "11": {
+     "attack": 595,
+     "element": 298,
+     "affinity": 5.1,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "12": {
+     "attack": 702,
+     "element": 351,
+     "affinity": 5.4,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 818,
+     "element": 409,
+     "affinity": 5.7,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 3.9,
@@ -9939,31 +10560,49 @@
    "type": "チャージアックス",
    "element": "雷",
    "baseRarity": 7,
-   "maxRarity": 10,
+   "maxRarity": 13,
    "stats": {
     "7": {
      "attack": 276,
      "element": 138,
-     "affinity": 1.9,
-     "src": "gamewith.ai・gamewith.jp・gamewith.jp list card・game8.co"
+     "affinity": 1.95,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "8": {
      "attack": 350,
      "element": 175,
-     "affinity": 1.9,
-     "src": "Game8（2026-11-10）"
+     "affinity": 2.1,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "9": {
      "attack": 433,
      "element": 217,
-     "affinity": 1.9,
-     "src": "Game8（2026-11-10）"
+     "affinity": 2.25,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "10": {
      "attack": 526,
      "element": 263,
-     "affinity": 1.9,
-     "src": "Game8（2026-11-10）"
+     "affinity": 2.4,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "11": {
+     "attack": 629,
+     "element": 315,
+     "affinity": 2.55,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "12": {
+     "attack": 742,
+     "element": 371,
+     "affinity": 2.7,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 865,
+     "element": 432,
+     "affinity": 2.85,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 1.9,
@@ -10243,7 +10882,7 @@
    "type": "チャージアックス",
    "element": "水",
    "baseRarity": 8,
-   "maxRarity": 10,
+   "maxRarity": 13,
    "stats": {
     "8": {
      "attack": 346,
@@ -10262,6 +10901,24 @@
      "element": 261,
      "affinity": 0,
      "src": "Game8（2026-11-10）"
+    },
+    "11": {
+     "attack": 624,
+     "element": 312,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "12": {
+     "attack": 735,
+     "element": 368,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 857,
+     "element": 428,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -10357,7 +11014,7 @@
    "type": "チャージアックス",
    "element": "龍",
    "baseRarity": 6,
-   "maxRarity": 12,
+   "maxRarity": 13,
    "stats": {
     "6": {
      "attack": 206,
@@ -10400,6 +11057,12 @@
      "element": 360,
      "affinity": 0,
      "src": "gamewith.ai"
+    },
+    "13": {
+     "attack": 839,
+     "element": 419,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -10416,7 +11079,7 @@
    "type": "チャージアックス",
    "element": "龍",
    "baseRarity": 4,
-   "maxRarity": 12,
+   "maxRarity": 13,
    "stats": {
     "4": {
      "attack": 111,
@@ -10471,6 +11134,12 @@
      "element": 360,
      "affinity": 0,
      "src": "gamewith.ai"
+    },
+    "13": {
+     "attack": 839,
+     "element": 419,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -11287,8 +11956,20 @@
    "type": "ヘビィボウガン",
    "element": "水",
    "baseRarity": 9,
-   "maxRarity": 10,
+   "maxRarity": 13,
    "stats": {
+    "7": {
+     "attack": 268,
+     "element": 134,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "8": {
+     "attack": 339,
+     "element": 170,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
     "9": {
      "attack": 420,
      "element": 210,
@@ -11299,8 +11980,25 @@
      "attack": 510,
      "element": 255,
      "affinity": 0,
-     "est": true,
-     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "11": {
+     "attack": 610,
+     "element": 305,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "12": {
+     "attack": 720,
+     "element": 360,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 839,
+     "element": 419,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -11318,32 +12016,49 @@
    "type": "ヘビィボウガン",
    "element": "氷",
    "baseRarity": 7,
-   "maxRarity": 10,
+   "maxRarity": 13,
    "stats": {
     "7": {
      "attack": 274,
      "element": 137,
-     "affinity": 4,
-     "src": "game8.co"
+     "affinity": -4.05,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "8": {
      "attack": 347,
      "element": 173,
-     "affinity": 4,
-     "src": "Game8（2026-11-10）"
+     "affinity": -3.9,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "9": {
      "attack": 430,
      "element": 215,
-     "affinity": 4,
-     "src": "Game8（2026-11-10）"
+     "affinity": -3.75,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "10": {
      "attack": 522,
      "element": 261,
-     "affinity": 4,
-     "est": true,
-     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
+     "affinity": -3.6,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "11": {
+     "attack": 624,
+     "element": 312,
+     "affinity": -3.45,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "12": {
+     "attack": 736,
+     "element": 368,
+     "affinity": -3.3,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 858,
+     "element": 429,
+     "affinity": -3.15,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 4,
@@ -11460,25 +12175,43 @@
    "type": "ヘビィボウガン",
    "element": "火",
    "baseRarity": 8,
-   "maxRarity": 10,
+   "maxRarity": 13,
    "stats": {
     "8": {
      "attack": 347,
      "element": 173,
-     "affinity": -4,
-     "src": "Game8（2026-11-10）"
+     "affinity": -3.9,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "9": {
      "attack": 430,
      "element": 215,
-     "affinity": -4,
-     "src": "Game8（2026-11-10）"
+     "affinity": -3.75,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "10": {
      "attack": 522,
      "element": 261,
-     "affinity": -4,
-     "src": "Game8（2026-11-10）"
+     "affinity": -3.6,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "11": {
+     "attack": 624,
+     "element": 312,
+     "affinity": -3.45,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "12": {
+     "attack": 736,
+     "element": 368,
+     "affinity": -3.3,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 858,
+     "element": 429,
+     "affinity": -3.15,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": -3.9,
@@ -11580,8 +12313,8 @@
     "3": {
      "attack": 79,
      "element": 40,
-     "affinity": -4.7,
-     "src": "gamewith.ai・gamewith.jp・game8.co"
+     "affinity": -4.65,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "4": {
      "attack": 113,
@@ -11592,8 +12325,8 @@
     "5": {
      "attack": 157,
      "element": 79,
-     "affinity": -4.3,
-     "src": "gamewith.ai・gamewith.jp"
+     "affinity": -4.35,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "6": {
      "attack": 211,
@@ -11604,8 +12337,8 @@
     "7": {
      "attack": 274,
      "element": 137,
-     "affinity": -4,
-     "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+     "affinity": -4.05,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": -4,
@@ -11786,7 +12519,7 @@
    "type": "ヘビィボウガン",
    "element": "水",
    "baseRarity": 8,
-   "maxRarity": 10,
+   "maxRarity": 13,
    "stats": {
     "8": {
      "attack": 346,
@@ -11805,6 +12538,24 @@
      "element": 261,
      "affinity": 0,
      "src": "Game8（2026-11-10）"
+    },
+    "11": {
+     "attack": 624,
+     "element": 312,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "12": {
+     "attack": 735,
+     "element": 368,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 857,
+     "element": 428,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -11822,7 +12573,7 @@
    "type": "ヘビィボウガン",
    "element": "雷",
    "baseRarity": 7,
-   "maxRarity": 10,
+   "maxRarity": 13,
    "stats": {
     "7": {
      "attack": 251,
@@ -11833,20 +12584,38 @@
     "8": {
      "attack": 318,
      "element": 159,
-     "affinity": 5.2,
-     "src": "Game8（2026-11-10）"
+     "affinity": 5.6,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "9": {
      "attack": 394,
      "element": 197,
-     "affinity": 5.2,
-     "src": "Game8（2026-11-10）"
+     "affinity": 6,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "10": {
      "attack": 479,
      "element": 240,
-     "affinity": 5.2,
-     "src": "Game8（2026-11-10）"
+     "affinity": 6.4,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "11": {
+     "attack": 573,
+     "element": 286,
+     "affinity": 6.8,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "12": {
+     "attack": 676,
+     "element": 338,
+     "affinity": 7.2,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 787,
+     "element": 394,
+     "affinity": 7.6,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 5.2,
@@ -11906,7 +12675,7 @@
    "type": "ヘビィボウガン",
    "element": "水",
    "baseRarity": 7,
-   "maxRarity": 10,
+   "maxRarity": 12,
    "stats": {
     "7": {
      "attack": 268,
@@ -11931,6 +12700,18 @@
      "element": 255,
      "affinity": 0,
      "src": "Game8（2026-11-10）"
+    },
+    "11": {
+     "attack": 610,
+     "element": 305,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "12": {
+     "attack": 720,
+     "element": 360,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -11990,26 +12771,43 @@
    "type": "ヘビィボウガン",
    "element": "火",
    "baseRarity": 8,
-   "maxRarity": 10,
+   "maxRarity": 13,
    "stats": {
     "8": {
      "attack": 347,
      "element": 173,
-     "affinity": -4,
-     "src": "Game8（2026-11-10）"
+     "affinity": -3.9,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "9": {
      "attack": 430,
      "element": 215,
-     "affinity": -4,
-     "src": "Game8（2026-11-10）"
+     "affinity": -3.75,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "10": {
      "attack": 522,
      "element": 261,
-     "affinity": -4,
-     "est": true,
-     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
+     "affinity": -3.6,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "11": {
+     "attack": 624,
+     "element": 312,
+     "affinity": -3.45,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "12": {
+     "attack": 736,
+     "element": 368,
+     "affinity": -3.3,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 858,
+     "element": 429,
+     "affinity": -3.15,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": -3.9,
@@ -12073,8 +12871,8 @@
     "5": {
      "attack": 157,
      "element": 79,
-     "affinity": -4.3,
-     "src": "gamewith.ai・gamewith.jp・game8.co"
+     "affinity": -4.35,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "6": {
      "attack": 211,
@@ -12085,8 +12883,8 @@
     "7": {
      "attack": 274,
      "element": 137,
-     "affinity": -4,
-     "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+     "affinity": -4.05,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": -4,
@@ -12109,7 +12907,7 @@
    "type": "ヘビィボウガン",
    "element": "龍",
    "baseRarity": 6,
-   "maxRarity": 12,
+   "maxRarity": 13,
    "stats": {
     "6": {
      "attack": 206,
@@ -12152,6 +12950,12 @@
      "element": 360,
      "affinity": 0,
      "src": "gamewith.ai"
+    },
+    "13": {
+     "attack": 839,
+     "element": 419,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -12168,7 +12972,7 @@
    "type": "ヘビィボウガン",
    "element": "龍",
    "baseRarity": 4,
-   "maxRarity": 12,
+   "maxRarity": 13,
    "stats": {
     "4": {
      "attack": 111,
@@ -12223,6 +13027,12 @@
      "element": 360,
      "affinity": 0,
      "src": "gamewith.ai"
+    },
+    "13": {
+     "attack": 839,
+     "element": 419,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -12964,25 +13774,43 @@
    "type": "弓",
    "element": "火",
    "baseRarity": 8,
-   "maxRarity": 10,
+   "maxRarity": 13,
    "stats": {
     "8": {
      "attack": 347,
      "element": 173,
-     "affinity": -4,
-     "src": "Game8（2026-11-10）"
+     "affinity": -3.9,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "9": {
      "attack": 430,
      "element": 215,
-     "affinity": -4,
-     "src": "Game8（2026-11-10）"
+     "affinity": -3.75,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "10": {
      "attack": 522,
      "element": 261,
-     "affinity": -4,
-     "src": "Game8（2026-11-10）"
+     "affinity": -3.6,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "11": {
+     "attack": 624,
+     "element": 312,
+     "affinity": -3.45,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "12": {
+     "attack": 736,
+     "element": 368,
+     "affinity": -3.3,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 858,
+     "element": 429,
+     "affinity": -3.15,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": -3.9,
@@ -13206,8 +14034,8 @@
     "3": {
      "attack": 79,
      "element": 40,
-     "affinity": -4.7,
-     "src": "gamewith.ai・gamewith.jp・game8.co"
+     "affinity": -4.65,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "4": {
      "attack": 113,
@@ -13218,8 +14046,8 @@
     "5": {
      "attack": 157,
      "element": 79,
-     "affinity": -4.3,
-     "src": "gamewith.ai・gamewith.jp"
+     "affinity": -4.35,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "6": {
      "attack": 211,
@@ -13230,8 +14058,8 @@
     "7": {
      "attack": 274,
      "element": 137,
-     "affinity": -4,
-     "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+     "affinity": -4.05,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": -4,
@@ -13254,7 +14082,7 @@
    "type": "弓",
    "element": "氷",
    "baseRarity": 7,
-   "maxRarity": 10,
+   "maxRarity": 13,
    "stats": {
     "7": {
      "attack": 274,
@@ -13266,21 +14094,38 @@
     "8": {
      "attack": 347,
      "element": 173,
-     "affinity": -4,
-     "src": "Game8（2026-11-10）"
+     "affinity": -3.9,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "9": {
      "attack": 430,
      "element": 215,
-     "affinity": -4,
-     "src": "Game8（2026-11-10）"
+     "affinity": -3.75,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "10": {
      "attack": 522,
      "element": 261,
-     "affinity": -4,
-     "est": true,
-     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
+     "affinity": -3.6,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "11": {
+     "attack": 624,
+     "element": 312,
+     "affinity": -3.45,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "12": {
+     "attack": 736,
+     "element": 368,
+     "affinity": -3.3,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 858,
+     "element": 429,
+     "affinity": -3.15,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": -4,
@@ -13299,7 +14144,7 @@
    "type": "弓",
    "element": "龍",
    "baseRarity": 6,
-   "maxRarity": 12,
+   "maxRarity": 13,
    "stats": {
     "6": {
      "attack": 193,
@@ -13343,6 +14188,12 @@
      "element": 338,
      "affinity": 7.2,
      "src": "gamewith.ai"
+    },
+    "13": {
+     "attack": 787,
+     "element": 394,
+     "affinity": 7.6,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 7.2,
@@ -13361,7 +14212,7 @@
    "type": "弓",
    "element": "龍",
    "baseRarity": 9,
-   "maxRarity": 10,
+   "maxRarity": 13,
    "stats": {
     "9": {
      "attack": 410,
@@ -13373,8 +14224,26 @@
     "10": {
      "attack": 498,
      "element": 249,
-     "affinity": 4.5,
-     "src": "Game8（2026-11-10）"
+     "affinity": 4.8,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "11": {
+     "attack": 595,
+     "element": 298,
+     "affinity": 5.1,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "12": {
+     "attack": 702,
+     "element": 351,
+     "affinity": 5.4,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 818,
+     "element": 409,
+     "affinity": 5.7,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 4.5,
@@ -13394,7 +14263,7 @@
    "type": "弓",
    "element": "火",
    "baseRarity": 6,
-   "maxRarity": 12,
+   "maxRarity": 13,
    "stats": {
     "6": {
      "attack": 201,
@@ -13437,6 +14306,12 @@
      "element": 351,
      "affinity": 5.4,
      "src": "gamewith.ai"
+    },
+    "13": {
+     "attack": 818,
+     "element": 409,
+     "affinity": 5.7,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 5.4,
@@ -13490,7 +14365,7 @@
    "type": "弓",
    "element": "水",
    "baseRarity": 8,
-   "maxRarity": 10,
+   "maxRarity": 13,
    "stats": {
     "8": {
      "attack": 346,
@@ -13509,6 +14384,24 @@
      "element": 261,
      "affinity": 0,
      "src": "Game8（2026-11-10）"
+    },
+    "11": {
+     "attack": 624,
+     "element": 312,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "12": {
+     "attack": 735,
+     "element": 368,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 857,
+     "element": 428,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -13582,26 +14475,43 @@
    "type": "弓",
    "element": "火",
    "baseRarity": 8,
-   "maxRarity": 10,
+   "maxRarity": 13,
    "stats": {
     "8": {
      "attack": 347,
      "element": 173,
-     "affinity": -4,
-     "src": "Game8（2026-11-10）"
+     "affinity": -3.9,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "9": {
      "attack": 430,
      "element": 215,
-     "affinity": -4,
-     "src": "Game8（2026-11-10）"
+     "affinity": -3.75,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "10": {
      "attack": 522,
      "element": 261,
-     "affinity": -4,
-     "est": true,
-     "src": "推定（レア9×1.214）。レア10まで強化できるのはゲーム内で確認"
+     "affinity": -3.6,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "11": {
+     "attack": 624,
+     "element": 312,
+     "affinity": -3.45,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "12": {
+     "attack": 736,
+     "element": 368,
+     "affinity": -3.3,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 858,
+     "element": 429,
+     "affinity": -3.15,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": -3.9,
@@ -13686,8 +14596,8 @@
     "5": {
      "attack": 157,
      "element": 79,
-     "affinity": -4.3,
-     "src": "gamewith.ai・gamewith.jp・game8.co"
+     "affinity": -4.35,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "6": {
      "attack": 211,
@@ -13698,8 +14608,8 @@
     "7": {
      "attack": 274,
      "element": 137,
-     "affinity": -4,
-     "src": "gamewith.ai・gamewith.jp・gamewith.jp list card"
+     "affinity": -4.05,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": -4,
@@ -13722,7 +14632,7 @@
    "type": "弓",
    "element": "龍",
    "baseRarity": 3,
-   "maxRarity": 12,
+   "maxRarity": 13,
    "stats": {
     "3": {
      "attack": 73,
@@ -13784,6 +14694,12 @@
      "element": 338,
      "affinity": 7.2,
      "src": "gamewith.ai"
+    },
+    "13": {
+     "attack": 787,
+     "element": 394,
+     "affinity": 7.6,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 7.2,
@@ -13802,31 +14718,49 @@
    "type": "弓",
    "element": "雷",
    "baseRarity": 7,
-   "maxRarity": 10,
+   "maxRarity": 13,
    "stats": {
     "7": {
      "attack": 276,
      "element": 138,
-     "affinity": 1.9,
-     "src": "gamewith.ai・gamewith.jp・game8.co"
+     "affinity": 1.95,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "8": {
      "attack": 350,
      "element": 175,
-     "affinity": 1.9,
-     "src": "Game8（2026-11-10）"
+     "affinity": 2.1,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "9": {
      "attack": 433,
      "element": 217,
-     "affinity": 2.2,
-     "src": "gamewith.ai・gamewith.jp list card"
+     "affinity": 2.25,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     },
     "10": {
      "attack": 526,
      "element": 263,
-     "affinity": 2.2,
-     "src": "Game8（2026-11-10）"
+     "affinity": 2.4,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "11": {
+     "attack": 629,
+     "element": 315,
+     "affinity": 2.55,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "12": {
+     "attack": 742,
+     "element": 371,
+     "affinity": 2.7,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 865,
+     "element": 432,
+     "affinity": 2.85,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 2.2,
@@ -13923,7 +14857,7 @@
    "type": "弓",
    "element": "龍",
    "baseRarity": 6,
-   "maxRarity": 12,
+   "maxRarity": 13,
    "stats": {
     "6": {
      "attack": 210,
@@ -13966,6 +14900,12 @@
      "element": 368,
      "affinity": 0,
      "src": "gamewith.ai"
+    },
+    "13": {
+     "attack": 857,
+     "element": 428,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -13982,7 +14922,7 @@
    "type": "弓",
    "element": "龍",
    "baseRarity": 4,
-   "maxRarity": 12,
+   "maxRarity": 13,
    "stats": {
     "4": {
      "attack": 111,
@@ -14037,6 +14977,12 @@
      "element": 360,
      "affinity": 0,
      "src": "gamewith.ai"
+    },
+    "13": {
+     "attack": 839,
+     "element": 419,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -14053,13 +14999,25 @@
    "type": "ヘビィボウガン",
    "element": "雷",
    "baseRarity": 10,
-   "maxRarity": 10,
+   "maxRarity": 12,
    "stats": {
     "10": {
      "attack": 521,
      "element": 261,
      "affinity": 0,
      "src": "Game8"
+    },
+    "11": {
+     "attack": 624,
+     "element": 312,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "12": {
+     "attack": 735,
+     "element": 368,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -14078,7 +15036,7 @@
    "type": "双剣",
    "element": "雷",
    "baseRarity": 10,
-   "maxRarity": 10,
+   "maxRarity": 12,
    "stats": {
     "10": {
      "attack": 538,
@@ -14086,6 +15044,18 @@
      "affinity": 0,
      "src": "Game8（2026-11-10）。属性値は空欄のため同じ武器のほかのレアの比で推定",
      "est": true
+    },
+    "11": {
+     "attack": 643,
+     "element": 322,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "12": {
+     "attack": 759,
+     "element": 379,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -14104,7 +15074,7 @@
    "type": "太刀",
    "element": "雷",
    "baseRarity": 10,
-   "maxRarity": 10,
+   "maxRarity": 12,
    "stats": {
     "10": {
      "attack": 538,
@@ -14112,6 +15082,18 @@
      "affinity": 0,
      "src": "Game8（2026-11-10）。属性値は空欄のため同じ武器のほかのレアの比で推定",
      "est": true
+    },
+    "11": {
+     "attack": 643,
+     "element": 322,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "12": {
+     "attack": 759,
+     "element": 379,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -14130,7 +15112,7 @@
    "type": "双剣",
    "element": "水",
    "baseRarity": 11,
-   "maxRarity": 11,
+   "maxRarity": 13,
    "stats": {
     "11": {
      "attack": 681,
@@ -14138,6 +15120,18 @@
      "affinity": -9.2,
      "src": "Game8（属性値は空欄のため 攻撃÷2 で推定）",
      "est": true
+    },
+    "12": {
+     "attack": 803,
+     "element": 401,
+     "affinity": -8.8,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 935,
+     "element": 468,
+     "affinity": -8.4,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -14155,7 +15149,7 @@
    "type": "ハンマー",
    "element": "水",
    "baseRarity": 11,
-   "maxRarity": 11,
+   "maxRarity": 13,
    "stats": {
     "11": {
      "attack": 681,
@@ -14163,6 +15157,18 @@
      "affinity": -9.2,
      "src": "Game8（属性値は空欄のため 攻撃÷2 で推定）",
      "est": true
+    },
+    "12": {
+     "attack": 803,
+     "element": 401,
+     "affinity": -8.8,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 935,
+     "element": 468,
+     "affinity": -8.4,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -14180,7 +15186,7 @@
    "type": "チャージアックス",
    "element": "水",
    "baseRarity": 11,
-   "maxRarity": 11,
+   "maxRarity": 13,
    "stats": {
     "11": {
      "attack": 681,
@@ -14188,6 +15194,18 @@
      "affinity": -9.2,
      "src": "Game8（属性値は空欄のため 攻撃÷2 で推定）",
      "est": true
+    },
+    "12": {
+     "attack": 803,
+     "element": 401,
+     "affinity": -8.8,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 935,
+     "element": 468,
+     "affinity": -8.4,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -14205,13 +15223,25 @@
    "type": "ヘビィボウガン",
    "element": "水",
    "baseRarity": 11,
-   "maxRarity": 11,
+   "maxRarity": 13,
    "stats": {
     "11": {
      "attack": 681,
      "element": 340,
      "affinity": -9.2,
      "src": "Game8"
+    },
+    "12": {
+     "attack": 803,
+     "element": 401,
+     "affinity": -8.8,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 935,
+     "element": 468,
+     "affinity": -8.4,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -14229,7 +15259,7 @@
    "type": "弓",
    "element": "水",
    "baseRarity": 11,
-   "maxRarity": 11,
+   "maxRarity": 13,
    "stats": {
     "11": {
      "attack": 681,
@@ -14237,6 +15267,18 @@
      "affinity": -9.2,
      "src": "Game8（属性値は空欄のため 攻撃÷2 で推定）",
      "est": true
+    },
+    "12": {
+     "attack": 803,
+     "element": 401,
+     "affinity": -8.8,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 935,
+     "element": 468,
+     "affinity": -8.4,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -14254,7 +15296,7 @@
    "type": "双剣",
    "element": "龍",
    "baseRarity": 10,
-   "maxRarity": 10,
+   "maxRarity": 13,
    "stats": {
     "10": {
      "attack": 498,
@@ -14262,6 +15304,24 @@
      "affinity": 0,
      "src": "Game8（2026-11-12）。属性値は空欄のため同じ武器のほかのレアの比で推定",
      "est": true
+    },
+    "11": {
+     "attack": 595,
+     "element": 298,
+     "affinity": 5.1,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "12": {
+     "attack": 702,
+     "element": 351,
+     "affinity": 5.4,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 818,
+     "element": 409,
+     "affinity": 5.7,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -14280,7 +15340,7 @@
    "type": "ランス",
    "element": "龍",
    "baseRarity": 10,
-   "maxRarity": 10,
+   "maxRarity": 13,
    "stats": {
     "10": {
      "attack": 526,
@@ -14288,6 +15348,24 @@
      "affinity": 0,
      "src": "Game8（2026-11-12）。属性値は空欄のため同じ武器のほかのレアの比で推定",
      "est": true
+    },
+    "11": {
+     "attack": 629,
+     "element": 315,
+     "affinity": 2.55,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "12": {
+     "attack": 742,
+     "element": 371,
+     "affinity": 2.7,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 865,
+     "element": 432,
+     "affinity": 2.85,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -14306,7 +15384,7 @@
    "type": "チャージアックス",
    "element": "龍",
    "baseRarity": 10,
-   "maxRarity": 10,
+   "maxRarity": 13,
    "stats": {
     "10": {
      "attack": 498,
@@ -14314,6 +15392,24 @@
      "affinity": 0,
      "src": "Game8（2026-11-12）。属性値は空欄のため同じ武器のほかのレアの比で推定",
      "est": true
+    },
+    "11": {
+     "attack": 595,
+     "element": 298,
+     "affinity": 5.1,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "12": {
+     "attack": 702,
+     "element": 351,
+     "affinity": 5.4,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 818,
+     "element": 409,
+     "affinity": 5.7,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -14332,11 +15428,11 @@
    "type": "弓",
    "element": "火",
    "baseRarity": 9,
-   "maxRarity": 11,
+   "maxRarity": 14,
    "stats": {
-    "11": {
-     "attack": 656,
-     "element": 328,
+    "9": {
+     "attack": 452,
+     "element": 226,
      "affinity": 0,
      "src": "Game8"
     },
@@ -14346,11 +15442,29 @@
      "affinity": 0,
      "src": "Game8"
     },
-    "9": {
-     "attack": 452,
-     "element": 226,
+    "11": {
+     "attack": 656,
+     "element": 328,
      "affinity": 0,
      "src": "Game8"
+    },
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -14373,11 +15487,11 @@
    "type": "弓",
    "element": "水",
    "baseRarity": 9,
-   "maxRarity": 11,
+   "maxRarity": 14,
    "stats": {
-    "11": {
-     "attack": 656,
-     "element": 328,
+    "9": {
+     "attack": 452,
+     "element": 226,
      "affinity": 0,
      "src": "Game8"
     },
@@ -14387,11 +15501,29 @@
      "affinity": 0,
      "src": "Game8"
     },
-    "9": {
-     "attack": 452,
-     "element": 226,
+    "11": {
+     "attack": 656,
+     "element": 328,
      "affinity": 0,
      "src": "Game8"
+    },
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -14414,11 +15546,11 @@
    "type": "弓",
    "element": "雷",
    "baseRarity": 9,
-   "maxRarity": 11,
+   "maxRarity": 14,
    "stats": {
-    "11": {
-     "attack": 656,
-     "element": 328,
+    "9": {
+     "attack": 452,
+     "element": 226,
      "affinity": 0,
      "src": "Game8"
     },
@@ -14428,11 +15560,29 @@
      "affinity": 0,
      "src": "Game8"
     },
-    "9": {
-     "attack": 452,
-     "element": 226,
+    "11": {
+     "attack": 656,
+     "element": 328,
      "affinity": 0,
      "src": "Game8"
+    },
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -14455,11 +15605,11 @@
    "type": "弓",
    "element": "氷",
    "baseRarity": 9,
-   "maxRarity": 11,
+   "maxRarity": 14,
    "stats": {
-    "11": {
-     "attack": 656,
-     "element": 328,
+    "9": {
+     "attack": 452,
+     "element": 226,
      "affinity": 0,
      "src": "Game8"
     },
@@ -14469,11 +15619,29 @@
      "affinity": 0,
      "src": "Game8"
     },
-    "9": {
-     "attack": 452,
-     "element": 226,
+    "11": {
+     "attack": 656,
+     "element": 328,
      "affinity": 0,
      "src": "Game8"
+    },
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -14496,11 +15664,11 @@
    "type": "弓",
    "element": "龍",
    "baseRarity": 9,
-   "maxRarity": 11,
+   "maxRarity": 14,
    "stats": {
-    "11": {
-     "attack": 656,
-     "element": 328,
+    "9": {
+     "attack": 452,
+     "element": 226,
      "affinity": 0,
      "src": "Game8"
     },
@@ -14510,11 +15678,29 @@
      "affinity": 0,
      "src": "Game8"
     },
-    "9": {
-     "attack": 452,
-     "element": 226,
+    "11": {
+     "attack": 656,
+     "element": 328,
      "affinity": 0,
      "src": "Game8"
+    },
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -14537,11 +15723,11 @@
    "type": "ヘビィボウガン",
    "element": "火",
    "baseRarity": 9,
-   "maxRarity": 11,
+   "maxRarity": 14,
    "stats": {
-    "11": {
-     "attack": 656,
-     "element": 328,
+    "9": {
+     "attack": 452,
+     "element": 226,
      "affinity": 0,
      "src": "Game8"
     },
@@ -14551,11 +15737,29 @@
      "affinity": 0,
      "src": "Game8"
     },
-    "9": {
-     "attack": 452,
-     "element": 226,
+    "11": {
+     "attack": 656,
+     "element": 328,
      "affinity": 0,
      "src": "Game8"
+    },
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -14578,11 +15782,11 @@
    "type": "ヘビィボウガン",
    "element": "水",
    "baseRarity": 9,
-   "maxRarity": 11,
+   "maxRarity": 14,
    "stats": {
-    "11": {
-     "attack": 656,
-     "element": 328,
+    "9": {
+     "attack": 452,
+     "element": 226,
      "affinity": 0,
      "src": "Game8"
     },
@@ -14592,11 +15796,29 @@
      "affinity": 0,
      "src": "Game8"
     },
-    "9": {
-     "attack": 452,
-     "element": 226,
+    "11": {
+     "attack": 656,
+     "element": 328,
      "affinity": 0,
      "src": "Game8"
+    },
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -14619,11 +15841,11 @@
    "type": "ヘビィボウガン",
    "element": "雷",
    "baseRarity": 9,
-   "maxRarity": 11,
+   "maxRarity": 14,
    "stats": {
-    "11": {
-     "attack": 656,
-     "element": 328,
+    "9": {
+     "attack": 452,
+     "element": 226,
      "affinity": 0,
      "src": "Game8"
     },
@@ -14633,11 +15855,29 @@
      "affinity": 0,
      "src": "Game8"
     },
-    "9": {
-     "attack": 452,
-     "element": 226,
+    "11": {
+     "attack": 656,
+     "element": 328,
      "affinity": 0,
      "src": "Game8"
+    },
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -14660,11 +15900,11 @@
    "type": "ヘビィボウガン",
    "element": "氷",
    "baseRarity": 9,
-   "maxRarity": 11,
+   "maxRarity": 14,
    "stats": {
-    "11": {
-     "attack": 656,
-     "element": 328,
+    "9": {
+     "attack": 452,
+     "element": 226,
      "affinity": 0,
      "src": "Game8"
     },
@@ -14674,11 +15914,29 @@
      "affinity": 0,
      "src": "Game8"
     },
-    "9": {
-     "attack": 452,
-     "element": 226,
+    "11": {
+     "attack": 656,
+     "element": 328,
      "affinity": 0,
      "src": "Game8"
+    },
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -14701,11 +15959,11 @@
    "type": "ヘビィボウガン",
    "element": "龍",
    "baseRarity": 9,
-   "maxRarity": 11,
+   "maxRarity": 14,
    "stats": {
-    "11": {
-     "attack": 656,
-     "element": 328,
+    "9": {
+     "attack": 452,
+     "element": 226,
      "affinity": 0,
      "src": "Game8"
     },
@@ -14715,11 +15973,29 @@
      "affinity": 0,
      "src": "Game8"
     },
-    "9": {
-     "attack": 452,
-     "element": 226,
+    "11": {
+     "attack": 656,
+     "element": 328,
      "affinity": 0,
      "src": "Game8"
+    },
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -14742,11 +16018,11 @@
    "type": "チャージアックス",
    "element": "火",
    "baseRarity": 9,
-   "maxRarity": 11,
+   "maxRarity": 14,
    "stats": {
-    "11": {
-     "attack": 656,
-     "element": 328,
+    "9": {
+     "attack": 452,
+     "element": 226,
      "affinity": 0,
      "src": "Game8"
     },
@@ -14756,11 +16032,29 @@
      "affinity": 0,
      "src": "Game8"
     },
-    "9": {
-     "attack": 452,
-     "element": 226,
+    "11": {
+     "attack": 656,
+     "element": 328,
      "affinity": 0,
      "src": "Game8"
+    },
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -14783,11 +16077,11 @@
    "type": "チャージアックス",
    "element": "水",
    "baseRarity": 9,
-   "maxRarity": 11,
+   "maxRarity": 14,
    "stats": {
-    "11": {
-     "attack": 656,
-     "element": 328,
+    "9": {
+     "attack": 452,
+     "element": 226,
      "affinity": 0,
      "src": "Game8"
     },
@@ -14797,11 +16091,29 @@
      "affinity": 0,
      "src": "Game8"
     },
-    "9": {
-     "attack": 452,
-     "element": 226,
+    "11": {
+     "attack": 656,
+     "element": 328,
      "affinity": 0,
      "src": "Game8"
+    },
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -14824,11 +16136,11 @@
    "type": "チャージアックス",
    "element": "雷",
    "baseRarity": 9,
-   "maxRarity": 11,
+   "maxRarity": 14,
    "stats": {
-    "11": {
-     "attack": 656,
-     "element": 328,
+    "9": {
+     "attack": 452,
+     "element": 226,
      "affinity": 0,
      "src": "Game8"
     },
@@ -14838,11 +16150,29 @@
      "affinity": 0,
      "src": "Game8"
     },
-    "9": {
-     "attack": 452,
-     "element": 226,
+    "11": {
+     "attack": 656,
+     "element": 328,
      "affinity": 0,
      "src": "Game8"
+    },
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -14865,11 +16195,11 @@
    "type": "チャージアックス",
    "element": "氷",
    "baseRarity": 9,
-   "maxRarity": 11,
+   "maxRarity": 14,
    "stats": {
-    "11": {
-     "attack": 656,
-     "element": 328,
+    "9": {
+     "attack": 452,
+     "element": 226,
      "affinity": 0,
      "src": "Game8"
     },
@@ -14879,11 +16209,29 @@
      "affinity": 0,
      "src": "Game8"
     },
-    "9": {
-     "attack": 452,
-     "element": 226,
+    "11": {
+     "attack": 656,
+     "element": 328,
      "affinity": 0,
      "src": "Game8"
+    },
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -14906,11 +16254,11 @@
    "type": "チャージアックス",
    "element": "龍",
    "baseRarity": 9,
-   "maxRarity": 11,
+   "maxRarity": 14,
    "stats": {
-    "11": {
-     "attack": 656,
-     "element": 328,
+    "9": {
+     "attack": 452,
+     "element": 226,
      "affinity": 0,
      "src": "Game8"
     },
@@ -14920,11 +16268,29 @@
      "affinity": 0,
      "src": "Game8"
     },
-    "9": {
-     "attack": 452,
-     "element": 226,
+    "11": {
+     "attack": 656,
+     "element": 328,
      "affinity": 0,
      "src": "Game8"
+    },
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -14947,11 +16313,11 @@
    "type": "ランス",
    "element": "火",
    "baseRarity": 9,
-   "maxRarity": 11,
+   "maxRarity": 14,
    "stats": {
-    "11": {
-     "attack": 656,
-     "element": 328,
+    "9": {
+     "attack": 452,
+     "element": 226,
      "affinity": 0,
      "src": "Game8"
     },
@@ -14961,11 +16327,29 @@
      "affinity": 0,
      "src": "Game8"
     },
-    "9": {
-     "attack": 452,
-     "element": 226,
+    "11": {
+     "attack": 656,
+     "element": 328,
      "affinity": 0,
      "src": "Game8"
+    },
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -14988,11 +16372,11 @@
    "type": "ランス",
    "element": "水",
    "baseRarity": 9,
-   "maxRarity": 11,
+   "maxRarity": 14,
    "stats": {
-    "11": {
-     "attack": 656,
-     "element": 328,
+    "9": {
+     "attack": 452,
+     "element": 226,
      "affinity": 0,
      "src": "Game8"
     },
@@ -15002,11 +16386,29 @@
      "affinity": 0,
      "src": "Game8"
     },
-    "9": {
-     "attack": 452,
-     "element": 226,
+    "11": {
+     "attack": 656,
+     "element": 328,
      "affinity": 0,
      "src": "Game8"
+    },
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -15029,11 +16431,11 @@
    "type": "ランス",
    "element": "雷",
    "baseRarity": 9,
-   "maxRarity": 11,
+   "maxRarity": 14,
    "stats": {
-    "11": {
-     "attack": 656,
-     "element": 328,
+    "9": {
+     "attack": 452,
+     "element": 226,
      "affinity": 0,
      "src": "Game8"
     },
@@ -15043,11 +16445,29 @@
      "affinity": 0,
      "src": "Game8"
     },
-    "9": {
-     "attack": 452,
-     "element": 226,
+    "11": {
+     "attack": 656,
+     "element": 328,
      "affinity": 0,
      "src": "Game8"
+    },
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -15070,11 +16490,11 @@
    "type": "ランス",
    "element": "氷",
    "baseRarity": 9,
-   "maxRarity": 11,
+   "maxRarity": 14,
    "stats": {
-    "11": {
-     "attack": 656,
-     "element": 328,
+    "9": {
+     "attack": 452,
+     "element": 226,
      "affinity": 0,
      "src": "Game8"
     },
@@ -15084,11 +16504,29 @@
      "affinity": 0,
      "src": "Game8"
     },
-    "9": {
-     "attack": 452,
-     "element": 226,
+    "11": {
+     "attack": 656,
+     "element": 328,
      "affinity": 0,
      "src": "Game8"
+    },
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -15111,11 +16549,11 @@
    "type": "ランス",
    "element": "龍",
    "baseRarity": 9,
-   "maxRarity": 11,
+   "maxRarity": 14,
    "stats": {
-    "11": {
-     "attack": 656,
-     "element": 328,
+    "9": {
+     "attack": 452,
+     "element": 226,
      "affinity": 0,
      "src": "Game8"
     },
@@ -15125,11 +16563,29 @@
      "affinity": 0,
      "src": "Game8"
     },
-    "9": {
-     "attack": 452,
-     "element": 226,
+    "11": {
+     "attack": 656,
+     "element": 328,
      "affinity": 0,
      "src": "Game8"
+    },
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -15152,11 +16608,11 @@
    "type": "ハンマー",
    "element": "火",
    "baseRarity": 9,
-   "maxRarity": 11,
+   "maxRarity": 14,
    "stats": {
-    "11": {
-     "attack": 656,
-     "element": 328,
+    "9": {
+     "attack": 452,
+     "element": 226,
      "affinity": 0,
      "src": "Game8"
     },
@@ -15166,11 +16622,29 @@
      "affinity": 0,
      "src": "Game8"
     },
-    "9": {
-     "attack": 452,
-     "element": 226,
+    "11": {
+     "attack": 656,
+     "element": 328,
      "affinity": 0,
      "src": "Game8"
+    },
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -15193,11 +16667,11 @@
    "type": "ハンマー",
    "element": "水",
    "baseRarity": 9,
-   "maxRarity": 11,
+   "maxRarity": 14,
    "stats": {
-    "11": {
-     "attack": 656,
-     "element": 328,
+    "9": {
+     "attack": 452,
+     "element": 226,
      "affinity": 0,
      "src": "Game8"
     },
@@ -15207,11 +16681,29 @@
      "affinity": 0,
      "src": "Game8"
     },
-    "9": {
-     "attack": 452,
-     "element": 226,
+    "11": {
+     "attack": 656,
+     "element": 328,
      "affinity": 0,
      "src": "Game8"
+    },
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -15234,11 +16726,11 @@
    "type": "ハンマー",
    "element": "雷",
    "baseRarity": 9,
-   "maxRarity": 11,
+   "maxRarity": 14,
    "stats": {
-    "11": {
-     "attack": 656,
-     "element": 328,
+    "9": {
+     "attack": 452,
+     "element": 226,
      "affinity": 0,
      "src": "Game8"
     },
@@ -15248,11 +16740,29 @@
      "affinity": 0,
      "src": "Game8"
     },
-    "9": {
-     "attack": 452,
-     "element": 226,
+    "11": {
+     "attack": 656,
+     "element": 328,
      "affinity": 0,
      "src": "Game8"
+    },
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -15275,11 +16785,11 @@
    "type": "ハンマー",
    "element": "氷",
    "baseRarity": 9,
-   "maxRarity": 11,
+   "maxRarity": 14,
    "stats": {
-    "11": {
-     "attack": 656,
-     "element": 328,
+    "9": {
+     "attack": 452,
+     "element": 226,
      "affinity": 0,
      "src": "Game8"
     },
@@ -15289,11 +16799,29 @@
      "affinity": 0,
      "src": "Game8"
     },
-    "9": {
-     "attack": 452,
-     "element": 226,
+    "11": {
+     "attack": 656,
+     "element": 328,
      "affinity": 0,
      "src": "Game8"
+    },
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -15316,11 +16844,11 @@
    "type": "ハンマー",
    "element": "龍",
    "baseRarity": 9,
-   "maxRarity": 11,
+   "maxRarity": 14,
    "stats": {
-    "11": {
-     "attack": 656,
-     "element": 328,
+    "9": {
+     "attack": 452,
+     "element": 226,
      "affinity": 0,
      "src": "Game8"
     },
@@ -15330,11 +16858,29 @@
      "affinity": 0,
      "src": "Game8"
     },
-    "9": {
-     "attack": 452,
-     "element": 226,
+    "11": {
+     "attack": 656,
+     "element": 328,
      "affinity": 0,
      "src": "Game8"
+    },
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -15357,11 +16903,11 @@
    "type": "双剣",
    "element": "火",
    "baseRarity": 9,
-   "maxRarity": 11,
+   "maxRarity": 14,
    "stats": {
-    "11": {
-     "attack": 656,
-     "element": 328,
+    "9": {
+     "attack": 452,
+     "element": 226,
      "affinity": 0,
      "src": "Game8"
     },
@@ -15371,11 +16917,29 @@
      "affinity": 0,
      "src": "Game8"
     },
-    "9": {
-     "attack": 452,
-     "element": 226,
+    "11": {
+     "attack": 656,
+     "element": 328,
      "affinity": 0,
      "src": "Game8"
+    },
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -15398,11 +16962,11 @@
    "type": "双剣",
    "element": "水",
    "baseRarity": 9,
-   "maxRarity": 11,
+   "maxRarity": 14,
    "stats": {
-    "11": {
-     "attack": 656,
-     "element": 328,
+    "9": {
+     "attack": 452,
+     "element": 226,
      "affinity": 0,
      "src": "Game8"
     },
@@ -15412,11 +16976,29 @@
      "affinity": 0,
      "src": "Game8"
     },
-    "9": {
-     "attack": 452,
-     "element": 226,
+    "11": {
+     "attack": 656,
+     "element": 328,
      "affinity": 0,
      "src": "Game8"
+    },
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -15439,11 +17021,11 @@
    "type": "双剣",
    "element": "雷",
    "baseRarity": 9,
-   "maxRarity": 11,
+   "maxRarity": 14,
    "stats": {
-    "11": {
-     "attack": 656,
-     "element": 328,
+    "9": {
+     "attack": 452,
+     "element": 226,
      "affinity": 0,
      "src": "Game8"
     },
@@ -15453,11 +17035,29 @@
      "affinity": 0,
      "src": "Game8"
     },
-    "9": {
-     "attack": 452,
-     "element": 226,
+    "11": {
+     "attack": 656,
+     "element": 328,
      "affinity": 0,
      "src": "Game8"
+    },
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -15480,11 +17080,11 @@
    "type": "双剣",
    "element": "氷",
    "baseRarity": 9,
-   "maxRarity": 11,
+   "maxRarity": 14,
    "stats": {
-    "11": {
-     "attack": 656,
-     "element": 328,
+    "9": {
+     "attack": 452,
+     "element": 226,
      "affinity": 0,
      "src": "Game8"
     },
@@ -15494,11 +17094,29 @@
      "affinity": 0,
      "src": "Game8"
     },
-    "9": {
-     "attack": 452,
-     "element": 226,
+    "11": {
+     "attack": 656,
+     "element": 328,
      "affinity": 0,
      "src": "Game8"
+    },
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -15521,11 +17139,11 @@
    "type": "双剣",
    "element": "龍",
    "baseRarity": 9,
-   "maxRarity": 11,
+   "maxRarity": 14,
    "stats": {
-    "11": {
-     "attack": 656,
-     "element": 328,
+    "9": {
+     "attack": 452,
+     "element": 226,
      "affinity": 0,
      "src": "Game8"
     },
@@ -15535,11 +17153,29 @@
      "affinity": 0,
      "src": "Game8"
     },
-    "9": {
-     "attack": 452,
-     "element": 226,
+    "11": {
+     "attack": 656,
+     "element": 328,
      "affinity": 0,
      "src": "Game8"
+    },
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -15562,11 +17198,11 @@
    "type": "太刀",
    "element": "火",
    "baseRarity": 9,
-   "maxRarity": 11,
+   "maxRarity": 14,
    "stats": {
-    "11": {
-     "attack": 656,
-     "element": 328,
+    "9": {
+     "attack": 452,
+     "element": 226,
      "affinity": 0,
      "src": "Game8"
     },
@@ -15576,11 +17212,29 @@
      "affinity": 0,
      "src": "Game8"
     },
-    "9": {
-     "attack": 452,
-     "element": 226,
+    "11": {
+     "attack": 656,
+     "element": 328,
      "affinity": 0,
      "src": "Game8"
+    },
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -15603,11 +17257,11 @@
    "type": "太刀",
    "element": "水",
    "baseRarity": 9,
-   "maxRarity": 11,
+   "maxRarity": 14,
    "stats": {
-    "11": {
-     "attack": 656,
-     "element": 328,
+    "9": {
+     "attack": 452,
+     "element": 226,
      "affinity": 0,
      "src": "Game8"
     },
@@ -15617,11 +17271,29 @@
      "affinity": 0,
      "src": "Game8"
     },
-    "9": {
-     "attack": 452,
-     "element": 226,
+    "11": {
+     "attack": 656,
+     "element": 328,
      "affinity": 0,
      "src": "Game8"
+    },
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -15644,11 +17316,11 @@
    "type": "太刀",
    "element": "雷",
    "baseRarity": 9,
-   "maxRarity": 11,
+   "maxRarity": 14,
    "stats": {
-    "11": {
-     "attack": 656,
-     "element": 328,
+    "9": {
+     "attack": 452,
+     "element": 226,
      "affinity": 0,
      "src": "Game8"
     },
@@ -15658,11 +17330,29 @@
      "affinity": 0,
      "src": "Game8"
     },
-    "9": {
-     "attack": 452,
-     "element": 226,
+    "11": {
+     "attack": 656,
+     "element": 328,
      "affinity": 0,
      "src": "Game8"
+    },
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -15685,11 +17375,11 @@
    "type": "太刀",
    "element": "氷",
    "baseRarity": 9,
-   "maxRarity": 11,
+   "maxRarity": 14,
    "stats": {
-    "11": {
-     "attack": 656,
-     "element": 328,
+    "9": {
+     "attack": 452,
+     "element": 226,
      "affinity": 0,
      "src": "Game8"
     },
@@ -15699,11 +17389,29 @@
      "affinity": 0,
      "src": "Game8"
     },
-    "9": {
-     "attack": 452,
-     "element": 226,
+    "11": {
+     "attack": 656,
+     "element": 328,
      "affinity": 0,
      "src": "Game8"
+    },
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -15726,11 +17434,11 @@
    "type": "太刀",
    "element": "龍",
    "baseRarity": 9,
-   "maxRarity": 11,
+   "maxRarity": 14,
    "stats": {
-    "11": {
-     "attack": 656,
-     "element": 328,
+    "9": {
+     "attack": 452,
+     "element": 226,
      "affinity": 0,
      "src": "Game8"
     },
@@ -15740,11 +17448,29 @@
      "affinity": 0,
      "src": "Game8"
     },
-    "9": {
-     "attack": 452,
-     "element": 226,
+    "11": {
+     "attack": 656,
+     "element": 328,
      "affinity": 0,
      "src": "Game8"
+    },
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -15767,11 +17493,11 @@
    "type": "大剣",
    "element": "火",
    "baseRarity": 9,
-   "maxRarity": 11,
+   "maxRarity": 14,
    "stats": {
-    "11": {
-     "attack": 656,
-     "element": 328,
+    "9": {
+     "attack": 452,
+     "element": 226,
      "affinity": 0,
      "src": "Game8"
     },
@@ -15781,11 +17507,29 @@
      "affinity": 0,
      "src": "Game8"
     },
-    "9": {
-     "attack": 452,
-     "element": 226,
+    "11": {
+     "attack": 656,
+     "element": 328,
      "affinity": 0,
      "src": "Game8"
+    },
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -15808,11 +17552,11 @@
    "type": "大剣",
    "element": "水",
    "baseRarity": 9,
-   "maxRarity": 11,
+   "maxRarity": 14,
    "stats": {
-    "11": {
-     "attack": 656,
-     "element": 328,
+    "9": {
+     "attack": 452,
+     "element": 226,
      "affinity": 0,
      "src": "Game8"
     },
@@ -15822,11 +17566,29 @@
      "affinity": 0,
      "src": "Game8"
     },
-    "9": {
-     "attack": 452,
-     "element": 226,
+    "11": {
+     "attack": 656,
+     "element": 328,
      "affinity": 0,
      "src": "Game8"
+    },
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -15849,11 +17611,11 @@
    "type": "大剣",
    "element": "雷",
    "baseRarity": 9,
-   "maxRarity": 11,
+   "maxRarity": 14,
    "stats": {
-    "11": {
-     "attack": 656,
-     "element": 328,
+    "9": {
+     "attack": 452,
+     "element": 226,
      "affinity": 0,
      "src": "Game8"
     },
@@ -15863,11 +17625,29 @@
      "affinity": 0,
      "src": "Game8"
     },
-    "9": {
-     "attack": 452,
-     "element": 226,
+    "11": {
+     "attack": 656,
+     "element": 328,
      "affinity": 0,
      "src": "Game8"
+    },
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -15890,11 +17670,11 @@
    "type": "大剣",
    "element": "氷",
    "baseRarity": 9,
-   "maxRarity": 11,
+   "maxRarity": 14,
    "stats": {
-    "11": {
-     "attack": 656,
-     "element": 328,
+    "9": {
+     "attack": 452,
+     "element": 226,
      "affinity": 0,
      "src": "Game8"
     },
@@ -15904,11 +17684,29 @@
      "affinity": 0,
      "src": "Game8"
     },
-    "9": {
-     "attack": 452,
-     "element": 226,
+    "11": {
+     "attack": 656,
+     "element": 328,
      "affinity": 0,
      "src": "Game8"
+    },
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,
@@ -15931,11 +17729,11 @@
    "type": "大剣",
    "element": "龍",
    "baseRarity": 9,
-   "maxRarity": 11,
+   "maxRarity": 14,
    "stats": {
-    "11": {
-     "attack": 656,
-     "element": 328,
+    "9": {
+     "attack": 452,
+     "element": 226,
      "affinity": 0,
      "src": "Game8"
     },
@@ -15945,11 +17743,29 @@
      "affinity": 0,
      "src": "Game8"
     },
-    "9": {
-     "attack": 452,
-     "element": 226,
+    "11": {
+     "attack": 656,
+     "element": 328,
      "affinity": 0,
      "src": "Game8"
+    },
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0,
+     "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
     }
    },
    "affinity": 0,

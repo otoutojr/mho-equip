@@ -258,6 +258,9 @@ def main():
         OUT.write_text(json.dumps({'updated': datetime.date.today().isoformat(), 'source': 'weapons_full.json（gamewith.ai・GameWith・game8.co）', 'weapons': out}, ensure_ascii=False, indent=1), encoding='utf-8')
         print('weapons', len(out), 'estimated rarities', sum(1 for w in out for s in w['stats'].values() if s.get('est')),
               'max rarity', dict(sorted(__import__('collections').Counter(w['maxRarity'] for w in out).items())))
+        # 攻略サイトのデータを作り直すと消えるので、アウかるのレア12〜14などの数値（tools/observed）を最後に重ねる
+        import apply_observed
+        apply_observed.apply()
         return
     d = json.loads(RAW.read_text(encoding='utf-8'))
     rules = RAW.parent / 'rarity_rules.json'

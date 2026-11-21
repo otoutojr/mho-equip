@@ -1,0 +1,2767 @@
+{
+ "observedAt": "2026-11-21",
+ "label": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）",
+ "how": "アウかるの装備最適化ページに埋め込まれた武器データ（レアごとの攻撃力・属性値・会心率）から、こちらの武器名と同じ名前のレアだけを抜き出した。こちらに無いレア（12〜14）を足し、数値が違うレア（推定値・会心率）を置き換える。状態異常の武器は、アウかる側に状態異常値が無いので対象外",
+ "weaponStats": {
+  "ジャグラスハッカー": {
+   "maxRarity": 13,
+   "stats": {
+    "7": {
+     "attack": 268,
+     "element": 134,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 339,
+     "element": 170,
+     "affinity": 0
+    },
+    "10": {
+     "attack": 510,
+     "element": 255,
+     "affinity": 0
+    },
+    "11": {
+     "attack": 610,
+     "element": 305,
+     "affinity": 0
+    },
+    "12": {
+     "attack": 720,
+     "element": 360,
+     "affinity": 0
+    },
+    "13": {
+     "attack": 839,
+     "element": 419,
+     "affinity": 0
+    }
+   }
+  },
+  "フラムエルヘレヴ": {
+   "maxRarity": 7,
+   "stats": {
+    "3": {
+     "attack": 79,
+     "element": 40,
+     "affinity": -4.65
+    },
+    "5": {
+     "attack": 157,
+     "element": 79,
+     "affinity": -4.35
+    },
+    "7": {
+     "attack": 274,
+     "element": 137,
+     "affinity": -4.05
+    }
+   }
+  },
+  "フラムエルヘレヴ改": {
+   "maxRarity": 13,
+   "stats": {
+    "8": {
+     "attack": 347,
+     "element": 173,
+     "affinity": -3.9
+    },
+    "9": {
+     "attack": 430,
+     "element": 215,
+     "affinity": -3.75
+    },
+    "10": {
+     "attack": 522,
+     "element": 261,
+     "affinity": -3.6
+    },
+    "11": {
+     "attack": 624,
+     "element": 312,
+     "affinity": -3.45
+    },
+    "12": {
+     "attack": 736,
+     "element": 368,
+     "affinity": -3.3
+    },
+    "13": {
+     "attack": 858,
+     "element": 429,
+     "affinity": -3.15
+    }
+   }
+  },
+  "レッドウィング": {
+   "maxRarity": 13,
+   "stats": {
+    "8": {
+     "attack": 331,
+     "element": 165,
+     "affinity": 4.2
+    },
+    "9": {
+     "attack": 410,
+     "element": 205,
+     "affinity": 4.5
+    },
+    "10": {
+     "attack": 498,
+     "element": 249,
+     "affinity": 4.8
+    },
+    "11": {
+     "attack": 595,
+     "element": 298,
+     "affinity": 5.1
+    },
+    "12": {
+     "attack": 702,
+     "element": 351,
+     "affinity": 5.4
+    },
+    "13": {
+     "attack": 818,
+     "element": 409,
+     "affinity": 5.7
+    }
+   }
+  },
+  "融光種ウォーターゴーレム": {
+   "maxRarity": 13,
+   "stats": {
+    "11": {
+     "attack": 643,
+     "element": 322,
+     "affinity": 0
+    },
+    "12": {
+     "attack": 759,
+     "element": 379,
+     "affinity": 0
+    },
+    "13": {
+     "attack": 884,
+     "element": 442,
+     "affinity": 0
+    }
+   }
+  },
+  "融光種ジャグラスハッカー": {
+   "maxRarity": 12,
+   "stats": {
+    "7": {
+     "attack": 274,
+     "element": 137,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 346,
+     "element": 173,
+     "affinity": 0
+    },
+    "10": {
+     "attack": 521,
+     "element": 261,
+     "affinity": 0
+    },
+    "11": {
+     "attack": 624,
+     "element": 312,
+     "affinity": 0
+    },
+    "12": {
+     "attack": 735,
+     "element": 368,
+     "affinity": 0
+    }
+   }
+  },
+  "融光種フラムエルヘレヴ": {
+   "maxRarity": 7,
+   "stats": {
+    "5": {
+     "attack": 157,
+     "element": 79,
+     "affinity": -4.35
+    },
+    "7": {
+     "attack": 274,
+     "element": 137,
+     "affinity": -4.05
+    }
+   }
+  },
+  "融光種フラムエルヘレヴ改": {
+   "maxRarity": 13,
+   "stats": {
+    "8": {
+     "attack": 347,
+     "element": 173,
+     "affinity": -3.9
+    },
+    "9": {
+     "attack": 430,
+     "element": 215,
+     "affinity": -3.75
+    },
+    "10": {
+     "attack": 522,
+     "element": 261,
+     "affinity": -3.6
+    },
+    "11": {
+     "attack": 624,
+     "element": 312,
+     "affinity": -3.45
+    },
+    "12": {
+     "attack": 736,
+     "element": 368,
+     "affinity": -3.3
+    },
+    "13": {
+     "attack": 858,
+     "element": 429,
+     "affinity": -3.15
+    }
+   }
+  },
+  "融光種ライトニングパニッシュ": {
+   "maxRarity": 13,
+   "stats": {
+    "11": {
+     "attack": 643,
+     "element": 322,
+     "affinity": 0
+    },
+    "12": {
+     "attack": 759,
+     "element": 379,
+     "affinity": 0
+    },
+    "13": {
+     "attack": 884,
+     "element": 442,
+     "affinity": 0
+    }
+   }
+  },
+  "黒鋼の大剣": {
+   "maxRarity": 13,
+   "stats": {
+    "13": {
+     "attack": 818,
+     "element": 409,
+     "affinity": 5.7
+    }
+   }
+  },
+  "龍骨大剣": {
+   "maxRarity": 13,
+   "stats": {
+    "13": {
+     "attack": 839,
+     "element": 419,
+     "affinity": 0
+    }
+   }
+  },
+  "ジャナフシミター": {
+   "maxRarity": 13,
+   "stats": {
+    "8": {
+     "attack": 347,
+     "element": 173,
+     "affinity": -3.9
+    },
+    "9": {
+     "attack": 430,
+     "element": 215,
+     "affinity": -3.75
+    },
+    "10": {
+     "attack": 522,
+     "element": 261,
+     "affinity": -3.6
+    },
+    "11": {
+     "attack": 624,
+     "element": 312,
+     "affinity": -3.45
+    },
+    "12": {
+     "attack": 736,
+     "element": 368,
+     "affinity": -3.3
+    },
+    "13": {
+     "attack": 858,
+     "element": 429,
+     "affinity": -3.15
+    }
+   }
+  },
+  "ブレイズショテル": {
+   "maxRarity": 7,
+   "stats": {
+    "3": {
+     "attack": 79,
+     "element": 40,
+     "affinity": -4.65
+    },
+    "5": {
+     "attack": 157,
+     "element": 79,
+     "affinity": -4.35
+    },
+    "7": {
+     "attack": 274,
+     "element": 137,
+     "affinity": -4.05
+    }
+   }
+  },
+  "融光種カガチノキバ": {
+   "maxRarity": 13,
+   "stats": {
+    "8": {
+     "attack": 318,
+     "element": 159,
+     "affinity": 5.6
+    },
+    "9": {
+     "attack": 394,
+     "element": 197,
+     "affinity": 6
+    },
+    "10": {
+     "attack": 479,
+     "element": 240,
+     "affinity": 6.4
+    },
+    "11": {
+     "attack": 573,
+     "element": 286,
+     "affinity": 6.8
+    },
+    "12": {
+     "attack": 676,
+     "element": 338,
+     "affinity": 7.2
+    },
+    "13": {
+     "attack": 787,
+     "element": 394,
+     "affinity": 7.6
+    }
+   }
+  },
+  "融光種ジャナフシミター": {
+   "maxRarity": 13,
+   "stats": {
+    "8": {
+     "attack": 347,
+     "element": 173,
+     "affinity": -3.9
+    },
+    "9": {
+     "attack": 430,
+     "element": 215,
+     "affinity": -3.75
+    },
+    "10": {
+     "attack": 522,
+     "element": 261,
+     "affinity": -3.6
+    },
+    "11": {
+     "attack": 624,
+     "element": 312,
+     "affinity": -3.45
+    },
+    "12": {
+     "attack": 736,
+     "element": 368,
+     "affinity": -3.3
+    },
+    "13": {
+     "attack": 858,
+     "element": 429,
+     "affinity": -3.15
+    }
+   }
+  },
+  "融光種ディプテルス": {
+   "maxRarity": 13,
+   "stats": {
+    "11": {
+     "attack": 643,
+     "element": 322,
+     "affinity": 0
+    },
+    "12": {
+     "attack": 759,
+     "element": 379,
+     "affinity": 0
+    },
+    "13": {
+     "attack": 884,
+     "element": 442,
+     "affinity": 0
+    }
+   }
+  },
+  "融光種ブレイズショテル": {
+   "maxRarity": 7,
+   "stats": {
+    "5": {
+     "attack": 157,
+     "element": 79,
+     "affinity": -4.35
+    },
+    "7": {
+     "attack": 274,
+     "element": 137,
+     "affinity": -4.05
+    }
+   }
+  },
+  "飛竜刀【朱】": {
+   "maxRarity": 13,
+   "stats": {
+    "8": {
+     "attack": 331,
+     "element": 165,
+     "affinity": 4.2
+    },
+    "9": {
+     "attack": 410,
+     "element": 205,
+     "affinity": 4.5
+    },
+    "10": {
+     "attack": 498,
+     "element": 249,
+     "affinity": 4.8
+    },
+    "11": {
+     "attack": 595,
+     "element": 298,
+     "affinity": 5.1
+    },
+    "12": {
+     "attack": 702,
+     "element": 351,
+     "affinity": 5.4
+    },
+    "13": {
+     "attack": 818,
+     "element": 409,
+     "affinity": 5.7
+    }
+   }
+  },
+  "黒鋼の太刀": {
+   "maxRarity": 13,
+   "stats": {
+    "13": {
+     "attack": 884,
+     "element": 442,
+     "affinity": 0
+    }
+   }
+  },
+  "龍骨刀": {
+   "maxRarity": 13,
+   "stats": {
+    "13": {
+     "attack": 857,
+     "element": 428,
+     "affinity": 0
+    }
+   }
+  },
+  "ジャナフサイクロン": {
+   "maxRarity": 13,
+   "stats": {
+    "8": {
+     "attack": 347,
+     "element": 173,
+     "affinity": -3.9
+    },
+    "9": {
+     "attack": 430,
+     "element": 215,
+     "affinity": -3.75
+    },
+    "10": {
+     "attack": 522,
+     "element": 261,
+     "affinity": -3.6
+    },
+    "11": {
+     "attack": 624,
+     "element": 312,
+     "affinity": -3.45
+    },
+    "12": {
+     "attack": 736,
+     "element": 368,
+     "affinity": -3.3
+    },
+    "13": {
+     "attack": 858,
+     "element": 429,
+     "affinity": -3.15
+    }
+   }
+  },
+  "ブレイズハチェット": {
+   "maxRarity": 7,
+   "stats": {
+    "3": {
+     "attack": 79,
+     "element": 40,
+     "affinity": -4.65
+    },
+    "5": {
+     "attack": 157,
+     "element": 79,
+     "affinity": -4.35
+    },
+    "7": {
+     "attack": 274,
+     "element": 137,
+     "affinity": -4.05
+    }
+   }
+  },
+  "ブロスハチェット": {
+   "maxRarity": 13,
+   "stats": {
+    "8": {
+     "attack": 347,
+     "element": 173,
+     "affinity": -3.9
+    },
+    "9": {
+     "attack": 430,
+     "element": 215,
+     "affinity": -3.75
+    },
+    "10": {
+     "attack": 522,
+     "element": 261,
+     "affinity": -3.6
+    },
+    "11": {
+     "attack": 624,
+     "element": 312,
+     "affinity": -3.45
+    },
+    "12": {
+     "attack": 736,
+     "element": 368,
+     "affinity": -3.3
+    },
+    "13": {
+     "attack": 858,
+     "element": 429,
+     "affinity": -3.15
+    }
+   }
+  },
+  "融光種カガチノツメ": {
+   "maxRarity": 13,
+   "stats": {
+    "8": {
+     "attack": 318,
+     "element": 159,
+     "affinity": 5.6
+    },
+    "9": {
+     "attack": 394,
+     "element": 197,
+     "affinity": 6
+    },
+    "10": {
+     "attack": 479,
+     "element": 240,
+     "affinity": 6.4
+    },
+    "11": {
+     "attack": 573,
+     "element": 286,
+     "affinity": 6.8
+    },
+    "12": {
+     "attack": 676,
+     "element": 338,
+     "affinity": 7.2
+    },
+    "13": {
+     "attack": 787,
+     "element": 394,
+     "affinity": 7.6
+    }
+   }
+  },
+  "融光種ジャナフサイクロン": {
+   "maxRarity": 13,
+   "stats": {
+    "9": {
+     "attack": 430,
+     "element": 215,
+     "affinity": -3.75
+    },
+    "10": {
+     "attack": 522,
+     "element": 261,
+     "affinity": -3.6
+    },
+    "11": {
+     "attack": 624,
+     "element": 312,
+     "affinity": -3.45
+    },
+    "12": {
+     "attack": 736,
+     "element": 368,
+     "affinity": -3.3
+    },
+    "13": {
+     "attack": 858,
+     "element": 429,
+     "affinity": -3.15
+    }
+   }
+  },
+  "融光種ブレイズハチェット": {
+   "maxRarity": 7,
+   "stats": {
+    "5": {
+     "attack": 157,
+     "element": 79,
+     "affinity": -4.35
+    },
+    "7": {
+     "attack": 274,
+     "element": 137,
+     "affinity": -4.05
+    }
+   }
+  },
+  "融光種シュラムハチェット": {
+   "maxRarity": 13,
+   "stats": {
+    "11": {
+     "attack": 624,
+     "element": 312,
+     "affinity": 0
+    },
+    "12": {
+     "attack": 735,
+     "element": 368,
+     "affinity": 0
+    },
+    "13": {
+     "attack": 857,
+     "element": 428,
+     "affinity": 0
+    }
+   }
+  },
+  "血吸いの鎖鎌": {
+   "maxRarity": 13,
+   "stats": {
+    "8": {
+     "attack": 331,
+     "element": 165,
+     "affinity": 4.2
+    },
+    "9": {
+     "attack": 410,
+     "element": 205,
+     "affinity": 4.5
+    },
+    "10": {
+     "attack": 498,
+     "element": 249,
+     "affinity": 4.8
+    },
+    "11": {
+     "attack": 595,
+     "element": 298,
+     "affinity": 5.1
+    },
+    "12": {
+     "attack": 702,
+     "element": 351,
+     "affinity": 5.4
+    },
+    "13": {
+     "attack": 818,
+     "element": 409,
+     "affinity": 5.7
+    }
+   }
+  },
+  "黒鋼の双剣": {
+   "maxRarity": 13,
+   "stats": {
+    "13": {
+     "attack": 839,
+     "element": 419,
+     "affinity": 0
+    }
+   }
+  },
+  "龍骨双刃": {
+   "maxRarity": 13,
+   "stats": {
+    "13": {
+     "attack": 839,
+     "element": 419,
+     "affinity": 0
+    }
+   }
+  },
+  "ガロンダーラ": {
+   "maxRarity": 13,
+   "stats": {
+    "8": {
+     "attack": 331,
+     "element": 165,
+     "affinity": 4.2
+    },
+    "9": {
+     "attack": 410,
+     "element": 205,
+     "affinity": 4.5
+    },
+    "10": {
+     "attack": 498,
+     "element": 249,
+     "affinity": 4.8
+    },
+    "11": {
+     "attack": 595,
+     "element": 298,
+     "affinity": 5.1
+    },
+    "12": {
+     "attack": 702,
+     "element": 351,
+     "affinity": 5.4
+    },
+    "13": {
+     "attack": 818,
+     "element": 409,
+     "affinity": 5.7
+    }
+   }
+  },
+  "レッドテイル": {
+   "maxRarity": 13,
+   "stats": {
+    "8": {
+     "attack": 318,
+     "element": 159,
+     "affinity": 5.6
+    },
+    "9": {
+     "attack": 394,
+     "element": 197,
+     "affinity": 6
+    },
+    "10": {
+     "attack": 479,
+     "element": 240,
+     "affinity": 6.4
+    },
+    "11": {
+     "attack": 573,
+     "element": 286,
+     "affinity": 6.8
+    },
+    "12": {
+     "attack": 676,
+     "element": 338,
+     "affinity": 7.2
+    },
+    "13": {
+     "attack": 787,
+     "element": 394,
+     "affinity": 7.6
+    }
+   }
+  },
+  "融光種ウォータースパイク": {
+   "maxRarity": 13,
+   "stats": {
+    "11": {
+     "attack": 643,
+     "element": 322,
+     "affinity": 0
+    },
+    "12": {
+     "attack": 759,
+     "element": 379,
+     "affinity": 0
+    },
+    "13": {
+     "attack": 884,
+     "element": 442,
+     "affinity": 0
+    }
+   }
+  },
+  "融光種ライトニングパイル": {
+   "maxRarity": 13,
+   "stats": {
+    "11": {
+     "attack": 643,
+     "element": 322,
+     "affinity": 0
+    },
+    "12": {
+     "attack": 759,
+     "element": 379,
+     "affinity": 0
+    },
+    "13": {
+     "attack": 884,
+     "element": 442,
+     "affinity": 0
+    }
+   }
+  },
+  "黒鋼の槍": {
+   "maxRarity": 13,
+   "stats": {
+    "13": {
+     "attack": 857,
+     "element": 428,
+     "affinity": 0
+    }
+   }
+  },
+  "龍骨槍": {
+   "maxRarity": 13,
+   "stats": {
+    "13": {
+     "attack": 839,
+     "element": 419,
+     "affinity": 0
+    }
+   }
+  },
+  "ジャナフストライク": {
+   "maxRarity": 13,
+   "stats": {
+    "8": {
+     "attack": 347,
+     "element": 173,
+     "affinity": -3.9
+    },
+    "9": {
+     "attack": 430,
+     "element": 215,
+     "affinity": -3.75
+    },
+    "10": {
+     "attack": 522,
+     "element": 261,
+     "affinity": -3.6
+    },
+    "11": {
+     "attack": 624,
+     "element": 312,
+     "affinity": -3.45
+    },
+    "12": {
+     "attack": 736,
+     "element": 368,
+     "affinity": -3.3
+    },
+    "13": {
+     "attack": 858,
+     "element": 429,
+     "affinity": -3.15
+    }
+   }
+  },
+  "ブレイズハンマー": {
+   "maxRarity": 7,
+   "stats": {
+    "3": {
+     "attack": 79,
+     "element": 40,
+     "affinity": -4.65
+    },
+    "5": {
+     "attack": 157,
+     "element": 79,
+     "affinity": -4.35
+    },
+    "7": {
+     "attack": 274,
+     "element": 137,
+     "affinity": -4.05
+    }
+   }
+  },
+  "ブロスヘッド": {
+   "maxRarity": 13,
+   "stats": {
+    "8": {
+     "attack": 362,
+     "element": 181,
+     "affinity": -7.8
+    },
+    "9": {
+     "attack": 448,
+     "element": 224,
+     "affinity": -7.5
+    },
+    "10": {
+     "attack": 545,
+     "element": 272,
+     "affinity": -7.2
+    },
+    "11": {
+     "attack": 652,
+     "element": 326,
+     "affinity": -6.9
+    },
+    "12": {
+     "attack": 768,
+     "element": 384,
+     "affinity": -6.6
+    },
+    "13": {
+     "attack": 895,
+     "element": 448,
+     "affinity": -6.3
+    }
+   }
+  },
+  "ライトニングバッシュ": {
+   "maxRarity": 12,
+   "stats": {
+    "7": {
+     "attack": 274,
+     "element": 137,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 346,
+     "element": 173,
+     "affinity": 0
+    },
+    "10": {
+     "attack": 521,
+     "element": 261,
+     "affinity": 0
+    },
+    "11": {
+     "attack": 624,
+     "element": 312,
+     "affinity": 0
+    },
+    "12": {
+     "attack": 735,
+     "element": 368,
+     "affinity": 0
+    }
+   }
+  },
+  "融光種ウォーターバッシュ": {
+   "maxRarity": 13,
+   "stats": {
+    "11": {
+     "attack": 624,
+     "element": 312,
+     "affinity": 0
+    },
+    "12": {
+     "attack": 735,
+     "element": 368,
+     "affinity": 0
+    },
+    "13": {
+     "attack": 857,
+     "element": 428,
+     "affinity": 0
+    }
+   }
+  },
+  "融光種ジャナフストライク": {
+   "maxRarity": 13,
+   "stats": {
+    "8": {
+     "attack": 347,
+     "element": 173,
+     "affinity": -3.9
+    },
+    "9": {
+     "attack": 430,
+     "element": 215,
+     "affinity": -3.75
+    },
+    "10": {
+     "attack": 522,
+     "element": 261,
+     "affinity": -3.6
+    },
+    "11": {
+     "attack": 624,
+     "element": 312,
+     "affinity": -3.45
+    },
+    "12": {
+     "attack": 736,
+     "element": 368,
+     "affinity": -3.3
+    },
+    "13": {
+     "attack": 858,
+     "element": 429,
+     "affinity": -3.15
+    }
+   }
+  },
+  "融光種ブレイズハンマー": {
+   "maxRarity": 7,
+   "stats": {
+    "5": {
+     "attack": 157,
+     "element": 79,
+     "affinity": -4.35
+    },
+    "7": {
+     "attack": 274,
+     "element": 137,
+     "affinity": -4.05
+    }
+   }
+  },
+  "融光種ライトニングバッシュ": {
+   "maxRarity": 13,
+   "stats": {
+    "11": {
+     "attack": 643,
+     "element": 322,
+     "affinity": 0
+    },
+    "12": {
+     "attack": 759,
+     "element": 379,
+     "affinity": 0
+    },
+    "13": {
+     "attack": 884,
+     "element": 442,
+     "affinity": 0
+    }
+   }
+  },
+  "黒鋼の鎚": {
+   "maxRarity": 13,
+   "stats": {
+    "13": {
+     "attack": 839,
+     "element": 419,
+     "affinity": 0
+    }
+   }
+  },
+  "龍骨大槌": {
+   "maxRarity": 13,
+   "stats": {
+    "13": {
+     "attack": 839,
+     "element": 419,
+     "affinity": 0
+    }
+   }
+  },
+  "ブロスウォール": {
+   "maxRarity": 13,
+   "stats": {
+    "8": {
+     "attack": 347,
+     "element": 173,
+     "affinity": -3.9
+    },
+    "9": {
+     "attack": 430,
+     "element": 215,
+     "affinity": -3.75
+    },
+    "10": {
+     "attack": 522,
+     "element": 261,
+     "affinity": -3.6
+    },
+    "11": {
+     "attack": 624,
+     "element": 312,
+     "affinity": -3.45
+    },
+    "12": {
+     "attack": 736,
+     "element": 368,
+     "affinity": -3.3
+    },
+    "13": {
+     "attack": 858,
+     "element": 429,
+     "affinity": -3.15
+    }
+   }
+  },
+  "憎しみの炎": {
+   "maxRarity": 13,
+   "stats": {
+    "8": {
+     "attack": 331,
+     "element": 165,
+     "affinity": 4.2
+    },
+    "9": {
+     "attack": 410,
+     "element": 205,
+     "affinity": 4.5
+    },
+    "10": {
+     "attack": 498,
+     "element": 249,
+     "affinity": 4.8
+    },
+    "11": {
+     "attack": 595,
+     "element": 298,
+     "affinity": 5.1
+    },
+    "12": {
+     "attack": 702,
+     "element": 351,
+     "affinity": 5.4
+    },
+    "13": {
+     "attack": 818,
+     "element": 409,
+     "affinity": 5.7
+    }
+   }
+  },
+  "融光種カガチノカイナ": {
+   "maxRarity": 13,
+   "stats": {
+    "7": {
+     "attack": 276,
+     "element": 138,
+     "affinity": 1.95
+    },
+    "8": {
+     "attack": 350,
+     "element": 175,
+     "affinity": 2.1
+    },
+    "9": {
+     "attack": 433,
+     "element": 217,
+     "affinity": 2.25
+    },
+    "10": {
+     "attack": 526,
+     "element": 263,
+     "affinity": 2.4
+    },
+    "11": {
+     "attack": 629,
+     "element": 315,
+     "affinity": 2.55
+    },
+    "12": {
+     "attack": 742,
+     "element": 371,
+     "affinity": 2.7
+    },
+    "13": {
+     "attack": 865,
+     "element": 432,
+     "affinity": 2.85
+    }
+   }
+  },
+  "融光種ディープシュラム": {
+   "maxRarity": 13,
+   "stats": {
+    "11": {
+     "attack": 624,
+     "element": 312,
+     "affinity": 0
+    },
+    "12": {
+     "attack": 735,
+     "element": 368,
+     "affinity": 0
+    },
+    "13": {
+     "attack": 857,
+     "element": 428,
+     "affinity": 0
+    }
+   }
+  },
+  "黒鋼の盾斧": {
+   "maxRarity": 13,
+   "stats": {
+    "13": {
+     "attack": 839,
+     "element": 419,
+     "affinity": 0
+    }
+   }
+  },
+  "龍骨盾斧": {
+   "maxRarity": 13,
+   "stats": {
+    "13": {
+     "attack": 839,
+     "element": 419,
+     "affinity": 0
+    }
+   }
+  },
+  "ジャグラスキャノン": {
+   "maxRarity": 13,
+   "stats": {
+    "7": {
+     "attack": 268,
+     "element": 134,
+     "affinity": 0
+    },
+    "8": {
+     "attack": 339,
+     "element": 170,
+     "affinity": 0
+    },
+    "10": {
+     "attack": 510,
+     "element": 255,
+     "affinity": 0
+    },
+    "11": {
+     "attack": 610,
+     "element": 305,
+     "affinity": 0
+    },
+    "12": {
+     "attack": 720,
+     "element": 360,
+     "affinity": 0
+    },
+    "13": {
+     "attack": 839,
+     "element": 419,
+     "affinity": 0
+    }
+   }
+  },
+  "デュエルスタッブ": {
+   "maxRarity": 13,
+   "stats": {
+    "7": {
+     "attack": 274,
+     "element": 137,
+     "affinity": -4.05
+    },
+    "8": {
+     "attack": 347,
+     "element": 173,
+     "affinity": -3.9
+    },
+    "9": {
+     "attack": 430,
+     "element": 215,
+     "affinity": -3.75
+    },
+    "10": {
+     "attack": 522,
+     "element": 261,
+     "affinity": -3.6
+    },
+    "11": {
+     "attack": 624,
+     "element": 312,
+     "affinity": -3.45
+    },
+    "12": {
+     "attack": 736,
+     "element": 368,
+     "affinity": -3.3
+    },
+    "13": {
+     "attack": 858,
+     "element": 429,
+     "affinity": -3.15
+    }
+   }
+  },
+  "フラムエルテルマ": {
+   "maxRarity": 13,
+   "stats": {
+    "8": {
+     "attack": 347,
+     "element": 173,
+     "affinity": -3.9
+    },
+    "9": {
+     "attack": 430,
+     "element": 215,
+     "affinity": -3.75
+    },
+    "10": {
+     "attack": 522,
+     "element": 261,
+     "affinity": -3.6
+    },
+    "11": {
+     "attack": 624,
+     "element": 312,
+     "affinity": -3.45
+    },
+    "12": {
+     "attack": 736,
+     "element": 368,
+     "affinity": -3.3
+    },
+    "13": {
+     "attack": 858,
+     "element": 429,
+     "affinity": -3.15
+    }
+   }
+  },
+  "ブレイズアサルト": {
+   "maxRarity": 7,
+   "stats": {
+    "3": {
+     "attack": 79,
+     "element": 40,
+     "affinity": -4.65
+    },
+    "5": {
+     "attack": 157,
+     "element": 79,
+     "affinity": -4.35
+    },
+    "7": {
+     "attack": 274,
+     "element": 137,
+     "affinity": -4.05
+    }
+   }
+  },
+  "融光種ウォーターキャノン": {
+   "maxRarity": 13,
+   "stats": {
+    "11": {
+     "attack": 624,
+     "element": 312,
+     "affinity": 0
+    },
+    "12": {
+     "attack": 735,
+     "element": 368,
+     "affinity": 0
+    },
+    "13": {
+     "attack": 857,
+     "element": 428,
+     "affinity": 0
+    }
+   }
+  },
+  "融光種カガチノシシ": {
+   "maxRarity": 13,
+   "stats": {
+    "8": {
+     "attack": 318,
+     "element": 159,
+     "affinity": 5.6
+    },
+    "9": {
+     "attack": 394,
+     "element": 197,
+     "affinity": 6
+    },
+    "10": {
+     "attack": 479,
+     "element": 240,
+     "affinity": 6.4
+    },
+    "11": {
+     "attack": 573,
+     "element": 286,
+     "affinity": 6.8
+    },
+    "12": {
+     "attack": 676,
+     "element": 338,
+     "affinity": 7.2
+    },
+    "13": {
+     "attack": 787,
+     "element": 394,
+     "affinity": 7.6
+    }
+   }
+  },
+  "融光種ジャグラスキャノン": {
+   "maxRarity": 12,
+   "stats": {
+    "11": {
+     "attack": 610,
+     "element": 305,
+     "affinity": 0
+    },
+    "12": {
+     "attack": 720,
+     "element": 360,
+     "affinity": 0
+    }
+   }
+  },
+  "融光種フラムエルテルマ": {
+   "maxRarity": 13,
+   "stats": {
+    "8": {
+     "attack": 347,
+     "element": 173,
+     "affinity": -3.9
+    },
+    "9": {
+     "attack": 430,
+     "element": 215,
+     "affinity": -3.75
+    },
+    "10": {
+     "attack": 522,
+     "element": 261,
+     "affinity": -3.6
+    },
+    "11": {
+     "attack": 624,
+     "element": 312,
+     "affinity": -3.45
+    },
+    "12": {
+     "attack": 736,
+     "element": 368,
+     "affinity": -3.3
+    },
+    "13": {
+     "attack": 858,
+     "element": 429,
+     "affinity": -3.15
+    }
+   }
+  },
+  "融光種ブレイズアサルト": {
+   "maxRarity": 7,
+   "stats": {
+    "5": {
+     "attack": 157,
+     "element": 79,
+     "affinity": -4.35
+    },
+    "7": {
+     "attack": 274,
+     "element": 137,
+     "affinity": -4.05
+    }
+   }
+  },
+  "黒鋼の砲筒": {
+   "maxRarity": 13,
+   "stats": {
+    "13": {
+     "attack": 839,
+     "element": 419,
+     "affinity": 0
+    }
+   }
+  },
+  "龍骨砲": {
+   "maxRarity": 13,
+   "stats": {
+    "13": {
+     "attack": 839,
+     "element": 419,
+     "affinity": 0
+    }
+   }
+  },
+  "ジャナフアルカウス": {
+   "maxRarity": 13,
+   "stats": {
+    "8": {
+     "attack": 347,
+     "element": 173,
+     "affinity": -3.9
+    },
+    "9": {
+     "attack": 430,
+     "element": 215,
+     "affinity": -3.75
+    },
+    "10": {
+     "attack": 522,
+     "element": 261,
+     "affinity": -3.6
+    },
+    "11": {
+     "attack": 624,
+     "element": 312,
+     "affinity": -3.45
+    },
+    "12": {
+     "attack": 736,
+     "element": 368,
+     "affinity": -3.3
+    },
+    "13": {
+     "attack": 858,
+     "element": 429,
+     "affinity": -3.15
+    }
+   }
+  },
+  "ブレイズボウ": {
+   "maxRarity": 7,
+   "stats": {
+    "3": {
+     "attack": 79,
+     "element": 40,
+     "affinity": -4.65
+    },
+    "5": {
+     "attack": 157,
+     "element": 79,
+     "affinity": -4.35
+    },
+    "7": {
+     "attack": 274,
+     "element": 137,
+     "affinity": -4.05
+    }
+   }
+  },
+  "ブロスホーンボウ": {
+   "maxRarity": 13,
+   "stats": {
+    "8": {
+     "attack": 347,
+     "element": 173,
+     "affinity": -3.9
+    },
+    "9": {
+     "attack": 430,
+     "element": 215,
+     "affinity": -3.75
+    },
+    "10": {
+     "attack": 522,
+     "element": 261,
+     "affinity": -3.6
+    },
+    "11": {
+     "attack": 624,
+     "element": 312,
+     "affinity": -3.45
+    },
+    "12": {
+     "attack": 736,
+     "element": 368,
+     "affinity": -3.3
+    },
+    "13": {
+     "attack": 858,
+     "element": 429,
+     "affinity": -3.15
+    }
+   }
+  },
+  "プリンセスアロー": {
+   "maxRarity": 13,
+   "stats": {
+    "13": {
+     "attack": 787,
+     "element": 394,
+     "affinity": 7.6
+    }
+   }
+  },
+  "ローゼスアロー": {
+   "maxRarity": 13,
+   "stats": {
+    "10": {
+     "attack": 498,
+     "element": 249,
+     "affinity": 4.8
+    },
+    "11": {
+     "attack": 595,
+     "element": 298,
+     "affinity": 5.1
+    },
+    "12": {
+     "attack": 702,
+     "element": 351,
+     "affinity": 5.4
+    },
+    "13": {
+     "attack": 818,
+     "element": 409,
+     "affinity": 5.7
+    }
+   }
+  },
+  "火竜の強弓": {
+   "maxRarity": 13,
+   "stats": {
+    "13": {
+     "attack": 818,
+     "element": 409,
+     "affinity": 5.7
+    }
+   }
+  },
+  "融光種ウォーターシュート": {
+   "maxRarity": 13,
+   "stats": {
+    "11": {
+     "attack": 624,
+     "element": 312,
+     "affinity": 0
+    },
+    "12": {
+     "attack": 735,
+     "element": 368,
+     "affinity": 0
+    },
+    "13": {
+     "attack": 857,
+     "element": 428,
+     "affinity": 0
+    }
+   }
+  },
+  "融光種ジャナフアルカウス": {
+   "maxRarity": 13,
+   "stats": {
+    "8": {
+     "attack": 347,
+     "element": 173,
+     "affinity": -3.9
+    },
+    "9": {
+     "attack": 430,
+     "element": 215,
+     "affinity": -3.75
+    },
+    "10": {
+     "attack": 522,
+     "element": 261,
+     "affinity": -3.6
+    },
+    "11": {
+     "attack": 624,
+     "element": 312,
+     "affinity": -3.45
+    },
+    "12": {
+     "attack": 736,
+     "element": 368,
+     "affinity": -3.3
+    },
+    "13": {
+     "attack": 858,
+     "element": 429,
+     "affinity": -3.15
+    }
+   }
+  },
+  "融光種ブレイズボウ": {
+   "maxRarity": 7,
+   "stats": {
+    "5": {
+     "attack": 157,
+     "element": 79,
+     "affinity": -4.35
+    },
+    "7": {
+     "attack": 274,
+     "element": 137,
+     "affinity": -4.05
+    }
+   }
+  },
+  "融光種プリンセスアロー": {
+   "maxRarity": 13,
+   "stats": {
+    "13": {
+     "attack": 787,
+     "element": 394,
+     "affinity": 7.6
+    }
+   }
+  },
+  "融光種飛雷弓イテカガチ": {
+   "maxRarity": 13,
+   "stats": {
+    "7": {
+     "attack": 276,
+     "element": 138,
+     "affinity": 1.95
+    },
+    "8": {
+     "attack": 350,
+     "element": 175,
+     "affinity": 2.1
+    },
+    "9": {
+     "attack": 433,
+     "element": 217,
+     "affinity": 2.25
+    },
+    "10": {
+     "attack": 526,
+     "element": 263,
+     "affinity": 2.4
+    },
+    "11": {
+     "attack": 629,
+     "element": 315,
+     "affinity": 2.55
+    },
+    "12": {
+     "attack": 742,
+     "element": 371,
+     "affinity": 2.7
+    },
+    "13": {
+     "attack": 865,
+     "element": 432,
+     "affinity": 2.85
+    }
+   }
+  },
+  "黒鋼の弓": {
+   "maxRarity": 13,
+   "stats": {
+    "13": {
+     "attack": 857,
+     "element": 428,
+     "affinity": 0
+    }
+   }
+  },
+  "龍骨弓": {
+   "maxRarity": 13,
+   "stats": {
+    "13": {
+     "attack": 839,
+     "element": 419,
+     "affinity": 0
+    }
+   }
+  },
+  "融光種アルマデステリオ": {
+   "maxRarity": 12,
+   "stats": {
+    "11": {
+     "attack": 624,
+     "element": 312,
+     "affinity": 0
+    },
+    "12": {
+     "attack": 735,
+     "element": 368,
+     "affinity": 0
+    }
+   }
+  },
+  "融光種デュエルデステリオ": {
+   "maxRarity": 12,
+   "stats": {
+    "11": {
+     "attack": 643,
+     "element": 322,
+     "affinity": 0
+    },
+    "12": {
+     "attack": 759,
+     "element": 379,
+     "affinity": 0
+    }
+   }
+  },
+  "融光種眩惑刀【閃】": {
+   "maxRarity": 12,
+   "stats": {
+    "11": {
+     "attack": 643,
+     "element": 322,
+     "affinity": 0
+    },
+    "12": {
+     "attack": 759,
+     "element": 379,
+     "affinity": 0
+    }
+   }
+  },
+  "融光種ブロスハチェット": {
+   "maxRarity": 13,
+   "stats": {
+    "12": {
+     "attack": 803,
+     "element": 401,
+     "affinity": -8.8
+    },
+    "13": {
+     "attack": 935,
+     "element": 468,
+     "affinity": -8.4
+    }
+   }
+  },
+  "融光種ブロスヘッド": {
+   "maxRarity": 13,
+   "stats": {
+    "12": {
+     "attack": 803,
+     "element": 401,
+     "affinity": -8.8
+    },
+    "13": {
+     "attack": 935,
+     "element": 468,
+     "affinity": -8.4
+    }
+   }
+  },
+  "融光種ブロスウォール": {
+   "maxRarity": 13,
+   "stats": {
+    "12": {
+     "attack": 803,
+     "element": 401,
+     "affinity": -8.8
+    },
+    "13": {
+     "attack": 935,
+     "element": 468,
+     "affinity": -8.4
+    }
+   }
+  },
+  "融光種デュエルスタッブ": {
+   "maxRarity": 13,
+   "stats": {
+    "12": {
+     "attack": 803,
+     "element": 401,
+     "affinity": -8.8
+    },
+    "13": {
+     "attack": 935,
+     "element": 468,
+     "affinity": -8.4
+    }
+   }
+  },
+  "融光種ブロスホーンボウ": {
+   "maxRarity": 13,
+   "stats": {
+    "12": {
+     "attack": 803,
+     "element": 401,
+     "affinity": -8.8
+    },
+    "13": {
+     "attack": 935,
+     "element": 468,
+     "affinity": -8.4
+    }
+   }
+  },
+  "融光種血吸いの鎖鎌": {
+   "maxRarity": 13,
+   "stats": {
+    "11": {
+     "attack": 595,
+     "element": 298,
+     "affinity": 5.1
+    },
+    "12": {
+     "attack": 702,
+     "element": 351,
+     "affinity": 5.4
+    },
+    "13": {
+     "attack": 818,
+     "element": 409,
+     "affinity": 5.7
+    }
+   }
+  },
+  "融光種ガロンダーラ": {
+   "maxRarity": 13,
+   "stats": {
+    "11": {
+     "attack": 629,
+     "element": 315,
+     "affinity": 2.55
+    },
+    "12": {
+     "attack": 742,
+     "element": 371,
+     "affinity": 2.7
+    },
+    "13": {
+     "attack": 865,
+     "element": 432,
+     "affinity": 2.85
+    }
+   }
+  },
+  "融光種憎しみの炎": {
+   "maxRarity": 13,
+   "stats": {
+    "11": {
+     "attack": 595,
+     "element": 298,
+     "affinity": 5.1
+    },
+    "12": {
+     "attack": 702,
+     "element": 351,
+     "affinity": 5.4
+    },
+    "13": {
+     "attack": 818,
+     "element": 409,
+     "affinity": 5.7
+    }
+   }
+  },
+  "光翼・ヒッポグリフ（火）": {
+   "maxRarity": 14,
+   "stats": {
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0
+    }
+   }
+  },
+  "光翼・ヒッポグリフ（水）": {
+   "maxRarity": 14,
+   "stats": {
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0
+    }
+   }
+  },
+  "光翼・ヒッポグリフ（雷）": {
+   "maxRarity": 14,
+   "stats": {
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0
+    }
+   }
+  },
+  "光翼・ヒッポグリフ（氷）": {
+   "maxRarity": 14,
+   "stats": {
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0
+    }
+   }
+  },
+  "光翼・ヒッポグリフ（龍）": {
+   "maxRarity": 14,
+   "stats": {
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0
+    }
+   }
+  },
+  "光罰・バヤール（火）": {
+   "maxRarity": 14,
+   "stats": {
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0
+    }
+   }
+  },
+  "光罰・バヤール（水）": {
+   "maxRarity": 14,
+   "stats": {
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0
+    }
+   }
+  },
+  "光罰・バヤール（雷）": {
+   "maxRarity": 14,
+   "stats": {
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0
+    }
+   }
+  },
+  "光罰・バヤール（氷）": {
+   "maxRarity": 14,
+   "stats": {
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0
+    }
+   }
+  },
+  "光罰・バヤール（龍）": {
+   "maxRarity": 14,
+   "stats": {
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0
+    }
+   }
+  },
+  "光輝・モントーバン（火）": {
+   "maxRarity": 14,
+   "stats": {
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0
+    }
+   }
+  },
+  "光輝・モントーバン（水）": {
+   "maxRarity": 14,
+   "stats": {
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0
+    }
+   }
+  },
+  "光輝・モントーバン（雷）": {
+   "maxRarity": 14,
+   "stats": {
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0
+    }
+   }
+  },
+  "光輝・モントーバン（氷）": {
+   "maxRarity": 14,
+   "stats": {
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0
+    }
+   }
+  },
+  "光輝・モントーバン（龍）": {
+   "maxRarity": 14,
+   "stats": {
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0
+    }
+   }
+  },
+  "光芒・クルタナ（火）": {
+   "maxRarity": 14,
+   "stats": {
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0
+    }
+   }
+  },
+  "光芒・クルタナ（水）": {
+   "maxRarity": 14,
+   "stats": {
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0
+    }
+   }
+  },
+  "光芒・クルタナ（雷）": {
+   "maxRarity": 14,
+   "stats": {
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0
+    }
+   }
+  },
+  "光芒・クルタナ（氷）": {
+   "maxRarity": 14,
+   "stats": {
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0
+    }
+   }
+  },
+  "光芒・クルタナ（龍）": {
+   "maxRarity": 14,
+   "stats": {
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0
+    }
+   }
+  },
+  "光響・オリファント（火）": {
+   "maxRarity": 14,
+   "stats": {
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0
+    }
+   }
+  },
+  "光響・オリファント（水）": {
+   "maxRarity": 14,
+   "stats": {
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0
+    }
+   }
+  },
+  "光響・オリファント（雷）": {
+   "maxRarity": 14,
+   "stats": {
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0
+    }
+   }
+  },
+  "光響・オリファント（氷）": {
+   "maxRarity": 14,
+   "stats": {
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0
+    }
+   }
+  },
+  "光響・オリファント（龍）": {
+   "maxRarity": 14,
+   "stats": {
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0
+    }
+   }
+  },
+  "光影・オートクレール（火）": {
+   "maxRarity": 14,
+   "stats": {
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0
+    }
+   }
+  },
+  "光影・オートクレール（水）": {
+   "maxRarity": 14,
+   "stats": {
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0
+    }
+   }
+  },
+  "光影・オートクレール（雷）": {
+   "maxRarity": 14,
+   "stats": {
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0
+    }
+   }
+  },
+  "光影・オートクレール（氷）": {
+   "maxRarity": 14,
+   "stats": {
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0
+    }
+   }
+  },
+  "光影・オートクレール（龍）": {
+   "maxRarity": 14,
+   "stats": {
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0
+    }
+   }
+  },
+  "光耀・ジョワユーズ（火）": {
+   "maxRarity": 14,
+   "stats": {
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0
+    }
+   }
+  },
+  "光耀・ジョワユーズ（水）": {
+   "maxRarity": 14,
+   "stats": {
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0
+    }
+   }
+  },
+  "光耀・ジョワユーズ（雷）": {
+   "maxRarity": 14,
+   "stats": {
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0
+    }
+   }
+  },
+  "光耀・ジョワユーズ（氷）": {
+   "maxRarity": 14,
+   "stats": {
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0
+    }
+   }
+  },
+  "光耀・ジョワユーズ（龍）": {
+   "maxRarity": 14,
+   "stats": {
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0
+    }
+   }
+  },
+  "光稜・デュランダル（火）": {
+   "maxRarity": 14,
+   "stats": {
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0
+    }
+   }
+  },
+  "光稜・デュランダル（水）": {
+   "maxRarity": 14,
+   "stats": {
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0
+    }
+   }
+  },
+  "光稜・デュランダル（雷）": {
+   "maxRarity": 14,
+   "stats": {
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0
+    }
+   }
+  },
+  "光稜・デュランダル（氷）": {
+   "maxRarity": 14,
+   "stats": {
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0
+    }
+   }
+  },
+  "光稜・デュランダル（龍）": {
+   "maxRarity": 14,
+   "stats": {
+    "12": {
+     "attack": 774,
+     "element": 387,
+     "affinity": 0
+    },
+    "13": {
+     "attack": 902,
+     "element": 451,
+     "affinity": 0
+    },
+    "14": {
+     "attack": 1040,
+     "element": 520,
+     "affinity": 0
+    }
+   }
+  }
+ }
+}

@@ -40,10 +40,14 @@
    {
     "rank": 50,
     "maxRarity": 11
+   },
+   {
+    "rank": 55,
+    "maxRarity": 13
    }
   ],
   "ランク16未満": 2,
-  "ランク48以上": "不明（どのサイトにも無い）"
+  "ランク51〜54": "未確認（ランク50はレア11、55はレア13）"
  },
  "orbForRarity": {
   "1〜4": "狩魂玉Ⅰ",
@@ -66,7 +70,7 @@
    "element": "主人公は火・水・雷・氷・龍を選べる",
    "builds": 29,
    "url": "https://otoutojr.github.io/mho-equip/api/builds/hero_hbg.json",
-   "bytes": 67785
+   "bytes": 68276
   },
   {
    "charId": "pepe",
@@ -75,7 +79,7 @@
    "element": "水",
    "builds": 11,
    "url": "https://otoutojr.github.io/mho-equip/api/builds/pepe.json",
-   "bytes": 25911
+   "bytes": 26096
   },
   {
    "charId": "raya",
@@ -84,7 +88,7 @@
    "element": "火",
    "builds": 11,
    "url": "https://otoutojr.github.io/mho-equip/api/builds/raya.json",
-   "bytes": 25549
+   "bytes": 25718
   },
   {
    "charId": "brix",
@@ -93,7 +97,7 @@
    "element": "雷",
    "builds": 9,
    "url": "https://otoutojr.github.io/mho-equip/api/builds/brix.json",
-   "bytes": 25536
+   "bytes": 25647
   },
   {
    "charId": "akenia",
@@ -102,7 +106,7 @@
    "element": "龍",
    "builds": 7,
    "url": "https://otoutojr.github.io/mho-equip/api/builds/akenia.json",
-   "bytes": 18195
+   "bytes": 18269
   },
   {
    "charId": "madre",
@@ -129,7 +133,7 @@
    "element": "火",
    "builds": 13,
    "url": "https://otoutojr.github.io/mho-equip/api/builds/midori.json",
-   "bytes": 25957
+   "bytes": 26067
   },
   {
    "charId": "luca",
@@ -138,7 +142,7 @@
    "element": "雷",
    "builds": 10,
    "url": "https://otoutojr.github.io/mho-equip/api/builds/luca.json",
-   "bytes": 21143
+   "bytes": 21264
   },
   {
    "charId": "cless",
@@ -147,7 +151,7 @@
    "element": "龍",
    "builds": 9,
    "url": "https://otoutojr.github.io/mho-equip/api/builds/cless.json",
-   "bytes": 22803
+   "bytes": 22932
   },
   {
    "charId": "ensho",
@@ -156,7 +160,7 @@
    "element": "龍",
    "builds": 9,
    "url": "https://otoutojr.github.io/mho-equip/api/builds/ensho.json",
-   "bytes": 24501
+   "bytes": 24577
   },
   {
    "charId": "lord",
@@ -165,7 +169,7 @@
    "element": "氷",
    "builds": 7,
    "url": "https://otoutojr.github.io/mho-equip/api/builds/lord.json",
-   "bytes": 17778
+   "bytes": 17886
   },
   {
    "charId": "haze",
@@ -174,7 +178,7 @@
    "element": "雷",
    "builds": 2,
    "url": "https://otoutojr.github.io/mho-equip/api/builds/haze.json",
-   "bytes": 8294
+   "bytes": 8409
   },
   {
    "charId": "ryunosuke",
@@ -183,7 +187,7 @@
    "element": "火",
    "builds": 8,
    "url": "https://otoutojr.github.io/mho-equip/api/builds/ryunosuke.json",
-   "bytes": 18275
+   "bytes": 18385
   },
   {
    "charId": "hero_ls",
@@ -192,7 +196,7 @@
    "element": "主人公は火・水・雷・氷・龍を選べる",
    "builds": 30,
    "url": "https://otoutojr.github.io/mho-equip/api/builds/hero_ls.json",
-   "bytes": 64588
+   "bytes": 65016
   },
   {
    "charId": "hero_gs",
@@ -201,7 +205,7 @@
    "element": "主人公は火・水・雷・氷・龍を選べる",
    "builds": 30,
    "url": "https://otoutojr.github.io/mho-equip/api/builds/hero_gs.json",
-   "bytes": 66387
+   "bytes": 66795
   },
   {
    "charId": "hero_db",
@@ -210,7 +214,7 @@
    "element": "主人公は火・水・雷・氷・龍を選べる",
    "builds": 25,
    "url": "https://otoutojr.github.io/mho-equip/api/builds/hero_db.json",
-   "bytes": 55146
+   "bytes": 55578
   },
   {
    "charId": "hero_lance",
@@ -219,7 +223,7 @@
    "element": "主人公は火・水・雷・氷・龍を選べる",
    "builds": 27,
    "url": "https://otoutojr.github.io/mho-equip/api/builds/hero_lance.json",
-   "bytes": 58427
+   "bytes": 58680
   },
   {
    "charId": "hero_bow",
@@ -228,7 +232,7 @@
    "element": "主人公は火・水・雷・氷・龍を選べる",
    "builds": 25,
    "url": "https://otoutojr.github.io/mho-equip/api/builds/hero_bow.json",
-   "bytes": 56622
+   "bytes": 56987
   },
   {
    "charId": "hero_hammer",
@@ -237,7 +241,7 @@
    "element": "主人公は火・水・雷・氷・龍を選べる",
    "builds": 28,
    "url": "https://otoutojr.github.io/mho-equip/api/builds/hero_hammer.json",
-   "bytes": 62061
+   "bytes": 62363
   },
   {
    "charId": "hero_cb",
@@ -246,7 +250,7 @@
    "element": "主人公は火・水・雷・氷・龍を選べる",
    "builds": 26,
    "url": "https://otoutojr.github.io/mho-equip/api/builds/hero_cb.json",
-   "bytes": 60071
+   "bytes": 60611
   }
  ]
 }

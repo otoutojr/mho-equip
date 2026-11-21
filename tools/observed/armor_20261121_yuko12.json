@@ -135,9 +135,11 @@
     {
       "name": "不屈の意志", "category": "火力", "weapon": null, "maxLv": 3,
       "levels": [
-        { "lv": 1, "effect": "冒険者が状態異常または融光活性状態になった時、一定時間与ダメージが増加する。さらに、融光活性による悪影響の持続時間を短縮する。", "value": null, "valueYuko": null, "pct": 0.0, "pctYuko": 0.0, "flat": 0 }
+        { "lv": 1, "effect": "状態異常か融光活性のとき、与ダメージ+3%。融光活性の悪影響の時間-20%", "value": 3, "valueYuko": 3, "pct": 3.0, "pctYuko": 3.0, "flat": 0 },
+        { "lv": 2, "effect": "状態異常か融光活性のとき、与ダメージ+6%。融光活性の悪影響の時間-50%", "value": 6, "valueYuko": 6, "pct": 6.0, "pctYuko": 6.0, "flat": 0 },
+        { "lv": 3, "effect": "状態異常か融光活性のとき、与ダメージ+12%。融光活性の悪影響が消える", "value": 12, "valueYuko": 12, "pct": 12.0, "pctYuko": 12.0, "flat": 0 }
       ],
-      "note": "ゲーム画面の説明文だけ。Lvごとの数値は未確認なので、DPSの計算には入れていない。最大Lv3は画面の「LV 今/3」"
+      "note": "最大Lv3はゲーム画面の「LV 今/3」。Lvごとの数値はアウかる（mhnowcalc.com）のスキル一覧。発動条件があるので、キャラのモデルに入れていない限りDPSの計算には入らない"
     },
     {
       "name": "融光活性", "category": "火力", "weapon": null, "maxLv": 1,

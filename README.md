@@ -14,10 +14,10 @@
 - `index.html` / `style.css` / `app.js` … 画面
 - `phrase.js` + `vendor/budoux/` … 日本語を文節で折り返す（Safari など `word-break: auto-phrase` 未対応の端末だけ。BudouX、Apache-2.0）
 - `fonts/` … 見出し・数字の明朝（Shippori Mincho B1 ExtraBold を、使う字だけに絞った woff2。OFL-1.1）
-- `solver.js` … Web Worker。候補の絞り込み → 全組み合わせ探索（同点なら強化段数が少ない方）
+- `solver.js` … Web Worker。候補の絞り込み → 全組み合わせ探索（同点なら強化段数が少ない方）。組み合わせごとに、アウかる（mhnowcalc.com）の期待値の式（与ダメ系スキルは足し算、会心は+25%・基本会心率15%）でDPS目安を計算する。式の本体は `app.js` の `damageSpec`／`specDps` と `solver.js` の `specDps`（同じ式）
 - `data/*.json` … 武器・防具・スキル・モンスター・キャラの重み
 - `tools/build_data.py` … 収集した生データから `data/` を作る
-- `tools/apply_observed.py` + `tools/observed/*.json` … ゲーム画面で確かめた防具・スキル・セット効果を `data/` に重ねる（攻略サイトにまだ載っていないもの）。`build_data.py` の最後に自動で走るので、攻略サイトのデータを作り直しても消えない。`--check` で検算（部位が5つそろっているか・スキル名・最大Lv・防具idの重複）だけできる。スクショ画像そのものはリポジトリに入れない（文字に書き写したものだけ）
+- `tools/apply_observed.py` + `tools/observed/*.json` … 攻略サイト以外から分かったデータを `data/` に重ねる。ゲーム画面で確かめた防具・スキル・セット効果・強化上限と、アウかる（mhnowcalc.com）の武器のレア12〜14の数値・防具スキルの食い違いの修正。`build_data.py`・`build_weapons.py` の最後に自動で走るので、攻略サイトのデータを作り直しても消えない。`--check` で検算（部位が5つそろっているか・スキル名・最大Lv・防具や武器の有無・防具idの重複）だけできる。スクショ画像そのものはリポジトリに入れない（文字に書き写したものだけ）
 - `tools/merge_rarity.py` … 防具のレア別スキルを Game8・GameWith・gamewith.ai の多数決でまとめ、Gamerch の最大強化時スキルと照合する
 - `tools/make_models.py` … キャラごとのダメージモデル（スキルがどれだけ火力に乗るか）
 - `tools/build_builds.py` … 攻略サイトのおすすめ構成を集めた構成DB（data/builds.json）を作る
