@@ -4105,6 +4105,60 @@
     }
    ],
    "note": "セット効果「桜火竜の暴走」の表示（融光活性+1）で見えたLv1の効果だけ。最大Lvは未確認。得と損が打ち消し合うのでDPSの計算には入れていない"
+  },
+  {
+   "name": "融光怪力",
+   "category": "火力",
+   "weapon": null,
+   "maxLv": 3,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "体力の上限が低下し、与ダメージが増加する。",
+     "value": null,
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
+    },
+    {
+     "lv": 2,
+     "effect": "体力の上限が低下し、与ダメージが増加する。",
+     "value": null,
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
+    },
+    {
+     "lv": 3,
+     "effect": "体力の上限が低下し、与ダメージが増加する。",
+     "value": null,
+     "valueYuko": null,
+     "pct": 0.0,
+     "pctYuko": 0.0,
+     "flat": 0
+    }
+   ],
+   "note": "生産画面の説明（全Lv共通の一文）と最大Lv3だけ。Lvごとの数値はまだ分からないので、DPSには入れていない"
+  },
+  {
+   "name": "背水の陣",
+   "category": "火力",
+   "weapon": null,
+   "maxLv": 1,
+   "levels": [
+    {
+     "lv": 1,
+     "effect": "体力が61以下の時、与ダメージ+23%、防御力+50。",
+     "value": 23.0,
+     "valueYuko": 23.0,
+     "pct": 23.0,
+     "pctYuko": 23.0,
+     "flat": 0
+    }
+   ],
+   "note": "セット効果「黒角竜の背水」の表示（背水の陣+1）。アウかるのスキルデータ（11/10版）とも一致。体力が61以下という条件付きなので、キャラごとのダメージモデルには入れていない"
   }
  ],
  "setSkills": [
@@ -5618,6 +5672,38 @@
     "融光種レウスアーム",
     "融光種レウスコイル",
     "融光種レウスグリーヴ"
+   ],
+   "sourceUrl": null,
+   "sourceUrls": {},
+   "piecesGameWith": null
+  },
+  {
+   "name": "黒角竜の背水",
+   "category": "火力",
+   "series": [
+    "融光種ディアネロ"
+   ],
+   "seriesAliases": [
+    "融光種ディアブロス亜種"
+   ],
+   "pieces": 2,
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "背水の陣",
+     "lv": 1,
+     "effect": "背水の陣+1",
+     "effectSource": "ゲーム画面",
+     "skillLevelEffect": "体力が61以下の時、与ダメージ+23%、防御力+50。",
+     "skillDescription": "体力が一定値を下回っている時、防御力と与ダメージが増加する。"
+    }
+   ],
+   "gear": [
+    "融光種ディアネロヘルム",
+    "融光種ディアネロメイル",
+    "融光種ディアネロアーム",
+    "融光種ディアネロコイル",
+    "融光種ディアネログリーヴ"
    ],
    "sourceUrl": null,
    "sourceUrls": {},

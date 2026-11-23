@@ -576,6 +576,18 @@
      "description": "攻撃で会心が発生した際に、与える属性ダメージ+5%。"
     }
    ]
+  },
+  {
+   "name": "黒角竜の背水",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "skill": "背水の陣",
+     "lv": 1,
+     "effect": "背水の陣+1",
+     "description": "体力が61以下の時、与ダメージ+23%、防御力+50。"
+    }
+   ]
   }
  ],
  "series": [
@@ -12479,6 +12491,201 @@
       "skillTop": false,
       "skillBottom": true,
       "setRow": true
+     }
+    }
+   ]
+  },
+  {
+   "name": "融光種ディアネロ",
+   "gate": {
+    "type": "rank",
+    "rank": 56,
+    "observed": true,
+    "monsters": [
+     "融光種ディアブロス亜種"
+    ]
+   },
+   "set": "黒角竜の背水",
+   "notes": "ゲームの生産リストで「融光種ディアネロシリーズ」はレア度14（ディアネロシリーズはレア度13）。防具の説明文は「融光種ディアブロス亜種の頭防具…」。冒険ランク56の画面に並んでいた（腕は素材がそろっていて生産できる状態）。セット効果「黒角竜の背水」は頭と腕の画面で見えた。胴・腰・脚の画面はセット効果の行まで写っていないが、同じシリーズなので同じセットとして扱う。画面の表示名は「融光種ディアネロヘルムVI」のようにローマ数字が付く（ここでは他の防具に合わせて外している）。",
+   "pieces": [
+    {
+     "id": "u878d_u5149_u7a2e_u30c7_u30a3_u30a2_u30c_head",
+     "name": "融光種ディアネロヘルム",
+     "gameName": "融光種ディアネロヘルムVI",
+     "part": "head",
+     "baseRarity": 14,
+     "maxRarity": 14,
+     "docMax": 14,
+     "set": "黒角竜の背水",
+     "orbTier": null,
+     "skills": [
+      {
+       "name": "鉄壁ガード",
+       "lv": 1,
+       "rarity": 14
+      },
+      {
+       "name": "振動耐性",
+       "lv": 2,
+       "rarity": 14
+      }
+     ],
+     "materials": null,
+     "sourceUrl": null,
+     "sources": [
+      "ゲーム画面（2026-11-23・冒険ランク56）"
+     ],
+     "seen": {
+      "skillTop": true,
+      "skillBottom": true,
+      "setRow": true
+     }
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30c7_u30a3_u30a2_u30c_body",
+     "name": "融光種ディアネロメイル",
+     "gameName": "融光種ディアネロメイルVI",
+     "part": "body",
+     "baseRarity": 14,
+     "maxRarity": 14,
+     "docMax": 14,
+     "set": "黒角竜の背水",
+     "orbTier": null,
+     "skills": [
+      {
+       "name": "洞察",
+       "lv": 2,
+       "rarity": 14
+      },
+      {
+       "name": "融光怪力",
+       "lv": 1,
+       "rarity": 14
+      },
+      {
+       "name": "制圧回復",
+       "lv": 1,
+       "rarity": 14
+      }
+     ],
+     "materials": null,
+     "sourceUrl": null,
+     "sources": [
+      "ゲーム画面（2026-11-23・冒険ランク56）"
+     ],
+     "seen": {
+      "skillTop": false,
+      "skillBottom": false,
+      "setRow": false
+     }
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30c7_u30a3_u30a2_u30c_arm",
+     "name": "融光種ディアネロアーム",
+     "gameName": "融光種ディアネロアームVI",
+     "part": "arm",
+     "baseRarity": 14,
+     "maxRarity": 14,
+     "docMax": 14,
+     "set": "黒角竜の背水",
+     "orbTier": null,
+     "skills": [
+      {
+       "name": "防御反撃",
+       "lv": 3,
+       "rarity": 14
+      },
+      {
+       "name": "振動耐性",
+       "lv": 1,
+       "rarity": 14
+      }
+     ],
+     "materials": null,
+     "sourceUrl": null,
+     "sources": [
+      "ゲーム画面（2026-11-23・冒険ランク56）"
+     ],
+     "seen": {
+      "skillTop": true,
+      "skillBottom": true,
+      "setRow": true
+     }
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30c7_u30a3_u30a2_u30c_waist",
+     "name": "融光種ディアネロコイル",
+     "gameName": "融光種ディアネロコイルVI",
+     "part": "waist",
+     "baseRarity": 14,
+     "maxRarity": 14,
+     "docMax": 14,
+     "set": "黒角竜の背水",
+     "orbTier": null,
+     "skills": [
+      {
+       "name": "融光怪力",
+       "lv": 2,
+       "rarity": 14
+      },
+      {
+       "name": "制圧回復",
+       "lv": 1,
+       "rarity": 14
+      },
+      {
+       "name": "洞察",
+       "lv": 1,
+       "rarity": 14
+      }
+     ],
+     "materials": null,
+     "sourceUrl": null,
+     "sources": [
+      "ゲーム画面（2026-11-23・冒険ランク56）"
+     ],
+     "seen": {
+      "skillTop": false,
+      "skillBottom": false,
+      "setRow": false
+     }
+    },
+    {
+     "id": "u878d_u5149_u7a2e_u30c7_u30a3_u30a2_u30c_leg",
+     "name": "融光種ディアネログリーヴ",
+     "gameName": "融光種ディアネログリーヴVI",
+     "part": "leg",
+     "baseRarity": 14,
+     "maxRarity": 14,
+     "docMax": 14,
+     "set": "黒角竜の背水",
+     "orbTier": null,
+     "skills": [
+      {
+       "name": "洞察",
+       "lv": 2,
+       "rarity": 14
+      },
+      {
+       "name": "融光怪力",
+       "lv": 1,
+       "rarity": 14
+      },
+      {
+       "name": "制圧回復",
+       "lv": 1,
+       "rarity": 14
+      }
+     ],
+     "materials": null,
+     "sourceUrl": null,
+     "sources": [
+      "ゲーム画面（2026-11-23・冒険ランク56）"
+     ],
+     "seen": {
+      "skillTop": false,
+      "skillBottom": false,
+      "setRow": false
      }
     }
    ]
