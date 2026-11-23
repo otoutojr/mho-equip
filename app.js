@@ -1,6 +1,6 @@
 /* 融光工房 ― UI */
 'use strict';
-const APP_VERSION = '2026.11.23-1';
+const APP_VERSION = '2026.11.23-2';
 const STORE_KEY = 'mho-equip:v1';
 const PART_JP = { head: '頭', body: '胴', arm: '腕', waist: '腰', leg: '脚' };
 const $ = (sel) => document.querySelector(sel);
@@ -260,6 +260,7 @@ function damageSpec(c, elem, weapon) {
     coreRate: Math.max(0, ((m.critPerPct ?? 0.0025) - 0.0025) * 100), coreCap: CORE_CAP,
     yuko: weapon && yuko && weapon.w.yukoBonus ? 1 + weapon.w.yukoBonus : 1, // 鋭精武器の「融光種へのダメージ+8%」
     skills: {},
+    links: [], // 連動：need が lv 以上のとき skill に D を足す（背水の陣は融光怪力Lv3で常に発動）
   };
   for (const [name0, def] of Object.entries(c.modelSkills || {})) {
     const sk = skillDef(name0), levels = (sk && sk.levels) || [];
@@ -285,7 +286,13 @@ function damageSpec(c, elem, weapon) {
       }
       t.D.push(D); t.U.push(U); t.A.push(A); t.C.push(C); t.E.push(E);
     }
-    sp.skills[name0.replace('{属性}', elem || '火')] = t;
+    const name = name0.replace('{属性}', elem || '火');
+    sp.skills[name] = t;
+    if (def.link && levels.length && (def.kind || 'dmg') === 'dmg') {
+      const k = (def.link.uptime ?? 1) - up; // 連動したときに増える発動率の分
+      sp.links.push({ skill: name, need: def.link.skill, lv: def.link.lv || 1,
+        D: levels.map((l) => { const pct = l.pct || 0; return ((yuko ? (l.pctYuko ?? pct) : pct) || 0) * k * share; }) });
+    }
   }
   return sp;
 }
@@ -298,10 +305,12 @@ function specDps(sp, tot) {
   return (sp.A * (1 + d) * cp + E * sp.s * (1 + d + (tot.U || 0) / 100) * ce) * sp.yuko;
 }
 // スキルを1つだけ積んだときの伸び（候補の絞り込みと「効く順」の表示に使う。足し算なので、重ねたときはこれより少し小さくなる）
+// 連動するスキル（背水の陣）は、相手（融光怪力Lv3）がそろったときの伸びにする
 function specWeights(sp) {
   const base = specDps(sp, {}), out = {};
   for (const [name, t] of Object.entries(sp.skills)) {
-    out[name] = t.D.map((_, i) => 100 * Math.log(specDps(sp, { D: t.D[i], U: t.U[i], A: t.A[i], C: t.C[i], E: t.E[i] }) / base));
+    const L = (sp.links || []).find(x => x.skill === name);
+    out[name] = t.D.map((_, i) => 100 * Math.log(specDps(sp, { D: t.D[i] + (L ? L.D[Math.min(i, L.D.length - 1)] : 0), U: t.U[i], A: t.A[i], C: t.C[i], E: t.E[i] }) / base));
   }
   return out;
 }
@@ -639,7 +648,7 @@ function solve() {
   const jobs = [];
   // 指定があるときは、指定なしの最強も先に出して差を見せる
   if (!hit && Object.keys(wants).length) jobs.push({ ...now, type: 'solve', free: true, topN: 1, K: 12 });
-  if (!hit) jobs.push({ ...now, type: 'solve', wants, topN: 6, K: 12, variants: true });
+  if (!hit) jobs.push({ ...now, type: 'solve', wants, topN: 6, K: 12, variants: true, vary: HP_COST });
   jobs.push(() => buildsJob(c, W, wants, spec));
   // ここから下は折りたたみの中身。いまの答えが出てから順に計算する
   jobs.push(() => { if (!cur.armor) { renderNext({ milestones: [] }); return null; }
@@ -957,6 +966,8 @@ function renderResult() {
 // 強い装備の候補（1〜3位）。主なスキル（DPSを5%以上上げているもの）の組み合わせが同じものはまとめて、
 // 組み方の違う候補だけ並べる（弱点攻撃1→洞察1 のような小さな入れ替えだけの構成は出さない）
 const mainSig = (d) => d.totals.filter(t => t.value >= 4.9).map(t => t.skill).sort().join('|');
+// 体力の上限が下がるスキル。1位に入っているときは、それを使わない候補も必ず並べる
+const HP_COST = ['融光怪力'];
 function renderCandidates(b, box) {
   const list = [b], seen = new Set([mainSig(b)]);
   const pool = [...(cur.variants || []), ...(cur.alts || [])].sort((x, y) => y.score - x.score);
@@ -965,6 +976,12 @@ function renderCandidates(b, box) {
     if (seen.has(k)) continue;
     seen.add(k); list.push(d);
     if (list.length >= 3) break;
+  }
+  const has = (d, n) => d.totals.some(t => t.skill === n && t.lv > 0);
+  for (const n of HP_COST) {
+    if (!has(b, n) || list.slice(1).some(d => !has(d, n))) continue;
+    const safe = pool.find(d => (d.without || []).includes(n));
+    if (safe) list.splice(Math.min(list.length, 2), 1, safe);
   }
   const top = dpsOf(cur.weapon, b.score);
   list.forEach((d, i) => {

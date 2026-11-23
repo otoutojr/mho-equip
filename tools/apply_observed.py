@@ -90,6 +90,11 @@ def load(name):
     return json.loads(p.read_text(encoding='utf-8')) if p.exists() else None
 
 
+def observed(key):
+    """書き写しファイルの key（skills など）を、ファイル名順に全部並べて返す（build_data.py がキャラの重みづけの前に使う）"""
+    return [x for f in sorted(OBS.glob('*.json')) for x in json.loads(f.read_text(encoding='utf-8')).get(key, [])]
+
+
 def apply(only_check=False, out_dir=DATA):
     files = sorted(OBS.glob('*.json'))
     if not files:

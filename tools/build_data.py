@@ -259,7 +259,8 @@ def model_weights(model, skill_name, skill, yuko=False):
     crit_rate = model.get('critRate', 0.3)
     out = []
     for lv in skill.get('levels') or []:
-        pct, pct_y, flat = parse_level(lv.get('effect'))
+        # 書き写したスキル（tools/observed）は数値を直接持っている（「体力上限-60%。ダメージ+9%。」の先頭の%は与ダメではない）
+        pct, pct_y, flat = (lv['pct'], lv.get('pctYuko', lv['pct']), lv.get('flat') or 0) if lv.get('pct') is not None else parse_level(lv.get('effect'))
         p = (pct_y if yuko else pct) / 100.0
         kind = spec.get('kind', 'dmg')
         up = spec.get('uptime', 1.0); share = spec.get('share', 1.0)
@@ -354,7 +355,7 @@ def build_characters(raw, skills, overrides):
         entry = {'id': c['id'], 'name': c.get('name', c['id']), 'rarity': c.get('rarity'), 'type': None if hero else c.get('type'), 'weapon': c.get('weapon'), 'element': None if hero else c.get('element'),
                  'elementSelectable': hero, 'mechanics': c.get('mechanics') or [], 'priorities': prios, 'weights': weights, 'weightsYuko': weights_y, 'note': c.get('note') or '',
                  'scoreMode': 'log' if c.get('model') else 'sum', 'model': ({k: v for k, v in c['model'].items() if k != 'skills'} if c.get('model') else None),
-                 'modelSkills': ({k: {kk: vv for kk, vv in v.items() if kk in ('kind', 'uptime', 'share', 'chance', 'core', 'value', 'fallback')} for k, v in c['model']['skills'].items()} if c.get('model') else None),
+                 'modelSkills': ({k: {kk: vv for kk, vv in v.items() if kk in ('kind', 'uptime', 'share', 'chance', 'core', 'value', 'fallback', 'link')} for k, v in c['model']['skills'].items()} if c.get('model') else None),
                  'sources': c.get('sources') or []}
         ov = ((overrides or {}).get('characters') or {}).get(c['id'])
         if ov and ov.get('weights'):
@@ -439,7 +440,11 @@ def main():
     print(f'  レア別スキルの食い違い: {n_conf} 件 / Gamerch 最大強化スキルと一致 {xc[True]}・不一致 {xc[False]}・照合なし {xc[None]}')
     armor_out = {'updated': TODAY, 'sets': list(sets.values()), 'series': series_out}
 
-    chars = build_characters(load('characters.json'), skills, overrides)
+    # ゲーム画面やアウかるから書き写したスキル（融光怪力・背水の陣など）も、キャラのモデルの重みづけに使う
+    char_skills = dict(skills)
+    for s in apply_observed.observed('skills'):
+        char_skills[s['name']] = s
+    chars = build_characters(load('characters.json'), char_skills, overrides)
 
     (OUT / 'armor.json').write_text(json.dumps(armor_out, ensure_ascii=False, indent=1), encoding='utf-8')
     (OUT / 'skills.json').write_text(json.dumps({'updated': TODAY, 'skills': list(skills.values()), 'setSkills': set_skills}, ensure_ascii=False, indent=1), encoding='utf-8')

@@ -376,11 +376,26 @@ models['ryunosuke'] = {
     }},
 }
 
+# 融光種ディアネロ（レア14・冒険ランク56〜）のスキル。どのキャラ・武器でも全部の攻撃に乗る与ダメUP（数値はアウかるのスキルデータ）。
+# 背水の陣は「体力61以下」のとき。融光怪力Lv3は体力上限-60%なので、料理で体力が150になっていても上限は60になり、常に発動する
+# （link: 融光怪力がLv3以上なら発動率を1.0にする。app.js の damageSpec と solver.js の evaluate で扱う）。
+# それ以外のときは、被弾して回復するまでの「体力61以下でいる時間」を15%とみる。
+HAISUI_UPTIME = 0.15
+COMMON_SKILLS = {
+    '融光怪力': dmg(1.0, 1.0, 'A', 3, '体力の上限が下がる代わりに全部の攻撃の与ダメUP（Lv1 +3%・Lv2 +6%・Lv3 +9%）。Lv3は体力上限-60%',
+                    ('アウかる', 'ゲーム画面'), '常に発動'),
+    '背水の陣': {**dmg(HAISUI_UPTIME, 1.0, 'A', 1, '体力61以下で与ダメ+23%（融光種ディアネロ2部位のセット効果）。融光怪力Lv3と組むと体力の上限が60以下になるので常に発動',
+                      ('アウかる', 'ゲーム画面'), '融光怪力Lv3のときは常に発動。それ以外は体力61以下の時間15%'),
+                 'link': {'skill': '融光怪力', 'lv': 3, 'uptime': 1.0}},
+}
+
 HERO_ELEMENT_NOTE = ' 属性は、Game8・アルテマが火（レウス／ジャナフ／リオハート防具と絵装リオレイアが揃う）を先頭に推奨、GameWithは「5属性のうち一番数値の高い武器」。爆破・毒・麻痺武器だと属性特化と会心コアパッシブが発動しないので不利。'
 ELEM_UP_SHARE = 1.2
 for cid, m in models.items():
     if cid.startswith('hero_'):
         m['note'] = m['note'] + HERO_ELEMENT_NOTE
     m['model'].setdefault('elemUpShare', ELEM_UP_SHARE)
+    for k, v in COMMON_SKILLS.items():
+        m['model']['skills'].setdefault(k, v)
 json.dump({'characters': models}, open(OUT, 'w'), ensure_ascii=False, indent=1)
 print('wrote', OUT, len(models), 'models')

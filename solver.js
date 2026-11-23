@@ -17,9 +17,21 @@ function compileSpec(sp) {
     const i = DB.skillIndex.get(name);
     if (i != null) by[i] = { n: t.D.length, D: t.D, U: t.U, A: t.A, C: t.C, E: t.E };
   }
-  const out = { ...sp, by, W0: null };
+  // 連動：need のスキルが lv 以上のとき、s のスキルに D を足す（背水の陣は融光怪力Lv3で常に発動）
+  const links = (sp.links || []).map(L => ({ s: DB.skillIndex.get(L.skill), need: DB.skillIndex.get(L.need), lv: L.lv, D: L.D }))
+    .filter(L => L.s != null && L.need != null && L.D.length);
+  const out = { ...sp, by, links, W0: null };
   out.dps0 = specDps(out, 0, 0, 0, 0, 0);
   return out;
+}
+// lvOf(スキルIndex) → そのスキルのLv（外したスキルは0）
+function linkD(lvOf) {
+  let D = 0;
+  for (const L of SPEC.links) {
+    const a = lvOf(L.s);
+    if (a > 0 && lvOf(L.need) >= L.lv) D += L.D[Math.min(a, L.D.length) - 1];
+  }
+  return D;
 }
 function specDps(sp, D, U, A, C, E) {
   const aff = sp.aff0 + A, a = Math.max(-1, Math.min(1, aff / 100));
@@ -31,6 +43,7 @@ function specDps(sp, D, U, A, C, E) {
 // スキルIndex→Lv の一覧から点数（100×ln(期待値÷スキルなしの期待値)）。skip のスキルは無いものとして計算する
 function specScoreOf(levels, skip = -1) {
   let D = 0, U = 0, A = 0, C = 0, E = 0, extra = 0;
+  if (SPEC.links.length) { const m = new Map(levels); D += linkD(s => (s === skip ? 0 : m.get(s) || 0)); }
   for (const [s, lv] of levels) {
     if (s === skip || lv <= 0) continue;
     const t = SPEC.by[s];
@@ -261,6 +274,7 @@ function evaluate(combo, W, acc, setCount, touched) {
   let score = 0;
   if (SPEC) {
     let D = 0, U = 0, A = 0, C = 0, E = 0;
+    if (SPEC.links.length) D += linkD(s => (s === EXCL ? 0 : acc[s])); // 下のループで acc を0に戻す前に見る
     const boosted = W !== SPEC.W0;
     for (let j = 0; j < nt; j++) {
       const s = touched[j]; const raw = acc[s];
@@ -355,6 +369,11 @@ function solve(msg) {
 function makeVariants(best, msg, W, Wb, avail, K) {
   const wanted = new Set(Object.keys(msg.wants || {}));
   const mains = best.totals.filter(t => t.value >= 2 && !wanted.has(t.skill)).slice(0, 3);
+  // 体力の上限が下がるスキル（融光怪力）は、主なスキルに入っていなくても「なし」の候補を作る
+  for (const n of msg.vary || []) {
+    const t = best.totals.find(x => x.skill === n && x.lv > 0);
+    if (t && !wanted.has(n) && !mains.includes(t)) mains.push(t);
+  }
   const out = [];
   for (const m of mains) {
     const s = DB.skillIndex.get(m.skill);
