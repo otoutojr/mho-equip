@@ -15,12 +15,12 @@
 - `phrase.js` + `vendor/budoux/` … 日本語を文節で折り返す（Safari など `word-break: auto-phrase` 未対応の端末だけ。BudouX、Apache-2.0）
 - `vendor/number-flow/`・`vendor/rough-notation/` … DPS目安の数字が桁ごとに回る動き（NumberFlow、MIT）と、強化が要る所を囲む朱の手書きの丸（Rough Notation、MIT）
 - `fonts/` … 見出し・数字の明朝（Shippori Mincho B1 ExtraBold を、使う字だけに絞った woff2。OFL-1.1）
-- `solver.js` … Web Worker。候補の絞り込み → 全組み合わせ探索（同点なら強化段数が少ない方）。組み合わせごとに、アウかる（mhnowcalc.com）の期待値の式（与ダメ系スキルは足し算、会心は+25%・基本会心率15%）でDPS目安を計算する。式の本体は `app.js` の `damageSpec`／`specDps` と `solver.js` の `specDps`（同じ式）
+- `solver.js` … Web Worker。候補の絞り込み → 全組み合わせ探索（同点なら強化段数が少ない方）。組み合わせごとに、アウかる（mhnowcalc.com）の期待値の式（与ダメ系スキルは足し算、会心は+25%・基本会心率15%）でDPS目安を計算する。式の本体は `app.js` の `damageSpec`／`specDps` と `solver.js` の `specDps`（同じ式）。スキル同士の連動（`links`：背水の陣は融光怪力Lv3で常に発動）は `damageSpec` で作り、`solver.js` の `linkD` で足す
 - `data/*.json` … 武器・防具・スキル・モンスター・キャラの重み
 - `tools/build_data.py` … 収集した生データから `data/` を作る
 - `tools/apply_observed.py` + `tools/observed/*.json` … 攻略サイト以外から分かったデータを `data/` に重ねる。ゲーム画面で確かめた防具・スキル・セット効果・強化上限と、アウかる（mhnowcalc.com）の武器のレア12〜14の数値・防具スキルの食い違いの修正。`build_data.py`・`build_weapons.py` の最後に自動で走るので、攻略サイトのデータを作り直しても消えない。`--check` で検算（部位が5つそろっているか・スキル名・最大Lv・防具や武器の有無・防具idの重複）だけできる。スクショ画像そのものはリポジトリに入れない（文字に書き写したものだけ）
 - `tools/merge_rarity.py` … 防具のレア別スキルを Game8・GameWith・gamewith.ai の多数決でまとめ、Gamerch の最大強化時スキルと照合する
-- `tools/make_models.py` … キャラごとのダメージモデル（スキルがどれだけ火力に乗るか）
+- `tools/make_models.py` … キャラごとのダメージモデル（スキルがどれだけ火力に乗るか）。融光怪力・背水の陣は全キャラ共通（`COMMON_SKILLS`）
 - `tools/build_builds.py` … 攻略サイトのおすすめ構成を集めた構成DB（data/builds.json）を作る
 - `tools/build_api.py` … 外部のAI（Claude Desktop など）向けに、キャラごとの小さなJSON（api/index.json, api/builds/<charId>.json）を作る。使い方のプロンプトは docs/claude-desktop-prompt.md
 - `tools/build_weapons.py` … 武器データ（レアごとの攻撃力・属性値。サイトでレア9止まりの武器はレア10まで推定値で伸ばす）
