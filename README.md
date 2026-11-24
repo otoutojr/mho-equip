@@ -19,6 +19,7 @@
 - `data/*.json` … 武器・防具・スキル・モンスター・キャラの重み
 - `tools/build_data.py` … 収集した生データから `data/` を作る
 - `tools/apply_observed.py` + `tools/observed/*.json` … 攻略サイト以外から分かったデータを `data/` に重ねる。ゲーム画面で確かめた防具・スキル・セット効果・強化上限と、アウかる（mhnowcalc.com）の武器のレア12〜14の数値・防具スキルの食い違いの修正。`build_data.py`・`build_weapons.py` の最後に自動で走るので、攻略サイトのデータを作り直しても消えない。`--check` で検算（部位が5つそろっているか・スキル名・最大Lv・防具や武器の有無・防具idの重複）だけできる。スクショ画像そのものはリポジトリに入れない（文字に書き写したものだけ）
+- `tools/import_aukaru_weapons.py` … アウかるの装備一覧ページ（HTML）に埋め込まれた武器データから、こちらに無いレア・数値が違うレアだけを `tools/observed/weapons_YYYYMMDD_aukaru.json` に書き出す（状態異常の武器は対象外）
 - `tools/merge_rarity.py` … 防具のレア別スキルを Game8・GameWith・gamewith.ai の多数決でまとめ、Gamerch の最大強化時スキルと照合する
 - `tools/make_models.py` … キャラごとのダメージモデル（スキルがどれだけ火力に乗るか）。融光怪力・背水の陣は全キャラ共通（`COMMON_SKILLS`）
 - `tools/build_builds.py` … 攻略サイトのおすすめ構成を集めた構成DB（data/builds.json）を作る

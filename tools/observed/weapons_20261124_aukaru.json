@@ -1,0 +1,787 @@
+{
+ "observedAt": "2026-11-24",
+ "label": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）",
+ "how": "アウかるの装備一覧ページに埋め込まれた武器データ（レアごとの名前・攻撃力・属性値・会心率）から、こちらの武器名と同じ名前のレアだけを抜き出した（tools/import_aukaru_weapons.py）。こちらに無いレアを足し、数値が違うレアを置き換える。アウかる側の注記は「ゲーム内で確かめた値ではない候補」。状態異常の武器は対象外",
+ "weaponStats": {
+  "ジャグラスハッカー": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 967,
+     "element": 484,
+     "affinity": 0.0
+    }
+   }
+  },
+  "フラムエルヘレヴ改": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 989,
+     "element": 495,
+     "affinity": -3.0
+    }
+   }
+  },
+  "レッドウィング": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 944,
+     "element": 472,
+     "affinity": 6.0
+    }
+   }
+  },
+  "融光種ウォーターゴーレム": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 1019,
+     "element": 510,
+     "affinity": 0.0
+    }
+   }
+  },
+  "融光種ジャグラスハッカー": {
+   "maxRarity": 14,
+   "stats": {
+    "13": {
+     "attack": 857,
+     "element": 428,
+     "affinity": 0.0
+    },
+    "14": {
+     "attack": 988,
+     "element": 494,
+     "affinity": 0.0
+    }
+   }
+  },
+  "融光種フラムエルヘレヴ改": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 989,
+     "element": 495,
+     "affinity": -3.0
+    }
+   }
+  },
+  "融光種ライトニングパニッシュ": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 1019,
+     "element": 510,
+     "affinity": 0.0
+    }
+   }
+  },
+  "黒鋼の大剣": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 944,
+     "element": 472,
+     "affinity": 6.0
+    }
+   }
+  },
+  "龍骨大剣": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 967,
+     "element": 484,
+     "affinity": 0.0
+    }
+   }
+  },
+  "ジャナフシミター": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 989,
+     "element": 495,
+     "affinity": -3.0
+    }
+   }
+  },
+  "融光種カガチノキバ": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 908,
+     "element": 454,
+     "affinity": 8.0
+    }
+   }
+  },
+  "融光種ジャナフシミター": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 989,
+     "element": 495,
+     "affinity": -3.0
+    }
+   }
+  },
+  "融光種ディプテルス": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 1019,
+     "element": 510,
+     "affinity": 0.0
+    }
+   }
+  },
+  "飛竜刀【朱】": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 944,
+     "element": 472,
+     "affinity": 6.0
+    }
+   }
+  },
+  "黒鋼の太刀": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 1019,
+     "element": 510,
+     "affinity": 0.0
+    }
+   }
+  },
+  "龍骨刀": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 988,
+     "element": 494,
+     "affinity": 0.0
+    }
+   }
+  },
+  "ジャナフサイクロン": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 989,
+     "element": 495,
+     "affinity": -3.0
+    }
+   }
+  },
+  "ブロスハチェット": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 989,
+     "element": 495,
+     "affinity": -3.0
+    }
+   }
+  },
+  "融光種カガチノツメ": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 908,
+     "element": 454,
+     "affinity": 8.0
+    }
+   }
+  },
+  "融光種ジャナフサイクロン": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 989,
+     "element": 495,
+     "affinity": -3.0
+    }
+   }
+  },
+  "融光種シュラムハチェット": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 988,
+     "element": 494,
+     "affinity": 0.0
+    }
+   }
+  },
+  "血吸いの鎖鎌": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 944,
+     "element": 472,
+     "affinity": 6.0
+    }
+   }
+  },
+  "黒鋼の双剣": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 967,
+     "element": 484,
+     "affinity": 0.0
+    }
+   }
+  },
+  "龍骨双刃": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 967,
+     "element": 484,
+     "affinity": 0.0
+    }
+   }
+  },
+  "ガロンダーラ": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 944,
+     "element": 472,
+     "affinity": 6.0
+    }
+   }
+  },
+  "レッドテイル": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 908,
+     "element": 454,
+     "affinity": 8.0
+    }
+   }
+  },
+  "融光種ウォータースパイク": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 1019,
+     "element": 510,
+     "affinity": 0.0
+    }
+   }
+  },
+  "融光種ライトニングパイル": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 1019,
+     "element": 510,
+     "affinity": 0.0
+    }
+   }
+  },
+  "黒鋼の槍": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 988,
+     "element": 494,
+     "affinity": 0.0
+    }
+   }
+  },
+  "龍骨槍": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 967,
+     "element": 484,
+     "affinity": 0.0
+    }
+   }
+  },
+  "ジャナフストライク": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 989,
+     "element": 495,
+     "affinity": -3.0
+    }
+   }
+  },
+  "ブロスヘッド": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 1032,
+     "element": 516,
+     "affinity": -6.0
+    }
+   }
+  },
+  "ライトニングバッシュ": {
+   "maxRarity": 14,
+   "stats": {
+    "13": {
+     "attack": 857,
+     "element": 428,
+     "affinity": 0.0
+    },
+    "14": {
+     "attack": 988,
+     "element": 494,
+     "affinity": 0.0
+    }
+   }
+  },
+  "融光種ウォーターバッシュ": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 988,
+     "element": 494,
+     "affinity": 0.0
+    }
+   }
+  },
+  "融光種ジャナフストライク": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 989,
+     "element": 495,
+     "affinity": -3.0
+    }
+   }
+  },
+  "融光種ライトニングバッシュ": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 1019,
+     "element": 510,
+     "affinity": 0.0
+    }
+   }
+  },
+  "黒鋼の鎚": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 967,
+     "element": 484,
+     "affinity": 0.0
+    }
+   }
+  },
+  "龍骨大槌": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 967,
+     "element": 484,
+     "affinity": 0.0
+    }
+   }
+  },
+  "ブロスウォール": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 989,
+     "element": 495,
+     "affinity": -3.0
+    }
+   }
+  },
+  "憎しみの炎": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 944,
+     "element": 472,
+     "affinity": 6.0
+    }
+   }
+  },
+  "融光種カガチノカイナ": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 997,
+     "element": 498,
+     "affinity": 3.0
+    }
+   }
+  },
+  "融光種ディープシュラム": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 988,
+     "element": 494,
+     "affinity": 0.0
+    }
+   }
+  },
+  "黒鋼の盾斧": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 967,
+     "element": 484,
+     "affinity": 0.0
+    }
+   }
+  },
+  "龍骨盾斧": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 967,
+     "element": 484,
+     "affinity": 0.0
+    }
+   }
+  },
+  "ジャグラスキャノン": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 967,
+     "element": 484,
+     "affinity": 0.0
+    }
+   }
+  },
+  "デュエルスタッブ": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 989,
+     "element": 495,
+     "affinity": -3.0
+    }
+   }
+  },
+  "フラムエルテルマ": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 989,
+     "element": 495,
+     "affinity": -3.0
+    }
+   }
+  },
+  "融光種ウォーターキャノン": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 988,
+     "element": 494,
+     "affinity": 0.0
+    }
+   }
+  },
+  "融光種カガチノシシ": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 908,
+     "element": 454,
+     "affinity": 8.0
+    }
+   }
+  },
+  "融光種ジャグラスキャノン": {
+   "maxRarity": 14,
+   "stats": {
+    "13": {
+     "attack": 839,
+     "element": 419,
+     "affinity": 0.0
+    },
+    "14": {
+     "attack": 967,
+     "element": 484,
+     "affinity": 0.0
+    }
+   }
+  },
+  "融光種フラムエルテルマ": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 989,
+     "element": 495,
+     "affinity": -3.0
+    }
+   }
+  },
+  "黒鋼の砲筒": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 967,
+     "element": 484,
+     "affinity": 0.0
+    }
+   }
+  },
+  "龍骨砲": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 967,
+     "element": 484,
+     "affinity": 0.0
+    }
+   }
+  },
+  "ジャナフアルカウス": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 989,
+     "element": 495,
+     "affinity": -3.0
+    }
+   }
+  },
+  "ブロスホーンボウ": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 989,
+     "element": 495,
+     "affinity": -3.0
+    }
+   }
+  },
+  "プリンセスアロー": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 908,
+     "element": 454,
+     "affinity": 8.0
+    }
+   }
+  },
+  "ローゼスアロー": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 944,
+     "element": 472,
+     "affinity": 6.0
+    }
+   }
+  },
+  "火竜の強弓": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 944,
+     "element": 472,
+     "affinity": 6.0
+    }
+   }
+  },
+  "融光種ウォーターシュート": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 988,
+     "element": 494,
+     "affinity": 0.0
+    }
+   }
+  },
+  "融光種ジャナフアルカウス": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 989,
+     "element": 495,
+     "affinity": -3.0
+    }
+   }
+  },
+  "融光種プリンセスアロー": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 908,
+     "element": 454,
+     "affinity": 8.0
+    }
+   }
+  },
+  "融光種飛雷弓イテカガチ": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 997,
+     "element": 498,
+     "affinity": 3.0
+    }
+   }
+  },
+  "黒鋼の弓": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 988,
+     "element": 494,
+     "affinity": 0.0
+    }
+   }
+  },
+  "龍骨弓": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 967,
+     "element": 484,
+     "affinity": 0.0
+    }
+   }
+  },
+  "融光種アルマデステリオ": {
+   "maxRarity": 14,
+   "stats": {
+    "13": {
+     "attack": 857,
+     "element": 428,
+     "affinity": 0.0
+    },
+    "14": {
+     "attack": 988,
+     "element": 494,
+     "affinity": 0.0
+    }
+   }
+  },
+  "融光種デュエルデステリオ": {
+   "maxRarity": 14,
+   "stats": {
+    "13": {
+     "attack": 884,
+     "element": 442,
+     "affinity": 0.0
+    },
+    "14": {
+     "attack": 1019,
+     "element": 510,
+     "affinity": 0.0
+    }
+   }
+  },
+  "融光種眩惑刀【閃】": {
+   "maxRarity": 14,
+   "stats": {
+    "13": {
+     "attack": 884,
+     "element": 442,
+     "affinity": 0.0
+    },
+    "14": {
+     "attack": 1019,
+     "element": 510,
+     "affinity": 0.0
+    }
+   }
+  },
+  "融光種ブロスハチェット": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 1078,
+     "element": 539,
+     "affinity": -8.0
+    }
+   }
+  },
+  "融光種ブロスヘッド": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 1078,
+     "element": 539,
+     "affinity": -8.0
+    }
+   }
+  },
+  "融光種ブロスウォール": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 1078,
+     "element": 539,
+     "affinity": -8.0
+    }
+   }
+  },
+  "融光種デュエルスタッブ": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 1078,
+     "element": 539,
+     "affinity": -8.0
+    }
+   }
+  },
+  "融光種ブロスホーンボウ": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 1078,
+     "element": 539,
+     "affinity": -8.0
+    }
+   }
+  },
+  "融光種血吸いの鎖鎌": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 944,
+     "element": 472,
+     "affinity": 6.0
+    }
+   }
+  },
+  "融光種ガロンダーラ": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 997,
+     "element": 498,
+     "affinity": 3.0
+    }
+   }
+  },
+  "融光種憎しみの炎": {
+   "maxRarity": 14,
+   "stats": {
+    "14": {
+     "attack": 944,
+     "element": 472,
+     "affinity": 6.0
+    }
+   }
+  }
+ }
+}

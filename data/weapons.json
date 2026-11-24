@@ -742,7 +742,7 @@
    "type": "大剣",
    "element": "水",
    "baseRarity": 9,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "7": {
      "attack": 268,
@@ -785,6 +785,12 @@
      "element": 419,
      "affinity": 0,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 967,
+     "element": 484,
+     "affinity": 0.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 0,
@@ -1087,7 +1093,7 @@
    "type": "大剣",
    "element": "火",
    "baseRarity": 8,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "8": {
      "attack": 347,
@@ -1124,6 +1130,12 @@
      "element": 429,
      "affinity": -3.15,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 989,
+     "element": 495,
+     "affinity": -3.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": -3.9,
@@ -1214,7 +1226,7 @@
    "type": "大剣",
    "element": "火",
    "baseRarity": 8,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "8": {
      "attack": 331,
@@ -1251,6 +1263,12 @@
      "element": 409,
      "affinity": 5.7,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 944,
+     "element": 472,
+     "affinity": 6.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 4.2,
@@ -1491,7 +1509,7 @@
    "type": "大剣",
    "element": "水",
    "baseRarity": 8,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "8": {
      "attack": 357,
@@ -1528,6 +1546,12 @@
      "element": 442,
      "affinity": 0,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 1019,
+     "element": 510,
+     "affinity": 0.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 0,
@@ -1545,7 +1569,7 @@
    "type": "大剣",
    "element": "水",
    "baseRarity": 9,
-   "maxRarity": 12,
+   "maxRarity": 14,
    "stats": {
     "7": {
      "attack": 274,
@@ -1582,6 +1606,18 @@
      "element": 368,
      "affinity": 0,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 857,
+     "element": 428,
+     "affinity": 0.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
+    },
+    "14": {
+     "attack": 988,
+     "element": 494,
+     "affinity": 0.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 0,
@@ -1744,7 +1780,7 @@
    "type": "大剣",
    "element": "火",
    "baseRarity": 8,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "8": {
      "attack": 347,
@@ -1781,6 +1817,12 @@
      "element": 429,
      "affinity": -3.15,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 989,
+     "element": 495,
+     "affinity": -3.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": -3.9,
@@ -1938,7 +1980,7 @@
    "type": "大剣",
    "element": "雷",
    "baseRarity": 7,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "7": {
      "attack": 282,
@@ -1981,6 +2023,12 @@
      "element": 442,
      "affinity": 0,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 1019,
+     "element": 510,
+     "affinity": 0.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 0,
@@ -1999,7 +2047,7 @@
    "type": "大剣",
    "element": "龍",
    "baseRarity": 6,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "6": {
      "attack": 201,
@@ -2048,6 +2096,12 @@
      "element": 409,
      "affinity": 5.7,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 944,
+     "element": 472,
+     "affinity": 6.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 5.4,
@@ -2064,7 +2118,7 @@
    "type": "大剣",
    "element": "龍",
    "baseRarity": 4,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "4": {
      "attack": 111,
@@ -2125,6 +2179,12 @@
      "element": 419,
      "affinity": 0,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 967,
+     "element": 484,
+     "affinity": 0.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 0,
@@ -2866,7 +2926,7 @@
    "type": "太刀",
    "element": "火",
    "baseRarity": 8,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "8": {
      "attack": 347,
@@ -2903,6 +2963,12 @@
      "element": 429,
      "affinity": -3.15,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 989,
+     "element": 495,
+     "affinity": -3.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": -3.9,
@@ -3250,7 +3316,7 @@
    "type": "太刀",
    "element": "雷",
    "baseRarity": 7,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "7": {
      "attack": 251,
@@ -3293,6 +3359,12 @@
      "element": 394,
      "affinity": 7.6,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 908,
+     "element": 454,
+     "affinity": 8.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 5.2,
@@ -3346,7 +3418,7 @@
    "type": "太刀",
    "element": "火",
    "baseRarity": 8,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "8": {
      "attack": 347,
@@ -3383,6 +3455,12 @@
      "element": 429,
      "affinity": -3.15,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 989,
+     "element": 495,
+     "affinity": -3.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": -3.9,
@@ -3400,7 +3478,7 @@
    "type": "太刀",
    "element": "水",
    "baseRarity": 8,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "8": {
      "attack": 357,
@@ -3437,6 +3515,12 @@
      "element": 442,
      "affinity": 0,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 1019,
+     "element": 510,
+     "affinity": 0.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 0,
@@ -3698,7 +3782,7 @@
    "type": "太刀",
    "element": "火",
    "baseRarity": 8,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "8": {
      "attack": 331,
@@ -3735,6 +3819,12 @@
      "element": 409,
      "affinity": 5.7,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 944,
+     "element": 472,
+     "affinity": 6.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 4.5,
@@ -3801,7 +3891,7 @@
    "type": "太刀",
    "element": "龍",
    "baseRarity": 6,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "6": {
      "attack": 217,
@@ -3850,6 +3940,12 @@
      "element": 442,
      "affinity": 0,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 1019,
+     "element": 510,
+     "affinity": 0.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 0,
@@ -3866,7 +3962,7 @@
    "type": "太刀",
    "element": "龍",
    "baseRarity": 4,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "4": {
      "attack": 113,
@@ -3927,6 +4023,12 @@
      "element": 428,
      "affinity": 0,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 988,
+     "element": 494,
+     "affinity": 0.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 0,
@@ -4515,7 +4617,7 @@
    "type": "双剣",
    "element": "火",
    "baseRarity": 8,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "8": {
      "attack": 347,
@@ -4552,6 +4654,12 @@
      "element": 429,
      "affinity": -3.15,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 989,
+     "element": 495,
+     "affinity": -3.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": -3.9,
@@ -4832,7 +4940,7 @@
    "type": "双剣",
    "element": "氷",
    "baseRarity": 7,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "7": {
      "attack": 274,
@@ -4876,6 +4984,12 @@
      "element": 429,
      "affinity": -3.15,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 989,
+     "element": 495,
+     "affinity": -3.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": -4,
@@ -5111,7 +5225,7 @@
    "type": "双剣",
    "element": "雷",
    "baseRarity": 7,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "7": {
      "attack": 251,
@@ -5154,6 +5268,12 @@
      "element": 394,
      "affinity": 7.6,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 908,
+     "element": 454,
+     "affinity": 8.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 5.2,
@@ -5172,7 +5292,7 @@
    "type": "双剣",
    "element": "火",
    "baseRarity": 8,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "8": {
      "attack": 347,
@@ -5209,6 +5329,12 @@
      "element": 429,
      "affinity": -3.15,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 989,
+     "element": 495,
+     "affinity": -3.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": -3.9,
@@ -5327,7 +5453,7 @@
    "type": "双剣",
    "element": "水",
    "baseRarity": 8,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "8": {
      "attack": 346,
@@ -5364,6 +5490,12 @@
      "element": 428,
      "affinity": 0,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 988,
+     "element": 494,
+     "affinity": 0.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 0,
@@ -5381,7 +5513,7 @@
    "type": "双剣",
    "element": "火",
    "baseRarity": 7,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "7": {
      "attack": 261,
@@ -5425,6 +5557,12 @@
      "element": 409,
      "affinity": 5.7,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 944,
+     "element": 472,
+     "affinity": 6.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 3.9,
@@ -5443,7 +5581,7 @@
    "type": "双剣",
    "element": "龍",
    "baseRarity": 6,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "6": {
      "attack": 206,
@@ -5492,6 +5630,12 @@
      "element": 419,
      "affinity": 0,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 967,
+     "element": 484,
+     "affinity": 0.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 0,
@@ -5508,7 +5652,7 @@
    "type": "双剣",
    "element": "龍",
    "baseRarity": 4,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "4": {
      "attack": 111,
@@ -5569,6 +5713,12 @@
      "element": 419,
      "affinity": 0,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 967,
+     "element": 484,
+     "affinity": 0.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 0,
@@ -6270,7 +6420,7 @@
    "type": "ランス",
    "element": "火",
    "baseRarity": 7,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "7": {
      "attack": 261,
@@ -6314,6 +6464,12 @@
      "element": 409,
      "affinity": 5.7,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 944,
+     "element": 472,
+     "affinity": 6.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 3.9,
@@ -6852,7 +7008,7 @@
    "type": "ランス",
    "element": "火",
    "baseRarity": 8,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "8": {
      "attack": 318,
@@ -6889,6 +7045,12 @@
      "element": 394,
      "affinity": 7.6,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 908,
+     "element": 454,
+     "affinity": 8.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 5.6,
@@ -6941,7 +7103,7 @@
    "type": "ランス",
    "element": "水",
    "baseRarity": 8,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "8": {
      "attack": 357,
@@ -6978,6 +7140,12 @@
      "element": 442,
      "affinity": 0,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 1019,
+     "element": 510,
+     "affinity": 0.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 0,
@@ -7190,7 +7358,7 @@
    "type": "ランス",
    "element": "雷",
    "baseRarity": 7,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "7": {
      "attack": 282,
@@ -7233,6 +7401,12 @@
      "element": 442,
      "affinity": 0,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 1019,
+     "element": 510,
+     "affinity": 0.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 0,
@@ -7251,7 +7425,7 @@
    "type": "ランス",
    "element": "龍",
    "baseRarity": 6,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "6": {
      "attack": 210,
@@ -7300,6 +7474,12 @@
      "element": 428,
      "affinity": 0,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 988,
+     "element": 494,
+     "affinity": 0.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 0,
@@ -7316,7 +7496,7 @@
    "type": "ランス",
    "element": "龍",
    "baseRarity": 4,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "4": {
      "attack": 111,
@@ -7377,6 +7557,12 @@
      "element": 419,
      "affinity": 0,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 967,
+     "element": 484,
+     "affinity": 0.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 0,
@@ -8286,7 +8472,7 @@
    "type": "ハンマー",
    "element": "火",
    "baseRarity": 8,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "8": {
      "attack": 347,
@@ -8323,6 +8509,12 @@
      "element": 429,
      "affinity": -3.15,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 989,
+     "element": 495,
+     "affinity": -3.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": -3.9,
@@ -8589,7 +8781,7 @@
    "type": "ハンマー",
    "element": "氷",
    "baseRarity": 7,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "7": {
      "attack": 286,
@@ -8633,6 +8825,12 @@
      "element": 448,
      "affinity": -6.3,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 1032,
+     "element": 516,
+     "affinity": -6.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": -8.1,
@@ -8651,7 +8849,7 @@
    "type": "ハンマー",
    "element": "雷",
    "baseRarity": 9,
-   "maxRarity": 12,
+   "maxRarity": 14,
    "stats": {
     "7": {
      "attack": 274,
@@ -8688,6 +8886,18 @@
      "element": 368,
      "affinity": 0,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 857,
+     "element": 428,
+     "affinity": 0.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
+    },
+    "14": {
+     "attack": 988,
+     "element": 494,
+     "affinity": 0.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 0,
@@ -8804,7 +9014,7 @@
    "type": "ハンマー",
    "element": "水",
    "baseRarity": 8,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "8": {
      "attack": 346,
@@ -8841,6 +9051,12 @@
      "element": 428,
      "affinity": 0,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 988,
+     "element": 494,
+     "affinity": 0.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 0,
@@ -8914,7 +9130,7 @@
    "type": "ハンマー",
    "element": "火",
    "baseRarity": 8,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "8": {
      "attack": 347,
@@ -8951,6 +9167,12 @@
      "element": 429,
      "affinity": -3.15,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 989,
+     "element": 495,
+     "affinity": -3.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": -3.9,
@@ -9130,7 +9352,7 @@
    "type": "ハンマー",
    "element": "雷",
    "baseRarity": 7,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "7": {
      "attack": 282,
@@ -9173,6 +9395,12 @@
      "element": 442,
      "affinity": 0,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 1019,
+     "element": 510,
+     "affinity": 0.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 0,
@@ -9191,7 +9419,7 @@
    "type": "ハンマー",
    "element": "龍",
    "baseRarity": 6,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "6": {
      "attack": 206,
@@ -9240,6 +9468,12 @@
      "element": 419,
      "affinity": 0,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 967,
+     "element": 484,
+     "affinity": 0.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 0,
@@ -9256,7 +9490,7 @@
    "type": "ハンマー",
    "element": "龍",
    "baseRarity": 4,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "4": {
      "attack": 111,
@@ -9317,6 +9551,12 @@
      "element": 419,
      "affinity": 0,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 967,
+     "element": 484,
+     "affinity": 0.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 0,
@@ -10209,7 +10449,7 @@
    "type": "チャージアックス",
    "element": "氷",
    "baseRarity": 7,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "7": {
      "attack": 274,
@@ -10253,6 +10493,12 @@
      "element": 429,
      "affinity": -3.15,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 989,
+     "element": 495,
+     "affinity": -3.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": -4,
@@ -10337,7 +10583,7 @@
    "type": "チャージアックス",
    "element": "火",
    "baseRarity": 7,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "7": {
      "attack": 261,
@@ -10381,6 +10627,12 @@
      "element": 409,
      "affinity": 5.7,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 944,
+     "element": 472,
+     "affinity": 6.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 3.9,
@@ -10560,7 +10812,7 @@
    "type": "チャージアックス",
    "element": "雷",
    "baseRarity": 7,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "7": {
      "attack": 276,
@@ -10603,6 +10855,12 @@
      "element": 432,
      "affinity": 2.85,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 997,
+     "element": 498,
+     "affinity": 3.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 1.9,
@@ -10882,7 +11140,7 @@
    "type": "チャージアックス",
    "element": "水",
    "baseRarity": 8,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "8": {
      "attack": 346,
@@ -10919,6 +11177,12 @@
      "element": 428,
      "affinity": 0,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 988,
+     "element": 494,
+     "affinity": 0.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 0,
@@ -11014,7 +11278,7 @@
    "type": "チャージアックス",
    "element": "龍",
    "baseRarity": 6,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "6": {
      "attack": 206,
@@ -11063,6 +11327,12 @@
      "element": 419,
      "affinity": 0,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 967,
+     "element": 484,
+     "affinity": 0.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 0,
@@ -11079,7 +11349,7 @@
    "type": "チャージアックス",
    "element": "龍",
    "baseRarity": 4,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "4": {
      "attack": 111,
@@ -11140,6 +11410,12 @@
      "element": 419,
      "affinity": 0,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 967,
+     "element": 484,
+     "affinity": 0.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 0,
@@ -11956,7 +12232,7 @@
    "type": "ヘビィボウガン",
    "element": "水",
    "baseRarity": 9,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "7": {
      "attack": 268,
@@ -11999,6 +12275,12 @@
      "element": 419,
      "affinity": 0,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 967,
+     "element": 484,
+     "affinity": 0.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 0,
@@ -12016,7 +12298,7 @@
    "type": "ヘビィボウガン",
    "element": "氷",
    "baseRarity": 7,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "7": {
      "attack": 274,
@@ -12059,6 +12341,12 @@
      "element": 429,
      "affinity": -3.15,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 989,
+     "element": 495,
+     "affinity": -3.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 4,
@@ -12175,7 +12463,7 @@
    "type": "ヘビィボウガン",
    "element": "火",
    "baseRarity": 8,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "8": {
      "attack": 347,
@@ -12212,6 +12500,12 @@
      "element": 429,
      "affinity": -3.15,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 989,
+     "element": 495,
+     "affinity": -3.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": -3.9,
@@ -12519,7 +12813,7 @@
    "type": "ヘビィボウガン",
    "element": "水",
    "baseRarity": 8,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "8": {
      "attack": 346,
@@ -12556,6 +12850,12 @@
      "element": 428,
      "affinity": 0,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 988,
+     "element": 494,
+     "affinity": 0.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 0,
@@ -12573,7 +12873,7 @@
    "type": "ヘビィボウガン",
    "element": "雷",
    "baseRarity": 7,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "7": {
      "attack": 251,
@@ -12616,6 +12916,12 @@
      "element": 394,
      "affinity": 7.6,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 908,
+     "element": 454,
+     "affinity": 8.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 5.2,
@@ -12675,7 +12981,7 @@
    "type": "ヘビィボウガン",
    "element": "水",
    "baseRarity": 7,
-   "maxRarity": 12,
+   "maxRarity": 14,
    "stats": {
     "7": {
      "attack": 268,
@@ -12712,6 +13018,18 @@
      "element": 360,
      "affinity": 0,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 839,
+     "element": 419,
+     "affinity": 0.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
+    },
+    "14": {
+     "attack": 967,
+     "element": 484,
+     "affinity": 0.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 0,
@@ -12771,7 +13089,7 @@
    "type": "ヘビィボウガン",
    "element": "火",
    "baseRarity": 8,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "8": {
      "attack": 347,
@@ -12808,6 +13126,12 @@
      "element": 429,
      "affinity": -3.15,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 989,
+     "element": 495,
+     "affinity": -3.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": -3.9,
@@ -12907,7 +13231,7 @@
    "type": "ヘビィボウガン",
    "element": "龍",
    "baseRarity": 6,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "6": {
      "attack": 206,
@@ -12956,6 +13280,12 @@
      "element": 419,
      "affinity": 0,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 967,
+     "element": 484,
+     "affinity": 0.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 0,
@@ -12972,7 +13302,7 @@
    "type": "ヘビィボウガン",
    "element": "龍",
    "baseRarity": 4,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "4": {
      "attack": 111,
@@ -13033,6 +13363,12 @@
      "element": 419,
      "affinity": 0,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 967,
+     "element": 484,
+     "affinity": 0.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 0,
@@ -13774,7 +14110,7 @@
    "type": "弓",
    "element": "火",
    "baseRarity": 8,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "8": {
      "attack": 347,
@@ -13811,6 +14147,12 @@
      "element": 429,
      "affinity": -3.15,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 989,
+     "element": 495,
+     "affinity": -3.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": -3.9,
@@ -14082,7 +14424,7 @@
    "type": "弓",
    "element": "氷",
    "baseRarity": 7,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "7": {
      "attack": 274,
@@ -14126,6 +14468,12 @@
      "element": 429,
      "affinity": -3.15,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 989,
+     "element": 495,
+     "affinity": -3.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": -4,
@@ -14144,7 +14492,7 @@
    "type": "弓",
    "element": "龍",
    "baseRarity": 6,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "6": {
      "attack": 193,
@@ -14194,6 +14542,12 @@
      "element": 394,
      "affinity": 7.6,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 908,
+     "element": 454,
+     "affinity": 8.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 7.2,
@@ -14212,7 +14566,7 @@
    "type": "弓",
    "element": "龍",
    "baseRarity": 9,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "9": {
      "attack": 410,
@@ -14244,6 +14598,12 @@
      "element": 409,
      "affinity": 5.7,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 944,
+     "element": 472,
+     "affinity": 6.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 4.5,
@@ -14263,7 +14623,7 @@
    "type": "弓",
    "element": "火",
    "baseRarity": 6,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "6": {
      "attack": 201,
@@ -14312,6 +14672,12 @@
      "element": 409,
      "affinity": 5.7,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 944,
+     "element": 472,
+     "affinity": 6.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 5.4,
@@ -14365,7 +14731,7 @@
    "type": "弓",
    "element": "水",
    "baseRarity": 8,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "8": {
      "attack": 346,
@@ -14402,6 +14768,12 @@
      "element": 428,
      "affinity": 0,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 988,
+     "element": 494,
+     "affinity": 0.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 0,
@@ -14475,7 +14847,7 @@
    "type": "弓",
    "element": "火",
    "baseRarity": 8,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "8": {
      "attack": 347,
@@ -14512,6 +14884,12 @@
      "element": 429,
      "affinity": -3.15,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 989,
+     "element": 495,
+     "affinity": -3.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": -3.9,
@@ -14632,7 +15010,7 @@
    "type": "弓",
    "element": "龍",
    "baseRarity": 3,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "3": {
      "attack": 73,
@@ -14700,6 +15078,12 @@
      "element": 394,
      "affinity": 7.6,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 908,
+     "element": 454,
+     "affinity": 8.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 7.2,
@@ -14718,7 +15102,7 @@
    "type": "弓",
    "element": "雷",
    "baseRarity": 7,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "7": {
      "attack": 276,
@@ -14761,6 +15145,12 @@
      "element": 432,
      "affinity": 2.85,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 997,
+     "element": 498,
+     "affinity": 3.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 2.2,
@@ -14857,7 +15247,7 @@
    "type": "弓",
    "element": "龍",
    "baseRarity": 6,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "6": {
      "attack": 210,
@@ -14906,6 +15296,12 @@
      "element": 428,
      "affinity": 0,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 988,
+     "element": 494,
+     "affinity": 0.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 0,
@@ -14922,7 +15318,7 @@
    "type": "弓",
    "element": "龍",
    "baseRarity": 4,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "4": {
      "attack": 111,
@@ -14983,6 +15379,12 @@
      "element": 419,
      "affinity": 0,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 967,
+     "element": 484,
+     "affinity": 0.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 0,
@@ -14999,7 +15401,7 @@
    "type": "ヘビィボウガン",
    "element": "雷",
    "baseRarity": 10,
-   "maxRarity": 12,
+   "maxRarity": 14,
    "stats": {
     "10": {
      "attack": 521,
@@ -15018,6 +15420,18 @@
      "element": 368,
      "affinity": 0,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 857,
+     "element": 428,
+     "affinity": 0.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
+    },
+    "14": {
+     "attack": 988,
+     "element": 494,
+     "affinity": 0.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 0,
@@ -15036,7 +15450,7 @@
    "type": "双剣",
    "element": "雷",
    "baseRarity": 10,
-   "maxRarity": 12,
+   "maxRarity": 14,
    "stats": {
     "10": {
      "attack": 538,
@@ -15056,6 +15470,18 @@
      "element": 379,
      "affinity": 0,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 884,
+     "element": 442,
+     "affinity": 0.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
+    },
+    "14": {
+     "attack": 1019,
+     "element": 510,
+     "affinity": 0.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 0,
@@ -15074,7 +15500,7 @@
    "type": "太刀",
    "element": "雷",
    "baseRarity": 10,
-   "maxRarity": 12,
+   "maxRarity": 14,
    "stats": {
     "10": {
      "attack": 538,
@@ -15094,6 +15520,18 @@
      "element": 379,
      "affinity": 0,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "13": {
+     "attack": 884,
+     "element": 442,
+     "affinity": 0.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
+    },
+    "14": {
+     "attack": 1019,
+     "element": 510,
+     "affinity": 0.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 0,
@@ -15112,7 +15550,7 @@
    "type": "双剣",
    "element": "水",
    "baseRarity": 11,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "11": {
      "attack": 681,
@@ -15132,6 +15570,12 @@
      "element": 468,
      "affinity": -8.4,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 1078,
+     "element": 539,
+     "affinity": -8.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 0,
@@ -15149,7 +15593,7 @@
    "type": "ハンマー",
    "element": "水",
    "baseRarity": 11,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "11": {
      "attack": 681,
@@ -15169,6 +15613,12 @@
      "element": 468,
      "affinity": -8.4,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 1078,
+     "element": 539,
+     "affinity": -8.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 0,
@@ -15186,7 +15636,7 @@
    "type": "チャージアックス",
    "element": "水",
    "baseRarity": 11,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "11": {
      "attack": 681,
@@ -15206,6 +15656,12 @@
      "element": 468,
      "affinity": -8.4,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 1078,
+     "element": 539,
+     "affinity": -8.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 0,
@@ -15223,7 +15679,7 @@
    "type": "ヘビィボウガン",
    "element": "水",
    "baseRarity": 11,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "11": {
      "attack": 681,
@@ -15242,6 +15698,12 @@
      "element": 468,
      "affinity": -8.4,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 1078,
+     "element": 539,
+     "affinity": -8.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 0,
@@ -15259,7 +15721,7 @@
    "type": "弓",
    "element": "水",
    "baseRarity": 11,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "11": {
      "attack": 681,
@@ -15279,6 +15741,12 @@
      "element": 468,
      "affinity": -8.4,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 1078,
+     "element": 539,
+     "affinity": -8.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 0,
@@ -15296,7 +15764,7 @@
    "type": "双剣",
    "element": "龍",
    "baseRarity": 10,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "10": {
      "attack": 498,
@@ -15322,6 +15790,12 @@
      "element": 409,
      "affinity": 5.7,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 944,
+     "element": 472,
+     "affinity": 6.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 0,
@@ -15340,7 +15814,7 @@
    "type": "ランス",
    "element": "龍",
    "baseRarity": 10,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "10": {
      "attack": 526,
@@ -15366,6 +15840,12 @@
      "element": 432,
      "affinity": 2.85,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 997,
+     "element": 498,
+     "affinity": 3.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 0,
@@ -15384,7 +15864,7 @@
    "type": "チャージアックス",
    "element": "龍",
    "baseRarity": 10,
-   "maxRarity": 13,
+   "maxRarity": 14,
    "stats": {
     "10": {
      "attack": 498,
@@ -15410,6 +15890,12 @@
      "element": 409,
      "affinity": 5.7,
      "src": "アウかる（mhnowcalc.com・ナウかる研究所）の武器データ（detail-20261110版）"
+    },
+    "14": {
+     "attack": 944,
+     "element": 472,
+     "affinity": 6.0,
+     "src": "アウかる（mhnowcalc.com）の装備一覧の武器データ（2026-11-24に取得）"
     }
    },
    "affinity": 0,
