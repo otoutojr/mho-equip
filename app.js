@@ -1,6 +1,6 @@
 /* 融光工房 ― UI */
 'use strict';
-const APP_VERSION = '2026.11.24-4';
+const APP_VERSION = '2026.11.24-5';
 const STORE_KEY = 'mho-equip:v1';
 const PART_JP = { head: '頭', body: '胴', arm: '腕', waist: '腰', leg: '脚' };
 const $ = (sel) => document.querySelector(sel);
@@ -44,6 +44,7 @@ function pips(on, max, want = 0) {
 
 const state = loadState();
 let DATA = null;
+let MON_ICONS = {};
 let worker = null;
 let reqId = 0;
 const cur = { armor: null, goal: null, weapon: null, goalWeapon: null, elemDps: {}, free: null };
@@ -67,6 +68,8 @@ async function loadData() {
     ['armor', 'skills', 'monsters', 'characters'].map(n => fetch(`data/${n}.json${q}`).then(r => { if (!r.ok) throw new Error(n); return r.json(); }))
   );
   const [weapons, builds] = await Promise.all(['weapons', 'builds'].map(n => fetch(`data/${n}.json${q}`).then(r => (r.ok ? r.json() : null)).catch(() => null)));
+  // 置いてあるモンスターの印の一覧（シリーズ名→拡張子）。無ければ仮の印だけ
+  MON_ICONS = await fetch(`icons/mon/manifest.json${q}`).then(r => (r.ok ? r.json() : {})).catch(() => ({}));
   return { armor, skills, monsters, characters, weapons, builds };
 }
 
@@ -878,9 +881,32 @@ function renderMeter() {
 }
 
 /* ---------- 計算の最強：武器＋防具5部位 ---------- */
-// 防具はシリーズ名（＝モンスター名）だけで出す。融光種は「光」の札。部位は左の札、正式な名前は行を開くと出る
-function armorLabel(p) { return yukoLabel((p.id && seriesOfPiece(p.id)) || p.name || p.raw || '―'); }
+// 防具はシリーズ名（＝モンスター名）だけで出す。頭にモンスターの印、融光種は「光」。部位は左の札、正式な名前は行を開くと出る
+function armorLabel(p) {
+  const s = (p.id && seriesOfPiece(p.id)) || p.name || p.raw || '―';
+  return s === '―' ? ['―'] : [monIcon(s), s.startsWith('融光種') ? s.slice(3) : s];
+}
 const yukoLabel = (s) => (s.startsWith('融光種') ? [el('span', { class: 'yk', role: 'img', 'aria-label': '融光種' }, '光'), s.slice(3)] : [s]);
+// モンスターごとの小さな印。icons/mon/<シリーズ名>.png（webp・jpgも可）が置いてあればそれを使い、無ければ墨の仮の印（オリジナル）を出す。
+// ゲーム内のモンスターアイコンは権利者のものなので同梱しない。使う場合は運営が自分で icons/mon/ に置く（icons/mon/README.md 参照）。
+const monLabel = (() => { let m = null; return (series) => {
+  if (!m) { m = new Map(); for (const s of DATA.armor.series) { const b = s.name.startsWith('融光種') ? s.name.slice(3) : s.name; if (!m.has(b)) m.set(b, b.slice(0, 2)); } }
+  const b = series.startsWith('融光種') ? series.slice(3) : series;
+  return m.get(b) || b.slice(0, 2);
+}; })();
+function monIcon(series) {
+  const yuko = series.startsWith('融光種');
+  const box = el('span', { class: 'micon-box', 'aria-hidden': 'true' });
+  box.append(el('span', { class: 'seal' + (yuko ? ' yk' : '') },
+    el('span', { class: 'ml', text: monLabel(series) }), yuko ? el('span', { class: 'yb', text: '光' }) : null));
+  const ext = MON_ICONS[series]; // manifest に載っているシリーズだけ画像を読む（404を出さない）
+  if (ext) {
+    const img = new Image();
+    img.onload = () => { box.innerHTML = ''; img.className = 'micon'; img.alt = ''; box.append(img); };
+    img.src = 'icons/mon/' + encodeURIComponent(series) + '.' + ext + '?v=' + APP_VERSION;
+  }
+  return box;
+}
 function gearRow(part, name, side, need, body) {
   return el('details', { class: 'row' },
     el('summary', {}, plate(part), el('span', { class: 'rowMain' }, ...[].concat(name)), el('span', { class: 'rowSide' + (need ? ' need' : ''), text: side })),

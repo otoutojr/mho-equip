@@ -15,6 +15,7 @@
 - `phrase.js` + `vendor/budoux/` … 日本語を文節で折り返す（Safari など `word-break: auto-phrase` 未対応の端末だけ。BudouX、Apache-2.0）
 - `vendor/number-flow/`・`vendor/rough-notation/` … DPS目安の数字が桁ごとに回る動き（NumberFlow、MIT）と、強化が要る所を囲む朱の手書きの丸（Rough Notation、MIT）
 - `fonts/` … 見出し・数字の明朝（Shippori Mincho B1 ExtraBold を、使う字だけに絞った woff2。OFL-1.1）
+- `icons/mon/` … 装備の行に出すモンスターの印。`icons/mon/<シリーズ名>.png`（webp・jpgも可）を置くとその画像になり、無ければ墨の仮の印（`app.js` の `monIcon`）が出る。ゲーム内アイコンは権利者のものなので同梱せず、置くかどうかは運営の判断（`icons/mon/README.md` に置ける名前の一覧）
 - `solver.js` … Web Worker。候補の絞り込み → 全組み合わせ探索（同点なら強化段数が少ない方）。組み合わせごとに、アウかる（mhnowcalc.com）の期待値の式（与ダメ系スキルは足し算、会心は+25%・基本会心率15%）でDPS目安を計算する。式の本体は `app.js` の `damageSpec`／`specDps` と `solver.js` の `specDps`（同じ式）。スキル同士の連動（`links`：背水の陣は融光怪力Lv3で常に発動）は `damageSpec` で作り、`solver.js` の `linkD` で足す
 - `data/*.json` … 武器・防具・スキル・モンスター・キャラの重み
 - `tools/build_data.py` … 収集した生データから `data/` を作る

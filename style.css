@@ -296,6 +296,19 @@ summary { -webkit-tap-highlight-color: transparent; }
 /* 融光種の「光」の札（防具名の前） */
 .yk { display: inline-grid; place-items: center; width: 1.5em; height: 1.5em; margin-right: 6px; border-radius: 3px; vertical-align: .05em;
   font: 700 max(12px, .8em)/1 var(--serif); color: #4a3300; background: linear-gradient(135deg, #fff6d2, #f1cb62); box-shadow: 0 0 0 1px #b88a22, 0 0 7px rgba(241, 203, 98, .75); }
+/* モンスターの印：実画像(icons/mon/)があれば .micon、無ければ墨の仮の印 .seal */
+.micon-box { display: inline-flex; vertical-align: middle; margin-right: 8px; flex: none; }
+.micon { width: 26px; height: 26px; border-radius: 4px; object-fit: cover; border: 1px solid var(--ink); background: var(--paper); }
+.seal { position: relative; box-sizing: border-box; display: grid; place-items: center; width: 26px; height: 26px; border-radius: 4px;
+  border: 1.5px solid var(--ink); color: var(--ink); background: var(--paper); }
+.seal .ml { font: 700 clamp(8px, .6em, 10px)/1 var(--serif); letter-spacing: -.03em; }
+.seal.yk { width: 26px; height: 26px; margin: 0; border-color: var(--shu); color: var(--shu); background: var(--paper); box-shadow: none; }
+.seal .yb { position: absolute; top: -5px; right: -5px; display: grid; place-items: center; width: 13px; height: 13px; border-radius: 3px;
+  font: 700 9px/1 var(--serif); color: #4a3300; background: linear-gradient(135deg, #fff6d2, #f1cb62); box-shadow: 0 0 0 1px #b88a22; }
+/* 本文中（候補・攻略サイト構成）の印は少し小さく */
+.rowBody .micon-box, .rowStatic .micon-box { margin-right: 6px; }
+.rowBody .micon, .rowBody .seal, .rowStatic .micon, .rowStatic .seal { width: 20px; height: 20px; }
+.rowBody .seal .yb, .rowStatic .seal .yb { width: 11px; height: 11px; top: -4px; right: -4px; font-size: 8px; }
 .rowBody .full { color: var(--muted); }
 /* 中身が無いときの補足の行は場所を取らない */
 .note.foot:empty, #resultHint:empty { display: none; }
