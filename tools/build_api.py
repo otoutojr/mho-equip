@@ -36,6 +36,8 @@ def main():
             return map_rank.get(g['map'], 1)
         if g['type'] == 'rank':  # 解放ランクは未確認で、このランクの画面に並んでいたことだけ分かっているもの
             return g['rank']
+        if g['type'] == 'hidden':  # まだ作れないので、いったんおすすめに出さない（rank は画面で見えたランク）
+            return g.get('rank') or 99
         return 1
 
     piece = {}

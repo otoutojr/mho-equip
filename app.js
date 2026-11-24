@@ -1,6 +1,6 @@
 /* 融光工房 ― UI */
 'use strict';
-const APP_VERSION = '2026.11.24-6';
+const APP_VERSION = '2026.11.24-7';
 const STORE_KEY = 'mho-equip:v1';
 const PART_JP = { head: '頭', body: '胴', arm: '腕', waist: '腰', leg: '脚' };
 const $ = (sel) => document.querySelector(sel);
@@ -167,7 +167,17 @@ function wantsFor(c, elem = charElement(c)) {
   return out;
 }
 const skillMaxLv = (name) => { const sk = DATA.skills.skills.find(x => x.name === name); return Math.min(8, (sk && sk.maxLv) || 7); };
-let wantOpen = false, wantCat = '効く順', wantTimer = null;
+let wantOpen = false, wantCat = '効く順', wantTimer = null, wantMode = 'in';
+// 外すスキル（全キャラ共通）。このスキルが1でも付く防具・組み合わせは使わない（体力が減る融光怪力など）
+const banList = () => (state.ban = state.ban || []);
+function setBan(name, on) {
+  const b = banList(), i = b.indexOf(name);
+  if (on && i < 0) b.push(name); if (!on && i >= 0) b.splice(i, 1);
+  saveState();
+  cur.armor = null; cur.free = null;
+  renderWants();
+  clearTimeout(wantTimer); wantTimer = setTimeout(() => { cur.elemDps = {}; solve(); }, 250);
+}
 function setWant(name, lv) {
   const c = currentChar();
   state.wants = state.wants || {};
@@ -211,12 +221,18 @@ function renderWants() {
       el('div', { class: 'wantLv' }, pips(have, max, lv), el('span', { class: 'lv', text: `Lv${lv}以上` })),
       plus));
   }
+  for (const name of banList()) {
+    box.append(el('div', { class: 'want ban' },
+      el('div', { class: 'wantName' }, name),
+      el('button', { type: 'button', class: 'step', 'aria-label': `${name}を外すのをやめる`, onclick: () => setBan(name, false), text: '×' }),
+      el('div', { class: 'wantLv' }, el('span', { class: 'lv out', text: '外す' }))));
+  }
   box.append(el('button', { type: 'button', class: 'addBtn', 'aria-expanded': String(wantOpen), 'aria-controls': 'wantPicker',
     onclick: () => { wantOpen = !wantOpen; renderWants(); }, text: 'スキルを追加' }));
   renderWantPicker(c, wants);
   // 下の1行：指定が効いているか、指定なしの最強とどれだけ違うか
   const note = $('#wantNote');
-  if (!names.length) { note.textContent = ''; return; }
+  if (!names.length) { note.textContent = ''; return; } // 外すだけのときは一言も出さない
   if (!cur.armor) { note.textContent = '計算中…'; return; }
   if (short) { note.innerHTML = ''; note.append(el('span', { class: 'need', text: '届かない指定があります。' }), '今のランクで一番近い装備を出しています。'); return; }
   if (cur.free) {
@@ -228,16 +244,20 @@ function renderWantPicker(c, wants) {
   const pk = $('#wantPicker'); pk.hidden = !wantOpen;
   if (!wantOpen) return;
   const cats = $('#wantCats'); cats.innerHTML = '';
+  const modes = el('div', { class: 'chips modes', role: 'group', 'aria-label': '入れる・外す' });
+  modes.append(chip('入れる', wantMode === 'in', () => { wantMode = 'in'; renderWants(); }), chip('外す', wantMode === 'out', () => { wantMode = 'out'; renderWants(); }));
+  cats.append(modes);
   for (const k of WANT_CATS) cats.append(chip(k, wantCat === k, () => { wantCat = k; renderWants(); }));
   const W = effectiveWeights(c);
   const maxGain = (n) => { const a = W[n]; return a && a.length ? a[a.length - 1] : 0; };
-  let list = [...armorSkillNames()].filter(n => !(n in wants));
+  const banned = new Set(banList());
+  let list = [...armorSkillNames()].filter(n => !(n in wants) && !banned.has(n));
   if (wantCat === '効く順') list = list.filter(n => maxGain(n) > 0.3).sort((a, b) => maxGain(b) - maxGain(a));
   else list = list.filter(n => { const sk = DATA.skills.skills.find(x => x.name === n); return ((sk && sk.category) || 'その他') === wantCat; }).sort((a, b) => a.localeCompare(b, 'ja'));
   const box = $('#wantChoices'); box.innerHTML = '';
   for (const n of list) {
     const g = maxGain(n);
-    box.append(el('button', { type: 'button', class: 'rowBtn', onclick: () => { wantOpen = false; setWant(n, 1); } },
+    box.append(el('button', { type: 'button', class: 'rowBtn', onclick: () => { wantOpen = false; if (wantMode === 'out') setBan(n, true); else setWant(n, 1); } },
       el('span', { class: 'rowMain', text: n }),
       el('span', { class: 'rowSide', text: (g > 0.3 && c.scoreMode === 'log' ? `最大で${fmtGain(g)}・` : '') + `Lv${skillMaxLv(n)}まで` })));
   }
@@ -513,12 +533,14 @@ function orbTierFor(cap) {
 }
 function monsterOpen(name, rank) { const m = DATA.monsters.monsters.find(x => x.name === name); return !m || m.unlockRank == null || m.unlockRank <= rank; }
 function mapOpen(name, rank) { const m = DATA.monsters.maps.find(x => x.name === name); return !m || m.unlockRank == null || m.unlockRank <= rank; }
+const seriesHidden = (name) => { const sr = DATA.armor.series.find(x => x.name === name); return !!(sr && sr.gate && sr.gate.type === 'hidden'); };
 function availableSeries(rank = state.rank) {
   return DATA.armor.series.filter((s) => {
     const g = s.gate || { type: 'basic' };
     if (g.type === 'monster') return (g.monsters || [g.monster]).some(n => monsterOpen(n, rank));
     if (g.type === 'map') return mapOpen(g.map, rank);
     if (g.type === 'rank') return rank >= g.rank; // 解放ランクが分からず、このランクの画面に並んでいたことだけ確認できたもの
+    if (g.type === 'hidden') return false; // まだ作れないので、いったんおすすめに出さない
     return true;
   }).map(s => s.name);
 }
@@ -615,7 +637,7 @@ function bindControls() {
 /* ---------- solving ---------- */
 // 一度計算した答えは、このページを開いている間だけ覚えておく（通常⇄融光種などを行き来したときにすぐ出す）
 const solveCache = new Map();
-const solveKey = (c, wants) => JSON.stringify([c.id, charWeaponType(c), charElement(c), state.rank, state.target, wants, state.fix]);
+const solveKey = (c, wants) => JSON.stringify([c.id, charWeaponType(c), charElement(c), state.rank, state.target, wants, state.fix, banList()]);
 // 計算中は、前の答えを薄くして残し、判子のまわりで点線を回す（画面の高さを変えない）
 function setCalc(on) {
   $('#app').classList.toggle('calc', on);
@@ -649,7 +671,7 @@ function solve() {
   if (hit) { cur.armor = hit.armor; cur.alts = hit.alts; cur.variants = hit.variants; renderResult(); renderMeter(); }
   renderWants();
   const spec = specFor(c, charElement(c), cur.weapon);
-  const now = { reqId, weights: W, spec, availableSeries: availableSeries(), rarityCap: rankCap(), orbTier: orbTierFor(rankCap()) };
+  const now = { reqId, weights: W, spec, availableSeries: availableSeries(), rarityCap: rankCap(), orbTier: orbTierFor(rankCap()), ban: banList() };
   const jobs = [];
   // 指定があるときは、指定なしの最強も先に出して差を見せる
   if (!hit && Object.keys(wants).length) jobs.push({ ...now, type: 'solve', free: true, topN: 1, K: 12 });
@@ -661,7 +683,7 @@ function solve() {
   jobs.push(() => { const axes = compareAxes(c); if (!cur.armor || !axes.length) { renderCompare([]); return null; }
     return { ...now, type: 'compare', wants, axes, K: 12, baseScore: cur.armor.score }; });
   if (c.elementSelectable) for (const e of HERO_ELEMENTS) jobs.push({ ...now, type: 'solve', elem: e, weights: weightsFor(c, e), spec: specFor(c, e), wants: wantsFor(c, e), topN: 1, K: 10 });
-  jobs.push({ reqId, type: 'solve', goal: true, weights: W, spec: specFor(c, charElement(c), cur.goalWeapon), wants, availableSeries: DATA.armor.series.map(s => s.name), rarityCap: 14, orbTier: 6, topN: 1, K: 12 });
+  jobs.push({ reqId, type: 'solve', goal: true, weights: W, spec: specFor(c, charElement(c), cur.goalWeapon), wants, availableSeries: DATA.armor.series.map(s => s.name).filter(n => !seriesHidden(n)), rarityCap: 14, orbTier: 6, topN: 1, K: 12, ban: banList() });
   runJobs(jobs);
 }
 // 計算の依頼は1つずつ送る。条件が変わったら残りは捨てて、新しい依頼に入れ替える

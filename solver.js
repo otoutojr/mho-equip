@@ -11,6 +11,7 @@ const PARTS = ['head', 'body', 'arm', 'waist', 'leg'];
 // 与ダメ系スキルは足し算なので、スキルごとの点数を足すだけでは比べられない（アウかるの期待値の式）
 let SPEC = null;
 let EXCL = -1; // 「強い装備の候補」を作るとき、無いものとして探し直すスキル
+let BAN = null; // 利用者が「外す」にしたスキル（Set）。このスキルが1でも付く組み合わせは使わない
 function compileSpec(sp) {
   const by = new Array(DB.skillNames.length).fill(null);
   for (const [name, t] of Object.entries(sp.skills || {})) {
@@ -62,6 +63,8 @@ self.onmessage = (e) => {
 };
 function handle(msg) {
   SPEC = msg.spec ? compileSpec(msg.spec) : null;
+  // 攻略サイトの構成（部位が決まっている）は採点だけなので外さない
+  BAN = msg.type !== 'evalBuilds' && msg.ban && msg.ban.length ? new Set(msg.ban.map(n => DB.skillIndex.get(n)).filter(x => x != null)) : null;
   if (msg.type === 'evalBuilds') { self.postMessage({ type: 'builds', reqId: msg.reqId, rows: evalBuilds(msg) }); return; }
   if (msg.type === 'compare') { self.postMessage({ type: 'compare', reqId: msg.reqId, rows: solveCompare(msg, { score: msg.baseScore }) }); return; }
   if (msg.type === 'next') { self.postMessage({ type: 'next', reqId: msg.reqId, next: solveNext(msg, msg.baseScore, new Set(msg.baseIds)) }); return; }
@@ -210,6 +213,7 @@ function preparePieces(W, availableSeries, rarityCap, ownedMap, orbTier) {
     if (!availableSeries.has(p.series)) continue;
     if (p.orbTier && orbTier && p.orbTier > orbTier) continue; // 生産に要る狩魂玉のランクが足りない
     const c = bestRarity(p, W, rarityCap);
+    if (BAN && c.sk.some(k => BAN.has(k.s))) continue; // 外すスキルが付く防具は使わない
     c.owned = ownedMap ? ownedMap[p.id] : null;
     out.push(c);
   }
@@ -272,6 +276,8 @@ function evaluate(combo, W, acc, setCount, touched) {
     setCount[si] = 0;
   }
   let score = 0;
+  let banned = false; // 外すスキル（セット効果で付くものも）が入っていたら、この組み合わせは使わない
+  if (BAN) for (let j = 0; j < nt; j++) if (BAN.has(touched[j]) && acc[touched[j]]) { banned = true; break; }
   if (SPEC) {
     let D = 0, U = 0, A = 0, C = 0, E = 0;
     if (SPEC.links.length) D += linkD(s => (s === EXCL ? 0 : acc[s])); // 下のループで acc を0に戻す前に見る
@@ -288,13 +294,13 @@ function evaluate(combo, W, acc, setCount, touched) {
       acc[s] = 0;
     }
     score += 100 * Math.log(specDps(SPEC, D, U, A, C, E) / SPEC.dps0);
-    return { score, setHits: setHits || [] };
+    return { score: banned ? -1e9 : score, setHits: setHits || [] };
   }
   for (let j = 0; j < nt; j++) {
     const s = touched[j]; const lv = acc[s];
     if (lv) { if (s !== EXCL) score += wval(W, s, lv < DB.skillMax[s] ? lv : DB.skillMax[s]); acc[s] = 0; }
   }
-  return { score, setHits: setHits || [] };
+  return { score: banned ? -1e9 : score, setHits: setHits || [] };
 }
 
 function search(byPart, W, topN) {
@@ -310,6 +316,7 @@ function search(byPart, W, topN) {
         for (const w of Wt) { combo[3] = w;
           for (const l of L) { combo[4] = l;
             const r = evaluate(combo, W, acc, sc, touched);
+            if (r.score <= -1e8) continue; // 外すスキルが付く組み合わせ
             const cost = h.cost + b.cost + a.cost + w.cost + l.cost; // 強化段数の合計（同点なら少ない方）
             const last = top[top.length - 1];
             if (top.length < topN || r.score > last.score + 1e-9 || (Math.abs(r.score - last.score) <= 1e-9 && cost < last.cost)) {

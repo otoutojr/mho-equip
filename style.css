@@ -208,6 +208,12 @@ input[type="range"]::-moz-range-thumb { width: 22px; height: 22px; border-radius
 .wantName .note { display: block; }
 .wantName .note.need { font-weight: 700; }
 .wantLv { display: flex; flex-direction: column; align-items: center; gap: 4px; min-width: 64px; }
+/* 外すスキル：名前に取り消し線、朱の「外す」 */
+.want.ban { grid-template-columns: minmax(0, 1fr) 44px auto; }
+.want.ban .wantName { text-decoration: line-through; text-decoration-color: var(--shu); color: var(--muted); }
+.wantLv .lv.out { color: var(--shu); font-weight: 700; }
+/* 入れる・外すの切り替えは種類のチップと分けて1行目に */
+#wantCats .modes { flex-basis: 100%; padding-bottom: 8px; margin-bottom: 2px; border-bottom: 1px dashed var(--rule); }
 .step { flex: none; width: 44px; height: 44px; color: var(--ink); border: 1px solid var(--rule); border-radius: 3px; background: var(--card); font-size: var(--f-t); line-height: 1; }
 .addBtn { display: flex; align-items: center; gap: 8px; width: calc(100% - 24px); min-height: 50px; font: 700 var(--f-m)/1 var(--serif); letter-spacing: .06em; text-align: left; }
 .addBtn::before { content: '＋'; font-weight: 400; }
