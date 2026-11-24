@@ -1,6 +1,6 @@
 /* 融光工房 ― UI */
 'use strict';
-const APP_VERSION = '2026.11.24-1';
+const APP_VERSION = '2026.11.24-2';
 const STORE_KEY = 'mho-equip:v1';
 const PART_JP = { head: '頭', body: '胴', arm: '腕', waist: '腰', leg: '脚' };
 const $ = (sel) => document.querySelector(sel);
@@ -250,6 +250,8 @@ function renderWantPicker(c, wants) {
 const BASE_AFF = 15;   // 基本の会心率（アウかるの既定値）
 const CORE_CAP = 22.5; // 主人公などのコアパッシブ（会心率1%→与ダメ+0.25%）の上限
 function skillDef(name) { return DATA.skills.skills.find(s => s.name === name.replace('{属性}', '火')); }
+// 融光種が相手のときだけ効くスキル（融光感知）。通常種が相手のときは一覧に出さない
+function yukoOnly(name) { const d = skillDef(name); return !!(d && d.levels && d.levels.length && d.levels.every(l => !l.pct && l.pctYuko)); }
 // キャラ・属性・武器から計算の式を作る。ソルバー（solver.js）にも同じものを送って、組み合わせごとに計算する
 function damageSpec(c, elem, weapon) {
   const m = c.model || {}, yuko = state.target === 'yuko';
@@ -1068,7 +1070,7 @@ function renderPriorities() {
     const arr = W[key] || [];
     const lv = p.targetLv || arr.length;
     return { p, key, lv, w: arr.length ? arr[Math.min(lv, arr.length) - 1] : 0 };
-  }).sort((a, b) => b.w - a.w);
+  }).filter(({ key, w }) => !(w <= 0 && state.target !== 'yuko' && yukoOnly(key))).sort((a, b) => b.w - a.w);
   for (const { p, key, lv, w } of items) {
     list.append(el('details', { class: 'row two' },
       el('summary', {}, el('span', { class: 'rowMain', text: `${key} Lv${lv}` }), el('span', { class: 'rowSide', text: c.scoreMode === 'log' ? fmtGain(w) : '' })),

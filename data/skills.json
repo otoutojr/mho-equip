@@ -738,53 +738,55 @@
    "category": "火力",
    "weapon": null,
    "maxLv": 5,
+   "description": "融光種モンスターが狂暴状態のとき、冒険者の与ダメージが増加する。",
    "levels": [
     {
      "lv": 1,
      "effect": "スキル発動時の与ダメージ+4%。",
-     "value": 4.0,
+     "value": 0.0,
      "valueYuko": 4.0,
-     "pct": 4.0,
+     "pct": 0.0,
      "pctYuko": 4.0,
      "flat": 0
     },
     {
      "lv": 2,
      "effect": "スキル発動時の与ダメージ+8%。",
-     "value": 8.0,
+     "value": 0.0,
      "valueYuko": 8.0,
-     "pct": 8.0,
+     "pct": 0.0,
      "pctYuko": 8.0,
      "flat": 0
     },
     {
      "lv": 3,
      "effect": "スキル発動時の与ダメージ+13%。",
-     "value": 13.0,
+     "value": 0.0,
      "valueYuko": 13.0,
-     "pct": 13.0,
+     "pct": 0.0,
      "pctYuko": 13.0,
      "flat": 0
     },
     {
      "lv": 4,
      "effect": "スキル発動時の与ダメージ+18%。",
-     "value": 18.0,
+     "value": 0.0,
      "valueYuko": 18.0,
-     "pct": 18.0,
+     "pct": 0.0,
      "pctYuko": 18.0,
      "flat": 0
     },
     {
      "lv": 5,
      "effect": "スキル発動時の与ダメージ+25%。",
-     "value": 25.0,
+     "value": 0.0,
      "valueYuko": 25.0,
-     "pct": 25.0,
+     "pct": 0.0,
      "pctYuko": 25.0,
      "flat": 0
     }
-   ]
+   ],
+   "note": "Lvごとの数値は GameWith・アウかるのスキル一覧（+4/+8/+13/+18/+25%）。融光種が相手のときだけ効くので、通常種相手（pct）は0、融光種相手（pctYuko）に数値を入れる。融光種相手でどれだけ発動しているかは tools/make_models.py のモデルで扱う"
   },
   {
    "name": "狩人の第六感",
