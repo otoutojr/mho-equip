@@ -1,6 +1,6 @@
 /* 融光工房 ― UI */
 'use strict';
-const APP_VERSION = '2026.11.24-7';
+const APP_VERSION = '2026.11.25-1';
 const STORE_KEY = 'mho-equip:v1';
 const PART_JP = { head: '頭', body: '胴', arm: '腕', waist: '腰', leg: '脚' };
 const $ = (sel) => document.querySelector(sel);
@@ -903,10 +903,10 @@ function renderMeter() {
 }
 
 /* ---------- 計算の最強：武器＋防具5部位 ---------- */
-// 防具はシリーズ名（＝モンスター名）だけで出す。頭にモンスターの印、融光種は「光」。部位は左の札、正式な名前は行を開くと出る
+// 防具はシリーズ名（＝モンスター名。融光種は「融光種」まで付ける）で出す。頭にモンスターの印、部位は左の札、正式な名前は行を開くと出る
 function armorLabel(p) {
   const s = (p.id && seriesOfPiece(p.id)) || p.name || p.raw || '―';
-  return s === '―' ? ['―'] : [monIcon(s), s.startsWith('融光種') ? s.slice(3) : s];
+  return s === '―' ? ['―'] : [monIcon(s), s];
 }
 const yukoLabel = (s) => (s.startsWith('融光種') ? [el('span', { class: 'yk', role: 'img', 'aria-label': '融光種' }, '光'), s.slice(3)] : [s]);
 // モンスターごとの小さな印。icons/mon/<シリーズ名>.png（webp・jpgも可）が置いてあればそれを使い、無ければ墨の仮の印（オリジナル）を出す。
