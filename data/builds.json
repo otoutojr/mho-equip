@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21",
+ "updated": "2026-11-27",
  "builds": [
   {
    "id": "b001",
@@ -20884,6 +20884,176 @@
   },
   {
    "id": "b186",
+   "charId": "fiya",
+   "charName": "フィーヤ",
+   "weaponType": "大剣",
+   "element": "火",
+   "weapon": {
+    "raw": "融光種レッドウィング"
+   },
+   "pieces": {
+    "head": {
+     "id": "u878d_u5149_u7a2e_u30ea_u30aa_u30cf_u30f_head",
+     "name": "融光種リオハートヘルム"
+    },
+    "body": {
+     "id": "u878d_u5149_u7a2e_u30ea_u30aa_u30cf_u30f_body",
+     "name": "融光種リオハートメイル"
+    },
+    "arm": {
+     "id": "u30d0_u30eb_u30ad_u30f3_arm",
+     "name": "バルキンアーム"
+    },
+    "waist": {
+     "id": "u878d_u5149_u7a2e_u30ec_u30a6_u30b9_waist",
+     "name": "融光種レウスコイル"
+    },
+    "leg": {
+     "id": "u878d_u5149_u7a2e_u30b8_u30e3_u30ca_u30d_leg",
+     "name": "融光種ジャナフグリーヴ"
+    }
+   },
+   "refs": [
+    {
+     "source": "GameWith",
+     "label": "火属性特化・サポ",
+     "stage": "最強装備",
+     "rarityRange": null,
+     "url": "https://gamewith.jp/mhoutlanders/577457",
+     "updated": "2026-11-27",
+     "comment": "武器は融光種レッドウィング。作れるなら光稜・デュランダルもおすすめ",
+     "skills": [
+      {
+       "skill": "溜め強化",
+       "lv": 7
+      },
+      {
+       "skill": "不屈の意志",
+       "lv": 3
+      },
+      {
+       "skill": "会心撃【属性】",
+       "lv": 3
+      },
+      {
+       "skill": "高圧ガード",
+       "lv": 2
+      },
+      {
+       "skill": "威嚇",
+       "lv": 1
+      },
+      {
+       "skill": "火耐性強化",
+       "lv": 1
+      },
+      {
+       "skill": "狩人の第六感",
+       "lv": 1
+      },
+      {
+       "skill": "睡眠耐性",
+       "lv": 1
+      }
+     ],
+     "weapon": "融光種レッドウィング"
+    }
+   ],
+   "weapons": [
+    {
+     "name": "融光種レッドウィング",
+     "known": false
+    }
+   ],
+   "sourceCount": 1
+  },
+  {
+   "id": "b187",
+   "charId": "fiya",
+   "charName": "フィーヤ",
+   "weaponType": "大剣",
+   "element": "火",
+   "weapon": {
+    "raw": "融光種レッドウィング"
+   },
+   "pieces": {
+    "head": {
+     "id": "u878d_u5149_u7a2e_u30ea_u30aa_u30cf_u30f_head",
+     "name": "融光種リオハートヘルム"
+    },
+    "body": {
+     "id": "u878d_u5149_u7a2e_u30ea_u30aa_u30cf_u30f_body",
+     "name": "融光種リオハートメイル"
+    },
+    "arm": {
+     "id": "u878d_u5149_u7a2e_u30ec_u30a6_u30b9_arm",
+     "name": "融光種レウスアーム"
+    },
+    "waist": {
+     "id": "u30b8_u30e3_u30ca_u30d5_waist",
+     "name": "ジャナフコイル"
+    },
+    "leg": {
+     "id": "u878d_u5149_u7a2e_u30ec_u30a6_u30b9_leg",
+     "name": "融光種レウスグリーヴ"
+    }
+   },
+   "refs": [
+    {
+     "source": "GameWith",
+     "label": "対通常種（会心率優先）",
+     "stage": "最強装備",
+     "rarityRange": null,
+     "url": "https://gamewith.jp/mhoutlanders/577457",
+     "updated": "2026-11-27",
+     "comment": "武器は融光種レッドウィング。作れるなら光稜・デュランダルもおすすめ",
+     "skills": [
+      {
+       "skill": "火属性ダメージUP",
+       "lv": 7
+      },
+      {
+       "skill": "会心撃【属性】",
+       "lv": 3
+      },
+      {
+       "skill": "不屈の意志",
+       "lv": 3
+      },
+      {
+       "skill": "高圧ガード",
+       "lv": 2
+      },
+      {
+       "skill": "体力ループ",
+       "lv": 1
+      },
+      {
+       "skill": "制圧回復",
+       "lv": 1
+      },
+      {
+       "skill": "早食い術",
+       "lv": 1
+      },
+      {
+       "skill": "逆境",
+       "lv": 1
+      }
+     ],
+     "weapon": "融光種レッドウィング"
+    }
+   ],
+   "weapons": [
+    {
+     "name": "融光種レッドウィング",
+     "known": false
+    }
+   ],
+   "sourceCount": 1
+  },
+  {
+   "id": "b188",
    "charId": "hero_gs",
    "charName": "主人公（大剣）",
    "weaponType": "大剣",
@@ -20948,7 +21118,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b187",
+   "id": "b189",
    "charId": "hero_ls",
    "charName": "主人公（太刀）",
    "weaponType": "太刀",
@@ -21021,7 +21191,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b188",
+   "id": "b190",
    "charId": "hero_db",
    "charName": "主人公（双剣）",
    "weaponType": "双剣",
@@ -21086,7 +21256,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b189",
+   "id": "b191",
    "charId": "hero_lance",
    "charName": "主人公（ランス）",
    "weaponType": "ランス",
@@ -21155,7 +21325,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b190",
+   "id": "b192",
    "charId": "hero_hbg",
    "charName": "主人公（ヘビィ）",
    "weaponType": "ヘビィボウガン",
@@ -21252,7 +21422,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b191",
+   "id": "b193",
    "charId": "hero_bow",
    "charName": "主人公（弓）",
    "weaponType": "弓",
@@ -21321,7 +21491,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b192",
+   "id": "b194",
    "charId": "hero_hammer",
    "charName": "主人公（ハンマー）",
    "weaponType": "ハンマー",
@@ -21386,7 +21556,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b193",
+   "id": "b195",
    "charId": "hero_cb",
    "charName": "主人公（チャアク）",
    "weaponType": "チャージアックス",
@@ -21455,7 +21625,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b194",
+   "id": "b196",
    "charId": "midori",
    "charName": "ミドリ",
    "weaponType": "太刀",
@@ -21552,7 +21722,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b195",
+   "id": "b197",
    "charId": "pepe",
    "charName": "ペペ",
    "weaponType": "ヘビィボウガン",
@@ -21621,7 +21791,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b196",
+   "id": "b198",
    "charId": "cless",
    "charName": "クレス",
    "weaponType": "双剣",
@@ -21694,7 +21864,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b197",
+   "id": "b199",
    "charId": "luca",
    "charName": "ルカ",
    "weaponType": "弓",
@@ -21763,7 +21933,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b198",
+   "id": "b200",
    "charId": "ensho",
    "charName": "エンショウ",
    "weaponType": "大剣",
@@ -21836,7 +22006,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b199",
+   "id": "b201",
    "charId": "akenia",
    "charName": "アケニア",
    "weaponType": "ランス",
@@ -21909,7 +22079,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b200",
+   "id": "b202",
    "charId": "raya",
    "charName": "ラヤ",
    "weaponType": "双剣",
@@ -21978,7 +22148,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b201",
+   "id": "b203",
    "charId": "folio",
    "charName": "フォリオ",
    "weaponType": "ランス",
@@ -22047,7 +22217,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b202",
+   "id": "b204",
    "charId": "madre",
    "charName": "マドレ",
    "weaponType": "弓",
@@ -22116,7 +22286,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b203",
+   "id": "b205",
    "charId": "lord",
    "charName": "ロード",
    "weaponType": "ハンマー",
@@ -22185,7 +22355,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b204",
+   "id": "b206",
    "charId": "ryunosuke",
    "charName": "リュウノスケ",
    "weaponType": "太刀",
@@ -22254,7 +22424,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b205",
+   "id": "b207",
    "charId": "brix",
    "charName": "ブリックス",
    "weaponType": "大剣",
@@ -22319,7 +22489,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b206",
+   "id": "b208",
    "charId": "haze",
    "charName": "ヘイズ",
    "weaponType": "双剣",
@@ -22388,7 +22558,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b207",
+   "id": "b209",
    "charId": "hero_ls",
    "charName": "主人公（太刀）",
    "weaponType": "太刀",
@@ -22465,7 +22635,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b208",
+   "id": "b210",
    "charId": "pepe",
    "charName": "ペペ",
    "weaponType": "ヘビィボウガン",
@@ -22534,7 +22704,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b209",
+   "id": "b211",
    "charId": null,
    "charName": "全武器種（汎用テンプレ）",
    "weaponType": null,
@@ -22616,7 +22786,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b210",
+   "id": "b212",
    "charId": null,
    "charName": "全武器種（汎用テンプレ）",
    "weaponType": null,
@@ -22698,7 +22868,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b211",
+   "id": "b213",
    "charId": "hero_gs",
    "charName": "主人公（大剣）",
    "weaponType": "大剣",
@@ -22788,7 +22958,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b212",
+   "id": "b214",
    "charId": "hero_gs",
    "charName": "主人公（大剣）",
    "weaponType": "大剣",
@@ -22874,7 +23044,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b213",
+   "id": "b215",
    "charId": "hero_ls",
    "charName": "主人公（太刀）",
    "weaponType": "太刀",
@@ -22956,7 +23126,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b214",
+   "id": "b216",
    "charId": "hero_ls",
    "charName": "主人公（太刀）",
    "weaponType": "太刀",
@@ -23046,7 +23216,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b215",
+   "id": "b217",
    "charId": "hero_db",
    "charName": "主人公（双剣）",
    "weaponType": "双剣",
@@ -23136,7 +23306,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b216",
+   "id": "b218",
    "charId": "hero_db",
    "charName": "主人公（双剣）",
    "weaponType": "双剣",
@@ -23226,7 +23396,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b217",
+   "id": "b219",
    "charId": "hero_db",
    "charName": "主人公（双剣）",
    "weaponType": "双剣",
@@ -23316,7 +23486,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b218",
+   "id": "b220",
    "charId": "hero_hammer",
    "charName": "主人公（ハンマー）",
    "weaponType": "ハンマー",
@@ -23402,7 +23572,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b219",
+   "id": "b221",
    "charId": "hero_hammer",
    "charName": "主人公（ハンマー）",
    "weaponType": "ハンマー",
@@ -23496,7 +23666,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b220",
+   "id": "b222",
    "charId": "hero_lance",
    "charName": "主人公（ランス）",
    "weaponType": "ランス",
@@ -23586,7 +23756,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b221",
+   "id": "b223",
    "charId": "hero_lance",
    "charName": "主人公（ランス）",
    "weaponType": "ランス",
@@ -23676,7 +23846,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b222",
+   "id": "b224",
    "charId": "hero_cb",
    "charName": "主人公（チャアク）",
    "weaponType": "チャージアックス",
@@ -23766,7 +23936,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b223",
+   "id": "b225",
    "charId": "hero_cb",
    "charName": "主人公（チャアク）",
    "weaponType": "チャージアックス",
@@ -23856,7 +24026,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b224",
+   "id": "b226",
    "charId": "hero_hbg",
    "charName": "主人公（ヘビィ）",
    "weaponType": "ヘビィボウガン",
@@ -23934,7 +24104,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b225",
+   "id": "b227",
    "charId": "hero_hbg",
    "charName": "主人公（ヘビィ）",
    "weaponType": "ヘビィボウガン",
@@ -24016,7 +24186,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b226",
+   "id": "b228",
    "charId": "hero_bow",
    "charName": "主人公（弓）",
    "weaponType": "弓",
@@ -24106,7 +24276,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b227",
+   "id": "b229",
    "charId": "hero_bow",
    "charName": "主人公（弓）",
    "weaponType": "弓",
@@ -24196,7 +24366,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b228",
+   "id": "b230",
    "charId": "raya",
    "charName": "ラヤ",
    "weaponType": "双剣",
@@ -24278,7 +24448,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b229",
+   "id": "b231",
    "charId": "raya",
    "charName": "ラヤ",
    "weaponType": "双剣",
@@ -24368,7 +24538,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b230",
+   "id": "b232",
    "charId": "madre",
    "charName": "マドレ",
    "weaponType": "弓",
@@ -24454,7 +24624,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b231",
+   "id": "b233",
    "charId": "madre",
    "charName": "マドレ",
    "weaponType": "弓",
@@ -24544,7 +24714,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b232",
+   "id": "b234",
    "charId": "midori",
    "charName": "ミドリ",
    "weaponType": "太刀",
@@ -24626,7 +24796,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b233",
+   "id": "b235",
    "charId": "midori",
    "charName": "ミドリ",
    "weaponType": "太刀",
@@ -24708,7 +24878,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b234",
+   "id": "b236",
    "charId": "pepe",
    "charName": "ペペ",
    "weaponType": "ヘビィボウガン",
@@ -24786,7 +24956,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b235",
+   "id": "b237",
    "charId": "pepe",
    "charName": "ペペ",
    "weaponType": "ヘビィボウガン",
@@ -24852,7 +25022,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b236",
+   "id": "b238",
    "charId": "folio",
    "charName": "フォリオ",
    "weaponType": "ランス",
@@ -24934,7 +25104,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b237",
+   "id": "b239",
    "charId": "folio",
    "charName": "フォリオ",
    "weaponType": "ランス",
@@ -25020,7 +25190,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b238",
+   "id": "b240",
    "charId": "luca",
    "charName": "ルカ",
    "weaponType": "弓",
@@ -25101,7 +25271,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b239",
+   "id": "b241",
    "charId": "luca",
    "charName": "ルカ",
    "weaponType": "弓",
@@ -25194,7 +25364,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b240",
+   "id": "b242",
    "charId": "luca",
    "charName": "ルカ",
    "weaponType": "弓",
@@ -25279,7 +25449,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b241",
+   "id": "b243",
    "charId": "hero_hbg",
    "charName": "主人公（ヘビィ）",
    "weaponType": "ヘビィボウガン",
@@ -25364,7 +25534,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b242",
+   "id": "b244",
    "charId": "hero_hbg",
    "charName": "主人公（ヘビィ）",
    "weaponType": "ヘビィボウガン",
@@ -25449,7 +25619,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b243",
+   "id": "b245",
    "charId": "hero_hbg",
    "charName": "主人公（ヘビィ）",
    "weaponType": "ヘビィボウガン",
@@ -25538,7 +25708,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b244",
+   "id": "b246",
    "charId": "midori",
    "charName": "ミドリ",
    "weaponType": "太刀",
@@ -25615,7 +25785,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b245",
+   "id": "b247",
    "charId": "midori",
    "charName": "ミドリ",
    "weaponType": "太刀",
@@ -25700,7 +25870,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b246",
+   "id": "b248",
    "charId": "hero_ls",
    "charName": "主人公（太刀）",
    "weaponType": "太刀",
@@ -25789,7 +25959,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b247",
+   "id": "b249",
    "charId": "hero_ls",
    "charName": "主人公（太刀）",
    "weaponType": "太刀",
@@ -25841,7 +26011,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b248",
+   "id": "b250",
    "charId": "hero_ls",
    "charName": "主人公（太刀）",
    "weaponType": "太刀",
@@ -25893,7 +26063,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b249",
+   "id": "b251",
    "charId": "hero_ls",
    "charName": "主人公（太刀）",
    "weaponType": "太刀",
@@ -25978,7 +26148,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b250",
+   "id": "b252",
    "charId": "hero_ls",
    "charName": "主人公（太刀）",
    "weaponType": "太刀",
@@ -26030,7 +26200,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b251",
+   "id": "b253",
    "charId": "hero_ls",
    "charName": "主人公（太刀）",
    "weaponType": "太刀",
@@ -26119,7 +26289,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b252",
+   "id": "b254",
    "charId": "hero_ls",
    "charName": "主人公（太刀）",
    "weaponType": "太刀",
@@ -26208,7 +26378,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b253",
+   "id": "b255",
    "charId": "hero_ls",
    "charName": "主人公（太刀）",
    "weaponType": "太刀",
@@ -26297,7 +26467,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b254",
+   "id": "b256",
    "charId": "hero_ls",
    "charName": "主人公（太刀）",
    "weaponType": "太刀",
@@ -26349,7 +26519,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b255",
+   "id": "b257",
    "charId": "hero_hbg",
    "charName": "主人公（ヘビィ）",
    "weaponType": "ヘビィボウガン",
@@ -26434,7 +26604,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b256",
+   "id": "b258",
    "charId": "hero_hbg",
    "charName": "主人公（ヘビィ）",
    "weaponType": "ヘビィボウガン",
@@ -26486,7 +26656,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b257",
+   "id": "b259",
    "charId": "hero_hbg",
    "charName": "主人公（ヘビィ）",
    "weaponType": "ヘビィボウガン",
@@ -26538,7 +26708,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b258",
+   "id": "b260",
    "charId": "hero_hbg",
    "charName": "主人公（ヘビィ）",
    "weaponType": "ヘビィボウガン",
@@ -26619,7 +26789,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b259",
+   "id": "b261",
    "charId": "hero_hbg",
    "charName": "主人公（ヘビィ）",
    "weaponType": "ヘビィボウガン",
@@ -26671,7 +26841,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b260",
+   "id": "b262",
    "charId": "hero_hbg",
    "charName": "主人公（ヘビィ）",
    "weaponType": "ヘビィボウガン",
@@ -26760,7 +26930,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b261",
+   "id": "b263",
    "charId": "hero_hbg",
    "charName": "主人公（ヘビィ）",
    "weaponType": "ヘビィボウガン",
@@ -26812,7 +26982,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b262",
+   "id": "b264",
    "charId": "hero_hbg",
    "charName": "主人公（ヘビィ）",
    "weaponType": "ヘビィボウガン",
@@ -26864,7 +27034,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b263",
+   "id": "b265",
    "charId": "hero_cb",
    "charName": "主人公（チャアク）",
    "weaponType": "チャージアックス",
@@ -26949,7 +27119,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b264",
+   "id": "b266",
    "charId": "hero_cb",
    "charName": "主人公（チャアク）",
    "weaponType": "チャージアックス",
@@ -27001,7 +27171,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b265",
+   "id": "b267",
    "charId": "hero_cb",
    "charName": "主人公（チャアク）",
    "weaponType": "チャージアックス",
@@ -27053,7 +27223,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b266",
+   "id": "b268",
    "charId": "hero_cb",
    "charName": "主人公（チャアク）",
    "weaponType": "チャージアックス",
@@ -27134,7 +27304,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b267",
+   "id": "b269",
    "charId": "hero_cb",
    "charName": "主人公（チャアク）",
    "weaponType": "チャージアックス",
@@ -27186,7 +27356,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b268",
+   "id": "b270",
    "charId": "hero_cb",
    "charName": "主人公（チャアク）",
    "weaponType": "チャージアックス",
@@ -27275,7 +27445,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b269",
+   "id": "b271",
    "charId": "hero_cb",
    "charName": "主人公（チャアク）",
    "weaponType": "チャージアックス",
@@ -27327,7 +27497,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b270",
+   "id": "b272",
    "charId": "hero_cb",
    "charName": "主人公（チャアク）",
    "weaponType": "チャージアックス",
@@ -27416,7 +27586,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b271",
+   "id": "b273",
    "charId": "hero_cb",
    "charName": "主人公（チャアク）",
    "weaponType": "チャージアックス",
@@ -27468,7 +27638,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b272",
+   "id": "b274",
    "charId": "hero_bow",
    "charName": "主人公（弓）",
    "weaponType": "弓",
@@ -27557,7 +27727,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b273",
+   "id": "b275",
    "charId": "hero_bow",
    "charName": "主人公（弓）",
    "weaponType": "弓",
@@ -27609,7 +27779,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b274",
+   "id": "b276",
    "charId": "hero_bow",
    "charName": "主人公（弓）",
    "weaponType": "弓",
@@ -27661,7 +27831,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b275",
+   "id": "b277",
    "charId": "hero_bow",
    "charName": "主人公（弓）",
    "weaponType": "弓",
@@ -27742,7 +27912,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b276",
+   "id": "b278",
    "charId": "hero_bow",
    "charName": "主人公（弓）",
    "weaponType": "弓",
@@ -27794,7 +27964,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b277",
+   "id": "b279",
    "charId": "hero_bow",
    "charName": "主人公（弓）",
    "weaponType": "弓",
@@ -27883,7 +28053,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b278",
+   "id": "b280",
    "charId": "hero_bow",
    "charName": "主人公（弓）",
    "weaponType": "弓",
@@ -27964,7 +28134,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b279",
+   "id": "b281",
    "charId": "hero_bow",
    "charName": "主人公（弓）",
    "weaponType": "弓",
@@ -28016,7 +28186,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b280",
+   "id": "b282",
    "charId": "hero_gs",
    "charName": "主人公（大剣）",
    "weaponType": "大剣",
@@ -28109,7 +28279,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b281",
+   "id": "b283",
    "charId": "hero_gs",
    "charName": "主人公（大剣）",
    "weaponType": "大剣",
@@ -28161,7 +28331,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b282",
+   "id": "b284",
    "charId": "hero_gs",
    "charName": "主人公（大剣）",
    "weaponType": "大剣",
@@ -28242,7 +28412,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b283",
+   "id": "b285",
    "charId": "hero_gs",
    "charName": "主人公（大剣）",
    "weaponType": "大剣",
@@ -28294,7 +28464,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b284",
+   "id": "b286",
    "charId": "hero_gs",
    "charName": "主人公（大剣）",
    "weaponType": "大剣",
@@ -28383,7 +28553,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b285",
+   "id": "b287",
    "charId": "hero_gs",
    "charName": "主人公（大剣）",
    "weaponType": "大剣",
@@ -28472,7 +28642,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b286",
+   "id": "b288",
    "charId": "hero_gs",
    "charName": "主人公（大剣）",
    "weaponType": "大剣",
@@ -28561,7 +28731,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b287",
+   "id": "b289",
    "charId": "hero_gs",
    "charName": "主人公（大剣）",
    "weaponType": "大剣",
@@ -28613,7 +28783,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b288",
+   "id": "b290",
    "charId": "hero_db",
    "charName": "主人公（双剣）",
    "weaponType": "双剣",
@@ -28702,7 +28872,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b289",
+   "id": "b291",
    "charId": "hero_db",
    "charName": "主人公（双剣）",
    "weaponType": "双剣",
@@ -28754,7 +28924,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b290",
+   "id": "b292",
    "charId": "hero_db",
    "charName": "主人公（双剣）",
    "weaponType": "双剣",
@@ -28839,7 +29009,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b291",
+   "id": "b293",
    "charId": "hero_db",
    "charName": "主人公（双剣）",
    "weaponType": "双剣",
@@ -28891,7 +29061,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b292",
+   "id": "b294",
    "charId": "hero_db",
    "charName": "主人公（双剣）",
    "weaponType": "双剣",
@@ -28980,7 +29150,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b293",
+   "id": "b295",
    "charId": "hero_db",
    "charName": "主人公（双剣）",
    "weaponType": "双剣",
@@ -29069,7 +29239,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b294",
+   "id": "b296",
    "charId": "hero_db",
    "charName": "主人公（双剣）",
    "weaponType": "双剣",
@@ -29121,7 +29291,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b295",
+   "id": "b297",
    "charId": "hero_hammer",
    "charName": "主人公（ハンマー）",
    "weaponType": "ハンマー",
@@ -29214,7 +29384,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b296",
+   "id": "b298",
    "charId": "hero_hammer",
    "charName": "主人公（ハンマー）",
    "weaponType": "ハンマー",
@@ -29266,7 +29436,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b297",
+   "id": "b299",
    "charId": "hero_hammer",
    "charName": "主人公（ハンマー）",
    "weaponType": "ハンマー",
@@ -29318,7 +29488,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b298",
+   "id": "b300",
    "charId": "hero_hammer",
    "charName": "主人公（ハンマー）",
    "weaponType": "ハンマー",
@@ -29399,7 +29569,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b299",
+   "id": "b301",
    "charId": "hero_hammer",
    "charName": "主人公（ハンマー）",
    "weaponType": "ハンマー",
@@ -29451,7 +29621,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b300",
+   "id": "b302",
    "charId": "hero_hammer",
    "charName": "主人公（ハンマー）",
    "weaponType": "ハンマー",
@@ -29532,7 +29702,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b301",
+   "id": "b303",
    "charId": "hero_hammer",
    "charName": "主人公（ハンマー）",
    "weaponType": "ハンマー",
@@ -29584,7 +29754,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b302",
+   "id": "b304",
    "charId": "hero_hammer",
    "charName": "主人公（ハンマー）",
    "weaponType": "ハンマー",
@@ -29673,7 +29843,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b303",
+   "id": "b305",
    "charId": "hero_hammer",
    "charName": "主人公（ハンマー）",
    "weaponType": "ハンマー",
@@ -29762,7 +29932,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b304",
+   "id": "b306",
    "charId": "hero_hammer",
    "charName": "主人公（ハンマー）",
    "weaponType": "ハンマー",
@@ -29814,7 +29984,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b305",
+   "id": "b307",
    "charId": "hero_lance",
    "charName": "主人公（ランス）",
    "weaponType": "ランス",
@@ -29907,7 +30077,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b306",
+   "id": "b308",
    "charId": "hero_lance",
    "charName": "主人公（ランス）",
    "weaponType": "ランス",
@@ -29959,7 +30129,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b307",
+   "id": "b309",
    "charId": "hero_lance",
    "charName": "主人公（ランス）",
    "weaponType": "ランス",
@@ -30011,7 +30181,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b308",
+   "id": "b310",
    "charId": "hero_lance",
    "charName": "主人公（ランス）",
    "weaponType": "ランス",
@@ -30100,7 +30270,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b309",
+   "id": "b311",
    "charId": "hero_lance",
    "charName": "主人公（ランス）",
    "weaponType": "ランス",
@@ -30152,7 +30322,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b310",
+   "id": "b312",
    "charId": "hero_lance",
    "charName": "主人公（ランス）",
    "weaponType": "ランス",
@@ -30249,7 +30419,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b311",
+   "id": "b313",
    "charId": "hero_lance",
    "charName": "主人公（ランス）",
    "weaponType": "ランス",
@@ -30338,7 +30508,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b312",
+   "id": "b314",
    "charId": "hero_lance",
    "charName": "主人公（ランス）",
    "weaponType": "ランス",
@@ -30427,7 +30597,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b313",
+   "id": "b315",
    "charId": "hero_lance",
    "charName": "主人公（ランス）",
    "weaponType": "ランス",
@@ -30479,7 +30649,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b314",
+   "id": "b316",
    "charId": "midori",
    "charName": "ミドリ",
    "weaponType": "太刀",
@@ -30560,7 +30730,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b315",
+   "id": "b317",
    "charId": "midori",
    "charName": "ミドリ",
    "weaponType": "太刀",
@@ -30612,7 +30782,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b316",
+   "id": "b318",
    "charId": "midori",
    "charName": "ミドリ",
    "weaponType": "太刀",
@@ -30664,7 +30834,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b317",
+   "id": "b319",
    "charId": "pepe",
    "charName": "ペペ",
    "weaponType": "ヘビィボウガン",
@@ -30749,7 +30919,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b318",
+   "id": "b320",
    "charId": "pepe",
    "charName": "ペペ",
    "weaponType": "ヘビィボウガン",
@@ -30801,7 +30971,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b319",
+   "id": "b321",
    "charId": "luca",
    "charName": "ルカ",
    "weaponType": "弓",
@@ -30894,7 +31064,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b320",
+   "id": "b322",
    "charId": "akenia",
    "charName": "アケニア",
    "weaponType": "ランス",
@@ -30983,7 +31153,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b321",
+   "id": "b323",
    "charId": "akenia",
    "charName": "アケニア",
    "weaponType": "ランス",
@@ -31035,7 +31205,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b322",
+   "id": "b324",
    "charId": "cless",
    "charName": "クレス",
    "weaponType": "双剣",
@@ -31124,7 +31294,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b323",
+   "id": "b325",
    "charId": "cless",
    "charName": "クレス",
    "weaponType": "双剣",
@@ -31176,7 +31346,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b324",
+   "id": "b326",
    "charId": "ensho",
    "charName": "エンショウ",
    "weaponType": "大剣",
@@ -31265,7 +31435,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b325",
+   "id": "b327",
    "charId": "ensho",
    "charName": "エンショウ",
    "weaponType": "大剣",
@@ -31317,7 +31487,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b326",
+   "id": "b328",
    "charId": "madre",
    "charName": "マドレ",
    "weaponType": "弓",
@@ -31402,7 +31572,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b327",
+   "id": "b329",
    "charId": "madre",
    "charName": "マドレ",
    "weaponType": "弓",
@@ -31454,7 +31624,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b328",
+   "id": "b330",
    "charId": "folio",
    "charName": "フォリオ",
    "weaponType": "ランス",
@@ -31535,7 +31705,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b329",
+   "id": "b331",
    "charId": "folio",
    "charName": "フォリオ",
    "weaponType": "ランス",
@@ -31587,7 +31757,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b330",
+   "id": "b332",
    "charId": "raya",
    "charName": "ラヤ",
    "weaponType": "双剣",
@@ -31672,7 +31842,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b331",
+   "id": "b333",
    "charId": "raya",
    "charName": "ラヤ",
    "weaponType": "双剣",
@@ -31724,7 +31894,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b332",
+   "id": "b334",
    "charId": "ryunosuke",
    "charName": "リュウノスケ",
    "weaponType": "太刀",
@@ -31809,7 +31979,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b333",
+   "id": "b335",
    "charId": "ryunosuke",
    "charName": "リュウノスケ",
    "weaponType": "太刀",
@@ -31861,7 +32031,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b334",
+   "id": "b336",
    "charId": "brix",
    "charName": "ブリックス",
    "weaponType": "大剣",
@@ -31950,7 +32120,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b335",
+   "id": "b337",
    "charId": "brix",
    "charName": "ブリックス",
    "weaponType": "大剣",
@@ -32002,7 +32172,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b336",
+   "id": "b338",
    "charId": "lord",
    "charName": "ロード",
    "weaponType": "ハンマー",
@@ -32091,7 +32261,7 @@
    "sourceCount": 1
   },
   {
-   "id": "b337",
+   "id": "b339",
    "charId": "haze",
    "charName": "ヘイズ",
    "weaponType": "双剣",
@@ -32178,6 +32348,141 @@
     }
    ],
    "sourceCount": 1
+  },
+  {
+   "id": "b340",
+   "charId": "stiria",
+   "charName": "スティリア",
+   "weaponType": "弓",
+   "element": "氷",
+   "weapon": null,
+   "pieces": {
+    "head": {
+     "id": "u878d_u5149_u7a2e_u30ae_u30a8_u30ca_head",
+     "name": "融光種ギエナヘルム"
+    },
+    "body": {
+     "id": "u878d_u5149_u7a2e_u30d7_u30b1_u30d7_u30b_body",
+     "name": "融光種プケプケメイル"
+    },
+    "arm": {
+     "id": "u30ae_u30a8_u30ca_arm",
+     "name": "ギエナアーム"
+    },
+    "waist": {
+     "id": "u878d_u5149_u7a2e_u30a6_u30eb_u30e0_u30f_waist",
+     "name": "融光種ウルムーコイル"
+    },
+    "leg": {
+     "id": "u878d_u5149_u7a2e_u30d7_u30b1_u30d7_u30b_leg",
+     "name": "融光種プケプケグリーヴ"
+    }
+   },
+   "refs": [
+    {
+     "source": "Gamerch",
+     "label": "6章終盤のおすすめ装備",
+     "stage": "6章終盤",
+     "rarityRange": null,
+     "url": "https://gamerch.com/mho/1034856",
+     "updated": "2026-11-27",
+     "comment": "Gamerch では実装前の予想として掲載",
+     "skills": [],
+     "weapon": null
+    }
+   ],
+   "weapons": [],
+   "sourceCount": 1
+  },
+  {
+   "id": "b341",
+   "charId": "stiria",
+   "charName": "スティリア",
+   "weaponType": "弓",
+   "element": "氷",
+   "weapon": null,
+   "pieces": {
+    "head": {
+     "id": "u30c1_u30a7_u30fc_u30f3_head",
+     "name": "チェーンヘッド"
+    },
+    "body": {
+     "id": "u30cf_u30a4_u30e1_u30bf_body",
+     "name": "ハイメタメイル"
+    },
+    "arm": {
+     "id": "u30ae_u30a8_u30ca_arm",
+     "name": "ギエナアーム"
+    },
+    "waist": {
+     "id": "u878d_u5149_u7a2e_u30ab_u30ac_u30c1_waist",
+     "name": "融光種カガチコイル"
+    },
+    "leg": {
+     "id": "u878d_u5149_u7a2e_u30d7_u30b1_u30d7_u30b_leg",
+     "name": "融光種プケプケグリーヴ"
+    }
+   },
+   "refs": [
+    {
+     "source": "Gamerch",
+     "label": "中盤のおすすめ装備",
+     "stage": "中盤",
+     "rarityRange": null,
+     "url": "https://gamerch.com/mho/1034856",
+     "updated": "2026-11-27",
+     "comment": "Gamerch では実装前の予想として掲載",
+     "skills": [],
+     "weapon": null
+    }
+   ],
+   "weapons": [],
+   "sourceCount": 1
+  },
+  {
+   "id": "b342",
+   "charId": "stiria",
+   "charName": "スティリア",
+   "weaponType": "弓",
+   "element": "氷",
+   "weapon": null,
+   "pieces": {
+    "head": {
+     "id": "u30d7_u30b1_u30d7_u30b1_head",
+     "name": "プケプケヘルム"
+    },
+    "body": {
+     "id": "u30cf_u30a4_u30e1_u30bf_body",
+     "name": "ハイメタメイル"
+    },
+    "arm": {
+     "id": "u30e9_u30f3_u30b4_arm",
+     "name": "ランゴアーム"
+    },
+    "waist": {
+     "id": "u30c1_u30a7_u30fc_u30f3_waist",
+     "name": "チェーンベルト"
+    },
+    "leg": {
+     "id": "u30cf_u30a4_u30e1_u30bf_leg",
+     "name": "ハイメタグリーヴ"
+    }
+   },
+   "refs": [
+    {
+     "source": "Gamerch",
+     "label": "序盤のおすすめ装備",
+     "stage": "序盤",
+     "rarityRange": null,
+     "url": "https://gamerch.com/mho/1034856",
+     "updated": "2026-11-27",
+     "comment": "Gamerch では実装前の予想として掲載",
+     "skills": [],
+     "weapon": null
+    }
+   ],
+   "weapons": [],
+   "sourceCount": 1
   }
  ],
  "unresolved": [
@@ -32187,6 +32492,10 @@
   },
   {
    "name": "武器 アルマデステリオ（GameWith）",
+   "count": 2
+  },
+  {
+   "name": "武器 融光種レッドウィング（GameWith）",
    "count": 2
   },
   {
