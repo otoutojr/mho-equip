@@ -45,6 +45,7 @@ function pips(on, max, want = 0) {
 const state = loadState();
 let DATA = null;
 let MON_ICONS = {};
+let CHAR_ICONS = {};
 let worker = null;
 let reqId = 0;
 const cur = { armor: null, goal: null, weapon: null, goalWeapon: null, elemDps: {}, free: null };
@@ -70,6 +71,8 @@ async function loadData() {
   const [weapons, builds, esou] = await Promise.all(['weapons', 'builds', 'esou'].map(n => fetch(`data/${n}.json${q}`).then(r => (r.ok ? r.json() : null)).catch(() => null)));
   // 置いてあるモンスターの印の一覧（シリーズ名→拡張子）。無ければ仮の印だけ
   MON_ICONS = await fetch(`icons/mon/manifest.json${q}`).then(r => (r.ok ? r.json() : {})).catch(() => ({}));
+  // キャラの顔アイコン（名前→拡張子）
+  CHAR_ICONS = await fetch(`icons/char/manifest.json${q}`).then(r => (r.ok ? r.json() : {})).catch(() => ({}));
   return { armor, skills, monsters, characters, weapons, builds, esou };
 }
 
@@ -113,6 +116,17 @@ function uniqueChars() {
 function selectChar(next) { Object.assign(state, next); saveState(); cur.elemDps = {}; wantOpen = false; renderRoster(); renderPicker(); renderPriorities(); solve(); }
 function chip(label, selected, onclick, lead = null, cls = 'chip') { return el('button', { type: 'button', class: cls, 'aria-pressed': String(selected), onclick }, lead, label); }
 const eldot = (e) => el('span', { class: 'eldot', 'data-el': e, 'aria-hidden': 'true', text: e });
+// キャラの顔アイコン。icons/char/<名前>.拡張子 が置いてあれば丸い顔写真、無ければ属性ドット
+function charFace(name, elem) {
+  const ext = CHAR_ICONS[name];
+  if (!ext) return eldot(elem);
+  const wrap = el('span', { class: 'cface', 'aria-hidden': 'true' });
+  const img = new Image(); img.className = 'cface-img'; img.alt = '';
+  img.src = 'icons/char/' + encodeURIComponent(name) + '.' + ext + '?v=' + APP_VERSION;
+  img.onerror = () => { wrap.innerHTML = ''; wrap.append(eldot(elem)); };
+  wrap.append(img);
+  return wrap;
+}
 const reduceMotion = () => !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
 // 一番上の1行：いま何を見ているか
 function renderWho() {
@@ -186,7 +200,7 @@ function renderPicker() {
   const eb = $('#rosterEdit');
   eb.setAttribute('aria-pressed', String(rosterEditing));
   eb.textContent = rosterEditing ? '選び終わる' : '上に並べるキャラを選ぶ';
-  const cchip = (label, elem, on, fn) => { const b = chip(label, on, fn, eldot(elem), 'chip el'); b.dataset.el = elem; return b; };
+  const cchip = (label, elem, on, fn, face = null) => { const b = chip(label, on, fn, face || eldot(elem), 'chip el'); b.dataset.el = elem; return b; };
   const elemOf = (c) => (HERO_ELEMENTS.includes(c.element) ? c.element : '無');
   if (rosterEditing) {
     // 押すたびに、上の帯に並べる・並べないが切り替わる（塗ってあるのが並べるキャラ）
@@ -198,7 +212,7 @@ function renderPicker() {
     box.append(cchip('主人公', heroElement(), state.char === 'hero', () => selectChar({ char: 'hero' }))); // 主人公は武器と属性を選ぶので開いたまま
     const all = uniqueChars();
     for (const c of [...all.filter(x => ids.includes(x.id)), ...all.filter(x => !ids.includes(x.id))]) {
-      box.append(cchip(c.name, elemOf(c), state.char === c.id, () => { selectChar({ char: c.id }); setPicker(false); }));
+      box.append(cchip(c.name, elemOf(c), state.char === c.id, () => { selectChar({ char: c.id }); setPicker(false); }, charFace(c.name, elemOf(c))));
     }
   }
   $('#heroSel').hidden = state.char !== 'hero' || rosterEditing;
