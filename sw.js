@@ -1,5 +1,5 @@
 /* 装備おすすめ service worker: ネットワーク優先、オフライン時はキャッシュ */
-const VERSION = '2026.11.28-5';
+const VERSION = '2026.11.28-6';
 const CACHE = 'mho-equip-' + VERSION;
 const SHELL = ['./', 'index.html', 'style.css', 'app.js', 'phrase.js', 'solver.js', 'manifest.webmanifest',
   'fonts/ShipporiMinchoB1-ExtraBold.subset.woff2', 'vendor/budoux/parser.js', 'vendor/budoux/ja.js',
