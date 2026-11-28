@@ -1,6 +1,6 @@
 /* 融光工房 ― UI */
 'use strict';
-const APP_VERSION = '2026.11.28-3';
+const APP_VERSION = '2026.11.28-4';
 const STORE_KEY = 'mho-equip:v1';
 const PART_JP = { head: '頭', body: '胴', arm: '腕', waist: '腰', leg: '脚' };
 const $ = (sel) => document.querySelector(sel);
@@ -1299,7 +1299,7 @@ const ESOU_ICON_ALIAS = { 'ランゴスタ': 'ランゴ', 'カンタロス': '�
 const esouIconKey = (() => { let m = null; return (name) => {
   if (MON_ICONS[name]) return name;
   if (!m) { m = new Map(Object.entries(ESOU_ICON_ALIAS)); for (const sr of DATA.armor.series) for (const mon of ((sr.gate && sr.gate.monsters) || [])) if (!m.has(mon)) m.set(mon, sr.name); }
-  return m.get(esouName(name)) || null;
+  const base = esouName(name); return m.get(base) || (MON_ICONS[base] ? base : null);
 }; })();
 function esouIcon(card) {
   const mon = esouName(card.name), yuko = mon.startsWith('融光種');
