@@ -152,8 +152,9 @@ const rosterIds = () => (Array.isArray(state.roster) ? state.roster : ROSTER_DEF
 function renderRoster() {
   const box = $('#roster'), x = box.scrollLeft;
   box.innerHTML = '';
-  const mk = (label, elem, on, fn) => {
-    const b = el('button', { type: 'button', class: 'rchip', 'aria-pressed': String(on), onclick: fn }, el('span', { class: 'rdot', 'aria-hidden': 'true', text: elem }), label);
+  const mk = (label, elem, on, fn, face = null) => {
+    const lead = face || el('span', { class: 'rdot', 'aria-hidden': 'true', text: elem });
+    const b = el('button', { type: 'button', class: 'rchip', 'aria-pressed': String(on), onclick: fn }, lead, label);
     b.dataset.el = elem;
     return b;
   };
@@ -162,7 +163,8 @@ function renderRoster() {
   const ids = rosterIds();
   for (const c of uniqueChars()) {
     if (!ids.includes(c.id) && state.char !== c.id) continue; // 並べていないキャラも、見ている間だけは出す
-    box.append(mk(c.name, HERO_ELEMENTS.includes(c.element) ? c.element : '無', state.char === c.id, () => { if (state.char !== c.id) selectChar({ char: c.id }); }));
+    const ce = HERO_ELEMENTS.includes(c.element) ? c.element : '無';
+    box.append(mk(c.name, ce, state.char === c.id, () => { if (state.char !== c.id) selectChar({ char: c.id }); }, charFace(c.name, ce)));
   }
   box.append(el('button', { type: 'button', class: 'rchip more', 'aria-label': 'ほかのキャラやランクを選ぶ', onclick: () => setPicker(true), text: '＋' }));
   box.scrollLeft = x;

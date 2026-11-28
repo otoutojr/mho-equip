@@ -161,6 +161,8 @@ html:has(dialog[open]) { overflow: hidden; }
 .cface { display: inline-block; width: 26px; height: 26px; border-radius: 50%; overflow: hidden; flex: none; border: 1.5px solid var(--el); box-sizing: border-box; }
 .cface-img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .chip.el[aria-pressed="true"] .cface { border-color: var(--el-on); }
+.rchip .cface { width: 22px; height: 22px; border-width: 1.5px; }
+.rchip[aria-pressed="true"] .cface { box-shadow: 0 0 0 1.5px var(--card); border-color: var(--card); }
 .chip.el[aria-pressed="true"] { background: var(--el); border-color: var(--el); color: var(--el-on); }
 .chip.el[aria-pressed="true"] .eldot { background: var(--el-on); color: var(--el); }
 .elRow { display: flex; align-items: center; gap: 10px; }
