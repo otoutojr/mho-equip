@@ -59,6 +59,9 @@ CORE_RULES = {
     '絵装・融光種ディアブロス': {'why': '剛猛が出るキャラが分からないので数えない'},
 }
 
+# アウかるの名前がゲーム内の表示と違うもの
+NAME_FIX = {'絵装・カラカクレ族の戦士': '絵装・パジャプー戦士', '絵装・カラカクレ族の投手': '絵装・パジャプー投手'}
+
 
 def effects(src):
     out = []
@@ -99,6 +102,7 @@ def main():
     for c in cat['charms']:
         if c['quality'] != 4:
             continue
+        c['name'] = NAME_FIX.get(c['name'], c['name'])
         sub = {}
         for o in c['mainSlots'][0]['options']:
             k = FIELD.get(o['field'])
