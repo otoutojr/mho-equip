@@ -61,7 +61,7 @@ COLLECT = r"""
   for (const a of document.querySelectorAll('a[target=_blank]')) if (!/noopener/.test(a.rel || '')) out.blank.push(a.href);
   const W = document.documentElement.clientWidth;
   if (document.documentElement.scrollWidth > W) out.overflow.push('page scrollWidth ' + document.documentElement.scrollWidth + ' > ' + W);
-  for (const e of document.querySelectorAll('main *')) { if (!vis(e)) continue; const r = e.getBoundingClientRect(); if (r.right > W + 1 || r.left < -1) { if (!e.closest('#wantChoices')) out.overflow.push(label(e) + ' ' + Math.round(r.left) + '..' + Math.round(r.right)); } }
+  for (const e of document.querySelectorAll('main *')) { if (!vis(e)) continue; const r = e.getBoundingClientRect(); if (r.right > W + 1 || r.left < -1) { if (!e.closest('#wantChoices, .roster')) out.overflow.push(label(e) + ' ' + Math.round(r.left) + '..' + Math.round(r.right)); } }
   // コントラスト
   const parse = (s) => { const m = s.match(/rgba?\(([^)]+)\)/); if (!m) return null; const p = m[1].split(/[ ,\/]+/).filter(Boolean).map(Number); return { r: p[0], g: p[1], b: p[2], a: p.length > 3 ? p[3] : 1 }; };
   const lin = (v) => { v /= 255; return v <= .03928 ? v / 12.92 : Math.pow((v + .055) / 1.055, 2.4); };
@@ -108,16 +108,18 @@ with sync_playwright() as p:
     page.wait_for_timeout(1200)
 
     def sweep(tag):
-        # 折りたたみを全部開き、選ぶところと「スキルを追加」も開いて、見えるものを全部調べる
+        # 折りたたみを全部開き、「スキルを指定」と下から出る札（選ぶところ）も開いて、見えるものを全部調べる。
+        # 札は dialog（開いている間はうしろを押せない）なので、最後に開いて、調べ終わったら閉じる
         page.evaluate('() => document.querySelectorAll("details").forEach(d => d.open = true)')
-        if page.locator('#picker').is_hidden() and page.locator('#editBtn').is_visible(): page.click('#editBtn')
         if page.locator('.addBtn').first.is_visible() and page.locator('#wantPicker').is_hidden(): page.click('.addBtn')
+        if page.locator('#picker').is_hidden() and page.locator('#editBtn').is_visible(): page.click('#editBtn')
         if selftest and not page.evaluate('() => !!document.getElementById("selftest")'):
             page.evaluate("""() => { const d = document.createElement('div'); d.id = 'selftest';
               d.innerHTML = '<button style="width:20px;height:20px"></button><p style="color:#c9bda0">うすい文字のテスト</p><a href="https://example.com" target="_blank">x</a><input aria-label="t" style="font-size:12px">';
               document.querySelector('main').append(d); }""")
         page.wait_for_timeout(500)
         r = page.evaluate(COLLECT)
+        page.evaluate('() => { const d = document.querySelector("#picker"); if (d && d.open) d.close(); }')
         for k, area in (('targets', '押せる大きさ(<44px)'), ('names', '名前なし'), ('inputs', '入力欄が16px未満'), ('overflow', '横はみ出し'), ('ids', 'id重複'), ('blank', 'target=_blankにnoopenerなし'), ('tabindex', 'tabindex>0')):
             for m in r[k]: err(f'{tag} {area}', m)
         for m in r['contrast']: warn(f'{tag} コントラスト/文字', m)

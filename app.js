@@ -1,6 +1,6 @@
 /* 融光工房 ― UI */
 'use strict';
-const APP_VERSION = '2026.11.28-2';
+const APP_VERSION = '2026.11.28-3';
 const STORE_KEY = 'mho-equip:v1';
 const PART_JP = { head: '頭', body: '胴', arm: '腕', waist: '腰', leg: '脚' };
 const $ = (sel) => document.querySelector(sel);
@@ -82,6 +82,7 @@ function init() {
     worker = new Worker('solver.js?v=' + APP_VERSION);
     worker.onmessage = onWorkerMessage;
     worker.postMessage({ type: 'init', armor: d.armor, skills: d.skills });
+    renderRoster();
     renderPicker();
     renderRank(true);
     bindControls();
@@ -109,9 +110,10 @@ function uniqueChars() {
   const pos = (id) => { const i = CHAR_ORDER.indexOf(id); return i < 0 ? 99 : i; };
   return DATA.characters.characters.filter(c => !c.id.startsWith('hero_')).sort((a, b) => pos(a.id) - pos(b.id));
 }
-function selectChar(next) { Object.assign(state, next); saveState(); cur.elemDps = {}; wantOpen = false; renderPicker(); renderPriorities(); solve(); }
+function selectChar(next) { Object.assign(state, next); saveState(); cur.elemDps = {}; wantOpen = false; renderRoster(); renderPicker(); renderPriorities(); solve(); }
 function chip(label, selected, onclick, lead = null, cls = 'chip') { return el('button', { type: 'button', class: cls, 'aria-pressed': String(selected), onclick }, lead, label); }
 const eldot = (e) => el('span', { class: 'eldot', 'data-el': e, 'aria-hidden': 'true', text: e });
+const reduceMotion = () => !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
 // 一番上の1行：いま何を見ているか
 function renderWho() {
   const c = currentChar();
@@ -129,15 +131,77 @@ function renderWho() {
     if (mark) { stamp.classList.remove('hit'); void stamp.offsetWidth; stamp.classList.add('hit'); } // 属性が変わったときだけ「ぽん」と押す（動きは CSS 側）
   }
 }
+// 上の帯：よく使うキャラを並べて、1回押すだけで切り替える（主人公はいつも先頭）。並べるキャラは下の札で選ぶ。
+// state.roster が無いうちは ROSTER_DEFAULT（運営の手持ち）
+const ROSTER_DEFAULT = ['pepe', 'fiya', 'stiria', 'midori', 'luca', 'cless', 'ensho', 'akenia', 'madre'];
+const rosterIds = () => (Array.isArray(state.roster) ? state.roster : ROSTER_DEFAULT);
+function renderRoster() {
+  const box = $('#roster'), x = box.scrollLeft;
+  box.innerHTML = '';
+  const mk = (label, elem, on, fn) => {
+    const b = el('button', { type: 'button', class: 'rchip', 'aria-pressed': String(on), onclick: fn }, el('span', { class: 'rdot', 'aria-hidden': 'true', text: elem }), label);
+    b.dataset.el = elem;
+    return b;
+  };
+  // 主人公は、選んであるときにもう一度押すと武器と属性を選ぶ札が開く
+  box.append(mk('主人公', heroElement(), state.char === 'hero', () => { if (state.char === 'hero') setPicker(true); else selectChar({ char: 'hero' }); }));
+  const ids = rosterIds();
+  for (const c of uniqueChars()) {
+    if (!ids.includes(c.id) && state.char !== c.id) continue; // 並べていないキャラも、見ている間だけは出す
+    box.append(mk(c.name, HERO_ELEMENTS.includes(c.element) ? c.element : '無', state.char === c.id, () => { if (state.char !== c.id) selectChar({ char: c.id }); }));
+  }
+  box.append(el('button', { type: 'button', class: 'rchip more', 'aria-label': 'ほかのキャラやランクを選ぶ', onclick: () => setPicker(true), text: '＋' }));
+  box.scrollLeft = x;
+  // 選んだ札が端で切れているときだけ、真ん中まで送る（位置を覚えやすいように、見えているときは動かさない）
+  const on = box.querySelector('[aria-pressed="true"]');
+  if (on && (on.offsetLeft < x + 16 || on.offsetLeft + on.offsetWidth > x + box.clientWidth - 16)) {
+    const to = Math.max(0, on.offsetLeft - (box.clientWidth - on.offsetWidth) / 2);
+    if (box.scrollTo) box.scrollTo({ left: to, behavior: reduceMotion() ? 'auto' : 'smooth' }); else box.scrollLeft = to;
+  }
+}
+// 下から出る札（dialog）。キャラは押した時点で切り替わるので「決定」は無い。外側を押すか「閉じる」で閉じる
+let rosterEditing = false, pickClosing = null;
 function setPicker(open) {
-  $('#picker').hidden = !open;
-  const b = $('#editBtn'); b.setAttribute('aria-expanded', String(open)); b.textContent = open ? '閉じる' : '変更';
+  const d = $('#picker');
+  clearTimeout(pickClosing); d.classList.remove('closing'); // 閉じかけの途中で押し直されたら、閉じるのをやめる
+  if (open) {
+    rosterEditing = false; renderPicker();
+    if (!d.open) { if (d.showModal) d.showModal(); else d.setAttribute('open', ''); }
+    d.scrollTop = 0;
+    d.firstElementChild.focus({ preventScroll: true }); // 最初のボタンに枠が出ないように、札そのものに焦点を置く
+    $('#editBtn').setAttribute('aria-expanded', 'true');
+    return;
+  }
+  if (!d.open) return;
+  const done = () => { d.classList.remove('closing'); if (d.close) d.close(); else { d.removeAttribute('open'); onPickerClosed(); } };
+  if (reduceMotion() || !d.close) done(); else { d.classList.add('closing'); pickClosing = setTimeout(done, 160); } // 下へ引っこむ動き（style.css の .closing）のあとで閉じる
+}
+function onPickerClosed() {
+  $('#editBtn').setAttribute('aria-expanded', 'false');
+  if (!state.seen) { state.seen = true; saveState(); }
 }
 function renderPicker() {
   const box = $('#charTabs'); box.innerHTML = '';
-  box.append(chip('主人公', state.char === 'hero', () => selectChar({ char: 'hero' })));
-  for (const c of uniqueChars()) box.append(chip(c.name, state.char === c.id, () => selectChar({ char: c.id })));
-  $('#heroSel').hidden = state.char !== 'hero';
+  const ids = rosterIds();
+  const eb = $('#rosterEdit');
+  eb.setAttribute('aria-pressed', String(rosterEditing));
+  eb.textContent = rosterEditing ? '選び終わる' : '上に並べるキャラを選ぶ';
+  const cchip = (label, elem, on, fn) => { const b = chip(label, on, fn, eldot(elem), 'chip el'); b.dataset.el = elem; return b; };
+  const elemOf = (c) => (HERO_ELEMENTS.includes(c.element) ? c.element : '無');
+  if (rosterEditing) {
+    // 押すたびに、上の帯に並べる・並べないが切り替わる（塗ってあるのが並べるキャラ）
+    for (const c of uniqueChars()) {
+      const on = ids.includes(c.id);
+      box.append(chip(c.name, on, () => { state.roster = on ? rosterIds().filter(x => x !== c.id) : [...rosterIds(), c.id]; saveState(); renderPicker(); renderRoster(); }, eldot(elemOf(c))));
+    }
+  } else {
+    box.append(cchip('主人公', heroElement(), state.char === 'hero', () => selectChar({ char: 'hero' }))); // 主人公は武器と属性を選ぶので開いたまま
+    const all = uniqueChars();
+    for (const c of [...all.filter(x => ids.includes(x.id)), ...all.filter(x => !ids.includes(x.id))]) {
+      box.append(cchip(c.name, elemOf(c), state.char === c.id, () => { selectChar({ char: c.id }); setPicker(false); }));
+    }
+  }
+  $('#heroSel').hidden = state.char !== 'hero' || rosterEditing;
   const wt = $('#weaponTabs'); wt.innerHTML = '';
   for (const [id, label] of HERO_WEAPONS) wt.append(chip(label, state.heroWeapon === id, () => selectChar({ heroWeapon: id }), wicon(WEAPON_TYPE[id])));
   const et = $('#elementTabs'); et.innerHTML = '';
@@ -228,17 +292,17 @@ function renderWants() {
       el('div', { class: 'wantLv' }, el('span', { class: 'lv out', text: '外す' }))));
   }
   box.append(el('button', { type: 'button', class: 'addBtn', 'aria-expanded': String(wantOpen), 'aria-controls': 'wantPicker',
-    onclick: () => { wantOpen = !wantOpen; renderWants(); }, text: 'スキルを追加' }));
+    onclick: () => { wantOpen = !wantOpen; renderWants(); }, text: 'スキルを指定' }));
   renderWantPicker(c, wants);
   // 下の1行：指定が効いているか、指定なしの最強とどれだけ違うか
   const note = $('#wantNote');
   if (!names.length) { note.textContent = ''; return; } // 外すだけのときは一言も出さない
   if (!cur.armor) { note.textContent = '計算中…'; return; }
-  if (short) { note.innerHTML = ''; note.append(el('span', { class: 'need', text: '届かない指定があります。' }), '今のランクで一番近い装備を出しています。'); return; }
+  if (short) { note.innerHTML = ''; note.append(el('span', { class: 'need', text: '届かない指定があります。' }), '一番近い装備を出しています。'); return; }
   if (cur.free) {
     const a = dpsOf(cur.weapon, cur.armor.score), f = dpsOf(cur.weapon, cur.free.score);
-    note.textContent = f - a > 0.5 ? `指定を満たす中でDPSが一番高い装備です。指定なしの最強（${fmtInt(f)}）より ${fmtPct((a / f - 1) * 100)}。` : '指定なしの最強と同じDPSで、指定も満たしています。';
-  } else note.textContent = '指定を満たす中でDPSが一番高い装備です。';
+    note.textContent = f - a > 0.5 ? `指定なしの最強（${fmtInt(f)}）より ${fmtPct((a / f - 1) * 100)}。` : '指定なしの最強と同じDPS。';
+  } else note.textContent = '';
 }
 function renderWantPicker(c, wants) {
   const pk = $('#wantPicker'); pk.hidden = !wantOpen;
@@ -641,19 +705,26 @@ function bindControls() {
   document.querySelectorAll('#targetTabs button').forEach(b => b.addEventListener('click', () => {
     state.target = b.dataset.target; saveState(); renderTarget(); cur.elemDps = {}; renderPriorities(); solve();
   }));
-  $('#editBtn').addEventListener('click', () => setPicker($('#picker').hidden));
-  $('#pickDone').addEventListener('click', () => { state.seen = true; saveState(); setPicker(false); window.scrollTo(0, 0); });
+  const pk = $('#picker');
+  $('#editBtn').addEventListener('click', () => setPicker(!pk.open));
+  $('#pickDone').addEventListener('click', () => setPicker(false));
+  $('#rosterEdit').addEventListener('click', () => { rosterEditing = !rosterEditing; renderPicker(); });
+  pk.addEventListener('click', (e) => { if (e.target === pk) setPicker(false); }); // 札の外（暗い所）を押したら閉じる
+  pk.addEventListener('close', onPickerClosed);
+  // 帯が画面の上に貼り付いたら、下の内容と重なっても読めるように紙の色を敷く
+  if ('IntersectionObserver' in window) new IntersectionObserver(([e]) => $('#roster').classList.toggle('stuck', !e.isIntersecting && e.boundingClientRect.top < 0)).observe($('#rosterTop'));
   $('#tabCalc').addEventListener('click', () => { setView('calc'); saveState(); });
   $('#tabDb').addEventListener('click', () => { setView('db'); saveState(); });
   renderTarget();
   setView(state.view);
-  setPicker(!state.seen); // 初めて開いたときは選択欄を開いておく
+  if (!state.seen) setPicker(true); // 初めて開いたときは、選ぶ札を開いておく
 }
 
 /* ---------- solving ---------- */
 // 一度計算した答えは、このページを開いている間だけ覚えておく（通常⇄融光種などを行き来したときにすぐ出す）
 const solveCache = new Map();
 const solveKey = (c, wants) => JSON.stringify([c.id, charWeaponType(c), charElement(c), state.rank, state.target, wants, state.fix, banList()]);
+function cacheSolve(key, val) { solveCache.set(key, val); if (solveCache.size > 60) solveCache.delete(solveCache.keys().next().value); }
 // 計算中は、前の答えを薄くして残し、判子のまわりで点線を回す（画面の高さを変えない）
 function setCalc(on) {
   $('#app').classList.toggle('calc', on);
@@ -712,6 +783,38 @@ function pumpJobs() {
     if (!msg) continue;
     jobBusy = true;
     worker.postMessage(msg);
+  }
+}
+
+/* ---------- 先回りの計算 ---------- */
+// いまの答えも折りたたみの中身も全部出し終えて手が空いたら、次に押しそうな所を先に計算して覚えておく（押した瞬間に答えが出る）。
+// 順番：相手の切り替え（通常⇄融光種）→ 上の帯に並んでいるほかのキャラ。1つ終わるたびに次へ。途中で操作されたら、そちらが先
+let preTimer = null;
+const preTried = new Set(); // 一度頼んだ条件は、答えが返らなくても頼み直さない（同じ計算を繰り返さない）
+function queuePrefetch() { clearTimeout(preTimer); preTimer = setTimeout(prefetchNext, 250); }
+// state を一時的に差し替えて計算の依頼を作る（中は同期処理だけ。終わったら必ず戻す）
+function withState(patch, fn) {
+  const keep = {};
+  for (const k of Object.keys(patch)) { keep[k] = state[k]; state[k] = patch[k]; }
+  try { return fn(); } finally { Object.assign(state, keep); }
+}
+function prefetchNext() {
+  if (!worker || !DATA || jobBusy || jobQueue.length || !cur.armor || document.hidden) return;
+  const plans = [{ target: state.target === 'yuko' ? 'normal' : 'yuko' }];
+  if (state.char !== 'hero') plans.push({ char: 'hero' });
+  for (const id of rosterIds()) if (id !== state.char) plans.push({ char: id });
+  for (const patch of plans) {
+    const msg = withState(patch, () => {
+      const c = currentChar();
+      if (!c) return null;
+      const wants = wantsFor(c), key = solveKey(c, wants);
+      if (solveCache.has(key) || preTried.has(key) || Object.keys(wants).length) return null; // 指定のあるキャラは「指定なしの最強」も要るので、押されてから計算する
+      preTried.add(key);
+      const weapon = weaponCands(c)[0] || null;
+      return { reqId: -1, pre: key, type: 'solve', weights: effectiveWeights(c), spec: specFor(c, charElement(c), weapon), wants,
+        availableSeries: availableSeries(), rarityCap: rankCap(), orbTier: orbTierFor(rankCap()), ban: banList(), topN: 6, K: 12, variants: true, vary: HP_COST };
+    });
+    if (msg) { jobBusy = true; worker.postMessage(msg); return; }
   }
 }
 
@@ -798,7 +901,7 @@ function renderBuilds(rows) {
   const nNow = items.filter(x => x.now).length;
   $('#dbCount').textContent = String(nNow);
   const hasWants = items.some(x => x.ws.length);
-  hint.textContent = `今のランクで作れるのは${nNow}件。防具をレア${cap}まで強化したときのDPS目安が高い順です。` + (hasWants ? '入れたいスキルを満たす構成を先に並べています。' : '');
+  hint.textContent = `作れる構成 ${nNow}件。レア${cap}まで強化したDPS目安の高い順` + (hasWants ? '（指定を満たす構成が先）' : '') + '。';
   const SHOW = 3;
   let more = null;
   const avail = new Set(availableSeries());
@@ -848,15 +951,19 @@ function renderBuilds(rows) {
           r.skills && r.skills.length ? el('p', { text: '掲載スキル：' + r.skills.map(k => `${k.skill}${k.lv ?? ''}`).join('・') }) : null,
           r.comment ? el('p', { text: r.comment }) : null,
           r.url ? el('p', {}, el('a', { href: r.url, target: '_blank', rel: 'noopener', text: '出典ページを開く' })) : null))));
-    const wantLine = x.now && x.ws.length ? (x.meets ? el('p', { class: 'note', text: '入れたいスキルを満たしています。' })
-      : el('p', { class: 'note need', text: '入れたいスキルに届かない：' + x.ws.filter(w => w.lv < w.want).map(w => `${w.skill} ${w.lv}/${w.want}`).join('・') })) : null;
+    const wantLine = x.now && x.ws.length ? (x.meets ? el('p', { class: 'note', text: '指定を満たしています。' })
+      : el('p', { class: 'note need', text: '指定に届かない：' + x.ws.filter(w => w.lv < w.want).map(w => `${w.skill} ${w.lv}/${w.want}`).join('・') })) : null;
     (more || box).append(el('li', { class: 'build' + (x.now ? '' : ' future') }, head, rowsBox, skills, wantLine, gapLine, det));
   });
 }
 
 function onWorkerMessage(e) {
   const msg = e.data;
-  if (msg.type === 'done') { jobBusy = false; pumpJobs(); return; }
+  if (msg.type === 'done') { jobBusy = false; pumpJobs(); queuePrefetch(); return; }
+  if (msg.pre) { // 先回りの計算の答え。画面には出さず、覚えておくだけ
+    if (msg.type === 'result') cacheSolve(msg.pre, { armor: msg.best, alts: msg.alts || [], variants: msg.variants || [], free: null });
+    return;
+  }
   if (msg.reqId !== reqId) return;
   if (msg.free) { if (msg.type === 'result') { cur.free = msg.best; renderWants(); } return; }
   if (msg.elem) { if (msg.type === 'result') onElemResult(msg); return; }
@@ -864,8 +971,7 @@ function onWorkerMessage(e) {
   if (msg.type === 'builds') { renderBuilds(msg.rows); return; }
   if (msg.type === 'result') {
     cur.armor = msg.best; cur.alts = msg.alts || []; cur.variants = msg.variants || [];
-    solveCache.set(cur.key, { armor: cur.armor, alts: cur.alts, variants: cur.variants, free: cur.free });
-    if (solveCache.size > 60) solveCache.delete(solveCache.keys().next().value);
+    cacheSolve(cur.key, { armor: cur.armor, alts: cur.alts, variants: cur.variants, free: cur.free });
     setCalc(false); renderResult(); renderMeter(); renderWants();
   }
   if (msg.type === 'next') renderNext(msg.next);
@@ -1025,7 +1131,9 @@ function renderResult() {
     tot.append(el('details', { class: 'row two' },
       el('summary', {}, el('span', { class: 'rowMain skillName' }, t.skill, el('span', { class: 'pips-wrap' }, pips(t.lv, Math.min(8, t.max)), el('b', { class: 'lv', text: `Lv${t.lv}` }))),
         el('span', { class: 'rowSide', text: t.value > 0.05 ? fmtGain(t.value) : '指定' })),
-      el('div', { class: 'rowBody' }, eff ? el('p', { text: eff }) : null, el('p', { text: t.lv >= t.max ? 'これが最大Lv。' : `最大はLv${t.max}。` }))));
+      el('div', { class: 'rowBody' }, eff ? el('p', { text: eff }) : null, el('p', { text: t.lv >= t.max ? 'これが最大Lv。' : `最大はLv${t.max}。` }),
+        // 指定していないスキルは、ここから外せる（下の「スキルを指定」の一覧に入り、×で戻せる）
+        t.skill in wanted ? null : el('div', { class: 'fixWrap' }, el('button', { type: 'button', class: 'btn small', onclick: () => setBan(t.skill, true), text: 'このスキルを外す' })))));
   }
   if (!shown.length) tot.append(el('p', { class: 'note', text: 'DPSに効くスキルが付く防具がまだありません。' }));
   if (b.setHits.length) { sn.hidden = false; sn.textContent = 'セットスキル：' + b.setHits.map(h => `${h.set}（${h.pieces}部位）で${h.skill}+${h.lv}`).join('、'); }
@@ -1052,13 +1160,21 @@ function renderCandidates(b, box) {
     if (safe) list.splice(Math.min(list.length, 2), 1, safe);
   }
   const top = dpsOf(cur.weapon, b.score);
-  list.forEach((d, i) => {
+  // 見出しの1行は、DPSを5%以上上げている主なスキルだけ（効く順）。全部のスキルと防具は開くと出る
+  // スキル名の途中では折り返さない（「・」の後ろでだけ折る）
+  const mainLine = (d) => {
+    let m = d.totals.filter(t => t.value >= 4.9).sort((x, y) => y.value - x.value);
+    if (!m.length) m = d.totals.filter(t => t.value > 0.3 || t.skill === '弾導強化');
+    if (!m.length) return [el('span', { text: '―' })];
+    return m.map((t, i) => el('span', { class: 'nw', text: `${t.skill}${t.lv}${i < m.length - 1 ? '・' : ''}` }));
+  };
+  list.slice(1).forEach((d, i) => { // 1位は上の装備そのものなので並べない
     const dps = dpsOf(cur.weapon, d.score);
-    const tag = d.without ? `（${d.without.join('・')}なし）` : '';
-    const main = el('span', { class: 'rowMain', text: `${i + 1}位　${skillLine(d.totals) || '―'}${tag}` });
-    const side = el('span', { class: 'rowSide', text: fmtInt(dps) + (i ? `（${fmtPct((dps / top - 1) * 100)}）` : '') });
-    if (!i) { box.append(el('div', { class: 'candTop' }, main, side)); return; } // 1位は上の装備そのものなので開かない
-    box.append(el('details', { class: 'row two' }, el('summary', {}, main, side), el('div', { class: 'rowBody' }, ...d.pieces.map(pieceLine))));
+    box.append(el('details', { class: 'row two' },
+      el('summary', {}, el('span', { class: 'rowMain erow' }, el('span', { class: 'erank', text: `${i + 2}位` }),
+        el('span', { class: 'etext' }, el('span', { class: 'ename' }, ...mainLine(d)), d.without ? el('span', { class: 'esub', text: `${d.without.join('・')}なし` }) : null)),
+        el('span', { class: 'rowSide', text: fmtPct((dps / top - 1) * 100) })),
+      el('div', { class: 'rowBody' }, el('p', { text: `DPS目安 ${fmtInt(dps)}　${skillLine(d.totals) || '―'}` }), ...d.pieces.map(pieceLine))));
   });
   if (list.length < 2) box.append(el('p', { class: 'note', text: '組み方の違う候補はありません。' }));
 }
@@ -1081,7 +1197,8 @@ function esouCoreRate(card, c) {
   for (const n of r.skills || []) { const d = (c.modelSkills || {})[n]; if (d) best = Math.max(best, (d.uptime ?? 1) * (d.share ?? 1)); }
   return best * (r.scale ?? 1);
 }
-function esouSearch(c, sp, base, elem) {
+// 総当たりは重い（コア数十 × 残り4枚の組み合わせ数万）ので、コア1つ分ずつ進められる形で返す：run(ms) を、結果が返るまで繰り返し呼ぶ
+function esouSearcher(c, sp, base, elem) {
   const E = DATA.esou, F = ['D', 'U', 'A', 'P'];
   const zero = () => ({ D: 0, U: 0, A: 0, P: 0 });
   const addEff = (t, effects, rate) => { for (const e of effects || []) { if (e.el && e.el !== '全' && e.el !== elem) continue; t[e.f] += e.v * (e.cond ? rate : 1); } return t; };
@@ -1131,7 +1248,7 @@ function esouSearch(c, sp, base, elem) {
     return go(0) ? out : null;
   };
   const results = [];
-  for (const core of cores.values()) {
+  const runCore = (core) => {
     const cap = E.costLimit - core.card.cost, top = [];
     const cnt = {}, t = { ...core.t }, pick = [];
     if (core.sid) cnt[core.sid] = E.coreCount;
@@ -1161,22 +1278,20 @@ function esouSearch(c, sp, base, elem) {
         sets: setIds.filter(sid => E.sets[sid].stages.some(g => g.count <= (n[sid] || 0))).map(sid => ({ sid, name: E.sets[sid].name, n: Math.max(...E.sets[sid].stages.filter(g => g.count <= n[sid]).map(g => g.count)) })) });
       break;
     }
-  }
-  results.sort((a, b) => b.dps - a.dps);
-  // コアの絵装ごとに一番いい組み合わせを1つずつ
-  const seen = new Set(), out = [];
-  for (const r of results) { if (seen.has(r.core.card.name)) continue; seen.add(r.core.card.name); out.push(r); if (out.length >= 3) break; }
-  return out;
+  };
+  const finish = () => {
+    results.sort((a, b) => b.dps - a.dps);
+    // コアの絵装ごとに一番いい組み合わせを1つずつ
+    const seen = new Set(), out = [];
+    for (const r of results) { if (seen.has(r.core.card.name)) continue; seen.add(r.core.card.name); out.push(r); if (out.length >= 3) break; }
+    return out;
+  };
+  const coreList = [...cores.values()];
+  let ci = 0;
+  // ms ミリ秒ぶんだけ進める。終わったら上位3つ、まだなら null
+  return { run(ms) { const t0 = performance.now(); while (ci < coreList.length && performance.now() - t0 < ms) runCore(coreList[ci++]); return ci < coreList.length ? null : finish(); } };
 }
 const esouCache = new Map();
-function esouPlans() {
-  const c = currentChar(), b = cur.armor;
-  if (!DATA.esou || !b || !c.modelSkills || !c.model) return [];
-  const elem = charElement(c), sp = specFor(c, elem, cur.weapon);
-  const key = JSON.stringify([c.id, elem, state.target, cur.weapon && [cur.weapon.w.name, cur.weapon.r], b.totals.map(t => [t.skill, t.lv]), state.fix]);
-  if (!esouCache.has(key)) { if (esouCache.size > 40) esouCache.clear(); esouCache.set(key, esouSearch(c, sp, specTotals(sp, b.totals), elem)); }
-  return esouCache.get(key);
-}
 const esouSetLine = (r) => r.sets.map(x => `${x.name.replace(/^絵装の/, '')}${x.n}`).join('・') || '―';
 // 絵装の印。同じモンスターの防具シリーズの印（icons/mon/）を使う。小型モンスターなど防具の無いものは、
 // icons/mon/絵装・名前.拡張子 を置けば出る（無ければ仮の印）
@@ -1236,22 +1351,34 @@ function esouRows(r, elem) {
   }
   return rows;
 }
-// 総当たりに少し時間がかかるので、装備を出したあとで計算する（前の答えは薄くして残す）
-let esouTimer = null;
+// 総当たりに少し時間がかかるので、装備を出したあとで、画面を止めないように少しずつ計算する（前の答えは薄くして残す）。
+// 計算の途中でキャラや相手を変えたら、古い計算は捨てる
+let esouJob = 0;
 function renderEsou() {
   const box = $('#esou'), blk = $('#esouBlock');
   if (!box) return;
-  clearTimeout(esouTimer);
-  const c = currentChar();
-  if (!DATA.esou || !cur.armor || !c.modelSkills || !c.model) { blk.hidden = true; return; }
+  const job = ++esouJob;
+  const c = currentChar(), b = cur.armor;
+  if (!DATA.esou || !b || !c.modelSkills || !c.model) { blk.hidden = true; return; }
   blk.hidden = false;
+  const elem = charElement(c), sp = specFor(c, elem, cur.weapon);
+  const key = JSON.stringify([c.id, elem, state.target, cur.weapon && [cur.weapon.w.name, cur.weapon.r], b.totals.map(t => [t.skill, t.lv]), state.fix]);
+  if (esouCache.has(key)) { drawEsou(esouCache.get(key)); return; }
   if (!box.firstChild) box.append(el('p', { class: 'note', text: '計算中…' }));
   box.classList.add('stale');
-  esouTimer = setTimeout(drawEsou, 30);
+  const search = esouSearcher(c, sp, specTotals(sp, b.totals), elem);
+  const tick = () => {
+    if (job !== esouJob || cur.armor !== b) return;
+    const plans = search.run(10);
+    if (!plans) { setTimeout(tick, 0); return; }
+    if (esouCache.size > 40) esouCache.clear();
+    esouCache.set(key, plans);
+    drawEsou(plans);
+  };
+  setTimeout(tick, 30);
 }
-function drawEsou() {
+function drawEsou(plans) {
   const box = $('#esou'), note = $('#esouNote'), blk = $('#esouBlock');
-  const plans = esouPlans();
   blk.hidden = !plans.length;
   box.classList.remove('stale');
   box.innerHTML = ''; note.textContent = '';

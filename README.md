@@ -11,7 +11,9 @@
 - 入力内容は端末内（localStorage）に保存
 
 ## 構成
-- `index.html` / `style.css` / `app.js` … 画面
+- `index.html` / `style.css` / `app.js` … 画面。上から、キャラの帯（よく使うキャラを1回押して切り替え。下へ送っても上に残る）→ DPS目安と相手（通常／融光種）→ 装備 → 絵装 → スキル（付いたスキルと、入れる・外すの指定）→ ほかの候補 → 折りたたみ。
+  「変更」で下から出る札（`<dialog>`）に、全キャラ・主人公の武器と属性・冒険ランク・帯に並べるキャラの選択がある。
+  いまの答えを出し終えて手が空くと、相手の切り替えと帯のほかのキャラを先に計算して覚えておく（`app.js` の `prefetchNext`）ので、押した瞬間に答えが出る
 - `phrase.js` + `vendor/budoux/` … 日本語を文節で折り返す（Safari など `word-break: auto-phrase` 未対応の端末だけ。BudouX、Apache-2.0）
 - `vendor/number-flow/`・`vendor/rough-notation/` … DPS目安の数字が桁ごとに回る動き（NumberFlow、MIT）と、強化が要る所を囲む朱の手書きの丸（Rough Notation、MIT）
 - `fonts/` … 見出し・数字の明朝（Shippori Mincho B1 ExtraBold を、使う字だけに絞った woff2。OFL-1.1）

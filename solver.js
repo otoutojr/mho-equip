@@ -76,6 +76,7 @@ function handle(msg) {
     res.goal = !!msg.goal;
     res.elem = msg.elem || null;
     res.free = !!msg.free;
+    res.pre = msg.pre || null; // 先回りの計算（app.js の prefetchNext）。答えをしまう先の鍵をそのまま返す
     self.postMessage({ type: 'result', ...res });
   }
 }

@@ -25,40 +25,48 @@
       <h1 id="whoName">読み込み中…</h1>
       <p class="note" id="whoSub"></p>
     </div>
-    <button type="button" class="btn" id="editBtn" aria-expanded="false" aria-controls="picker">変更</button>
+    <button type="button" class="btn" id="editBtn" aria-haspopup="dialog" aria-controls="picker" aria-expanded="false">変更</button>
+    <span id="rosterTop" aria-hidden="true"></span>
   </header>
 
-  <section id="picker" class="card frame" hidden aria-label="キャラとランクを選ぶ">
-    <h2 class="hd">キャラ</h2>
-    <div class="chips" id="charTabs"></div>
-    <div class="pickSub" id="heroSel" hidden>
-      <h2 class="hd">武器</h2>
-      <div class="chips" id="weaponTabs"></div>
-      <h2 class="hd">属性</h2>
-      <div class="chips" id="elementTabs"></div>
+  <!-- よく使うキャラの帯。1回押すだけで切り替わる。下へ送っても画面の上に残る -->
+  <nav class="roster" id="roster" aria-label="キャラを切り替える"></nav>
+
+  <!-- 「変更」で下から出る札：全キャラ・主人公の武器と属性・冒険ランク -->
+  <dialog id="picker" class="sheet" aria-label="キャラとランクを選ぶ">
+    <div class="sheetBody" tabindex="-1">
+      <div class="hdRow">
+        <h2 class="hd">キャラ</h2>
+        <button type="button" class="linkBtn" id="rosterEdit" aria-pressed="false">上に並べるキャラを選ぶ</button>
+      </div>
+      <div class="chips" id="charTabs"></div>
+      <div class="pickSub" id="heroSel" hidden>
+        <h2 class="hd">武器</h2>
+        <div class="chips" id="weaponTabs"></div>
+        <h2 class="hd">属性</h2>
+        <div class="chips" id="elementTabs"></div>
+      </div>
+      <h2 class="hd">冒険ランク</h2>
+      <div class="rankRow">
+        <button type="button" class="nudge" data-nudge="-1" aria-label="ランクを1下げる">−</button>
+        <input id="rank" type="range" min="1" max="60" step="1" value="1" aria-label="冒険ランク">
+        <button type="button" class="nudge" data-nudge="1" aria-label="ランクを1上げる">＋</button>
+        <span class="rankVal" id="rankVal">1</span>
+      </div>
+      <p class="note" id="capNote"></p>
+      <div id="capFix"></div>
+      <button type="button" class="btn solid" id="pickDone">閉じる</button>
     </div>
-    <h2 class="hd">冒険ランク</h2>
-    <div class="rankRow">
-      <button type="button" class="nudge" data-nudge="-1" aria-label="ランクを1下げる">−</button>
-      <input id="rank" type="range" min="1" max="60" step="1" value="1" aria-label="冒険ランク">
-      <button type="button" class="nudge" data-nudge="1" aria-label="ランクを1上げる">＋</button>
-      <span class="rankVal" id="rankVal">1</span>
-    </div>
-    <p class="note" id="capNote"></p>
-    <div id="capFix"></div>
-    <button type="button" class="btn solid" id="pickDone">決定</button>
-  </section>
+  </dialog>
 
   <section class="dps card frame" aria-live="polite">
-    <div class="dpsHead">
-      <p class="lbl">DPS目安</p>
+    <span class="stamp" id="elStamp" aria-hidden="true"></span>
+    <p class="lbl">DPS目安</p>
+    <div class="dpsRow">
+      <p class="dpsNum" id="dpsNum">―</p>
       <div class="seg" id="targetTabs" role="group" aria-label="相手">
         <button type="button" data-target="normal" aria-pressed="true">通常</button><button type="button" data-target="yuko" aria-pressed="false">融光種</button>
       </div>
-    </div>
-    <div class="dpsRow">
-      <p class="dpsNum" id="dpsNum">―</p>
-      <span class="stamp" id="elStamp" aria-hidden="true"></span>
     </div>
     <p class="note" id="dpsSub"></p>
   </section>
@@ -70,15 +78,6 @@
 
   <section class="view" id="viewCalc" role="tabpanel" aria-labelledby="tabCalc">
     <div class="block">
-      <h2 class="hd">スキルの指定</h2>
-      <div class="rows card" id="wantList"></div>
-      <div class="card" id="wantPicker" hidden>
-        <div class="chips" id="wantCats" role="group" aria-label="スキルの種類"></div>
-        <div class="rows" id="wantChoices"></div>
-      </div>
-      <p class="note foot" id="wantNote"></p>
-    </div>
-    <div class="block">
       <h2 class="hd">装備</h2>
       <div class="rows card" id="gear"></div>
       <p class="note foot" id="resultHint"></p>
@@ -89,12 +88,19 @@
       <p class="note foot" id="esouNote"></p>
     </div>
     <div class="block">
-      <h2 class="hd">付くスキル</h2>
+      <h2 class="hd">スキル</h2>
       <div class="rows card" id="skillTotals"></div>
       <p class="note foot" id="setNote" hidden></p>
+      <!-- 入れたいスキル・外したいスキル。付いたスキルのすぐ下に置く -->
+      <div class="rows card" id="wantList"></div>
+      <div class="card" id="wantPicker" hidden>
+        <div class="chips" id="wantCats" role="group" aria-label="スキルの種類"></div>
+        <div class="rows" id="wantChoices"></div>
+      </div>
+      <p class="note foot" id="wantNote"></p>
     </div>
     <div class="block">
-      <h2 class="hd">強い装備の候補</h2>
+      <h2 class="hd">ほかの候補</h2>
       <div class="rows card" id="candList"></div>
     </div>
   </section>

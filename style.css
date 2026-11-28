@@ -1,11 +1,11 @@
 /* 融光工房
-   方針: 答え（DPSと装備）だけを見せる。選択は1行にたたみ、比較や説明は下の折りたたみに入れる。
+   方針: 答え（DPSと装備）だけを見せる。キャラは上の帯で1回押して切り替え、ほかの選択は下から出る札に、比較や説明は下の折りたたみに入れる。
    見た目: 「受注書」。生成りの紙に墨の文字、強い色は朱と属性の色だけ。
    - 飾りは減らす：枠は1本、見出しは罫線だけ、数字は明朝
    - 属性の色（--el）は、判子と武器の札（と属性を選ぶ札）だけ。<html data-el="火"> で切り替わる
    - 朱（--shu）は「強化が要る場所」と「届いていない指定」にだけ使う（火属性の赤と混ざらないように、ほかは墨と紙）
    - 計算中は前の答えを薄くして残し（.calc）、判子のまわりで点線が回る
-   - 文字は5サイズ（56 / 22 / 17 / 15 / 13px）。見出しと数字は明朝（Shippori Mincho B1 ExtraBold を同梱）、本文はゴシック
+   - 文字は5サイズ（48 / 22 / 17 / 15 / 13px）。見出しと数字は明朝（Shippori Mincho B1 ExtraBold を同梱）、本文はゴシック
    外から借りたもの（出どころとライセンスは THIRD_PARTY_NOTICES.md）:
    - Shippori Mincho（fontdasu, OFL-1.1）… 見出しと数字の明朝。使う字だけに絞った woff2（tools/subset_font.py）
    - Open Props（Adam Argyle, MIT）… 紙の粒（--grain：--noise と同じ feTurbulence）、重ねた影（--shadow）、動き方（--ease）
@@ -31,7 +31,7 @@
   --el: #5f564a; --el-on: #ffffff; --el-text: #5f564a;
   --serif: "Shippori Mincho B1", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Yu Mincho", YuMincho, "Noto Serif CJK JP", "Noto Serif JP", serif;
   --sans: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Noto Sans CJK JP", "Yu Gothic UI", "Segoe UI", sans-serif;
-  --f-xl: 56px;
+  --f-xl: 48px;
   --f-t: 22px;
   --f-l: 17px;
   --f-m: 15px;
@@ -73,8 +73,8 @@ body {
 }
 main {
   max-width: 480px; margin: 0 auto;
-  padding: calc(16px + env(safe-area-inset-top)) 16px calc(48px + env(safe-area-inset-bottom));
-  display: flex; flex-direction: column; gap: 24px;
+  padding: calc(14px + env(safe-area-inset-top)) 16px calc(48px + env(safe-area-inset-bottom));
+  display: flex; flex-direction: column; gap: 22px;
 }
 h1, h2, p, ol, ul { margin: 0; padding: 0; }
 ol, ul { list-style: none; }
@@ -100,7 +100,8 @@ a { color: var(--ink); }
 .plate.weapon { background: var(--el); border-color: var(--el); color: var(--el-on); font-size: 18px; }
 
 /* 上の1行 */
-.top { display: flex; align-items: center; gap: 14px; padding: 0 2px; }
+.top { position: relative; display: flex; align-items: center; gap: 14px; padding: 0 2px; }
+#rosterTop { position: absolute; left: 0; bottom: 0; width: 1px; height: 1px; pointer-events: none; }
 .crest { width: 44px; height: 44px; margin: 6px; flex: none; display: grid; place-items: center; background: var(--ink); color: var(--card); transform: rotate(45deg); box-shadow: 0 0 0 2px var(--paper), 0 0 0 3px var(--ink); }
 .crest .wicon { width: 28px; height: 28px; transform: rotate(-45deg); }
 .who { flex: 1; min-width: 0; }
@@ -109,10 +110,48 @@ a { color: var(--ink); }
 .btn { min-height: 44px; min-width: 64px; padding: 0 12px; border: 1px solid var(--ink); border-radius: 3px; font: 700 var(--f-m)/1 var(--serif); letter-spacing: .06em; flex: none; background: var(--card); }
 .btn.solid { background: var(--ink); color: var(--card); font-size: var(--f-l); min-height: 50px; }
 
-/* 選ぶところ（「変更」で開く） */
-#picker { display: flex; flex-direction: column; gap: 10px; padding: 18px 16px; }
+/* よく使うキャラの帯。横に送れる。画面の上に貼り付く（.stuck は app.js が付ける）と紙の色を敷く */
+.roster {
+  position: sticky; top: 0; z-index: 20;
+  display: flex; gap: 8px; min-height: 61px; margin: -12px -16px -6px; padding: 8px 16px;
+  overflow-x: auto; overscroll-behavior-x: contain; scrollbar-width: none;
+  border-bottom: 1px solid transparent;
+}
+.roster::-webkit-scrollbar { display: none; }
+.roster::after { content: ''; flex: none; width: 8px; } /* 右端の余白（最後の札が端に貼り付かないように） */
+.roster.stuck { background: var(--grain) 0 0 / 180px 180px, var(--paper); border-bottom-color: var(--rule); box-shadow: 0 8px 12px -10px hsl(var(--shadow-color) / .45); }
+.rchip { flex: none; display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 12px 0 8px; border: 1px solid var(--rule); border-radius: 3px; background: var(--card); font-size: var(--f-m); white-space: nowrap; }
+.rchip[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--card); font-weight: 700; }
+.rdot { display: inline-grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; background: var(--el); color: var(--el-on); font: 700 12px/1 var(--serif); flex: none; }
+.rchip[aria-pressed="true"] .rdot { box-shadow: 0 0 0 1.5px var(--card); }
+.rchip.more { justify-content: center; min-width: 44px; padding: 0; border-style: dashed; color: var(--muted); font-size: var(--f-t); line-height: 1; }
+
+/* 下から出る札（「変更」で開く）。全キャラ・主人公の武器と属性・冒険ランク */
+dialog:not([open]) { display: none; } /* dialog を知らない古い端末でも、閉じている間は出さない */
+html:has(dialog[open]) { overflow: hidden; }
+.sheet {
+  position: fixed; inset: auto 0 0 0; margin: 0 auto; padding: 0;
+  width: 100%; max-width: 480px; max-height: min(88dvh, 760px); overflow-y: auto; overscroll-behavior: contain;
+  color: var(--ink); background: var(--grain) 0 0 / 180px 180px, var(--card);
+  border: 1px solid var(--ink); border-bottom: 0; border-radius: 8px 8px 0 0;
+  box-shadow: 0 -10px 30px hsl(var(--shadow-color) / .3);
+}
+.sheet::backdrop { background: hsl(var(--shadow-color) / .5); }
+.sheet[open] { animation: sheetUp .26s var(--ease-out-3); }
+.sheet[open]::backdrop { animation: fadeIn .2s ease-out; }
+.sheet.closing { animation: sheetDown .16s ease-in forwards; }
+.sheet.closing::backdrop { animation: fadeOut .16s ease-in forwards; }
+@keyframes sheetUp { from { transform: translateY(100%); } }
+@keyframes sheetDown { to { transform: translateY(100%); } }
+@keyframes fadeIn { from { opacity: 0; } }
+@keyframes fadeOut { to { opacity: 0; } }
+.sheetBody { display: flex; flex-direction: column; gap: 10px; padding: 8px 16px calc(18px + env(safe-area-inset-bottom)); }
+.sheetBody:focus { outline: none; }
+.sheetBody::before { content: ''; align-self: center; width: 40px; height: 4px; margin: 2px 0 4px; border-radius: 2px; background: var(--rule); } /* つまみ */
+.sheetBody > .hd, .pickSub > .hd { margin-top: 6px; }
+.hdRow { display: flex; align-items: center; gap: 10px; }
+.hdRow .hd { flex: 1; }
 .pickSub { display: flex; flex-direction: column; gap: 10px; }
-#picker .hd { margin-top: 6px; }
 .chips { display: flex; flex-wrap: wrap; gap: 8px; }
 .chip { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 14px; border: 1px solid var(--rule); border-radius: 3px; background: var(--card); font-size: var(--f-m); }
 .chip .wicon { font-size: 18px; }
@@ -132,24 +171,23 @@ input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; width: 26p
 input[type="range"]::-moz-range-thumb { width: 22px; height: 22px; border-radius: 3px; background: var(--card); border: 2px solid var(--ink); transform: rotate(45deg); }
 #pickDone { margin-top: 8px; }
 
-/* DPS */
-.dps { display: flex; flex-direction: column; padding: 16px 18px 14px; }
-.dpsHead { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
-.dpsHead .lbl { font-family: var(--serif); font-weight: 700; letter-spacing: .1em; color: var(--ink); }
+/* DPS：数字と相手の切り替えを1行に。判子は札の右上、枠にかけて押す */
+.dps { display: flex; flex-direction: column; padding: 12px 16px 12px; }
+.dps .lbl { font-family: var(--serif); font-weight: 700; letter-spacing: .1em; color: var(--ink); }
 .dpsRow { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
-.dpsNum { font: 700 var(--f-xl)/1.15 var(--serif); letter-spacing: -.01em; font-variant-numeric: tabular-nums; }
+.dpsNum { min-width: 0; font: 700 clamp(38px, 12.2vw, var(--f-xl))/1.2 var(--serif); letter-spacing: -.01em; font-variant-numeric: tabular-nums; white-space: nowrap; }
 /* NumberFlow（数字が回る）：回るときの上下のぼかし分の余白を負のマージンで打ち消して、札の高さを変えない */
 .dpsNum number-flow { --number-flow-mask-height: .25em; vertical-align: top; line-height: inherit; margin-block: -.25em; }
 .vh { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; border: 0; }
-.stamp { position: relative; display: grid; place-items: center; width: 50px; height: 50px; flex: none; border-radius: 50%; color: var(--el-text); border: 2px solid currentColor; box-shadow: inset 0 0 0 2px var(--card), inset 0 0 0 3px currentColor; font: 700 var(--f-t)/1 var(--serif); transform: rotate(-10deg); opacity: .92; }
+.stamp { position: absolute; top: -15px; right: 18px; z-index: 1; display: grid; place-items: center; width: 46px; height: 46px; border-radius: 50%; color: var(--el-text); background: var(--card); border: 2px solid currentColor; box-shadow: inset 0 0 0 2px var(--card), inset 0 0 0 3px currentColor; font: 700 20px/1 var(--serif); transform: rotate(-10deg); }
 .stamp:empty { visibility: hidden; }
 /* 計算中：前の答えを薄くして残す（高さは変えない）。判子のまわりで点線が回る（動きを減らす設定では止まった点線） */
-.dpsNum, #dpsSub, #gear, #skillTotals, #candList { transition: opacity .15s var(--ease-out-3); }
-.calc .dpsNum, .calc #dpsSub, .calc #gear, .calc #skillTotals, .calc #candList { opacity: .35; }
-.calc .stamp::after { content: ''; position: absolute; inset: -8px; border-radius: 50%; border: 2px dashed currentColor; animation: spin 1.4s linear infinite; }
+.dpsNum, #dpsSub, #gear, #esou, #skillTotals, #candList { transition: opacity .15s var(--ease-out-3); }
+.calc .dpsNum, .calc #dpsSub, .calc #gear, .calc #esou, .calc #skillTotals, .calc #candList { opacity: .35; }
+.calc .stamp::after { content: ''; position: absolute; inset: -7px; border-radius: 50%; border: 2px dashed currentColor; animation: spin 1.4s linear infinite; }
 @keyframes spin { to { transform: rotate(360deg); } }
 /* 属性が変わったとき、判子を「ぽん」と押す（app.js が .hit を付け外しする。動きを減らす設定では出さない） */
-@keyframes press { from { transform: rotate(-10deg) scale(1.6); opacity: 0; } to { transform: rotate(-10deg) scale(1); opacity: .92; } }
+@keyframes press { from { transform: rotate(-10deg) scale(1.6); opacity: 0; } to { transform: rotate(-10deg) scale(1); opacity: 1; } }
 .stamp.hit { animation: press .5s ease-out; }
 @supports (animation-timing-function: linear(0, 1)) { .stamp.hit { animation-timing-function: var(--ease-spring-3); } }
 
@@ -159,7 +197,7 @@ input[type="range"]::-moz-range-thumb { width: 22px; height: 22px; border-radius
 .seg button + button { border-left: 1px solid var(--ink); }
 .seg.wide button { flex: 1; font-family: var(--serif); font-weight: 700; letter-spacing: .04em; }
 .seg button[aria-pressed="true"], .seg button[aria-selected="true"] { background: var(--ink); color: var(--card); font-weight: 700; }
-.view { display: flex; flex-direction: column; gap: 24px; }
+.view { display: flex; flex-direction: column; gap: 22px; }
 .block { display: flex; flex-direction: column; gap: 8px; }
 
 /* 行（札の中に並べ、点線で区切る。押すと詳細が開く） */
@@ -275,16 +313,16 @@ input[type="range"]::-moz-range-thumb { width: 22px; height: 22px; border-radius
 /* 押したとき・乗せたときに、はっきり変わるようにする（Vercel の Web Interface Guidelines: hover/active は読める差をつける）。
    行は左右に 8px はみ出して塗る（行の中身の位置は動かさない） */
 summary { -webkit-tap-highlight-color: transparent; }
-.btn, .chip, .nudge, .step, .seg button, .row > summary, .rowBtn, .fold > summary, .more > summary {
+.btn, .chip, .rchip, .nudge, .step, .seg button, .row > summary, .rowBtn, .fold > summary, .more > summary {
   transition: background-color .15s var(--ease-out-3), color .15s var(--ease-out-3), box-shadow .15s var(--ease-out-3), transform .15s var(--ease-out-3);
 }
-.btn:active, .chip:active, .nudge:active, .step:not(:disabled):active { transform: translateY(1px); }
-.btn:not(.solid):active, .chip:not([aria-pressed="true"]):active, .nudge:active, .step:not(:disabled):active { background: var(--rule2); }
+.btn:active, .chip:active, .rchip:active, .nudge:active, .step:not(:disabled):active { transform: translateY(1px); }
+.btn:not(.solid):active, .chip:not([aria-pressed="true"]):active, .rchip:not([aria-pressed="true"]):active, .nudge:active, .step:not(:disabled):active { background: var(--rule2); }
 .btn.solid:active { background: var(--muted); }
 .seg button:not([aria-pressed="true"]):not([aria-selected="true"]):active { background: var(--rule2); }
 .row > summary:active, .rowBtn:active, .fold > summary:active, .more > summary:active { background: var(--fill); box-shadow: -8px 0 0 var(--fill), 8px 0 0 var(--fill); }
 @media (hover: hover) {
-  .btn:not(.solid):hover, .chip:not([aria-pressed="true"]):hover, .nudge:hover, .step:not(:disabled):hover { background: var(--paper); }
+  .btn:not(.solid):hover, .chip:not([aria-pressed="true"]):hover, .rchip:not([aria-pressed="true"]):hover, .nudge:hover, .step:not(:disabled):hover { background: var(--paper); }
   .btn.solid:hover { background: var(--muted); }
   .seg button:not([aria-pressed="true"]):not([aria-selected="true"]):hover { background: var(--fill); }
   .row > summary:hover, .rowBtn:hover, .fold > summary:hover, .more > summary:hover { background: var(--fill); box-shadow: -8px 0 0 var(--fill), 8px 0 0 var(--fill); }
@@ -325,12 +363,13 @@ summary { -webkit-tap-highlight-color: transparent; }
 @media (prefers-reduced-motion: reduce) { *, ::before, ::after { transition: none !important; animation: none !important; } }
 
 /* 絵装：左の札はコスト（コアは朱）、モンスターの印、名前の下にセット、右はサブステータスの札 */
-.plate.core { border-color: var(--shu); color: var(--shu); font-size: 11px; }
+.plate.core { border-color: var(--shu); color: var(--shu); font-size: 12px; letter-spacing: -.06em; }
 .erow { display: flex; align-items: center; }
 .erow .micon-box { margin-right: 10px; }
 .erank { flex: none; margin-right: 10px; }
 .etext { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
 .ename { line-height: 1.3; }
+.nw { display: inline-block; white-space: nowrap; }
 .ename.long { font-size: var(--f-m); }
 .ename.xl { font-size: 14px; }
 .esub { display: flex; align-items: center; gap: 6px; font: 400 var(--f-s)/1.3 var(--sans); color: var(--muted); }
@@ -339,7 +378,7 @@ summary { -webkit-tap-highlight-color: transparent; }
 .sub { display: inline-block; padding: 3px 7px; border: 1px solid var(--el-text); border-radius: 2px; color: var(--el-text); font: 700 var(--f-s)/1.2 var(--serif); }
 .sub.crit { border-color: var(--ink); color: var(--ink); }
 .subN { font-size: var(--f-s); color: var(--muted); }
-.tagS { font: 700 11px/1 var(--sans); color: var(--muted); border: 1px solid var(--rule); border-radius: 2px; padding: 2px 4px; }
+.tagS { font: 700 12px/1 var(--sans); color: var(--muted); border: 1px solid var(--rule); border-radius: 2px; padding: 2px 4px; }
 .ealts { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; }
 .ealts > span { display: inline-flex; align-items: center; }
 .esouAlt { padding-bottom: 6px; }
