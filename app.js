@@ -1,6 +1,6 @@
 /* 融光工房 ― UI */
 'use strict';
-const APP_VERSION = '2026.11.28-1';
+const APP_VERSION = '2026.11.28-2';
 const STORE_KEY = 'mho-equip:v1';
 const PART_JP = { head: '頭', body: '胴', arm: '腕', waist: '腰', leg: '脚' };
 const $ = (sel) => document.querySelector(sel);
@@ -932,19 +932,20 @@ const monLabel = (() => { let m = null; return (series) => {
   const b = series.startsWith('融光種') ? series.slice(3) : series;
   return m.get(b) || b.slice(0, 2);
 }; })();
-function monIcon(series) {
-  const yuko = series.startsWith('融光種');
+// key: icons/mon/ のファイル名（拡張子なし）。無いとき・manifest に載っていないときは、label の2字を入れた仮の印
+function iconBox(key, label, yuko) {
   const box = el('span', { class: 'micon-box', 'aria-hidden': 'true' });
   box.append(el('span', { class: 'seal' + (yuko ? ' yk' : '') },
-    el('span', { class: 'ml', text: monLabel(series) }), yuko ? el('span', { class: 'yb', text: '光' }) : null));
-  const ext = MON_ICONS[series]; // manifest に載っているシリーズだけ画像を読む（404を出さない）
+    el('span', { class: 'ml', text: label }), yuko ? el('span', { class: 'yb', text: '光' }) : null));
+  const ext = key && MON_ICONS[key]; // manifest に載っているものだけ画像を読む（404を出さない）
   if (ext) {
     const img = new Image();
     img.onload = () => { box.innerHTML = ''; img.className = 'micon'; img.alt = ''; box.append(img); };
-    img.src = 'icons/mon/' + encodeURIComponent(series) + '.' + ext + '?v=' + APP_VERSION;
+    img.src = 'icons/mon/' + encodeURIComponent(key) + '.' + ext + '?v=' + APP_VERSION;
   }
   return box;
 }
+function monIcon(series) { return iconBox(series, monLabel(series), series.startsWith('融光種')); }
 function gearRow(part, name, side, need, body) {
   return el('details', { class: 'row' },
     el('summary', {}, plate(part), el('span', { class: 'rowMain' }, ...[].concat(name)), el('span', { class: 'rowSide' + (need ? ' need' : ''), text: side })),
@@ -1177,23 +1178,48 @@ function esouPlans() {
   return esouCache.get(key);
 }
 const esouSetLine = (r) => r.sets.map(x => `${x.name.replace(/^絵装の/, '')}${x.n}`).join('・') || '―';
+// 絵装の印。同じモンスターの防具シリーズの印（icons/mon/）を使う。小型モンスターなど防具の無いものは、
+// icons/mon/絵装・名前.拡張子 を置けば出る（無ければ仮の印）
+const ESOU_ICON_ALIAS = { 'ランゴスタ': 'ランゴ', 'カンタロス': 'タロス' }; // 防具シリーズの名前がモンスター名と違う小型
+const esouIconKey = (() => { let m = null; return (name) => {
+  if (MON_ICONS[name]) return name;
+  if (!m) { m = new Map(Object.entries(ESOU_ICON_ALIAS)); for (const sr of DATA.armor.series) for (const mon of ((sr.gate && sr.gate.monsters) || [])) if (!m.has(mon)) m.set(mon, sr.name); }
+  return m.get(esouName(name)) || null;
+}; })();
+function esouIcon(card) {
+  const mon = esouName(card.name), yuko = mon.startsWith('融光種');
+  return iconBox(esouIconKey(card.name), (yuko ? mon.slice(3) : mon).slice(0, 2), yuko);
+}
+// 名前の長い絵装（融光種〜）は字を少し小さくして1行に収める
+const esouNameEl = (name) => el('span', { class: 'ename' + (name.length >= 11 ? ' xl' : name.length >= 9 ? ' long' : ''), text: name });
 // サブステータスの札（属性は属性の色、会心は墨）
 function esouSubChips(subs, elem) {
   const box = el('span', { class: 'subs' });
   const n = {}; for (const k of subs) n[k] = (n[k] || 0) + 1;
-  for (const k of ['U', 'A']) if (n[k]) box.append(el('span', k === 'U' ? { class: 'sub', 'data-el': elem, text: `${elem}属性` } : { class: 'sub crit', text: '会心' }), n[k] > 1 ? el('span', { class: 'subN', text: `×${n[k]}` }) : null);
+  for (const k of ['U', 'A']) {
+    if (!n[k]) continue;
+    box.append(el('span', k === 'U' ? { class: 'sub', 'data-el': elem, text: `${elem}属性` } : { class: 'sub crit', text: '会心' }));
+    if (n[k] > 1) box.append(el('span', { class: 'subN', text: `×${n[k]}` }));
+  }
   if (!subs.length) box.append(el('span', { class: 'subN', text: '―' }));
   return box;
 }
+// 1枚＝1行：左の札（コア／コスト）、モンスターの印、名前とセット、右にサブステータス
 function esouRows(r, elem) {
   const E = DATA.esou, rows = [];
+  const setShort = (sid) => E.sets[sid].name.replace(/^絵装の/, '');
   const subText = (card, subs) => subs.length ? [...new Set(subs)].map(k => `${ESOU_SUB[k]}+${card.sub[k]}%${subs.filter(x => x === k).length > 1 ? ' ×2' : ''}`).join('、') : '奥義チャージ効率など';
-  const line = (tag, card, sid, subs, body, any) => el('details', { class: 'row' },
-    el('summary', {}, el('span', { class: 'plate' + (tag === 'コア' ? ' core' : ''), text: tag }),
-      el('span', { class: 'rowMain' }, ...(any ? [any] : yukoLabel(esouName(card.name))), card.season && !any ? el('span', { class: 'tagS', text: card.season }) : null,
-        sid ? el('span', { class: 'setTag', text: E.sets[sid].name.replace(/^絵装の/, '') }) : null),
-      el('span', { class: 'rowSide' }, esouSubChips(subs, elem))),
-    el('div', { class: 'rowBody' }, el('p', { text: `セット　${sid ? E.sets[sid].name : 'どれでも'}` }), el('p', { text: `サブ　${subText(card, subs)}` }), ...body));
+  const line = (tag, card, sid, subs, body, any) => {
+    let icon = esouIcon(card);
+    if (any) { icon = iconBox(null, '任意', false); icon.firstChild.classList.add('any'); }
+    return el('details', { class: 'row' },
+      el('summary', {}, el('span', { class: 'plate' + (tag === 'コア' ? ' core' : ''), text: tag }),
+        el('span', { class: 'rowMain erow' }, icon,
+          el('span', { class: 'etext' }, esouNameEl(any || esouName(card.name)),
+            el('span', { class: 'esub' }, sid ? setShort(sid) : 'セットはどれでも', card.season && !any ? el('span', { class: 'tagS', text: card.season }) : null))),
+        el('span', { class: 'rowSide' }, esouSubChips(subs, elem))),
+      el('div', { class: 'rowBody' }, el('p', { text: `サブ　${subText(card, subs)}` }), ...body));
+  };
   const core = r.core;
   const coreBody = [];
   if (core.card.core) coreBody.push(el('p', { text: `固有効果　${core.card.core.text}` }));
@@ -1202,11 +1228,10 @@ function esouRows(r, elem) {
   rows.push(line('コア', core.card, core.sid, core.subs, coreBody));
   for (const o of r.others) {
     const any = !o.k.sid; // セットを問わない枠は、コストとサブが合えばどの絵装でもいい
-    const alts = o.k.cards.filter(x => x !== o.card && x.art !== core.card.art).map(x => esouName(x.name));
+    const alts = o.k.cards.filter(x => x !== o.card && x.art !== core.card.art);
     const body = [];
-    if (!any && alts.length) body.push(el('p', { text: `同じ役　${alts.join('・')}` }));
+    if (!any && alts.length) body.push(el('p', { class: 'ealts' }, '同じ役', ...alts.map(x => el('span', {}, esouIcon(x), esouName(x.name)))));
     if (any) body.push(el('p', { text: `コスト${o.k.cost}でこのサブが付けば、どの絵装でも同じ。` }));
-    else body.push(el('p', { text: `コスト${o.k.cost}` }));
     rows.push(line(String(o.k.cost), o.card, o.k.sid, o.k.subs, body, any ? `コスト${o.k.cost}の絵装` : null));
   }
   return rows;
@@ -1240,7 +1265,9 @@ function drawEsou() {
     el('div', { class: 'rowBody' }, ...setBody)));
   for (const [i, r] of plans.slice(1).entries()) {
     box.append(el('details', { class: 'row two' },
-      el('summary', {}, el('span', { class: 'rowMain', text: `${i + 2}位　コア ${esouName(r.core.card.name)}・${esouSetLine(r)}` }), el('span', { class: 'rowSide', text: fmtPct((r.dps / best.dps - 1) * 100) })),
+      el('summary', {}, el('span', { class: 'rowMain erow' }, el('span', { class: 'erank', text: `${i + 2}位` }), esouIcon(r.core.card),
+        el('span', { class: 'etext' }, esouNameEl(esouName(r.core.card.name)), el('span', { class: 'esub', text: esouSetLine(r) }))),
+        el('span', { class: 'rowSide', text: fmtPct((r.dps / best.dps - 1) * 100) })),
       el('div', { class: 'rowBody esouAlt' }, ...esouRows(r, elem))));
   }
   note.textContent = `絵装込み ${fmtInt(dpsOf(cur.weapon, cur.armor.score) * (1 + best.gain / 100))}（レジェンド・Lv10）`;
