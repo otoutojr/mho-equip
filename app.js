@@ -1,6 +1,6 @@
 /* 融光工房 ― UI */
 'use strict';
-const APP_VERSION = '2026.11.27-3';
+const APP_VERSION = '2026.11.28-1';
 const STORE_KEY = 'mho-equip:v1';
 const PART_JP = { head: '頭', body: '胴', arm: '腕', waist: '腰', leg: '脚' };
 const $ = (sel) => document.querySelector(sel);
@@ -67,10 +67,10 @@ async function loadData() {
   const [armor, skills, monsters, characters] = await Promise.all(
     ['armor', 'skills', 'monsters', 'characters'].map(n => fetch(`data/${n}.json${q}`).then(r => { if (!r.ok) throw new Error(n); return r.json(); }))
   );
-  const [weapons, builds] = await Promise.all(['weapons', 'builds'].map(n => fetch(`data/${n}.json${q}`).then(r => (r.ok ? r.json() : null)).catch(() => null)));
+  const [weapons, builds, esou] = await Promise.all(['weapons', 'builds', 'esou'].map(n => fetch(`data/${n}.json${q}`).then(r => (r.ok ? r.json() : null)).catch(() => null)));
   // 置いてあるモンスターの印の一覧（シリーズ名→拡張子）。無ければ仮の印だけ
   MON_ICONS = await fetch(`icons/mon/manifest.json${q}`).then(r => (r.ok ? r.json() : {})).catch(() => ({}));
-  return { armor, skills, monsters, characters, weapons, builds };
+  return { armor, skills, monsters, characters, weapons, builds, esou };
 }
 
 function init() {
@@ -270,6 +270,9 @@ function renderWantPicker(c, wants) {
 //   属性 = (属性値 + 属性攻撃力の加算)×(1 + 与ダメ合計 + 属性ダメージUP)×(1 + 会心率×(0.25 + 会心撃【属性】))
 // 与ダメ系スキルは掛け算ではなく全部足し算。条件付きスキルは「効果が続いている割合」（キャラごとの見積もり）を掛ける。
 // 属性ダメージの割合はキャラごとの見積もり（elementShare）。攻撃力:属性値＝2:1 の武器でその割合になるよう、属性側に倍率 s を掛ける
+// 肉質：弱点の属性は物理より通る。アウかるのモンスター肉質図鑑（ゲームの肉質表、38体）で、いちばん通る属性の肉質 ÷ 物理の肉質は
+// 通常種で約1.25倍（弱点部位の中央値）、融光種で約6倍（融光種は弱点属性だけ肉質が300〜500）。弱点の属性で戦う前提で、属性側にこの倍率も掛ける
+const HITZONE = { normal: 1.25, yuko: 6 };
 const BASE_AFF = 15;   // 基本の会心率（アウかるの既定値）
 const CORE_CAP = 22.5; // 主人公などのコアパッシブ（会心率1%→与ダメ+0.25%）の上限
 function skillDef(name) { return DATA.skills.skills.find(s => s.name === name.replace('{属性}', '火')); }
@@ -280,7 +283,7 @@ function damageSpec(c, elem, weapon) {
   const m = c.model || {}, yuko = state.target === 'yuko';
   const es = m.elementShare ?? 0.35, st = weapon ? weapon.st : null;
   const sp = {
-    A: st ? (st.attack || 0) : 600, E: st ? (st.element || 0) : 300, s: (es / (1 - es)) / 0.5,
+    A: st ? (st.attack || 0) : 600, E: st ? (st.element || 0) : 300, s: (es / (1 - es)) / 0.5 * (yuko ? HITZONE.yuko : HITZONE.normal),
     aff0: BASE_AFF + (st ? (st.affinity ?? weapon.w.affinity ?? 0) : 0),
     coreRate: Math.max(0, ((m.critPerPct ?? 0.0025) - 0.0025) * 100), coreCap: CORE_CAP,
     yuko: weapon && yuko && weapon.w.yukoBonus ? 1 + weapon.w.yukoBonus : 1, // 鋭精武器の「融光種へのダメージ+8%」
@@ -327,7 +330,20 @@ function specDps(sp, tot) {
   const d = ((tot.D || 0) + Math.min(sp.coreCap, sp.coreRate * Math.max(0, aff))) / 100;
   const cp = 1 + 0.25 * a, ce = a >= 0 ? 1 + a * (0.25 + (tot.C || 0) / 100) : cp;
   const E = sp.E ? sp.E + (tot.E || 0) : 0;
-  return (sp.A * (1 + d) * cp + E * sp.s * (1 + d + (tot.U || 0) / 100) * ce) * sp.yuko;
+  return (sp.A * (1 + d + (tot.P || 0) / 100) * cp + E * sp.s * (1 + d + (tot.U || 0) / 100) * ce) * sp.yuko;
+}
+// 防具に付いたスキルの合計（[{skill, lv}]）を、上の式に入れる合計に直す。連動（背水の陣など）も solver.js と同じに足す
+function specTotals(sp, totals) {
+  const tot = { D: 0, U: 0, A: 0, C: 0, E: 0, P: 0 }, lvOf = {};
+  for (const t of totals) {
+    lvOf[t.skill] = t.lv;
+    const k = sp.skills[t.skill];
+    if (!k || !t.lv) continue;
+    const i = Math.min(t.lv, k.D.length) - 1;
+    for (const f of 'DUACE') tot[f] += k[f][i];
+  }
+  for (const L of sp.links || []) { const a = lvOf[L.skill] || 0; if (a > 0 && (lvOf[L.need] || 0) >= L.lv) tot.D += L.D[Math.min(a, L.D.length) - 1]; }
+  return tot;
 }
 // スキルを1つだけ積んだときの伸び（候補の絞り込みと「効く順」の表示に使う。足し算なので、重ねたときはこれより少し小さくなる）
 // 連動するスキル（背水の陣）は、相手（融光怪力Lv3）がそろったときの伸びにする
@@ -990,6 +1006,7 @@ function renderGear() {
 function renderResult() {
   const b = cur.armor;
   renderGear();
+  renderEsou();
   const hint = $('#resultHint'); hint.innerHTML = '';
   const tot = $('#skillTotals'); tot.innerHTML = '';
   const cands = $('#candList'); cands.innerHTML = '';
@@ -1043,6 +1060,190 @@ function renderCandidates(b, box) {
     box.append(el('details', { class: 'row two' }, el('summary', {}, main, side), el('div', { class: 'rowBody' }, ...d.pieces.map(pieceLine))));
   });
   if (list.length < 2) box.append(el('p', { class: 'note', text: '組み方の違う候補はありません。' }));
+}
+
+/* ---------- 絵装 ---------- */
+// data/esou.json（tools/import_aukaru_esou.py）。5枚・コスト合計12まで。1枠目がコアで、固有効果はコアだけ、セットはコアを2枚分に数える。
+// 同じ絵柄は2枚入れない。サブステータスは Lv10 の一番いい値、筆入れは数えない。
+// いまの武器と防具に足したときの DPS目安がいちばん高い5枚を、総当たりで探す。
+const ESOU_SUB = { U: '属性ダメージ', A: '会心率' };
+const esouName = (n) => n.replace(/^絵装・/, '');
+// 条件つきの固有効果が乗っている時間の割合。キャラのモデル（modelSkills）の発動率から見積もる
+function esouCoreRate(card, c) {
+  const r = card.core && card.core.rule;
+  if (!r) return 0;
+  if (r.rate != null) return r.rate;
+  if (r.chars && r.chars[c.id] != null) return r.chars[c.id];
+  const wt = charWeaponType(c);
+  if (r.weapons && r.weapons[wt] != null) return r.weapons[wt];
+  let best = 0;
+  for (const n of r.skills || []) { const d = (c.modelSkills || {})[n]; if (d) best = Math.max(best, (d.uptime ?? 1) * (d.share ?? 1)); }
+  return best * (r.scale ?? 1);
+}
+function esouSearch(c, sp, base, elem) {
+  const E = DATA.esou, F = ['D', 'U', 'A', 'P'];
+  const zero = () => ({ D: 0, U: 0, A: 0, P: 0 });
+  const addEff = (t, effects, rate) => { for (const e of effects || []) { if (e.el && e.el !== '全' && e.el !== elem) continue; t[e.f] += e.v * (e.cond ? rate : 1); } return t; };
+  const dpsOfTot = (t) => specDps(sp, { D: base.D + t.D, U: base.U + t.U, A: base.A + t.A, P: base.P + t.P, C: base.C, E: base.E });
+  const dps0 = dpsOfTot(zero());
+  // セット：枚数ごとの合計。DPSに関係するセットだけ残す
+  const setIds = [], setAt = {};
+  for (const [sid, st] of Object.entries(E.sets)) {
+    const at = [];
+    for (let n = 0; n <= 6; n++) { const t = zero(); for (const g of st.stages) if (g.count <= n) addEff(t, g.effects, g.rate || 0); at.push(t); }
+    if (F.some(f => at[6][f] > 0)) { setIds.push(sid); setAt[sid] = at; }
+  }
+  // サブステータスの付け方（枠の数だけ、DPSに効くものから選ぶ）
+  const subProfiles = (card) => {
+    const keys = Object.keys(card.sub).filter(k => (k === 'A' || sp.E > 0) && card.sub[k] > 0);
+    if (!keys.length) return [[]];
+    let out = [[]];
+    for (let i = 0; i < card.slots; i++) out = out.flatMap(a => keys.filter(k => !a.length || k >= a[a.length - 1]).map(k => [...a, k]));
+    return out;
+  };
+  const subTot = (card, subs) => { const t = zero(); for (const k of subs) t[k] += card.sub[k]; return t; };
+  // コア以外：コスト・セット・サブが同じものは1つの「役」にまとめる（どのセットでもいいときは sid=null）
+  const classes = new Map();
+  for (const card of E.cards) for (const sid of [null, ...card.sets.filter(x => setAt[x])]) for (const subs of subProfiles(card)) {
+    const t = subTot(card, subs), key = [card.cost, sid, ...F.map(f => t[f])].join('|');
+    if (!classes.has(key)) classes.set(key, { key, cost: card.cost, sid, subs, t, cards: [] });
+    classes.get(key).cards.push(card);
+  }
+  const K = [...classes.values()].sort((a, b) => a.cost - b.cost);
+  // コア：固有効果も足す。中身が同じものは代表の1枚だけ調べる
+  const cores = new Map();
+  for (const card of E.cards) for (const sid of [null, ...card.sets.filter(x => setAt[x])]) for (const subs of subProfiles(card)) {
+    const t = subTot(card, subs), rate = card.core ? esouCoreRate(card, c) : 0;
+    if (card.core) addEff(t, card.core.effects, rate);
+    const key = [card.cost, sid, ...F.map(f => t[f])].join('|');
+    if (!cores.has(key)) cores.set(key, { card, sid, subs, t, rate, same: [] });
+    else cores.get(key).same.push(card);
+  }
+  // 役に実際の絵装を割り当てる（同じ絵柄は使わない）
+  const assign = (picks, used) => {
+    const out = [];
+    const go = (i) => {
+      if (i === picks.length) return true;
+      for (const card of picks[i].cards) { if (used.has(card.art)) continue; used.add(card.art); out.push(card); if (go(i + 1)) return true; out.pop(); used.delete(card.art); }
+      return false;
+    };
+    return go(0) ? out : null;
+  };
+  const results = [];
+  for (const core of cores.values()) {
+    const cap = E.costLimit - core.card.cost, top = [];
+    const cnt = {}, t = { ...core.t }, pick = [];
+    if (core.sid) cnt[core.sid] = E.coreCount;
+    const leaf = () => {
+      const s = { ...t };
+      for (const sid of setIds) { const n = cnt[sid]; if (n) { const g = setAt[sid][Math.min(6, n)]; for (const f of F) s[f] += g[f]; } }
+      const dps = dpsOfTot(s);
+      if (top.length < 6 || dps > top[top.length - 1].dps) { top.push({ dps, pick: [...pick] }); top.sort((a, b) => b.dps - a.dps); if (top.length > 6) top.length = 6; }
+    };
+    const dfs = (start, left, cost) => {
+      if (!left) { leaf(); return; }
+      for (let i = start; i < K.length; i++) {
+        const k = K[i];
+        if (cost + k.cost + (left - 1) > cap) break; // K はコストの小さい順。残りを全部コスト1にしても収まらない
+        pick.push(k); for (const f of F) t[f] += k.t[f]; if (k.sid) cnt[k.sid] = (cnt[k.sid] || 0) + 1;
+        dfs(i, left - 1, cost + k.cost);
+        pick.pop(); for (const f of F) t[f] -= k.t[f]; if (k.sid) cnt[k.sid]--;
+      }
+    };
+    dfs(0, E.slots - 1, 0);
+    for (const cand of top) {
+      const cards = assign(cand.pick, new Set([core.card.art]));
+      if (!cards) continue;
+      const n = {}; if (core.sid) n[core.sid] = E.coreCount;
+      for (const k of cand.pick) if (k.sid) n[k.sid] = (n[k.sid] || 0) + 1;
+      results.push({ dps: cand.dps, gain: (cand.dps / dps0 - 1) * 100, core, others: cand.pick.map((k, i) => ({ k, card: cards[i] })),
+        sets: setIds.filter(sid => E.sets[sid].stages.some(g => g.count <= (n[sid] || 0))).map(sid => ({ sid, name: E.sets[sid].name, n: Math.max(...E.sets[sid].stages.filter(g => g.count <= n[sid]).map(g => g.count)) })) });
+      break;
+    }
+  }
+  results.sort((a, b) => b.dps - a.dps);
+  // コアの絵装ごとに一番いい組み合わせを1つずつ
+  const seen = new Set(), out = [];
+  for (const r of results) { if (seen.has(r.core.card.name)) continue; seen.add(r.core.card.name); out.push(r); if (out.length >= 3) break; }
+  return out;
+}
+const esouCache = new Map();
+function esouPlans() {
+  const c = currentChar(), b = cur.armor;
+  if (!DATA.esou || !b || !c.modelSkills || !c.model) return [];
+  const elem = charElement(c), sp = specFor(c, elem, cur.weapon);
+  const key = JSON.stringify([c.id, elem, state.target, cur.weapon && [cur.weapon.w.name, cur.weapon.r], b.totals.map(t => [t.skill, t.lv]), state.fix]);
+  if (!esouCache.has(key)) { if (esouCache.size > 40) esouCache.clear(); esouCache.set(key, esouSearch(c, sp, specTotals(sp, b.totals), elem)); }
+  return esouCache.get(key);
+}
+const esouSetLine = (r) => r.sets.map(x => `${x.name.replace(/^絵装の/, '')}${x.n}`).join('・') || '―';
+// サブステータスの札（属性は属性の色、会心は墨）
+function esouSubChips(subs, elem) {
+  const box = el('span', { class: 'subs' });
+  const n = {}; for (const k of subs) n[k] = (n[k] || 0) + 1;
+  for (const k of ['U', 'A']) if (n[k]) box.append(el('span', k === 'U' ? { class: 'sub', 'data-el': elem, text: `${elem}属性` } : { class: 'sub crit', text: '会心' }), n[k] > 1 ? el('span', { class: 'subN', text: `×${n[k]}` }) : null);
+  if (!subs.length) box.append(el('span', { class: 'subN', text: '―' }));
+  return box;
+}
+function esouRows(r, elem) {
+  const E = DATA.esou, rows = [];
+  const subText = (card, subs) => subs.length ? [...new Set(subs)].map(k => `${ESOU_SUB[k]}+${card.sub[k]}%${subs.filter(x => x === k).length > 1 ? ' ×2' : ''}`).join('、') : '奥義チャージ効率など';
+  const line = (tag, card, sid, subs, body, any) => el('details', { class: 'row' },
+    el('summary', {}, el('span', { class: 'plate' + (tag === 'コア' ? ' core' : ''), text: tag }),
+      el('span', { class: 'rowMain' }, ...(any ? [any] : yukoLabel(esouName(card.name))), card.season && !any ? el('span', { class: 'tagS', text: card.season }) : null,
+        sid ? el('span', { class: 'setTag', text: E.sets[sid].name.replace(/^絵装の/, '') }) : null),
+      el('span', { class: 'rowSide' }, esouSubChips(subs, elem))),
+    el('div', { class: 'rowBody' }, el('p', { text: `セット　${sid ? E.sets[sid].name : 'どれでも'}` }), el('p', { text: `サブ　${subText(card, subs)}` }), ...body));
+  const core = r.core;
+  const coreBody = [];
+  if (core.card.core) coreBody.push(el('p', { text: `固有効果　${core.card.core.text}` }));
+  if (core.card.core && core.card.core.rule && core.card.core.effects.some(e => e.cond)) coreBody.push(el('p', { text: `発動率 ${Math.round(core.rate * 100)}% で計算（${core.card.core.rule.why}）` }));
+  coreBody.push(el('p', { text: `コスト${core.card.cost}` }));
+  rows.push(line('コア', core.card, core.sid, core.subs, coreBody));
+  for (const o of r.others) {
+    const any = !o.k.sid; // セットを問わない枠は、コストとサブが合えばどの絵装でもいい
+    const alts = o.k.cards.filter(x => x !== o.card && x.art !== core.card.art).map(x => esouName(x.name));
+    const body = [];
+    if (!any && alts.length) body.push(el('p', { text: `同じ役　${alts.join('・')}` }));
+    if (any) body.push(el('p', { text: `コスト${o.k.cost}でこのサブが付けば、どの絵装でも同じ。` }));
+    else body.push(el('p', { text: `コスト${o.k.cost}` }));
+    rows.push(line(String(o.k.cost), o.card, o.k.sid, o.k.subs, body, any ? `コスト${o.k.cost}の絵装` : null));
+  }
+  return rows;
+}
+// 総当たりに少し時間がかかるので、装備を出したあとで計算する（前の答えは薄くして残す）
+let esouTimer = null;
+function renderEsou() {
+  const box = $('#esou'), blk = $('#esouBlock');
+  if (!box) return;
+  clearTimeout(esouTimer);
+  const c = currentChar();
+  if (!DATA.esou || !cur.armor || !c.modelSkills || !c.model) { blk.hidden = true; return; }
+  blk.hidden = false;
+  if (!box.firstChild) box.append(el('p', { class: 'note', text: '計算中…' }));
+  box.classList.add('stale');
+  esouTimer = setTimeout(drawEsou, 30);
+}
+function drawEsou() {
+  const box = $('#esou'), note = $('#esouNote'), blk = $('#esouBlock');
+  const plans = esouPlans();
+  blk.hidden = !plans.length;
+  box.classList.remove('stale');
+  box.innerHTML = ''; note.textContent = '';
+  if (!plans.length) return;
+  const c = currentChar(), elem = charElement(c), E = DATA.esou, best = plans[0];
+  box.append(...esouRows(best, elem));
+  const setBody = [];
+  for (const x of best.sets) for (const g of E.sets[x.sid].stages) if (g.count <= x.n) setBody.push(el('p', { text: `${x.name} ${g.count}セット　${g.text}${g.rate ? `（発動率 ${Math.round(g.rate * 100)}% で計算）` : ''}` }));
+  box.append(el('details', { class: 'row two' },
+    el('summary', {}, el('span', { class: 'rowMain' }, 'セット　', el('b', { text: esouSetLine(best) })), el('span', { class: 'rowSide', text: `DPS ${fmtPct(best.gain)}` })),
+    el('div', { class: 'rowBody' }, ...setBody)));
+  for (const [i, r] of plans.slice(1).entries()) {
+    box.append(el('details', { class: 'row two' },
+      el('summary', {}, el('span', { class: 'rowMain', text: `${i + 2}位　コア ${esouName(r.core.card.name)}・${esouSetLine(r)}` }), el('span', { class: 'rowSide', text: fmtPct((r.dps / best.dps - 1) * 100) })),
+      el('div', { class: 'rowBody esouAlt' }, ...esouRows(r, elem))));
+  }
+  note.textContent = `絵装込み ${fmtInt(dpsOf(cur.weapon, cur.armor.score) * (1 + best.gain / 100))}（レジェンド・Lv10）`;
 }
 
 /* ---------- compare ---------- */

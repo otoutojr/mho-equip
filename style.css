@@ -323,3 +323,14 @@ summary { -webkit-tap-highlight-color: transparent; }
 .candTop .rowMain { font-weight: 700; }
 
 @media (prefers-reduced-motion: reduce) { *, ::before, ::after { transition: none !important; animation: none !important; } }
+
+/* 絵装：左の札はコスト（コアは朱）、右はサブステータスの札 */
+.plate.core { border-color: var(--shu); color: var(--shu); font-size: 11px; }
+.subs { display: inline-flex; align-items: center; gap: 4px; }
+.sub { display: inline-block; padding: 3px 7px; border: 1px solid var(--el-text); border-radius: 2px; color: var(--el-text); font: 700 var(--f-s)/1.2 var(--serif); }
+.sub.crit { border-color: var(--ink); color: var(--ink); }
+.subN { font-size: var(--f-s); color: var(--muted); }
+.tagS { margin-left: 6px; font: 700 11px/1 var(--sans); color: var(--muted); border: 1px solid var(--rule); border-radius: 2px; padding: 2px 4px; vertical-align: .15em; }
+.esouAlt { padding-bottom: 6px; }
+#esou.stale { opacity: .45; }
+.setTag { margin-left: 8px; font: 400 var(--f-s)/1 var(--sans); color: var(--muted); white-space: nowrap; }
